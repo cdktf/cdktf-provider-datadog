@@ -56,6 +56,17 @@ export function dataDatadogSecurityMonitoringRulesRulesCaseToTerraform(struct?: 
   }
 }
 
+
+export function dataDatadogSecurityMonitoringRulesRulesCaseToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesCase): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDatadogSecurityMonitoringRulesRulesCaseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -135,6 +146,17 @@ export function dataDatadogSecurityMonitoringRulesRulesFilterToTerraform(struct?
   }
 }
 
+
+export function dataDatadogSecurityMonitoringRulesRulesFilterToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDatadogSecurityMonitoringRulesRulesFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -204,6 +226,17 @@ export function dataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOp
   }
 }
 
+
+export function dataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -266,6 +299,17 @@ export function dataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsToT
   }
   return {
   }
+}
+
+
+export function dataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference extends cdktf.ComplexObject {
@@ -345,6 +389,17 @@ export function dataDatadogSecurityMonitoringRulesRulesOptionsToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataDatadogSecurityMonitoringRulesRulesOptionsToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference extends cdktf.ComplexObject {
@@ -443,6 +498,17 @@ export function dataDatadogSecurityMonitoringRulesRulesQueryAgentRuleToTerraform
   }
 }
 
+
+export function dataDatadogSecurityMonitoringRulesRulesQueryAgentRuleToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesQueryAgentRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -510,6 +576,17 @@ export function dataDatadogSecurityMonitoringRulesRulesQueryToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataDatadogSecurityMonitoringRulesRulesQueryToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogSecurityMonitoringRulesRulesQueryOutputReference extends cdktf.ComplexObject {
@@ -612,6 +689,17 @@ export function dataDatadogSecurityMonitoringRulesRulesSignalQueryToTerraform(st
   }
 }
 
+
+export function dataDatadogSecurityMonitoringRulesRulesSignalQueryToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesSignalQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDatadogSecurityMonitoringRulesRulesSignalQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -699,6 +787,17 @@ export function dataDatadogSecurityMonitoringRulesRulesToTerraform(struct?: Data
   }
   return {
   }
+}
+
+
+export function dataDatadogSecurityMonitoringRulesRulesToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogSecurityMonitoringRulesRulesOutputReference extends cdktf.ComplexObject {
@@ -974,5 +1073,43 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
       tags_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagsFilter),
       user_only_filter: cdktf.booleanToTerraform(this._userOnlyFilter),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_only_filter: {
+        value: cdktf.booleanToHclTerraform(this._defaultOnlyFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_filter: {
+        value: cdktf.stringToHclTerraform(this._nameFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags_filter: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tagsFilter),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      user_only_filter: {
+        value: cdktf.booleanToHclTerraform(this._userOnlyFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

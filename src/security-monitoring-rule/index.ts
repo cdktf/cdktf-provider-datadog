@@ -126,6 +126,43 @@ export function securityMonitoringRuleCaseToTerraform(struct?: SecurityMonitorin
   }
 }
 
+
+export function securityMonitoringRuleCaseToHclTerraform(struct?: SecurityMonitoringRuleCase | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    condition: {
+      value: cdktf.stringToHclTerraform(struct!.condition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    notifications: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notifications),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityMonitoringRuleCaseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -295,6 +332,31 @@ export function securityMonitoringRuleFilterToTerraform(struct?: SecurityMonitor
   }
 }
 
+
+export function securityMonitoringRuleFilterToHclTerraform(struct?: SecurityMonitoringRuleFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityMonitoringRuleFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -410,6 +472,25 @@ export function securityMonitoringRuleOptionsImpossibleTravelOptionsToTerraform(
   }
 }
 
+
+export function securityMonitoringRuleOptionsImpossibleTravelOptionsToHclTerraform(struct?: SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference | SecurityMonitoringRuleOptionsImpossibleTravelOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    baseline_user_locations: {
+      value: cdktf.booleanToHclTerraform(struct!.baselineUserLocations),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -496,6 +577,43 @@ export function securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct?:
     learning_method: cdktf.stringToTerraform(struct!.learningMethod),
     learning_threshold: cdktf.numberToTerraform(struct!.learningThreshold),
   }
+}
+
+
+export function securityMonitoringRuleOptionsNewValueOptionsToHclTerraform(struct?: SecurityMonitoringRuleOptionsNewValueOptionsOutputReference | SecurityMonitoringRuleOptionsNewValueOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    forget_after: {
+      value: cdktf.numberToHclTerraform(struct!.forgetAfter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    learning_duration: {
+      value: cdktf.numberToHclTerraform(struct!.learningDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    learning_method: {
+      value: cdktf.stringToHclTerraform(struct!.learningMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    learning_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.learningThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends cdktf.ComplexObject {
@@ -668,6 +786,61 @@ export function securityMonitoringRuleOptionsToTerraform(struct?: SecurityMonito
     impossible_travel_options: securityMonitoringRuleOptionsImpossibleTravelOptionsToTerraform(struct!.impossibleTravelOptions),
     new_value_options: securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct!.newValueOptions),
   }
+}
+
+
+export function securityMonitoringRuleOptionsToHclTerraform(struct?: SecurityMonitoringRuleOptionsOutputReference | SecurityMonitoringRuleOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    decrease_criticality_based_on_env: {
+      value: cdktf.booleanToHclTerraform(struct!.decreaseCriticalityBasedOnEnv),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    detection_method: {
+      value: cdktf.stringToHclTerraform(struct!.detectionMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    evaluation_window: {
+      value: cdktf.numberToHclTerraform(struct!.evaluationWindow),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    keep_alive: {
+      value: cdktf.numberToHclTerraform(struct!.keepAlive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_signal_duration: {
+      value: cdktf.numberToHclTerraform(struct!.maxSignalDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    impossible_travel_options: {
+      value: securityMonitoringRuleOptionsImpossibleTravelOptionsToHclTerraform(struct!.impossibleTravelOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityMonitoringRuleOptionsImpossibleTravelOptionsList",
+    },
+    new_value_options: {
+      value: securityMonitoringRuleOptionsNewValueOptionsToHclTerraform(struct!.newValueOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityMonitoringRuleOptionsNewValueOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexObject {
@@ -870,6 +1043,31 @@ export function securityMonitoringRuleQueryAgentRuleToTerraform(struct?: Securit
   }
 }
 
+
+export function securityMonitoringRuleQueryAgentRuleToHclTerraform(struct?: SecurityMonitoringRuleQueryAgentRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    agent_rule_id: {
+      value: cdktf.stringToHclTerraform(struct!.agentRuleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityMonitoringRuleQueryAgentRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1032,6 +1230,67 @@ export function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitori
     query: cdktf.stringToTerraform(struct!.query),
     agent_rule: cdktf.listMapper(securityMonitoringRuleQueryAgentRuleToTerraform, true)(struct!.agentRule),
   }
+}
+
+
+export function securityMonitoringRuleQueryToHclTerraform(struct?: SecurityMonitoringRuleQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    distinct_fields: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.distinctFields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    group_by_fields: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupByFields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metrics: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.metrics),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    agent_rule: {
+      value: cdktf.listMapperHcl(securityMonitoringRuleQueryAgentRuleToHclTerraform, true)(struct!.agentRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityMonitoringRuleQueryAgentRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObject {
@@ -1317,6 +1576,55 @@ export function securityMonitoringRuleSignalQueryToTerraform(struct?: SecurityMo
     name: cdktf.stringToTerraform(struct!.name),
     rule_id: cdktf.stringToTerraform(struct!.ruleId),
   }
+}
+
+
+export function securityMonitoringRuleSignalQueryToHclTerraform(struct?: SecurityMonitoringRuleSignalQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    correlated_by_fields: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.correlatedByFields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    correlated_query_index: {
+      value: cdktf.stringToHclTerraform(struct!.correlatedQueryIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_rule_id: {
+      value: cdktf.stringToHclTerraform(struct!.defaultRuleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_id: {
+      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityMonitoringRuleSignalQueryOutputReference extends cdktf.ComplexObject {
@@ -1778,5 +2086,85 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       query: cdktf.listMapper(securityMonitoringRuleQueryToTerraform, true)(this._query.internalValue),
       signal_query: cdktf.listMapper(securityMonitoringRuleSignalQueryToTerraform, true)(this._signalQuery.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      has_extended_title: {
+        value: cdktf.booleanToHclTerraform(this._hasExtendedTitle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      message: {
+        value: cdktf.stringToHclTerraform(this._message),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      case: {
+        value: cdktf.listMapperHcl(securityMonitoringRuleCaseToHclTerraform, true)(this._case.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringRuleCaseList",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(securityMonitoringRuleFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringRuleFilterList",
+      },
+      options: {
+        value: securityMonitoringRuleOptionsToHclTerraform(this._options.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringRuleOptionsList",
+      },
+      query: {
+        value: cdktf.listMapperHcl(securityMonitoringRuleQueryToHclTerraform, true)(this._query.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringRuleQueryList",
+      },
+      signal_query: {
+        value: cdktf.listMapperHcl(securityMonitoringRuleSignalQueryToHclTerraform, true)(this._signalQuery.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringRuleSignalQueryList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

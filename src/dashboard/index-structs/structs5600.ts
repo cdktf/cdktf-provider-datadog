@@ -6,36 +6,47 @@
 import * as cdktf from 'cdktf';
 import { DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestApmQuery,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestApmQueryToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestApmQueryToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestApmQueryOutputReference,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQuery,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryOutputReference,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestConditionalFormats,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestConditionalFormatsToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestConditionalFormatsToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestConditionalFormatsList,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionCustomLink,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionCustomLinkToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionCustomLinkToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionCustomLinkList,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinition,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionOutputReference,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinition,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionOutputReference } from './structs5200'
 import { DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinition,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionOutputReference,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinition,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionOutputReference } from './structs4400'
 import { DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinition,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionOutputReference,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinition,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionOutputReference,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinition,
 dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionToTerraform,
+dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionToHclTerraform,
 DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionOutputReference } from './structs4800'
 export interface DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaConditionalFormats {
   /**
@@ -110,6 +121,73 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     timeframe: cdktf.stringToTerraform(struct!.timeframe),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparator: {
+      value: cdktf.stringToHclTerraform(struct!.comparator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_bg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_fg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hide_value: {
+      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    image_url: {
+      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeframe: {
+      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
@@ -385,6 +463,31 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaLimitToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaLimitOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -479,6 +582,31 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     palette: cdktf.stringToTerraform(struct!.palette),
     palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaStyleToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaStyleOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette_index: {
+      value: cdktf.numberToHclTerraform(struct!.paletteIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
@@ -603,6 +731,55 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     limit: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaLimitToTerraform(struct!.limit),
     style: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaStyleToTerraform(struct!.style),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alias: {
+      value: cdktf.stringToHclTerraform(struct!.alias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cell_display_mode: {
+      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    formula_expression: {
+      value: cdktf.stringToHclTerraform(struct!.formulaExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conditional_formats: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaConditionalFormatsList",
+    },
+    limit: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaLimitToHclTerraform(struct!.limit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaLimitList",
+    },
+    style: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaStyleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaOutputReference extends cdktf.ComplexObject {
@@ -825,6 +1002,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -947,6 +1155,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1064,6 +1303,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -1221,6 +1491,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -1389,6 +1690,49 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     group_by: cdktf.listMapper(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryOutputReference extends cdktf.ComplexObject {
@@ -1562,6 +1906,43 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     metric: cdktf.stringToTerraform(struct!.metric),
     search_by: cdktf.stringToTerraform(struct!.searchBy),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestProcessQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestProcessQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_by: {
+      value: cdktf.stringToHclTerraform(struct!.searchBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestProcessQueryOutputReference extends cdktf.ComplexObject {
@@ -1755,6 +2136,79 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     service: cdktf.stringToTerraform(struct!.service),
     stat: cdktf.stringToTerraform(struct!.stat),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_upstream: {
+      value: cdktf.booleanToHclTerraform(struct!.isUpstream),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
@@ -2064,6 +2518,79 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2328,6 +2855,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryComputeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2482,6 +3040,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupBySort): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2602,6 +3191,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     limit: cdktf.numberToTerraform(struct!.limit),
     sort: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct!.sort),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct!.sort),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupBySortList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -2744,6 +3364,25 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQuerySearch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQuerySearchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2848,6 +3487,61 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     group_by: cdktf.listMapper(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    indexes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage: {
+      value: cdktf.stringToHclTerraform(struct!.storage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryComputeList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryGroupByList",
+    },
+    search: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQuerySearchToHclTerraform(struct!.search),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQuerySearchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryOutputReference extends cdktf.ComplexObject {
@@ -3061,6 +3755,43 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryMetricQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryMetricQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryMetricQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3242,6 +3973,73 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
     text_filter: cdktf.stringToTerraform(struct!.textFilter),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryProcessQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_normalized_cpu: {
+      value: cdktf.booleanToHclTerraform(struct!.isNormalizedCpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sort: {
+      value: cdktf.stringToHclTerraform(struct!.sort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_filters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagFilters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    text_filter: {
+      value: cdktf.stringToHclTerraform(struct!.textFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryProcessQueryOutputReference extends cdktf.ComplexObject {
@@ -3520,6 +4318,61 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQuerySloQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQuerySloQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQuerySloQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_query_filters: {
+      value: cdktf.stringToHclTerraform(struct!.additionalQueryFilters),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_mode: {
+      value: cdktf.stringToHclTerraform(struct!.groupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    measure: {
+      value: cdktf.stringToHclTerraform(struct!.measure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_id: {
+      value: cdktf.stringToHclTerraform(struct!.sloId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_query_type: {
+      value: cdktf.stringToHclTerraform(struct!.sloQueryType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQuerySloQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3745,6 +4598,55 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    apm_dependency_stats_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct!.apmDependencyStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmDependencyStatsQueryList",
+    },
+    apm_resource_stats_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct!.apmResourceStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryApmResourceStatsQueryList",
+    },
+    event_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryToHclTerraform(struct!.eventQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryEventQueryList",
+    },
+    metric_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryMetricQueryToHclTerraform(struct!.metricQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryMetricQueryList",
+    },
+    process_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryProcessQueryToHclTerraform(struct!.processQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryProcessQueryList",
+    },
+    slo_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQuerySloQueryToHclTerraform(struct!.sloQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQuerySloQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3968,6 +4870,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4090,6 +5023,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4207,6 +5171,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -4364,6 +5359,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -4534,6 +5560,49 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4700,6 +5769,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4822,6 +5922,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4939,6 +6070,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -5096,6 +6258,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -5266,6 +6459,49 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5418,6 +6654,25 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestStyleToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestStyleOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestStyleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5553,6 +6808,85 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
     security_query: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryToTerraform(struct!.securityQuery),
     style: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestStyleToTerraform(struct!.style),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    q: {
+      value: cdktf.stringToHclTerraform(struct!.q),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    apm_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestApmQueryToHclTerraform(struct!.apmQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestApmQueryList",
+    },
+    audit_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryToHclTerraform(struct!.auditQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestAuditQueryList",
+    },
+    conditional_formats: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestConditionalFormatsList",
+    },
+    formula: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestFormulaList",
+    },
+    log_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryToHclTerraform(struct!.logQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestLogQueryList",
+    },
+    process_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestProcessQueryToHclTerraform(struct!.processQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestProcessQueryList",
+    },
+    query: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryToHclTerraform, true)(struct!.query),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestQueryList",
+    },
+    rum_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryToHclTerraform(struct!.rumQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestRumQueryList",
+    },
+    security_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryToHclTerraform(struct!.securityQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestSecurityQueryList",
+    },
+    style: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestStyleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestOutputReference extends cdktf.ComplexObject {
@@ -5909,6 +7243,55 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplist
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_link: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionCustomLinkList",
+    },
+    request: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestToHclTerraform, true)(struct!.request),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6140,6 +7523,73 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
     timeframe: cdktf.stringToTerraform(struct!.timeframe),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparator: {
+      value: cdktf.stringToHclTerraform(struct!.comparator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_bg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_fg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hide_value: {
+      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    image_url: {
+      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeframe: {
+      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
@@ -6415,6 +7865,31 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaLimitToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaLimitOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6509,6 +7984,31 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
     palette: cdktf.stringToTerraform(struct!.palette),
     palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaStyleToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaStyleOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette_index: {
+      value: cdktf.numberToHclTerraform(struct!.paletteIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
@@ -6633,6 +8133,55 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
     limit: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaLimitToTerraform(struct!.limit),
     style: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaStyleToTerraform(struct!.style),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alias: {
+      value: cdktf.stringToHclTerraform(struct!.alias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cell_display_mode: {
+      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    formula_expression: {
+      value: cdktf.stringToHclTerraform(struct!.formulaExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conditional_formats: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaConditionalFormatsList",
+    },
+    limit: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaLimitToHclTerraform(struct!.limit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaLimitList",
+    },
+    style: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaStyleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaOutputReference extends cdktf.ComplexObject {
@@ -6902,6 +8451,79 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
     service: cdktf.stringToTerraform(struct!.service),
     stat: cdktf.stringToTerraform(struct!.stat),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_upstream: {
+      value: cdktf.booleanToHclTerraform(struct!.isUpstream),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
@@ -7211,6 +8833,79 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7475,6 +9170,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryComputeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -7629,6 +9355,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupBySort): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7749,6 +9506,37 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
     limit: cdktf.numberToTerraform(struct!.limit),
     sort: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct!.sort),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct!.sort),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupBySortList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -7891,6 +9679,25 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQuerySearch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQuerySearchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7995,6 +9802,61 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
     group_by: cdktf.listMapper(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    indexes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage: {
+      value: cdktf.stringToHclTerraform(struct!.storage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryComputeList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryGroupByList",
+    },
+    search: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQuerySearchToHclTerraform(struct!.search),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQuerySearchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryOutputReference extends cdktf.ComplexObject {
@@ -8208,6 +10070,43 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryMetricQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryMetricQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryMetricQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8389,6 +10288,73 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
     tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
     text_filter: cdktf.stringToTerraform(struct!.textFilter),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryProcessQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_normalized_cpu: {
+      value: cdktf.booleanToHclTerraform(struct!.isNormalizedCpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sort: {
+      value: cdktf.stringToHclTerraform(struct!.sort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_filters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagFilters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    text_filter: {
+      value: cdktf.stringToHclTerraform(struct!.textFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryProcessQueryOutputReference extends cdktf.ComplexObject {
@@ -8667,6 +10633,61 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQuerySloQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQuerySloQueryOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQuerySloQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_query_filters: {
+      value: cdktf.stringToHclTerraform(struct!.additionalQueryFilters),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_mode: {
+      value: cdktf.stringToHclTerraform(struct!.groupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    measure: {
+      value: cdktf.stringToHclTerraform(struct!.measure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_id: {
+      value: cdktf.stringToHclTerraform(struct!.sloId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_query_type: {
+      value: cdktf.stringToHclTerraform(struct!.sloQueryType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQuerySloQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8892,6 +10913,55 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    apm_dependency_stats_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct!.apmDependencyStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmDependencyStatsQueryList",
+    },
+    apm_resource_stats_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct!.apmResourceStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryApmResourceStatsQueryList",
+    },
+    event_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryToHclTerraform(struct!.eventQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryEventQueryList",
+    },
+    metric_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryMetricQueryToHclTerraform(struct!.metricQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryMetricQueryList",
+    },
+    process_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryProcessQueryToHclTerraform(struct!.processQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryProcessQueryList",
+    },
+    slo_query: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQuerySloQueryToHclTerraform(struct!.sloQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQuerySloQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -9108,6 +11178,31 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    formula: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestFormulaList",
+    },
+    query: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryToHclTerraform, true)(struct!.query),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -9234,6 +11329,31 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemap
     title: cdktf.stringToTerraform(struct!.title),
     request: cdktf.listMapper(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestToTerraform, true)(struct!.request),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestToHclTerraform, true)(struct!.request),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionOutputReference extends cdktf.ComplexObject {
@@ -9379,6 +11499,73 @@ export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToTerra
     toplist_definition: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionToTerraform(struct!.toplistDefinition),
     treemap_definition: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionToTerraform(struct!.treemapDefinition),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionOutputReference | DashboardWidgetSplitGraphDefinitionSourceWidgetDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    change_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionToHclTerraform(struct!.changeDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionList",
+    },
+    geomap_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionToHclTerraform(struct!.geomapDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionGeomapDefinitionList",
+    },
+    query_table_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionToHclTerraform(struct!.queryTableDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionList",
+    },
+    query_value_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionToHclTerraform(struct!.queryValueDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionList",
+    },
+    scatterplot_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionToHclTerraform(struct!.scatterplotDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionList",
+    },
+    sunburst_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionToHclTerraform(struct!.sunburstDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionList",
+    },
+    timeseries_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionToHclTerraform(struct!.timeseriesDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionList",
+    },
+    toplist_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionToHclTerraform(struct!.toplistDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionList",
+    },
+    treemap_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionToHclTerraform(struct!.treemapDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinitionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionOutputReference extends cdktf.ComplexObject {
@@ -9631,6 +11818,31 @@ export function dashboardWidgetSplitGraphDefinitionSplitConfigSortComputeToTerra
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSplitConfigSortComputeToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSplitConfigSortComputeOutputReference | DashboardWidgetSplitGraphDefinitionSplitConfigSortCompute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSplitConfigSortComputeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9724,6 +11936,31 @@ export function dashboardWidgetSplitGraphDefinitionSplitConfigSortToTerraform(st
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSplitConfigSortToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSplitConfigSortOutputReference | DashboardWidgetSplitGraphDefinitionSplitConfigSort): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute: {
+      value: dashboardWidgetSplitGraphDefinitionSplitConfigSortComputeToHclTerraform(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSplitConfigSortComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSplitConfigSortOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9810,6 +12047,25 @@ export function dashboardWidgetSplitGraphDefinitionSplitConfigSplitDimensionsToT
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSplitConfigSplitDimensionsToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSplitConfigSplitDimensionsOutputReference | DashboardWidgetSplitGraphDefinitionSplitConfigSplitDimensions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    one_graph_per: {
+      value: cdktf.stringToHclTerraform(struct!.oneGraphPer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSplitConfigSplitDimensionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9875,6 +12131,31 @@ export function dashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitV
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagValues),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVector | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagValues),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference extends cdktf.ComplexObject {
@@ -9992,6 +12273,25 @@ export function dashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsToTerr
   }
 }
 
+
+export function dashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    split_vector: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorToHclTerraform, true)(struct!.splitVector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -10107,6 +12407,43 @@ export function dashboardWidgetSplitGraphDefinitionSplitConfigToTerraform(struct
     split_dimensions: dashboardWidgetSplitGraphDefinitionSplitConfigSplitDimensionsToTerraform(struct!.splitDimensions),
     static_splits: cdktf.listMapper(dashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsToTerraform, true)(struct!.staticSplits),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionSplitConfigToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionSplitConfigOutputReference | DashboardWidgetSplitGraphDefinitionSplitConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort: {
+      value: dashboardWidgetSplitGraphDefinitionSplitConfigSortToHclTerraform(struct!.sort),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSplitConfigSortList",
+    },
+    split_dimensions: {
+      value: dashboardWidgetSplitGraphDefinitionSplitConfigSplitDimensionsToHclTerraform(struct!.splitDimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSplitConfigSplitDimensionsList",
+    },
+    static_splits: {
+      value: cdktf.listMapperHcl(dashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsToHclTerraform, true)(struct!.staticSplits),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionSplitConfigOutputReference extends cdktf.ComplexObject {
@@ -10269,6 +12606,55 @@ export function dashboardWidgetSplitGraphDefinitionToTerraform(struct?: Dashboar
     source_widget_definition: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToTerraform(struct!.sourceWidgetDefinition),
     split_config: dashboardWidgetSplitGraphDefinitionSplitConfigToTerraform(struct!.splitConfig),
   }
+}
+
+
+export function dashboardWidgetSplitGraphDefinitionToHclTerraform(struct?: DashboardWidgetSplitGraphDefinitionOutputReference | DashboardWidgetSplitGraphDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    has_uniform_y_axes: {
+      value: cdktf.booleanToHclTerraform(struct!.hasUniformYAxes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.stringToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_widget_definition: {
+      value: dashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToHclTerraform(struct!.sourceWidgetDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionList",
+    },
+    split_config: {
+      value: dashboardWidgetSplitGraphDefinitionSplitConfigToHclTerraform(struct!.splitConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSplitGraphDefinitionSplitConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSplitGraphDefinitionOutputReference extends cdktf.ComplexObject {
@@ -10460,6 +12846,43 @@ export function dashboardWidgetSunburstDefinitionCustomLinkToTerraform(struct?: 
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionCustomLinkToHclTerraform(struct?: DashboardWidgetSunburstDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_hidden: {
+      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    label: {
+      value: cdktf.stringToHclTerraform(struct!.label),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    link: {
+      value: cdktf.stringToHclTerraform(struct!.link),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override_label: {
+      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -10639,6 +13062,37 @@ export function dashboardWidgetSunburstDefinitionLegendInlineToTerraform(struct?
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionLegendInlineToHclTerraform(struct?: DashboardWidgetSunburstDefinitionLegendInlineOutputReference | DashboardWidgetSunburstDefinitionLegendInline): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hide_percent: {
+      value: cdktf.booleanToHclTerraform(struct!.hidePercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    hide_value: {
+      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionLegendInlineOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10747,6 +13201,25 @@ export function dashboardWidgetSunburstDefinitionLegendTableToTerraform(struct?:
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionLegendTableToHclTerraform(struct?: DashboardWidgetSunburstDefinitionLegendTableOutputReference | DashboardWidgetSunburstDefinitionLegendTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionLegendTableOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10823,6 +13296,37 @@ export function dashboardWidgetSunburstDefinitionRequestApmQueryComputeQueryToTe
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetSunburstDefinitionRequestApmQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
@@ -10947,6 +13451,37 @@ export function dashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11064,6 +13599,37 @@ export function dashboardWidgetSunburstDefinitionRequestApmQueryGroupByToTerrafo
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestApmQueryGroupByToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestApmQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -11221,6 +13787,37 @@ export function dashboardWidgetSunburstDefinitionRequestApmQueryMultiComputeToTe
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -11391,6 +13988,49 @@ export function dashboardWidgetSunburstDefinitionRequestApmQueryToTerraform(stru
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestApmQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestApmQueryOutputReference | DashboardWidgetSunburstDefinitionRequestApmQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: dashboardWidgetSunburstDefinitionRequestApmQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestApmQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestApmQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestApmQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestApmQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11557,6 +14197,37 @@ export function dashboardWidgetSunburstDefinitionRequestAuditQueryComputeQueryTo
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestAuditQueryComputeQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference | DashboardWidgetSunburstDefinitionRequestAuditQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11679,6 +14350,37 @@ export function dashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQue
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference | DashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11796,6 +14498,37 @@ export function dashboardWidgetSunburstDefinitionRequestAuditQueryGroupByToTerra
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestAuditQueryGroupByToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestAuditQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -11953,6 +14686,37 @@ export function dashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeTo
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -12121,6 +14885,49 @@ export function dashboardWidgetSunburstDefinitionRequestAuditQueryToTerraform(st
     group_by: cdktf.listMapper(dashboardWidgetSunburstDefinitionRequestAuditQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(dashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestAuditQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestAuditQueryOutputReference | DashboardWidgetSunburstDefinitionRequestAuditQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: dashboardWidgetSunburstDefinitionRequestAuditQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestAuditQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestAuditQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestAuditQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestAuditQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestAuditQueryOutputReference extends cdktf.ComplexObject {
@@ -12329,6 +15136,73 @@ export function dashboardWidgetSunburstDefinitionRequestFormulaConditionalFormat
     timeframe: cdktf.stringToTerraform(struct!.timeframe),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparator: {
+      value: cdktf.stringToHclTerraform(struct!.comparator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_bg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_fg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hide_value: {
+      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    image_url: {
+      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeframe: {
+      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
@@ -12604,6 +15478,31 @@ export function dashboardWidgetSunburstDefinitionRequestFormulaLimitToTerraform(
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestFormulaLimitToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestFormulaLimitOutputReference | DashboardWidgetSunburstDefinitionRequestFormulaLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -12698,6 +15597,31 @@ export function dashboardWidgetSunburstDefinitionRequestFormulaStyleToTerraform(
     palette: cdktf.stringToTerraform(struct!.palette),
     palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestFormulaStyleToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestFormulaStyleOutputReference | DashboardWidgetSunburstDefinitionRequestFormulaStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette_index: {
+      value: cdktf.numberToHclTerraform(struct!.paletteIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
@@ -12822,6 +15746,55 @@ export function dashboardWidgetSunburstDefinitionRequestFormulaToTerraform(struc
     limit: dashboardWidgetSunburstDefinitionRequestFormulaLimitToTerraform(struct!.limit),
     style: dashboardWidgetSunburstDefinitionRequestFormulaStyleToTerraform(struct!.style),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestFormulaToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alias: {
+      value: cdktf.stringToHclTerraform(struct!.alias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cell_display_mode: {
+      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    formula_expression: {
+      value: cdktf.stringToHclTerraform(struct!.formulaExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conditional_formats: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsList",
+    },
+    limit: {
+      value: dashboardWidgetSunburstDefinitionRequestFormulaLimitToHclTerraform(struct!.limit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestFormulaLimitList",
+    },
+    style: {
+      value: dashboardWidgetSunburstDefinitionRequestFormulaStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestFormulaStyleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestFormulaOutputReference extends cdktf.ComplexObject {
@@ -13044,6 +16017,37 @@ export function dashboardWidgetSunburstDefinitionRequestLogQueryComputeQueryToTe
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetSunburstDefinitionRequestLogQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -13166,6 +16170,37 @@ export function dashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -13283,6 +16318,37 @@ export function dashboardWidgetSunburstDefinitionRequestLogQueryGroupByToTerrafo
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -13440,6 +16506,37 @@ export function dashboardWidgetSunburstDefinitionRequestLogQueryMultiComputeToTe
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -13610,6 +16707,49 @@ export function dashboardWidgetSunburstDefinitionRequestLogQueryToTerraform(stru
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestLogQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestLogQueryOutputReference | DashboardWidgetSunburstDefinitionRequestLogQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: dashboardWidgetSunburstDefinitionRequestLogQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestLogQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestLogQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestLogQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestLogQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -13776,6 +16916,37 @@ export function dashboardWidgetSunburstDefinitionRequestNetworkQueryComputeQuery
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestNetworkQueryComputeQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference | DashboardWidgetSunburstDefinitionRequestNetworkQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -13898,6 +17069,37 @@ export function dashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQ
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -14015,6 +17217,37 @@ export function dashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByToTer
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -14172,6 +17405,37 @@ export function dashboardWidgetSunburstDefinitionRequestNetworkQueryMultiCompute
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -14340,6 +17604,49 @@ export function dashboardWidgetSunburstDefinitionRequestNetworkQueryToTerraform(
     group_by: cdktf.listMapper(dashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(dashboardWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestNetworkQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestNetworkQueryOutputReference | DashboardWidgetSunburstDefinitionRequestNetworkQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: dashboardWidgetSunburstDefinitionRequestNetworkQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestNetworkQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestNetworkQueryOutputReference extends cdktf.ComplexObject {
@@ -14513,6 +17820,43 @@ export function dashboardWidgetSunburstDefinitionRequestProcessQueryToTerraform(
     metric: cdktf.stringToTerraform(struct!.metric),
     search_by: cdktf.stringToTerraform(struct!.searchBy),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestProcessQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestProcessQueryOutputReference | DashboardWidgetSunburstDefinitionRequestProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_by: {
+      value: cdktf.stringToHclTerraform(struct!.searchBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestProcessQueryOutputReference extends cdktf.ComplexObject {
@@ -14706,6 +18050,79 @@ export function dashboardWidgetSunburstDefinitionRequestQueryApmDependencyStatsQ
     service: cdktf.stringToTerraform(struct!.service),
     stat: cdktf.stringToTerraform(struct!.stat),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_upstream: {
+      value: cdktf.booleanToHclTerraform(struct!.isUpstream),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
@@ -15015,6 +18432,79 @@ export function dashboardWidgetSunburstDefinitionRequestQueryApmResourceStatsQue
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -15279,6 +18769,37 @@ export function dashboardWidgetSunburstDefinitionRequestQueryEventQueryComputeTo
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestQueryEventQueryComputeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -15433,6 +18954,37 @@ export function dashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySo
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -15553,6 +19105,37 @@ export function dashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupByTo
     limit: cdktf.numberToTerraform(struct!.limit),
     sort: dashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct!.sort),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort: {
+      value: dashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct!.sort),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -15695,6 +19278,25 @@ export function dashboardWidgetSunburstDefinitionRequestQueryEventQuerySearchToT
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetSunburstDefinitionRequestQueryEventQuerySearch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -15799,6 +19401,61 @@ export function dashboardWidgetSunburstDefinitionRequestQueryEventQueryToTerrafo
     group_by: cdktf.listMapper(dashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetSunburstDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestQueryEventQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetSunburstDefinitionRequestQueryEventQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    indexes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage: {
+      value: cdktf.stringToHclTerraform(struct!.storage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryEventQueryComputeList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupByList",
+    },
+    search: {
+      value: dashboardWidgetSunburstDefinitionRequestQueryEventQuerySearchToHclTerraform(struct!.search),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryEventQuerySearchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestQueryEventQueryOutputReference extends cdktf.ComplexObject {
@@ -16012,6 +19669,43 @@ export function dashboardWidgetSunburstDefinitionRequestQueryMetricQueryToTerraf
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestQueryMetricQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetSunburstDefinitionRequestQueryMetricQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -16193,6 +19887,73 @@ export function dashboardWidgetSunburstDefinitionRequestQueryProcessQueryToTerra
     tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
     text_filter: cdktf.stringToTerraform(struct!.textFilter),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestQueryProcessQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetSunburstDefinitionRequestQueryProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_normalized_cpu: {
+      value: cdktf.booleanToHclTerraform(struct!.isNormalizedCpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sort: {
+      value: cdktf.stringToHclTerraform(struct!.sort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_filters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagFilters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    text_filter: {
+      value: cdktf.stringToHclTerraform(struct!.textFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference extends cdktf.ComplexObject {
@@ -16471,6 +20232,61 @@ export function dashboardWidgetSunburstDefinitionRequestQuerySloQueryToTerraform
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestQuerySloQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQuerySloQueryOutputReference | DashboardWidgetSunburstDefinitionRequestQuerySloQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_query_filters: {
+      value: cdktf.stringToHclTerraform(struct!.additionalQueryFilters),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_mode: {
+      value: cdktf.stringToHclTerraform(struct!.groupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    measure: {
+      value: cdktf.stringToHclTerraform(struct!.measure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_id: {
+      value: cdktf.stringToHclTerraform(struct!.sloId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_query_type: {
+      value: cdktf.stringToHclTerraform(struct!.sloQueryType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestQuerySloQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -16696,6 +20512,55 @@ export function dashboardWidgetSunburstDefinitionRequestQueryToTerraform(struct?
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    apm_dependency_stats_query: {
+      value: dashboardWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct!.apmDependencyStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryList",
+    },
+    apm_resource_stats_query: {
+      value: dashboardWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct!.apmResourceStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryList",
+    },
+    event_query: {
+      value: dashboardWidgetSunburstDefinitionRequestQueryEventQueryToHclTerraform(struct!.eventQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryEventQueryList",
+    },
+    metric_query: {
+      value: dashboardWidgetSunburstDefinitionRequestQueryMetricQueryToHclTerraform(struct!.metricQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryMetricQueryList",
+    },
+    process_query: {
+      value: dashboardWidgetSunburstDefinitionRequestQueryProcessQueryToHclTerraform(struct!.processQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryProcessQueryList",
+    },
+    slo_query: {
+      value: dashboardWidgetSunburstDefinitionRequestQuerySloQueryToHclTerraform(struct!.sloQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQuerySloQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -16919,6 +20784,37 @@ export function dashboardWidgetSunburstDefinitionRequestRumQueryComputeQueryToTe
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetSunburstDefinitionRequestRumQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -17041,6 +20937,37 @@ export function dashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -17158,6 +21085,37 @@ export function dashboardWidgetSunburstDefinitionRequestRumQueryGroupByToTerrafo
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestRumQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -17315,6 +21273,37 @@ export function dashboardWidgetSunburstDefinitionRequestRumQueryMultiComputeToTe
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -17485,6 +21474,49 @@ export function dashboardWidgetSunburstDefinitionRequestRumQueryToTerraform(stru
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestRumQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestRumQueryOutputReference | DashboardWidgetSunburstDefinitionRequestRumQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: dashboardWidgetSunburstDefinitionRequestRumQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestRumQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestRumQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestRumQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestRumQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -17651,6 +21683,37 @@ export function dashboardWidgetSunburstDefinitionRequestSecurityQueryComputeQuer
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetSunburstDefinitionRequestSecurityQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -17773,6 +21836,37 @@ export function dashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySort
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -17890,6 +21984,37 @@ export function dashboardWidgetSunburstDefinitionRequestSecurityQueryGroupByToTe
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -18047,6 +22172,37 @@ export function dashboardWidgetSunburstDefinitionRequestSecurityQueryMultiComput
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -18217,6 +22373,49 @@ export function dashboardWidgetSunburstDefinitionRequestSecurityQueryToTerraform
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestSecurityQueryToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestSecurityQueryOutputReference | DashboardWidgetSunburstDefinitionRequestSecurityQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: dashboardWidgetSunburstDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestSecurityQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestSecurityQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestSecurityQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -18369,6 +22568,25 @@ export function dashboardWidgetSunburstDefinitionRequestStyleToTerraform(struct?
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionRequestStyleToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequestStyleOutputReference | DashboardWidgetSunburstDefinitionRequestStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionRequestStyleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -18504,6 +22722,85 @@ export function dashboardWidgetSunburstDefinitionRequestToTerraform(struct?: Das
     security_query: dashboardWidgetSunburstDefinitionRequestSecurityQueryToTerraform(struct!.securityQuery),
     style: dashboardWidgetSunburstDefinitionRequestStyleToTerraform(struct!.style),
   }
+}
+
+
+export function dashboardWidgetSunburstDefinitionRequestToHclTerraform(struct?: DashboardWidgetSunburstDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    q: {
+      value: cdktf.stringToHclTerraform(struct!.q),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    apm_query: {
+      value: dashboardWidgetSunburstDefinitionRequestApmQueryToHclTerraform(struct!.apmQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestApmQueryList",
+    },
+    audit_query: {
+      value: dashboardWidgetSunburstDefinitionRequestAuditQueryToHclTerraform(struct!.auditQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestAuditQueryList",
+    },
+    formula: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestFormulaList",
+    },
+    log_query: {
+      value: dashboardWidgetSunburstDefinitionRequestLogQueryToHclTerraform(struct!.logQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestLogQueryList",
+    },
+    network_query: {
+      value: dashboardWidgetSunburstDefinitionRequestNetworkQueryToHclTerraform(struct!.networkQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestNetworkQueryList",
+    },
+    process_query: {
+      value: dashboardWidgetSunburstDefinitionRequestProcessQueryToHclTerraform(struct!.processQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestProcessQueryList",
+    },
+    query: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestQueryToHclTerraform, true)(struct!.query),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestQueryList",
+    },
+    rum_query: {
+      value: dashboardWidgetSunburstDefinitionRequestRumQueryToHclTerraform(struct!.rumQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestRumQueryList",
+    },
+    security_query: {
+      value: dashboardWidgetSunburstDefinitionRequestSecurityQueryToHclTerraform(struct!.securityQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestSecurityQueryList",
+    },
+    style: {
+      value: dashboardWidgetSunburstDefinitionRequestStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestStyleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetSunburstDefinitionRequestOutputReference extends cdktf.ComplexObject {
@@ -18881,6 +23178,73 @@ export function dashboardWidgetSunburstDefinitionToTerraform(struct?: DashboardW
   }
 }
 
+
+export function dashboardWidgetSunburstDefinitionToHclTerraform(struct?: DashboardWidgetSunburstDefinitionOutputReference | DashboardWidgetSunburstDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hide_total: {
+      value: cdktf.booleanToHclTerraform(struct!.hideTotal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_link: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionCustomLinkList",
+    },
+    legend_inline: {
+      value: dashboardWidgetSunburstDefinitionLegendInlineToHclTerraform(struct!.legendInline),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionLegendInlineList",
+    },
+    legend_table: {
+      value: dashboardWidgetSunburstDefinitionLegendTableToHclTerraform(struct!.legendTable),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionLegendTableList",
+    },
+    request: {
+      value: cdktf.listMapperHcl(dashboardWidgetSunburstDefinitionRequestToHclTerraform, true)(struct!.request),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetSunburstDefinitionRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetSunburstDefinitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -19145,6 +23509,43 @@ export function dashboardWidgetTimeseriesDefinitionCustomLinkToTerraform(struct?
   }
 }
 
+
+export function dashboardWidgetTimeseriesDefinitionCustomLinkToHclTerraform(struct?: DashboardWidgetTimeseriesDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_hidden: {
+      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    label: {
+      value: cdktf.stringToHclTerraform(struct!.label),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    link: {
+      value: cdktf.stringToHclTerraform(struct!.link),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override_label: {
+      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetTimeseriesDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -19317,6 +23718,31 @@ export function dashboardWidgetTimeseriesDefinitionEventToTerraform(struct?: Das
   }
 }
 
+
+export function dashboardWidgetTimeseriesDefinitionEventToHclTerraform(struct?: DashboardWidgetTimeseriesDefinitionEvent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    q: {
+      value: cdktf.stringToHclTerraform(struct!.q),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags_execution: {
+      value: cdktf.stringToHclTerraform(struct!.tagsExecution),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetTimeseriesDefinitionEventOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -19447,6 +23873,37 @@ export function dashboardWidgetTimeseriesDefinitionMarkerToTerraform(struct?: Da
     label: cdktf.stringToTerraform(struct!.label),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dashboardWidgetTimeseriesDefinitionMarkerToHclTerraform(struct?: DashboardWidgetTimeseriesDefinitionMarker | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    display_type: {
+      value: cdktf.stringToHclTerraform(struct!.displayType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    label: {
+      value: cdktf.stringToHclTerraform(struct!.label),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetTimeseriesDefinitionMarkerOutputReference extends cdktf.ComplexObject {
@@ -19603,6 +24060,37 @@ export function dashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQueryTo
   }
 }
 
+
+export function dashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -19725,6 +24213,37 @@ export function dashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQue
   }
 }
 
+
+export function dashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -19842,6 +24361,37 @@ export function dashboardWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerra
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function dashboardWidgetTimeseriesDefinitionRequestApmQueryGroupByToHclTerraform(struct?: DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: dashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -19999,6 +24549,37 @@ export function dashboardWidgetTimeseriesDefinitionRequestApmQueryMultiComputeTo
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function dashboardWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: DashboardWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DashboardWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {

@@ -105,4 +105,18 @@ export class SyntheticsConcurrencyCap extends cdktf.TerraformResource {
       on_demand_concurrency_cap: cdktf.numberToTerraform(this._onDemandConcurrencyCap),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      on_demand_concurrency_cap: {
+        value: cdktf.numberToHclTerraform(this._onDemandConcurrencyCap),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

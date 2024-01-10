@@ -7,12 +7,15 @@
 
 import { DashboardTemplateVariable, 
 dashboardTemplateVariableToTerraform, 
+dashboardTemplateVariableToHclTerraform, 
 DashboardTemplateVariableList, 
 DashboardTemplateVariablePreset, 
 dashboardTemplateVariablePresetToTerraform, 
+dashboardTemplateVariablePresetToHclTerraform, 
 DashboardTemplateVariablePresetList, 
 DashboardWidget, 
 dashboardWidgetToTerraform, 
+dashboardWidgetToHclTerraform, 
 DashboardWidgetList} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
@@ -420,5 +423,97 @@ export class Dashboard extends cdktf.TerraformResource {
       template_variable_preset: cdktf.listMapper(dashboardTemplateVariablePresetToTerraform, true)(this._templateVariablePreset.internalValue),
       widget: cdktf.listMapper(dashboardWidgetToTerraform, true)(this._widget.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      dashboard_lists: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._dashboardLists),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_read_only: {
+        value: cdktf.booleanToHclTerraform(this._isReadOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      layout_type: {
+        value: cdktf.stringToHclTerraform(this._layoutType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notify_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notifyList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      reflow_type: {
+        value: cdktf.stringToHclTerraform(this._reflowType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      restricted_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._restrictedRoles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_variable: {
+        value: cdktf.listMapperHcl(dashboardTemplateVariableToHclTerraform, true)(this._templateVariable.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DashboardTemplateVariableList",
+      },
+      template_variable_preset: {
+        value: cdktf.listMapperHcl(dashboardTemplateVariablePresetToHclTerraform, true)(this._templateVariablePreset.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DashboardTemplateVariablePresetList",
+      },
+      widget: {
+        value: cdktf.listMapperHcl(dashboardWidgetToHclTerraform, true)(this._widget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DashboardWidgetList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

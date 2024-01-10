@@ -141,4 +141,24 @@ export class ServiceAccountApplicationKey extends cdktf.TerraformResource {
       service_account_id: cdktf.stringToTerraform(this._serviceAccountId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account_id: {
+        value: cdktf.stringToHclTerraform(this._serviceAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

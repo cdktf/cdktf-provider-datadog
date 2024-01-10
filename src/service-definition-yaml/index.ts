@@ -125,4 +125,24 @@ export class ServiceDefinitionYaml extends cdktf.TerraformResource {
       service_definition: cdktf.stringToTerraform(this._serviceDefinition),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_definition: {
+        value: cdktf.stringToHclTerraform(this._serviceDefinition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

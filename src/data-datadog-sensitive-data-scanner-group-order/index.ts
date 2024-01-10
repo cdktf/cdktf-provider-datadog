@@ -89,4 +89,10 @@ export class DataDatadogSensitiveDataScannerGroupOrder extends cdktf.TerraformDa
     return {
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+    };
+    return attrs;
+  }
 }

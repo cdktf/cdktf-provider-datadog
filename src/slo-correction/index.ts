@@ -287,4 +287,66 @@ export class SloCorrection extends cdktf.TerraformResource {
       timezone: cdktf.stringToTerraform(this._timezone),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      category: {
+        value: cdktf.stringToHclTerraform(this._category),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      duration: {
+        value: cdktf.numberToHclTerraform(this._duration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      end: {
+        value: cdktf.numberToHclTerraform(this._end),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rrule: {
+        value: cdktf.stringToHclTerraform(this._rrule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      slo_id: {
+        value: cdktf.stringToHclTerraform(this._sloId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start: {
+        value: cdktf.numberToHclTerraform(this._start),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      timezone: {
+        value: cdktf.stringToHclTerraform(this._timezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogintegrationawsnamespacerules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawsnamespacerules"
 
 datadatadogintegrationawsnamespacerules.NewDataDatadogIntegrationAwsNamespaceRules(scope Construct, id *string, config DataDatadogIntegrationAwsNamespaceRulesConfig) DataDatadogIntegrationAwsNamespaceRules
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -118,6 +119,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.toMetadata"></a>
 
@@ -267,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogintegrationawsnamespacerules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawsnamespacerules"
 
 datadatadogintegrationawsnamespacerules.DataDatadogIntegrationAwsNamespaceRules_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogintegrationawsnamespacerules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawsnamespacerules"
 
 datadatadogintegrationawsnamespacerules.DataDatadogIntegrationAwsNamespaceRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ datadatadogintegrationawsnamespacerules.DataDatadogIntegrationAwsNamespaceRules_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogintegrationawsnamespacerules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawsnamespacerules"
 
 datadatadogintegrationawsnamespacerules.DataDatadogIntegrationAwsNamespaceRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datadatadogintegrationawsnamespacerules.DataDatadogIntegrationAwsNamespaceRules_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogintegrationawsnamespacerules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawsnamespacerules"
 
 datadatadogintegrationawsnamespacerules.DataDatadogIntegrationAwsNamespaceRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -556,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogintegrationawsnamespacerules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawsnamespacerules"
 
 &datadatadogintegrationawsnamespacerules.DataDatadogIntegrationAwsNamespaceRulesConfig {
 	Connection: interface{},

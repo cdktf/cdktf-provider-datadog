@@ -32,6 +32,17 @@ export function dataDatadogLogsIndexesLogsIndexesExclusionFilterFilterToTerrafor
   }
 }
 
+
+export function dataDatadogLogsIndexesLogsIndexesExclusionFilterFilterToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -99,6 +110,17 @@ export function dataDatadogLogsIndexesLogsIndexesExclusionFilterToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataDatadogLogsIndexesLogsIndexesExclusionFilterToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference extends cdktf.ComplexObject {
@@ -176,6 +198,17 @@ export function dataDatadogLogsIndexesLogsIndexesFilterToTerraform(struct?: Data
   }
 }
 
+
+export function dataDatadogLogsIndexesLogsIndexesFilterToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDatadogLogsIndexesLogsIndexesFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -238,6 +271,17 @@ export function dataDatadogLogsIndexesLogsIndexesToTerraform(struct?: DataDatado
   }
   return {
   }
+}
+
+
+export function dataDatadogLogsIndexesLogsIndexesToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogLogsIndexesLogsIndexesOutputReference extends cdktf.ComplexObject {
@@ -403,5 +447,19 @@ export class DataDatadogLogsIndexes extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

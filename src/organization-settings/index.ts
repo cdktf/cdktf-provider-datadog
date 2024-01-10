@@ -51,6 +51,25 @@ export function organizationSettingsSettingsSamlToTerraform(struct?: Organizatio
   }
 }
 
+
+export function organizationSettingsSettingsSamlToHclTerraform(struct?: OrganizationSettingsSettingsSamlOutputReference | OrganizationSettingsSettingsSaml): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -123,6 +142,31 @@ export function organizationSettingsSettingsSamlAutocreateUsersDomainsToTerrafor
     domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domains),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
+}
+
+
+export function organizationSettingsSettingsSamlAutocreateUsersDomainsToHclTerraform(struct?: OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference | OrganizationSettingsSettingsSamlAutocreateUsersDomains): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domains: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domains),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference extends cdktf.ComplexObject {
@@ -214,6 +258,25 @@ export function organizationSettingsSettingsSamlIdpInitiatedLoginToTerraform(str
   }
 }
 
+
+export function organizationSettingsSettingsSamlIdpInitiatedLoginToHclTerraform(struct?: OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference | OrganizationSettingsSettingsSamlIdpInitiatedLogin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -279,6 +342,25 @@ export function organizationSettingsSettingsSamlStrictModeToTerraform(struct?: O
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
+}
+
+
+export function organizationSettingsSettingsSamlStrictModeToHclTerraform(struct?: OrganizationSettingsSettingsSamlStrictModeOutputReference | OrganizationSettingsSettingsSamlStrictMode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends cdktf.ComplexObject {
@@ -381,6 +463,55 @@ export function organizationSettingsSettingsToTerraform(struct?: OrganizationSet
     saml_idp_initiated_login: organizationSettingsSettingsSamlIdpInitiatedLoginToTerraform(struct!.samlIdpInitiatedLogin),
     saml_strict_mode: organizationSettingsSettingsSamlStrictModeToTerraform(struct!.samlStrictMode),
   }
+}
+
+
+export function organizationSettingsSettingsToHclTerraform(struct?: OrganizationSettingsSettingsOutputReference | OrganizationSettingsSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    private_widget_share: {
+      value: cdktf.booleanToHclTerraform(struct!.privateWidgetShare),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    saml_autocreate_access_role: {
+      value: cdktf.stringToHclTerraform(struct!.samlAutocreateAccessRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    saml: {
+      value: organizationSettingsSettingsSamlToHclTerraform(struct!.saml),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OrganizationSettingsSettingsSamlList",
+    },
+    saml_autocreate_users_domains: {
+      value: organizationSettingsSettingsSamlAutocreateUsersDomainsToHclTerraform(struct!.samlAutocreateUsersDomains),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OrganizationSettingsSettingsSamlAutocreateUsersDomainsList",
+    },
+    saml_idp_initiated_login: {
+      value: organizationSettingsSettingsSamlIdpInitiatedLoginToHclTerraform(struct!.samlIdpInitiatedLogin),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OrganizationSettingsSettingsSamlIdpInitiatedLoginList",
+    },
+    saml_strict_mode: {
+      value: organizationSettingsSettingsSamlStrictModeToHclTerraform(struct!.samlStrictMode),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OrganizationSettingsSettingsSamlStrictModeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexObject {
@@ -678,5 +809,31 @@ export class OrganizationSettings extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       settings: organizationSettingsSettingsToTerraform(this._settings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      settings: {
+        value: organizationSettingsSettingsToHclTerraform(this._settings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OrganizationSettingsSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

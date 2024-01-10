@@ -93,6 +93,31 @@ export function downtimeScheduleMonitorIdentifierToTerraform(struct?: DowntimeSc
   }
 }
 
+
+export function downtimeScheduleMonitorIdentifierToHclTerraform(struct?: DowntimeScheduleMonitorIdentifier | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    monitor_id: {
+      value: cdktf.numberToHclTerraform(struct!.monitorId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    monitor_tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.monitorTags),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DowntimeScheduleMonitorIdentifierOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -197,6 +222,31 @@ export function downtimeScheduleOneTimeScheduleToTerraform(struct?: DowntimeSche
     end: cdktf.stringToTerraform(struct!.end),
     start: cdktf.stringToTerraform(struct!.start),
   }
+}
+
+
+export function downtimeScheduleOneTimeScheduleToHclTerraform(struct?: DowntimeScheduleOneTimeSchedule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DowntimeScheduleOneTimeScheduleOutputReference extends cdktf.ComplexObject {
@@ -310,6 +360,37 @@ export function downtimeScheduleRecurringScheduleRecurrenceToTerraform(struct?: 
     rrule: cdktf.stringToTerraform(struct!.rrule),
     start: cdktf.stringToTerraform(struct!.start),
   }
+}
+
+
+export function downtimeScheduleRecurringScheduleRecurrenceToHclTerraform(struct?: DowntimeScheduleRecurringScheduleRecurrence | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    duration: {
+      value: cdktf.stringToHclTerraform(struct!.duration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rrule: {
+      value: cdktf.stringToHclTerraform(struct!.rrule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DowntimeScheduleRecurringScheduleRecurrenceOutputReference extends cdktf.ComplexObject {
@@ -454,6 +535,31 @@ export function downtimeScheduleRecurringScheduleToTerraform(struct?: DowntimeSc
     timezone: cdktf.stringToTerraform(struct!.timezone),
     recurrence: cdktf.listMapper(downtimeScheduleRecurringScheduleRecurrenceToTerraform, true)(struct!.recurrence),
   }
+}
+
+
+export function downtimeScheduleRecurringScheduleToHclTerraform(struct?: DowntimeScheduleRecurringSchedule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    timezone: {
+      value: cdktf.stringToHclTerraform(struct!.timezone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recurrence: {
+      value: cdktf.listMapperHcl(downtimeScheduleRecurringScheduleRecurrenceToHclTerraform, true)(struct!.recurrence),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DowntimeScheduleRecurringScheduleRecurrenceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DowntimeScheduleRecurringScheduleOutputReference extends cdktf.ComplexObject {
@@ -765,5 +871,67 @@ export class DowntimeSchedule extends cdktf.TerraformResource {
       one_time_schedule: downtimeScheduleOneTimeScheduleToTerraform(this._oneTimeSchedule.internalValue),
       recurring_schedule: downtimeScheduleRecurringScheduleToTerraform(this._recurringSchedule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_timezone: {
+        value: cdktf.stringToHclTerraform(this._displayTimezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      message: {
+        value: cdktf.stringToHclTerraform(this._message),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mute_first_recovery_notification: {
+        value: cdktf.booleanToHclTerraform(this._muteFirstRecoveryNotification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      notify_end_states: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notifyEndStates),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      notify_end_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notifyEndTypes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      scope: {
+        value: cdktf.stringToHclTerraform(this._scope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      monitor_identifier: {
+        value: downtimeScheduleMonitorIdentifierToHclTerraform(this._monitorIdentifier.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DowntimeScheduleMonitorIdentifier",
+      },
+      one_time_schedule: {
+        value: downtimeScheduleOneTimeScheduleToHclTerraform(this._oneTimeSchedule.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DowntimeScheduleOneTimeSchedule",
+      },
+      recurring_schedule: {
+        value: downtimeScheduleRecurringScheduleToHclTerraform(this._recurringSchedule.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DowntimeScheduleRecurringSchedule",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

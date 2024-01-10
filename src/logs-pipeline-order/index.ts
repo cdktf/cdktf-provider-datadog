@@ -146,4 +146,30 @@ export class LogsPipelineOrder extends cdktf.TerraformResource {
       pipelines: cdktf.listMapper(cdktf.stringToTerraform, false)(this._pipelines),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipelines: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._pipelines),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

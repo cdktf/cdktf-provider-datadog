@@ -51,6 +51,31 @@ export function dashboardListDashItemToTerraform(struct?: DashboardListDashItem 
   }
 }
 
+
+export function dashboardListDashItemToHclTerraform(struct?: DashboardListDashItem | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dash_id: {
+      value: cdktf.stringToHclTerraform(struct!.dashId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DashboardListDashItemOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -250,5 +275,25 @@ export class DashboardList extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       dash_item: cdktf.listMapper(dashboardListDashItemToTerraform, true)(this._dashItem.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dash_item: {
+        value: cdktf.listMapperHcl(dashboardListDashItemToHclTerraform, true)(this._dashItem.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DashboardListDashItemList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

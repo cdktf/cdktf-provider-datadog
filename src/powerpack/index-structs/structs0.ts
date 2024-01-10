@@ -44,6 +44,43 @@ export function powerpackLayoutToTerraform(struct?: PowerpackLayoutOutputReferen
   }
 }
 
+
+export function powerpackLayoutToHclTerraform(struct?: PowerpackLayoutOutputReference | PowerpackLayout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    x: {
+      value: cdktf.numberToHclTerraform(struct!.x),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y: {
+      value: cdktf.numberToHclTerraform(struct!.y),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackLayoutOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -182,6 +219,31 @@ export function powerpackTemplateVariablesToTerraform(struct?: PowerpackTemplate
     defaults: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.defaults),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function powerpackTemplateVariablesToHclTerraform(struct?: PowerpackTemplateVariables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    defaults: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.defaults),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackTemplateVariablesOutputReference extends cdktf.ComplexObject {
@@ -335,6 +397,55 @@ export function powerpackWidgetAlertGraphDefinitionToTerraform(struct?: Powerpac
     title_size: cdktf.stringToTerraform(struct!.titleSize),
     viz_type: cdktf.stringToTerraform(struct!.vizType),
   }
+}
+
+
+export function powerpackWidgetAlertGraphDefinitionToHclTerraform(struct?: PowerpackWidgetAlertGraphDefinitionOutputReference | PowerpackWidgetAlertGraphDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alert_id: {
+      value: cdktf.stringToHclTerraform(struct!.alertId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    viz_type: {
+      value: cdktf.stringToHclTerraform(struct!.vizType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetAlertGraphDefinitionOutputReference extends cdktf.ComplexObject {
@@ -548,6 +659,61 @@ export function powerpackWidgetAlertValueDefinitionToTerraform(struct?: Powerpac
     title_size: cdktf.stringToTerraform(struct!.titleSize),
     unit: cdktf.stringToTerraform(struct!.unit),
   }
+}
+
+
+export function powerpackWidgetAlertValueDefinitionToHclTerraform(struct?: PowerpackWidgetAlertValueDefinitionOutputReference | PowerpackWidgetAlertValueDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alert_id: {
+      value: cdktf.stringToHclTerraform(struct!.alertId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    precision: {
+      value: cdktf.numberToHclTerraform(struct!.precision),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    text_align: {
+      value: cdktf.stringToHclTerraform(struct!.textAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetAlertValueDefinitionOutputReference extends cdktf.ComplexObject {
@@ -767,6 +933,43 @@ export function powerpackWidgetChangeDefinitionCustomLinkToTerraform(struct?: Po
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetChangeDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_hidden: {
+      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    label: {
+      value: cdktf.stringToHclTerraform(struct!.label),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    link: {
+      value: cdktf.stringToHclTerraform(struct!.link),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override_label: {
+      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -946,6 +1149,37 @@ export function powerpackWidgetChangeDefinitionRequestApmQueryComputeQueryToTerr
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetChangeDefinitionRequestApmQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1068,6 +1302,37 @@ export function powerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryTo
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1185,6 +1450,37 @@ export function powerpackWidgetChangeDefinitionRequestApmQueryGroupByToTerraform
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestApmQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -1342,6 +1638,37 @@ export function powerpackWidgetChangeDefinitionRequestApmQueryMultiComputeToTerr
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -1510,6 +1837,49 @@ export function powerpackWidgetChangeDefinitionRequestApmQueryToTerraform(struct
     group_by: cdktf.listMapper(powerpackWidgetChangeDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(powerpackWidgetChangeDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestApmQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestApmQueryOutputReference | PowerpackWidgetChangeDefinitionRequestApmQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetChangeDefinitionRequestApmQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestApmQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestApmQueryOutputReference extends cdktf.ComplexObject {
@@ -1718,6 +2088,73 @@ export function powerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsT
     timeframe: cdktf.stringToTerraform(struct!.timeframe),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparator: {
+      value: cdktf.stringToHclTerraform(struct!.comparator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_bg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_fg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hide_value: {
+      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    image_url: {
+      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeframe: {
+      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
@@ -1993,6 +2430,31 @@ export function powerpackWidgetChangeDefinitionRequestFormulaLimitToTerraform(st
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestFormulaLimitToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetChangeDefinitionRequestFormulaLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2087,6 +2549,31 @@ export function powerpackWidgetChangeDefinitionRequestFormulaStyleToTerraform(st
     palette: cdktf.stringToTerraform(struct!.palette),
     palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestFormulaStyleToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestFormulaStyleOutputReference | PowerpackWidgetChangeDefinitionRequestFormulaStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette_index: {
+      value: cdktf.numberToHclTerraform(struct!.paletteIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
@@ -2211,6 +2698,55 @@ export function powerpackWidgetChangeDefinitionRequestFormulaToTerraform(struct?
     limit: powerpackWidgetChangeDefinitionRequestFormulaLimitToTerraform(struct!.limit),
     style: powerpackWidgetChangeDefinitionRequestFormulaStyleToTerraform(struct!.style),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestFormulaToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alias: {
+      value: cdktf.stringToHclTerraform(struct!.alias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cell_display_mode: {
+      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    formula_expression: {
+      value: cdktf.stringToHclTerraform(struct!.formulaExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conditional_formats: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList",
+    },
+    limit: {
+      value: powerpackWidgetChangeDefinitionRequestFormulaLimitToHclTerraform(struct!.limit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestFormulaLimitList",
+    },
+    style: {
+      value: powerpackWidgetChangeDefinitionRequestFormulaStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestFormulaStyleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestFormulaOutputReference extends cdktf.ComplexObject {
@@ -2433,6 +2969,37 @@ export function powerpackWidgetChangeDefinitionRequestLogQueryComputeQueryToTerr
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2555,6 +3122,37 @@ export function powerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryTo
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2672,6 +3270,37 @@ export function powerpackWidgetChangeDefinitionRequestLogQueryGroupByToTerraform
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -2829,6 +3458,37 @@ export function powerpackWidgetChangeDefinitionRequestLogQueryMultiComputeToTerr
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -2997,6 +3657,49 @@ export function powerpackWidgetChangeDefinitionRequestLogQueryToTerraform(struct
     group_by: cdktf.listMapper(powerpackWidgetChangeDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(powerpackWidgetChangeDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestLogQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference | PowerpackWidgetChangeDefinitionRequestLogQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetChangeDefinitionRequestLogQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestLogQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference extends cdktf.ComplexObject {
@@ -3170,6 +3873,43 @@ export function powerpackWidgetChangeDefinitionRequestProcessQueryToTerraform(st
     metric: cdktf.stringToTerraform(struct!.metric),
     search_by: cdktf.stringToTerraform(struct!.searchBy),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestProcessQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestProcessQueryOutputReference | PowerpackWidgetChangeDefinitionRequestProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_by: {
+      value: cdktf.stringToHclTerraform(struct!.searchBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestProcessQueryOutputReference extends cdktf.ComplexObject {
@@ -3363,6 +4103,79 @@ export function powerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQue
     service: cdktf.stringToTerraform(struct!.service),
     stat: cdktf.stringToTerraform(struct!.stat),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference | PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_upstream: {
+      value: cdktf.booleanToHclTerraform(struct!.isUpstream),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
@@ -3672,6 +4485,79 @@ export function powerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference | PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3936,6 +4822,37 @@ export function powerpackWidgetChangeDefinitionRequestQueryEventQueryComputeToTe
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4090,6 +5007,37 @@ export function powerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySort
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference | PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySort): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4210,6 +5158,37 @@ export function powerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByToTe
     limit: cdktf.numberToTerraform(struct!.limit),
     sort: powerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct!.sort),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort: {
+      value: powerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct!.sort),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -4352,6 +5331,25 @@ export function powerpackWidgetChangeDefinitionRequestQueryEventQuerySearchToTer
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference | PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4456,6 +5454,61 @@ export function powerpackWidgetChangeDefinitionRequestQueryEventQueryToTerraform
     group_by: cdktf.listMapper(powerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: powerpackWidgetChangeDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestQueryEventQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference | PowerpackWidgetChangeDefinitionRequestQueryEventQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    indexes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage: {
+      value: cdktf.stringToHclTerraform(struct!.storage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList",
+    },
+    search: {
+      value: powerpackWidgetChangeDefinitionRequestQueryEventQuerySearchToHclTerraform(struct!.search),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference extends cdktf.ComplexObject {
@@ -4669,6 +5722,43 @@ export function powerpackWidgetChangeDefinitionRequestQueryMetricQueryToTerrafor
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestQueryMetricQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQueryMetricQueryOutputReference | PowerpackWidgetChangeDefinitionRequestQueryMetricQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestQueryMetricQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4850,6 +5940,73 @@ export function powerpackWidgetChangeDefinitionRequestQueryProcessQueryToTerrafo
     tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
     text_filter: cdktf.stringToTerraform(struct!.textFilter),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestQueryProcessQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQueryProcessQueryOutputReference | PowerpackWidgetChangeDefinitionRequestQueryProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_normalized_cpu: {
+      value: cdktf.booleanToHclTerraform(struct!.isNormalizedCpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sort: {
+      value: cdktf.stringToHclTerraform(struct!.sort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_filters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagFilters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    text_filter: {
+      value: cdktf.stringToHclTerraform(struct!.textFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestQueryProcessQueryOutputReference extends cdktf.ComplexObject {
@@ -5128,6 +6285,61 @@ export function powerpackWidgetChangeDefinitionRequestQuerySloQueryToTerraform(s
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestQuerySloQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQuerySloQueryOutputReference | PowerpackWidgetChangeDefinitionRequestQuerySloQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_query_filters: {
+      value: cdktf.stringToHclTerraform(struct!.additionalQueryFilters),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_mode: {
+      value: cdktf.stringToHclTerraform(struct!.groupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    measure: {
+      value: cdktf.stringToHclTerraform(struct!.measure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_id: {
+      value: cdktf.stringToHclTerraform(struct!.sloId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_query_type: {
+      value: cdktf.stringToHclTerraform(struct!.sloQueryType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestQuerySloQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5353,6 +6565,55 @@ export function powerpackWidgetChangeDefinitionRequestQueryToTerraform(struct?: 
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    apm_dependency_stats_query: {
+      value: powerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct!.apmDependencyStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryList",
+    },
+    apm_resource_stats_query: {
+      value: powerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct!.apmResourceStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryList",
+    },
+    event_query: {
+      value: powerpackWidgetChangeDefinitionRequestQueryEventQueryToHclTerraform(struct!.eventQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryEventQueryList",
+    },
+    metric_query: {
+      value: powerpackWidgetChangeDefinitionRequestQueryMetricQueryToHclTerraform(struct!.metricQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryMetricQueryList",
+    },
+    process_query: {
+      value: powerpackWidgetChangeDefinitionRequestQueryProcessQueryToHclTerraform(struct!.processQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryProcessQueryList",
+    },
+    slo_query: {
+      value: powerpackWidgetChangeDefinitionRequestQuerySloQueryToHclTerraform(struct!.sloQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQuerySloQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -5576,6 +6837,37 @@ export function powerpackWidgetChangeDefinitionRequestRumQueryComputeQueryToTerr
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference | PowerpackWidgetChangeDefinitionRequestRumQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5698,6 +6990,37 @@ export function powerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryTo
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference | PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5815,6 +7138,37 @@ export function powerpackWidgetChangeDefinitionRequestRumQueryGroupByToTerraform
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestRumQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -5972,6 +7326,37 @@ export function powerpackWidgetChangeDefinitionRequestRumQueryMultiComputeToTerr
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -6142,6 +7527,49 @@ export function powerpackWidgetChangeDefinitionRequestRumQueryToTerraform(struct
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestRumQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestRumQueryOutputReference | PowerpackWidgetChangeDefinitionRequestRumQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetChangeDefinitionRequestRumQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestRumQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestRumQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6308,6 +7736,37 @@ export function powerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryT
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference | PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6430,6 +7889,37 @@ export function powerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQu
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6547,6 +8037,37 @@ export function powerpackWidgetChangeDefinitionRequestSecurityQueryGroupByToTerr
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -6704,6 +8225,37 @@ export function powerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeT
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -6872,6 +8424,49 @@ export function powerpackWidgetChangeDefinitionRequestSecurityQueryToTerraform(s
     group_by: cdktf.listMapper(powerpackWidgetChangeDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(powerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestSecurityQueryToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequestSecurityQueryOutputReference | PowerpackWidgetChangeDefinitionRequestSecurityQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestSecurityQueryOutputReference extends cdktf.ComplexObject {
@@ -7115,6 +8710,103 @@ export function powerpackWidgetChangeDefinitionRequestToTerraform(struct?: Power
     rum_query: powerpackWidgetChangeDefinitionRequestRumQueryToTerraform(struct!.rumQuery),
     security_query: powerpackWidgetChangeDefinitionRequestSecurityQueryToTerraform(struct!.securityQuery),
   }
+}
+
+
+export function powerpackWidgetChangeDefinitionRequestToHclTerraform(struct?: PowerpackWidgetChangeDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    change_type: {
+      value: cdktf.stringToHclTerraform(struct!.changeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compare_to: {
+      value: cdktf.stringToHclTerraform(struct!.compareTo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    increase_good: {
+      value: cdktf.booleanToHclTerraform(struct!.increaseGood),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    order_by: {
+      value: cdktf.stringToHclTerraform(struct!.orderBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order_dir: {
+      value: cdktf.stringToHclTerraform(struct!.orderDir),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    q: {
+      value: cdktf.stringToHclTerraform(struct!.q),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    show_present: {
+      value: cdktf.booleanToHclTerraform(struct!.showPresent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    apm_query: {
+      value: powerpackWidgetChangeDefinitionRequestApmQueryToHclTerraform(struct!.apmQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestApmQueryList",
+    },
+    formula: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestFormulaList",
+    },
+    log_query: {
+      value: powerpackWidgetChangeDefinitionRequestLogQueryToHclTerraform(struct!.logQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestLogQueryList",
+    },
+    process_query: {
+      value: powerpackWidgetChangeDefinitionRequestProcessQueryToHclTerraform(struct!.processQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestProcessQueryList",
+    },
+    query: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestQueryToHclTerraform, true)(struct!.query),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestQueryList",
+    },
+    rum_query: {
+      value: powerpackWidgetChangeDefinitionRequestRumQueryToHclTerraform(struct!.rumQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestRumQueryList",
+    },
+    security_query: {
+      value: powerpackWidgetChangeDefinitionRequestSecurityQueryToHclTerraform(struct!.securityQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestSecurityQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetChangeDefinitionRequestOutputReference extends cdktf.ComplexObject {
@@ -7537,6 +9229,55 @@ export function powerpackWidgetChangeDefinitionToTerraform(struct?: PowerpackWid
   }
 }
 
+
+export function powerpackWidgetChangeDefinitionToHclTerraform(struct?: PowerpackWidgetChangeDefinitionOutputReference | PowerpackWidgetChangeDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_link: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionCustomLinkList",
+    },
+    request: {
+      value: cdktf.listMapperHcl(powerpackWidgetChangeDefinitionRequestToHclTerraform, true)(struct!.request),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetChangeDefinitionRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetChangeDefinitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7768,6 +9509,73 @@ export function powerpackWidgetCheckStatusDefinitionToTerraform(struct?: Powerpa
     title_align: cdktf.stringToTerraform(struct!.titleAlign),
     title_size: cdktf.stringToTerraform(struct!.titleSize),
   }
+}
+
+
+export function powerpackWidgetCheckStatusDefinitionToHclTerraform(struct?: PowerpackWidgetCheckStatusDefinitionOutputReference | PowerpackWidgetCheckStatusDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    check: {
+      value: cdktf.stringToHclTerraform(struct!.check),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group: {
+      value: cdktf.stringToHclTerraform(struct!.group),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    grouping: {
+      value: cdktf.stringToHclTerraform(struct!.grouping),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetCheckStatusDefinitionOutputReference extends cdktf.ComplexObject {
@@ -8021,6 +9829,37 @@ export function powerpackWidgetDistributionDefinitionRequestApmQueryComputeQuery
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8143,6 +9982,37 @@ export function powerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQ
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8260,6 +10130,37 @@ export function powerpackWidgetDistributionDefinitionRequestApmQueryGroupByToTer
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -8417,6 +10318,37 @@ export function powerpackWidgetDistributionDefinitionRequestApmQueryMultiCompute
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -8585,6 +10517,49 @@ export function powerpackWidgetDistributionDefinitionRequestApmQueryToTerraform(
     group_by: cdktf.listMapper(powerpackWidgetDistributionDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(powerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestApmQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestApmQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestApmQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestApmQueryOutputReference extends cdktf.ComplexObject {
@@ -8758,6 +10733,43 @@ export function powerpackWidgetDistributionDefinitionRequestApmStatsQueryColumns
     name: cdktf.stringToTerraform(struct!.name),
     order: cdktf.stringToTerraform(struct!.order),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alias: {
+      value: cdktf.stringToHclTerraform(struct!.alias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cell_display_mode: {
+      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference extends cdktf.ComplexObject {
@@ -8964,6 +10976,61 @@ export function powerpackWidgetDistributionDefinitionRequestApmStatsQueryToTerra
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestApmStatsQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestApmStatsQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestApmStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource: {
+      value: cdktf.stringToHclTerraform(struct!.resource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    row_type: {
+      value: cdktf.stringToHclTerraform(struct!.rowType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    columns: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsToHclTerraform, true)(struct!.columns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestApmStatsQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9162,6 +11229,37 @@ export function powerpackWidgetDistributionDefinitionRequestLogQueryComputeQuery
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9284,6 +11382,37 @@ export function powerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQ
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9401,6 +11530,37 @@ export function powerpackWidgetDistributionDefinitionRequestLogQueryGroupByToTer
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -9558,6 +11718,37 @@ export function powerpackWidgetDistributionDefinitionRequestLogQueryMultiCompute
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -9726,6 +11917,49 @@ export function powerpackWidgetDistributionDefinitionRequestLogQueryToTerraform(
     group_by: cdktf.listMapper(powerpackWidgetDistributionDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(powerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestLogQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestLogQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestLogQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestLogQueryOutputReference extends cdktf.ComplexObject {
@@ -9901,6 +12135,43 @@ export function powerpackWidgetDistributionDefinitionRequestProcessQueryToTerraf
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestProcessQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestProcessQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_by: {
+      value: cdktf.stringToHclTerraform(struct!.searchBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestProcessQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10045,6 +12316,37 @@ export function powerpackWidgetDistributionDefinitionRequestRumQueryComputeQuery
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10167,6 +12469,37 @@ export function powerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQ
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10284,6 +12617,37 @@ export function powerpackWidgetDistributionDefinitionRequestRumQueryGroupByToTer
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -10441,6 +12805,37 @@ export function powerpackWidgetDistributionDefinitionRequestRumQueryMultiCompute
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -10611,6 +13006,49 @@ export function powerpackWidgetDistributionDefinitionRequestRumQueryToTerraform(
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestRumQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestRumQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestRumQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestRumQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10777,6 +13215,37 @@ export function powerpackWidgetDistributionDefinitionRequestSecurityQueryCompute
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10899,6 +13368,37 @@ export function powerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBy
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11016,6 +13516,37 @@ export function powerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBy
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -11173,6 +13704,37 @@ export function powerpackWidgetDistributionDefinitionRequestSecurityQueryMultiCo
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -11343,6 +13905,49 @@ export function powerpackWidgetDistributionDefinitionRequestSecurityQueryToTerra
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestSecurityQueryToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestSecurityQueryOutputReference | PowerpackWidgetDistributionDefinitionRequestSecurityQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestSecurityQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11495,6 +14100,25 @@ export function powerpackWidgetDistributionDefinitionRequestStyleToTerraform(str
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionRequestStyleToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequestStyleOutputReference | PowerpackWidgetDistributionDefinitionRequestStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionRequestStyleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11609,6 +14233,67 @@ export function powerpackWidgetDistributionDefinitionRequestToTerraform(struct?:
     security_query: powerpackWidgetDistributionDefinitionRequestSecurityQueryToTerraform(struct!.securityQuery),
     style: powerpackWidgetDistributionDefinitionRequestStyleToTerraform(struct!.style),
   }
+}
+
+
+export function powerpackWidgetDistributionDefinitionRequestToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    q: {
+      value: cdktf.stringToHclTerraform(struct!.q),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    apm_query: {
+      value: powerpackWidgetDistributionDefinitionRequestApmQueryToHclTerraform(struct!.apmQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestApmQueryList",
+    },
+    apm_stats_query: {
+      value: powerpackWidgetDistributionDefinitionRequestApmStatsQueryToHclTerraform(struct!.apmStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestApmStatsQueryList",
+    },
+    log_query: {
+      value: powerpackWidgetDistributionDefinitionRequestLogQueryToHclTerraform(struct!.logQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestLogQueryList",
+    },
+    process_query: {
+      value: powerpackWidgetDistributionDefinitionRequestProcessQueryToHclTerraform(struct!.processQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestProcessQueryList",
+    },
+    rum_query: {
+      value: powerpackWidgetDistributionDefinitionRequestRumQueryToHclTerraform(struct!.rumQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestRumQueryList",
+    },
+    security_query: {
+      value: powerpackWidgetDistributionDefinitionRequestSecurityQueryToHclTerraform(struct!.securityQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestSecurityQueryList",
+    },
+    style: {
+      value: powerpackWidgetDistributionDefinitionRequestStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestStyleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetDistributionDefinitionRequestOutputReference extends cdktf.ComplexObject {
@@ -11906,6 +14591,61 @@ export function powerpackWidgetDistributionDefinitionToTerraform(struct?: Powerp
   }
 }
 
+
+export function powerpackWidgetDistributionDefinitionToHclTerraform(struct?: PowerpackWidgetDistributionDefinitionOutputReference | PowerpackWidgetDistributionDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    legend_size: {
+      value: cdktf.stringToHclTerraform(struct!.legendSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    show_legend: {
+      value: cdktf.booleanToHclTerraform(struct!.showLegend),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request: {
+      value: cdktf.listMapperHcl(powerpackWidgetDistributionDefinitionRequestToHclTerraform, true)(struct!.request),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetDistributionDefinitionRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetDistributionDefinitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -12147,6 +14887,61 @@ export function powerpackWidgetEventStreamDefinitionToTerraform(struct?: Powerpa
   }
 }
 
+
+export function powerpackWidgetEventStreamDefinitionToHclTerraform(struct?: PowerpackWidgetEventStreamDefinitionOutputReference | PowerpackWidgetEventStreamDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_size: {
+      value: cdktf.stringToHclTerraform(struct!.eventSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags_execution: {
+      value: cdktf.stringToHclTerraform(struct!.tagsExecution),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetEventStreamDefinitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -12378,6 +15173,55 @@ export function powerpackWidgetEventTimelineDefinitionToTerraform(struct?: Power
   }
 }
 
+
+export function powerpackWidgetEventTimelineDefinitionToHclTerraform(struct?: PowerpackWidgetEventTimelineDefinitionOutputReference | PowerpackWidgetEventTimelineDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags_execution: {
+      value: cdktf.stringToHclTerraform(struct!.tagsExecution),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetEventTimelineDefinitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -12573,6 +15417,43 @@ export function powerpackWidgetFreeTextDefinitionToTerraform(struct?: PowerpackW
   }
 }
 
+
+export function powerpackWidgetFreeTextDefinitionToHclTerraform(struct?: PowerpackWidgetFreeTextDefinitionOutputReference | PowerpackWidgetFreeTextDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    font_size: {
+      value: cdktf.stringToHclTerraform(struct!.fontSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text: {
+      value: cdktf.stringToHclTerraform(struct!.text),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text_align: {
+      value: cdktf.stringToHclTerraform(struct!.textAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetFreeTextDefinitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -12722,6 +15603,43 @@ export function powerpackWidgetGeomapDefinitionCustomLinkToTerraform(struct?: Po
     link: cdktf.stringToTerraform(struct!.link),
     override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_hidden: {
+      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    label: {
+      value: cdktf.stringToHclTerraform(struct!.label),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    link: {
+      value: cdktf.stringToHclTerraform(struct!.link),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override_label: {
+      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
@@ -12943,6 +15861,73 @@ export function powerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsT
     timeframe: cdktf.stringToTerraform(struct!.timeframe),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparator: {
+      value: cdktf.stringToHclTerraform(struct!.comparator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_bg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_fg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hide_value: {
+      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    image_url: {
+      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeframe: {
+      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
@@ -13218,6 +16203,31 @@ export function powerpackWidgetGeomapDefinitionRequestFormulaLimitToTerraform(st
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestFormulaLimitToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetGeomapDefinitionRequestFormulaLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -13312,6 +16322,31 @@ export function powerpackWidgetGeomapDefinitionRequestFormulaStyleToTerraform(st
     palette: cdktf.stringToTerraform(struct!.palette),
     palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestFormulaStyleToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestFormulaStyleOutputReference | PowerpackWidgetGeomapDefinitionRequestFormulaStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette_index: {
+      value: cdktf.numberToHclTerraform(struct!.paletteIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
@@ -13436,6 +16471,55 @@ export function powerpackWidgetGeomapDefinitionRequestFormulaToTerraform(struct?
     limit: powerpackWidgetGeomapDefinitionRequestFormulaLimitToTerraform(struct!.limit),
     style: powerpackWidgetGeomapDefinitionRequestFormulaStyleToTerraform(struct!.style),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestFormulaToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alias: {
+      value: cdktf.stringToHclTerraform(struct!.alias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cell_display_mode: {
+      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    formula_expression: {
+      value: cdktf.stringToHclTerraform(struct!.formulaExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conditional_formats: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList",
+    },
+    limit: {
+      value: powerpackWidgetGeomapDefinitionRequestFormulaLimitToHclTerraform(struct!.limit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestFormulaLimitList",
+    },
+    style: {
+      value: powerpackWidgetGeomapDefinitionRequestFormulaStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestFormulaStyleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference extends cdktf.ComplexObject {
@@ -13658,6 +16742,37 @@ export function powerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryToTerr
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -13780,6 +16895,37 @@ export function powerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryTo
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -13897,6 +17043,37 @@ export function powerpackWidgetGeomapDefinitionRequestLogQueryGroupByToTerraform
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -14054,6 +17231,37 @@ export function powerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeToTerr
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -14222,6 +17430,49 @@ export function powerpackWidgetGeomapDefinitionRequestLogQueryToTerraform(struct
     group_by: cdktf.listMapper(powerpackWidgetGeomapDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(powerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestLogQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestLogQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestLogQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestLogQueryOutputReference extends cdktf.ComplexObject {
@@ -14437,6 +17688,79 @@ export function powerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQue
     service: cdktf.stringToTerraform(struct!.service),
     stat: cdktf.stringToTerraform(struct!.stat),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_upstream: {
+      value: cdktf.booleanToHclTerraform(struct!.isUpstream),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
@@ -14746,6 +18070,79 @@ export function powerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    env: {
+      value: cdktf.stringToHclTerraform(struct!.env),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_name: {
+      value: cdktf.stringToHclTerraform(struct!.operationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stat: {
+      value: cdktf.stringToHclTerraform(struct!.stat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -15010,6 +18407,37 @@ export function powerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeToTe
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -15164,6 +18592,37 @@ export function powerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference | PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -15284,6 +18743,37 @@ export function powerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByToTe
     limit: cdktf.numberToTerraform(struct!.limit),
     sort: powerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct!.sort),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort: {
+      value: powerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct!.sort),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -15426,6 +18916,25 @@ export function powerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchToTer
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference | PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -15530,6 +19039,61 @@ export function powerpackWidgetGeomapDefinitionRequestQueryEventQueryToTerraform
     group_by: cdktf.listMapper(powerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: powerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestQueryEventQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestQueryEventQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    indexes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage: {
+      value: cdktf.stringToHclTerraform(struct!.storage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList",
+    },
+    search: {
+      value: powerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchToHclTerraform(struct!.search),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference extends cdktf.ComplexObject {
@@ -15743,6 +19307,43 @@ export function powerpackWidgetGeomapDefinitionRequestQueryMetricQueryToTerrafor
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestQueryMetricQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -15924,6 +19525,73 @@ export function powerpackWidgetGeomapDefinitionRequestQueryProcessQueryToTerrafo
     tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
     text_filter: cdktf.stringToTerraform(struct!.textFilter),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestQueryProcessQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregator: {
+      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_normalized_cpu: {
+      value: cdktf.booleanToHclTerraform(struct!.isNormalizedCpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sort: {
+      value: cdktf.stringToHclTerraform(struct!.sort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_filters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagFilters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    text_filter: {
+      value: cdktf.stringToHclTerraform(struct!.textFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference extends cdktf.ComplexObject {
@@ -16202,6 +19870,61 @@ export function powerpackWidgetGeomapDefinitionRequestQuerySloQueryToTerraform(s
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestQuerySloQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestQuerySloQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_query_filters: {
+      value: cdktf.stringToHclTerraform(struct!.additionalQueryFilters),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_source: {
+      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_mode: {
+      value: cdktf.stringToHclTerraform(struct!.groupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    measure: {
+      value: cdktf.stringToHclTerraform(struct!.measure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_id: {
+      value: cdktf.stringToHclTerraform(struct!.sloId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_query_type: {
+      value: cdktf.stringToHclTerraform(struct!.sloQueryType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -16427,6 +20150,55 @@ export function powerpackWidgetGeomapDefinitionRequestQueryToTerraform(struct?: 
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    apm_dependency_stats_query: {
+      value: powerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct!.apmDependencyStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryList",
+    },
+    apm_resource_stats_query: {
+      value: powerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct!.apmResourceStatsQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryList",
+    },
+    event_query: {
+      value: powerpackWidgetGeomapDefinitionRequestQueryEventQueryToHclTerraform(struct!.eventQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryEventQueryList",
+    },
+    metric_query: {
+      value: powerpackWidgetGeomapDefinitionRequestQueryMetricQueryToHclTerraform(struct!.metricQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryList",
+    },
+    process_query: {
+      value: powerpackWidgetGeomapDefinitionRequestQueryProcessQueryToHclTerraform(struct!.processQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryProcessQueryList",
+    },
+    slo_query: {
+      value: powerpackWidgetGeomapDefinitionRequestQuerySloQueryToHclTerraform(struct!.sloQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQuerySloQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -16650,6 +20422,37 @@ export function powerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryToTerr
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -16772,6 +20575,37 @@ export function powerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryTo
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -16889,6 +20723,37 @@ export function powerpackWidgetGeomapDefinitionRequestRumQueryGroupByToTerraform
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -17046,6 +20911,37 @@ export function powerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeToTerr
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -17214,6 +21110,49 @@ export function powerpackWidgetGeomapDefinitionRequestRumQueryToTerraform(struct
     group_by: cdktf.listMapper(powerpackWidgetGeomapDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(powerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestRumQueryToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequestRumQueryOutputReference | PowerpackWidgetGeomapDefinitionRequestRumQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestRumQueryOutputReference extends cdktf.ComplexObject {
@@ -17394,6 +21333,49 @@ export function powerpackWidgetGeomapDefinitionRequestToTerraform(struct?: Power
     query: cdktf.listMapper(powerpackWidgetGeomapDefinitionRequestQueryToTerraform, true)(struct!.query),
     rum_query: powerpackWidgetGeomapDefinitionRequestRumQueryToTerraform(struct!.rumQuery),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionRequestToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    q: {
+      value: cdktf.stringToHclTerraform(struct!.q),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    formula: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestFormulaList",
+    },
+    log_query: {
+      value: powerpackWidgetGeomapDefinitionRequestLogQueryToHclTerraform(struct!.logQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestLogQueryList",
+    },
+    query: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestQueryToHclTerraform, true)(struct!.query),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestQueryList",
+    },
+    rum_query: {
+      value: powerpackWidgetGeomapDefinitionRequestRumQueryToHclTerraform(struct!.rumQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestRumQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionRequestOutputReference extends cdktf.ComplexObject {
@@ -17590,6 +21572,31 @@ export function powerpackWidgetGeomapDefinitionStyleToTerraform(struct?: Powerpa
   }
 }
 
+
+export function powerpackWidgetGeomapDefinitionStyleToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionStyleOutputReference | PowerpackWidgetGeomapDefinitionStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette_flip: {
+      value: cdktf.booleanToHclTerraform(struct!.paletteFlip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetGeomapDefinitionStyleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -17671,6 +21678,25 @@ export function powerpackWidgetGeomapDefinitionViewToTerraform(struct?: Powerpac
   return {
     focus: cdktf.stringToTerraform(struct!.focus),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionViewToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionViewOutputReference | PowerpackWidgetGeomapDefinitionView): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    focus: {
+      value: cdktf.stringToHclTerraform(struct!.focus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionViewOutputReference extends cdktf.ComplexObject {
@@ -17784,6 +21810,67 @@ export function powerpackWidgetGeomapDefinitionToTerraform(struct?: PowerpackWid
     style: powerpackWidgetGeomapDefinitionStyleToTerraform(struct!.style),
     view: powerpackWidgetGeomapDefinitionViewToTerraform(struct!.view),
   }
+}
+
+
+export function powerpackWidgetGeomapDefinitionToHclTerraform(struct?: PowerpackWidgetGeomapDefinitionOutputReference | PowerpackWidgetGeomapDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    live_span: {
+      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_align: {
+      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title_size: {
+      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_link: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionCustomLinkList",
+    },
+    request: {
+      value: cdktf.listMapperHcl(powerpackWidgetGeomapDefinitionRequestToHclTerraform, true)(struct!.request),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionRequestList",
+    },
+    style: {
+      value: powerpackWidgetGeomapDefinitionStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionStyleList",
+    },
+    view: {
+      value: powerpackWidgetGeomapDefinitionViewToHclTerraform(struct!.view),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetGeomapDefinitionViewList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetGeomapDefinitionOutputReference extends cdktf.ComplexObject {
@@ -18025,6 +22112,43 @@ export function powerpackWidgetHeatmapDefinitionCustomLinkToTerraform(struct?: P
   }
 }
 
+
+export function powerpackWidgetHeatmapDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_hidden: {
+      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    label: {
+      value: cdktf.stringToHclTerraform(struct!.label),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    link: {
+      value: cdktf.stringToHclTerraform(struct!.link),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override_label: {
+      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -18197,6 +22321,31 @@ export function powerpackWidgetHeatmapDefinitionEventToTerraform(struct?: Powerp
   }
 }
 
+
+export function powerpackWidgetHeatmapDefinitionEventToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionEvent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    q: {
+      value: cdktf.stringToHclTerraform(struct!.q),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags_execution: {
+      value: cdktf.stringToHclTerraform(struct!.tagsExecution),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetHeatmapDefinitionEventOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -18329,6 +22478,37 @@ export function powerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryToTer
   }
 }
 
+
+export function powerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -18451,6 +22631,37 @@ export function powerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryT
   }
 }
 
+
+export function powerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -18568,6 +22779,37 @@ export function powerpackWidgetHeatmapDefinitionRequestApmQueryGroupByToTerrafor
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetHeatmapDefinitionRequestApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -18725,6 +22967,37 @@ export function powerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeToTer
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {
@@ -18893,6 +23166,49 @@ export function powerpackWidgetHeatmapDefinitionRequestApmQueryToTerraform(struc
     group_by: cdktf.listMapper(powerpackWidgetHeatmapDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
     multi_compute: cdktf.listMapper(powerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
+}
+
+
+export function powerpackWidgetHeatmapDefinitionRequestApmQueryToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestApmQueryOutputReference | PowerpackWidgetHeatmapDefinitionRequestApmQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search_query: {
+      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute_query: {
+      value: powerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryToHclTerraform(struct!.computeQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryList",
+    },
+    group_by: {
+      value: cdktf.listMapperHcl(powerpackWidgetHeatmapDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList",
+    },
+    multi_compute: {
+      value: cdktf.listMapperHcl(powerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetHeatmapDefinitionRequestApmQueryOutputReference extends cdktf.ComplexObject {
@@ -19101,6 +23417,73 @@ export function powerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormats
     timeframe: cdktf.stringToTerraform(struct!.timeframe),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function powerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparator: {
+      value: cdktf.stringToHclTerraform(struct!.comparator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_bg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_fg_color: {
+      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hide_value: {
+      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    image_url: {
+      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktf.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeframe: {
+      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
@@ -19376,6 +23759,31 @@ export function powerpackWidgetHeatmapDefinitionRequestFormulaLimitToTerraform(s
   }
 }
 
+
+export function powerpackWidgetHeatmapDefinitionRequestFormulaLimitToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetHeatmapDefinitionRequestFormulaLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -19470,6 +23878,31 @@ export function powerpackWidgetHeatmapDefinitionRequestFormulaStyleToTerraform(s
     palette: cdktf.stringToTerraform(struct!.palette),
     palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
   }
+}
+
+
+export function powerpackWidgetHeatmapDefinitionRequestFormulaStyleToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference | PowerpackWidgetHeatmapDefinitionRequestFormulaStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    palette: {
+      value: cdktf.stringToHclTerraform(struct!.palette),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    palette_index: {
+      value: cdktf.numberToHclTerraform(struct!.paletteIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
@@ -19594,6 +24027,55 @@ export function powerpackWidgetHeatmapDefinitionRequestFormulaToTerraform(struct
     limit: powerpackWidgetHeatmapDefinitionRequestFormulaLimitToTerraform(struct!.limit),
     style: powerpackWidgetHeatmapDefinitionRequestFormulaStyleToTerraform(struct!.style),
   }
+}
+
+
+export function powerpackWidgetHeatmapDefinitionRequestFormulaToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alias: {
+      value: cdktf.stringToHclTerraform(struct!.alias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cell_display_mode: {
+      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    formula_expression: {
+      value: cdktf.stringToHclTerraform(struct!.formulaExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conditional_formats: {
+      value: cdktf.listMapperHcl(powerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList",
+    },
+    limit: {
+      value: powerpackWidgetHeatmapDefinitionRequestFormulaLimitToHclTerraform(struct!.limit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetHeatmapDefinitionRequestFormulaLimitList",
+    },
+    style: {
+      value: powerpackWidgetHeatmapDefinitionRequestFormulaStyleToHclTerraform(struct!.style),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetHeatmapDefinitionRequestFormulaStyleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference extends cdktf.ComplexObject {
@@ -19816,6 +24298,37 @@ export function powerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryToTer
   }
 }
 
+
+export function powerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -19938,6 +24451,37 @@ export function powerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryT
   }
 }
 
+
+export function powerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -20055,6 +24599,37 @@ export function powerpackWidgetHeatmapDefinitionRequestLogQueryGroupByToTerrafor
     limit: cdktf.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
+}
+
+
+export function powerpackWidgetHeatmapDefinitionRequestLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sort_query: {
+      value: powerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
@@ -20212,6 +24787,37 @@ export function powerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeToTer
     facet: cdktf.stringToTerraform(struct!.facet),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function powerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet: {
+      value: cdktf.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {

@@ -178,4 +178,36 @@ export class DashboardJson extends cdktf.TerraformResource {
       url: cdktf.stringToTerraform(this._url),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      dashboard: {
+        value: cdktf.stringToHclTerraform(this._dashboard),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dashboard_lists: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._dashboardLists),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

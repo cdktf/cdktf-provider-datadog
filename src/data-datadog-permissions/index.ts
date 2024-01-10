@@ -134,4 +134,24 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
       include_restricted: cdktf.booleanToTerraform(this._includeRestricted),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_restricted: {
+        value: cdktf.booleanToHclTerraform(this._includeRestricted),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

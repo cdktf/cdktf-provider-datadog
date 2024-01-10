@@ -281,4 +281,66 @@ export class IntegrationGcp extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      automute: {
+        value: cdktf.booleanToHclTerraform(this._automute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      client_email: {
+        value: cdktf.stringToHclTerraform(this._clientEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cspm_resource_collection_enabled: {
+        value: cdktf.booleanToHclTerraform(this._cspmResourceCollectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      host_filters: {
+        value: cdktf.stringToHclTerraform(this._hostFilters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key: {
+        value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key_id: {
+        value: cdktf.stringToHclTerraform(this._privateKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

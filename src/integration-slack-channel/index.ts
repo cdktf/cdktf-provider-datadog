@@ -78,6 +78,43 @@ export function integrationSlackChannelDisplayToTerraform(struct?: IntegrationSl
   }
 }
 
+
+export function integrationSlackChannelDisplayToHclTerraform(struct?: IntegrationSlackChannelDisplayOutputReference | IntegrationSlackChannelDisplay): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    message: {
+      value: cdktf.booleanToHclTerraform(struct!.message),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    notified: {
+      value: cdktf.booleanToHclTerraform(struct!.notified),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    snapshot: {
+      value: cdktf.booleanToHclTerraform(struct!.snapshot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tags: {
+      value: cdktf.booleanToHclTerraform(struct!.tags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class IntegrationSlackChannelDisplayOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -320,5 +357,37 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       display: integrationSlackChannelDisplayToTerraform(this._display.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_name: {
+        value: cdktf.stringToHclTerraform(this._accountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      channel_name: {
+        value: cdktf.stringToHclTerraform(this._channelName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display: {
+        value: integrationSlackChannelDisplayToHclTerraform(this._display.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IntegrationSlackChannelDisplayList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -269,4 +269,60 @@ export class MetricMetadata extends cdktf.TerraformResource {
       unit: cdktf.stringToTerraform(this._unit),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric: {
+        value: cdktf.stringToHclTerraform(this._metric),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      per_unit: {
+        value: cdktf.stringToHclTerraform(this._perUnit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      short_name: {
+        value: cdktf.stringToHclTerraform(this._shortName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statsd_interval: {
+        value: cdktf.numberToHclTerraform(this._statsdInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unit: {
+        value: cdktf.stringToHclTerraform(this._unit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

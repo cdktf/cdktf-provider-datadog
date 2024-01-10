@@ -89,4 +89,10 @@ export class DataDatadogIntegrationAwsNamespaceRules extends cdktf.TerraformData
     return {
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+    };
+    return attrs;
+  }
 }

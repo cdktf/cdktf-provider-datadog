@@ -105,4 +105,18 @@ export class SensitiveDataScannerGroupOrder extends cdktf.TerraformResource {
       group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupIds),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

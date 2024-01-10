@@ -89,4 +89,10 @@ export class DataDatadogApmRetentionFiltersOrder extends cdktf.TerraformDataSour
     return {
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+    };
+    return attrs;
+  }
 }

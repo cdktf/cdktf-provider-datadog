@@ -43,6 +43,17 @@ export function dataDatadogTeamMembershipsTeamMembershipsToTerraform(struct?: Da
   }
 }
 
+
+export function dataDatadogTeamMembershipsTeamMembershipsToHclTerraform(struct?: DataDatadogTeamMembershipsTeamMemberships): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDatadogTeamMembershipsTeamMembershipsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -237,5 +248,31 @@ export class DataDatadogTeamMemberships extends cdktf.TerraformDataSource {
       filter_keyword: cdktf.stringToTerraform(this._filterKeyword),
       team_id: cdktf.stringToTerraform(this._teamId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      exact_match: {
+        value: cdktf.booleanToHclTerraform(this._exactMatch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      filter_keyword: {
+        value: cdktf.stringToHclTerraform(this._filterKeyword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_id: {
+        value: cdktf.stringToHclTerraform(this._teamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -316,4 +316,72 @@ export class IntegrationAzure extends cdktf.TerraformResource {
       tenant_name: cdktf.stringToTerraform(this._tenantName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_service_plan_filters: {
+        value: cdktf.stringToHclTerraform(this._appServicePlanFilters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      automute: {
+        value: cdktf.booleanToHclTerraform(this._automute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret: {
+        value: cdktf.stringToHclTerraform(this._clientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      container_app_filters: {
+        value: cdktf.stringToHclTerraform(this._containerAppFilters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cspm_enabled: {
+        value: cdktf.booleanToHclTerraform(this._cspmEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      custom_metrics_enabled: {
+        value: cdktf.booleanToHclTerraform(this._customMetricsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      host_filters: {
+        value: cdktf.stringToHclTerraform(this._hostFilters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_collection_enabled: {
+        value: cdktf.booleanToHclTerraform(this._resourceCollectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tenant_name: {
+        value: cdktf.stringToHclTerraform(this._tenantName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

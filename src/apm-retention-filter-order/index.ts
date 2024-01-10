@@ -105,4 +105,18 @@ export class ApmRetentionFilterOrder extends cdktf.TerraformResource {
       filter_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._filterIds),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      filter_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._filterIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

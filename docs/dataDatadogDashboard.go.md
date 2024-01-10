@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboard"
 
 datadatadogdashboard.NewDataDatadogDashboard(scope Construct, id *string, config DataDatadogDashboardConfig) DataDatadogDashboard
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboard"
 
 datadatadogdashboard.DataDatadogDashboard_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboard"
 
 datadatadogdashboard.DataDatadogDashboard_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datadatadogdashboard.DataDatadogDashboard_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboard"
 
 datadatadogdashboard.DataDatadogDashboard_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datadatadogdashboard.DataDatadogDashboard_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboard"
 
 datadatadogdashboard.DataDatadogDashboard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -607,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboard"
 
 &datadatadogdashboard.DataDatadogDashboardConfig {
 	Connection: interface{},

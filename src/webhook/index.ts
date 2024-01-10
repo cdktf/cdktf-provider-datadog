@@ -218,4 +218,48 @@ export class Webhook extends cdktf.TerraformResource {
       url: cdktf.stringToTerraform(this._url),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_headers: {
+        value: cdktf.stringToHclTerraform(this._customHeaders),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encode_as: {
+        value: cdktf.stringToHclTerraform(this._encodeAs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      payload: {
+        value: cdktf.stringToHclTerraform(this._payload),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
