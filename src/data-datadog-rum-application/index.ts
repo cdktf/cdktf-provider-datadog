@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/rum_application
 // generated from terraform resource schema
 
@@ -168,5 +163,31 @@ export class DataDatadogRumApplication extends cdktf.TerraformDataSource {
       name_filter: cdktf.stringToTerraform(this._nameFilter),
       type_filter: cdktf.stringToTerraform(this._typeFilter),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_filter: {
+        value: cdktf.stringToHclTerraform(this._nameFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type_filter: {
+        value: cdktf.stringToHclTerraform(this._typeFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

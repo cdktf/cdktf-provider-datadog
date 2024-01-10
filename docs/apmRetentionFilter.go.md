@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
 
 apmretentionfilter.NewApmRetentionFilter(scope Construct, id *string, config ApmRetentionFilterConfig) ApmRetentionFilter
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.toMetadata"></a>
 
@@ -391,7 +398,7 @@ func ResetFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
 
 apmretentionfilter.ApmRetentionFilter_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
 
 apmretentionfilter.ApmRetentionFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ apmretentionfilter.ApmRetentionFilter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
 
 apmretentionfilter.ApmRetentionFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ apmretentionfilter.ApmRetentionFilter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
 
 apmretentionfilter.ApmRetentionFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -801,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
 
 &apmretentionfilter.ApmRetentionFilterConfig {
 	Connection: interface{},
@@ -815,7 +822,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilte
 	FilterType: *string,
 	Name: *string,
 	Rate: *string,
-	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.apmRetentionFilter.ApmRetentionFilterFilter,
+	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog.apmRetentionFilter.ApmRetentionFilterFilter,
 }
 ```
 
@@ -983,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
 
 &apmretentionfilter.ApmRetentionFilterFilter {
 	Query: *string,
@@ -1019,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
 
 apmretentionfilter.NewApmRetentionFilterFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApmRetentionFilterFilterOutputReference
 ```

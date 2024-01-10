@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/security_monitoring_default_rule
 // generated from terraform resource schema
 
@@ -68,6 +63,31 @@ export function securityMonitoringDefaultRuleCaseToTerraform(struct?: SecurityMo
     notifications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notifications),
     status: cdktf.stringToTerraform(struct!.status),
   }
+}
+
+
+export function securityMonitoringDefaultRuleCaseToHclTerraform(struct?: SecurityMonitoringDefaultRuleCase | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    notifications: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notifications),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityMonitoringDefaultRuleCaseOutputReference extends cdktf.ComplexObject {
@@ -192,6 +212,31 @@ export function securityMonitoringDefaultRuleFilterToTerraform(struct?: Security
   }
 }
 
+
+export function securityMonitoringDefaultRuleFilterToHclTerraform(struct?: SecurityMonitoringDefaultRuleFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityMonitoringDefaultRuleFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -305,6 +350,25 @@ export function securityMonitoringDefaultRuleOptionsToTerraform(struct?: Securit
   return {
     decrease_criticality_based_on_env: cdktf.booleanToTerraform(struct!.decreaseCriticalityBasedOnEnv),
   }
+}
+
+
+export function securityMonitoringDefaultRuleOptionsToHclTerraform(struct?: SecurityMonitoringDefaultRuleOptionsOutputReference | SecurityMonitoringDefaultRuleOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    decrease_criticality_based_on_env: {
+      value: cdktf.booleanToHclTerraform(struct!.decreaseCriticalityBasedOnEnv),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityMonitoringDefaultRuleOptionsOutputReference extends cdktf.ComplexObject {
@@ -515,5 +579,43 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
       filter: cdktf.listMapper(securityMonitoringDefaultRuleFilterToTerraform, true)(this._filter.internalValue),
       options: securityMonitoringDefaultRuleOptionsToTerraform(this._options.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      case: {
+        value: cdktf.listMapperHcl(securityMonitoringDefaultRuleCaseToHclTerraform, true)(this._case.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringDefaultRuleCaseList",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(securityMonitoringDefaultRuleFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringDefaultRuleFilterList",
+      },
+      options: {
+        value: securityMonitoringDefaultRuleOptionsToHclTerraform(this._options.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringDefaultRuleOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

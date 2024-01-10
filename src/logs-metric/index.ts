@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_metric
 // generated from terraform resource schema
 
@@ -75,6 +70,37 @@ export function logsMetricComputeToTerraform(struct?: LogsMetricComputeOutputRef
     include_percentiles: cdktf.booleanToTerraform(struct!.includePercentiles),
     path: cdktf.stringToTerraform(struct!.path),
   }
+}
+
+
+export function logsMetricComputeToHclTerraform(struct?: LogsMetricComputeOutputReference | LogsMetricCompute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation_type: {
+      value: cdktf.stringToHclTerraform(struct!.aggregationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    include_percentiles: {
+      value: cdktf.booleanToHclTerraform(struct!.includePercentiles),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
@@ -185,6 +211,25 @@ export function logsMetricFilterToTerraform(struct?: LogsMetricFilterOutputRefer
   }
 }
 
+
+export function logsMetricFilterToHclTerraform(struct?: LogsMetricFilterOutputReference | LogsMetricFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsMetricFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -254,6 +299,31 @@ export function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy | cdktf.
     path: cdktf.stringToTerraform(struct!.path),
     tag_name: cdktf.stringToTerraform(struct!.tagName),
   }
+}
+
+
+export function logsMetricGroupByToHclTerraform(struct?: LogsMetricGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_name: {
+      value: cdktf.stringToHclTerraform(struct!.tagName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsMetricGroupByOutputReference extends cdktf.ComplexObject {
@@ -498,5 +568,43 @@ export class LogsMetric extends cdktf.TerraformResource {
       filter: logsMetricFilterToTerraform(this._filter.internalValue),
       group_by: cdktf.listMapper(logsMetricGroupByToTerraform, true)(this._groupBy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compute: {
+        value: logsMetricComputeToHclTerraform(this._compute.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LogsMetricComputeList",
+      },
+      filter: {
+        value: logsMetricFilterToHclTerraform(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LogsMetricFilterList",
+      },
+      group_by: {
+        value: cdktf.listMapperHcl(logsMetricGroupByToHclTerraform, true)(this._groupBy.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LogsMetricGroupByList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/synthetics_test
 // generated from terraform resource schema
 
@@ -139,5 +134,25 @@ export class DataDatadogSyntheticsTest extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       test_id: cdktf.stringToTerraform(this._testId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      test_id: {
+        value: cdktf.stringToHclTerraform(this._testId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

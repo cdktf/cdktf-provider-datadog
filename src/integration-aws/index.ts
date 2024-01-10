@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_aws
 // generated from terraform resource schema
 
@@ -372,5 +367,85 @@ export class IntegrationAws extends cdktf.TerraformResource {
       role_name: cdktf.stringToTerraform(this._roleName),
       secret_access_key: cdktf.stringToTerraform(this._secretAccessKey),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_key_id: {
+        value: cdktf.stringToHclTerraform(this._accessKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_specific_namespace_rules: {
+        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._accountSpecificNamespaceRules),
+        isBlock: false,
+        type: "map",
+        storageClassType: "booleanMap",
+      },
+      cspm_resource_collection_enabled: {
+        value: cdktf.stringToHclTerraform(this._cspmResourceCollectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      excluded_regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedRegions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      filter_tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._filterTags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      host_tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostTags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metrics_collection_enabled: {
+        value: cdktf.stringToHclTerraform(this._metricsCollectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_collection_enabled: {
+        value: cdktf.stringToHclTerraform(this._resourceCollectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_access_key: {
+        value: cdktf.stringToHclTerraform(this._secretAccessKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

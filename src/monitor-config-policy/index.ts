@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/monitor_config_policy
 // generated from terraform resource schema
 
@@ -63,6 +58,37 @@ export function monitorConfigPolicyTagPolicyToTerraform(struct?: MonitorConfigPo
     tag_key_required: cdktf.booleanToTerraform(struct!.tagKeyRequired),
     valid_tag_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.validTagValues),
   }
+}
+
+
+export function monitorConfigPolicyTagPolicyToHclTerraform(struct?: MonitorConfigPolicyTagPolicyOutputReference | MonitorConfigPolicyTagPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_key_required: {
+      value: cdktf.booleanToHclTerraform(struct!.tagKeyRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    valid_tag_values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.validTagValues),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MonitorConfigPolicyTagPolicyOutputReference extends cdktf.ComplexObject {
@@ -264,5 +290,31 @@ export class MonitorConfigPolicy extends cdktf.TerraformResource {
       policy_type: cdktf.stringToTerraform(this._policyType),
       tag_policy: monitorConfigPolicyTagPolicyToTerraform(this._tagPolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_type: {
+        value: cdktf.stringToHclTerraform(this._policyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_policy: {
+        value: monitorConfigPolicyTagPolicyToHclTerraform(this._tagPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MonitorConfigPolicyTagPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

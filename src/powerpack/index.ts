@@ -1,18 +1,16 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // generated from terraform resource schema
 
 import { PowerpackLayout, 
 powerpackLayoutToTerraform, 
+powerpackLayoutToHclTerraform, 
 PowerpackLayoutOutputReference, 
 PowerpackTemplateVariables, 
 powerpackTemplateVariablesToTerraform, 
+powerpackTemplateVariablesToHclTerraform, 
 PowerpackTemplateVariablesList, 
 PowerpackWidget, 
 powerpackWidgetToTerraform, 
+powerpackWidgetToHclTerraform, 
 PowerpackWidgetList} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
@@ -301,5 +299,67 @@ export class Powerpack extends cdktf.TerraformResource {
       template_variables: cdktf.listMapper(powerpackTemplateVariablesToTerraform, true)(this._templateVariables.internalValue),
       widget: cdktf.listMapper(powerpackWidgetToTerraform, true)(this._widget.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      live_span: {
+        value: cdktf.stringToHclTerraform(this._liveSpan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      show_title: {
+        value: cdktf.booleanToHclTerraform(this._showTitle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      layout: {
+        value: powerpackLayoutToHclTerraform(this._layout.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PowerpackLayoutList",
+      },
+      template_variables: {
+        value: cdktf.listMapperHcl(powerpackTemplateVariablesToHclTerraform, true)(this._templateVariables.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PowerpackTemplateVariablesList",
+      },
+      widget: {
+        value: cdktf.listMapperHcl(powerpackWidgetToHclTerraform, true)(this._widget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PowerpackWidgetList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

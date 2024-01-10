@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.NewIntegrationAws(scope Construct, id *string, config IntegrationAwsConfig) IntegrationAws
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -136,6 +137,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.toMetadata"></a>
 
@@ -455,7 +462,7 @@ func ResetSecretAccessKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.IntegrationAws_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.IntegrationAws_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +508,7 @@ integrationaws.IntegrationAws_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.IntegrationAws_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +522,7 @@ integrationaws.IntegrationAws_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.IntegrationAws_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1019,7 +1026,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 &integrationaws.IntegrationAwsConfig {
 	Connection: interface{},

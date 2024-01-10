@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/sensitive_data_scanner_group_order
 // generated from terraform resource schema
 
@@ -104,5 +99,19 @@ export class SensitiveDataScannerGroupOrder extends cdktf.TerraformResource {
     return {
       group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupIds),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

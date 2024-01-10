@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/child_organization
 // generated from terraform resource schema
 
@@ -36,6 +31,17 @@ export function childOrganizationApiKeyToTerraform(struct?: ChildOrganizationApi
   }
   return {
   }
+}
+
+
+export function childOrganizationApiKeyToHclTerraform(struct?: ChildOrganizationApiKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ChildOrganizationApiKeyOutputReference extends cdktf.ComplexObject {
@@ -105,6 +111,17 @@ export function childOrganizationApplicationKeyToTerraform(struct?: ChildOrganiz
   }
   return {
   }
+}
+
+
+export function childOrganizationApplicationKeyToHclTerraform(struct?: ChildOrganizationApplicationKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ChildOrganizationApplicationKeyOutputReference extends cdktf.ComplexObject {
@@ -181,6 +198,17 @@ export function childOrganizationSettingsSamlToTerraform(struct?: ChildOrganizat
   }
 }
 
+
+export function childOrganizationSettingsSamlToHclTerraform(struct?: ChildOrganizationSettingsSaml): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ChildOrganizationSettingsSamlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -243,6 +271,17 @@ export function childOrganizationSettingsSamlAutocreateUsersDomainsToTerraform(s
   }
   return {
   }
+}
+
+
+export function childOrganizationSettingsSamlAutocreateUsersDomainsToHclTerraform(struct?: ChildOrganizationSettingsSamlAutocreateUsersDomains): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference extends cdktf.ComplexObject {
@@ -314,6 +353,17 @@ export function childOrganizationSettingsSamlIdpInitiatedLoginToTerraform(struct
   }
 }
 
+
+export function childOrganizationSettingsSamlIdpInitiatedLoginToHclTerraform(struct?: ChildOrganizationSettingsSamlIdpInitiatedLogin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -378,6 +428,17 @@ export function childOrganizationSettingsSamlStrictModeToTerraform(struct?: Chil
   }
 }
 
+
+export function childOrganizationSettingsSamlStrictModeToHclTerraform(struct?: ChildOrganizationSettingsSamlStrictMode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ChildOrganizationSettingsSamlStrictModeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -440,6 +501,17 @@ export function childOrganizationSettingsToTerraform(struct?: ChildOrganizationS
   }
   return {
   }
+}
+
+
+export function childOrganizationSettingsToHclTerraform(struct?: ChildOrganizationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ChildOrganizationSettingsOutputReference extends cdktf.ComplexObject {
@@ -553,6 +625,17 @@ export function childOrganizationUserToTerraform(struct?: ChildOrganizationUser)
   }
   return {
   }
+}
+
+
+export function childOrganizationUserToHclTerraform(struct?: ChildOrganizationUser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ChildOrganizationUserOutputReference extends cdktf.ComplexObject {
@@ -749,5 +832,25 @@ export class ChildOrganization extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_gcp_sts
 // generated from terraform resource schema
 
@@ -181,5 +176,37 @@ export class IntegrationGcpSts extends cdktf.TerraformResource {
       host_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostFilters),
       is_cspm_enabled: cdktf.booleanToTerraform(this._isCspmEnabled),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      automute: {
+        value: cdktf.booleanToHclTerraform(this._automute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      client_email: {
+        value: cdktf.stringToHclTerraform(this._clientEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_filters: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostFilters),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      is_cspm_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isCspmEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

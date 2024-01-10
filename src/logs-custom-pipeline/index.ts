@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_custom_pipeline
 // generated from terraform resource schema
 
@@ -57,6 +52,25 @@ export function logsCustomPipelineFilterToTerraform(struct?: LogsCustomPipelineF
   return {
     query: cdktf.stringToTerraform(struct!.query),
   }
+}
+
+
+export function logsCustomPipelineFilterToHclTerraform(struct?: LogsCustomPipelineFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineFilterOutputReference extends cdktf.ComplexObject {
@@ -181,6 +195,49 @@ export function logsCustomPipelineProcessorArithmeticProcessorToTerraform(struct
     name: cdktf.stringToTerraform(struct!.name),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorArithmeticProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorArithmeticProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_replace_missing: {
+      value: cdktf.booleanToHclTerraform(struct!.isReplaceMissing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference extends cdktf.ComplexObject {
@@ -386,6 +443,73 @@ export function logsCustomPipelineProcessorAttributeRemapperToTerraform(struct?:
     target_format: cdktf.stringToTerraform(struct!.targetFormat),
     target_type: cdktf.stringToTerraform(struct!.targetType),
   }
+}
+
+
+export function logsCustomPipelineProcessorAttributeRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorAttributeRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override_on_conflict: {
+      value: cdktf.booleanToHclTerraform(struct!.overrideOnConflict),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    preserve_source: {
+      value: cdktf.booleanToHclTerraform(struct!.preserveSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    source_type: {
+      value: cdktf.stringToHclTerraform(struct!.sourceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_format: {
+      value: cdktf.stringToHclTerraform(struct!.targetFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_type: {
+      value: cdktf.stringToHclTerraform(struct!.targetType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends cdktf.ComplexObject {
@@ -619,6 +743,25 @@ export function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToTerr
   }
 }
 
+
+export function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorCategoryProcessorCategoryFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -686,6 +829,31 @@ export function logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform(
     name: cdktf.stringToTerraform(struct!.name),
     filter: logsCustomPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct!.filter),
   }
+}
+
+
+export function logsCustomPipelineProcessorCategoryProcessorCategoryToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter: {
+      value: logsCustomPipelineProcessorCategoryProcessorCategoryFilterToHclTerraform(struct!.filter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorCategoryProcessorCategoryFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference extends cdktf.ComplexObject {
@@ -822,6 +990,43 @@ export function logsCustomPipelineProcessorCategoryProcessorToTerraform(struct?:
     target: cdktf.stringToTerraform(struct!.target),
     category: cdktf.listMapper(logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform, true)(struct!.category),
   }
+}
+
+
+export function logsCustomPipelineProcessorCategoryProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorCategoryProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    category: {
+      value: cdktf.listMapperHcl(logsCustomPipelineProcessorCategoryProcessorCategoryToHclTerraform, true)(struct!.category),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorCategoryProcessorCategoryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends cdktf.ComplexObject {
@@ -965,6 +1170,37 @@ export function logsCustomPipelineProcessorDateRemapperToTerraform(struct?: Logs
   }
 }
 
+
+export function logsCustomPipelineProcessorDateRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorDateRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1092,6 +1328,43 @@ export function logsCustomPipelineProcessorGeoIpParserToTerraform(struct?: LogsC
     sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorGeoIpParserToHclTerraform(struct?: LogsCustomPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorGeoIpParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf.ComplexObject {
@@ -1228,6 +1501,31 @@ export function logsCustomPipelineProcessorGrokParserGrokToTerraform(struct?: Lo
   }
 }
 
+
+export function logsCustomPipelineProcessorGrokParserGrokToHclTerraform(struct?: LogsCustomPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorGrokParserGrok): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_rules: {
+      value: cdktf.stringToHclTerraform(struct!.matchRules),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    support_rules: {
+      value: cdktf.stringToHclTerraform(struct!.supportRules),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorGrokParserGrokOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1337,6 +1635,49 @@ export function logsCustomPipelineProcessorGrokParserToTerraform(struct?: LogsCu
     source: cdktf.stringToTerraform(struct!.source),
     grok: logsCustomPipelineProcessorGrokParserGrokToTerraform(struct!.grok),
   }
+}
+
+
+export function logsCustomPipelineProcessorGrokParserToHclTerraform(struct?: LogsCustomPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorGrokParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    samples: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.samples),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grok: {
+      value: logsCustomPipelineProcessorGrokParserGrokToHclTerraform(struct!.grok),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorGrokParserGrokList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.ComplexObject {
@@ -1523,6 +1864,55 @@ export function logsCustomPipelineProcessorLookupProcessorToTerraform(struct?: L
   }
 }
 
+
+export function logsCustomPipelineProcessorLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorLookupProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_lookup: {
+      value: cdktf.stringToHclTerraform(struct!.defaultLookup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    lookup_table: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lookupTable),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1705,6 +2095,37 @@ export function logsCustomPipelineProcessorMessageRemapperToTerraform(struct?: L
   }
 }
 
+
+export function logsCustomPipelineProcessorMessageRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorMessageRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1811,6 +2232,25 @@ export function logsCustomPipelineProcessorPipelineFilterToTerraform(struct?: Lo
   return {
     query: cdktf.stringToTerraform(struct!.query),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineFilterToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineFilterOutputReference extends cdktf.ComplexObject {
@@ -1935,6 +2375,49 @@ export function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorT
     name: cdktf.stringToTerraform(struct!.name),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_replace_missing: {
+      value: cdktf.booleanToHclTerraform(struct!.isReplaceMissing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference extends cdktf.ComplexObject {
@@ -2140,6 +2623,73 @@ export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToT
     target_format: cdktf.stringToTerraform(struct!.targetFormat),
     target_type: cdktf.stringToTerraform(struct!.targetType),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override_on_conflict: {
+      value: cdktf.booleanToHclTerraform(struct!.overrideOnConflict),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    preserve_source: {
+      value: cdktf.booleanToHclTerraform(struct!.preserveSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    source_type: {
+      value: cdktf.stringToHclTerraform(struct!.sourceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_format: {
+      value: cdktf.stringToHclTerraform(struct!.targetFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_type: {
+      value: cdktf.stringToHclTerraform(struct!.targetType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference extends cdktf.ComplexObject {
@@ -2373,6 +2923,25 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCat
   }
 }
 
+
+export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2440,6 +3009,31 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCat
     name: cdktf.stringToTerraform(struct!.name),
     filter: logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct!.filter),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter: {
+      value: logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToHclTerraform(struct!.filter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference extends cdktf.ComplexObject {
@@ -2576,6 +3170,43 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToT
     target: cdktf.stringToTerraform(struct!.target),
     category: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform, true)(struct!.category),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    category: {
+      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToHclTerraform, true)(struct!.category),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference extends cdktf.ComplexObject {
@@ -2719,6 +3350,37 @@ export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToTerraf
   }
 }
 
+
+export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorDateRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2846,6 +3508,43 @@ export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToTerrafo
     sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGeoIpParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference extends cdktf.ComplexObject {
@@ -2982,6 +3681,31 @@ export function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerr
   }
 }
 
+
+export function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_rules: {
+      value: cdktf.stringToHclTerraform(struct!.matchRules),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    support_rules: {
+      value: cdktf.stringToHclTerraform(struct!.supportRules),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3091,6 +3815,49 @@ export function logsCustomPipelineProcessorPipelineProcessorGrokParserToTerrafor
     source: cdktf.stringToTerraform(struct!.source),
     grok: logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerraform(struct!.grok),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorGrokParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    samples: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.samples),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grok: {
+      value: logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToHclTerraform(struct!.grok),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference extends cdktf.ComplexObject {
@@ -3277,6 +4044,55 @@ export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToTer
   }
 }
 
+
+export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorLookupProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_lookup: {
+      value: cdktf.stringToHclTerraform(struct!.defaultLookup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    lookup_table: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lookupTable),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3459,6 +4275,37 @@ export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToTer
   }
 }
 
+
+export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorMessageRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3593,6 +4440,49 @@ export function logsCustomPipelineProcessorPipelineProcessorReferenceTableLookup
     source: cdktf.stringToTerraform(struct!.source),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    lookup_enrichment_table: {
+      value: cdktf.stringToHclTerraform(struct!.lookupEnrichmentTable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference extends cdktf.ComplexObject {
@@ -3755,6 +4645,37 @@ export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToTer
   }
 }
 
+
+export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorServiceRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3875,6 +4796,37 @@ export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToTerr
     name: cdktf.stringToTerraform(struct!.name),
     sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorStatusRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference extends cdktf.ComplexObject {
@@ -4011,6 +4963,49 @@ export function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcess
     target: cdktf.stringToTerraform(struct!.target),
     template: cdktf.stringToTerraform(struct!.template),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_replace_missing: {
+      value: cdktf.booleanToHclTerraform(struct!.isReplaceMissing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    template: {
+      value: cdktf.stringToHclTerraform(struct!.template),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference extends cdktf.ComplexObject {
@@ -4176,6 +5171,37 @@ export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToTer
   }
 }
 
+
+export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4310,6 +5336,49 @@ export function logsCustomPipelineProcessorPipelineProcessorUrlParserToTerraform
     sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorUrlParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUrlParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    normalize_ending_slashes: {
+      value: cdktf.booleanToHclTerraform(struct!.normalizeEndingSlashes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference extends cdktf.ComplexObject {
@@ -4487,6 +5556,49 @@ export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToTer
     sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUserAgentParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_encoded: {
+      value: cdktf.booleanToHclTerraform(struct!.isEncoded),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference extends cdktf.ComplexObject {
@@ -4734,6 +5846,109 @@ export function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?:
     url_parser: logsCustomPipelineProcessorPipelineProcessorUrlParserToTerraform(struct!.urlParser),
     user_agent_parser: logsCustomPipelineProcessorPipelineProcessorUserAgentParserToTerraform(struct!.userAgentParser),
   }
+}
+
+
+export function logsCustomPipelineProcessorPipelineProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessor | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    arithmetic_processor: {
+      value: logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToHclTerraform(struct!.arithmeticProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorList",
+    },
+    attribute_remapper: {
+      value: logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToHclTerraform(struct!.attributeRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperList",
+    },
+    category_processor: {
+      value: logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToHclTerraform(struct!.categoryProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorList",
+    },
+    date_remapper: {
+      value: logsCustomPipelineProcessorPipelineProcessorDateRemapperToHclTerraform(struct!.dateRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorDateRemapperList",
+    },
+    geo_ip_parser: {
+      value: logsCustomPipelineProcessorPipelineProcessorGeoIpParserToHclTerraform(struct!.geoIpParser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorGeoIpParserList",
+    },
+    grok_parser: {
+      value: logsCustomPipelineProcessorPipelineProcessorGrokParserToHclTerraform(struct!.grokParser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorGrokParserList",
+    },
+    lookup_processor: {
+      value: logsCustomPipelineProcessorPipelineProcessorLookupProcessorToHclTerraform(struct!.lookupProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorLookupProcessorList",
+    },
+    message_remapper: {
+      value: logsCustomPipelineProcessorPipelineProcessorMessageRemapperToHclTerraform(struct!.messageRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorMessageRemapperList",
+    },
+    reference_table_lookup_processor: {
+      value: logsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorToHclTerraform(struct!.referenceTableLookupProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorList",
+    },
+    service_remapper: {
+      value: logsCustomPipelineProcessorPipelineProcessorServiceRemapperToHclTerraform(struct!.serviceRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorServiceRemapperList",
+    },
+    status_remapper: {
+      value: logsCustomPipelineProcessorPipelineProcessorStatusRemapperToHclTerraform(struct!.statusRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorStatusRemapperList",
+    },
+    string_builder_processor: {
+      value: logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToHclTerraform(struct!.stringBuilderProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorList",
+    },
+    trace_id_remapper: {
+      value: logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToHclTerraform(struct!.traceIdRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperList",
+    },
+    url_parser: {
+      value: logsCustomPipelineProcessorPipelineProcessorUrlParserToHclTerraform(struct!.urlParser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorUrlParserList",
+    },
+    user_agent_parser: {
+      value: logsCustomPipelineProcessorPipelineProcessorUserAgentParserToHclTerraform(struct!.userAgentParser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorUserAgentParserList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends cdktf.ComplexObject {
@@ -5160,6 +6375,43 @@ export function logsCustomPipelineProcessorPipelineToTerraform(struct?: LogsCust
   }
 }
 
+
+export function logsCustomPipelineProcessorPipelineToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineOutputReference | LogsCustomPipelineProcessorPipeline): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter: {
+      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineFilterToHclTerraform, true)(struct!.filter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineFilterList",
+    },
+    processor: {
+      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorToHclTerraform, true)(struct!.processor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineProcessorList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5313,6 +6565,49 @@ export function logsCustomPipelineProcessorReferenceTableLookupProcessorToTerraf
     source: cdktf.stringToTerraform(struct!.source),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorReferenceTableLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorReferenceTableLookupProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    lookup_enrichment_table: {
+      value: cdktf.stringToHclTerraform(struct!.lookupEnrichmentTable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference extends cdktf.ComplexObject {
@@ -5475,6 +6770,37 @@ export function logsCustomPipelineProcessorServiceRemapperToTerraform(struct?: L
   }
 }
 
+
+export function logsCustomPipelineProcessorServiceRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorServiceRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5595,6 +6921,37 @@ export function logsCustomPipelineProcessorStatusRemapperToTerraform(struct?: Lo
     name: cdktf.stringToTerraform(struct!.name),
     sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
+}
+
+
+export function logsCustomPipelineProcessorStatusRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorStatusRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cdktf.ComplexObject {
@@ -5731,6 +7088,49 @@ export function logsCustomPipelineProcessorStringBuilderProcessorToTerraform(str
     target: cdktf.stringToTerraform(struct!.target),
     template: cdktf.stringToTerraform(struct!.template),
   }
+}
+
+
+export function logsCustomPipelineProcessorStringBuilderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorStringBuilderProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_replace_missing: {
+      value: cdktf.booleanToHclTerraform(struct!.isReplaceMissing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    template: {
+      value: cdktf.stringToHclTerraform(struct!.template),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference extends cdktf.ComplexObject {
@@ -5896,6 +7296,37 @@ export function logsCustomPipelineProcessorTraceIdRemapperToTerraform(struct?: L
   }
 }
 
+
+export function logsCustomPipelineProcessorTraceIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorTraceIdRemapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6030,6 +7461,49 @@ export function logsCustomPipelineProcessorUrlParserToTerraform(struct?: LogsCus
     sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorUrlParserToHclTerraform(struct?: LogsCustomPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorUrlParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    normalize_ending_slashes: {
+      value: cdktf.booleanToHclTerraform(struct!.normalizeEndingSlashes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.ComplexObject {
@@ -6207,6 +7681,49 @@ export function logsCustomPipelineProcessorUserAgentParserToTerraform(struct?: L
     sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function logsCustomPipelineProcessorUserAgentParserToHclTerraform(struct?: LogsCustomPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorUserAgentParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_encoded: {
+      value: cdktf.booleanToHclTerraform(struct!.isEncoded),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends cdktf.ComplexObject {
@@ -6461,6 +7978,115 @@ export function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipeli
     url_parser: logsCustomPipelineProcessorUrlParserToTerraform(struct!.urlParser),
     user_agent_parser: logsCustomPipelineProcessorUserAgentParserToTerraform(struct!.userAgentParser),
   }
+}
+
+
+export function logsCustomPipelineProcessorToHclTerraform(struct?: LogsCustomPipelineProcessor | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    arithmetic_processor: {
+      value: logsCustomPipelineProcessorArithmeticProcessorToHclTerraform(struct!.arithmeticProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorArithmeticProcessorList",
+    },
+    attribute_remapper: {
+      value: logsCustomPipelineProcessorAttributeRemapperToHclTerraform(struct!.attributeRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorAttributeRemapperList",
+    },
+    category_processor: {
+      value: logsCustomPipelineProcessorCategoryProcessorToHclTerraform(struct!.categoryProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorCategoryProcessorList",
+    },
+    date_remapper: {
+      value: logsCustomPipelineProcessorDateRemapperToHclTerraform(struct!.dateRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorDateRemapperList",
+    },
+    geo_ip_parser: {
+      value: logsCustomPipelineProcessorGeoIpParserToHclTerraform(struct!.geoIpParser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorGeoIpParserList",
+    },
+    grok_parser: {
+      value: logsCustomPipelineProcessorGrokParserToHclTerraform(struct!.grokParser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorGrokParserList",
+    },
+    lookup_processor: {
+      value: logsCustomPipelineProcessorLookupProcessorToHclTerraform(struct!.lookupProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorLookupProcessorList",
+    },
+    message_remapper: {
+      value: logsCustomPipelineProcessorMessageRemapperToHclTerraform(struct!.messageRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorMessageRemapperList",
+    },
+    pipeline: {
+      value: logsCustomPipelineProcessorPipelineToHclTerraform(struct!.pipeline),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorPipelineList",
+    },
+    reference_table_lookup_processor: {
+      value: logsCustomPipelineProcessorReferenceTableLookupProcessorToHclTerraform(struct!.referenceTableLookupProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorReferenceTableLookupProcessorList",
+    },
+    service_remapper: {
+      value: logsCustomPipelineProcessorServiceRemapperToHclTerraform(struct!.serviceRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorServiceRemapperList",
+    },
+    status_remapper: {
+      value: logsCustomPipelineProcessorStatusRemapperToHclTerraform(struct!.statusRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorStatusRemapperList",
+    },
+    string_builder_processor: {
+      value: logsCustomPipelineProcessorStringBuilderProcessorToHclTerraform(struct!.stringBuilderProcessor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorStringBuilderProcessorList",
+    },
+    trace_id_remapper: {
+      value: logsCustomPipelineProcessorTraceIdRemapperToHclTerraform(struct!.traceIdRemapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorTraceIdRemapperList",
+    },
+    url_parser: {
+      value: logsCustomPipelineProcessorUrlParserToHclTerraform(struct!.urlParser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorUrlParserList",
+    },
+    user_agent_parser: {
+      value: logsCustomPipelineProcessorUserAgentParserToHclTerraform(struct!.userAgentParser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LogsCustomPipelineProcessorUserAgentParserList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObject {
@@ -7022,5 +8648,43 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
       filter: cdktf.listMapper(logsCustomPipelineFilterToTerraform, true)(this._filter.internalValue),
       processor: cdktf.listMapper(logsCustomPipelineProcessorToTerraform, true)(this._processor.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(logsCustomPipelineFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LogsCustomPipelineFilterList",
+      },
+      processor: {
+        value: cdktf.listMapperHcl(logsCustomPipelineProcessorToHclTerraform, true)(this._processor.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LogsCustomPipelineProcessorList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

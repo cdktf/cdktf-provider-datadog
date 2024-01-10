@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/integration_pagerduty
 // generated from terraform resource schema
 
@@ -172,5 +167,37 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
       schedules: cdktf.listMapper(cdktf.stringToTerraform, false)(this._schedules),
       subdomain: cdktf.stringToTerraform(this._subdomain),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_token: {
+        value: cdktf.stringToHclTerraform(this._apiToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedules: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._schedules),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      subdomain: {
+        value: cdktf.stringToHclTerraform(this._subdomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/downtime
 // generated from terraform resource schema
 
@@ -138,6 +133,55 @@ export function downtimeRecurrenceToTerraform(struct?: DowntimeRecurrenceOutputR
     until_occurrences: cdktf.numberToTerraform(struct!.untilOccurrences),
     week_days: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weekDays),
   }
+}
+
+
+export function downtimeRecurrenceToHclTerraform(struct?: DowntimeRecurrenceOutputReference | DowntimeRecurrence): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    period: {
+      value: cdktf.numberToHclTerraform(struct!.period),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    rrule: {
+      value: cdktf.stringToHclTerraform(struct!.rrule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    until_date: {
+      value: cdktf.numberToHclTerraform(struct!.untilDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    until_occurrences: {
+      value: cdktf.numberToHclTerraform(struct!.untilOccurrences),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    week_days: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weekDays),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
@@ -588,5 +632,85 @@ export class Downtime extends cdktf.TerraformResource {
       timezone: cdktf.stringToTerraform(this._timezone),
       recurrence: downtimeRecurrenceToTerraform(this._recurrence.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      end: {
+        value: cdktf.numberToHclTerraform(this._end),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      end_date: {
+        value: cdktf.stringToHclTerraform(this._endDate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      message: {
+        value: cdktf.stringToHclTerraform(this._message),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      monitor_id: {
+        value: cdktf.numberToHclTerraform(this._monitorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      monitor_tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._monitorTags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      mute_first_recovery_notification: {
+        value: cdktf.booleanToHclTerraform(this._muteFirstRecoveryNotification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      scope: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scope),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      start: {
+        value: cdktf.numberToHclTerraform(this._start),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      start_date: {
+        value: cdktf.stringToHclTerraform(this._startDate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timezone: {
+        value: cdktf.stringToHclTerraform(this._timezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recurrence: {
+        value: downtimeRecurrenceToHclTerraform(this._recurrence.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DowntimeRecurrenceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

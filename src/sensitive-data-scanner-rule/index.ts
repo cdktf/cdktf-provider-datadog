@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/sensitive_data_scanner_rule
 // generated from terraform resource schema
 
@@ -111,6 +106,37 @@ export function sensitiveDataScannerRuleTextReplacementToTerraform(struct?: Sens
     replacement_string: cdktf.stringToTerraform(struct!.replacementString),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function sensitiveDataScannerRuleTextReplacementToHclTerraform(struct?: SensitiveDataScannerRuleTextReplacementOutputReference | SensitiveDataScannerRuleTextReplacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    number_of_chars: {
+      value: cdktf.numberToHclTerraform(struct!.numberOfChars),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    replacement_string: {
+      value: cdktf.stringToHclTerraform(struct!.replacementString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SensitiveDataScannerRuleTextReplacementOutputReference extends cdktf.ComplexObject {
@@ -462,5 +488,79 @@ export class SensitiveDataScannerRule extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       text_replacement: sensitiveDataScannerRuleTextReplacementToTerraform(this._textReplacement.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      excluded_namespaces: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedNamespaces),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      group_id: {
+        value: cdktf.stringToHclTerraform(this._groupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespaces: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._namespaces),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      pattern: {
+        value: cdktf.stringToHclTerraform(this._pattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      standard_pattern_id: {
+        value: cdktf.stringToHclTerraform(this._standardPatternId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      text_replacement: {
+        value: sensitiveDataScannerRuleTextReplacementToHclTerraform(this._textReplacement.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SensitiveDataScannerRuleTextReplacementList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

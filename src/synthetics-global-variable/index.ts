@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/synthetics_global_variable
 // generated from terraform resource schema
 
@@ -100,6 +95,31 @@ export function syntheticsGlobalVariableOptionsTotpParametersToTerraform(struct?
   }
 }
 
+
+export function syntheticsGlobalVariableOptionsTotpParametersToHclTerraform(struct?: SyntheticsGlobalVariableOptionsTotpParametersOutputReference | SyntheticsGlobalVariableOptionsTotpParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    digits: {
+      value: cdktf.numberToHclTerraform(struct!.digits),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    refresh_interval: {
+      value: cdktf.numberToHclTerraform(struct!.refreshInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsGlobalVariableOptionsTotpParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -183,6 +203,25 @@ export function syntheticsGlobalVariableOptionsToTerraform(struct?: SyntheticsGl
   }
 }
 
+
+export function syntheticsGlobalVariableOptionsToHclTerraform(struct?: SyntheticsGlobalVariableOptionsOutputReference | SyntheticsGlobalVariableOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    totp_parameters: {
+      value: syntheticsGlobalVariableOptionsTotpParametersToHclTerraform(struct!.totpParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsGlobalVariableOptionsTotpParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsGlobalVariableOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -255,6 +294,31 @@ export function syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function syntheticsGlobalVariableParseTestOptionsParserToHclTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParserOutputReference | SyntheticsGlobalVariableParseTestOptionsParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference extends cdktf.ComplexObject {
@@ -362,6 +426,43 @@ export function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: Syn
     type: cdktf.stringToTerraform(struct!.type),
     parser: syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct!.parser),
   }
+}
+
+
+export function syntheticsGlobalVariableParseTestOptionsToHclTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsOutputReference | SyntheticsGlobalVariableParseTestOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field: {
+      value: cdktf.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    local_variable_name: {
+      value: cdktf.stringToHclTerraform(struct!.localVariableName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parser: {
+      value: syntheticsGlobalVariableParseTestOptionsParserToHclTerraform(struct!.parser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsGlobalVariableParseTestOptionsParserList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdktf.ComplexObject {
@@ -714,5 +815,73 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       options: syntheticsGlobalVariableOptionsToTerraform(this._options.internalValue),
       parse_test_options: syntheticsGlobalVariableParseTestOptionsToTerraform(this._parseTestOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parse_test_id: {
+        value: cdktf.stringToHclTerraform(this._parseTestId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      restricted_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._restrictedRoles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      secure: {
+        value: cdktf.booleanToHclTerraform(this._secure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options: {
+        value: syntheticsGlobalVariableOptionsToHclTerraform(this._options.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsGlobalVariableOptionsList",
+      },
+      parse_test_options: {
+        value: syntheticsGlobalVariableParseTestOptionsToHclTerraform(this._parseTestOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsGlobalVariableParseTestOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/security_monitoring_filter
 // generated from terraform resource schema
 
@@ -74,6 +69,31 @@ export function securityMonitoringFilterExclusionFilterToTerraform(struct?: Secu
     name: cdktf.stringToTerraform(struct!.name),
     query: cdktf.stringToTerraform(struct!.query),
   }
+}
+
+
+export function securityMonitoringFilterExclusionFilterToHclTerraform(struct?: SecurityMonitoringFilterExclusionFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityMonitoringFilterExclusionFilterOutputReference extends cdktf.ComplexObject {
@@ -341,5 +361,49 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
       query: cdktf.stringToTerraform(this._query),
       exclusion_filter: cdktf.listMapper(securityMonitoringFilterExclusionFilterToTerraform, true)(this._exclusionFilter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      filtered_data_type: {
+        value: cdktf.stringToHclTerraform(this._filteredDataType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query: {
+        value: cdktf.stringToHclTerraform(this._query),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      exclusion_filter: {
+        value: cdktf.listMapperHcl(securityMonitoringFilterExclusionFilterToHclTerraform, true)(this._exclusionFilter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringFilterExclusionFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

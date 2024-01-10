@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/service_account_application_key
 // generated from terraform resource schema
 
@@ -140,5 +135,25 @@ export class ServiceAccountApplicationKey extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       service_account_id: cdktf.stringToTerraform(this._serviceAccountId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account_id: {
+        value: cdktf.stringToHclTerraform(this._serviceAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/synthetics_test
 // generated from terraform resource schema
 
@@ -185,6 +180,37 @@ export function syntheticsTestApiStepAssertionTargetjsonpathToTerraform(struct?:
   }
 }
 
+
+export function syntheticsTestApiStepAssertionTargetjsonpathToHclTerraform(struct?: SyntheticsTestApiStepAssertionTargetjsonpathOutputReference | SyntheticsTestApiStepAssertionTargetjsonpath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    jsonpath: {
+      value: cdktf.stringToHclTerraform(struct!.jsonpath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    targetvalue: {
+      value: cdktf.stringToHclTerraform(struct!.targetvalue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestApiStepAssertionTargetjsonpathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -302,6 +328,37 @@ export function syntheticsTestApiStepAssertionTargetxpathToTerraform(struct?: Sy
     targetvalue: cdktf.stringToTerraform(struct!.targetvalue),
     xpath: cdktf.stringToTerraform(struct!.xpath),
   }
+}
+
+
+export function syntheticsTestApiStepAssertionTargetxpathToHclTerraform(struct?: SyntheticsTestApiStepAssertionTargetxpathOutputReference | SyntheticsTestApiStepAssertionTargetxpath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    targetvalue: {
+      value: cdktf.stringToHclTerraform(struct!.targetvalue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    xpath: {
+      value: cdktf.stringToHclTerraform(struct!.xpath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestApiStepAssertionTargetxpathOutputReference extends cdktf.ComplexObject {
@@ -449,6 +506,61 @@ export function syntheticsTestApiStepAssertionToTerraform(struct?: SyntheticsTes
     targetjsonpath: syntheticsTestApiStepAssertionTargetjsonpathToTerraform(struct!.targetjsonpath),
     targetxpath: syntheticsTestApiStepAssertionTargetxpathToTerraform(struct!.targetxpath),
   }
+}
+
+
+export function syntheticsTestApiStepAssertionToHclTerraform(struct?: SyntheticsTestApiStepAssertion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    property: {
+      value: cdktf.stringToHclTerraform(struct!.property),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timings_scope: {
+      value: cdktf.stringToHclTerraform(struct!.timingsScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    targetjsonpath: {
+      value: syntheticsTestApiStepAssertionTargetjsonpathToHclTerraform(struct!.targetjsonpath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepAssertionTargetjsonpathList",
+    },
+    targetxpath: {
+      value: syntheticsTestApiStepAssertionTargetxpathToHclTerraform(struct!.targetxpath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepAssertionTargetxpathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestApiStepAssertionOutputReference extends cdktf.ComplexObject {
@@ -683,6 +795,31 @@ export function syntheticsTestApiStepExtractedValueParserToTerraform(struct?: Sy
   }
 }
 
+
+export function syntheticsTestApiStepExtractedValueParserToHclTerraform(struct?: SyntheticsTestApiStepExtractedValueParserOutputReference | SyntheticsTestApiStepExtractedValueParser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestApiStepExtractedValueParserOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -793,6 +930,49 @@ export function syntheticsTestApiStepExtractedValueToTerraform(struct?: Syntheti
     type: cdktf.stringToTerraform(struct!.type),
     parser: syntheticsTestApiStepExtractedValueParserToTerraform(struct!.parser),
   }
+}
+
+
+export function syntheticsTestApiStepExtractedValueToHclTerraform(struct?: SyntheticsTestApiStepExtractedValue | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field: {
+      value: cdktf.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secure: {
+      value: cdktf.booleanToHclTerraform(struct!.secure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parser: {
+      value: syntheticsTestApiStepExtractedValueParserToHclTerraform(struct!.parser),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepExtractedValueParserList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestApiStepExtractedValueOutputReference extends cdktf.ComplexObject {
@@ -1083,6 +1263,121 @@ export function syntheticsTestApiStepRequestBasicauthToTerraform(struct?: Synthe
     username: cdktf.stringToTerraform(struct!.username),
     workstation: cdktf.stringToTerraform(struct!.workstation),
   }
+}
+
+
+export function syntheticsTestApiStepRequestBasicauthToHclTerraform(struct?: SyntheticsTestApiStepRequestBasicauthOutputReference | SyntheticsTestApiStepRequestBasicauth): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_key: {
+      value: cdktf.stringToHclTerraform(struct!.accessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    access_token_url: {
+      value: cdktf.stringToHclTerraform(struct!.accessTokenUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audience: {
+      value: cdktf.stringToHclTerraform(struct!.audience),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource: {
+      value: cdktf.stringToHclTerraform(struct!.resource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope: {
+      value: cdktf.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_key: {
+      value: cdktf.stringToHclTerraform(struct!.secretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    session_token: {
+      value: cdktf.stringToHclTerraform(struct!.sessionToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_api_authentication: {
+      value: cdktf.stringToHclTerraform(struct!.tokenApiAuthentication),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    workstation: {
+      value: cdktf.stringToHclTerraform(struct!.workstation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.ComplexObject {
@@ -1511,6 +1806,31 @@ export function syntheticsTestApiStepRequestClientCertificateCertToTerraform(str
   }
 }
 
+
+export function syntheticsTestApiStepRequestClientCertificateCertToHclTerraform(struct?: SyntheticsTestApiStepRequestClientCertificateCertOutputReference | SyntheticsTestApiStepRequestClientCertificateCert): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filename: {
+      value: cdktf.stringToHclTerraform(struct!.filename),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestApiStepRequestClientCertificateCertOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1604,6 +1924,31 @@ export function syntheticsTestApiStepRequestClientCertificateKeyToTerraform(stru
   }
 }
 
+
+export function syntheticsTestApiStepRequestClientCertificateKeyToHclTerraform(struct?: SyntheticsTestApiStepRequestClientCertificateKeyOutputReference | SyntheticsTestApiStepRequestClientCertificateKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filename: {
+      value: cdktf.stringToHclTerraform(struct!.filename),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestApiStepRequestClientCertificateKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1695,6 +2040,31 @@ export function syntheticsTestApiStepRequestClientCertificateToTerraform(struct?
     cert: syntheticsTestApiStepRequestClientCertificateCertToTerraform(struct!.cert),
     key: syntheticsTestApiStepRequestClientCertificateKeyToTerraform(struct!.key),
   }
+}
+
+
+export function syntheticsTestApiStepRequestClientCertificateToHclTerraform(struct?: SyntheticsTestApiStepRequestClientCertificateOutputReference | SyntheticsTestApiStepRequestClientCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cert: {
+      value: syntheticsTestApiStepRequestClientCertificateCertToHclTerraform(struct!.cert),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepRequestClientCertificateCertList",
+    },
+    key: {
+      value: syntheticsTestApiStepRequestClientCertificateKeyToHclTerraform(struct!.key),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepRequestClientCertificateKeyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestApiStepRequestClientCertificateOutputReference extends cdktf.ComplexObject {
@@ -1918,6 +2288,145 @@ export function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: Synth
     timeout: cdktf.numberToTerraform(struct!.timeout),
     url: cdktf.stringToTerraform(struct!.url),
   }
+}
+
+
+export function syntheticsTestApiStepRequestDefinitionToHclTerraform(struct?: SyntheticsTestApiStepRequestDefinitionOutputReference | SyntheticsTestApiStepRequestDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_insecure: {
+      value: cdktf.booleanToHclTerraform(struct!.allowInsecure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    body: {
+      value: cdktf.stringToHclTerraform(struct!.body),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    body_type: {
+      value: cdktf.stringToHclTerraform(struct!.bodyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    call_type: {
+      value: cdktf.stringToHclTerraform(struct!.callType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    certificate_domains: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.certificateDomains),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    dns_server: {
+      value: cdktf.stringToHclTerraform(struct!.dnsServer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dns_server_port: {
+      value: cdktf.numberToHclTerraform(struct!.dnsServerPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    follow_redirects: {
+      value: cdktf.booleanToHclTerraform(struct!.followRedirects),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    message: {
+      value: cdktf.stringToHclTerraform(struct!.message),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    method: {
+      value: cdktf.stringToHclTerraform(struct!.method),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    no_saving_response_body: {
+      value: cdktf.booleanToHclTerraform(struct!.noSavingResponseBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_of_packets: {
+      value: cdktf.numberToHclTerraform(struct!.numberOfPackets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    persist_cookies: {
+      value: cdktf.booleanToHclTerraform(struct!.persistCookies),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    proto_json_descriptor: {
+      value: cdktf.stringToHclTerraform(struct!.protoJsonDescriptor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    servername: {
+      value: cdktf.stringToHclTerraform(struct!.servername),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    should_track_hops: {
+      value: cdktf.booleanToHclTerraform(struct!.shouldTrackHops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    timeout: {
+      value: cdktf.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf.ComplexObject {
@@ -2434,6 +2943,31 @@ export function syntheticsTestApiStepRequestProxyToTerraform(struct?: Synthetics
   }
 }
 
+
+export function syntheticsTestApiStepRequestProxyToHclTerraform(struct?: SyntheticsTestApiStepRequestProxyOutputReference | SyntheticsTestApiStepRequestProxy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.headers),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestApiStepRequestProxyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2525,6 +3059,31 @@ export function syntheticsTestApiStepRetryToTerraform(struct?: SyntheticsTestApi
     count: cdktf.numberToTerraform(struct!.count),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function syntheticsTestApiStepRetryToHclTerraform(struct?: SyntheticsTestApiStepRetryOutputReference | SyntheticsTestApiStepRetry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestApiStepRetryOutputReference extends cdktf.ComplexObject {
@@ -2698,6 +3257,97 @@ export function syntheticsTestApiStepToTerraform(struct?: SyntheticsTestApiStep 
     request_proxy: syntheticsTestApiStepRequestProxyToTerraform(struct!.requestProxy),
     retry: syntheticsTestApiStepRetryToTerraform(struct!.retry),
   }
+}
+
+
+export function syntheticsTestApiStepToHclTerraform(struct?: SyntheticsTestApiStep | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_failure: {
+      value: cdktf.booleanToHclTerraform(struct!.allowFailure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_critical: {
+      value: cdktf.booleanToHclTerraform(struct!.isCritical),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request_headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requestHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    request_query: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requestQuery),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    subtype: {
+      value: cdktf.stringToHclTerraform(struct!.subtype),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    assertion: {
+      value: cdktf.listMapperHcl(syntheticsTestApiStepAssertionToHclTerraform, true)(struct!.assertion),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepAssertionList",
+    },
+    extracted_value: {
+      value: cdktf.listMapperHcl(syntheticsTestApiStepExtractedValueToHclTerraform, true)(struct!.extractedValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepExtractedValueList",
+    },
+    request_basicauth: {
+      value: syntheticsTestApiStepRequestBasicauthToHclTerraform(struct!.requestBasicauth),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepRequestBasicauthList",
+    },
+    request_client_certificate: {
+      value: syntheticsTestApiStepRequestClientCertificateToHclTerraform(struct!.requestClientCertificate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepRequestClientCertificateList",
+    },
+    request_definition: {
+      value: syntheticsTestApiStepRequestDefinitionToHclTerraform(struct!.requestDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepRequestDefinitionList",
+    },
+    request_proxy: {
+      value: syntheticsTestApiStepRequestProxyToHclTerraform(struct!.requestProxy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepRequestProxyList",
+    },
+    retry: {
+      value: syntheticsTestApiStepRetryToHclTerraform(struct!.retry),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestApiStepRetryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestApiStepOutputReference extends cdktf.ComplexObject {
@@ -3074,6 +3724,37 @@ export function syntheticsTestAssertionTargetjsonpathToTerraform(struct?: Synthe
   }
 }
 
+
+export function syntheticsTestAssertionTargetjsonpathToHclTerraform(struct?: SyntheticsTestAssertionTargetjsonpathOutputReference | SyntheticsTestAssertionTargetjsonpath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    jsonpath: {
+      value: cdktf.stringToHclTerraform(struct!.jsonpath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    targetvalue: {
+      value: cdktf.stringToHclTerraform(struct!.targetvalue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestAssertionTargetjsonpathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3191,6 +3872,37 @@ export function syntheticsTestAssertionTargetxpathToTerraform(struct?: Synthetic
     targetvalue: cdktf.stringToTerraform(struct!.targetvalue),
     xpath: cdktf.stringToTerraform(struct!.xpath),
   }
+}
+
+
+export function syntheticsTestAssertionTargetxpathToHclTerraform(struct?: SyntheticsTestAssertionTargetxpathOutputReference | SyntheticsTestAssertionTargetxpath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    targetvalue: {
+      value: cdktf.stringToHclTerraform(struct!.targetvalue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    xpath: {
+      value: cdktf.stringToHclTerraform(struct!.xpath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestAssertionTargetxpathOutputReference extends cdktf.ComplexObject {
@@ -3338,6 +4050,61 @@ export function syntheticsTestAssertionToTerraform(struct?: SyntheticsTestAssert
     targetjsonpath: syntheticsTestAssertionTargetjsonpathToTerraform(struct!.targetjsonpath),
     targetxpath: syntheticsTestAssertionTargetxpathToTerraform(struct!.targetxpath),
   }
+}
+
+
+export function syntheticsTestAssertionToHclTerraform(struct?: SyntheticsTestAssertion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    property: {
+      value: cdktf.stringToHclTerraform(struct!.property),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timings_scope: {
+      value: cdktf.stringToHclTerraform(struct!.timingsScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    targetjsonpath: {
+      value: syntheticsTestAssertionTargetjsonpathToHclTerraform(struct!.targetjsonpath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestAssertionTargetjsonpathList",
+    },
+    targetxpath: {
+      value: syntheticsTestAssertionTargetxpathToHclTerraform(struct!.targetxpath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestAssertionTargetxpathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestAssertionOutputReference extends cdktf.ComplexObject {
@@ -3570,6 +4337,31 @@ export function syntheticsTestBrowserStepParamsElementUserLocatorValueToTerrafor
   }
 }
 
+
+export function syntheticsTestBrowserStepParamsElementUserLocatorValueToHclTerraform(struct?: SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference | SyntheticsTestBrowserStepParamsElementUserLocatorValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3663,6 +4455,31 @@ export function syntheticsTestBrowserStepParamsElementUserLocatorToTerraform(str
   }
 }
 
+
+export function syntheticsTestBrowserStepParamsElementUserLocatorToHclTerraform(struct?: SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference | SyntheticsTestBrowserStepParamsElementUserLocator): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fail_test_on_cannot_locate: {
+      value: cdktf.booleanToHclTerraform(struct!.failTestOnCannotLocate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    value: {
+      value: syntheticsTestBrowserStepParamsElementUserLocatorValueToHclTerraform(struct!.value),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestBrowserStepParamsElementUserLocatorValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3754,6 +4571,31 @@ export function syntheticsTestBrowserStepParamsVariableToTerraform(struct?: Synt
     example: cdktf.stringToTerraform(struct!.example),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function syntheticsTestBrowserStepParamsVariableToHclTerraform(struct?: SyntheticsTestBrowserStepParamsVariableOutputReference | SyntheticsTestBrowserStepParamsVariable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    example: {
+      value: cdktf.stringToHclTerraform(struct!.example),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestBrowserStepParamsVariableOutputReference extends cdktf.ComplexObject {
@@ -3969,6 +4811,133 @@ export function syntheticsTestBrowserStepParamsToTerraform(struct?: SyntheticsTe
     element_user_locator: syntheticsTestBrowserStepParamsElementUserLocatorToTerraform(struct!.elementUserLocator),
     variable: syntheticsTestBrowserStepParamsVariableToTerraform(struct!.variable),
   }
+}
+
+
+export function syntheticsTestBrowserStepParamsToHclTerraform(struct?: SyntheticsTestBrowserStepParamsOutputReference | SyntheticsTestBrowserStepParams): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    check: {
+      value: cdktf.stringToHclTerraform(struct!.check),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    click_type: {
+      value: cdktf.stringToHclTerraform(struct!.clickType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    code: {
+      value: cdktf.stringToHclTerraform(struct!.code),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delay: {
+      value: cdktf.numberToHclTerraform(struct!.delay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    element: {
+      value: cdktf.stringToHclTerraform(struct!.element),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file: {
+      value: cdktf.stringToHclTerraform(struct!.file),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    files: {
+      value: cdktf.stringToHclTerraform(struct!.files),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    modifiers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.modifiers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    playing_tab_id: {
+      value: cdktf.stringToHclTerraform(struct!.playingTabId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request: {
+      value: cdktf.stringToHclTerraform(struct!.request),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subtest_public_id: {
+      value: cdktf.stringToHclTerraform(struct!.subtestPublicId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    with_click: {
+      value: cdktf.booleanToHclTerraform(struct!.withClick),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    x: {
+      value: cdktf.numberToHclTerraform(struct!.x),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y: {
+      value: cdktf.numberToHclTerraform(struct!.y),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    element_user_locator: {
+      value: syntheticsTestBrowserStepParamsElementUserLocatorToHclTerraform(struct!.elementUserLocator),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestBrowserStepParamsElementUserLocatorList",
+    },
+    variable: {
+      value: syntheticsTestBrowserStepParamsVariableToHclTerraform(struct!.variable),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestBrowserStepParamsVariableList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.ComplexObject {
@@ -4483,6 +5452,67 @@ export function syntheticsTestBrowserStepToTerraform(struct?: SyntheticsTestBrow
   }
 }
 
+
+export function syntheticsTestBrowserStepToHclTerraform(struct?: SyntheticsTestBrowserStep | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_failure: {
+      value: cdktf.booleanToHclTerraform(struct!.allowFailure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    force_element_update: {
+      value: cdktf.booleanToHclTerraform(struct!.forceElementUpdate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_critical: {
+      value: cdktf.booleanToHclTerraform(struct!.isCritical),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    no_screenshot: {
+      value: cdktf.booleanToHclTerraform(struct!.noScreenshot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    timeout: {
+      value: cdktf.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    params: {
+      value: syntheticsTestBrowserStepParamsToHclTerraform(struct!.params),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestBrowserStepParamsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestBrowserStepOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4765,6 +5795,55 @@ export function syntheticsTestBrowserVariableToTerraform(struct?: SyntheticsTest
   }
 }
 
+
+export function syntheticsTestBrowserVariableToHclTerraform(struct?: SyntheticsTestBrowserVariable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    example: {
+      value: cdktf.stringToHclTerraform(struct!.example),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secure: {
+      value: cdktf.booleanToHclTerraform(struct!.secure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestBrowserVariableOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -5006,6 +6085,55 @@ export function syntheticsTestConfigVariableToTerraform(struct?: SyntheticsTestC
   }
 }
 
+
+export function syntheticsTestConfigVariableToHclTerraform(struct?: SyntheticsTestConfigVariable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    example: {
+      value: cdktf.stringToHclTerraform(struct!.example),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secure: {
+      value: cdktf.booleanToHclTerraform(struct!.secure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestConfigVariableOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -5209,6 +6337,25 @@ export function syntheticsTestOptionsListCiToTerraform(struct?: SyntheticsTestOp
   }
 }
 
+
+export function syntheticsTestOptionsListCiToHclTerraform(struct?: SyntheticsTestOptionsListCiOutputReference | SyntheticsTestOptionsListCi): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    execution_rule: {
+      value: cdktf.stringToHclTerraform(struct!.executionRule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestOptionsListCiOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5274,6 +6421,25 @@ export function syntheticsTestOptionsListMonitorOptionsToTerraform(struct?: Synt
   return {
     renotify_interval: cdktf.numberToTerraform(struct!.renotifyInterval),
   }
+}
+
+
+export function syntheticsTestOptionsListMonitorOptionsToHclTerraform(struct?: SyntheticsTestOptionsListMonitorOptionsOutputReference | SyntheticsTestOptionsListMonitorOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    renotify_interval: {
+      value: cdktf.numberToHclTerraform(struct!.renotifyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestOptionsListMonitorOptionsOutputReference extends cdktf.ComplexObject {
@@ -5348,6 +6514,31 @@ export function syntheticsTestOptionsListRetryToTerraform(struct?: SyntheticsTes
     count: cdktf.numberToTerraform(struct!.count),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
+}
+
+
+export function syntheticsTestOptionsListRetryToHclTerraform(struct?: SyntheticsTestOptionsListRetryOutputReference | SyntheticsTestOptionsListRetry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestOptionsListRetryOutputReference extends cdktf.ComplexObject {
@@ -5451,6 +6642,37 @@ export function syntheticsTestOptionsListRumSettingsToTerraform(struct?: Synthet
     client_token_id: cdktf.numberToTerraform(struct!.clientTokenId),
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
   }
+}
+
+
+export function syntheticsTestOptionsListRumSettingsToHclTerraform(struct?: SyntheticsTestOptionsListRumSettingsOutputReference | SyntheticsTestOptionsListRumSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    application_id: {
+      value: cdktf.stringToHclTerraform(struct!.applicationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_token_id: {
+      value: cdktf.numberToHclTerraform(struct!.clientTokenId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    is_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestOptionsListRumSettingsOutputReference extends cdktf.ComplexObject {
@@ -5573,6 +6795,37 @@ export function syntheticsTestOptionsListSchedulingTimeframesToTerraform(struct?
     from: cdktf.stringToTerraform(struct!.from),
     to: cdktf.stringToTerraform(struct!.to),
   }
+}
+
+
+export function syntheticsTestOptionsListSchedulingTimeframesToHclTerraform(struct?: SyntheticsTestOptionsListSchedulingTimeframes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.numberToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    from: {
+      value: cdktf.stringToHclTerraform(struct!.from),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    to: {
+      value: cdktf.stringToHclTerraform(struct!.to),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestOptionsListSchedulingTimeframesOutputReference extends cdktf.ComplexObject {
@@ -5714,6 +6967,31 @@ export function syntheticsTestOptionsListSchedulingToTerraform(struct?: Syntheti
     timezone: cdktf.stringToTerraform(struct!.timezone),
     timeframes: cdktf.listMapper(syntheticsTestOptionsListSchedulingTimeframesToTerraform, true)(struct!.timeframes),
   }
+}
+
+
+export function syntheticsTestOptionsListSchedulingToHclTerraform(struct?: SyntheticsTestOptionsListSchedulingOutputReference | SyntheticsTestOptionsListScheduling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    timezone: {
+      value: cdktf.stringToHclTerraform(struct!.timezone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeframes: {
+      value: cdktf.listMapperHcl(syntheticsTestOptionsListSchedulingTimeframesToHclTerraform, true)(struct!.timeframes),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SyntheticsTestOptionsListSchedulingTimeframesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestOptionsListSchedulingOutputReference extends cdktf.ComplexObject {
@@ -5935,6 +7213,145 @@ export function syntheticsTestOptionsListStructToTerraform(struct?: SyntheticsTe
     rum_settings: syntheticsTestOptionsListRumSettingsToTerraform(struct!.rumSettings),
     scheduling: syntheticsTestOptionsListSchedulingToTerraform(struct!.scheduling),
   }
+}
+
+
+export function syntheticsTestOptionsListStructToHclTerraform(struct?: SyntheticsTestOptionsListStructOutputReference | SyntheticsTestOptionsListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accept_self_signed: {
+      value: cdktf.booleanToHclTerraform(struct!.acceptSelfSigned),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_insecure: {
+      value: cdktf.booleanToHclTerraform(struct!.allowInsecure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    check_certificate_revocation: {
+      value: cdktf.booleanToHclTerraform(struct!.checkCertificateRevocation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    disable_cors: {
+      value: cdktf.booleanToHclTerraform(struct!.disableCors),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    disable_csp: {
+      value: cdktf.booleanToHclTerraform(struct!.disableCsp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    follow_redirects: {
+      value: cdktf.booleanToHclTerraform(struct!.followRedirects),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    http_version: {
+      value: cdktf.stringToHclTerraform(struct!.httpVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ignore_server_certificate_error: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreServerCertificateError),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    initial_navigation_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.initialNavigationTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_failure_duration: {
+      value: cdktf.numberToHclTerraform(struct!.minFailureDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_location_failed: {
+      value: cdktf.numberToHclTerraform(struct!.minLocationFailed),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    monitor_name: {
+      value: cdktf.stringToHclTerraform(struct!.monitorName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    monitor_priority: {
+      value: cdktf.numberToHclTerraform(struct!.monitorPriority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    no_screenshot: {
+      value: cdktf.booleanToHclTerraform(struct!.noScreenshot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    restricted_roles: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.restrictedRoles),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    tick_every: {
+      value: cdktf.numberToHclTerraform(struct!.tickEvery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ci: {
+      value: syntheticsTestOptionsListCiToHclTerraform(struct!.ci),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestOptionsListCiList",
+    },
+    monitor_options: {
+      value: syntheticsTestOptionsListMonitorOptionsToHclTerraform(struct!.monitorOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestOptionsListMonitorOptionsList",
+    },
+    retry: {
+      value: syntheticsTestOptionsListRetryToHclTerraform(struct!.retry),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestOptionsListRetryList",
+    },
+    rum_settings: {
+      value: syntheticsTestOptionsListRumSettingsToHclTerraform(struct!.rumSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestOptionsListRumSettingsList",
+    },
+    scheduling: {
+      value: syntheticsTestOptionsListSchedulingToHclTerraform(struct!.scheduling),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestOptionsListSchedulingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestOptionsListStructOutputReference extends cdktf.ComplexObject {
@@ -6553,6 +7970,121 @@ export function syntheticsTestRequestBasicauthToTerraform(struct?: SyntheticsTes
   }
 }
 
+
+export function syntheticsTestRequestBasicauthToHclTerraform(struct?: SyntheticsTestRequestBasicauthOutputReference | SyntheticsTestRequestBasicauth): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_key: {
+      value: cdktf.stringToHclTerraform(struct!.accessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    access_token_url: {
+      value: cdktf.stringToHclTerraform(struct!.accessTokenUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audience: {
+      value: cdktf.stringToHclTerraform(struct!.audience),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource: {
+      value: cdktf.stringToHclTerraform(struct!.resource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope: {
+      value: cdktf.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_key: {
+      value: cdktf.stringToHclTerraform(struct!.secretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    session_token: {
+      value: cdktf.stringToHclTerraform(struct!.sessionToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_api_authentication: {
+      value: cdktf.stringToHclTerraform(struct!.tokenApiAuthentication),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    workstation: {
+      value: cdktf.stringToHclTerraform(struct!.workstation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6979,6 +8511,31 @@ export function syntheticsTestRequestClientCertificateCertToTerraform(struct?: S
   }
 }
 
+
+export function syntheticsTestRequestClientCertificateCertToHclTerraform(struct?: SyntheticsTestRequestClientCertificateCertOutputReference | SyntheticsTestRequestClientCertificateCert): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filename: {
+      value: cdktf.stringToHclTerraform(struct!.filename),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestRequestClientCertificateCertOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7072,6 +8629,31 @@ export function syntheticsTestRequestClientCertificateKeyToTerraform(struct?: Sy
   }
 }
 
+
+export function syntheticsTestRequestClientCertificateKeyToHclTerraform(struct?: SyntheticsTestRequestClientCertificateKeyOutputReference | SyntheticsTestRequestClientCertificateKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filename: {
+      value: cdktf.stringToHclTerraform(struct!.filename),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsTestRequestClientCertificateKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7163,6 +8745,31 @@ export function syntheticsTestRequestClientCertificateToTerraform(struct?: Synth
     cert: syntheticsTestRequestClientCertificateCertToTerraform(struct!.cert),
     key: syntheticsTestRequestClientCertificateKeyToTerraform(struct!.key),
   }
+}
+
+
+export function syntheticsTestRequestClientCertificateToHclTerraform(struct?: SyntheticsTestRequestClientCertificateOutputReference | SyntheticsTestRequestClientCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cert: {
+      value: syntheticsTestRequestClientCertificateCertToHclTerraform(struct!.cert),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestRequestClientCertificateCertList",
+    },
+    key: {
+      value: syntheticsTestRequestClientCertificateKeyToHclTerraform(struct!.key),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestRequestClientCertificateKeyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestRequestClientCertificateOutputReference extends cdktf.ComplexObject {
@@ -7372,6 +8979,133 @@ export function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTe
     timeout: cdktf.numberToTerraform(struct!.timeout),
     url: cdktf.stringToTerraform(struct!.url),
   }
+}
+
+
+export function syntheticsTestRequestDefinitionToHclTerraform(struct?: SyntheticsTestRequestDefinitionOutputReference | SyntheticsTestRequestDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    body: {
+      value: cdktf.stringToHclTerraform(struct!.body),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    body_type: {
+      value: cdktf.stringToHclTerraform(struct!.bodyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    call_type: {
+      value: cdktf.stringToHclTerraform(struct!.callType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    certificate_domains: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.certificateDomains),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    dns_server: {
+      value: cdktf.stringToHclTerraform(struct!.dnsServer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dns_server_port: {
+      value: cdktf.numberToHclTerraform(struct!.dnsServerPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    message: {
+      value: cdktf.stringToHclTerraform(struct!.message),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    method: {
+      value: cdktf.stringToHclTerraform(struct!.method),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    no_saving_response_body: {
+      value: cdktf.booleanToHclTerraform(struct!.noSavingResponseBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_of_packets: {
+      value: cdktf.numberToHclTerraform(struct!.numberOfPackets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    persist_cookies: {
+      value: cdktf.booleanToHclTerraform(struct!.persistCookies),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    proto_json_descriptor: {
+      value: cdktf.stringToHclTerraform(struct!.protoJsonDescriptor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    servername: {
+      value: cdktf.stringToHclTerraform(struct!.servername),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    should_track_hops: {
+      value: cdktf.booleanToHclTerraform(struct!.shouldTrackHops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    timeout: {
+      value: cdktf.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.ComplexObject {
@@ -7842,6 +9576,31 @@ export function syntheticsTestRequestProxyToTerraform(struct?: SyntheticsTestReq
     headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.headers),
     url: cdktf.stringToTerraform(struct!.url),
   }
+}
+
+
+export function syntheticsTestRequestProxyToHclTerraform(struct?: SyntheticsTestRequestProxyOutputReference | SyntheticsTestRequestProxy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.headers),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsTestRequestProxyOutputReference extends cdktf.ComplexObject {
@@ -8383,5 +10142,151 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       request_definition: syntheticsTestRequestDefinitionToTerraform(this._requestDefinition.internalValue),
       request_proxy: syntheticsTestRequestProxyToTerraform(this._requestProxy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      device_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._deviceIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locations: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._locations),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      message: {
+        value: cdktf.stringToHclTerraform(this._message),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_headers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestHeaders),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      request_metadata: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestMetadata),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      request_query: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestQuery),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      set_cookie: {
+        value: cdktf.stringToHclTerraform(this._setCookie),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subtype: {
+        value: cdktf.stringToHclTerraform(this._subtype),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_step: {
+        value: cdktf.listMapperHcl(syntheticsTestApiStepToHclTerraform, true)(this._apiStep.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestApiStepList",
+      },
+      assertion: {
+        value: cdktf.listMapperHcl(syntheticsTestAssertionToHclTerraform, true)(this._assertion.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestAssertionList",
+      },
+      browser_step: {
+        value: cdktf.listMapperHcl(syntheticsTestBrowserStepToHclTerraform, true)(this._browserStep.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestBrowserStepList",
+      },
+      browser_variable: {
+        value: cdktf.listMapperHcl(syntheticsTestBrowserVariableToHclTerraform, true)(this._browserVariable.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestBrowserVariableList",
+      },
+      config_variable: {
+        value: cdktf.listMapperHcl(syntheticsTestConfigVariableToHclTerraform, true)(this._configVariable.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestConfigVariableList",
+      },
+      options_list: {
+        value: syntheticsTestOptionsListStructToHclTerraform(this._optionsList.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestOptionsListStructList",
+      },
+      request_basicauth: {
+        value: syntheticsTestRequestBasicauthToHclTerraform(this._requestBasicauth.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestRequestBasicauthList",
+      },
+      request_client_certificate: {
+        value: syntheticsTestRequestClientCertificateToHclTerraform(this._requestClientCertificate.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestRequestClientCertificateList",
+      },
+      request_definition: {
+        value: syntheticsTestRequestDefinitionToHclTerraform(this._requestDefinition.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestRequestDefinitionList",
+      },
+      request_proxy: {
+        value: syntheticsTestRequestProxyToHclTerraform(this._requestProxy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestRequestProxyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

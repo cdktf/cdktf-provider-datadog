@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs
 // generated from terraform resource schema
 
@@ -312,5 +307,73 @@ export class DatadogProvider extends cdktf.TerraformProvider {
       validate: cdktf.stringToTerraform(this._validate),
       alias: cdktf.stringToTerraform(this._alias),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_key: {
+        value: cdktf.stringToHclTerraform(this._apiKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_url: {
+        value: cdktf.stringToHclTerraform(this._apiUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      app_key: {
+        value: cdktf.stringToHclTerraform(this._appKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_client_retry_backoff_base: {
+        value: cdktf.numberToHclTerraform(this._httpClientRetryBackoffBase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      http_client_retry_backoff_multiplier: {
+        value: cdktf.numberToHclTerraform(this._httpClientRetryBackoffMultiplier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      http_client_retry_enabled: {
+        value: cdktf.stringToHclTerraform(this._httpClientRetryEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_client_retry_max_retries: {
+        value: cdktf.numberToHclTerraform(this._httpClientRetryMaxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      http_client_retry_timeout: {
+        value: cdktf.numberToHclTerraform(this._httpClientRetryTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      validate: {
+        value: cdktf.stringToHclTerraform(this._validate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

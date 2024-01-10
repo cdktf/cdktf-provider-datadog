@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/synthetics_concurrency_cap
 // generated from terraform resource schema
 
@@ -104,5 +99,19 @@ export class SyntheticsConcurrencyCap extends cdktf.TerraformResource {
     return {
       on_demand_concurrency_cap: cdktf.numberToTerraform(this._onDemandConcurrencyCap),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      on_demand_concurrency_cap: {
+        value: cdktf.numberToHclTerraform(this._onDemandConcurrencyCap),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

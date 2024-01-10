@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/hosts
 // generated from terraform resource schema
 
@@ -53,6 +48,17 @@ export function dataDatadogHostsHostListMetaToTerraform(struct?: DataDatadogHost
   }
   return {
   }
+}
+
+
+export function dataDatadogHostsHostListMetaToHclTerraform(struct?: DataDatadogHostsHostListMeta): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogHostsHostListMetaOutputReference extends cdktf.ComplexObject {
@@ -138,6 +144,17 @@ export function dataDatadogHostsHostListMetricsToTerraform(struct?: DataDatadogH
   }
 }
 
+
+export function dataDatadogHostsHostListMetricsToHclTerraform(struct?: DataDatadogHostsHostListMetrics): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDatadogHostsHostListMetricsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -189,6 +206,17 @@ export function dataDatadogHostsHostListStructToTerraform(struct?: DataDatadogHo
   }
   return {
   }
+}
+
+
+export function dataDatadogHostsHostListStructToHclTerraform(struct?: DataDatadogHostsHostListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogHostsHostListStructOutputReference extends cdktf.ComplexObject {
@@ -481,5 +509,43 @@ export class DataDatadogHosts extends cdktf.TerraformDataSource {
       sort_dir: cdktf.stringToTerraform(this._sortDir),
       sort_field: cdktf.stringToTerraform(this._sortField),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      filter: {
+        value: cdktf.stringToHclTerraform(this._filter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      from: {
+        value: cdktf.numberToHclTerraform(this._from),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      include_muted_hosts_data: {
+        value: cdktf.booleanToHclTerraform(this._includeMutedHostsData),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sort_dir: {
+        value: cdktf.stringToHclTerraform(this._sortDir),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sort_field: {
+        value: cdktf.stringToHclTerraform(this._sortField),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

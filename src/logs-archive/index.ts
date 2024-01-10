@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_archive
 // generated from terraform resource schema
 
@@ -113,6 +108,49 @@ export function logsArchiveAzureArchiveToTerraform(struct?: LogsArchiveAzureArch
     storage_account: cdktf.stringToTerraform(struct!.storageAccount),
     tenant_id: cdktf.stringToTerraform(struct!.tenantId),
   }
+}
+
+
+export function logsArchiveAzureArchiveToHclTerraform(struct?: LogsArchiveAzureArchiveOutputReference | LogsArchiveAzureArchive): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    container: {
+      value: cdktf.stringToHclTerraform(struct!.container),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_account: {
+      value: cdktf.stringToHclTerraform(struct!.storageAccount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject {
@@ -279,6 +317,43 @@ export function logsArchiveGcsArchiveToTerraform(struct?: LogsArchiveGcsArchiveO
   }
 }
 
+
+export function logsArchiveGcsArchiveToHclTerraform(struct?: LogsArchiveGcsArchiveOutputReference | LogsArchiveGcsArchive): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_email: {
+      value: cdktf.stringToHclTerraform(struct!.clientEmail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -422,6 +497,43 @@ export function logsArchiveS3ArchiveToTerraform(struct?: LogsArchiveS3ArchiveOut
     path: cdktf.stringToTerraform(struct!.path),
     role_name: cdktf.stringToTerraform(struct!.roleName),
   }
+}
+
+
+export function logsArchiveS3ArchiveToHclTerraform(struct?: LogsArchiveS3ArchiveOutputReference | LogsArchiveS3Archive): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.stringToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_name: {
+      value: cdktf.stringToHclTerraform(struct!.roleName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
@@ -750,5 +862,67 @@ export class LogsArchive extends cdktf.TerraformResource {
       gcs_archive: logsArchiveGcsArchiveToTerraform(this._gcsArchive.internalValue),
       s3_archive: logsArchiveS3ArchiveToTerraform(this._s3Archive.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_tags: {
+        value: cdktf.booleanToHclTerraform(this._includeTags),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query: {
+        value: cdktf.stringToHclTerraform(this._query),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rehydration_max_scan_size_in_gb: {
+        value: cdktf.numberToHclTerraform(this._rehydrationMaxScanSizeInGb),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      rehydration_tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rehydrationTags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      azure_archive: {
+        value: logsArchiveAzureArchiveToHclTerraform(this._azureArchive.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LogsArchiveAzureArchiveList",
+      },
+      gcs_archive: {
+        value: logsArchiveGcsArchiveToHclTerraform(this._gcsArchive.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LogsArchiveGcsArchiveList",
+      },
+      s3_archive: {
+        value: logsArchiveS3ArchiveToHclTerraform(this._s3Archive.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LogsArchiveS3ArchiveList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

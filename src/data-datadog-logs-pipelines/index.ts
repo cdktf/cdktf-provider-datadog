@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/logs_pipelines
 // generated from terraform resource schema
 
@@ -36,6 +31,17 @@ export function dataDatadogLogsPipelinesLogsPipelinesFilterToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function dataDatadogLogsPipelinesLogsPipelinesFilterToHclTerraform(struct?: DataDatadogLogsPipelinesLogsPipelinesFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference extends cdktf.ComplexObject {
@@ -100,6 +106,17 @@ export function dataDatadogLogsPipelinesLogsPipelinesToTerraform(struct?: DataDa
   }
   return {
   }
+}
+
+
+export function dataDatadogLogsPipelinesLogsPipelinesToHclTerraform(struct?: DataDatadogLogsPipelinesLogsPipelines): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataDatadogLogsPipelinesLogsPipelinesOutputReference extends cdktf.ComplexObject {
@@ -287,5 +304,25 @@ export class DataDatadogLogsPipelines extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       is_read_only: cdktf.stringToTerraform(this._isReadOnly),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_read_only: {
+        value: cdktf.stringToHclTerraform(this._isReadOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
