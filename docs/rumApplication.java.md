@@ -4,7 +4,7 @@
 
 ### RumApplication <a name="RumApplication" id="@cdktf/provider-datadog.rumApplication.RumApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application datadog_rum_application}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application datadog_rum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.rumApplication.RumApplication.Initializer"></a>
 
@@ -24,7 +24,6 @@ RumApplication.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
-//  .id(java.lang.String)
 //  .type(java.lang.String)
     .build();
 ```
@@ -40,9 +39,8 @@ RumApplication.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the RUM application. |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#id RumApplication#id}. |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter` Defaults to `"browser"`. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the RUM application. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`. |
 
 ---
 
@@ -110,20 +108,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-The name of the RUM application.
+Name of the RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#name RumApplication#name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#id RumApplication#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application#name RumApplication#name}
 
 ---
 
@@ -131,9 +118,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter` Defaults to `"browser"`.
+Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#type RumApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application#type RumApplication#type}
 
 ---
 
@@ -164,7 +151,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.resetType">resetType</a></code> | *No description.* |
 
 ---
@@ -459,12 +445,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-datadog.rumApplication.RumApplication.resetId"></a>
-
-```java
-public void resetId()
-```
-
 ##### `resetType` <a name="resetType" id="@cdktf/provider-datadog.rumApplication.RumApplication.resetType"></a>
 
 ```java
@@ -574,7 +554,7 @@ The construct id used in the generated config for the RumApplication to import.
 
 The id of the existing RumApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,10 +585,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.clientToken">clientToken</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -766,10 +745,10 @@ public java.lang.String getClientToken();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.id"></a>
 
 ```java
-public java.lang.String getIdInput();
+public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -790,16 +769,6 @@ public java.lang.String getNameInput();
 
 ```java
 public java.lang.String getTypeInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -866,7 +835,6 @@ RumApplicationConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
-//  .id(java.lang.String)
 //  .type(java.lang.String)
     .build();
 ```
@@ -882,9 +850,8 @@ RumApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the RUM application. |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#id RumApplication#id}. |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.type">type</a></code> | <code>java.lang.String</code> | The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter` Defaults to `"browser"`. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the RUM application. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.type">type</a></code> | <code>java.lang.String</code> | Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`. |
 
 ---
 
@@ -966,24 +933,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The name of the RUM application.
+Name of the RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#name RumApplication#name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#id RumApplication#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application#name RumApplication#name}
 
 ---
 
@@ -995,9 +947,9 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter` Defaults to `"browser"`.
+Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#type RumApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application#type RumApplication#type}
 
 ---
 

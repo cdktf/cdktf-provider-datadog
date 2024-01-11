@@ -4,7 +4,7 @@
 
 ### RumApplication <a name="RumApplication" id="@cdktf/provider-datadog.rumApplication.RumApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application datadog_rum_application}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application datadog_rum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.rumApplication.RumApplication.Initializer"></a>
 
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.resetType">resetType</a></code> | *No description.* |
 
 ---
@@ -366,12 +365,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-datadog.rumApplication.RumApplication.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetType` <a name="resetType" id="@cdktf/provider-datadog.rumApplication.RumApplication.resetType"></a>
 
 ```typescript
@@ -481,7 +474,7 @@ The construct id used in the generated config for the RumApplication to import.
 
 The id of the existing RumApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -512,10 +505,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.clientToken">clientToken</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.type">type</a></code> | <code>string</code> | *No description.* |
 
@@ -673,10 +665,10 @@ public readonly clientToken: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.id"></a>
 
 ```typescript
-public readonly idInput: string;
+public readonly id: string;
 ```
 
 - *Type:* string
@@ -697,16 +689,6 @@ public readonly nameInput: string;
 
 ```typescript
 public readonly typeInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -774,9 +756,8 @@ const rumApplicationConfig: rumApplication.RumApplicationConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.name">name</a></code> | <code>string</code> | The name of the RUM application. |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#id RumApplication#id}. |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.type">type</a></code> | <code>string</code> | The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter` Defaults to `"browser"`. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.name">name</a></code> | <code>string</code> | Name of the RUM application. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.type">type</a></code> | <code>string</code> | Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`. |
 
 ---
 
@@ -858,24 +839,9 @@ public readonly name: string;
 
 - *Type:* string
 
-The name of the RUM application.
+Name of the RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#name RumApplication#name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#id RumApplication#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application#name RumApplication#name}
 
 ---
 
@@ -887,9 +853,9 @@ public readonly type: string;
 
 - *Type:* string
 
-The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter` Defaults to `"browser"`.
+Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/rum_application#type RumApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/rum_application#type RumApplication#type}
 
 ---
 

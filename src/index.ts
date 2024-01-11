@@ -18,6 +18,7 @@ export * as dashboardList from './dashboard-list';
 export * as downtime from './downtime';
 export * as downtimeSchedule from './downtime-schedule';
 export * as integrationAws from './integration-aws';
+export * as integrationAwsEventBridge from './integration-aws-event-bridge';
 export * as integrationAwsLambdaArn from './integration-aws-lambda-arn';
 export * as integrationAwsLogCollection from './integration-aws-log-collection';
 export * as integrationAwsTagFilter from './integration-aws-tag-filter';
@@ -109,5 +110,6 @@ export * as dataDatadogSyntheticsTest from './data-datadog-synthetics-test';
 export * as dataDatadogTeam from './data-datadog-team';
 export * as dataDatadogTeamMemberships from './data-datadog-team-memberships';
 export * as dataDatadogUser from './data-datadog-user';
+export * as dataDatadogUsers from './data-datadog-users';
 export * as provider from './provider';
 
