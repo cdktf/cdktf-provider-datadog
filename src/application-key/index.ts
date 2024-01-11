@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/application_key
+// https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/application_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface ApplicationKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/application_key#id ApplicationKey#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Name for Application Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/application_key#name ApplicationKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/application_key#name ApplicationKey#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/application_key datadog_application_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/application_key datadog_application_key}
 */
 export class ApplicationKey extends cdktf.TerraformResource {
 
@@ -44,7 +32,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationKey to import
-  * @param importFromId The id of the existing ApplicationKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +44,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/application_key datadog_application_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/application_key datadog_application_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +55,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_application_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -78,7 +66,6 @@ export class ApplicationKey extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._name = config.name;
   }
 
@@ -86,20 +73,9 @@ export class ApplicationKey extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // key - computed: true, optional: false, required: false
@@ -126,19 +102,12 @@ export class ApplicationKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
