@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
 
 syntheticsprivatelocation.NewSyntheticsPrivateLocation(scope Construct, id *string, config SyntheticsPrivateLocationConfig) SyntheticsPrivateLocation
 ```
@@ -419,7 +419,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -829,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
 
 &syntheticsprivatelocation.SyntheticsPrivateLocationConfig {
 	Connection: interface{},
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsprivate
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	Metadata: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata,
+	Metadata: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata,
 	Tags: *[]*string,
 }
 ```
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
 
 &syntheticsprivatelocation.SyntheticsPrivateLocationMetadata {
 	RestrictedRoles: *[]*string,
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
 
 syntheticsprivatelocation.NewSyntheticsPrivateLocationMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsPrivateLocationMetadataOutputReference
 ```
