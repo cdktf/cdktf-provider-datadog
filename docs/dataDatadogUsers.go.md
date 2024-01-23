@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogusers"
 
 datadatadogusers.NewDataDatadogUsers(scope Construct, id *string, config DataDatadogUsersConfig) DataDatadogUsers
 ```
@@ -290,7 +290,7 @@ func ResetFilterStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogusers"
 
 datadatadogusers.DataDatadogUsers_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogusers"
 
 datadatadogusers.DataDatadogUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatadogusers.DataDatadogUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogusers"
 
 datadatadogusers.DataDatadogUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datadatadogusers.DataDatadogUsers_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogusers"
 
 datadatadogusers.DataDatadogUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -623,7 +623,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogusers"
 
 &datadatadogusers.DataDatadogUsersConfig {
 	Connection: interface{},
@@ -757,7 +757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogusers"
 
 &datadatadogusers.DataDatadogUsersUsers {
 
@@ -772,7 +772,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogusers"
 
 datadatadogusers.NewDataDatadogUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogUsersUsersList
 ```
@@ -921,7 +921,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogusers"
 
 datadatadogusers.NewDataDatadogUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogUsersUsersOutputReference
 ```
