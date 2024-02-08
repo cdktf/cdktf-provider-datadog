@@ -4,12 +4,12 @@
 
 ### DataDatadogApiKey <a name="DataDatadogApiKey" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/api_key datadog_api_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/api_key datadog_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 datadatadogapikey.NewDataDatadogApiKey(scope Construct, id *string, config DataDatadogApiKeyConfig) DataDatadogApiKey
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.resetExactMatch">ResetExactMatch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.resetName">ResetName</a></code> | *No description.* |
 
@@ -264,6 +265,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetExactMatch` <a name="ResetExactMatch" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.resetExactMatch"></a>
+
+```go
+func ResetExactMatch()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.resetId"></a>
 
 ```go
@@ -290,7 +297,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ datadatadogapikey.DataDatadogApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +357,7 @@ datadatadogapikey.DataDatadogApiKey_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataDatadogApiKey to impor
 
 The id of the existing DataDatadogApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -408,8 +415,10 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.key">Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.exactMatchInput">ExactMatchInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.exactMatch">ExactMatch</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 
@@ -547,6 +556,16 @@ func Key() *string
 
 ---
 
+##### `ExactMatchInput`<sup>Optional</sup> <a name="ExactMatchInput" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.exactMatchInput"></a>
+
+```go
+func ExactMatchInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.idInput"></a>
 
 ```go
@@ -564,6 +583,16 @@ func NameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ExactMatch`<sup>Required</sup> <a name="ExactMatch" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.exactMatch"></a>
+
+```go
+func ExactMatch() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -612,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 &datadatadogapikey.DataDatadogApiKeyConfig {
 	Connection: interface{},
@@ -622,6 +651,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapikey
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	ExactMatch: interface{},
 	Id: *string,
 	Name: *string,
 }
@@ -638,6 +668,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapikey
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.exactMatch">ExactMatch</a></code> | <code>interface{}</code> | Whether to use exact match when searching by name. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.id">Id</a></code> | <code>*string</code> | The ID of this resource. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.name">Name</a></code> | <code>*string</code> | Name for API Key. |
 
@@ -713,6 +744,20 @@ Provisioners *[]interface{}
 
 ---
 
+##### `ExactMatch`<sup>Optional</sup> <a name="ExactMatch" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.exactMatch"></a>
+
+```go
+ExactMatch interface{}
+```
+
+- *Type:* interface{}
+
+Whether to use exact match when searching by name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/api_key#exact_match DataDatadogApiKey#exact_match}
+
+---
+
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.id"></a>
 
 ```go
@@ -723,7 +768,7 @@ Id *string
 
 The ID of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -740,7 +785,7 @@ Name *string
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
 
 ---
 

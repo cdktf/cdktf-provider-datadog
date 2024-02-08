@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist
+// https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,32 +10,27 @@ export interface IpAllowlistConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the IP Allowlist is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#id IpAllowlist#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * entry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
   */
   readonly entry?: IpAllowlistEntry[] | cdktf.IResolvable;
 }
 export interface IpAllowlistEntry {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}
+  * IP address or range of addresses.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}
   */
   readonly cidrBlock: string;
   /**
   * Note accompanying IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#note IpAllowlist#note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#note IpAllowlist#note}
   */
   readonly note?: string;
 }
@@ -182,7 +172,7 @@ export class IpAllowlistEntryList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist datadog_ip_allowlist}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist datadog_ip_allowlist}
 */
 export class IpAllowlist extends cdktf.TerraformResource {
 
@@ -198,7 +188,7 @@ export class IpAllowlist extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IpAllowlist resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IpAllowlist to import
-  * @param importFromId The id of the existing IpAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IpAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IpAllowlist to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -210,7 +200,7 @@ export class IpAllowlist extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -221,7 +211,7 @@ export class IpAllowlist extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_ip_allowlist',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.35.0',
+        providerVersion: '3.36.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -233,7 +223,6 @@ export class IpAllowlist extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._enabled = config.enabled;
-    this._id = config.id;
     this._entry.internalValue = config.entry;
   }
 
@@ -254,20 +243,9 @@ export class IpAllowlist extends cdktf.TerraformResource {
     return this._enabled;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // entry - computed: false, optional: true, required: false
@@ -293,7 +271,6 @@ export class IpAllowlist extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
       entry: cdktf.listMapper(ipAllowlistEntryToTerraform, true)(this._entry.internalValue),
     };
   }
@@ -305,12 +282,6 @@ export class IpAllowlist extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       entry: {
         value: cdktf.listMapperHcl(ipAllowlistEntryToHclTerraform, true)(this._entry.internalValue),

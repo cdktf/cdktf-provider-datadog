@@ -4,7 +4,7 @@
 
 ### LogsIndex <a name="LogsIndex" id="@cdktf/provider-datadog.logsIndex.LogsIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index datadog_logs_index}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index datadog_logs_index}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer"></a>
 
@@ -24,6 +24,8 @@ logsIndex.LogsIndex(
   filter: LogsIndexFilter,
   name: str,
   daily_limit: typing.Union[int, float] = None,
+  daily_limit_reset: LogsIndexDailyLimitReset = None,
+  daily_limit_warning_threshold_percentage: typing.Union[int, float] = None,
   disable_daily_limit: typing.Union[bool, IResolvable] = None,
   exclusion_filter: typing.Union[IResolvable, typing.List[LogsIndexExclusionFilter]] = None,
   id: str = None,
@@ -45,9 +47,11 @@ logsIndex.LogsIndex(
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexFilter">LogsIndexFilter</a></code> | filter block. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the index. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.dailyLimit">daily_limit</a></code> | <code>typing.Union[int, float]</code> | The number of log events you can send in this index per day before you are rate-limited. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.dailyLimitReset">daily_limit_reset</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a></code> | daily_limit_reset block. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.dailyLimitWarningThresholdPercentage">daily_limit_warning_threshold_percentage</a></code> | <code>typing.Union[int, float]</code> | A percentage threshold of the daily quota at which a Datadog warning event is generated. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.disableDailyLimit">disable_daily_limit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.exclusionFilter">exclusion_filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a>]]</code> | exclusion_filter block. |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#id LogsIndex#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#id LogsIndex#id}. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.retentionDays">retention_days</a></code> | <code>typing.Union[int, float]</code> | The number of days before logs are deleted from this index. |
 
 ---
@@ -118,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -128,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -138,7 +142,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The number of log events you can send in this index per day before you are rate-limited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
+
+---
+
+##### `daily_limit_reset`<sup>Optional</sup> <a name="daily_limit_reset" id="@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.dailyLimitReset"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a>
+
+daily_limit_reset block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#daily_limit_reset LogsIndex#daily_limit_reset}
+
+---
+
+##### `daily_limit_warning_threshold_percentage`<sup>Optional</sup> <a name="daily_limit_warning_threshold_percentage" id="@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.dailyLimitWarningThresholdPercentage"></a>
+
+- *Type:* typing.Union[int, float]
+
+A percentage threshold of the daily quota at which a Datadog warning event is generated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#daily_limit_warning_threshold_percentage LogsIndex#daily_limit_warning_threshold_percentage}
 
 ---
 
@@ -150,7 +174,7 @@ If true, sets the daily_limit value to null and the index is not limited on a da
 
 If false or omitted, the index's current daily_limit is maintained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
 
 ---
 
@@ -160,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
 
 ---
 
@@ -168,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#id LogsIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#id LogsIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +205,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The number of days before logs are deleted from this index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
 
 ---
 
@@ -212,9 +236,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.putDailyLimitReset">put_daily_limit_reset</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.putExclusionFilter">put_exclusion_filter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.putFilter">put_filter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimit">reset_daily_limit</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimitReset">reset_daily_limit_reset</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimitWarningThresholdPercentage">reset_daily_limit_warning_threshold_percentage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetDisableDailyLimit">reset_disable_daily_limit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetExclusionFilter">reset_exclusion_filter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetId">reset_id</a></code> | *No description.* |
@@ -547,6 +574,39 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_daily_limit_reset` <a name="put_daily_limit_reset" id="@cdktf/provider-datadog.logsIndex.LogsIndex.putDailyLimitReset"></a>
+
+```python
+def put_daily_limit_reset(
+  reset_time: str,
+  reset_utc_offset: str
+) -> None
+```
+
+###### `reset_time`<sup>Required</sup> <a name="reset_time" id="@cdktf/provider-datadog.logsIndex.LogsIndex.putDailyLimitReset.parameter.resetTime"></a>
+
+- *Type:* str
+
+String in `HH:00` format representing the time of day the daily limit should be reset.
+
+The hours must be between 00 and 23 (inclusive).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
+
+---
+
+###### `reset_utc_offset`<sup>Required</sup> <a name="reset_utc_offset" id="@cdktf/provider-datadog.logsIndex.LogsIndex.putDailyLimitReset.parameter.resetUtcOffset"></a>
+
+- *Type:* str
+
+String in `(-|+)HH:00` format representing the UTC offset to apply to the given reset time.
+
+The hours must be between -12 and +14 (inclusive).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
+
+---
+
 ##### `put_exclusion_filter` <a name="put_exclusion_filter" id="@cdktf/provider-datadog.logsIndex.LogsIndex.putExclusionFilter"></a>
 
 ```python
@@ -575,7 +635,7 @@ def put_filter(
 
 Logs filter criteria. Only logs matching this filter criteria are considered for this index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
@@ -583,6 +643,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def reset_daily_limit() -> None
+```
+
+##### `reset_daily_limit_reset` <a name="reset_daily_limit_reset" id="@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimitReset"></a>
+
+```python
+def reset_daily_limit_reset() -> None
+```
+
+##### `reset_daily_limit_warning_threshold_percentage` <a name="reset_daily_limit_warning_threshold_percentage" id="@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimitWarningThresholdPercentage"></a>
+
+```python
+def reset_daily_limit_warning_threshold_percentage() -> None
 ```
 
 ##### `reset_disable_daily_limit` <a name="reset_disable_daily_limit" id="@cdktf/provider-datadog.logsIndex.LogsIndex.resetDisableDailyLimit"></a>
@@ -723,7 +795,7 @@ The construct id used in the generated config for the LogsIndex to import.
 
 The id of the existing LogsIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,9 +825,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitReset">daily_limit_reset</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference">LogsIndexDailyLimitResetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.exclusionFilter">exclusion_filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterList">LogsIndexExclusionFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexFilterOutputReference">LogsIndexFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitInput">daily_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitResetInput">daily_limit_reset_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitWarningThresholdPercentageInput">daily_limit_warning_threshold_percentage_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.disableDailyLimitInput">disable_daily_limit_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.exclusionFilterInput">exclusion_filter_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.filterInput">filter_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexFilter">LogsIndexFilter</a></code> | *No description.* |
@@ -763,6 +838,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.retentionDaysInput">retention_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimit">daily_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitWarningThresholdPercentage">daily_limit_warning_threshold_percentage</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.disableDailyLimit">disable_daily_limit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -912,6 +988,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `daily_limit_reset`<sup>Required</sup> <a name="daily_limit_reset" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitReset"></a>
+
+```python
+daily_limit_reset: LogsIndexDailyLimitResetOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference">LogsIndexDailyLimitResetOutputReference</a>
+
+---
+
 ##### `exclusion_filter`<sup>Required</sup> <a name="exclusion_filter" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.exclusionFilter"></a>
 
 ```python
@@ -936,6 +1022,26 @@ filter: LogsIndexFilterOutputReference
 
 ```python
 daily_limit_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `daily_limit_reset_input`<sup>Optional</sup> <a name="daily_limit_reset_input" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitResetInput"></a>
+
+```python
+daily_limit_reset_input: LogsIndexDailyLimitReset
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a>
+
+---
+
+##### `daily_limit_warning_threshold_percentage_input`<sup>Optional</sup> <a name="daily_limit_warning_threshold_percentage_input" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitWarningThresholdPercentageInput"></a>
+
+```python
+daily_limit_warning_threshold_percentage_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
@@ -1006,6 +1112,16 @@ retention_days_input: typing.Union[int, float]
 
 ```python
 daily_limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `daily_limit_warning_threshold_percentage`<sup>Required</sup> <a name="daily_limit_warning_threshold_percentage" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitWarningThresholdPercentage"></a>
+
+```python
+daily_limit_warning_threshold_percentage: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
@@ -1090,6 +1206,8 @@ logsIndex.LogsIndexConfig(
   filter: LogsIndexFilter,
   name: str,
   daily_limit: typing.Union[int, float] = None,
+  daily_limit_reset: LogsIndexDailyLimitReset = None,
+  daily_limit_warning_threshold_percentage: typing.Union[int, float] = None,
   disable_daily_limit: typing.Union[bool, IResolvable] = None,
   exclusion_filter: typing.Union[IResolvable, typing.List[LogsIndexExclusionFilter]] = None,
   id: str = None,
@@ -1111,9 +1229,11 @@ logsIndex.LogsIndexConfig(
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexFilter">LogsIndexFilter</a></code> | filter block. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.name">name</a></code> | <code>str</code> | The name of the index. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimit">daily_limit</a></code> | <code>typing.Union[int, float]</code> | The number of log events you can send in this index per day before you are rate-limited. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimitReset">daily_limit_reset</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a></code> | daily_limit_reset block. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimitWarningThresholdPercentage">daily_limit_warning_threshold_percentage</a></code> | <code>typing.Union[int, float]</code> | A percentage threshold of the daily quota at which a Datadog warning event is generated. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.disableDailyLimit">disable_daily_limit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.exclusionFilter">exclusion_filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a>]]</code> | exclusion_filter block. |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#id LogsIndex#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#id LogsIndex#id}. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.retentionDays">retention_days</a></code> | <code>typing.Union[int, float]</code> | The number of days before logs are deleted from this index. |
 
 ---
@@ -1198,7 +1318,7 @@ filter: LogsIndexFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1212,7 +1332,7 @@ name: str
 
 The name of the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1226,7 +1346,35 @@ daily_limit: typing.Union[int, float]
 
 The number of log events you can send in this index per day before you are rate-limited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
+
+---
+
+##### `daily_limit_reset`<sup>Optional</sup> <a name="daily_limit_reset" id="@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimitReset"></a>
+
+```python
+daily_limit_reset: LogsIndexDailyLimitReset
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a>
+
+daily_limit_reset block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#daily_limit_reset LogsIndex#daily_limit_reset}
+
+---
+
+##### `daily_limit_warning_threshold_percentage`<sup>Optional</sup> <a name="daily_limit_warning_threshold_percentage" id="@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimitWarningThresholdPercentage"></a>
+
+```python
+daily_limit_warning_threshold_percentage: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+A percentage threshold of the daily quota at which a Datadog warning event is generated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#daily_limit_warning_threshold_percentage LogsIndex#daily_limit_warning_threshold_percentage}
 
 ---
 
@@ -1242,7 +1390,7 @@ If true, sets the daily_limit value to null and the index is not limited on a da
 
 If false or omitted, the index's current daily_limit is maintained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
 
 ---
 
@@ -1256,7 +1404,7 @@ exclusion_filter: typing.Union[IResolvable, typing.List[LogsIndexExclusionFilter
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
 
 ---
 
@@ -1268,7 +1416,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#id LogsIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#id LogsIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1285,7 +1433,61 @@ retention_days: typing.Union[int, float]
 
 The number of days before logs are deleted from this index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
+
+---
+
+### LogsIndexDailyLimitReset <a name="LogsIndexDailyLimitReset" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_datadog import logs_index
+
+logsIndex.LogsIndexDailyLimitReset(
+  reset_time: str,
+  reset_utc_offset: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.property.resetTime">reset_time</a></code> | <code>str</code> | String in `HH:00` format representing the time of day the daily limit should be reset. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.property.resetUtcOffset">reset_utc_offset</a></code> | <code>str</code> | String in `(-\|+)HH:00` format representing the UTC offset to apply to the given reset time. |
+
+---
+
+##### `reset_time`<sup>Required</sup> <a name="reset_time" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.property.resetTime"></a>
+
+```python
+reset_time: str
+```
+
+- *Type:* str
+
+String in `HH:00` format representing the time of day the daily limit should be reset.
+
+The hours must be between 00 and 23 (inclusive).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
+
+---
+
+##### `reset_utc_offset`<sup>Required</sup> <a name="reset_utc_offset" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.property.resetUtcOffset"></a>
+
+```python
+reset_utc_offset: str
+```
+
+- *Type:* str
+
+String in `(-|+)HH:00` format representing the UTC offset to apply to the given reset time.
+
+The hours must be between -12 and +14 (inclusive).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
 
 ---
 
@@ -1323,7 +1525,7 @@ filter: typing.Union[IResolvable, typing.List[LogsIndexExclusionFilterFilter]]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1337,7 +1539,7 @@ is_enabled: typing.Union[bool, IResolvable]
 
 A boolean stating if the exclusion is active or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
 
 ---
 
@@ -1351,7 +1553,7 @@ name: str
 
 The name of the exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1387,7 +1589,7 @@ query: str
 
 Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
@@ -1401,7 +1603,7 @@ sample_rate: typing.Union[int, float]
 
 The fraction of logs excluded by the exclusion filter, when active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
 
 ---
 
@@ -1435,11 +1637,329 @@ query: str
 
 Logs filter criteria. Only logs matching this filter criteria are considered for this index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### LogsIndexDailyLimitResetOutputReference <a name="LogsIndexDailyLimitResetOutputReference" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_datadog import logs_index
+
+logsIndex.LogsIndexDailyLimitResetOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetTimeInput">reset_time_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetUtcOffsetInput">reset_utc_offset_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetTime">reset_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetUtcOffset">reset_utc_offset</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `reset_time_input`<sup>Optional</sup> <a name="reset_time_input" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetTimeInput"></a>
+
+```python
+reset_time_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `reset_utc_offset_input`<sup>Optional</sup> <a name="reset_utc_offset_input" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetUtcOffsetInput"></a>
+
+```python
+reset_utc_offset_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `reset_time`<sup>Required</sup> <a name="reset_time" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetTime"></a>
+
+```python
+reset_time: str
+```
+
+- *Type:* str
+
+---
+
+##### `reset_utc_offset`<sup>Required</sup> <a name="reset_utc_offset" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetUtcOffset"></a>
+
+```python
+reset_utc_offset: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsIndexDailyLimitReset
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a>
+
+---
+
 
 ### LogsIndexExclusionFilterFilterList <a name="LogsIndexExclusionFilterFilterList" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterList"></a>
 

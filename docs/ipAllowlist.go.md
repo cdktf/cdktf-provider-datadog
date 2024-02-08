@@ -4,12 +4,12 @@
 
 ### IpAllowlist <a name="IpAllowlist" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/ipallowlist"
 
 ipallowlist.NewIpAllowlist(scope Construct, id *string, config IpAllowlistConfig) IpAllowlist
 ```
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.putEntry">PutEntry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.resetEntry">ResetEntry</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -385,12 +384,6 @@ func PutEntry(value interface{})
 func ResetEntry()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -405,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/ipallowlist"
 
 ipallowlist.IpAllowlist_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/ipallowlist"
 
 ipallowlist.IpAllowlist_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +444,7 @@ ipallowlist.IpAllowlist_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/ipallowlist"
 
 ipallowlist.IpAllowlist_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +458,7 @@ ipallowlist.IpAllowlist_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/ipallowlist"
 
 ipallowlist.IpAllowlist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +487,7 @@ The construct id used in the generated config for the IpAllowlist to import.
 
 The id of the existing IpAllowlist that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -525,11 +518,10 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.entry">Entry</a></code> | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryList">IpAllowlistEntryList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.entryInput">EntryInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -685,6 +677,16 @@ func Entry() IpAllowlistEntryList
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.enabledInput"></a>
 
 ```go
@@ -705,16 +707,6 @@ func EntryInput() interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.enabled"></a>
 
 ```go
@@ -722,16 +714,6 @@ func Enabled() interface{}
 ```
 
 - *Type:* interface{}
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -760,7 +742,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/ipallowlist"
 
 &ipallowlist.IpAllowlistConfig {
 	Connection: interface{},
@@ -772,7 +754,6 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
 	Provisioners: *[]interface{},
 	Enabled: interface{},
 	Entry: interface{},
-	Id: *string,
 }
 ```
 
@@ -789,7 +770,6 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether the IP Allowlist is enabled. |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.entry">Entry</a></code> | <code>interface{}</code> | entry block. |
-| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#id IpAllowlist#id}. |
 
 ---
 
@@ -873,7 +853,7 @@ Enabled interface{}
 
 Whether the IP Allowlist is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
 
 ---
 
@@ -887,22 +867,7 @@ Entry interface{}
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#id IpAllowlist#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
 
 ---
 
@@ -911,7 +876,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/ipallowlist"
 
 &ipallowlist.IpAllowlistEntry {
 	CidrBlock: *string,
@@ -923,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}. |
+| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | IP address or range of addresses. |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry.property.note">Note</a></code> | <code>*string</code> | Note accompanying IP address. |
 
 ---
@@ -936,7 +901,9 @@ CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}.
+IP address or range of addresses.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}
 
 ---
 
@@ -950,7 +917,7 @@ Note *string
 
 Note accompanying IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/ip_allowlist#note IpAllowlist#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/ip_allowlist#note IpAllowlist#note}
 
 ---
 
@@ -961,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/ipallowlist"
 
 ipallowlist.NewIpAllowlistEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IpAllowlistEntryList
 ```
@@ -1121,7 +1088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/ipallowlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/ipallowlist"
 
 ipallowlist.NewIpAllowlistEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IpAllowlistEntryOutputReference
 ```

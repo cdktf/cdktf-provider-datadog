@@ -4,7 +4,7 @@
 
 ### LogsIndex <a name="LogsIndex" id="@cdktf/provider-datadog.logsIndex.LogsIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index datadog_logs_index}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index datadog_logs_index}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer"></a>
 
@@ -73,9 +73,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.putDailyLimitReset">putDailyLimitReset</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.putExclusionFilter">putExclusionFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.putFilter">putFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimit">resetDailyLimit</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimitReset">resetDailyLimitReset</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimitWarningThresholdPercentage">resetDailyLimitWarningThresholdPercentage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetDisableDailyLimit">resetDisableDailyLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetExclusionFilter">resetExclusionFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.resetId">resetId</a></code> | *No description.* |
@@ -371,6 +374,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putDailyLimitReset` <a name="putDailyLimitReset" id="@cdktf/provider-datadog.logsIndex.LogsIndex.putDailyLimitReset"></a>
+
+```typescript
+public putDailyLimitReset(value: LogsIndexDailyLimitReset): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.logsIndex.LogsIndex.putDailyLimitReset.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a>
+
+---
+
 ##### `putExclusionFilter` <a name="putExclusionFilter" id="@cdktf/provider-datadog.logsIndex.LogsIndex.putExclusionFilter"></a>
 
 ```typescript
@@ -399,6 +414,18 @@ public putFilter(value: LogsIndexFilter): void
 
 ```typescript
 public resetDailyLimit(): void
+```
+
+##### `resetDailyLimitReset` <a name="resetDailyLimitReset" id="@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimitReset"></a>
+
+```typescript
+public resetDailyLimitReset(): void
+```
+
+##### `resetDailyLimitWarningThresholdPercentage` <a name="resetDailyLimitWarningThresholdPercentage" id="@cdktf/provider-datadog.logsIndex.LogsIndex.resetDailyLimitWarningThresholdPercentage"></a>
+
+```typescript
+public resetDailyLimitWarningThresholdPercentage(): void
 ```
 
 ##### `resetDisableDailyLimit` <a name="resetDisableDailyLimit" id="@cdktf/provider-datadog.logsIndex.LogsIndex.resetDisableDailyLimit"></a>
@@ -528,7 +555,7 @@ The construct id used in the generated config for the LogsIndex to import.
 
 The id of the existing LogsIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -558,9 +585,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitReset">dailyLimitReset</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference">LogsIndexDailyLimitResetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.exclusionFilter">exclusionFilter</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterList">LogsIndexExclusionFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexFilterOutputReference">LogsIndexFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitInput">dailyLimitInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitResetInput">dailyLimitResetInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitWarningThresholdPercentageInput">dailyLimitWarningThresholdPercentageInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.disableDailyLimitInput">disableDailyLimitInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.exclusionFilterInput">exclusionFilterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.filterInput">filterInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexFilter">LogsIndexFilter</a></code> | *No description.* |
@@ -568,6 +598,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.35
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.retentionDaysInput">retentionDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimit">dailyLimit</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitWarningThresholdPercentage">dailyLimitWarningThresholdPercentage</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.disableDailyLimit">disableDailyLimit</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -717,6 +748,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `dailyLimitReset`<sup>Required</sup> <a name="dailyLimitReset" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitReset"></a>
+
+```typescript
+public readonly dailyLimitReset: LogsIndexDailyLimitResetOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference">LogsIndexDailyLimitResetOutputReference</a>
+
+---
+
 ##### `exclusionFilter`<sup>Required</sup> <a name="exclusionFilter" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.exclusionFilter"></a>
 
 ```typescript
@@ -741,6 +782,26 @@ public readonly filter: LogsIndexFilterOutputReference;
 
 ```typescript
 public readonly dailyLimitInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dailyLimitResetInput`<sup>Optional</sup> <a name="dailyLimitResetInput" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitResetInput"></a>
+
+```typescript
+public readonly dailyLimitResetInput: LogsIndexDailyLimitReset;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a>
+
+---
+
+##### `dailyLimitWarningThresholdPercentageInput`<sup>Optional</sup> <a name="dailyLimitWarningThresholdPercentageInput" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitWarningThresholdPercentageInput"></a>
+
+```typescript
+public readonly dailyLimitWarningThresholdPercentageInput: number;
 ```
 
 - *Type:* number
@@ -811,6 +872,16 @@ public readonly retentionDaysInput: number;
 
 ```typescript
 public readonly dailyLimit: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dailyLimitWarningThresholdPercentage`<sup>Required</sup> <a name="dailyLimitWarningThresholdPercentage" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.dailyLimitWarningThresholdPercentage"></a>
+
+```typescript
+public readonly dailyLimitWarningThresholdPercentage: number;
 ```
 
 - *Type:* number
@@ -901,9 +972,11 @@ const logsIndexConfig: logsIndex.LogsIndexConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexFilter">LogsIndexFilter</a></code> | filter block. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.name">name</a></code> | <code>string</code> | The name of the index. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimit">dailyLimit</a></code> | <code>number</code> | The number of log events you can send in this index per day before you are rate-limited. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimitReset">dailyLimitReset</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a></code> | daily_limit_reset block. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimitWarningThresholdPercentage">dailyLimitWarningThresholdPercentage</a></code> | <code>number</code> | A percentage threshold of the daily quota at which a Datadog warning event is generated. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.disableDailyLimit">disableDailyLimit</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.exclusionFilter">exclusionFilter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a>[]</code> | exclusion_filter block. |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#id LogsIndex#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#id LogsIndex#id}. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.retentionDays">retentionDays</a></code> | <code>number</code> | The number of days before logs are deleted from this index. |
 
 ---
@@ -988,7 +1061,7 @@ public readonly filter: LogsIndexFilter;
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1002,7 +1075,7 @@ public readonly name: string;
 
 The name of the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1016,7 +1089,35 @@ public readonly dailyLimit: number;
 
 The number of log events you can send in this index per day before you are rate-limited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
+
+---
+
+##### `dailyLimitReset`<sup>Optional</sup> <a name="dailyLimitReset" id="@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimitReset"></a>
+
+```typescript
+public readonly dailyLimitReset: LogsIndexDailyLimitReset;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a>
+
+daily_limit_reset block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#daily_limit_reset LogsIndex#daily_limit_reset}
+
+---
+
+##### `dailyLimitWarningThresholdPercentage`<sup>Optional</sup> <a name="dailyLimitWarningThresholdPercentage" id="@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimitWarningThresholdPercentage"></a>
+
+```typescript
+public readonly dailyLimitWarningThresholdPercentage: number;
+```
+
+- *Type:* number
+
+A percentage threshold of the daily quota at which a Datadog warning event is generated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#daily_limit_warning_threshold_percentage LogsIndex#daily_limit_warning_threshold_percentage}
 
 ---
 
@@ -1032,7 +1133,7 @@ If true, sets the daily_limit value to null and the index is not limited on a da
 
 If false or omitted, the index's current daily_limit is maintained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
 
 ---
 
@@ -1046,7 +1147,7 @@ public readonly exclusionFilter: IResolvable | LogsIndexExclusionFilter[];
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
 
 ---
 
@@ -1058,7 +1159,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#id LogsIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#id LogsIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1075,7 +1176,58 @@ public readonly retentionDays: number;
 
 The number of days before logs are deleted from this index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
+
+---
+
+### LogsIndexDailyLimitReset <a name="LogsIndexDailyLimitReset" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.Initializer"></a>
+
+```typescript
+import { logsIndex } from '@cdktf/provider-datadog'
+
+const logsIndexDailyLimitReset: logsIndex.LogsIndexDailyLimitReset = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.property.resetTime">resetTime</a></code> | <code>string</code> | String in `HH:00` format representing the time of day the daily limit should be reset. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.property.resetUtcOffset">resetUtcOffset</a></code> | <code>string</code> | String in `(-\|+)HH:00` format representing the UTC offset to apply to the given reset time. |
+
+---
+
+##### `resetTime`<sup>Required</sup> <a name="resetTime" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.property.resetTime"></a>
+
+```typescript
+public readonly resetTime: string;
+```
+
+- *Type:* string
+
+String in `HH:00` format representing the time of day the daily limit should be reset.
+
+The hours must be between 00 and 23 (inclusive).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
+
+---
+
+##### `resetUtcOffset`<sup>Required</sup> <a name="resetUtcOffset" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.property.resetUtcOffset"></a>
+
+```typescript
+public readonly resetUtcOffset: string;
+```
+
+- *Type:* string
+
+String in `(-|+)HH:00` format representing the UTC offset to apply to the given reset time.
+
+The hours must be between -12 and +14 (inclusive).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
 
 ---
 
@@ -1109,7 +1261,7 @@ public readonly filter: IResolvable | LogsIndexExclusionFilterFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1123,7 +1275,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 A boolean stating if the exclusion is active or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
 
 ---
 
@@ -1137,7 +1289,7 @@ public readonly name: string;
 
 The name of the exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1170,7 +1322,7 @@ public readonly query: string;
 
 Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
@@ -1184,7 +1336,7 @@ public readonly sampleRate: number;
 
 The fraction of logs excluded by the exclusion filter, when active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
 
 ---
 
@@ -1216,11 +1368,304 @@ public readonly query: string;
 
 Logs filter criteria. Only logs matching this filter criteria are considered for this index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.35.0/docs/resources/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### LogsIndexDailyLimitResetOutputReference <a name="LogsIndexDailyLimitResetOutputReference" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer"></a>
+
+```typescript
+import { logsIndex } from '@cdktf/provider-datadog'
+
+new logsIndex.LogsIndexDailyLimitResetOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetTimeInput">resetTimeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetUtcOffsetInput">resetUtcOffsetInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetTime">resetTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetUtcOffset">resetUtcOffset</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resetTimeInput`<sup>Optional</sup> <a name="resetTimeInput" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetTimeInput"></a>
+
+```typescript
+public readonly resetTimeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resetUtcOffsetInput`<sup>Optional</sup> <a name="resetUtcOffsetInput" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetUtcOffsetInput"></a>
+
+```typescript
+public readonly resetUtcOffsetInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resetTime`<sup>Required</sup> <a name="resetTime" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetTime"></a>
+
+```typescript
+public readonly resetTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resetUtcOffset`<sup>Required</sup> <a name="resetUtcOffset" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.resetUtcOffset"></a>
+
+```typescript
+public readonly resetUtcOffset: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: LogsIndexDailyLimitReset;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset">LogsIndexDailyLimitReset</a>
+
+---
+
 
 ### LogsIndexExclusionFilterFilterList <a name="LogsIndexExclusionFilterFilterList" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterList"></a>
 
