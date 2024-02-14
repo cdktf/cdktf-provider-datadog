@@ -4,12 +4,12 @@
 
 ### SecurityMonitoringSuppression <a name="SecurityMonitoringSuppression" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/securitymonitoringsuppression"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringsuppression"
 
 securitymonitoringsuppression.NewSecurityMonitoringSuppression(scope Construct, id *string, config SecurityMonitoringSuppressionConfig) SecurityMonitoringSuppression
 ```
@@ -392,7 +392,7 @@ func ResetExpirationDate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/securitymonitoringsuppression"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringsuppression"
 
 securitymonitoringsuppression.SecurityMonitoringSuppression_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/securitymonitoringsuppression"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringsuppression"
 
 securitymonitoringsuppression.SecurityMonitoringSuppression_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ securitymonitoringsuppression.SecurityMonitoringSuppression_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/securitymonitoringsuppression"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringsuppression"
 
 securitymonitoringsuppression.SecurityMonitoringSuppression_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ securitymonitoringsuppression.SecurityMonitoringSuppression_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/securitymonitoringsuppression"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringsuppression"
 
 securitymonitoringsuppression.SecurityMonitoringSuppression_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the SecurityMonitoringSuppress
 
 The id of the existing SecurityMonitoringSuppression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppressionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/securitymonitoringsuppression"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringsuppression"
 
 &securitymonitoringsuppression.SecurityMonitoringSuppressionConfig {
 	Connection: interface{},
@@ -943,7 +943,7 @@ Enabled interface{}
 
 Whether the suppression rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
 
 ---
 
@@ -957,7 +957,7 @@ Name *string
 
 The name of the suppression rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
 
 ---
 
@@ -971,7 +971,7 @@ RuleQuery *string
 
 The rule query of the suppression rule, with the same syntax as the search bar for detection rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
 
 ---
 
@@ -987,7 +987,7 @@ The suppression query of the suppression rule.
 
 If a signal matches this query, it is suppressed and is not triggered. Same syntax as the queries to search signals in the signal explorer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
 
 ---
 
@@ -1001,7 +1001,7 @@ Description *string
 
 A description for the suppression rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
 
 ---
 
@@ -1015,7 +1015,7 @@ ExpirationDate *string
 
 A RFC3339 timestamp giving an expiration date for the suppression rule. After this date, it won't suppress signals anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
 
 ---
 

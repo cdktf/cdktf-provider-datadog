@@ -4,7 +4,7 @@
 
 ### TeamLink <a name="TeamLink" id="@cdktf/provider-datadog.teamLink.TeamLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link datadog_team_link}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link datadog_team_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.teamLink.TeamLink.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The link's label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link#label TeamLink#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link#label TeamLink#label}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ID of the team the link is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link#team_id TeamLink#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link#team_id TeamLink#team_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The URL for the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link#url TeamLink#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link#url TeamLink#url}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The link's position, used to sort links for the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link#position TeamLink#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link#position TeamLink#position}
 
 ---
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the TeamLink to import.
 
 The id of the existing TeamLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1036,7 +1036,7 @@ label: str
 
 The link's label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link#label TeamLink#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link#label TeamLink#label}
 
 ---
 
@@ -1050,7 +1050,7 @@ team_id: str
 
 ID of the team the link is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link#team_id TeamLink#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link#team_id TeamLink#team_id}
 
 ---
 
@@ -1064,7 +1064,7 @@ url: str
 
 The URL for the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link#url TeamLink#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link#url TeamLink#url}
 
 ---
 
@@ -1078,7 +1078,7 @@ position: typing.Union[int, float]
 
 The link's position, used to sort links for the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/team_link#position TeamLink#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/team_link#position TeamLink#position}
 
 ---
 
