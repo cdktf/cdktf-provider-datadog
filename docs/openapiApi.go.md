@@ -4,7 +4,7 @@
 
 ### OpenapiApi <a name="OpenapiApi" id="@cdktf/provider-datadog.openapiApi.OpenapiApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/openapi_api datadog_openapi_api}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/openapi_api datadog_openapi_api}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.openapiApi.OpenapiApi.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the OpenapiApi to import.
 
 The id of the existing OpenapiApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ Spec *string
 
 The OpenAPI spec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.0/docs/resources/openapi_api#spec OpenapiApi#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/openapi_api#spec OpenapiApi#spec}
 
 ---
 
