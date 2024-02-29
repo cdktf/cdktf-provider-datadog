@@ -4,7 +4,7 @@
 
 ### ServiceAccount <a name="ServiceAccount" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account datadog_service_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account datadog_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer"></a>
 
@@ -26,7 +26,6 @@ ServiceAccount.Builder.create(Construct scope, java.lang.String id)
     .email(java.lang.String)
 //  .disabled(java.lang.Boolean)
 //  .disabled(IResolvable)
-//  .id(java.lang.String)
 //  .name(java.lang.String)
 //  .roles(java.util.List<java.lang.String>)
     .build();
@@ -45,7 +44,6 @@ ServiceAccount.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | Email of the associated user. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the service account is disabled. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name for the service account. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | A list a role IDs to assign to the service account. |
 
@@ -117,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 Email of the associated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#email ServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#email ServiceAccount#email}
 
 ---
 
@@ -127,18 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether the service account is disabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#disabled ServiceAccount#disabled}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#disabled ServiceAccount#disabled}
 
 ---
 
@@ -148,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name for the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#name ServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#name ServiceAccount#name}
 
 ---
 
@@ -158,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list a role IDs to assign to the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#roles ServiceAccount#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#roles ServiceAccount#roles}
 
 ---
 
@@ -190,7 +177,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetDisabled">resetDisabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetRoles">resetRoles</a></code> | *No description.* |
 
@@ -492,12 +478,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetDisabled()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetId"></a>
-
-```java
-public void resetId()
-```
-
 ##### `resetName` <a name="resetName" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetName"></a>
 
 ```java
@@ -613,7 +593,7 @@ The construct id used in the generated config for the ServiceAccount to import.
 
 The id of the existing ServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,14 +623,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.rolesInput">rolesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 
@@ -798,6 +777,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.disabledInput"></a>
 
 ```java
@@ -812,16 +801,6 @@ public java.lang.Object getDisabledInput();
 
 ```java
 public java.lang.String getEmailInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
 ```
 
 - *Type:* java.lang.String
@@ -862,16 +841,6 @@ public java.lang.Object getDisabled();
 
 ```java
 public java.lang.String getEmail();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -940,7 +909,6 @@ ServiceAccountConfig.builder()
     .email(java.lang.String)
 //  .disabled(java.lang.Boolean)
 //  .disabled(IResolvable)
-//  .id(java.lang.String)
 //  .name(java.lang.String)
 //  .roles(java.util.List<java.lang.String>)
     .build();
@@ -959,7 +927,6 @@ ServiceAccountConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.email">email</a></code> | <code>java.lang.String</code> | Email of the associated user. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the service account is disabled. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name for the service account. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | A list a role IDs to assign to the service account. |
 
@@ -1045,7 +1012,7 @@ public java.lang.String getEmail();
 
 Email of the associated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#email ServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#email ServiceAccount#email}
 
 ---
 
@@ -1059,22 +1026,7 @@ public java.lang.Object getDisabled();
 
 Whether the service account is disabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#disabled ServiceAccount#disabled}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#disabled ServiceAccount#disabled}
 
 ---
 
@@ -1088,7 +1040,7 @@ public java.lang.String getName();
 
 Name for the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#name ServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#name ServiceAccount#name}
 
 ---
 
@@ -1102,7 +1054,7 @@ public java.util.List<java.lang.String> getRoles();
 
 A list a role IDs to assign to the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#roles ServiceAccount#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#roles ServiceAccount#roles}
 
 ---
 
