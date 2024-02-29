@@ -4,7 +4,7 @@
 
 ### ServiceAccount <a name="ServiceAccount" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account datadog_service_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account datadog_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer"></a>
 
@@ -23,7 +23,6 @@ serviceAccount.ServiceAccount(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   email: str,
   disabled: typing.Union[bool, IResolvable] = None,
-  id: str = None,
   name: str = None,
   roles: typing.List[str] = None
 )
@@ -42,7 +41,6 @@ serviceAccount.ServiceAccount(
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.email">email</a></code> | <code>str</code> | Email of the associated user. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the service account is disabled. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.name">name</a></code> | <code>str</code> | Name for the service account. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | A list a role IDs to assign to the service account. |
 
@@ -114,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Email of the associated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#email ServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#email ServiceAccount#email}
 
 ---
 
@@ -124,18 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether the service account is disabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#disabled ServiceAccount#disabled}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#disabled ServiceAccount#disabled}
 
 ---
 
@@ -145,7 +132,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name for the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#name ServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#name ServiceAccount#name}
 
 ---
 
@@ -155,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list a role IDs to assign to the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#roles ServiceAccount#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#roles ServiceAccount#roles}
 
 ---
 
@@ -187,7 +174,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetDisabled">reset_disabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetRoles">reset_roles</a></code> | *No description.* |
 
@@ -524,12 +510,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_disabled() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 ##### `reset_name` <a name="reset_name" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetName"></a>
 
 ```python
@@ -656,7 +636,7 @@ The construct id used in the generated config for the ServiceAccount to import.
 
 The id of the existing ServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -686,14 +666,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.email">email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
 
@@ -841,6 +820,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.disabledInput"></a>
 
 ```python
@@ -855,16 +844,6 @@ disabled_input: typing.Union[bool, IResolvable]
 
 ```python
 email_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.idInput"></a>
-
-```python
-id_input: str
 ```
 
 - *Type:* str
@@ -905,16 +884,6 @@ disabled: typing.Union[bool, IResolvable]
 
 ```python
 email: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -978,7 +947,6 @@ serviceAccount.ServiceAccountConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   email: str,
   disabled: typing.Union[bool, IResolvable] = None,
-  id: str = None,
   name: str = None,
   roles: typing.List[str] = None
 )
@@ -997,7 +965,6 @@ serviceAccount.ServiceAccountConfig(
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.email">email</a></code> | <code>str</code> | Email of the associated user. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the service account is disabled. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.name">name</a></code> | <code>str</code> | Name for the service account. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | A list a role IDs to assign to the service account. |
 
@@ -1083,7 +1050,7 @@ email: str
 
 Email of the associated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#email ServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#email ServiceAccount#email}
 
 ---
 
@@ -1097,22 +1064,7 @@ disabled: typing.Union[bool, IResolvable]
 
 Whether the service account is disabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#disabled ServiceAccount#disabled}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#disabled ServiceAccount#disabled}
 
 ---
 
@@ -1126,7 +1078,7 @@ name: str
 
 Name for the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#name ServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#name ServiceAccount#name}
 
 ---
 
@@ -1140,7 +1092,7 @@ roles: typing.List[str]
 
 A list a role IDs to assign to the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#roles ServiceAccount#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#roles ServiceAccount#roles}
 
 ---
 

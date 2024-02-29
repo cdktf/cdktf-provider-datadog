@@ -4,12 +4,12 @@
 
 ### ServiceAccount <a name="ServiceAccount" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account datadog_service_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account datadog_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.NewServiceAccount(scope Construct, id *string, config ServiceAccountConfig) ServiceAccount
 ```
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetDisabled">ResetDisabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetRoles">ResetRoles</a></code> | *No description.* |
 
@@ -374,12 +373,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetDisabled()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.resetName"></a>
 
 ```go
@@ -406,7 +399,7 @@ func ResetRoles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.ServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.ServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +445,7 @@ serviceaccount.ServiceAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.ServiceAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +459,7 @@ serviceaccount.ServiceAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.ServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +488,7 @@ The construct id used in the generated config for the ServiceAccount to import.
 
 The id of the existing ServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -525,14 +518,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.36
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.disabledInput">DisabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.emailInput">EmailInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.rolesInput">RolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.disabled">Disabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.email">Email</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.roles">Roles</a></code> | <code>*[]*string</code> | *No description.* |
 
@@ -680,6 +672,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.disabledInput"></a>
 
 ```go
@@ -694,16 +696,6 @@ func DisabledInput() interface{}
 
 ```go
 func EmailInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.idInput"></a>
-
-```go
-func IdInput() *string
 ```
 
 - *Type:* *string
@@ -744,16 +736,6 @@ func Disabled() interface{}
 
 ```go
 func Email() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -805,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 &serviceaccount.ServiceAccountConfig {
 	Connection: interface{},
@@ -817,7 +799,6 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
 	Provisioners: *[]interface{},
 	Email: *string,
 	Disabled: interface{},
-	Id: *string,
 	Name: *string,
 	Roles: *[]*string,
 }
@@ -836,7 +817,6 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.email">Email</a></code> | <code>*string</code> | Email of the associated user. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Whether the service account is disabled. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.name">Name</a></code> | <code>*string</code> | Name for the service account. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.roles">Roles</a></code> | <code>*[]*string</code> | A list a role IDs to assign to the service account. |
 
@@ -922,7 +902,7 @@ Email *string
 
 Email of the associated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#email ServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#email ServiceAccount#email}
 
 ---
 
@@ -936,22 +916,7 @@ Disabled interface{}
 
 Whether the service account is disabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#disabled ServiceAccount#disabled}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#id ServiceAccount#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#disabled ServiceAccount#disabled}
 
 ---
 
@@ -965,7 +930,7 @@ Name *string
 
 Name for the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#name ServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#name ServiceAccount#name}
 
 ---
 
@@ -979,7 +944,7 @@ Roles *[]*string
 
 A list a role IDs to assign to the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.36.1/docs/resources/service_account#roles ServiceAccount#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/service_account#roles ServiceAccount#roles}
 
 ---
 
