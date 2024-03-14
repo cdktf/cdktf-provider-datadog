@@ -4,7 +4,7 @@
 
 ### Team <a name="Team" id="@cdktf/provider-datadog.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team datadog_team}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team datadog_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.team.Team.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the Team to import.
 
 The id of the existing Team that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,7 +879,7 @@ public readonly description: string;
 
 Free-form markdown description/content for the team's homepage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -893,7 +893,7 @@ public readonly handle: string;
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team#handle Team#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team#handle Team#handle}
 
 ---
 
@@ -907,7 +907,7 @@ public readonly name: string;
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team#name Team#name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDatadogSensitiveDataScannerGroupOrder <a name="DataDatadogSensitiveDataScannerGroupOrder" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrder.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatadogSensitiveDataSc
 
 The id of the existing DataDatadogSensitiveDataScannerGroupOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/data-sources/sensitive_data_scanner_group_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/data-sources/sensitive_data_scanner_group_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
