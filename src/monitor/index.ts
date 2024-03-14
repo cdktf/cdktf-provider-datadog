@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor
+// https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * A boolean indicating whether or not to include a list of log values which triggered the alert. This is only used by log monitors. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
   */
   readonly enableLogsSample?: boolean | cdktf.IResolvable;
   /**
   * A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
   */
   readonly escalationMessage?: string;
   /**
@@ -29,29 +24,29 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
   */
   readonly evaluationDelay?: number;
   /**
   * A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#force_delete Monitor#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#force_delete Monitor#force_delete}
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
   * The time span after which groups with missing data are dropped from the monitor state. The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
   */
   readonly groupRetentionDuration?: string;
   /**
   * Whether or not to trigger one alert if any source breaches a threshold. This is only used by log monitors. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
   */
   readonly groupbySimpleMonitor?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#id Monitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#id Monitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,13 +55,13 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#include_tags Monitor#include_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#include_tags Monitor#include_tags}
   */
   readonly includeTags?: boolean | cdktf.IResolvable;
   /**
   * A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`. **Deprecated.** Use `restricted_roles`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#locked Monitor#locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#locked Monitor#locked}
   */
   readonly locked?: boolean | cdktf.IResolvable;
   /**
@@ -74,13 +69,13 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * Email notifications can be sent to specific users by using the same `@username` notation as events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#message Monitor#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#message Monitor#message}
   */
   readonly message: string;
   /**
   * Name of Datadog monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
@@ -88,13 +83,13 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
   */
   readonly newGroupDelay?: number;
   /**
   * **Deprecated**. See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
   */
   readonly newHostDelay?: number;
   /**
@@ -102,43 +97,43 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
   */
   readonly noDataTimeframe?: number;
   /**
   * Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
   */
   readonly notificationPresetName?: string;
   /**
   * A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
   */
   readonly notifyAudit?: boolean | cdktf.IResolvable;
   /**
   * Controls what granularity a monitor alerts on. Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region`. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#notify_by Monitor#notify_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#notify_by Monitor#notify_by}
   */
   readonly notifyBy?: string[];
   /**
   * A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
   */
   readonly notifyNoData?: boolean | cdktf.IResolvable;
   /**
   * Controls how groups or monitors are treated if an evaluation does not return any data points. The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
   */
   readonly onMissingData?: string;
   /**
   * Integer from 1 (high) to 5 (low) indicating alert severity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#priority Monitor#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#priority Monitor#priority}
   */
   readonly priority?: number;
   /**
@@ -146,85 +141,85 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
   /**
   * The number of minutes after the last notification before a monitor will re-notify on the current status. It will only re-notify if it's not resolved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
   */
   readonly renotifyInterval?: number;
   /**
   * The number of re-notification messages that should be sent on the current status.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
   */
   readonly renotifyOccurrences?: number;
   /**
   * The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
   */
   readonly renotifyStatuses?: string[];
   /**
   * A boolean indicating whether this monitor needs a full window of data before it's evaluated. Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
   */
   readonly requireFullWindow?: boolean | cdktf.IResolvable;
   /**
   * A list of unique role identifiers to define which roles are allowed to edit the monitor. Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. Roles unique identifiers can be pulled from the [Roles API](https://docs.datadoghq.com/api/latest/roles/#list-roles) in the `data.id` field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * A list of tags to associate with your monitor. This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#tags Monitor#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#tags Monitor#tags}
   */
   readonly tags?: string[];
   /**
   * The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
   */
   readonly timeoutH?: number;
   /**
   * The type of the monitor. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#type Monitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#type Monitor#type}
   */
   readonly type: string;
   /**
   * If set to `false`, skip the validation call done during plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#validate Monitor#validate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#validate Monitor#validate}
   */
   readonly validate?: boolean | cdktf.IResolvable;
   /**
   * monitor_threshold_windows block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
   */
   readonly monitorThresholdWindows?: MonitorMonitorThresholdWindows;
   /**
   * monitor_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
   */
   readonly monitorThresholds?: MonitorMonitorThresholds;
   /**
   * scheduling_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
   */
-  readonly schedulingOptions?: MonitorSchedulingOptions[] | cdktf.IResolvable;
+  readonly schedulingOptions?: MonitorSchedulingOptions;
   /**
   * variables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#variables Monitor#variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#variables Monitor#variables}
   */
   readonly variables?: MonitorVariables;
 }
@@ -232,13 +227,13 @@ export interface MonitorMonitorThresholdWindows {
   /**
   * Describes how long an anomalous metric must be normal before the alert recovers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
   */
   readonly recoveryWindow?: string;
   /**
   * Describes how long a metric must be anomalous before an alert triggers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
   */
   readonly triggerWindow?: string;
 }
@@ -353,37 +348,37 @@ export interface MonitorMonitorThresholds {
   /**
   * The monitor `CRITICAL` threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#critical Monitor#critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#critical Monitor#critical}
   */
   readonly critical?: string;
   /**
   * The monitor `CRITICAL` recovery threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
   */
   readonly criticalRecovery?: string;
   /**
   * The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#ok Monitor#ok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#ok Monitor#ok}
   */
   readonly ok?: string;
   /**
   * The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#unknown Monitor#unknown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#unknown Monitor#unknown}
   */
   readonly unknown?: string;
   /**
   * The monitor `WARNING` threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#warning Monitor#warning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#warning Monitor#warning}
   */
   readonly warning?: string;
   /**
   * The monitor `WARNING` recovery threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
   */
   readonly warningRecovery?: string;
 }
@@ -614,19 +609,19 @@ export interface MonitorSchedulingOptionsCustomScheduleRecurrence {
   /**
   * Must be a valid `rrule`. See API docs for supported fields
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#rrule Monitor#rrule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#rrule Monitor#rrule}
   */
   readonly rrule: string;
   /**
   * Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#start Monitor#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#start Monitor#start}
   */
   readonly start?: string;
   /**
   * 'tz database' format. Example: `America/New_York` or `UTC`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#timezone Monitor#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#timezone Monitor#timezone}
   */
   readonly timezone: string;
 }
@@ -764,12 +759,12 @@ export interface MonitorSchedulingOptionsCustomSchedule {
   /**
   * recurrence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#recurrence Monitor#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#recurrence Monitor#recurrence}
   */
   readonly recurrence: MonitorSchedulingOptionsCustomScheduleRecurrence;
 }
 
-export function monitorSchedulingOptionsCustomScheduleToTerraform(struct?: MonitorSchedulingOptionsCustomSchedule | cdktf.IResolvable): any {
+export function monitorSchedulingOptionsCustomScheduleToTerraform(struct?: MonitorSchedulingOptionsCustomScheduleOutputReference | MonitorSchedulingOptionsCustomSchedule): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -780,7 +775,7 @@ export function monitorSchedulingOptionsCustomScheduleToTerraform(struct?: Monit
 }
 
 
-export function monitorSchedulingOptionsCustomScheduleToHclTerraform(struct?: MonitorSchedulingOptionsCustomSchedule | cdktf.IResolvable): any {
+export function monitorSchedulingOptionsCustomScheduleToHclTerraform(struct?: MonitorSchedulingOptionsCustomScheduleOutputReference | MonitorSchedulingOptionsCustomSchedule): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -800,22 +795,16 @@ export function monitorSchedulingOptionsCustomScheduleToHclTerraform(struct?: Mo
 
 export class MonitorSchedulingOptionsCustomScheduleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MonitorSchedulingOptionsCustomSchedule | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): MonitorSchedulingOptionsCustomSchedule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recurrence?.internalValue !== undefined) {
@@ -825,19 +814,13 @@ export class MonitorSchedulingOptionsCustomScheduleOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorSchedulingOptionsCustomSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorSchedulingOptionsCustomSchedule | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._recurrence.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._recurrence.internalValue = value.recurrence;
     }
   }
@@ -855,48 +838,28 @@ export class MonitorSchedulingOptionsCustomScheduleOutputReference extends cdktf
     return this._recurrence.internalValue;
   }
 }
-
-export class MonitorSchedulingOptionsCustomScheduleList extends cdktf.ComplexList {
-  public internalValue? : MonitorSchedulingOptionsCustomSchedule[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MonitorSchedulingOptionsCustomScheduleOutputReference {
-    return new MonitorSchedulingOptionsCustomScheduleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface MonitorSchedulingOptionsEvaluationWindow {
   /**
   * The time of the day at which a one day cumulative evaluation window starts. Must be defined in UTC time in `HH:mm` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#day_starts Monitor#day_starts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#day_starts Monitor#day_starts}
   */
   readonly dayStarts?: string;
   /**
   * The minute of the hour at which a one hour cumulative evaluation window starts. Must be between 0 and 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
   */
   readonly hourStarts?: number;
   /**
   * The day of the month at which a one month cumulative evaluation window starts. Must be a value of 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#month_starts Monitor#month_starts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#month_starts Monitor#month_starts}
   */
   readonly monthStarts?: number;
 }
 
-export function monitorSchedulingOptionsEvaluationWindowToTerraform(struct?: MonitorSchedulingOptionsEvaluationWindow | cdktf.IResolvable): any {
+export function monitorSchedulingOptionsEvaluationWindowToTerraform(struct?: MonitorSchedulingOptionsEvaluationWindowOutputReference | MonitorSchedulingOptionsEvaluationWindow): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -909,7 +872,7 @@ export function monitorSchedulingOptionsEvaluationWindowToTerraform(struct?: Mon
 }
 
 
-export function monitorSchedulingOptionsEvaluationWindowToHclTerraform(struct?: MonitorSchedulingOptionsEvaluationWindow | cdktf.IResolvable): any {
+export function monitorSchedulingOptionsEvaluationWindowToHclTerraform(struct?: MonitorSchedulingOptionsEvaluationWindowOutputReference | MonitorSchedulingOptionsEvaluationWindow): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -941,22 +904,16 @@ export function monitorSchedulingOptionsEvaluationWindowToHclTerraform(struct?: 
 
 export class MonitorSchedulingOptionsEvaluationWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MonitorSchedulingOptionsEvaluationWindow | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): MonitorSchedulingOptionsEvaluationWindow | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dayStarts !== undefined) {
@@ -974,21 +931,15 @@ export class MonitorSchedulingOptionsEvaluationWindowOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorSchedulingOptionsEvaluationWindow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorSchedulingOptionsEvaluationWindow | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._dayStarts = undefined;
       this._hourStarts = undefined;
       this._monthStarts = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._dayStarts = value.dayStarts;
       this._hourStarts = value.hourStarts;
       this._monthStarts = value.monthStarts;
@@ -1043,67 +994,47 @@ export class MonitorSchedulingOptionsEvaluationWindowOutputReference extends cdk
     return this._monthStarts;
   }
 }
-
-export class MonitorSchedulingOptionsEvaluationWindowList extends cdktf.ComplexList {
-  public internalValue? : MonitorSchedulingOptionsEvaluationWindow[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MonitorSchedulingOptionsEvaluationWindowOutputReference {
-    return new MonitorSchedulingOptionsEvaluationWindowOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface MonitorSchedulingOptions {
   /**
   * custom_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
   */
-  readonly customSchedule?: MonitorSchedulingOptionsCustomSchedule[] | cdktf.IResolvable;
+  readonly customSchedule?: MonitorSchedulingOptionsCustomSchedule;
   /**
   * evaluation_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
   */
-  readonly evaluationWindow?: MonitorSchedulingOptionsEvaluationWindow[] | cdktf.IResolvable;
+  readonly evaluationWindow?: MonitorSchedulingOptionsEvaluationWindow;
 }
 
-export function monitorSchedulingOptionsToTerraform(struct?: MonitorSchedulingOptions | cdktf.IResolvable): any {
+export function monitorSchedulingOptionsToTerraform(struct?: MonitorSchedulingOptionsOutputReference | MonitorSchedulingOptions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_schedule: cdktf.listMapper(monitorSchedulingOptionsCustomScheduleToTerraform, true)(struct!.customSchedule),
-    evaluation_window: cdktf.listMapper(monitorSchedulingOptionsEvaluationWindowToTerraform, true)(struct!.evaluationWindow),
+    custom_schedule: monitorSchedulingOptionsCustomScheduleToTerraform(struct!.customSchedule),
+    evaluation_window: monitorSchedulingOptionsEvaluationWindowToTerraform(struct!.evaluationWindow),
   }
 }
 
 
-export function monitorSchedulingOptionsToHclTerraform(struct?: MonitorSchedulingOptions | cdktf.IResolvable): any {
+export function monitorSchedulingOptionsToHclTerraform(struct?: MonitorSchedulingOptionsOutputReference | MonitorSchedulingOptions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_schedule: {
-      value: cdktf.listMapperHcl(monitorSchedulingOptionsCustomScheduleToHclTerraform, true)(struct!.customSchedule),
+      value: monitorSchedulingOptionsCustomScheduleToHclTerraform(struct!.customSchedule),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorSchedulingOptionsCustomScheduleList",
     },
     evaluation_window: {
-      value: cdktf.listMapperHcl(monitorSchedulingOptionsEvaluationWindowToHclTerraform, true)(struct!.evaluationWindow),
+      value: monitorSchedulingOptionsEvaluationWindowToHclTerraform(struct!.evaluationWindow),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorSchedulingOptionsEvaluationWindowList",
@@ -1116,22 +1047,16 @@ export function monitorSchedulingOptionsToHclTerraform(struct?: MonitorSchedulin
 
 export class MonitorSchedulingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MonitorSchedulingOptions | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): MonitorSchedulingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._customSchedule?.internalValue !== undefined) {
@@ -1145,31 +1070,25 @@ export class MonitorSchedulingOptionsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorSchedulingOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorSchedulingOptions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._customSchedule.internalValue = undefined;
       this._evaluationWindow.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._customSchedule.internalValue = value.customSchedule;
       this._evaluationWindow.internalValue = value.evaluationWindow;
     }
   }
 
   // custom_schedule - computed: false, optional: true, required: false
-  private _customSchedule = new MonitorSchedulingOptionsCustomScheduleList(this, "custom_schedule", false);
+  private _customSchedule = new MonitorSchedulingOptionsCustomScheduleOutputReference(this, "custom_schedule");
   public get customSchedule() {
     return this._customSchedule;
   }
-  public putCustomSchedule(value: MonitorSchedulingOptionsCustomSchedule[] | cdktf.IResolvable) {
+  public putCustomSchedule(value: MonitorSchedulingOptionsCustomSchedule) {
     this._customSchedule.internalValue = value;
   }
   public resetCustomSchedule() {
@@ -1181,11 +1100,11 @@ export class MonitorSchedulingOptionsOutputReference extends cdktf.ComplexObject
   }
 
   // evaluation_window - computed: false, optional: true, required: false
-  private _evaluationWindow = new MonitorSchedulingOptionsEvaluationWindowList(this, "evaluation_window", false);
+  private _evaluationWindow = new MonitorSchedulingOptionsEvaluationWindowOutputReference(this, "evaluation_window");
   public get evaluationWindow() {
     return this._evaluationWindow;
   }
-  public putEvaluationWindow(value: MonitorSchedulingOptionsEvaluationWindow[] | cdktf.IResolvable) {
+  public putEvaluationWindow(value: MonitorSchedulingOptionsEvaluationWindow) {
     this._evaluationWindow.internalValue = value;
   }
   public resetEvaluationWindow() {
@@ -1196,43 +1115,23 @@ export class MonitorSchedulingOptionsOutputReference extends cdktf.ComplexObject
     return this._evaluationWindow.internalValue;
   }
 }
-
-export class MonitorSchedulingOptionsList extends cdktf.ComplexList {
-  public internalValue? : MonitorSchedulingOptions[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MonitorSchedulingOptionsOutputReference {
-    return new MonitorSchedulingOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface MonitorVariablesEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#interval Monitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#interval Monitor#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
 }
@@ -1405,19 +1304,19 @@ export interface MonitorVariablesEventQueryGroupBySort {
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#order Monitor#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#order Monitor#order}
   */
   readonly order?: string;
 }
@@ -1558,19 +1457,19 @@ export interface MonitorVariablesEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#facet Monitor#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#facet Monitor#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#limit Monitor#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#limit Monitor#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#sort Monitor#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#sort Monitor#sort}
   */
   readonly sort?: MonitorVariablesEventQueryGroupBySort;
 }
@@ -1743,7 +1642,7 @@ export interface MonitorVariablesEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
@@ -1826,37 +1725,37 @@ export interface MonitorVariablesEventQuery {
   /**
   * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#indexes Monitor#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#indexes Monitor#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#compute Monitor#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#compute Monitor#compute}
   */
   readonly compute: MonitorVariablesEventQueryCompute[] | cdktf.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#group_by Monitor#group_by}
   */
   readonly groupBy?: MonitorVariablesEventQueryGroupBy[] | cdktf.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#search Monitor#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#search Monitor#search}
   */
   readonly search: MonitorVariablesEventQuerySearch;
 }
@@ -2107,7 +2006,7 @@ export interface MonitorVariables {
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#event_query Monitor#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#event_query Monitor#event_query}
   */
   readonly eventQuery?: MonitorVariablesEventQuery[] | cdktf.IResolvable;
 }
@@ -2191,7 +2090,7 @@ export class MonitorVariablesOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor datadog_monitor}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor datadog_monitor}
 */
 export class Monitor extends cdktf.TerraformResource {
 
@@ -2207,7 +2106,7 @@ export class Monitor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Monitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Monitor to import
-  * @param importFromId The id of the existing Monitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Monitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Monitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2219,7 +2118,7 @@ export class Monitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/monitor datadog_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/monitor datadog_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2230,7 +2129,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.37.0',
+        providerVersion: '3.38.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -2787,11 +2686,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // scheduling_options - computed: false, optional: true, required: false
-  private _schedulingOptions = new MonitorSchedulingOptionsList(this, "scheduling_options", false);
+  private _schedulingOptions = new MonitorSchedulingOptionsOutputReference(this, "scheduling_options");
   public get schedulingOptions() {
     return this._schedulingOptions;
   }
-  public putSchedulingOptions(value: MonitorSchedulingOptions[] | cdktf.IResolvable) {
+  public putSchedulingOptions(value: MonitorSchedulingOptions) {
     this._schedulingOptions.internalValue = value;
   }
   public resetSchedulingOptions() {
@@ -2856,7 +2755,7 @@ export class Monitor extends cdktf.TerraformResource {
       validate: cdktf.booleanToTerraform(this._validate),
       monitor_threshold_windows: monitorMonitorThresholdWindowsToTerraform(this._monitorThresholdWindows.internalValue),
       monitor_thresholds: monitorMonitorThresholdsToTerraform(this._monitorThresholds.internalValue),
-      scheduling_options: cdktf.listMapper(monitorSchedulingOptionsToTerraform, true)(this._schedulingOptions.internalValue),
+      scheduling_options: monitorSchedulingOptionsToTerraform(this._schedulingOptions.internalValue),
       variables: monitorVariablesToTerraform(this._variables.internalValue),
     };
   }
@@ -3056,7 +2955,7 @@ export class Monitor extends cdktf.TerraformResource {
         storageClassType: "MonitorMonitorThresholdsList",
       },
       scheduling_options: {
-        value: cdktf.listMapperHcl(monitorSchedulingOptionsToHclTerraform, true)(this._schedulingOptions.internalValue),
+        value: monitorSchedulingOptionsToHclTerraform(this._schedulingOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MonitorSchedulingOptionsList",

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/openapi_api
+// https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface OpenapiApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * The OpenAPI spec.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/openapi_api#spec OpenapiApi#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api#spec OpenapiApi#spec}
   */
   readonly spec: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/openapi_api datadog_openapi_api}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api datadog_openapi_api}
 */
 export class OpenapiApi extends cdktf.TerraformResource {
 
@@ -37,7 +32,7 @@ export class OpenapiApi extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OpenapiApi resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpenapiApi to import
-  * @param importFromId The id of the existing OpenapiApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpenapiApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpenapiApi to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +44,7 @@ export class OpenapiApi extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/openapi_api datadog_openapi_api} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api datadog_openapi_api} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +55,7 @@ export class OpenapiApi extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_openapi_api',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.37.0',
+        providerVersion: '3.38.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

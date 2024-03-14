@@ -4,12 +4,12 @@
 
 ### TeamMembership <a name="TeamMembership" id="@cdktf/provider-datadog.teamMembership.TeamMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team_membership datadog_team_membership}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team_membership datadog_team_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.teamMembership.TeamMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/teammembership"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teammembership"
 
 teammembership.NewTeamMembership(scope Construct, id *string, config TeamMembershipConfig) TeamMembership
 ```
@@ -385,7 +385,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.teamMembership.TeamMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/teammembership"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teammembership"
 
 teammembership.TeamMembership_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.teamMembership.TeamMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/teammembership"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teammembership"
 
 teammembership.TeamMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ teammembership.TeamMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.teamMembership.TeamMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/teammembership"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teammembership"
 
 teammembership.TeamMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ teammembership.TeamMembership_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.teamMembership.TeamMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/teammembership"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teammembership"
 
 teammembership.TeamMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the TeamMembership to import.
 
 The id of the existing TeamMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.teamMembership.TeamMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/teammembership"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teammembership"
 
 &teammembership.TeamMembershipConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ TeamId *string
 
 ID of the team the team membership is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team_membership#team_id TeamMembership#team_id}
 
 ---
 
@@ -878,7 +878,7 @@ UserId *string
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team_membership#user_id TeamMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team_membership#user_id TeamMembership#user_id}
 
 ---
 
@@ -892,7 +892,7 @@ Role *string
 
 The user's role within the team. Valid values are `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.37.0/docs/resources/team_membership#role TeamMembership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/team_membership#role TeamMembership#role}
 
 ---
 
