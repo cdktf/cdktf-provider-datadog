@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjective(scope Construct, id *string, config ServiceLevelObjectiveConfig) ServiceLevelObjective
 ```
@@ -501,7 +501,7 @@ func ResetWarningThreshold()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.ServiceLevelObjective_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.ServiceLevelObjective_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ servicelevelobjective.ServiceLevelObjective_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.ServiceLevelObjective_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ servicelevelobjective.ServiceLevelObjective_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.ServiceLevelObjective_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1120,7 +1120,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveConfig {
 	Connection: interface{},
@@ -1138,8 +1138,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjec
 	Groups: *[]*string,
 	Id: *string,
 	MonitorIds: *[]*f64,
-	Query: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.serviceLevelObjective.ServiceLevelObjectiveQuery,
-	SliSpecification: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.serviceLevelObjective.ServiceLevelObjectiveSliSpecification,
+	Query: github.com/cdktf/cdktf-provider-datadog-go/datadog.serviceLevelObjective.ServiceLevelObjectiveQuery,
+	SliSpecification: github.com/cdktf/cdktf-provider-datadog-go/datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecification,
 	Tags: *[]*string,
 	TargetThreshold: *f64,
 	Timeframe: *string,
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveQuery {
 	Denominator: *string,
@@ -1521,10 +1521,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveSliSpecification {
-	TimeSlice: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSlice,
+	TimeSlice: github.com/cdktf/cdktf-provider-datadog-go/datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSlice,
 }
 ```
 
@@ -1555,11 +1555,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSlice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveSliSpecificationTimeSlice {
 	Comparator: *string,
-	Query: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQuery,
+	Query: github.com/cdktf/cdktf-provider-datadog-go/datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQuery,
 	Threshold: *f64,
 }
 ```
@@ -1621,10 +1621,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveSliSpecificationTimeSliceQuery {
-	Formula: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryFormula,
+	Formula: github.com/cdktf/cdktf-provider-datadog-go/datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryFormula,
 	Query: interface{},
 }
 ```
@@ -1671,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryFormula {
 	FormulaExpression: *string,
@@ -1705,10 +1705,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryQuery {
-	MetricQuery: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryMetricQuery,
+	MetricQuery: github.com/cdktf/cdktf-provider-datadog-go/datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryMetricQuery,
 }
 ```
 
@@ -1739,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryMetricQuery {
 	Name: *string,
@@ -1805,7 +1805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveThresholds {
 	Target: *f64,
@@ -1875,7 +1875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveQueryOutputReference
 ```
@@ -2168,7 +2168,7 @@ func InternalValue() ServiceLevelObjectiveQuery
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveSliSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveSliSpecificationOutputReference
 ```
@@ -2452,7 +2452,7 @@ func InternalValue() ServiceLevelObjectiveSliSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveSliSpecificationTimeSliceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference
 ```
@@ -2780,7 +2780,7 @@ func InternalValue() ServiceLevelObjectiveSliSpecificationTimeSlice
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryFormulaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveSliSpecificationTimeSliceQueryFormulaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveSliSpecificationTimeSliceQueryFormulaOutputReference
 ```
@@ -3051,7 +3051,7 @@ func InternalValue() ServiceLevelObjectiveSliSpecificationTimeSliceQueryFormula
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveSliSpecificationTimeSliceQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveSliSpecificationTimeSliceQueryOutputReference
 ```
@@ -3370,7 +3370,7 @@ func InternalValue() ServiceLevelObjectiveSliSpecificationTimeSliceQuery
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryList
 ```
@@ -3530,7 +3530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryMetricQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryMetricQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryMetricQueryOutputReference
 ```
@@ -3852,7 +3852,7 @@ func InternalValue() ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryMet
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryOutputReference
 ```
@@ -4161,7 +4161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveThresholdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveThresholdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceLevelObjectiveThresholdsList
 ```
@@ -4321,7 +4321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceLevelObjectiveThresholdsOutputReference
 ```
