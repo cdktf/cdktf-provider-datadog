@@ -4,7 +4,7 @@
 
 ### DataDatadogHosts <a name="DataDatadogHosts" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/data-sources/hosts datadog_hosts}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/data-sources/hosts datadog_hosts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.Initializer"></a>
 
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataDatadogHosts to import
 
 The id of the existing DataDatadogHosts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -849,7 +849,7 @@ Filter *string
 
 String to filter search results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
 
 ---
 
@@ -863,7 +863,7 @@ From *f64
 
 Number of seconds since UNIX epoch from which you want to search your hosts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/data-sources/hosts#from DataDatadogHosts#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/data-sources/hosts#from DataDatadogHosts#from}
 
 ---
 
@@ -877,7 +877,7 @@ IncludeMutedHostsData interface{}
 
 Include information on the muted status of hosts and when the mute expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
 
 ---
 
@@ -891,7 +891,7 @@ SortDir *string
 
 Direction of sort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
 
 ---
 
@@ -905,7 +905,7 @@ SortField *string
 
 Sort hosts by this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
 
 ---
 

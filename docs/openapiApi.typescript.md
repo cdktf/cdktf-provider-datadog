@@ -4,7 +4,7 @@
 
 ### OpenapiApi <a name="OpenapiApi" id="@cdktf/provider-datadog.openapiApi.OpenapiApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api datadog_openapi_api}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/openapi_api datadog_openapi_api}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.openapiApi.OpenapiApi.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the OpenapiApi to import.
 
 The id of the existing OpenapiApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,7 +716,7 @@ const openapiApiConfig: openapiApi.OpenapiApiConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.spec">spec</a></code> | <code>string</code> | The OpenAPI spec. |
+| <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.spec">spec</a></code> | <code>string</code> | The textual content of the OpenAPI specification. |
 
 ---
 
@@ -798,9 +798,11 @@ public readonly spec: string;
 
 - *Type:* string
 
-The OpenAPI spec.
+The textual content of the OpenAPI specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api#spec OpenapiApi#spec}
+Use [`file()`](https://developer.hashicorp.com/terraform/language/functions/file) in order to reference another file in the repository (see exmaple).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/openapi_api#spec OpenapiApi#spec}
 
 ---
 

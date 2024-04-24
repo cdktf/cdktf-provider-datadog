@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression
+// https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,51 @@ import * as cdktf from 'cdktf';
 
 export interface SecurityMonitoringSuppressionConfig extends cdktf.TerraformMetaArguments {
   /**
+  * An exclusion query on the input data of the security rules, which could be logs, Agent events, or other types of data based on the security rule. Events matching this query are ignored by any detection rules referenced in the suppression rule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression#data_exclusion_query SecurityMonitoringSuppression#data_exclusion_query}
+  */
+  readonly dataExclusionQuery?: string;
+  /**
   * A description for the suppression rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
   */
   readonly description?: string;
   /**
   * Whether the suppression rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * A RFC3339 timestamp giving an expiration date for the suppression rule. After this date, it won't suppress signals anymore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
   */
   readonly expirationDate?: string;
   /**
   * The name of the suppression rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
   */
   readonly name: string;
   /**
   * The rule query of the suppression rule, with the same syntax as the search bar for detection rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
   */
   readonly ruleQuery: string;
   /**
-  * The suppression query of the suppression rule. If a signal matches this query, it is suppressed and is not triggered. Same syntax as the queries to search signals in the signal explorer.
+  * The suppression query of the suppression rule. If a signal matches this query, it is suppressed and is not triggered. It uses the same syntax as the queries to search signals in the Signals Explorer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
   */
-  readonly suppressionQuery: string;
+  readonly suppressionQuery?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}
 */
 export class SecurityMonitoringSuppression extends cdktf.TerraformResource {
 
@@ -67,7 +73,7 @@ export class SecurityMonitoringSuppression extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecurityMonitoringSuppression resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityMonitoringSuppression to import
-  * @param importFromId The id of the existing SecurityMonitoringSuppression that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityMonitoringSuppression that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityMonitoringSuppression to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +85,7 @@ export class SecurityMonitoringSuppression extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +96,7 @@ export class SecurityMonitoringSuppression extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_suppression',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.38.0',
+        providerVersion: '3.39.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -101,6 +107,7 @@ export class SecurityMonitoringSuppression extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._dataExclusionQuery = config.dataExclusionQuery;
     this._description = config.description;
     this._enabled = config.enabled;
     this._expirationDate = config.expirationDate;
@@ -112,6 +119,22 @@ export class SecurityMonitoringSuppression extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // data_exclusion_query - computed: false, optional: true, required: false
+  private _dataExclusionQuery?: string; 
+  public get dataExclusionQuery() {
+    return this.getStringAttribute('data_exclusion_query');
+  }
+  public set dataExclusionQuery(value: string) {
+    this._dataExclusionQuery = value;
+  }
+  public resetDataExclusionQuery() {
+    this._dataExclusionQuery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataExclusionQueryInput() {
+    return this._dataExclusionQuery;
+  }
 
   // description - computed: false, optional: true, required: false
   private _description?: string; 
@@ -189,13 +212,16 @@ export class SecurityMonitoringSuppression extends cdktf.TerraformResource {
     return this._ruleQuery;
   }
 
-  // suppression_query - computed: false, optional: false, required: true
+  // suppression_query - computed: false, optional: true, required: false
   private _suppressionQuery?: string; 
   public get suppressionQuery() {
     return this.getStringAttribute('suppression_query');
   }
   public set suppressionQuery(value: string) {
     this._suppressionQuery = value;
+  }
+  public resetSuppressionQuery() {
+    this._suppressionQuery = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get suppressionQueryInput() {
@@ -208,6 +234,7 @@ export class SecurityMonitoringSuppression extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      data_exclusion_query: cdktf.stringToTerraform(this._dataExclusionQuery),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
       expiration_date: cdktf.stringToTerraform(this._expirationDate),
@@ -219,6 +246,12 @@ export class SecurityMonitoringSuppression extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      data_exclusion_query: {
+        value: cdktf.stringToHclTerraform(this._dataExclusionQuery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,

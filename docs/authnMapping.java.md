@@ -4,7 +4,7 @@
 
 ### AuthnMapping <a name="AuthnMapping" id="@cdktf/provider-datadog.authnMapping.AuthnMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping datadog_authn_mapping}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping datadog_authn_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer"></a>
 
@@ -24,9 +24,10 @@ AuthnMapping.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .key(java.lang.String)
-    .role(java.lang.String)
     .value(java.lang.String)
 //  .id(java.lang.String)
+//  .role(java.lang.String)
+//  .team(java.lang.String)
     .build();
 ```
 
@@ -42,9 +43,10 @@ AuthnMapping.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Identity provider key. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | The ID of a role to attach to all users with the corresponding key and value. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Identity provider value. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | The ID of a role to attach to all users with the corresponding key and value. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.team">team</a></code> | <code>java.lang.String</code> | The ID of a team to add all users with the corresponding key and value to. |
 
 ---
 
@@ -114,17 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Identity provider key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#key AuthnMapping#key}
-
----
-
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.role"></a>
-
-- *Type:* java.lang.String
-
-The ID of a role to attach to all users with the corresponding key and value.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#role AuthnMapping#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#key AuthnMapping#key}
 
 ---
 
@@ -134,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Identity provider value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#value AuthnMapping#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#value AuthnMapping#value}
 
 ---
 
@@ -142,10 +134,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#id AuthnMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#id AuthnMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `role`<sup>Optional</sup> <a name="role" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.role"></a>
+
+- *Type:* java.lang.String
+
+The ID of a role to attach to all users with the corresponding key and value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#role AuthnMapping#role}
+
+---
+
+##### `team`<sup>Optional</sup> <a name="team" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.team"></a>
+
+- *Type:* java.lang.String
+
+The ID of a team to add all users with the corresponding key and value to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#team AuthnMapping#team}
 
 ---
 
@@ -177,6 +189,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.resetRole">resetRole</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.resetTeam">resetTeam</a></code> | *No description.* |
 
 ---
 
@@ -476,6 +490,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetId()
 ```
 
+##### `resetRole` <a name="resetRole" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.resetRole"></a>
+
+```java
+public void resetRole()
+```
+
+##### `resetTeam` <a name="resetTeam" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.resetTeam"></a>
+
+```java
+public void resetTeam()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -579,7 +605,7 @@ The construct id used in the generated config for the AuthnMapping to import.
 
 The id of the existing AuthnMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,10 +638,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.roleInput">roleInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.teamInput">teamInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.role">role</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.team">team</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -792,6 +820,16 @@ public java.lang.String getRoleInput();
 
 ---
 
+##### `teamInput`<sup>Optional</sup> <a name="teamInput" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.property.teamInput"></a>
+
+```java
+public java.lang.String getTeamInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.property.valueInput"></a>
 
 ```java
@@ -826,6 +864,16 @@ public java.lang.String getKey();
 
 ```java
 public java.lang.String getRole();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `team`<sup>Required</sup> <a name="team" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.property.team"></a>
+
+```java
+public java.lang.String getTeam();
 ```
 
 - *Type:* java.lang.String
@@ -882,9 +930,10 @@ AuthnMappingConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .key(java.lang.String)
-    .role(java.lang.String)
     .value(java.lang.String)
 //  .id(java.lang.String)
+//  .role(java.lang.String)
+//  .team(java.lang.String)
     .build();
 ```
 
@@ -900,9 +949,10 @@ AuthnMappingConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.key">key</a></code> | <code>java.lang.String</code> | Identity provider key. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role">role</a></code> | <code>java.lang.String</code> | The ID of a role to attach to all users with the corresponding key and value. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.value">value</a></code> | <code>java.lang.String</code> | Identity provider value. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role">role</a></code> | <code>java.lang.String</code> | The ID of a role to attach to all users with the corresponding key and value. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.team">team</a></code> | <code>java.lang.String</code> | The ID of a team to add all users with the corresponding key and value to. |
 
 ---
 
@@ -986,21 +1036,7 @@ public java.lang.String getKey();
 
 Identity provider key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#key AuthnMapping#key}
-
----
-
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role"></a>
-
-```java
-public java.lang.String getRole();
-```
-
-- *Type:* java.lang.String
-
-The ID of a role to attach to all users with the corresponding key and value.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#role AuthnMapping#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#key AuthnMapping#key}
 
 ---
 
@@ -1014,7 +1050,7 @@ public java.lang.String getValue();
 
 Identity provider value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#value AuthnMapping#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#value AuthnMapping#value}
 
 ---
 
@@ -1026,10 +1062,38 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#id AuthnMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#id AuthnMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `role`<sup>Optional</sup> <a name="role" id="@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role"></a>
+
+```java
+public java.lang.String getRole();
+```
+
+- *Type:* java.lang.String
+
+The ID of a role to attach to all users with the corresponding key and value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#role AuthnMapping#role}
+
+---
+
+##### `team`<sup>Optional</sup> <a name="team" id="@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.team"></a>
+
+```java
+public java.lang.String getTeam();
+```
+
+- *Type:* java.lang.String
+
+The ID of a team to add all users with the corresponding key and value to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#team AuthnMapping#team}
 
 ---
 

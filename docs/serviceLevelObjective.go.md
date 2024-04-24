@@ -4,7 +4,7 @@
 
 ### ServiceLevelObjective <a name="ServiceLevelObjective" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective datadog_service_level_objective}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective datadog_service_level_objective}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer"></a>
 
@@ -590,7 +590,7 @@ The construct id used in the generated config for the ServiceLevelObjective to i
 
 The id of the existing ServiceLevelObjective that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1165,7 +1165,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjec
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.description">Description</a></code> | <code>*string</code> | A description of this service level objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards). |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | A static set of groups to filter monitor-based SLOs. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.monitorIds">MonitorIds</a></code> | <code>*[]*f64</code> | A static set of monitor IDs to use as part of the SLO. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.query">Query</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQuery">ServiceLevelObjectiveQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.sliSpecification">SliSpecification</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecification">ServiceLevelObjectiveSliSpecification</a></code> | sli_specification block. |
@@ -1257,7 +1257,7 @@ Name *string
 
 Name of Datadog service level objective.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
 
 ---
 
@@ -1271,7 +1271,7 @@ Thresholds interface{}
 
 thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#thresholds ServiceLevelObjective#thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#thresholds ServiceLevelObjective#thresholds}
 
 ---
 
@@ -1287,7 +1287,7 @@ The type of the service level objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/service-level-objectives/#create-a-slo-object). Valid values are `metric`, `monitor`, `time_slice`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#type ServiceLevelObjective#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#type ServiceLevelObjective#type}
 
 ---
 
@@ -1301,7 +1301,7 @@ Description *string
 
 A description of this service level objective.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#description ServiceLevelObjective#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#description ServiceLevelObjective#description}
 
 ---
 
@@ -1315,7 +1315,7 @@ ForceDelete interface{}
 
 A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#force_delete ServiceLevelObjective#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#force_delete ServiceLevelObjective#force_delete}
 
 ---
 
@@ -1329,7 +1329,7 @@ Groups *[]*string
 
 A static set of groups to filter monitor-based SLOs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#groups ServiceLevelObjective#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#groups ServiceLevelObjective#groups}
 
 ---
 
@@ -1341,7 +1341,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1358,7 +1358,7 @@ MonitorIds *[]*f64
 
 A static set of monitor IDs to use as part of the SLO.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
 
 ---
 
@@ -1372,7 +1372,7 @@ Query ServiceLevelObjectiveQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
 
 ---
 
@@ -1386,7 +1386,7 @@ SliSpecification ServiceLevelObjectiveSliSpecification
 
 sli_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#sli_specification ServiceLevelObjective#sli_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#sli_specification ServiceLevelObjective#sli_specification}
 
 ---
 
@@ -1402,7 +1402,7 @@ A list of tags to associate with your service level objective.
 
 This can help you categorize and filter service level objectives in the service level objectives page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#tags ServiceLevelObjective#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#tags ServiceLevelObjective#tags}
 
 ---
 
@@ -1416,7 +1416,7 @@ TargetThreshold *f64
 
 The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
 
 ---
 
@@ -1432,7 +1432,7 @@ The primary time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
 
 ---
 
@@ -1446,7 +1446,7 @@ Validate interface{}
 
 Whether or not to validate the SLO.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#validate ServiceLevelObjective#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#validate ServiceLevelObjective#validate}
 
 ---
 
@@ -1462,7 +1462,7 @@ The objective's warning value in `(0,100)`.
 
 This must be greater than the target value and match the corresponding thresholds of the primary time frame.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
 
 ---
 
@@ -1498,7 +1498,7 @@ Denominator *string
 
 The sum of the `total` events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#denominator ServiceLevelObjective#denominator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#denominator ServiceLevelObjective#denominator}
 
 ---
 
@@ -1512,7 +1512,7 @@ Numerator *string
 
 The sum of all the `good` events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#numerator ServiceLevelObjective#numerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#numerator ServiceLevelObjective#numerator}
 
 ---
 
@@ -1546,7 +1546,7 @@ TimeSlice ServiceLevelObjectiveSliSpecificationTimeSlice
 
 time_slice block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#time_slice ServiceLevelObjective#time_slice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#time_slice ServiceLevelObjective#time_slice}
 
 ---
 
@@ -1561,6 +1561,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjec
 	Comparator: *string,
 	Query: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQuery,
 	Threshold: *f64,
+	QueryIntervalSeconds: *f64,
 }
 ```
 
@@ -1571,6 +1572,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/servicelevelobjec
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSlice.property.comparator">Comparator</a></code> | <code>*string</code> | The comparator used to compare the SLI value to the threshold. Valid values are `>`, `>=`, `<`, `<=`. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSlice.property.query">Query</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQuery">ServiceLevelObjectiveSliSpecificationTimeSliceQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSlice.property.threshold">Threshold</a></code> | <code>*f64</code> | The threshold value to which each SLI value will be compared. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSlice.property.queryIntervalSeconds">QueryIntervalSeconds</a></code> | <code>*f64</code> | The interval used when querying data, which defines the size of a time slice. |
 
 ---
 
@@ -1584,7 +1586,7 @@ Comparator *string
 
 The comparator used to compare the SLI value to the threshold. Valid values are `>`, `>=`, `<`, `<=`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#comparator ServiceLevelObjective#comparator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#comparator ServiceLevelObjective#comparator}
 
 ---
 
@@ -1598,7 +1600,7 @@ Query ServiceLevelObjectiveSliSpecificationTimeSliceQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
 
 ---
 
@@ -1612,7 +1614,23 @@ Threshold *f64
 
 The threshold value to which each SLI value will be compared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#threshold ServiceLevelObjective#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#threshold ServiceLevelObjective#threshold}
+
+---
+
+##### `QueryIntervalSeconds`<sup>Optional</sup> <a name="QueryIntervalSeconds" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSlice.property.queryIntervalSeconds"></a>
+
+```go
+QueryIntervalSeconds *f64
+```
+
+- *Type:* *f64
+
+The interval used when querying data, which defines the size of a time slice.
+
+Valid values are `60`, `300`. Defaults to `300`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#query_interval_seconds ServiceLevelObjective#query_interval_seconds}
 
 ---
 
@@ -1648,7 +1666,7 @@ Formula ServiceLevelObjectiveSliSpecificationTimeSliceQueryFormula
 
 formula block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#formula ServiceLevelObjective#formula}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#formula ServiceLevelObjective#formula}
 
 ---
 
@@ -1662,7 +1680,7 @@ Query interface{}
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
 
 ---
 
@@ -1696,7 +1714,7 @@ FormulaExpression *string
 
 The formula string, which is an expression involving named queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#formula_expression ServiceLevelObjective#formula_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#formula_expression ServiceLevelObjective#formula_expression}
 
 ---
 
@@ -1730,7 +1748,7 @@ MetricQuery ServiceLevelObjectiveSliSpecificationTimeSliceQueryQueryMetricQuery
 
 metric_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#metric_query ServiceLevelObjective#metric_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#metric_query ServiceLevelObjective#metric_query}
 
 ---
 
@@ -1768,7 +1786,7 @@ Name *string
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
 
 ---
 
@@ -1782,7 +1800,7 @@ Query *string
 
 The metrics query definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
 
 ---
 
@@ -1796,7 +1814,7 @@ DataSource *string
 
 The data source for metrics queries. Defaults to `"metrics"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#data_source ServiceLevelObjective#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#data_source ServiceLevelObjective#data_source}
 
 ---
 
@@ -1834,7 +1852,7 @@ Target *f64
 
 The objective's target in `(0,100)`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#target ServiceLevelObjective#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#target ServiceLevelObjective#target}
 
 ---
 
@@ -1850,7 +1868,7 @@ The time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
 
 ---
 
@@ -1864,7 +1882,7 @@ Warning *f64
 
 The objective's warning value in `(0,100)`. This must be greater than the target value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/service_level_objective#warning ServiceLevelObjective#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/service_level_objective#warning ServiceLevelObjective#warning}
 
 ---
 
@@ -2498,6 +2516,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.putQuery">PutQuery</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.resetQueryIntervalSeconds">ResetQueryIntervalSeconds</a></code> | *No description.* |
 
 ---
 
@@ -2663,6 +2682,12 @@ func PutQuery(value ServiceLevelObjectiveSliSpecificationTimeSliceQuery)
 
 ---
 
+##### `ResetQueryIntervalSeconds` <a name="ResetQueryIntervalSeconds" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.resetQueryIntervalSeconds"></a>
+
+```go
+func ResetQueryIntervalSeconds()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2673,8 +2698,10 @@ func PutQuery(value ServiceLevelObjectiveSliSpecificationTimeSliceQuery)
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.query">Query</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQueryOutputReference">ServiceLevelObjectiveSliSpecificationTimeSliceQueryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.comparatorInput">ComparatorInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.queryInput">QueryInput</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceQuery">ServiceLevelObjectiveSliSpecificationTimeSliceQuery</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.queryIntervalSecondsInput">QueryIntervalSecondsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.thresholdInput">ThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.comparator">Comparator</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.queryIntervalSeconds">QueryIntervalSeconds</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.threshold">Threshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSlice">ServiceLevelObjectiveSliSpecificationTimeSlice</a></code> | *No description.* |
 
@@ -2734,6 +2761,16 @@ func QueryInput() ServiceLevelObjectiveSliSpecificationTimeSliceQuery
 
 ---
 
+##### `QueryIntervalSecondsInput`<sup>Optional</sup> <a name="QueryIntervalSecondsInput" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.queryIntervalSecondsInput"></a>
+
+```go
+func QueryIntervalSecondsInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `ThresholdInput`<sup>Optional</sup> <a name="ThresholdInput" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.thresholdInput"></a>
 
 ```go
@@ -2751,6 +2788,16 @@ func Comparator() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `QueryIntervalSeconds`<sup>Required</sup> <a name="QueryIntervalSeconds" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference.property.queryIntervalSeconds"></a>
+
+```go
+func QueryIntervalSeconds() *f64
+```
+
+- *Type:* *f64
 
 ---
 
