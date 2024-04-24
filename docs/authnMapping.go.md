@@ -4,12 +4,12 @@
 
 ### AuthnMapping <a name="AuthnMapping" id="@cdktf/provider-datadog.authnMapping.AuthnMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping datadog_authn_mapping}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping datadog_authn_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/authnmapping"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/authnmapping"
 
 authnmapping.NewAuthnMapping(scope Construct, id *string, config AuthnMappingConfig) AuthnMapping
 ```
@@ -74,6 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.resetRole">ResetRole</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.resetTeam">ResetTeam</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +373,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRole` <a name="ResetRole" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.resetRole"></a>
+
+```go
+func ResetRole()
+```
+
+##### `ResetTeam` <a name="ResetTeam" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.resetTeam"></a>
+
+```go
+func ResetTeam()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +399,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/authnmapping"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/authnmapping"
 
 authnmapping.AuthnMapping_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/authnmapping"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/authnmapping"
 
 authnmapping.AuthnMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +445,7 @@ authnmapping.AuthnMapping_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/authnmapping"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/authnmapping"
 
 authnmapping.AuthnMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +459,7 @@ authnmapping.AuthnMapping_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/authnmapping"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/authnmapping"
 
 authnmapping.AuthnMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +488,7 @@ The construct id used in the generated config for the AuthnMapping to import.
 
 The id of the existing AuthnMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,10 +521,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.roleInput">RoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.teamInput">TeamInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.role">Role</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.team">Team</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.value">Value</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -687,6 +703,16 @@ func RoleInput() *string
 
 ---
 
+##### `TeamInput`<sup>Optional</sup> <a name="TeamInput" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.property.teamInput"></a>
+
+```go
+func TeamInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.property.valueInput"></a>
 
 ```go
@@ -721,6 +747,16 @@ func Key() *string
 
 ```go
 func Role() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Team`<sup>Required</sup> <a name="Team" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.property.team"></a>
+
+```go
+func Team() *string
 ```
 
 - *Type:* *string
@@ -762,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/authnmapping"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/authnmapping"
 
 &authnmapping.AuthnMappingConfig {
 	Connection: interface{},
@@ -773,9 +809,10 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/authnmapping"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Key: *string,
-	Role: *string,
 	Value: *string,
 	Id: *string,
+	Role: *string,
+	Team: *string,
 }
 ```
 
@@ -791,9 +828,10 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/authnmapping"
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.key">Key</a></code> | <code>*string</code> | Identity provider key. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role">Role</a></code> | <code>*string</code> | The ID of a role to attach to all users with the corresponding key and value. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.value">Value</a></code> | <code>*string</code> | Identity provider value. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role">Role</a></code> | <code>*string</code> | The ID of a role to attach to all users with the corresponding key and value. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.team">Team</a></code> | <code>*string</code> | The ID of a team to add all users with the corresponding key and value to. |
 
 ---
 
@@ -877,21 +915,7 @@ Key *string
 
 Identity provider key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#key AuthnMapping#key}
-
----
-
-##### `Role`<sup>Required</sup> <a name="Role" id="@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role"></a>
-
-```go
-Role *string
-```
-
-- *Type:* *string
-
-The ID of a role to attach to all users with the corresponding key and value.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#role AuthnMapping#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#key AuthnMapping#key}
 
 ---
 
@@ -905,7 +929,7 @@ Value *string
 
 Identity provider value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#value AuthnMapping#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#value AuthnMapping#value}
 
 ---
 
@@ -917,10 +941,38 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/authn_mapping#id AuthnMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#id AuthnMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Role`<sup>Optional</sup> <a name="Role" id="@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role"></a>
+
+```go
+Role *string
+```
+
+- *Type:* *string
+
+The ID of a role to attach to all users with the corresponding key and value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#role AuthnMapping#role}
+
+---
+
+##### `Team`<sup>Optional</sup> <a name="Team" id="@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.team"></a>
+
+```go
+Team *string
+```
+
+- *Type:* *string
+
+The ID of a team to add all users with the corresponding key and value to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/authn_mapping#team AuthnMapping#team}
 
 ---
 

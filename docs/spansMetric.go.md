@@ -4,12 +4,12 @@
 
 ### SpansMetric <a name="SpansMetric" id="@cdktf/provider-datadog.spansMetric.SpansMetric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric datadog_spans_metric}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric datadog_spans_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.spansMetric.SpansMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 spansmetric.NewSpansMetric(scope Construct, id *string, config SpansMetricConfig) SpansMetric
 ```
@@ -73,8 +73,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.putCompute">PutCompute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.putFilter">PutFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.putGroupBy">PutGroupBy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.resetCompute">ResetCompute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.resetFilter">ResetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.resetGroupBy">ResetGroupBy</a></code> | *No description.* |
 
@@ -368,6 +370,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutCompute` <a name="PutCompute" id="@cdktf/provider-datadog.spansMetric.SpansMetric.putCompute"></a>
+
+```go
+func PutCompute(value SpansMetricCompute)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.spansMetric.SpansMetric.putCompute.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricCompute">SpansMetricCompute</a>
+
+---
+
 ##### `PutFilter` <a name="PutFilter" id="@cdktf/provider-datadog.spansMetric.SpansMetric.putFilter"></a>
 
 ```go
@@ -391,6 +405,12 @@ func PutGroupBy(value interface{})
 - *Type:* interface{}
 
 ---
+
+##### `ResetCompute` <a name="ResetCompute" id="@cdktf/provider-datadog.spansMetric.SpansMetric.resetCompute"></a>
+
+```go
+func ResetCompute()
+```
 
 ##### `ResetFilter` <a name="ResetFilter" id="@cdktf/provider-datadog.spansMetric.SpansMetric.resetFilter"></a>
 
@@ -418,7 +438,7 @@ func ResetGroupBy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.spansMetric.SpansMetric.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 spansmetric.SpansMetric_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +470,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.spansMetric.SpansMetric.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 spansmetric.SpansMetric_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +484,7 @@ spansmetric.SpansMetric_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.spansMetric.SpansMetric.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 spansmetric.SpansMetric_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +498,7 @@ spansmetric.SpansMetric_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.spansMetric.SpansMetric.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 spansmetric.SpansMetric_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -507,7 +527,7 @@ The construct id used in the generated config for the SpansMetric to import.
 
 The id of the existing SpansMetric that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -541,6 +561,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference">SpansMetricFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.groupBy">GroupBy</a></code> | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupByList">SpansMetricGroupByList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.computeInput">ComputeInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.filterInput">FilterInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.groupByInput">GroupByInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -730,6 +751,16 @@ func Id() *string
 
 ---
 
+##### `ComputeInput`<sup>Optional</sup> <a name="ComputeInput" id="@cdktf/provider-datadog.spansMetric.SpansMetric.property.computeInput"></a>
+
+```go
+func ComputeInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `FilterInput`<sup>Optional</sup> <a name="FilterInput" id="@cdktf/provider-datadog.spansMetric.SpansMetric.property.filterInput"></a>
 
 ```go
@@ -795,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.spansMetric.SpansMetricCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 &spansmetric.SpansMetricCompute {
 	AggregationType: *string,
@@ -824,7 +855,7 @@ AggregationType *string
 
 The type of aggregation to use. This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#aggregation_type SpansMetric#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#aggregation_type SpansMetric#aggregation_type}
 
 ---
 
@@ -838,7 +869,7 @@ IncludePercentiles interface{}
 
 Toggle to include or exclude percentile aggregations for distribution metrics. Only present when the `aggregation_type` is `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#include_percentiles SpansMetric#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#include_percentiles SpansMetric#include_percentiles}
 
 ---
 
@@ -854,7 +885,7 @@ The path to the value the span-based metric will aggregate on (only used if the 
 
 This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#path SpansMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#path SpansMetric#path}
 
 ---
 
@@ -863,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.spansMetric.SpansMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 &spansmetric.SpansMetricConfig {
 	Connection: interface{},
@@ -874,7 +905,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.spansMetric.SpansMetricFilter,
+	Compute: github.com/cdktf/cdktf-provider-datadog-go/datadog.spansMetric.SpansMetricCompute,
+	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog.spansMetric.SpansMetricFilter,
 	GroupBy: interface{},
 }
 ```
@@ -891,6 +923,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricConfig.property.name">Name</a></code> | <code>*string</code> | The name of the span-based metric. This field can't be updated after creation. |
+| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricConfig.property.compute">Compute</a></code> | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricCompute">SpansMetricCompute</a></code> | compute block. |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilter">SpansMetricFilter</a></code> | filter block. |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricConfig.property.groupBy">GroupBy</a></code> | <code>interface{}</code> | group_by block. |
 
@@ -976,7 +1009,21 @@ Name *string
 
 The name of the span-based metric. This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#name SpansMetric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#name SpansMetric#name}
+
+---
+
+##### `Compute`<sup>Optional</sup> <a name="Compute" id="@cdktf/provider-datadog.spansMetric.SpansMetricConfig.property.compute"></a>
+
+```go
+Compute SpansMetricCompute
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricCompute">SpansMetricCompute</a>
+
+compute block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#compute SpansMetric#compute}
 
 ---
 
@@ -990,7 +1037,7 @@ Filter SpansMetricFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#filter SpansMetric#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#filter SpansMetric#filter}
 
 ---
 
@@ -1004,7 +1051,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
 
 ---
 
@@ -1013,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.spansMetric.SpansMetricFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 &spansmetric.SpansMetricFilter {
 	Query: *string,
@@ -1038,7 +1085,7 @@ Query *string
 
 The search query - following the span search syntax. Defaults to `"*"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#query SpansMetric#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#query SpansMetric#query}
 
 ---
 
@@ -1047,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.spansMetric.SpansMetricGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 &spansmetric.SpansMetricGroupBy {
 	Path: *string,
@@ -1074,7 +1121,7 @@ Path *string
 
 The path to the value the span-based metric will be aggregated over.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#path SpansMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#path SpansMetric#path}
 
 ---
 
@@ -1088,7 +1135,7 @@ TagName *string
 
 Eventual name of the tag that gets created. By default, the path attribute is used as the tag name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/spans_metric#tag_name SpansMetric#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/spans_metric#tag_name SpansMetric#tag_name}
 
 ---
 
@@ -1099,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.spansMetric.SpansMetricComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 spansmetric.NewSpansMetricComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpansMetricComputeOutputReference
 ```
@@ -1428,7 +1475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 spansmetric.NewSpansMetricFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpansMetricFilterOutputReference
 ```
@@ -1706,7 +1753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.spansMetric.SpansMetricGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 spansmetric.NewSpansMetricGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpansMetricGroupByList
 ```
@@ -1866,7 +1913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.spansMetric.SpansMetricGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/spansmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/spansmetric"
 
 spansmetric.NewSpansMetricGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpansMetricGroupByOutputReference
 ```

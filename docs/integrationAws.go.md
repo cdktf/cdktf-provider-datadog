@@ -4,12 +4,12 @@
 
 ### IntegrationAws <a name="IntegrationAws" id="@cdktf/provider-datadog.integrationAws.IntegrationAws"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws datadog_integration_aws}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws datadog_integration_aws}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.NewIntegrationAws(scope Construct, id *string, config IntegrationAwsConfig) IntegrationAws
 ```
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetAccountSpecificNamespaceRules">ResetAccountSpecificNamespaceRules</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetCspmResourceCollectionEnabled">ResetCspmResourceCollectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetExcludedRegions">ResetExcludedRegions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetExtendedResourceCollectionEnabled">ResetExtendedResourceCollectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetFilterTags">ResetFilterTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetHostTags">ResetHostTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetId">ResetId</a></code> | *No description.* |
@@ -406,6 +407,12 @@ func ResetCspmResourceCollectionEnabled()
 func ResetExcludedRegions()
 ```
 
+##### `ResetExtendedResourceCollectionEnabled` <a name="ResetExtendedResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetExtendedResourceCollectionEnabled"></a>
+
+```go
+func ResetExtendedResourceCollectionEnabled()
+```
+
 ##### `ResetFilterTags` <a name="ResetFilterTags" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetFilterTags"></a>
 
 ```go
@@ -462,7 +469,7 @@ func ResetSecretAccessKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.IntegrationAws_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.IntegrationAws_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +515,7 @@ integrationaws.IntegrationAws_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.IntegrationAws_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +529,7 @@ integrationaws.IntegrationAws_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 integrationaws.IntegrationAws_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -551,7 +558,7 @@ The construct id used in the generated config for the IntegrationAws to import.
 
 The id of the existing IntegrationAws that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRulesInput">AccountSpecificNamespaceRulesInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabledInput">CspmResourceCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.excludedRegionsInput">ExcludedRegionsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabledInput">ExtendedResourceCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.filterTagsInput">FilterTagsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.hostTagsInput">HostTagsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -599,6 +607,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRules">AccountSpecificNamespaceRules</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabled">CspmResourceCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.excludedRegions">ExcludedRegions</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabled">ExtendedResourceCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.filterTags">FilterTags</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.hostTags">HostTags</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -811,6 +820,16 @@ func ExcludedRegionsInput() *[]*string
 
 ---
 
+##### `ExtendedResourceCollectionEnabledInput`<sup>Optional</sup> <a name="ExtendedResourceCollectionEnabledInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabledInput"></a>
+
+```go
+func ExtendedResourceCollectionEnabledInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `FilterTagsInput`<sup>Optional</sup> <a name="FilterTagsInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.filterTagsInput"></a>
 
 ```go
@@ -931,6 +950,16 @@ func ExcludedRegions() *[]*string
 
 ---
 
+##### `ExtendedResourceCollectionEnabled`<sup>Required</sup> <a name="ExtendedResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabled"></a>
+
+```go
+func ExtendedResourceCollectionEnabled() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `FilterTags`<sup>Required</sup> <a name="FilterTags" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.filterTags"></a>
 
 ```go
@@ -1026,7 +1055,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationaws"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationaws"
 
 &integrationaws.IntegrationAwsConfig {
 	Connection: interface{},
@@ -1041,6 +1070,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationaws"
 	AccountSpecificNamespaceRules: *map[string]interface{},
 	CspmResourceCollectionEnabled: *string,
 	ExcludedRegions: *[]*string,
+	ExtendedResourceCollectionEnabled: *string,
 	FilterTags: *[]*string,
 	HostTags: *[]*string,
 	Id: *string,
@@ -1067,11 +1097,12 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationaws"
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.accountSpecificNamespaceRules">AccountSpecificNamespaceRules</a></code> | <code>*map[string]interface{}</code> | Enables or disables metric collection for specific AWS namespaces for this AWS account only. |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.cspmResourceCollectionEnabled">CspmResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects cloud security posture management resources from your AWS account. |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.excludedRegions">ExcludedRegions</a></code> | <code>*[]*string</code> | An array of AWS regions to exclude from metrics collection. |
+| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.extendedResourceCollectionEnabled">ExtendedResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects additional attributes and configuration information about the resources in your AWS account. Required for `cspm_resource_collection_enabled`. |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.filterTags">FilterTags</a></code> | <code>*[]*string</code> | Array of EC2 tags (in the form `key:value`) defines a filter that Datadog uses when collecting metrics from EC2. |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.hostTags">HostTags</a></code> | <code>*[]*string</code> | Array of tags (in the form `key:value`) to add to all hosts and metrics reporting through this integration. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#id IntegrationAws#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#id IntegrationAws#id}. |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.metricsCollectionEnabled">MetricsCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects metrics for this AWS account. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects a standard set of resources from your AWS account. |
+| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects a standard set of resources from your AWS account. **Deprecated.** Deprecated in favor of `extended_resource_collection_enabled`. |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Your Datadog role delegation name. |
 | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | Your AWS secret access key. Only required if your AWS account is a GovCloud or China account. |
 
@@ -1157,7 +1188,7 @@ AccessKeyId *string
 
 Your AWS access key ID. Only required if your AWS account is a GovCloud or China account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#access_key_id IntegrationAws#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#access_key_id IntegrationAws#access_key_id}
 
 ---
 
@@ -1171,7 +1202,7 @@ AccountId *string
 
 Your AWS Account ID without dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#account_id IntegrationAws#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#account_id IntegrationAws#account_id}
 
 ---
 
@@ -1187,7 +1218,7 @@ Enables or disables metric collection for specific AWS namespaces for this AWS a
 
 A list of namespaces can be found at the [available namespace rules API endpoint](https://docs.datadoghq.com/api/v1/aws-integration/#list-namespace-rules).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#account_specific_namespace_rules IntegrationAws#account_specific_namespace_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#account_specific_namespace_rules IntegrationAws#account_specific_namespace_rules}
 
 ---
 
@@ -1203,7 +1234,7 @@ Whether Datadog collects cloud security posture management resources from your A
 
 This includes additional resources not covered under the general resource_collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#cspm_resource_collection_enabled IntegrationAws#cspm_resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#cspm_resource_collection_enabled IntegrationAws#cspm_resource_collection_enabled}
 
 ---
 
@@ -1217,7 +1248,21 @@ ExcludedRegions *[]*string
 
 An array of AWS regions to exclude from metrics collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#excluded_regions IntegrationAws#excluded_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#excluded_regions IntegrationAws#excluded_regions}
+
+---
+
+##### `ExtendedResourceCollectionEnabled`<sup>Optional</sup> <a name="ExtendedResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.extendedResourceCollectionEnabled"></a>
+
+```go
+ExtendedResourceCollectionEnabled *string
+```
+
+- *Type:* *string
+
+Whether Datadog collects additional attributes and configuration information about the resources in your AWS account. Required for `cspm_resource_collection_enabled`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#extended_resource_collection_enabled IntegrationAws#extended_resource_collection_enabled}
 
 ---
 
@@ -1233,7 +1278,7 @@ Array of EC2 tags (in the form `key:value`) defines a filter that Datadog uses w
 
 Wildcards, such as `?` (for single characters) and `*` (for multiple characters) can also be used. Only hosts that match one of the defined tags will be imported into Datadog. The rest will be ignored. Host matching a given tag can also be excluded by adding `!` before the tag. e.x. `env:production,instance-type:c1.*,!region:us-east-1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#filter_tags IntegrationAws#filter_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#filter_tags IntegrationAws#filter_tags}
 
 ---
 
@@ -1247,7 +1292,7 @@ HostTags *[]*string
 
 Array of tags (in the form `key:value`) to add to all hosts and metrics reporting through this integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#host_tags IntegrationAws#host_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#host_tags IntegrationAws#host_tags}
 
 ---
 
@@ -1259,7 +1304,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#id IntegrationAws#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#id IntegrationAws#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1276,7 +1321,7 @@ MetricsCollectionEnabled *string
 
 Whether Datadog collects metrics for this AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#metrics_collection_enabled IntegrationAws#metrics_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#metrics_collection_enabled IntegrationAws#metrics_collection_enabled}
 
 ---
 
@@ -1288,9 +1333,9 @@ ResourceCollectionEnabled *string
 
 - *Type:* *string
 
-Whether Datadog collects a standard set of resources from your AWS account.
+Whether Datadog collects a standard set of resources from your AWS account. **Deprecated.** Deprecated in favor of `extended_resource_collection_enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#resource_collection_enabled IntegrationAws#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#resource_collection_enabled IntegrationAws#resource_collection_enabled}
 
 ---
 
@@ -1304,7 +1349,7 @@ RoleName *string
 
 Your Datadog role delegation name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#role_name IntegrationAws#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#role_name IntegrationAws#role_name}
 
 ---
 
@@ -1318,7 +1363,7 @@ SecretAccessKey *string
 
 Your AWS secret access key. Only required if your AWS account is a GovCloud or China account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/integration_aws#secret_access_key IntegrationAws#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/integration_aws#secret_access_key IntegrationAws#secret_access_key}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### OpenapiApi <a name="OpenapiApi" id="@cdktf/provider-datadog.openapiApi.OpenapiApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api datadog_openapi_api}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/openapi_api datadog_openapi_api}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.openapiApi.OpenapiApi.Initializer"></a>
 
@@ -38,7 +38,7 @@ OpenapiApi.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApi.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApi.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApi.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApi.Initializer.parameter.spec">spec</a></code> | <code>java.lang.String</code> | The OpenAPI spec. |
+| <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApi.Initializer.parameter.spec">spec</a></code> | <code>java.lang.String</code> | The textual content of the OpenAPI specification. |
 
 ---
 
@@ -106,9 +106,11 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-The OpenAPI spec.
+The textual content of the OpenAPI specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api#spec OpenapiApi#spec}
+Use [`file()`](https://developer.hashicorp.com/terraform/language/functions/file) in order to reference another file in the repository (see exmaple).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/openapi_api#spec OpenapiApi#spec}
 
 ---
 
@@ -535,7 +537,7 @@ The construct id used in the generated config for the OpenapiApi to import.
 
 The id of the existing OpenapiApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,7 +799,7 @@ OpenapiApiConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.spec">spec</a></code> | <code>java.lang.String</code> | The OpenAPI spec. |
+| <code><a href="#@cdktf/provider-datadog.openapiApi.OpenapiApiConfig.property.spec">spec</a></code> | <code>java.lang.String</code> | The textual content of the OpenAPI specification. |
 
 ---
 
@@ -879,9 +881,11 @@ public java.lang.String getSpec();
 
 - *Type:* java.lang.String
 
-The OpenAPI spec.
+The textual content of the OpenAPI specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.38.0/docs/resources/openapi_api#spec OpenapiApi#spec}
+Use [`file()`](https://developer.hashicorp.com/terraform/language/functions/file) in order to reference another file in the repository (see exmaple).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/openapi_api#spec OpenapiApi#spec}
 
 ---
 
