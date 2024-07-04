@@ -4,7 +4,7 @@
 
 ### TeamPermissionSetting <a name="TeamPermissionSetting" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer"></a>
 
@@ -42,7 +42,7 @@ TeamPermissionSetting.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer.parameter.action">action</a></code> | <code>java.lang.String</code> | The identifier for the action. Valid values are `manage_membership`, `edit`. |
 | <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer.parameter.teamId">teamId</a></code> | <code>java.lang.String</code> | ID of the team the team permission setting is associated with. |
-| <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | The action value. Valid values are `admins`, `members`, `organization`, `user_access_manage`, `teams_manage`. |
+| <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | The action value. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The identifier for the action. Valid values are `manage_membership`, `edit`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ID of the team the team permission setting is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
 
 ---
 
@@ -130,9 +130,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-The action value. Valid values are `admins`, `members`, `organization`, `user_access_manage`, `teams_manage`.
+The action value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
+Valid values are dependent on the action. `manage_membership` action allows `admins`, `members`, `organization`, `user_access_manage` values. `edit` action allows `admins`, `members`, `teams_manage` values.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
 
 ---
 
@@ -559,7 +561,7 @@ The construct id used in the generated config for the TeamPermissionSetting to i
 
 The id of the existing TeamPermissionSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_permission_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_permission_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -869,7 +871,7 @@ TeamPermissionSettingConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSettingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSettingConfig.property.action">action</a></code> | <code>java.lang.String</code> | The identifier for the action. Valid values are `manage_membership`, `edit`. |
 | <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSettingConfig.property.teamId">teamId</a></code> | <code>java.lang.String</code> | ID of the team the team permission setting is associated with. |
-| <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSettingConfig.property.value">value</a></code> | <code>java.lang.String</code> | The action value. Valid values are `admins`, `members`, `organization`, `user_access_manage`, `teams_manage`. |
+| <code><a href="#@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSettingConfig.property.value">value</a></code> | <code>java.lang.String</code> | The action value. |
 
 ---
 
@@ -953,7 +955,7 @@ public java.lang.String getAction();
 
 The identifier for the action. Valid values are `manage_membership`, `edit`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
 
 ---
 
@@ -967,7 +969,7 @@ public java.lang.String getTeamId();
 
 ID of the team the team permission setting is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
 
 ---
 
@@ -979,9 +981,11 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-The action value. Valid values are `admins`, `members`, `organization`, `user_access_manage`, `teams_manage`.
+The action value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
+Valid values are dependent on the action. `manage_membership` action allows `admins`, `members`, `organization`, `user_access_manage` values. `edit` action allows `admins`, `members`, `teams_manage` values.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
 
 ---
 

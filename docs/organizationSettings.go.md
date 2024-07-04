@@ -4,12 +4,12 @@
 
 ### OrganizationSettings <a name="OrganizationSettings" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings datadog_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings datadog_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.NewOrganizationSettings(scope Construct, id *string, config OrganizationSettingsConfig) OrganizationSettings
 ```
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.putSettings">PutSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.resetName">ResetName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.resetSecurityContacts">ResetSecurityContacts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.resetSettings">ResetSettings</a></code> | *No description.* |
 
 ---
@@ -392,6 +393,12 @@ func ResetId()
 func ResetName()
 ```
 
+##### `ResetSecurityContacts` <a name="ResetSecurityContacts" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.resetSecurityContacts"></a>
+
+```go
+func ResetSecurityContacts()
+```
+
 ##### `ResetSettings` <a name="ResetSettings" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.resetSettings"></a>
 
 ```go
@@ -412,7 +419,7 @@ func ResetSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.OrganizationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.OrganizationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ organizationsettings.OrganizationSettings_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.OrganizationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ organizationsettings.OrganizationSettings_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.OrganizationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +508,7 @@ The construct id used in the generated config for the OrganizationSettings to im
 
 The id of the existing OrganizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -536,9 +543,11 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.39
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.settings">Settings</a></code> | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsOutputReference">OrganizationSettingsSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.securityContactsInput">SecurityContactsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.settingsInput">SettingsInput</a></code> | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettings">OrganizationSettingsSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.securityContacts">SecurityContacts</a></code> | <code>*[]*string</code> | *No description.* |
 
 ---
 
@@ -734,6 +743,16 @@ func NameInput() *string
 
 ---
 
+##### `SecurityContactsInput`<sup>Optional</sup> <a name="SecurityContactsInput" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.securityContactsInput"></a>
+
+```go
+func SecurityContactsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `SettingsInput`<sup>Optional</sup> <a name="SettingsInput" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.settingsInput"></a>
 
 ```go
@@ -764,6 +783,16 @@ func Name() *string
 
 ---
 
+##### `SecurityContacts`<sup>Required</sup> <a name="SecurityContacts" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.property.securityContacts"></a>
+
+```go
+func SecurityContacts() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -789,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 &organizationsettings.OrganizationSettingsConfig {
 	Connection: interface{},
@@ -801,7 +830,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsetti
 	Provisioners: *[]interface{},
 	Id: *string,
 	Name: *string,
-	Settings: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.organizationSettings.OrganizationSettingsSettings,
+	SecurityContacts: *[]*string,
+	Settings: github.com/cdktf/cdktf-provider-datadog-go/datadog.organizationSettings.OrganizationSettingsSettings,
 }
 ```
 
@@ -816,8 +846,9 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsetti
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
+| <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.name">Name</a></code> | <code>*string</code> | Name for Organization. |
+| <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.securityContacts">SecurityContacts</a></code> | <code>*[]*string</code> | List of emails used for security event notifications from the organization. |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.settings">Settings</a></code> | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettings">OrganizationSettingsSettings</a></code> | settings block. |
 
 ---
@@ -900,7 +931,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#id OrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#id OrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -917,7 +948,21 @@ Name *string
 
 Name for Organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#name OrganizationSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#name OrganizationSettings#name}
+
+---
+
+##### `SecurityContacts`<sup>Optional</sup> <a name="SecurityContacts" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.securityContacts"></a>
+
+```go
+SecurityContacts *[]*string
+```
+
+- *Type:* *[]*string
+
+List of emails used for security event notifications from the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#security_contacts OrganizationSettings#security_contacts}
 
 ---
 
@@ -931,7 +976,7 @@ Settings OrganizationSettingsSettings
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
 
 ---
 
@@ -940,13 +985,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 &organizationsettings.OrganizationSettingsSettings {
-	Saml: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.organizationSettings.OrganizationSettingsSettingsSaml,
-	SamlAutocreateUsersDomains: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.organizationSettings.OrganizationSettingsSettingsSamlAutocreateUsersDomains,
-	SamlIdpInitiatedLogin: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.organizationSettings.OrganizationSettingsSettingsSamlIdpInitiatedLogin,
-	SamlStrictMode: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.organizationSettings.OrganizationSettingsSettingsSamlStrictMode,
+	Saml: github.com/cdktf/cdktf-provider-datadog-go/datadog.organizationSettings.OrganizationSettingsSettingsSaml,
+	SamlAutocreateUsersDomains: github.com/cdktf/cdktf-provider-datadog-go/datadog.organizationSettings.OrganizationSettingsSettingsSamlAutocreateUsersDomains,
+	SamlIdpInitiatedLogin: github.com/cdktf/cdktf-provider-datadog-go/datadog.organizationSettings.OrganizationSettingsSettingsSamlIdpInitiatedLogin,
+	SamlStrictMode: github.com/cdktf/cdktf-provider-datadog-go/datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictMode,
 	PrivateWidgetShare: interface{},
 	SamlAutocreateAccessRole: *string,
 }
@@ -975,7 +1020,7 @@ Saml OrganizationSettingsSettingsSaml
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#saml OrganizationSettings#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#saml OrganizationSettings#saml}
 
 ---
 
@@ -989,7 +1034,7 @@ SamlAutocreateUsersDomains OrganizationSettingsSettingsSamlAutocreateUsersDomain
 
 saml_autocreate_users_domains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#saml_autocreate_users_domains OrganizationSettings#saml_autocreate_users_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#saml_autocreate_users_domains OrganizationSettings#saml_autocreate_users_domains}
 
 ---
 
@@ -1003,7 +1048,7 @@ SamlIdpInitiatedLogin OrganizationSettingsSettingsSamlIdpInitiatedLogin
 
 saml_idp_initiated_login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#saml_idp_initiated_login OrganizationSettings#saml_idp_initiated_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#saml_idp_initiated_login OrganizationSettings#saml_idp_initiated_login}
 
 ---
 
@@ -1017,7 +1062,7 @@ SamlStrictMode OrganizationSettingsSettingsSamlStrictMode
 
 saml_strict_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#saml_strict_mode OrganizationSettings#saml_strict_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#saml_strict_mode OrganizationSettings#saml_strict_mode}
 
 ---
 
@@ -1031,7 +1076,7 @@ PrivateWidgetShare interface{}
 
 Whether or not the organization users can share widgets outside of Datadog. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#private_widget_share OrganizationSettings#private_widget_share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#private_widget_share OrganizationSettings#private_widget_share}
 
 ---
 
@@ -1047,7 +1092,7 @@ The access role of the user.
 
 Options are `st` (standard user), `adm` (admin user), or `ro` (read-only user). Allowed enum values: `st`, `adm` , `ro`, `ERROR` Defaults to `"st"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#saml_autocreate_access_role OrganizationSettings#saml_autocreate_access_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#saml_autocreate_access_role OrganizationSettings#saml_autocreate_access_role}
 
 ---
 
@@ -1056,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 &organizationsettings.OrganizationSettingsSettingsSaml {
 	Enabled: interface{},
@@ -1081,7 +1126,7 @@ Enabled interface{}
 
 Whether or not SAML is enabled for this organization. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
 
 ---
 
@@ -1090,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlAutocreateUsersDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 &organizationsettings.OrganizationSettingsSettingsSamlAutocreateUsersDomains {
 	Domains: *[]*string,
@@ -1117,7 +1162,7 @@ Domains *[]*string
 
 List of domains where the SAML automated user creation is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#domains OrganizationSettings#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#domains OrganizationSettings#domains}
 
 ---
 
@@ -1131,7 +1176,7 @@ Enabled interface{}
 
 Whether or not the automated user creation based on SAML domain is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
 
 ---
 
@@ -1140,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlIdpInitiatedLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 &organizationsettings.OrganizationSettingsSettingsSamlIdpInitiatedLogin {
 	Enabled: interface{},
@@ -1165,7 +1210,7 @@ Enabled interface{}
 
 Whether or not a SAML identity provider metadata file was provided to the Datadog organization. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
 
 ---
 
@@ -1174,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictMode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 &organizationsettings.OrganizationSettingsSettingsSamlStrictMode {
 	Enabled: interface{},
@@ -1201,7 +1246,7 @@ Whether or not the SAML strict mode is enabled.
 
 If true, all users must log in with SAML. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.39.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
 
 ---
 
@@ -1212,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.NewOrganizationSettingsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationSettingsSettingsOutputReference
 ```
@@ -1703,7 +1748,7 @@ func InternalValue() OrganizationSettingsSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.NewOrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference
 ```
@@ -2010,7 +2055,7 @@ func InternalValue() OrganizationSettingsSettingsSamlAutocreateUsersDomains
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.NewOrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference
 ```
@@ -2288,7 +2333,7 @@ func InternalValue() OrganizationSettingsSettingsSamlIdpInitiatedLogin
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.NewOrganizationSettingsSettingsSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationSettingsSettingsSamlOutputReference
 ```
@@ -2566,7 +2611,7 @@ func InternalValue() OrganizationSettingsSettingsSaml
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/organizationsettings"
 
 organizationsettings.NewOrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationSettingsSettingsSamlStrictModeOutputReference
 ```
