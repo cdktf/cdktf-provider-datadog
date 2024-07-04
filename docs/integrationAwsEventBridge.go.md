@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsEventBridge.IntegrationAwsEventBridge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawseventbridge"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawseventbridge"
 
 integrationawseventbridge.NewIntegrationAwsEventBridge(scope Construct, id *string, config IntegrationAwsEventBridgeConfig) IntegrationAwsEventBridge
 ```
@@ -385,7 +385,7 @@ func ResetCreateEventBus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationAwsEventBridge.IntegrationAwsEventBridge.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawseventbridge"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawseventbridge"
 
 integrationawseventbridge.IntegrationAwsEventBridge_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationAwsEventBridge.IntegrationAwsEventBridge.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawseventbridge"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawseventbridge"
 
 integrationawseventbridge.IntegrationAwsEventBridge_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ integrationawseventbridge.IntegrationAwsEventBridge_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationAwsEventBridge.IntegrationAwsEventBridge.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawseventbridge"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawseventbridge"
 
 integrationawseventbridge.IntegrationAwsEventBridge_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ integrationawseventbridge.IntegrationAwsEventBridge_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationAwsEventBridge.IntegrationAwsEventBridge.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawseventbridge"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawseventbridge"
 
 integrationawseventbridge.IntegrationAwsEventBridge_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsEventBridge.IntegrationAwsEventBridgeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawseventbridge"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawseventbridge"
 
 &integrationawseventbridge.IntegrationAwsEventBridgeConfig {
 	Connection: interface{},
