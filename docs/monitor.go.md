@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.Monitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitor(scope Construct, id *string, config MonitorConfig) Monitor
 ```
@@ -640,7 +640,7 @@ func ResetVariables()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.monitor.Monitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.Monitor_IsConstruct(x interface{}) *bool
 ```
@@ -672,7 +672,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.monitor.Monitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.Monitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ monitor.Monitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.monitor.Monitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.Monitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ monitor.Monitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.monitor.Monitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.Monitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1688,7 +1688,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorConfig {
 	Connection: interface{},
@@ -1711,8 +1711,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
 	Id: *string,
 	IncludeTags: interface{},
 	Locked: interface{},
-	MonitorThresholds: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitor.MonitorMonitorThresholds,
-	MonitorThresholdWindows: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitor.MonitorMonitorThresholdWindows,
+	MonitorThresholds: github.com/cdktf/cdktf-provider-datadog-go/datadog.monitor.MonitorMonitorThresholds,
+	MonitorThresholdWindows: github.com/cdktf/cdktf-provider-datadog-go/datadog.monitor.MonitorMonitorThresholdWindows,
 	NewGroupDelay: *f64,
 	NewHostDelay: *f64,
 	NoDataTimeframe: *f64,
@@ -1727,11 +1727,11 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
 	RenotifyStatuses: *[]*string,
 	RequireFullWindow: interface{},
 	RestrictedRoles: *[]*string,
-	SchedulingOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitor.MonitorSchedulingOptions,
+	SchedulingOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog.monitor.MonitorSchedulingOptions,
 	Tags: *[]*string,
 	TimeoutH: *f64,
 	Validate: interface{},
-	Variables: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitor.MonitorVariables,
+	Variables: github.com/cdktf/cdktf-provider-datadog-go/datadog.monitor.MonitorVariables,
 }
 ```
 
@@ -2373,7 +2373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorMonitorThresholds {
 	Critical: *string,
@@ -2487,7 +2487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorMonitorThresholdWindows {
 	RecoveryWindow: *string,
@@ -2537,11 +2537,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorSchedulingOptions {
-	CustomSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitor.MonitorSchedulingOptionsCustomSchedule,
-	EvaluationWindow: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitor.MonitorSchedulingOptionsEvaluationWindow,
+	CustomSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog.monitor.MonitorSchedulingOptionsCustomSchedule,
+	EvaluationWindow: github.com/cdktf/cdktf-provider-datadog-go/datadog.monitor.MonitorSchedulingOptionsEvaluationWindow,
 }
 ```
 
@@ -2587,10 +2587,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorSchedulingOptionsCustomSchedule {
-	Recurrence: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence,
+	Recurrence: github.com/cdktf/cdktf-provider-datadog-go/datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence,
 }
 ```
 
@@ -2621,7 +2621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorSchedulingOptionsCustomScheduleRecurrence {
 	Rrule: *string,
@@ -2687,7 +2687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorSchedulingOptionsEvaluationWindow {
 	DayStarts: *string,
@@ -2759,7 +2759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorVariables {
 	EventQuery: interface{},
@@ -2793,13 +2793,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorVariablesEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitor.MonitorVariablesEventQuerySearch,
+	Search: github.com/cdktf/cdktf-provider-datadog-go/datadog.monitor.MonitorVariablesEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -2907,7 +2907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorVariablesEventQueryCompute {
 	Aggregation: *string,
@@ -2975,12 +2975,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorVariablesEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitor.MonitorVariablesEventQueryGroupBySort,
+	Sort: github.com/cdktf/cdktf-provider-datadog-go/datadog.monitor.MonitorVariablesEventQueryGroupBySort,
 }
 ```
 
@@ -3041,7 +3041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorVariablesEventQueryGroupBySort {
 	Aggregation: *string,
@@ -3109,7 +3109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 &monitor.MonitorVariablesEventQuerySearch {
 	Query: *string,
@@ -3145,7 +3145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorMonitorThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorMonitorThresholdsOutputReference
 ```
@@ -3568,7 +3568,7 @@ func InternalValue() MonitorMonitorThresholds
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorMonitorThresholdWindowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorMonitorThresholdWindowsOutputReference
 ```
@@ -3875,7 +3875,7 @@ func InternalValue() MonitorMonitorThresholdWindows
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorSchedulingOptionsCustomScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsCustomScheduleOutputReference
 ```
@@ -4159,7 +4159,7 @@ func InternalValue() MonitorSchedulingOptionsCustomSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference
 ```
@@ -4481,7 +4481,7 @@ func InternalValue() MonitorSchedulingOptionsCustomScheduleRecurrence
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorSchedulingOptionsEvaluationWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsEvaluationWindowOutputReference
 ```
@@ -4817,7 +4817,7 @@ func InternalValue() MonitorSchedulingOptionsEvaluationWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorSchedulingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsOutputReference
 ```
@@ -5150,7 +5150,7 @@ func InternalValue() MonitorSchedulingOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorVariablesEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryComputeList
 ```
@@ -5310,7 +5310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorVariablesEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryComputeOutputReference
 ```
@@ -5657,7 +5657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorVariablesEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryGroupByList
 ```
@@ -5817,7 +5817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorVariablesEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryGroupByOutputReference
 ```
@@ -6177,7 +6177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorVariablesEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesEventQueryGroupBySortOutputReference
 ```
@@ -6506,7 +6506,7 @@ func InternalValue() MonitorVariablesEventQueryGroupBySort
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorVariablesEventQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryList
 ```
@@ -6666,7 +6666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorVariablesEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryOutputReference
 ```
@@ -7118,7 +7118,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorVariablesEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesEventQuerySearchOutputReference
 ```
@@ -7389,7 +7389,7 @@ func InternalValue() MonitorVariablesEventQuerySearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitor"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitor"
 
 monitor.NewMonitorVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesOutputReference
 ```
