@@ -99,6 +99,7 @@ export * as dataDatadogMonitor from './data-datadog-monitor';
 export * as dataDatadogMonitorConfigPolicies from './data-datadog-monitor-config-policies';
 export * as dataDatadogMonitors from './data-datadog-monitors';
 export * as dataDatadogPermissions from './data-datadog-permissions';
+export * as dataDatadogPowerpack from './data-datadog-powerpack';
 export * as dataDatadogRole from './data-datadog-role';
 export * as dataDatadogRoleUsers from './data-datadog-role-users';
 export * as dataDatadogRoles from './data-datadog-roles';

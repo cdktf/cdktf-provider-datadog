@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.go.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.go.md)
 - [dataDatadogPermissions](./dataDatadogPermissions.go.md)
+- [dataDatadogPowerpack](./dataDatadogPowerpack.go.md)
 - [dataDatadogRole](./dataDatadogRole.go.md)
 - [dataDatadogRoleUsers](./dataDatadogRoleUsers.go.md)
 - [dataDatadogRoles](./dataDatadogRoles.go.md)

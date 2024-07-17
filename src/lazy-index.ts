@@ -99,6 +99,7 @@ Object.defineProperty(exports, 'dataDatadogMonitor', { get: function () { return
 Object.defineProperty(exports, 'dataDatadogMonitorConfigPolicies', { get: function () { return require('./data-datadog-monitor-config-policies'); } });
 Object.defineProperty(exports, 'dataDatadogMonitors', { get: function () { return require('./data-datadog-monitors'); } });
 Object.defineProperty(exports, 'dataDatadogPermissions', { get: function () { return require('./data-datadog-permissions'); } });
+Object.defineProperty(exports, 'dataDatadogPowerpack', { get: function () { return require('./data-datadog-powerpack'); } });
 Object.defineProperty(exports, 'dataDatadogRole', { get: function () { return require('./data-datadog-role'); } });
 Object.defineProperty(exports, 'dataDatadogRoleUsers', { get: function () { return require('./data-datadog-role-users'); } });
 Object.defineProperty(exports, 'dataDatadogRoles', { get: function () { return require('./data-datadog-roles'); } });
