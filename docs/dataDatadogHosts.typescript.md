@@ -4,7 +4,7 @@
 
 ### DataDatadogHosts <a name="DataDatadogHosts" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/hosts datadog_hosts}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/hosts datadog_hosts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.Initializer"></a>
 
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataDatadogHosts to import
 
 The id of the existing DataDatadogHosts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -836,7 +836,7 @@ public readonly filter: string;
 
 String to filter search results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
 
 ---
 
@@ -850,7 +850,7 @@ public readonly from: number;
 
 Number of seconds since UNIX epoch from which you want to search your hosts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/hosts#from DataDatadogHosts#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/hosts#from DataDatadogHosts#from}
 
 ---
 
@@ -864,7 +864,7 @@ public readonly includeMutedHostsData: boolean | IResolvable;
 
 Include information on the muted status of hosts and when the mute expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
 
 ---
 
@@ -878,7 +878,7 @@ public readonly sortDir: string;
 
 Direction of sort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
 
 ---
 
@@ -892,7 +892,7 @@ public readonly sortField: string;
 
 Sort hosts by this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
 
 ---
 
@@ -1950,6 +1950,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.muteTimeout">muteTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.sources">sources</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.tagsBySource">tagsBySource</a></code> | <code>cdktf.StringListMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.up">up</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStruct">DataDatadogHostsHostListStruct</a></code> | *No description.* |
 
@@ -2096,6 +2097,16 @@ public readonly sources: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `tagsBySource`<sup>Required</sup> <a name="tagsBySource" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.tagsBySource"></a>
+
+```typescript
+public readonly tagsBySource: StringListMap;
+```
+
+- *Type:* cdktf.StringListMap
 
 ---
 

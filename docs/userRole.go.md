@@ -4,12 +4,12 @@
 
 ### UserRole <a name="UserRole" id="@cdktf/provider-datadog.userRole.UserRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/user_role datadog_user_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/user_role datadog_user_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.userRole.UserRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/userrole"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/userrole"
 
 userrole.NewUserRole(scope Construct, id *string, config UserRoleConfig) UserRole
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.userRole.UserRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/userrole"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/userrole"
 
 userrole.UserRole_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.userRole.UserRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/userrole"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/userrole"
 
 userrole.UserRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ userrole.UserRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.userRole.UserRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/userrole"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/userrole"
 
 userrole.UserRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ userrole.UserRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.userRole.UserRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/userrole"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/userrole"
 
 userrole.UserRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the UserRole to import.
 
 The id of the existing UserRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.userRole.UserRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/userrole"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/userrole"
 
 &userrole.UserRoleConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ RoleId *string
 
 ID of the role that the user is assigned to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/user_role#role_id UserRole#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/user_role#role_id UserRole#role_id}
 
 ---
 
@@ -847,7 +847,7 @@ UserId *string
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/resources/user_role#user_id UserRole#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/resources/user_role#user_id UserRole#user_id}
 
 ---
 

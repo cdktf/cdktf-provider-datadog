@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.java.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.java.md)
 - [dataDatadogPermissions](./dataDatadogPermissions.java.md)
+- [dataDatadogPowerpack](./dataDatadogPowerpack.java.md)
 - [dataDatadogRole](./dataDatadogRole.java.md)
 - [dataDatadogRoleUsers](./dataDatadogRoleUsers.java.md)
 - [dataDatadogRoles](./dataDatadogRoles.java.md)

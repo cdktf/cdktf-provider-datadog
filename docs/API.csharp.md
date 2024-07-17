@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.csharp.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.csharp.md)
 - [dataDatadogPermissions](./dataDatadogPermissions.csharp.md)
+- [dataDatadogPowerpack](./dataDatadogPowerpack.csharp.md)
 - [dataDatadogRole](./dataDatadogRole.csharp.md)
 - [dataDatadogRoleUsers](./dataDatadogRoleUsers.csharp.md)
 - [dataDatadogRoles](./dataDatadogRoles.csharp.md)

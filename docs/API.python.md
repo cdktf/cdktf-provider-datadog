@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.python.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.python.md)
 - [dataDatadogPermissions](./dataDatadogPermissions.python.md)
+- [dataDatadogPowerpack](./dataDatadogPowerpack.python.md)
 - [dataDatadogRole](./dataDatadogRole.python.md)
 - [dataDatadogRoleUsers](./dataDatadogRoleUsers.python.md)
 - [dataDatadogRoles](./dataDatadogRoles.python.md)

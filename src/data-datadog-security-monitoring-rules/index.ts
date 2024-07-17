@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/security_monitoring_rules
+// https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/security_monitoring_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataDatadogSecurityMonitoringRulesConfig extends cdktf.Terrafor
   /**
   * Limit the search to default rules
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/security_monitoring_rules#default_only_filter DataDatadogSecurityMonitoringRules#default_only_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/security_monitoring_rules#default_only_filter DataDatadogSecurityMonitoringRules#default_only_filter}
   */
   readonly defaultOnlyFilter?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/security_monitoring_rules#id DataDatadogSecurityMonitoringRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/security_monitoring_rules#id DataDatadogSecurityMonitoringRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface DataDatadogSecurityMonitoringRulesConfig extends cdktf.Terrafor
   /**
   * A rule name to limit the search
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/security_monitoring_rules#name_filter DataDatadogSecurityMonitoringRules#name_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/security_monitoring_rules#name_filter DataDatadogSecurityMonitoringRules#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * A list of tags to limit the search
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/security_monitoring_rules#tags_filter DataDatadogSecurityMonitoringRules#tags_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/security_monitoring_rules#tags_filter DataDatadogSecurityMonitoringRules#tags_filter}
   */
   readonly tagsFilter?: string[];
   /**
   * Limit the search to user rules
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/security_monitoring_rules#user_only_filter DataDatadogSecurityMonitoringRules#user_only_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/security_monitoring_rules#user_only_filter DataDatadogSecurityMonitoringRules#user_only_filter}
   */
   readonly userOnlyFilter?: boolean | cdktf.IResolvable;
 }
@@ -1182,7 +1177,7 @@ export class DataDatadogSecurityMonitoringRulesRulesList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules}
 */
 export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSource {
 
@@ -1198,7 +1193,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataDatadogSecurityMonitoringRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogSecurityMonitoringRules to import
-  * @param importFromId The id of the existing DataDatadogSecurityMonitoringRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/security_monitoring_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogSecurityMonitoringRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/security_monitoring_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogSecurityMonitoringRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1210,7 +1205,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1221,7 +1216,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
       terraformResourceType: 'datadog_security_monitoring_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.40.0',
+        providerVersion: '3.41.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

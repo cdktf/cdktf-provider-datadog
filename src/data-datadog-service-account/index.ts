@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/service_account
+// https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatadogServiceAccountConfig extends cdktf.TerraformMetaArguments {
   /**
+  * When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_account#exact_match DataDatadogServiceAccount#exact_match}
+  */
+  readonly exactMatch?: boolean | cdktf.IResolvable;
+  /**
   * Filter all users and service accounts by name, email, or role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/service_account#filter DataDatadogServiceAccount#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_account#filter DataDatadogServiceAccount#filter}
   */
   readonly filter?: string;
   /**
   * Filter on status attribute. Comma separated list, with possible values `Active`, `Pending`, and `Disabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/service_account#filter_status DataDatadogServiceAccount#filter_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_account#filter_status DataDatadogServiceAccount#filter_status}
   */
   readonly filterStatus?: string;
   /**
   * The service account's ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/service_account#id DataDatadogServiceAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_account#id DataDatadogServiceAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,7 +37,7 @@ export interface DataDatadogServiceAccountConfig extends cdktf.TerraformMetaArgu
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/service_account datadog_service_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_account datadog_service_account}
 */
 export class DataDatadogServiceAccount extends cdktf.TerraformDataSource {
 
@@ -52,7 +53,7 @@ export class DataDatadogServiceAccount extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogServiceAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogServiceAccount to import
-  * @param importFromId The id of the existing DataDatadogServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/service_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogServiceAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -64,7 +65,7 @@ export class DataDatadogServiceAccount extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.40.0/docs/data-sources/service_account datadog_service_account} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_account datadog_service_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +76,7 @@ export class DataDatadogServiceAccount extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_service_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.40.0',
+        providerVersion: '3.41.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -86,6 +87,7 @@ export class DataDatadogServiceAccount extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._exactMatch = config.exactMatch;
     this._filter = config.filter;
     this._filterStatus = config.filterStatus;
     this._id = config.id;
@@ -103,6 +105,22 @@ export class DataDatadogServiceAccount extends cdktf.TerraformDataSource {
   // email - computed: true, optional: false, required: false
   public get email() {
     return this.getStringAttribute('email');
+  }
+
+  // exact_match - computed: false, optional: true, required: false
+  private _exactMatch?: boolean | cdktf.IResolvable; 
+  public get exactMatch() {
+    return this.getBooleanAttribute('exact_match');
+  }
+  public set exactMatch(value: boolean | cdktf.IResolvable) {
+    this._exactMatch = value;
+  }
+  public resetExactMatch() {
+    this._exactMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactMatchInput() {
+    return this._exactMatch;
   }
 
   // filter - computed: false, optional: true, required: false
@@ -170,7 +188,7 @@ export class DataDatadogServiceAccount extends cdktf.TerraformDataSource {
 
   // roles - computed: true, optional: false, required: false
   public get roles() {
-    return this.getListAttribute('roles');
+    return cdktf.Fn.tolist(this.getListAttribute('roles'));
   }
 
   // status - computed: true, optional: false, required: false
@@ -194,6 +212,7 @@ export class DataDatadogServiceAccount extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      exact_match: cdktf.booleanToTerraform(this._exactMatch),
       filter: cdktf.stringToTerraform(this._filter),
       filter_status: cdktf.stringToTerraform(this._filterStatus),
       id: cdktf.stringToTerraform(this._id),
@@ -202,6 +221,12 @@ export class DataDatadogServiceAccount extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      exact_match: {
+        value: cdktf.booleanToHclTerraform(this._exactMatch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       filter: {
         value: cdktf.stringToHclTerraform(this._filter),
         isBlock: false,

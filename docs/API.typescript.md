@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.typescript.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.typescript.md)
 - [dataDatadogPermissions](./dataDatadogPermissions.typescript.md)
+- [dataDatadogPowerpack](./dataDatadogPowerpack.typescript.md)
 - [dataDatadogRole](./dataDatadogRole.typescript.md)
 - [dataDatadogRoleUsers](./dataDatadogRoleUsers.typescript.md)
 - [dataDatadogRoles](./dataDatadogRoles.typescript.md)
