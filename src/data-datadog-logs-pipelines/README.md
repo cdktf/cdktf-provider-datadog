@@ -1,3 +1,3 @@
 # `data_datadog_logs_pipelines`
 
-Refer to the Terraform Registry for docs: [`data_datadog_logs_pipelines`](https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/logs_pipelines).
+Refer to the Terraform Registry for docs: [`data_datadog_logs_pipelines`](https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/logs_pipelines).

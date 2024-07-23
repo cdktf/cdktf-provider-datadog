@@ -4,12 +4,12 @@
 
 ### DataDatadogServiceLevelObjective <a name="DataDatadogServiceLevelObjective" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjective"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_level_objective datadog_service_level_objective}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/service_level_objective datadog_service_level_objective}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjective.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogservicelevelobjective"
 
 datadatadogservicelevelobjective.NewDataDatadogServiceLevelObjective(scope Construct, id *string, config DataDatadogServiceLevelObjectiveConfig) DataDatadogServiceLevelObjective
 ```
@@ -304,7 +304,7 @@ func ResetTagsQuery()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjective.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogservicelevelobjective"
 
 datadatadogservicelevelobjective.DataDatadogServiceLevelObjective_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjective.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogservicelevelobjective"
 
 datadatadogservicelevelobjective.DataDatadogServiceLevelObjective_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datadatadogservicelevelobjective.DataDatadogServiceLevelObjective_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjective.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogservicelevelobjective"
 
 datadatadogservicelevelobjective.DataDatadogServiceLevelObjective_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatadogservicelevelobjective.DataDatadogServiceLevelObjective_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjective.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogservicelevelobjective"
 
 datadatadogservicelevelobjective.DataDatadogServiceLevelObjective_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataDatadogServiceLevelObj
 
 The id of the existing DataDatadogServiceLevelObjective that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_level_objective#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/service_level_objective#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogservicelevelobjective"
 
 &datadatadogservicelevelobjective.DataDatadogServiceLevelObjectiveConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ Id *string
 
 A SLO ID to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_level_objective#id DataDatadogServiceLevelObjective#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/service_level_objective#id DataDatadogServiceLevelObjective#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -868,7 +868,7 @@ MetricsQuery *string
 
 Filter results based on SLO numerator and denominator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_level_objective#metrics_query DataDatadogServiceLevelObjective#metrics_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/service_level_objective#metrics_query DataDatadogServiceLevelObjective#metrics_query}
 
 ---
 
@@ -882,7 +882,7 @@ NameQuery *string
 
 Filter results based on SLO names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_level_objective#name_query DataDatadogServiceLevelObjective#name_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/service_level_objective#name_query DataDatadogServiceLevelObjective#name_query}
 
 ---
 
@@ -896,7 +896,7 @@ TagsQuery *string
 
 Filter results based on a single SLO tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.41.0/docs/data-sources/service_level_objective#tags_query DataDatadogServiceLevelObjective#tags_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/service_level_objective#tags_query DataDatadogServiceLevelObjective#tags_query}
 
 ---
 
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogservicelevelobjective"
 
 &datadatadogservicelevelobjective.DataDatadogServiceLevelObjectiveQuery {
 
@@ -920,7 +920,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservic
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogservicelevelobjective"
 
 datadatadogservicelevelobjective.NewDataDatadogServiceLevelObjectiveQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogServiceLevelObjectiveQueryList
 ```
@@ -1069,7 +1069,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogservicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogservicelevelobjective"
 
 datadatadogservicelevelobjective.NewDataDatadogServiceLevelObjectiveQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogServiceLevelObjectiveQueryOutputReference
 ```
