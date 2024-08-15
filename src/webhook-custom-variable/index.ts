@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable
+// https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface WebhookCustomVariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#id WebhookCustomVariable#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Whether the custom variable is secret or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
   */
   readonly isSecret: boolean | cdktf.IResolvable;
   /**
   * The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
   */
   readonly name: string;
   /**
   * The value of the custom variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}
 */
 export class WebhookCustomVariable extends cdktf.TerraformResource {
 
@@ -56,7 +49,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WebhookCustomVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebhookCustomVariable to import
-  * @param importFromId The id of the existing WebhookCustomVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WebhookCustomVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebhookCustomVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +61,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +72,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_webhook_custom_variable',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -90,7 +83,6 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._isSecret = config.isSecret;
     this._name = config.name;
     this._value = config.value;
@@ -100,20 +92,9 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // is_secret - computed: false, optional: false, required: true
@@ -161,7 +142,6 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       is_secret: cdktf.booleanToTerraform(this._isSecret),
       name: cdktf.stringToTerraform(this._name),
       value: cdktf.stringToTerraform(this._value),
@@ -170,12 +150,6 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       is_secret: {
         value: cdktf.booleanToHclTerraform(this._isSecret),
         isBlock: false,

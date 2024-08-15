@@ -4,7 +4,7 @@
 
 ### ApmRetentionFilter <a name="ApmRetentionFilter" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter datadog_apm_retention_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter datadog_apm_retention_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 the status of the retention filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The type of the retention filter, currently only spans-processing-sampling is available. Valid values are `spans-sampling-processor`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the retention filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Sample rate to apply to spans going through this retention filter as a string, a value of 1.0 keeps all spans matching the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
 
 ---
 
@@ -527,9 +527,11 @@ def put_filter(
 
 - *Type:* str
 
-The search query - following the span search syntax. Defaults to `"*"`.
+The search query - follow the span search syntax, use `AND` between tags and `\` to escape special characters, use nanosecond for duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
+Defaults to `"*"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
 
 ---
 
@@ -653,7 +655,7 @@ The construct id used in the generated config for the ApmRetentionFilter to impo
 
 The id of the existing ApmRetentionFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1091,7 +1093,7 @@ enabled: typing.Union[bool, IResolvable]
 
 the status of the retention filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
 
 ---
 
@@ -1105,7 +1107,7 @@ filter_type: str
 
 The type of the retention filter, currently only spans-processing-sampling is available. Valid values are `spans-sampling-processor`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
 
 ---
 
@@ -1119,7 +1121,7 @@ name: str
 
 The name of the retention filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
 
 ---
 
@@ -1133,7 +1135,7 @@ rate: str
 
 Sample rate to apply to spans going through this retention filter as a string, a value of 1.0 keeps all spans matching the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
 
 ---
 
@@ -1147,7 +1149,7 @@ filter: ApmRetentionFilterFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
 
 ---
 
@@ -1167,7 +1169,7 @@ apmRetentionFilter.ApmRetentionFilterFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilter.property.query">query</a></code> | <code>str</code> | The search query - following the span search syntax. Defaults to `"*"`. |
+| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilter.property.query">query</a></code> | <code>str</code> | The search query - follow the span search syntax, use `AND` between tags and `\` to escape special characters, use nanosecond for duration. |
 
 ---
 
@@ -1179,9 +1181,11 @@ query: str
 
 - *Type:* str
 
-The search query - following the span search syntax. Defaults to `"*"`.
+The search query - follow the span search syntax, use `AND` between tags and `\` to escape special characters, use nanosecond for duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
+Defaults to `"*"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
 
 ---
 

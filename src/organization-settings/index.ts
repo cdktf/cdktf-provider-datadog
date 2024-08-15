@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings
+// https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#id OrganizationSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#id OrganizationSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface OrganizationSettingsConfig extends cdktf.TerraformMetaArguments
   /**
   * Name for Organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#name OrganizationSettings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#name OrganizationSettings#name}
   */
   readonly name?: string;
   /**
   * List of emails used for security event notifications from the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#security_contacts OrganizationSettings#security_contacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#security_contacts OrganizationSettings#security_contacts}
   */
   readonly securityContacts?: string[];
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
   */
   readonly settings?: OrganizationSettingsSettings;
 }
@@ -42,7 +42,7 @@ export interface OrganizationSettingsSettingsSaml {
   /**
   * Whether or not SAML is enabled for this organization. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -128,13 +128,13 @@ export interface OrganizationSettingsSettingsSamlAutocreateUsersDomains {
   /**
   * List of domains where the SAML automated user creation is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#domains OrganizationSettings#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#domains OrganizationSettings#domains}
   */
   readonly domains?: string[];
   /**
   * Whether or not the automated user creation based on SAML domain is enabled. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -249,7 +249,7 @@ export interface OrganizationSettingsSettingsSamlIdpInitiatedLogin {
   /**
   * Whether or not a SAML identity provider metadata file was provided to the Datadog organization. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -335,7 +335,7 @@ export interface OrganizationSettingsSettingsSamlStrictMode {
   /**
   * Whether or not the SAML strict mode is enabled. If true, all users must log in with SAML. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -421,37 +421,37 @@ export interface OrganizationSettingsSettings {
   /**
   * Whether or not the organization users can share widgets outside of Datadog. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#private_widget_share OrganizationSettings#private_widget_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#private_widget_share OrganizationSettings#private_widget_share}
   */
   readonly privateWidgetShare?: boolean | cdktf.IResolvable;
   /**
   * The access role of the user. Options are `st` (standard user), `adm` (admin user), or `ro` (read-only user). Allowed enum values: `st`, `adm` , `ro`, `ERROR` Defaults to `"st"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#saml_autocreate_access_role OrganizationSettings#saml_autocreate_access_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#saml_autocreate_access_role OrganizationSettings#saml_autocreate_access_role}
   */
   readonly samlAutocreateAccessRole?: string;
   /**
   * saml block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#saml OrganizationSettings#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#saml OrganizationSettings#saml}
   */
   readonly saml: OrganizationSettingsSettingsSaml;
   /**
   * saml_autocreate_users_domains block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#saml_autocreate_users_domains OrganizationSettings#saml_autocreate_users_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#saml_autocreate_users_domains OrganizationSettings#saml_autocreate_users_domains}
   */
   readonly samlAutocreateUsersDomains: OrganizationSettingsSettingsSamlAutocreateUsersDomains;
   /**
   * saml_idp_initiated_login block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#saml_idp_initiated_login OrganizationSettings#saml_idp_initiated_login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#saml_idp_initiated_login OrganizationSettings#saml_idp_initiated_login}
   */
   readonly samlIdpInitiatedLogin: OrganizationSettingsSettingsSamlIdpInitiatedLogin;
   /**
   * saml_strict_mode block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#saml_strict_mode OrganizationSettings#saml_strict_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#saml_strict_mode OrganizationSettings#saml_strict_mode}
   */
   readonly samlStrictMode: OrganizationSettingsSettingsSamlStrictMode;
 }
@@ -688,7 +688,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings datadog_organization_settings}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings datadog_organization_settings}
 */
 export class OrganizationSettings extends cdktf.TerraformResource {
 
@@ -704,7 +704,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationSettings to import
-  * @param importFromId The id of the existing OrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -716,7 +716,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/organization_settings datadog_organization_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/organization_settings datadog_organization_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -727,7 +727,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_organization_settings',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

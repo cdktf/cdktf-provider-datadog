@@ -4,7 +4,7 @@
 
 ### Webhook <a name="Webhook" id="@cdktf/provider-datadog.webhook.Webhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook datadog_webhook}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook datadog_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.webhook.Webhook.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.resetCustomHeaders">resetCustomHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.resetEncodeAs">resetEncodeAs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.webhook.Webhook.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.resetPayload">resetPayload</a></code> | *No description.* |
 
 ---
@@ -380,12 +379,6 @@ public resetCustomHeaders(): void
 public resetEncodeAs(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-datadog.webhook.Webhook.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetPayload` <a name="resetPayload" id="@cdktf/provider-datadog.webhook.Webhook.resetPayload"></a>
 
 ```typescript
@@ -495,7 +488,7 @@ The construct id used in the generated config for the Webhook to import.
 
 The id of the existing Webhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -525,15 +518,14 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.customHeadersInput">customHeadersInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.encodeAsInput">encodeAsInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.payloadInput">payloadInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.customHeaders">customHeaders</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.encodeAs">encodeAs</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.payload">payload</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.url">url</a></code> | <code>string</code> | *No description.* |
@@ -682,6 +674,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.webhook.Webhook.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `customHeadersInput`<sup>Optional</sup> <a name="customHeadersInput" id="@cdktf/provider-datadog.webhook.Webhook.property.customHeadersInput"></a>
 
 ```typescript
@@ -696,16 +698,6 @@ public readonly customHeadersInput: string;
 
 ```typescript
 public readonly encodeAsInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-datadog.webhook.Webhook.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
 ```
 
 - *Type:* string
@@ -756,16 +748,6 @@ public readonly customHeaders: string;
 
 ```typescript
 public readonly encodeAs: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.webhook.Webhook.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -847,7 +829,6 @@ const webhookConfig: webhook.WebhookConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.url">url</a></code> | <code>string</code> | The URL of the webhook. |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.customHeaders">customHeaders</a></code> | <code>string</code> | The headers attached to the webhook. |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.encodeAs">encodeAs</a></code> | <code>string</code> | Encoding type. Valid values are `json`, `form`. |
-| <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#id Webhook#id}. |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.payload">payload</a></code> | <code>string</code> | The payload of the webhook. |
 
 ---
@@ -932,7 +913,7 @@ public readonly name: string;
 
 The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#name Webhook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#name Webhook#name}
 
 ---
 
@@ -946,7 +927,7 @@ public readonly url: string;
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#url Webhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#url Webhook#url}
 
 ---
 
@@ -960,7 +941,7 @@ public readonly customHeaders: string;
 
 The headers attached to the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
 
 ---
 
@@ -974,22 +955,7 @@ public readonly encodeAs: string;
 
 Encoding type. Valid values are `json`, `form`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#encode_as Webhook#encode_as}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.webhook.WebhookConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#id Webhook#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#encode_as Webhook#encode_as}
 
 ---
 
@@ -1003,7 +969,7 @@ public readonly payload: string;
 
 The payload of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#payload Webhook#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#payload Webhook#payload}
 
 ---
 
