@@ -4,12 +4,12 @@
 
 ### IntegrationGcpSts <a name="IntegrationGcpSts" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.NewIntegrationGcpSts(scope Construct, id *string, config IntegrationGcpStsConfig) IntegrationGcpSts
 ```
@@ -420,7 +420,7 @@ func ResetResourceCollectionEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.IntegrationGcpSts_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.IntegrationGcpSts_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ integrationgcpsts.IntegrationGcpSts_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.IntegrationGcpSts_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ integrationgcpsts.IntegrationGcpSts_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.IntegrationGcpSts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the IntegrationGcpSts to impor
 
 The id of the existing IntegrationGcpSts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -885,7 +885,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 &integrationgcpsts.IntegrationGcpStsConfig {
 	Connection: interface{},
@@ -1006,7 +1006,7 @@ ClientEmail *string
 
 Your service account email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
 
 ---
 
@@ -1020,7 +1020,7 @@ AccountTags *[]*string
 
 Tags to be associated with GCP metrics and service checks from your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_gcp_sts#account_tags IntegrationGcpSts#account_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/integration_gcp_sts#account_tags IntegrationGcpSts#account_tags}
 
 ---
 
@@ -1034,7 +1034,7 @@ Automute interface{}
 
 Silence monitors for expected GCE instance shutdowns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
 
 ---
 
@@ -1048,7 +1048,7 @@ HostFilters *[]*string
 
 Your Host Filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
 
 ---
 
@@ -1064,7 +1064,7 @@ Whether Datadog collects cloud security posture management resources from your G
 
 If enabled, requires `resource_collection_enabled` to also be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
 
 ---
 
@@ -1080,7 +1080,7 @@ When enabled, Datadog will attempt to collect Security Command Center Findings.
 
 Note: This requires additional permissions on the service account. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_gcp_sts#is_security_command_center_enabled IntegrationGcpSts#is_security_command_center_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/integration_gcp_sts#is_security_command_center_enabled IntegrationGcpSts#is_security_command_center_enabled}
 
 ---
 
@@ -1094,7 +1094,7 @@ ResourceCollectionEnabled interface{}
 
 When enabled, Datadog scans for all resources in your GCP environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/integration_gcp_sts#resource_collection_enabled IntegrationGcpSts#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/integration_gcp_sts#resource_collection_enabled IntegrationGcpSts#resource_collection_enabled}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDatadogRoleUsers <a name="DataDatadogRoleUsers" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/role_users datadog_role_users}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/data-sources/role_users datadog_role_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataDatadogRoleUsers to im
 
 The id of the existing DataDatadogRoleUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/role_users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/data-sources/role_users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,7 +758,7 @@ public string RoleId { get; set; }
 
 The role's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
 
 ---
 
@@ -772,7 +772,7 @@ public object ExactMatch { get; set; }
 
 When true, `filter_keyword` string is exact matched against the user's `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
 
 ---
 
@@ -786,7 +786,7 @@ public string Filter { get; set; }
 
 Search query, can be user name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
 
 ---
 

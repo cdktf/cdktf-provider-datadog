@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook
+// https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,44 +10,37 @@ export interface WebhookConfig extends cdktf.TerraformMetaArguments {
   /**
   * The headers attached to the webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
   */
   readonly customHeaders?: string;
   /**
   * Encoding type. Valid values are `json`, `form`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#encode_as Webhook#encode_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#encode_as Webhook#encode_as}
   */
   readonly encodeAs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#id Webhook#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#name Webhook#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#name Webhook#name}
   */
   readonly name: string;
   /**
   * The payload of the webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#payload Webhook#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#payload Webhook#payload}
   */
   readonly payload?: string;
   /**
   * The URL of the webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#url Webhook#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#url Webhook#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook datadog_webhook}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook datadog_webhook}
 */
 export class Webhook extends cdktf.TerraformResource {
 
@@ -68,7 +56,7 @@ export class Webhook extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Webhook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Webhook to import
-  * @param importFromId The id of the existing Webhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Webhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Webhook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +68,7 @@ export class Webhook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook datadog_webhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook datadog_webhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +79,7 @@ export class Webhook extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_webhook',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -104,7 +92,6 @@ export class Webhook extends cdktf.TerraformResource {
     });
     this._customHeaders = config.customHeaders;
     this._encodeAs = config.encodeAs;
-    this._id = config.id;
     this._name = config.name;
     this._payload = config.payload;
     this._url = config.url;
@@ -146,20 +133,9 @@ export class Webhook extends cdktf.TerraformResource {
     return this._encodeAs;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -212,7 +188,6 @@ export class Webhook extends cdktf.TerraformResource {
     return {
       custom_headers: cdktf.stringToTerraform(this._customHeaders),
       encode_as: cdktf.stringToTerraform(this._encodeAs),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       payload: cdktf.stringToTerraform(this._payload),
       url: cdktf.stringToTerraform(this._url),
@@ -229,12 +204,6 @@ export class Webhook extends cdktf.TerraformResource {
       },
       encode_as: {
         value: cdktf.stringToHclTerraform(this._encodeAs),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

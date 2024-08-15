@@ -4,7 +4,7 @@
 
 ### WebhookCustomVariable <a name="WebhookCustomVariable" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.Initializer"></a>
 
@@ -23,8 +23,7 @@ webhookCustomVariable.WebhookCustomVariable(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   is_secret: typing.Union[bool, IResolvable],
   name: str,
-  value: str,
-  id: str = None
+  value: str
 )
 ```
 
@@ -42,7 +41,6 @@ webhookCustomVariable.WebhookCustomVariable(
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.Initializer.parameter.isSecret">is_secret</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the custom variable is secret or not. |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`. |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.Initializer.parameter.value">value</a></code> | <code>str</code> | The value of the custom variable. |
-| <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#id WebhookCustomVariable#id}. |
 
 ---
 
@@ -112,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Whether the custom variable is secret or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
 
 ---
 
@@ -122,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
 
 ---
 
@@ -132,18 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The value of the custom variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#id WebhookCustomVariable#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
 
 ---
 
@@ -174,7 +161,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -503,12 +489,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -623,7 +603,7 @@ The construct id used in the generated config for the WebhookCustomVariable to i
 
 The id of the existing WebhookCustomVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,11 +633,10 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.42
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.isSecretInput">is_secret_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.isSecret">is_secret</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.value">value</a></code> | <code>str</code> | *No description.* |
@@ -806,10 +785,10 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.id"></a>
 
 ```python
-id_input: str
+id: str
 ```
 
 - *Type:* str
@@ -840,16 +819,6 @@ name_input: str
 
 ```python
 value_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -923,8 +892,7 @@ webhookCustomVariable.WebhookCustomVariableConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   is_secret: typing.Union[bool, IResolvable],
   name: str,
-  value: str,
-  id: str = None
+  value: str
 )
 ```
 
@@ -942,7 +910,6 @@ webhookCustomVariable.WebhookCustomVariableConfig(
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.isSecret">is_secret</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the custom variable is secret or not. |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.name">name</a></code> | <code>str</code> | The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`. |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.value">value</a></code> | <code>str</code> | The value of the custom variable. |
-| <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#id WebhookCustomVariable#id}. |
 
 ---
 
@@ -1026,7 +993,7 @@ is_secret: typing.Union[bool, IResolvable]
 
 Whether the custom variable is secret or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
 
 ---
 
@@ -1040,7 +1007,7 @@ name: str
 
 The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
 
 ---
 
@@ -1054,22 +1021,7 @@ value: str
 
 The value of the custom variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.42.0/docs/resources/webhook_custom_variable#id WebhookCustomVariable#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
 
 ---
 
