@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringSuppression <a name="SecurityMonitoringSuppression" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the SecurityMonitoringSuppress
 
 The id of the existing SecurityMonitoringSuppression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/security_monitoring_suppression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/security_monitoring_suppression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -966,7 +966,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the suppression rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
 
 ---
 
@@ -980,7 +980,7 @@ public readonly name: string;
 
 The name of the suppression rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
 
 ---
 
@@ -994,7 +994,7 @@ public readonly ruleQuery: string;
 
 The rule query of the suppression rule, with the same syntax as the search bar for detection rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
 
 ---
 
@@ -1010,7 +1010,7 @@ An exclusion query on the input data of the security rules, which could be logs,
 
 Events matching this query are ignored by any detection rules referenced in the suppression rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/security_monitoring_suppression#data_exclusion_query SecurityMonitoringSuppression#data_exclusion_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/security_monitoring_suppression#data_exclusion_query SecurityMonitoringSuppression#data_exclusion_query}
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly description: string;
 
 A description for the suppression rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly expirationDate: string;
 
 A RFC3339 timestamp giving an expiration date for the suppression rule. After this date, it won't suppress signals anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
 
 ---
 
@@ -1054,7 +1054,7 @@ The suppression query of the suppression rule.
 
 If a signal matches this query, it is suppressed and is not triggered. It uses the same syntax as the queries to search signals in the Signals Explorer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
 
 ---
 
