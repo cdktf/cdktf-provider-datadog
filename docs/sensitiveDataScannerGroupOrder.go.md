@@ -4,12 +4,12 @@
 
 ### SensitiveDataScannerGroupOrder <a name="SensitiveDataScannerGroupOrder" id="@cdktf/provider-datadog.sensitiveDataScannerGroupOrder.SensitiveDataScannerGroupOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.sensitiveDataScannerGroupOrder.SensitiveDataScannerGroupOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/sensitivedatascannergrouporder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergrouporder"
 
 sensitivedatascannergrouporder.NewSensitiveDataScannerGroupOrder(scope Construct, id *string, config SensitiveDataScannerGroupOrderConfig) SensitiveDataScannerGroupOrder
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.sensitiveDataScannerGroupOrder.SensitiveDataScannerGroupOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/sensitivedatascannergrouporder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergrouporder"
 
 sensitivedatascannergrouporder.SensitiveDataScannerGroupOrder_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.sensitiveDataScannerGroupOrder.SensitiveDataScannerGroupOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/sensitivedatascannergrouporder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergrouporder"
 
 sensitivedatascannergrouporder.SensitiveDataScannerGroupOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ sensitivedatascannergrouporder.SensitiveDataScannerGroupOrder_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.sensitiveDataScannerGroupOrder.SensitiveDataScannerGroupOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/sensitivedatascannergrouporder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergrouporder"
 
 sensitivedatascannergrouporder.SensitiveDataScannerGroupOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ sensitivedatascannergrouporder.SensitiveDataScannerGroupOrder_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.sensitiveDataScannerGroupOrder.SensitiveDataScannerGroupOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/sensitivedatascannergrouporder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergrouporder"
 
 sensitivedatascannergrouporder.SensitiveDataScannerGroupOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the SensitiveDataScannerGroupO
 
 The id of the existing SensitiveDataScannerGroupOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/sensitive_data_scanner_group_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/sensitive_data_scanner_group_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.sensitiveDataScannerGroupOrder.SensitiveDataScannerGroupOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/sensitivedatascannergrouporder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergrouporder"
 
 &sensitivedatascannergrouporder.SensitiveDataScannerGroupOrderConfig {
 	Connection: interface{},
@@ -811,7 +811,7 @@ The list of Sensitive Data Scanner group IDs, in order.
 
 Logs are tested against the query filter of each index one by one following the order of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
 
 ---
 

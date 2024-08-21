@@ -4,12 +4,12 @@
 
 ### DataDatadogApmRetentionFiltersOrder <a name="DataDatadogApmRetentionFiltersOrder" id="@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapmretentionfiltersorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapmretentionfiltersorder"
 
 datadatadogapmretentionfiltersorder.NewDataDatadogApmRetentionFiltersOrder(scope Construct, id *string, config DataDatadogApmRetentionFiltersOrderConfig) DataDatadogApmRetentionFiltersOrder
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapmretentionfiltersorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapmretentionfiltersorder"
 
 datadatadogapmretentionfiltersorder.DataDatadogApmRetentionFiltersOrder_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapmretentionfiltersorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapmretentionfiltersorder"
 
 datadatadogapmretentionfiltersorder.DataDatadogApmRetentionFiltersOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatadogapmretentionfiltersorder.DataDatadogApmRetentionFiltersOrder_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapmretentionfiltersorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapmretentionfiltersorder"
 
 datadatadogapmretentionfiltersorder.DataDatadogApmRetentionFiltersOrder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatadogapmretentionfiltersorder.DataDatadogApmRetentionFiltersOrder_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapmretentionfiltersorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapmretentionfiltersorder"
 
 datadatadogapmretentionfiltersorder.DataDatadogApmRetentionFiltersOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatadogApmRetentionFil
 
 The id of the existing DataDatadogApmRetentionFiltersOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.0/docs/data-sources/apm_retention_filters_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/data-sources/apm_retention_filters_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogapmretentionfiltersorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapmretentionfiltersorder"
 
 &datadatadogapmretentionfiltersorder.DataDatadogApmRetentionFiltersOrderConfig {
 	Connection: interface{},
