@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.NewServiceAccount(scope Construct, id *string, config ServiceAccountConfig) ServiceAccount
 ```
@@ -399,7 +399,7 @@ func ResetRoles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.ServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.ServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ serviceaccount.ServiceAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.ServiceAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ serviceaccount.ServiceAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 serviceaccount.ServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/serviceaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccount"
 
 &serviceaccount.ServiceAccountConfig {
 	Connection: interface{},
