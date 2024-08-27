@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreatsagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogcsmthreatsagentrules"
 
 datadatadogcsmthreatsagentrules.NewDataDatadogCsmThreatsAgentRules(scope Construct, id *string, config DataDatadogCsmThreatsAgentRulesConfig) DataDatadogCsmThreatsAgentRules
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreatsagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogcsmthreatsagentrules"
 
 datadatadogcsmthreatsagentrules.DataDatadogCsmThreatsAgentRules_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreatsagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogcsmthreatsagentrules"
 
 datadatadogcsmthreatsagentrules.DataDatadogCsmThreatsAgentRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatadogcsmthreatsagentrules.DataDatadogCsmThreatsAgentRules_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreatsagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogcsmthreatsagentrules"
 
 datadatadogcsmthreatsagentrules.DataDatadogCsmThreatsAgentRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatadogcsmthreatsagentrules.DataDatadogCsmThreatsAgentRules_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreatsagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogcsmthreatsagentrules"
 
 datadatadogcsmthreatsagentrules.DataDatadogCsmThreatsAgentRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreatsagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogcsmthreatsagentrules"
 
 &datadatadogcsmthreatsagentrules.DataDatadogCsmThreatsAgentRulesAgentRules {
 
@@ -589,7 +589,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreats
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreatsagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogcsmthreatsagentrules"
 
 &datadatadogcsmthreatsagentrules.DataDatadogCsmThreatsAgentRulesConfig {
 	Connection: interface{},
@@ -693,7 +693,7 @@ Provisioners *[]interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreatsagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogcsmthreatsagentrules"
 
 datadatadogcsmthreatsagentrules.NewDataDatadogCsmThreatsAgentRulesAgentRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogCsmThreatsAgentRulesAgentRulesList
 ```
@@ -842,7 +842,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcsmthreatsagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogcsmthreatsagentrules"
 
 datadatadogcsmthreatsagentrules.NewDataDatadogCsmThreatsAgentRulesAgentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogCsmThreatsAgentRulesAgentRulesOutputReference
 ```

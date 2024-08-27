@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/data-sources/cloud_workload_security_agent_rules
 // generated from terraform resource schema
 
