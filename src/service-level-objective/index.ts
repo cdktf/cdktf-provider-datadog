@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/service_level_objective
 // generated from terraform resource schema
 
