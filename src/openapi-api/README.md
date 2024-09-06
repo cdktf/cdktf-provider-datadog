@@ -1,3 +1,3 @@
 # `datadog_openapi_api`
 
-Refer to the Terraform Registry for docs: [`datadog_openapi_api`](https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/openapi_api).
+Refer to the Terraform Registry for docs: [`datadog_openapi_api`](https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/openapi_api).
