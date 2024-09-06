@@ -4,7 +4,7 @@
 
 ### UserRole <a name="UserRole" id="@cdktf/provider-datadog.userRole.UserRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/user_role datadog_user_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/user_role datadog_user_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.userRole.UserRole.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the UserRole to import.
 
 The id of the existing UserRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -823,7 +823,7 @@ public readonly roleId: string;
 
 ID of the role that the user is assigned to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/user_role#role_id UserRole#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/user_role#role_id UserRole#role_id}
 
 ---
 
@@ -837,7 +837,7 @@ public readonly userId: string;
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.43.1/docs/resources/user_role#user_id UserRole#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/user_role#user_id UserRole#user_id}
 
 ---
 
