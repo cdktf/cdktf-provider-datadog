@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_destination
 // generated from terraform resource schema
 

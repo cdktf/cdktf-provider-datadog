@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 provider.NewDatadogProvider(scope Construct, id *string, config DatadogProviderConfig) DatadogProvider
 ```
@@ -221,7 +221,7 @@ func ResetValidate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.provider.DatadogProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 provider.DatadogProvider_IsConstruct(x interface{}) *bool
 ```
@@ -253,7 +253,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.provider.DatadogProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 provider.DatadogProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -267,7 +267,7 @@ provider.DatadogProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-datadog.provider.DatadogProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 provider.DatadogProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -281,7 +281,7 @@ provider.DatadogProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.provider.DatadogProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 provider.DatadogProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -686,14 +686,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 &provider.DatadogProviderConfig {
 	Alias: *string,
 	ApiKey: *string,
 	ApiUrl: *string,
 	AppKey: *string,
-	DefaultTags: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.provider.DatadogProviderDefaultTags,
+	DefaultTags: github.com/cdktf/cdktf-provider-datadog-go/datadog.provider.DatadogProviderDefaultTags,
 	HttpClientRetryBackoffBase: *f64,
 	HttpClientRetryBackoffMultiplier: *f64,
 	HttpClientRetryEnabled: *string,
@@ -884,7 +884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.provider.DatadogProviderDefaultTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 &provider.DatadogProviderDefaultTags {
 	Tags: *map[string]*string,
