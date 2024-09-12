@@ -4,12 +4,12 @@
 
 ### DataDatadogRoleUsers <a name="DataDatadogRoleUsers" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/role_users datadog_role_users}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/role_users datadog_role_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroleusers"
 
 datadatadogroleusers.NewDataDatadogRoleUsers(scope Construct, id *string, config DataDatadogRoleUsersConfig) DataDatadogRoleUsers
 ```
@@ -290,7 +290,7 @@ func ResetFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroleusers"
 
 datadatadogroleusers.DataDatadogRoleUsers_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroleusers"
 
 datadatadogroleusers.DataDatadogRoleUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatadogroleusers.DataDatadogRoleUsers_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroleusers"
 
 datadatadogroleusers.DataDatadogRoleUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datadatadogroleusers.DataDatadogRoleUsers_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroleusers"
 
 datadatadogroleusers.DataDatadogRoleUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataDatadogRoleUsers to im
 
 The id of the existing DataDatadogRoleUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/role_users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/role_users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroleusers"
 
 &datadatadogroleusers.DataDatadogRoleUsersConfig {
 	Connection: interface{},
@@ -758,7 +758,7 @@ RoleId *string
 
 The role's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
 
 ---
 
@@ -772,7 +772,7 @@ ExactMatch interface{}
 
 When true, `filter_keyword` string is exact matched against the user's `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
 
 ---
 
@@ -786,7 +786,7 @@ Filter *string
 
 Search query, can be user name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
 
 ---
 
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersRoleUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroleusers"
 
 &datadatadogroleusers.DataDatadogRoleUsersRoleUsers {
 
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleus
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersRoleUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroleusers"
 
 datadatadogroleusers.NewDataDatadogRoleUsersRoleUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogRoleUsersRoleUsersList
 ```
@@ -959,7 +959,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersRoleUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogroleusers"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroleusers"
 
 datadatadogroleusers.NewDataDatadogRoleUsersRoleUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogRoleUsersRoleUsersOutputReference
 ```

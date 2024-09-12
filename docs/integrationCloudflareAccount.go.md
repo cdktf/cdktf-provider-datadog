@@ -4,12 +4,12 @@
 
 ### IntegrationCloudflareAccount <a name="IntegrationCloudflareAccount" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationcloudflareaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationcloudflareaccount"
 
 integrationcloudflareaccount.NewIntegrationCloudflareAccount(scope Construct, id *string, config IntegrationCloudflareAccountConfig) IntegrationCloudflareAccount
 ```
@@ -385,7 +385,7 @@ func ResetEmail()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationcloudflareaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationcloudflareaccount"
 
 integrationcloudflareaccount.IntegrationCloudflareAccount_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationcloudflareaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationcloudflareaccount"
 
 integrationcloudflareaccount.IntegrationCloudflareAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ integrationcloudflareaccount.IntegrationCloudflareAccount_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationcloudflareaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationcloudflareaccount"
 
 integrationcloudflareaccount.IntegrationCloudflareAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ integrationcloudflareaccount.IntegrationCloudflareAccount_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationcloudflareaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationcloudflareaccount"
 
 integrationcloudflareaccount.IntegrationCloudflareAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the IntegrationCloudflareAccou
 
 The id of the existing IntegrationCloudflareAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/integration_cloudflare_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/integration_cloudflare_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationcloudflareaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationcloudflareaccount"
 
 &integrationcloudflareaccount.IntegrationCloudflareAccountConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ ApiKey *string
 
 The API key (or token) for the Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
 
 ---
 
@@ -878,7 +878,7 @@ Name *string
 
 The name of the Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
 
 ---
 
@@ -894,7 +894,7 @@ The email associated with the Cloudflare account.
 
 If an API key is provided (and not a token), this field is also required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
 
 ---
 
