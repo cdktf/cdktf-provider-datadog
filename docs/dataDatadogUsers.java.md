@@ -4,7 +4,7 @@
 
 ### DataDatadogUsers <a name="DataDatadogUsers" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/users datadog_users}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/users datadog_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/users#filter DataDatadogUsers#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/users#filter DataDatadogUsers#filter}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Filter on status attribute. Comma-separated list with possible values of Active, Pending, and Disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
 
 ---
 
@@ -457,7 +457,7 @@ The construct id used in the generated config for the DataDatadogUsers to import
 
 The id of the existing DataDatadogUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -816,7 +816,7 @@ public java.lang.String getFilter();
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/users#filter DataDatadogUsers#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/users#filter DataDatadogUsers#filter}
 
 ---
 
@@ -830,7 +830,7 @@ public java.lang.String getFilterStatus();
 
 Filter on status attribute. Comma-separated list with possible values of Active, Pending, and Disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
 
 ---
 

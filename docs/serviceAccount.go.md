@@ -4,7 +4,7 @@
 
 ### ServiceAccount <a name="ServiceAccount" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/service_account datadog_service_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/service_account datadog_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ServiceAccount to import.
 
 The id of the existing ServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -902,7 +902,7 @@ Email *string
 
 Email of the associated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/service_account#email ServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/service_account#email ServiceAccount#email}
 
 ---
 
@@ -916,7 +916,7 @@ Disabled interface{}
 
 Whether the service account is disabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/service_account#disabled ServiceAccount#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/service_account#disabled ServiceAccount#disabled}
 
 ---
 
@@ -930,7 +930,7 @@ Name *string
 
 Name for the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/service_account#name ServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/service_account#name ServiceAccount#name}
 
 ---
 
@@ -944,7 +944,7 @@ Roles *[]*string
 
 A list of role IDs to assign to the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/service_account#roles ServiceAccount#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/service_account#roles ServiceAccount#roles}
 
 ---
 

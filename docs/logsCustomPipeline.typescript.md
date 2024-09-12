@@ -4,7 +4,7 @@
 
 ### LogsCustomPipeline <a name="LogsCustomPipeline" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer"></a>
 
@@ -514,7 +514,7 @@ The construct id used in the generated config for the LogsCustomPipeline to impo
 
 The id of the existing LogsCustomPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -841,9 +841,9 @@ const logsCustomPipelineConfig: logsCustomPipeline.LogsCustomPipelineConfig = { 
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.filter">filter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.processor">processor</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>[]</code> | processor block. |
 
 ---
@@ -928,7 +928,7 @@ public readonly filter: IResolvable | LogsCustomPipelineFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -940,7 +940,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -952,7 +952,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -967,7 +967,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 
 ---
 
@@ -981,7 +981,7 @@ public readonly processor: IResolvable | LogsCustomPipelineProcessor[];
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly query: string;
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly arithmeticProcessor: LogsCustomPipelineProcessorArithmeticProces
 
 arithmetic_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly attributeRemapper: LogsCustomPipelineProcessorAttributeRemapper;
 
 attribute_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
 
 ---
 
@@ -1088,7 +1088,7 @@ public readonly categoryProcessor: LogsCustomPipelineProcessorCategoryProcessor;
 
 category_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
 
 ---
 
@@ -1102,7 +1102,7 @@ public readonly dateRemapper: LogsCustomPipelineProcessorDateRemapper;
 
 date_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
 
 ---
 
@@ -1116,7 +1116,7 @@ public readonly geoIpParser: LogsCustomPipelineProcessorGeoIpParser;
 
 geo_ip_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly grokParser: LogsCustomPipelineProcessorGrokParser;
 
 grok_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
 
 ---
 
@@ -1144,7 +1144,7 @@ public readonly lookupProcessor: LogsCustomPipelineProcessorLookupProcessor;
 
 lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
 
 ---
 
@@ -1158,7 +1158,7 @@ public readonly messageRemapper: LogsCustomPipelineProcessorMessageRemapper;
 
 message_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly pipeline: LogsCustomPipelineProcessorPipeline;
 
 pipeline block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
 
 ---
 
@@ -1186,7 +1186,7 @@ public readonly referenceTableLookupProcessor: LogsCustomPipelineProcessorRefere
 
 reference_table_lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
 
 ---
 
@@ -1200,7 +1200,7 @@ public readonly serviceRemapper: LogsCustomPipelineProcessorServiceRemapper;
 
 service_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly statusRemapper: LogsCustomPipelineProcessorStatusRemapper;
 
 status_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
 
 ---
 
@@ -1228,7 +1228,7 @@ public readonly stringBuilderProcessor: LogsCustomPipelineProcessorStringBuilder
 
 string_builder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
 
 ---
 
@@ -1242,7 +1242,7 @@ public readonly traceIdRemapper: LogsCustomPipelineProcessorTraceIdRemapper;
 
 trace_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
 
 ---
 
@@ -1256,7 +1256,7 @@ public readonly urlParser: LogsCustomPipelineProcessorUrlParser;
 
 url_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
 
 ---
 
@@ -1270,7 +1270,7 @@ public readonly userAgentParser: LogsCustomPipelineProcessorUserAgentParser;
 
 user_agent_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
 
 ---
 
@@ -1306,7 +1306,7 @@ public readonly expression: string;
 
 Arithmetic operation between one or more log attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
 
 ---
 
@@ -1320,7 +1320,7 @@ public readonly target: string;
 
 Name of the attribute that contains the result of the arithmetic operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -1334,7 +1334,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1348,7 +1348,7 @@ public readonly isReplaceMissing: boolean | IResolvable;
 
 If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly name: string;
 
 Your pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1402,7 +1402,7 @@ public readonly sources: string[];
 
 List of source attributes or tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -1416,7 +1416,7 @@ public readonly sourceType: string;
 
 Defines where the sources are from (log `attribute` or `tag`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
 
 ---
 
@@ -1430,7 +1430,7 @@ public readonly target: string;
 
 Final attribute or tag name to remap the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -1444,7 +1444,7 @@ public readonly targetType: string;
 
 Defines if the target is a log `attribute` or `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
 
 ---
 
@@ -1458,7 +1458,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1472,7 +1472,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1486,7 +1486,7 @@ public readonly overrideOnConflict: boolean | IResolvable;
 
 Override the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -1500,7 +1500,7 @@ public readonly preserveSource: boolean | IResolvable;
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -1516,7 +1516,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -1551,7 +1551,7 @@ public readonly category: IResolvable | LogsCustomPipelineProcessorCategoryProce
 
 category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
 
 ---
 
@@ -1565,7 +1565,7 @@ public readonly target: string;
 
 Name of the target attribute whose value is defined by the matching category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -1579,7 +1579,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1593,7 +1593,7 @@ public readonly name: string;
 
 Name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1612,7 +1612,7 @@ const logsCustomPipelineProcessorCategoryProcessorCategory: logsCustomPipeline.L
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorCategoryProcessorCategoryFilter</a></code> | filter block. |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
 
 ---
 
@@ -1626,7 +1626,7 @@ public readonly filter: LogsCustomPipelineProcessorCategoryProcessorCategoryFilt
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -1638,7 +1638,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -1670,7 +1670,7 @@ public readonly query: string;
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -1704,7 +1704,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -1718,7 +1718,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1732,7 +1732,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1767,7 +1767,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -1781,7 +1781,7 @@ public readonly target: string;
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -1795,7 +1795,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1809,7 +1809,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1845,7 +1845,7 @@ public readonly grok: LogsCustomPipelineProcessorGrokParserGrok;
 
 grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
 
 ---
 
@@ -1859,7 +1859,7 @@ public readonly source: string;
 
 Name of the log attribute to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -1873,7 +1873,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1887,7 +1887,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1903,7 +1903,7 @@ List of sample logs for this parser.
 
 It can save up to 5 samples. Each sample takes up to 5000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
 
 ---
 
@@ -1936,7 +1936,7 @@ public readonly matchRules: string;
 
 Match rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
 
 ---
 
@@ -1950,7 +1950,7 @@ public readonly supportRules: string;
 
 Support rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
 
 ---
 
@@ -1987,7 +1987,7 @@ public readonly lookupTable: string[];
 
 List of entries of the lookup table using `key,value` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
 
 ---
 
@@ -2001,7 +2001,7 @@ public readonly source: string;
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2015,7 +2015,7 @@ public readonly target: string;
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2029,7 +2029,7 @@ public readonly defaultLookup: string;
 
 Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
 
 ---
 
@@ -2043,7 +2043,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2057,7 +2057,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2091,7 +2091,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2105,7 +2105,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2119,7 +2119,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2138,8 +2138,8 @@ const logsCustomPipelineProcessorPipeline: logsCustomPipeline.LogsCustomPipeline
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.filter">filter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.processor">processor</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a>[]</code> | processor block. |
 
 ---
@@ -2154,7 +2154,7 @@ public readonly filter: IResolvable | LogsCustomPipelineProcessorPipelineFilter[
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -2166,7 +2166,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -2178,7 +2178,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 
 ---
 
@@ -2192,7 +2192,7 @@ public readonly processor: IResolvable | LogsCustomPipelineProcessorPipelineProc
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 
 ---
 
@@ -2224,7 +2224,7 @@ public readonly query: string;
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -2270,7 +2270,7 @@ public readonly arithmeticProcessor: LogsCustomPipelineProcessorPipelineProcesso
 
 arithmetic_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
 
 ---
 
@@ -2284,7 +2284,7 @@ public readonly attributeRemapper: LogsCustomPipelineProcessorPipelineProcessorA
 
 attribute_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
 
 ---
 
@@ -2298,7 +2298,7 @@ public readonly categoryProcessor: LogsCustomPipelineProcessorPipelineProcessorC
 
 category_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
 
 ---
 
@@ -2312,7 +2312,7 @@ public readonly dateRemapper: LogsCustomPipelineProcessorPipelineProcessorDateRe
 
 date_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
 
 ---
 
@@ -2326,7 +2326,7 @@ public readonly geoIpParser: LogsCustomPipelineProcessorPipelineProcessorGeoIpPa
 
 geo_ip_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
 
 ---
 
@@ -2340,7 +2340,7 @@ public readonly grokParser: LogsCustomPipelineProcessorPipelineProcessorGrokPars
 
 grok_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
 
 ---
 
@@ -2354,7 +2354,7 @@ public readonly lookupProcessor: LogsCustomPipelineProcessorPipelineProcessorLoo
 
 lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
 
 ---
 
@@ -2368,7 +2368,7 @@ public readonly messageRemapper: LogsCustomPipelineProcessorPipelineProcessorMes
 
 message_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
 
 ---
 
@@ -2382,7 +2382,7 @@ public readonly referenceTableLookupProcessor: LogsCustomPipelineProcessorPipeli
 
 reference_table_lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
 
 ---
 
@@ -2396,7 +2396,7 @@ public readonly serviceRemapper: LogsCustomPipelineProcessorPipelineProcessorSer
 
 service_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
 
 ---
 
@@ -2410,7 +2410,7 @@ public readonly statusRemapper: LogsCustomPipelineProcessorPipelineProcessorStat
 
 status_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
 
 ---
 
@@ -2424,7 +2424,7 @@ public readonly stringBuilderProcessor: LogsCustomPipelineProcessorPipelineProce
 
 string_builder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
 
 ---
 
@@ -2438,7 +2438,7 @@ public readonly traceIdRemapper: LogsCustomPipelineProcessorPipelineProcessorTra
 
 trace_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
 
 ---
 
@@ -2452,7 +2452,7 @@ public readonly urlParser: LogsCustomPipelineProcessorPipelineProcessorUrlParser
 
 url_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
 
 ---
 
@@ -2466,7 +2466,7 @@ public readonly userAgentParser: LogsCustomPipelineProcessorPipelineProcessorUse
 
 user_agent_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
 
 ---
 
@@ -2502,7 +2502,7 @@ public readonly expression: string;
 
 Arithmetic operation between one or more log attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
 
 ---
 
@@ -2516,7 +2516,7 @@ public readonly target: string;
 
 Name of the attribute that contains the result of the arithmetic operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2530,7 +2530,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2544,7 +2544,7 @@ public readonly isReplaceMissing: boolean | IResolvable;
 
 If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -2558,7 +2558,7 @@ public readonly name: string;
 
 Your pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2598,7 +2598,7 @@ public readonly sources: string[];
 
 List of source attributes or tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2612,7 +2612,7 @@ public readonly sourceType: string;
 
 Defines where the sources are from (log `attribute` or `tag`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
 
 ---
 
@@ -2626,7 +2626,7 @@ public readonly target: string;
 
 Final attribute or tag name to remap the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2640,7 +2640,7 @@ public readonly targetType: string;
 
 Defines if the target is a log `attribute` or `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
 
 ---
 
@@ -2654,7 +2654,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2668,7 +2668,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2682,7 +2682,7 @@ public readonly overrideOnConflict: boolean | IResolvable;
 
 Override the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -2696,7 +2696,7 @@ public readonly preserveSource: boolean | IResolvable;
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -2712,7 +2712,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -2747,7 +2747,7 @@ public readonly category: IResolvable | LogsCustomPipelineProcessorPipelineProce
 
 category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
 
 ---
 
@@ -2761,7 +2761,7 @@ public readonly target: string;
 
 Name of the target attribute whose value is defined by the matching category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2775,7 +2775,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2789,7 +2789,7 @@ public readonly name: string;
 
 Name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2808,7 +2808,7 @@ const logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory: log
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter</a></code> | filter block. |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
 
 ---
 
@@ -2822,7 +2822,7 @@ public readonly filter: LogsCustomPipelineProcessorPipelineProcessorCategoryProc
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -2834,7 +2834,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -2866,7 +2866,7 @@ public readonly query: string;
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -2900,7 +2900,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2914,7 +2914,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2928,7 +2928,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2963,7 +2963,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2977,7 +2977,7 @@ public readonly target: string;
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2991,7 +2991,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3005,7 +3005,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3041,7 +3041,7 @@ public readonly grok: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok
 
 grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
 
 ---
 
@@ -3055,7 +3055,7 @@ public readonly source: string;
 
 Name of the log attribute to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3069,7 +3069,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3083,7 +3083,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3099,7 +3099,7 @@ List of sample logs for this parser.
 
 It can save up to 5 samples. Each sample takes up to 5000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
 
 ---
 
@@ -3132,7 +3132,7 @@ public readonly matchRules: string;
 
 Match rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
 
 ---
 
@@ -3146,7 +3146,7 @@ public readonly supportRules: string;
 
 Support rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
 
 ---
 
@@ -3183,7 +3183,7 @@ public readonly lookupTable: string[];
 
 List of entries of the lookup table using `key,value` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
 
 ---
 
@@ -3197,7 +3197,7 @@ public readonly source: string;
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3211,7 +3211,7 @@ public readonly target: string;
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3225,7 +3225,7 @@ public readonly defaultLookup: string;
 
 Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
 
 ---
 
@@ -3239,7 +3239,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3253,7 +3253,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3287,7 +3287,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -3301,7 +3301,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3315,7 +3315,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3351,7 +3351,7 @@ public readonly lookupEnrichmentTable: string;
 
 Name of the Reference Table for the source attribute and their associated target attribute values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
 
 ---
 
@@ -3365,7 +3365,7 @@ public readonly source: string;
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3379,7 +3379,7 @@ public readonly target: string;
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3393,7 +3393,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3407,7 +3407,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3441,7 +3441,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -3455,7 +3455,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3469,7 +3469,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3503,7 +3503,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -3517,7 +3517,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3531,7 +3531,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3567,7 +3567,7 @@ public readonly target: string;
 
 The name of the attribute that contains the result of the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3581,7 +3581,7 @@ public readonly template: string;
 
 The formula with one or more attributes and raw text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
 
 ---
 
@@ -3595,7 +3595,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3609,7 +3609,7 @@ public readonly isReplaceMissing: boolean | IResolvable;
 
 If it replaces all missing attributes of template by an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -3623,7 +3623,7 @@ public readonly name: string;
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3657,7 +3657,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -3671,7 +3671,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3685,7 +3685,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3721,7 +3721,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -3735,7 +3735,7 @@ public readonly target: string;
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3749,7 +3749,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3763,7 +3763,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3777,7 +3777,7 @@ public readonly normalizeEndingSlashes: boolean | IResolvable;
 
 Normalize the ending slashes or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
 
 ---
 
@@ -3813,7 +3813,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -3827,7 +3827,7 @@ public readonly target: string;
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3841,7 +3841,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3855,7 +3855,7 @@ public readonly isEncoded: boolean | IResolvable;
 
 If the source attribute is URL encoded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
 
 ---
 
@@ -3869,7 +3869,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3905,7 +3905,7 @@ public readonly lookupEnrichmentTable: string;
 
 Name of the Reference Table for the source attribute and their associated target attribute values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
 
 ---
 
@@ -3919,7 +3919,7 @@ public readonly source: string;
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3933,7 +3933,7 @@ public readonly target: string;
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3947,7 +3947,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3961,7 +3961,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3995,7 +3995,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4009,7 +4009,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4023,7 +4023,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4057,7 +4057,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4071,7 +4071,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4085,7 +4085,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4121,7 +4121,7 @@ public readonly target: string;
 
 The name of the attribute that contains the result of the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4135,7 +4135,7 @@ public readonly template: string;
 
 The formula with one or more attributes and raw text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
 
 ---
 
@@ -4149,7 +4149,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4163,7 +4163,7 @@ public readonly isReplaceMissing: boolean | IResolvable;
 
 If it replaces all missing attributes of template by an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -4177,7 +4177,7 @@ public readonly name: string;
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4211,7 +4211,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4225,7 +4225,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4239,7 +4239,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4275,7 +4275,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4289,7 +4289,7 @@ public readonly target: string;
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4303,7 +4303,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4317,7 +4317,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4331,7 +4331,7 @@ public readonly normalizeEndingSlashes: boolean | IResolvable;
 
 Normalize the ending slashes or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
 
 ---
 
@@ -4367,7 +4367,7 @@ public readonly sources: string[];
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4381,7 +4381,7 @@ public readonly target: string;
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4395,7 +4395,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4409,7 +4409,7 @@ public readonly isEncoded: boolean | IResolvable;
 
 If the source attribute is URL encoded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
 
 ---
 
@@ -4423,7 +4423,7 @@ public readonly name: string;
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
