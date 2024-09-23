@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/datadog/datadog/3.44.1/docs/resources/logs_metric
 // generated from terraform resource schema
 
