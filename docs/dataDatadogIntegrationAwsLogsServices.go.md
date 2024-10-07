@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawslogsservices"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawslogsservices"
 
 datadatadogintegrationawslogsservices.NewDataDatadogIntegrationAwsLogsServices(scope Construct, id *string, config DataDatadogIntegrationAwsLogsServicesConfig) DataDatadogIntegrationAwsLogsServices
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawslogsservices"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawslogsservices"
 
 datadatadogintegrationawslogsservices.DataDatadogIntegrationAwsLogsServices_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawslogsservices"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawslogsservices"
 
 datadatadogintegrationawslogsservices.DataDatadogIntegrationAwsLogsServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadatadogintegrationawslogsservices.DataDatadogIntegrationAwsLogsServices_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawslogsservices"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawslogsservices"
 
 datadatadogintegrationawslogsservices.DataDatadogIntegrationAwsLogsServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadatadogintegrationawslogsservices.DataDatadogIntegrationAwsLogsServices_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawslogsservices"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawslogsservices"
 
 datadatadogintegrationawslogsservices.DataDatadogIntegrationAwsLogsServices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesAwsLogsServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawslogsservices"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawslogsservices"
 
 &datadatadogintegrationawslogsservices.DataDatadogIntegrationAwsLogsServicesAwsLogsServices {
 
@@ -596,7 +596,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegratio
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawslogsservices"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawslogsservices"
 
 &datadatadogintegrationawslogsservices.DataDatadogIntegrationAwsLogsServicesConfig {
 	Connection: interface{},
@@ -717,7 +717,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawslogsservices"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawslogsservices"
 
 datadatadogintegrationawslogsservices.NewDataDatadogIntegrationAwsLogsServicesAwsLogsServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogIntegrationAwsLogsServicesAwsLogsServicesList
 ```
@@ -866,7 +866,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawslogsservices"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogintegrationawslogsservices"
 
 datadatadogintegrationawslogsservices.NewDataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference
 ```

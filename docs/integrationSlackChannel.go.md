@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationslackchannel"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationslackchannel"
 
 integrationslackchannel.NewIntegrationSlackChannel(scope Construct, id *string, config IntegrationSlackChannelConfig) IntegrationSlackChannel
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationslackchannel"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationslackchannel"
 
 integrationslackchannel.IntegrationSlackChannel_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationslackchannel"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationslackchannel"
 
 integrationslackchannel.IntegrationSlackChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ integrationslackchannel.IntegrationSlackChannel_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationslackchannel"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationslackchannel"
 
 integrationslackchannel.IntegrationSlackChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ integrationslackchannel.IntegrationSlackChannel_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationslackchannel"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationslackchannel"
 
 integrationslackchannel.IntegrationSlackChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationslackchannel"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationslackchannel"
 
 &integrationslackchannel.IntegrationSlackChannelConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationslackchann
 	Provisioners: *[]interface{},
 	AccountName: *string,
 	ChannelName: *string,
-	Display: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationSlackChannel.IntegrationSlackChannelDisplay,
+	Display: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.integrationSlackChannel.IntegrationSlackChannelDisplay,
 	Id: *string,
 }
 ```
@@ -942,7 +942,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationslackchannel"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationslackchannel"
 
 &integrationslackchannel.IntegrationSlackChannelDisplay {
 	Message: interface{},
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationslackchannel"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationslackchannel"
 
 integrationslackchannel.NewIntegrationSlackChannelDisplayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationSlackChannelDisplayOutputReference
 ```
