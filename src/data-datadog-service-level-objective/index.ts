@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/service_level_objective
+// https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/service_level_objective
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataDatadogServiceLevelObjectiveConfig extends cdktf.TerraformM
   /**
   * A SLO ID to limit the search.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/service_level_objective#id DataDatadogServiceLevelObjective#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/service_level_objective#id DataDatadogServiceLevelObjective#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,19 +19,19 @@ export interface DataDatadogServiceLevelObjectiveConfig extends cdktf.TerraformM
   /**
   * Filter results based on SLO numerator and denominator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/service_level_objective#metrics_query DataDatadogServiceLevelObjective#metrics_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/service_level_objective#metrics_query DataDatadogServiceLevelObjective#metrics_query}
   */
   readonly metricsQuery?: string;
   /**
   * Filter results based on SLO names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/service_level_objective#name_query DataDatadogServiceLevelObjective#name_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/service_level_objective#name_query DataDatadogServiceLevelObjective#name_query}
   */
   readonly nameQuery?: string;
   /**
   * Filter results based on a single SLO tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/service_level_objective#tags_query DataDatadogServiceLevelObjective#tags_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/service_level_objective#tags_query DataDatadogServiceLevelObjective#tags_query}
   */
   readonly tagsQuery?: string;
 }
@@ -122,7 +117,7 @@ export class DataDatadogServiceLevelObjectiveQueryList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/service_level_objective datadog_service_level_objective}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/service_level_objective datadog_service_level_objective}
 */
 export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource {
 
@@ -138,7 +133,7 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataDatadogServiceLevelObjective resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogServiceLevelObjective to import
-  * @param importFromId The id of the existing DataDatadogServiceLevelObjective that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/service_level_objective#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogServiceLevelObjective that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/service_level_objective#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogServiceLevelObjective to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -150,7 +145,7 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/service_level_objective datadog_service_level_objective} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +156,7 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
       terraformResourceType: 'datadog_service_level_objective',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.46.0',
+        providerVersion: '3.47.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### DataDatadogSecurityMonitoringSuppressions <a name="DataDatadogSecurityMonitoringSuppressions" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions.Initializer"></a>
 
@@ -453,7 +453,7 @@ The construct id used in the generated config for the DataDatadogSecurityMonitor
 
 The id of the existing DataDatadogSecurityMonitoringSuppressions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/security_monitoring_suppressions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/security_monitoring_suppressions#import import section} in the documentation of this resource for the id to use
 
 ---
 

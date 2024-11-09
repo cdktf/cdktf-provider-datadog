@@ -4,12 +4,12 @@
 
 ### DataDatadogMonitorConfigPolicies <a name="DataDatadogMonitorConfigPolicies" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/monitor_config_policies datadog_monitor_config_policies}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/monitor_config_policies datadog_monitor_config_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 datadatadogmonitorconfigpolicies.NewDataDatadogMonitorConfigPolicies(scope Construct, id *string, config DataDatadogMonitorConfigPoliciesConfig) DataDatadogMonitorConfigPolicies
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 datadatadogmonitorconfigpolicies.DataDatadogMonitorConfigPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 datadatadogmonitorconfigpolicies.DataDatadogMonitorConfigPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadatadogmonitorconfigpolicies.DataDatadogMonitorConfigPolicies_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 datadatadogmonitorconfigpolicies.DataDatadogMonitorConfigPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadatadogmonitorconfigpolicies.DataDatadogMonitorConfigPolicies_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 datadatadogmonitorconfigpolicies.DataDatadogMonitorConfigPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDatadogMonitorConfigPo
 
 The id of the existing DataDatadogMonitorConfigPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/monitor_config_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/monitor_config_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 &datadatadogmonitorconfigpolicies.DataDatadogMonitorConfigPoliciesConfig {
 	Connection: interface{},
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonito
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/monitor_config_policies#id DataDatadogMonitorConfigPolicies#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/monitor_config_policies#id DataDatadogMonitorConfigPolicies#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/data-sources/monitor_config_policies#id DataDatadogMonitorConfigPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/data-sources/monitor_config_policies#id DataDatadogMonitorConfigPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -702,7 +702,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesMonitorConfigPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 &datadatadogmonitorconfigpolicies.DataDatadogMonitorConfigPoliciesMonitorConfigPolicies {
 
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonito
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 &datadatadogmonitorconfigpolicies.DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicy {
 
@@ -730,7 +730,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonito
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 datadatadogmonitorconfigpolicies.NewDataDatadogMonitorConfigPoliciesMonitorConfigPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesList
 ```
@@ -879,7 +879,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 datadatadogmonitorconfigpolicies.NewDataDatadogMonitorConfigPoliciesMonitorConfigPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesOutputReference
 ```
@@ -1179,7 +1179,7 @@ func InternalValue() DataDatadogMonitorConfigPoliciesMonitorConfigPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 datadatadogmonitorconfigpolicies.NewDataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicyList
 ```
@@ -1328,7 +1328,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogmonitorconfigpolicies"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmonitorconfigpolicies"
 
 datadatadogmonitorconfigpolicies.NewDataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMonitorConfigPoliciesMonitorConfigPoliciesTagPolicyOutputReference
 ```
