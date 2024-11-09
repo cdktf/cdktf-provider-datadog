@@ -4,7 +4,7 @@
 
 ### IntegrationCloudflareAccount <a name="IntegrationCloudflareAccount" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.resetEmail">resetEmail</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.resetResources">resetResources</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetEmail(): void
 ```
 
+##### `resetResources` <a name="resetResources" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.resetResources"></a>
+
+```typescript
+public resetResources(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the IntegrationCloudflareAccou
 
 The id of the existing IntegrationCloudflareAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_cloudflare_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_cloudflare_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -508,9 +515,11 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.46
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.emailInput">emailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.resourcesInput">resourcesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.email">email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.resources">resources</a></code> | <code>string[]</code> | *No description.* |
 
 ---
 
@@ -696,6 +705,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `resourcesInput`<sup>Optional</sup> <a name="resourcesInput" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.resourcesInput"></a>
+
+```typescript
+public readonly resourcesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.apiKey"></a>
 
 ```typescript
@@ -723,6 +742,16 @@ public readonly name: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `resources`<sup>Required</sup> <a name="resources" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.property.resources"></a>
+
+```typescript
+public readonly resources: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -770,6 +799,7 @@ const integrationCloudflareAccountConfig: integrationCloudflareAccount.Integrati
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccountConfig.property.apiKey">apiKey</a></code> | <code>string</code> | The API key (or token) for the Cloudflare account. |
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccountConfig.property.name">name</a></code> | <code>string</code> | The name of the Cloudflare account. |
 | <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccountConfig.property.email">email</a></code> | <code>string</code> | The email associated with the Cloudflare account. |
+| <code><a href="#@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccountConfig.property.resources">resources</a></code> | <code>string[]</code> | An allowlist of resources to restrict pulling metrics for including `web`, `dns`, `lb` (load balancer), `worker`). |
 
 ---
 
@@ -853,7 +883,7 @@ public readonly apiKey: string;
 
 The API key (or token) for the Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
 
 ---
 
@@ -867,7 +897,7 @@ public readonly name: string;
 
 The name of the Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
 
 ---
 
@@ -883,7 +913,21 @@ The email associated with the Cloudflare account.
 
 If an API key is provided (and not a token), this field is also required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.46.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
+
+---
+
+##### `resources`<sup>Optional</sup> <a name="resources" id="@cdktf/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccountConfig.property.resources"></a>
+
+```typescript
+public readonly resources: string[];
+```
+
+- *Type:* string[]
+
+An allowlist of resources to restrict pulling metrics for including `web`, `dns`, `lb` (load balancer), `worker`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.47.0/docs/resources/integration_cloudflare_account#resources IntegrationCloudflareAccount#resources}
 
 ---
 
