@@ -16,6 +16,7 @@ export * as csmThreatsAgentRule from './csm-threats-agent-rule';
 export * as dashboard from './dashboard';
 export * as dashboardJson from './dashboard-json';
 export * as dashboardList from './dashboard-list';
+export * as domainAllowlist from './domain-allowlist';
 export * as downtime from './downtime';
 export * as downtimeSchedule from './downtime-schedule';
 export * as integrationAws from './integration-aws';

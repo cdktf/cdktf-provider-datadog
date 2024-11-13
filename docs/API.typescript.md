@@ -55,6 +55,7 @@ The following submodules are available:
 - [dataDatadogTeamMemberships](./dataDatadogTeamMemberships.typescript.md)
 - [dataDatadogUser](./dataDatadogUser.typescript.md)
 - [dataDatadogUsers](./dataDatadogUsers.typescript.md)
+- [domainAllowlist](./domainAllowlist.typescript.md)
 - [downtime](./downtime.typescript.md)
 - [downtimeSchedule](./downtimeSchedule.typescript.md)
 - [integrationAws](./integrationAws.typescript.md)

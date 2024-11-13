@@ -16,6 +16,7 @@ Object.defineProperty(exports, 'csmThreatsAgentRule', { get: function () { retur
 Object.defineProperty(exports, 'dashboard', { get: function () { return require('./dashboard'); } });
 Object.defineProperty(exports, 'dashboardJson', { get: function () { return require('./dashboard-json'); } });
 Object.defineProperty(exports, 'dashboardList', { get: function () { return require('./dashboard-list'); } });
+Object.defineProperty(exports, 'domainAllowlist', { get: function () { return require('./domain-allowlist'); } });
 Object.defineProperty(exports, 'downtime', { get: function () { return require('./downtime'); } });
 Object.defineProperty(exports, 'downtimeSchedule', { get: function () { return require('./downtime-schedule'); } });
 Object.defineProperty(exports, 'integrationAws', { get: function () { return require('./integration-aws'); } });
