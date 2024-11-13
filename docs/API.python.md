@@ -55,6 +55,7 @@ The following submodules are available:
 - [dataDatadogTeamMemberships](./dataDatadogTeamMemberships.python.md)
 - [dataDatadogUser](./dataDatadogUser.python.md)
 - [dataDatadogUsers](./dataDatadogUsers.python.md)
+- [domainAllowlist](./domainAllowlist.python.md)
 - [downtime](./downtime.python.md)
 - [downtimeSchedule](./downtimeSchedule.python.md)
 - [integrationAws](./integrationAws.python.md)

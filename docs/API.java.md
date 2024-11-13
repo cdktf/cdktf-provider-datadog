@@ -55,6 +55,7 @@ The following submodules are available:
 - [dataDatadogTeamMemberships](./dataDatadogTeamMemberships.java.md)
 - [dataDatadogUser](./dataDatadogUser.java.md)
 - [dataDatadogUsers](./dataDatadogUsers.java.md)
+- [domainAllowlist](./domainAllowlist.java.md)
 - [downtime](./downtime.java.md)
 - [downtimeSchedule](./downtimeSchedule.java.md)
 - [integrationAws](./integrationAws.java.md)

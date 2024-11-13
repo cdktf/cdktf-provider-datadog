@@ -55,6 +55,7 @@ The following submodules are available:
 - [dataDatadogTeamMemberships](./dataDatadogTeamMemberships.csharp.md)
 - [dataDatadogUser](./dataDatadogUser.csharp.md)
 - [dataDatadogUsers](./dataDatadogUsers.csharp.md)
+- [domainAllowlist](./domainAllowlist.csharp.md)
 - [downtime](./downtime.csharp.md)
 - [downtimeSchedule](./downtimeSchedule.csharp.md)
 - [integrationAws](./integrationAws.csharp.md)

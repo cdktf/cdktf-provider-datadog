@@ -55,6 +55,7 @@ The following submodules are available:
 - [dataDatadogTeamMemberships](./dataDatadogTeamMemberships.go.md)
 - [dataDatadogUser](./dataDatadogUser.go.md)
 - [dataDatadogUsers](./dataDatadogUsers.go.md)
+- [domainAllowlist](./domainAllowlist.go.md)
 - [downtime](./downtime.go.md)
 - [downtimeSchedule](./downtimeSchedule.go.md)
 - [integrationAws](./integrationAws.go.md)
