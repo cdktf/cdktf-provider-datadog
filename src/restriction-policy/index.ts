@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/restriction_policy
+// https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/restriction_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,13 +12,13 @@ export interface RestrictionPolicyConfig extends cdktf.TerraformMetaArguments {
   * 
   * Note: Dashboards support is in private beta. Reach out to your Datadog contact or support to enable this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
   */
   readonly resourceId: string;
   /**
   * bindings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
   */
   readonly bindings?: RestrictionPolicyBindings[] | cdktf.IResolvable;
 }
@@ -31,13 +26,13 @@ export interface RestrictionPolicyBindings {
   /**
   * An array of principals. A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role`, `team`, `user`, and `org`. Org ID can be obtained using a `GET /api/v2/current_user` API request. Find it in the `data.relationships.org.data.id` field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
   */
   readonly principals: string[];
   /**
   * The role/level of access. See this page for more details https://docs.datadoghq.com/api/latest/restriction-policies/#supported-relations-for-resources
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
   */
   readonly relation: string;
 }
@@ -176,7 +171,7 @@ export class RestrictionPolicyBindingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/restriction_policy datadog_restriction_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/restriction_policy datadog_restriction_policy}
 */
 export class RestrictionPolicy extends cdktf.TerraformResource {
 
@@ -192,7 +187,7 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RestrictionPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RestrictionPolicy to import
-  * @param importFromId The id of the existing RestrictionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/restriction_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RestrictionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/restriction_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RestrictionPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -204,7 +199,7 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.48.0/docs/resources/restriction_policy datadog_restriction_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/restriction_policy datadog_restriction_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -215,7 +210,7 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_restriction_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.48.0',
+        providerVersion: '3.48.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
