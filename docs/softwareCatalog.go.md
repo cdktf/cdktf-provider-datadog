@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.48
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/softwarecatalog"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/softwarecatalog"
 
 softwarecatalog.NewSoftwareCatalog(scope Construct, id *string, config SoftwareCatalogConfig) SoftwareCatalog
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/softwarecatalog"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/softwarecatalog"
 
 softwarecatalog.SoftwareCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/softwarecatalog"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/softwarecatalog"
 
 softwarecatalog.SoftwareCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ softwarecatalog.SoftwareCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/softwarecatalog"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/softwarecatalog"
 
 softwarecatalog.SoftwareCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ softwarecatalog.SoftwareCatalog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/softwarecatalog"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/softwarecatalog"
 
 softwarecatalog.SoftwareCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/softwarecatalog"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/softwarecatalog"
 
 &softwarecatalog.SoftwareCatalogConfig {
 	Connection: interface{},
