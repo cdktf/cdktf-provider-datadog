@@ -32,6 +32,7 @@ Object.defineProperty(exports, 'integrationFastlyAccount', { get: function () { 
 Object.defineProperty(exports, 'integrationFastlyService', { get: function () { return require('./integration-fastly-service'); } });
 Object.defineProperty(exports, 'integrationGcp', { get: function () { return require('./integration-gcp'); } });
 Object.defineProperty(exports, 'integrationGcpSts', { get: function () { return require('./integration-gcp-sts'); } });
+Object.defineProperty(exports, 'integrationMsTeamsTenantBasedHandle', { get: function () { return require('./integration-ms-teams-tenant-based-handle'); } });
 Object.defineProperty(exports, 'integrationOpsgenieServiceObject', { get: function () { return require('./integration-opsgenie-service-object'); } });
 Object.defineProperty(exports, 'integrationPagerduty', { get: function () { return require('./integration-pagerduty'); } });
 Object.defineProperty(exports, 'integrationPagerdutyServiceObject', { get: function () { return require('./integration-pagerduty-service-object'); } });
@@ -57,6 +58,7 @@ Object.defineProperty(exports, 'powerpack', { get: function () { return require(
 Object.defineProperty(exports, 'restrictionPolicy', { get: function () { return require('./restriction-policy'); } });
 Object.defineProperty(exports, 'role', { get: function () { return require('./role'); } });
 Object.defineProperty(exports, 'rumApplication', { get: function () { return require('./rum-application'); } });
+Object.defineProperty(exports, 'rumMetric', { get: function () { return require('./rum-metric'); } });
 Object.defineProperty(exports, 'securityMonitoringDefaultRule', { get: function () { return require('./security-monitoring-default-rule'); } });
 Object.defineProperty(exports, 'securityMonitoringFilter', { get: function () { return require('./security-monitoring-filter'); } });
 Object.defineProperty(exports, 'securityMonitoringRule', { get: function () { return require('./security-monitoring-rule'); } });
