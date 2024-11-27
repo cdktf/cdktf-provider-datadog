@@ -4,12 +4,12 @@
 
 ### LogsIndex <a name="LogsIndex" id="@cdktf/provider-datadog.logsIndex.LogsIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index datadog_logs_index}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index datadog_logs_index}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.NewLogsIndex(scope Construct, id *string, config LogsIndexConfig) LogsIndex
 ```
@@ -473,7 +473,7 @@ func ResetRetentionDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.logsIndex.LogsIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.LogsIndex_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.logsIndex.LogsIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.LogsIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ logsindex.LogsIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.logsIndex.LogsIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.LogsIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ logsindex.LogsIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.logsIndex.LogsIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.LogsIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -562,7 +562,7 @@ The construct id used in the generated config for the LogsIndex to import.
 
 The id of the existing LogsIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -982,7 +982,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsIndex.LogsIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 &logsindex.LogsIndexConfig {
 	Connection: interface{},
@@ -992,10 +992,10 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.logsIndex.LogsIndexFilter,
+	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsIndex.LogsIndexFilter,
 	Name: *string,
 	DailyLimit: *f64,
-	DailyLimitReset: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.logsIndex.LogsIndexDailyLimitReset,
+	DailyLimitReset: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsIndex.LogsIndexDailyLimitReset,
 	DailyLimitWarningThresholdPercentage: *f64,
 	DisableDailyLimit: interface{},
 	ExclusionFilter: interface{},
@@ -1024,7 +1024,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.disableDailyLimit">DisableDailyLimit</a></code> | <code>interface{}</code> | If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.exclusionFilter">ExclusionFilter</a></code> | <code>interface{}</code> | exclusion_filter block. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.flexRetentionDays">FlexRetentionDays</a></code> | <code>*f64</code> | The total number of days logs are stored in Standard and Flex Tier before being deleted from the index. |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#id LogsIndex#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#id LogsIndex#id}. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.retentionDays">RetentionDays</a></code> | <code>*f64</code> | The number of days logs are stored in Standard Tier before aging into the Flex Tier or being deleted from the index. |
 
 ---
@@ -1109,7 +1109,7 @@ Filter LogsIndexFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1125,7 +1125,7 @@ The name of the index.
 
 Index names cannot be modified after creation. If this value is changed, a new index will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1139,7 +1139,7 @@ DailyLimit *f64
 
 The number of log events you can send in this index per day before you are rate-limited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
 
 ---
 
@@ -1153,7 +1153,7 @@ DailyLimitReset LogsIndexDailyLimitReset
 
 daily_limit_reset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#daily_limit_reset LogsIndex#daily_limit_reset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#daily_limit_reset LogsIndex#daily_limit_reset}
 
 ---
 
@@ -1167,7 +1167,7 @@ DailyLimitWarningThresholdPercentage *f64
 
 A percentage threshold of the daily quota at which a Datadog warning event is generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#daily_limit_warning_threshold_percentage LogsIndex#daily_limit_warning_threshold_percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#daily_limit_warning_threshold_percentage LogsIndex#daily_limit_warning_threshold_percentage}
 
 ---
 
@@ -1183,7 +1183,7 @@ If true, sets the daily_limit value to null and the index is not limited on a da
 
 If false or omitted, the index's current daily_limit is maintained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
 
 ---
 
@@ -1197,7 +1197,7 @@ ExclusionFilter interface{}
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
 
 ---
 
@@ -1211,7 +1211,7 @@ FlexRetentionDays *f64
 
 The total number of days logs are stored in Standard and Flex Tier before being deleted from the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#flex_retention_days LogsIndex#flex_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#flex_retention_days LogsIndex#flex_retention_days}
 
 ---
 
@@ -1223,7 +1223,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#id LogsIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#id LogsIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1240,7 +1240,7 @@ RetentionDays *f64
 
 The number of days logs are stored in Standard Tier before aging into the Flex Tier or being deleted from the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#retention_days LogsIndex#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
 
 ---
 
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 &logsindex.LogsIndexDailyLimitReset {
 	ResetTime: *string,
@@ -1278,7 +1278,7 @@ String in `HH:00` format representing the time of day the daily limit should be 
 
 The hours must be between 00 and 23 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#reset_time LogsIndex#reset_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
 
 ---
 
@@ -1294,7 +1294,7 @@ String in `(-|+)HH:00` format representing the UTC offset to apply to the given 
 
 The hours must be between -12 and +14 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
 
 ---
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 &logsindex.LogsIndexExclusionFilter {
 	Filter: interface{},
@@ -1332,7 +1332,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1346,7 +1346,7 @@ IsEnabled interface{}
 
 A boolean stating if the exclusion is active or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
 
 ---
 
@@ -1360,7 +1360,7 @@ Name *string
 
 The name of the exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 &logsindex.LogsIndexExclusionFilterFilter {
 	Query: *string,
@@ -1396,7 +1396,7 @@ Query *string
 
 Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
@@ -1410,7 +1410,7 @@ SampleRate *f64
 
 The fraction of logs excluded by the exclusion filter, when active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
 
 ---
 
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsIndex.LogsIndexFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 &logsindex.LogsIndexFilter {
 	Query: *string,
@@ -1444,7 +1444,7 @@ Query *string
 
 Logs filter criteria. Only logs matching this filter criteria are considered for this index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.NewLogsIndexDailyLimitResetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsIndexDailyLimitResetOutputReference
 ```
@@ -1748,7 +1748,7 @@ func InternalValue() LogsIndexDailyLimitReset
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.NewLogsIndexExclusionFilterFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsIndexExclusionFilterFilterList
 ```
@@ -1908,7 +1908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.NewLogsIndexExclusionFilterFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsIndexExclusionFilterFilterOutputReference
 ```
@@ -2233,7 +2233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.NewLogsIndexExclusionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsIndexExclusionFilterList
 ```
@@ -2393,7 +2393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.NewLogsIndexExclusionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsIndexExclusionFilterOutputReference
 ```
@@ -2760,7 +2760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndexFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logsindex"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindex"
 
 logsindex.NewLogsIndexFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsIndexFilterOutputReference
 ```

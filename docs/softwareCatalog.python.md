@@ -4,7 +4,7 @@
 
 ### SoftwareCatalog <a name="SoftwareCatalog" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/software_catalog datadog_software_catalog}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/software_catalog datadog_software_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The catalog entity definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/software_catalog#entity SoftwareCatalog#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
 
 ---
 
@@ -579,7 +579,7 @@ The construct id used in the generated config for the SoftwareCatalog to import.
 
 The id of the existing SoftwareCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/software_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/software_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -921,7 +921,7 @@ entity: str
 
 The catalog entity definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/software_catalog#entity SoftwareCatalog#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
 
 ---
 

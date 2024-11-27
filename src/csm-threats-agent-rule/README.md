@@ -1,3 +1,3 @@
 # `datadog_csm_threats_agent_rule`
 
-Refer to the Terraform Registry for docs: [`datadog_csm_threats_agent_rule`](https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/csm_threats_agent_rule).
+Refer to the Terraform Registry for docs: [`datadog_csm_threats_agent_rule`](https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/csm_threats_agent_rule).

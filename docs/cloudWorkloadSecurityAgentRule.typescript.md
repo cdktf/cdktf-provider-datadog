@@ -4,7 +4,7 @@
 
 ### CloudWorkloadSecurityAgentRule <a name="CloudWorkloadSecurityAgentRule" id="@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRule.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the CloudWorkloadSecurityAgent
 
 The id of the existing CloudWorkloadSecurityAgentRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/cloud_workload_security_agent_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/cloud_workload_security_agent_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,7 +818,7 @@ const cloudWorkloadSecurityAgentRuleConfig: cloudWorkloadSecurityAgentRule.Cloud
 | <code><a href="#@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRuleConfig.property.name">name</a></code> | <code>string</code> | The name of the Agent rule. |
 | <code><a href="#@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRuleConfig.property.description">description</a></code> | <code>string</code> | The description of the Agent rule. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRuleConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the Agent rule is enabled. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/cloud_workload_security_agent_rule#id CloudWorkloadSecurityAgentRule#id}. |
+| <code><a href="#@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/cloud_workload_security_agent_rule#id CloudWorkloadSecurityAgentRule#id}. |
 
 ---
 
@@ -902,7 +902,7 @@ public readonly expression: string;
 
 The SECL expression of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/cloud_workload_security_agent_rule#expression CloudWorkloadSecurityAgentRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/cloud_workload_security_agent_rule#expression CloudWorkloadSecurityAgentRule#expression}
 
 ---
 
@@ -916,7 +916,7 @@ public readonly name: string;
 
 The name of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/cloud_workload_security_agent_rule#name CloudWorkloadSecurityAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/cloud_workload_security_agent_rule#name CloudWorkloadSecurityAgentRule#name}
 
 ---
 
@@ -930,7 +930,7 @@ public readonly description: string;
 
 The description of the Agent rule. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/cloud_workload_security_agent_rule#description CloudWorkloadSecurityAgentRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/cloud_workload_security_agent_rule#description CloudWorkloadSecurityAgentRule#description}
 
 ---
 
@@ -944,7 +944,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the Agent rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/cloud_workload_security_agent_rule#enabled CloudWorkloadSecurityAgentRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/cloud_workload_security_agent_rule#enabled CloudWorkloadSecurityAgentRule#enabled}
 
 ---
 
@@ -956,7 +956,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.48.1/docs/resources/cloud_workload_security_agent_rule#id CloudWorkloadSecurityAgentRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/cloud_workload_security_agent_rule#id CloudWorkloadSecurityAgentRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
