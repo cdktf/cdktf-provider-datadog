@@ -20,6 +20,7 @@ Object.defineProperty(exports, 'domainAllowlist', { get: function () { return re
 Object.defineProperty(exports, 'downtime', { get: function () { return require('./downtime'); } });
 Object.defineProperty(exports, 'downtimeSchedule', { get: function () { return require('./downtime-schedule'); } });
 Object.defineProperty(exports, 'integrationAws', { get: function () { return require('./integration-aws'); } });
+Object.defineProperty(exports, 'integrationAwsAccount', { get: function () { return require('./integration-aws-account'); } });
 Object.defineProperty(exports, 'integrationAwsEventBridge', { get: function () { return require('./integration-aws-event-bridge'); } });
 Object.defineProperty(exports, 'integrationAwsLambdaArn', { get: function () { return require('./integration-aws-lambda-arn'); } });
 Object.defineProperty(exports, 'integrationAwsLogCollection', { get: function () { return require('./integration-aws-log-collection'); } });
@@ -93,6 +94,8 @@ Object.defineProperty(exports, 'dataDatadogCsmThreatsAgentRules', { get: functio
 Object.defineProperty(exports, 'dataDatadogDashboard', { get: function () { return require('./data-datadog-dashboard'); } });
 Object.defineProperty(exports, 'dataDatadogDashboardList', { get: function () { return require('./data-datadog-dashboard-list'); } });
 Object.defineProperty(exports, 'dataDatadogHosts', { get: function () { return require('./data-datadog-hosts'); } });
+Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableLogsServices', { get: function () { return require('./data-datadog-integration-aws-available-logs-services'); } });
+Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableNamespaces', { get: function () { return require('./data-datadog-integration-aws-available-namespaces'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsLogsServices', { get: function () { return require('./data-datadog-integration-aws-logs-services'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsNamespaceRules', { get: function () { return require('./data-datadog-integration-aws-namespace-rules'); } });
 Object.defineProperty(exports, 'dataDatadogIpRanges', { get: function () { return require('./data-datadog-ip-ranges'); } });
