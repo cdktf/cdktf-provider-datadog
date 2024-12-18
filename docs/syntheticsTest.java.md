@@ -4,7 +4,7 @@
 
 ### SyntheticsTest <a name="SyntheticsTest" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test datadog_synthetics_test}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test datadog_synthetics_test}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer"></a>
 
@@ -35,6 +35,7 @@ SyntheticsTest.Builder.create(Construct scope, java.lang.String id)
 //  .browserStep(java.util.List<SyntheticsTestBrowserStep>)
 //  .browserVariable(IResolvable)
 //  .browserVariable(java.util.List<SyntheticsTestBrowserVariable>)
+//  .configInitialApplicationArguments(java.util.Map<java.lang.String, java.lang.String>)
 //  .configVariable(IResolvable)
 //  .configVariable(java.util.List<SyntheticsTestConfigVariable>)
 //  .deviceIds(java.util.List<java.lang.String>)
@@ -42,6 +43,9 @@ SyntheticsTest.Builder.create(Construct scope, java.lang.String id)
 //  .forceDeleteDependencies(IResolvable)
 //  .id(java.lang.String)
 //  .message(java.lang.String)
+//  .mobileOptionsList(SyntheticsTestMobileOptionsListStruct)
+//  .mobileStep(IResolvable)
+//  .mobileStep(java.util.List<SyntheticsTestMobileStep>)
 //  .optionsList(SyntheticsTestOptionsListStruct)
 //  .requestBasicauth(SyntheticsTestRequestBasicauth)
 //  .requestClientCertificate(SyntheticsTestRequestClientCertificate)
@@ -78,11 +82,14 @@ SyntheticsTest.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.assertion">assertion</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | assertion block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserStep">browserStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | browser_step block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserVariable">browserVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | browser_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configInitialApplicationArguments">configInitialApplicationArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Initial application arguments for the mobile test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configVariable">configVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | config_variable block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | Required if `type = "browser"`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | Required if `type = "browser"`. Array with the different device IDs used to run the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.forceDeleteDependencies">forceDeleteDependencies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.message">message</a></code> | <code>java.lang.String</code> | A message to include with notifications for this synthetics test. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileOptionsList">mobileOptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | mobile_options_list block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileStep">mobileStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | mobile_step block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.optionsList">optionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestBasicauth">requestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestClientCertificate">requestClientCertificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
@@ -167,7 +174,7 @@ Array of locations used to run the test.
 
 Refer to [the Datadog Synthetics location data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/synthetics_locations) to retrieve the list of locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
 
 ---
 
@@ -177,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of Datadog synthetics test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -187,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#status SyntheticsTest#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#status SyntheticsTest#status}
 
 ---
 
@@ -197,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Synthetics test type. Valid values are `api`, `browser`, `mobile`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -207,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 api_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
 
 ---
 
@@ -217,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 assertion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
 
 ---
 
@@ -227,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 browser_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
 
 ---
 
@@ -237,7 +244,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 browser_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
+
+---
+
+##### `configInitialApplicationArguments`<sup>Optional</sup> <a name="configInitialApplicationArguments" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configInitialApplicationArguments"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Initial application arguments for the mobile test.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#config_initial_application_arguments SyntheticsTest#config_initial_application_arguments}
 
 ---
 
@@ -247,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 config_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
 
 ---
 
@@ -255,11 +272,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.util.List<java.lang.String>
 
-Required if `type = "browser"`.
+Required if `type = "browser"`. Array with the different device IDs used to run the test.
 
-Array with the different device IDs used to run the test. Valid values are `laptop_large`, `tablet`, `mobile_small`, `chrome.laptop_large`, `chrome.tablet`, `chrome.mobile_small`, `firefox.laptop_large`, `firefox.tablet`, `firefox.mobile_small`, `edge.laptop_large`, `edge.tablet`, `edge.mobile_small`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
 
 ---
 
@@ -269,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
 
 ---
 
@@ -277,7 +292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#id SyntheticsTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#id SyntheticsTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -292,7 +307,27 @@ A message to include with notifications for this synthetics test.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+
+---
+
+##### `mobileOptionsList`<sup>Optional</sup> <a name="mobileOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileOptionsList"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a>
+
+mobile_options_list block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#mobile_options_list SyntheticsTest#mobile_options_list}
+
+---
+
+##### `mobileStep`<sup>Optional</sup> <a name="mobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileStep"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
+
+mobile_step block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#mobile_step SyntheticsTest#mobile_step}
 
 ---
 
@@ -302,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 options_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
 
 ---
 
@@ -312,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 request_basicauth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
 
 ---
 
@@ -322,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 request_client_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
 
 ---
 
@@ -332,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 request_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
 
 ---
 
@@ -342,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 request_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
 
 ---
 
@@ -352,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Header name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
 
 ---
 
@@ -362,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Metadata to include when performing the gRPC request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
 
 ---
 
@@ -372,7 +407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 request_proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
 
 ---
 
@@ -382,7 +417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Query arguments name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
 
 ---
 
@@ -392,7 +427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
 
 ---
 
@@ -404,7 +439,7 @@ The subtype of the Synthetic API test.
 
 Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`, `udp`, `websocket`, `grpc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
 
 ---
 
@@ -416,7 +451,7 @@ A list of tags to associate with your synthetics test.
 
 This can help you categorize and filter tests in the manage synthetics page of the UI. Default is an empty list (`[]`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
 
 ---
 
@@ -426,7 +461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Variables defined from JavaScript code for API HTTP tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
 
 ---
 
@@ -462,6 +497,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserStep">putBrowserStep</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserVariable">putBrowserVariable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putConfigVariable">putConfigVariable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileOptionsList">putMobileOptionsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileStep">putMobileStep</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList">putOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestBasicauth">putRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestClientCertificate">putRequestClientCertificate</a></code> | *No description.* |
@@ -472,11 +509,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetAssertion">resetAssertion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetBrowserStep">resetBrowserStep</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetBrowserVariable">resetBrowserVariable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetConfigInitialApplicationArguments">resetConfigInitialApplicationArguments</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetConfigVariable">resetConfigVariable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetDeviceIds">resetDeviceIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetForceDeleteDependencies">resetForceDeleteDependencies</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetMessage">resetMessage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetMobileOptionsList">resetMobileOptionsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetMobileStep">resetMobileStep</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetOptionsList">resetOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetRequestBasicauth">resetRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetRequestClientCertificate">resetRequestClientCertificate</a></code> | *No description.* |
@@ -843,6 +883,30 @@ public void putConfigVariable(IResolvable OR java.util.List<SyntheticsTestConfig
 
 ---
 
+##### `putMobileOptionsList` <a name="putMobileOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileOptionsList"></a>
+
+```java
+public void putMobileOptionsList(SyntheticsTestMobileOptionsListStruct value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileOptionsList.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a>
+
+---
+
+##### `putMobileStep` <a name="putMobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileStep"></a>
+
+```java
+public void putMobileStep(IResolvable OR java.util.List<SyntheticsTestMobileStep> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileStep.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
+
+---
+
 ##### `putOptionsList` <a name="putOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList"></a>
 
 ```java
@@ -939,6 +1003,12 @@ public void resetBrowserStep()
 public void resetBrowserVariable()
 ```
 
+##### `resetConfigInitialApplicationArguments` <a name="resetConfigInitialApplicationArguments" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetConfigInitialApplicationArguments"></a>
+
+```java
+public void resetConfigInitialApplicationArguments()
+```
+
 ##### `resetConfigVariable` <a name="resetConfigVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetConfigVariable"></a>
 
 ```java
@@ -967,6 +1037,18 @@ public void resetId()
 
 ```java
 public void resetMessage()
+```
+
+##### `resetMobileOptionsList` <a name="resetMobileOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetMobileOptionsList"></a>
+
+```java
+public void resetMobileOptionsList()
+```
+
+##### `resetMobileStep` <a name="resetMobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetMobileStep"></a>
+
+```java
+public void resetMobileStep()
 ```
 
 ##### `resetOptionsList` <a name="resetOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.resetOptionsList"></a>
@@ -1150,7 +1232,7 @@ The construct id used in the generated config for the SyntheticsTest to import.
 
 The id of the existing SyntheticsTest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1185,6 +1267,8 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStep">browserStep</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList">SyntheticsTestBrowserStepList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariable">browserVariable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList">SyntheticsTestBrowserVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariable">configVariable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList">SyntheticsTestConfigVariableList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileOptionsList">mobileOptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference">SyntheticsTestMobileOptionsListStructOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStep">mobileStep</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList">SyntheticsTestMobileStepList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.monitorId">monitorId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsList">optionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference">SyntheticsTestOptionsListStructOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestBasicauth">requestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference">SyntheticsTestRequestBasicauthOutputReference</a></code> | *No description.* |
@@ -1196,12 +1280,15 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput">assertionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput">browserStepInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput">browserVariableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArgumentsInput">configInitialApplicationArgumentsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput">configVariableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.deviceIdsInput">deviceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput">forceDeleteDependenciesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.locationsInput">locationsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.messageInput">messageInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileOptionsListInput">mobileOptionsListInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput">mobileStepInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput">optionsListInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestBasicauthInput">requestBasicauthInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | *No description.* |
@@ -1218,6 +1305,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.variablesFromScriptInput">variablesFromScriptInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArguments">configInitialApplicationArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies">forceDeleteDependencies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1428,6 +1516,26 @@ public SyntheticsTestConfigVariableList getConfigVariable();
 
 ---
 
+##### `mobileOptionsList`<sup>Required</sup> <a name="mobileOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileOptionsList"></a>
+
+```java
+public SyntheticsTestMobileOptionsListStructOutputReference getMobileOptionsList();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference">SyntheticsTestMobileOptionsListStructOutputReference</a>
+
+---
+
+##### `mobileStep`<sup>Required</sup> <a name="mobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStep"></a>
+
+```java
+public SyntheticsTestMobileStepList getMobileStep();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList">SyntheticsTestMobileStepList</a>
+
+---
+
 ##### `monitorId`<sup>Required</sup> <a name="monitorId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.monitorId"></a>
 
 ```java
@@ -1538,6 +1646,16 @@ public java.lang.Object getBrowserVariableInput();
 
 ---
 
+##### `configInitialApplicationArgumentsInput`<sup>Optional</sup> <a name="configInitialApplicationArgumentsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArgumentsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getConfigInitialApplicationArgumentsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 ##### `configVariableInput`<sup>Optional</sup> <a name="configVariableInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput"></a>
 
 ```java
@@ -1595,6 +1713,26 @@ public java.lang.String getMessageInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `mobileOptionsListInput`<sup>Optional</sup> <a name="mobileOptionsListInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileOptionsListInput"></a>
+
+```java
+public SyntheticsTestMobileOptionsListStruct getMobileOptionsListInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a>
+
+---
+
+##### `mobileStepInput`<sup>Optional</sup> <a name="mobileStepInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput"></a>
+
+```java
+public java.lang.Object getMobileStepInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
 
 ---
 
@@ -1755,6 +1893,16 @@ public java.lang.String getVariablesFromScriptInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `configInitialApplicationArguments`<sup>Required</sup> <a name="configInitialApplicationArguments" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArguments"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getConfigInitialApplicationArguments();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
 ---
 
@@ -1941,6 +2089,8 @@ SyntheticsTestApiStep.builder()
 //  .allowFailure(IResolvable)
 //  .assertion(IResolvable)
 //  .assertion(java.util.List<SyntheticsTestApiStepAssertion>)
+//  .exitIfSucceed(java.lang.Boolean)
+//  .exitIfSucceed(IResolvable)
 //  .extractedValue(IResolvable)
 //  .extractedValue(java.util.List<SyntheticsTestApiStepExtractedValue>)
 //  .isCritical(java.lang.Boolean)
@@ -1967,6 +2117,7 @@ SyntheticsTestApiStep.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.name">name</a></code> | <code>java.lang.String</code> | The name of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to continue with test if this step fails. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion">assertion</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>></code> | assertion block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to exit the test if the step succeeds. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue">extractedValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>></code> | extracted_value block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to consider the entire test as failed if this step fails. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestBasicauth">requestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth">SyntheticsTestApiStepRequestBasicauth</a></code> | request_basicauth block. |
@@ -1993,7 +2144,7 @@ public java.lang.String getName();
 
 The name of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -2007,7 +2158,7 @@ public java.lang.Object getAllowFailure();
 
 Determines whether or not to continue with test if this step fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
 
 ---
 
@@ -2021,7 +2172,21 @@ public java.lang.Object getAssertion();
 
 assertion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+
+---
+
+##### `exitIfSucceed`<sup>Optional</sup> <a name="exitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed"></a>
+
+```java
+public java.lang.Object getExitIfSucceed();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Determines whether or not to exit the test if the step succeeds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
 
 ---
 
@@ -2035,7 +2200,7 @@ public java.lang.Object getExtractedValue();
 
 extracted_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#extracted_value SyntheticsTest#extracted_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#extracted_value SyntheticsTest#extracted_value}
 
 ---
 
@@ -2051,7 +2216,7 @@ Determines whether or not to consider the entire test as failed if this step fai
 
 Can be used only if `allow_failure` is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
 
 ---
 
@@ -2065,7 +2230,7 @@ public SyntheticsTestApiStepRequestBasicauth getRequestBasicauth();
 
 request_basicauth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
 
 ---
 
@@ -2079,7 +2244,7 @@ public SyntheticsTestApiStepRequestClientCertificate getRequestClientCertificate
 
 request_client_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
 
 ---
 
@@ -2093,7 +2258,7 @@ public SyntheticsTestApiStepRequestDefinition getRequestDefinition();
 
 request_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
 
 ---
 
@@ -2107,7 +2272,7 @@ public java.lang.Object getRequestFile();
 
 request_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
 
 ---
 
@@ -2121,7 +2286,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRequestHeaders();
 
 Header name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
 
 ---
 
@@ -2135,7 +2300,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRequestMetadata();
 
 Metadata to include when performing the gRPC request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
 
 ---
 
@@ -2149,7 +2314,7 @@ public SyntheticsTestApiStepRequestProxy getRequestProxy();
 
 request_proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
 
 ---
 
@@ -2163,7 +2328,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRequestQuery();
 
 Query arguments name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
 
 ---
 
@@ -2177,7 +2342,7 @@ public SyntheticsTestApiStepRetry getRetry();
 
 retry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
 
 ---
 
@@ -2191,7 +2356,7 @@ public java.lang.String getSubtype();
 
 The subtype of the Synthetic multi-step API test step. Valid values are `http`, `grpc`, `wait`. Defaults to `"http"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
 
 ---
 
@@ -2205,7 +2370,7 @@ public java.lang.Number getValue();
 
 The time to wait in seconds. Minimum value: 0. Maximum value: 180.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -2257,7 +2422,7 @@ Type of assertion.
 
 **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `grpcMetadata`, `grpcProto`, `connection`, `bodyHash`, `javascript`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -2271,7 +2436,7 @@ public java.lang.String getCode();
 
 If assertion type is `javascript`, this is the JavaScript code that performs the assertions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#code SyntheticsTest#code}
 
 ---
 
@@ -2285,7 +2450,7 @@ public java.lang.String getOperator();
 
 Assertion operator. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -2299,7 +2464,7 @@ public java.lang.String getProperty();
 
 If assertion type is `header`, this is the header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#property SyntheticsTest#property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#property SyntheticsTest#property}
 
 ---
 
@@ -2313,7 +2478,7 @@ public java.lang.String getTarget();
 
 Expected value. Depends on the assertion type, refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test) for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#target SyntheticsTest#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#target SyntheticsTest#target}
 
 ---
 
@@ -2327,7 +2492,7 @@ public SyntheticsTestApiStepAssertionTargetjsonpath getTargetjsonpath();
 
 targetjsonpath block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
 
 ---
 
@@ -2341,7 +2506,7 @@ public SyntheticsTestApiStepAssertionTargetjsonschema getTargetjsonschema();
 
 targetjsonschema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
 
 ---
 
@@ -2355,7 +2520,7 @@ public SyntheticsTestApiStepAssertionTargetxpath getTargetxpath();
 
 targetxpath block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
 
 ---
 
@@ -2369,7 +2534,7 @@ public java.lang.String getTimingsScope();
 
 Timings scope for response time assertions. Valid values are `all`, `withoutDNS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
 
 ---
 
@@ -2409,7 +2574,7 @@ public java.lang.String getJsonpath();
 
 The JSON path to assert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
 
 ---
 
@@ -2423,7 +2588,7 @@ public java.lang.String getOperator();
 
 The specific operator to use on the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -2439,7 +2604,7 @@ The element from the list of results to assert on.
 
 Select from `firstElementMatches` (the first element in the list), `everyElementMatches` (every element in the list), `atLeastOneElementMatches` (at least one element in the list), or `serializationMatches` (the serialized value of the list). Defaults to `firstElementMatches`. Defaults to `"firstElementMatches"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
 
 ---
 
@@ -2453,7 +2618,7 @@ public java.lang.String getTargetvalue();
 
 Expected matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
 
 ---
 
@@ -2489,7 +2654,7 @@ public java.lang.String getJsonschema();
 
 The JSON Schema to validate the body against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
 
 ---
 
@@ -2503,7 +2668,7 @@ public java.lang.String getMetaschema();
 
 The meta schema to use for the JSON Schema. Defaults to `"draft-07"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
 
 ---
 
@@ -2541,7 +2706,7 @@ public java.lang.String getOperator();
 
 The specific operator to use on the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -2555,7 +2720,7 @@ public java.lang.String getXpath();
 
 The xpath to assert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
 
 ---
 
@@ -2569,7 +2734,7 @@ public java.lang.String getTargetvalue();
 
 Expected matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
 
 ---
 
@@ -2594,7 +2759,7 @@ SyntheticsTestApiStepExtractedValue.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.parser">parser</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser">SyntheticsTestApiStepExtractedValueParser</a></code> | parser block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.type">type</a></code> | <code>java.lang.String</code> | Property of the Synthetics Test Response to use for the variable. Valid values are `grpc_message`, `grpc_metadata`, `http_body`, `http_header`, `http_status_code`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.field">field</a></code> | <code>java.lang.String</code> | When type is `http_header` or `grpc_metadata`, name of the header or metadatum to extract. |
@@ -2610,7 +2775,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}.
 
 ---
 
@@ -2624,7 +2789,7 @@ public SyntheticsTestApiStepExtractedValueParser getParser();
 
 parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#parser SyntheticsTest#parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#parser SyntheticsTest#parser}
 
 ---
 
@@ -2638,7 +2803,7 @@ public java.lang.String getType();
 
 Property of the Synthetics Test Response to use for the variable. Valid values are `grpc_message`, `grpc_metadata`, `http_body`, `http_header`, `http_status_code`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -2652,7 +2817,7 @@ public java.lang.String getField();
 
 When type is `http_header` or `grpc_metadata`, name of the header or metadatum to extract.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#field SyntheticsTest#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#field SyntheticsTest#field}
 
 ---
 
@@ -2666,7 +2831,7 @@ public java.lang.Object getSecure();
 
 Determines whether or not the extracted value will be obfuscated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
 
 ---
 
@@ -2702,7 +2867,7 @@ public java.lang.String getType();
 
 Type of parser for a Synthetics global variable from a synthetics test. Valid values are `raw`, `json_path`, `regex`, `x_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -2716,7 +2881,7 @@ public java.lang.String getValue();
 
 Regex or JSON path used for the parser. Not used with type `raw`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -2782,7 +2947,7 @@ public java.lang.String getAccessKey();
 
 Access key for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
 
 ---
 
@@ -2796,7 +2961,7 @@ public java.lang.String getAccessTokenUrl();
 
 Access token url for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
 
 ---
 
@@ -2810,7 +2975,7 @@ public java.lang.String getAudience();
 
 Audience for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
 
 ---
 
@@ -2824,7 +2989,7 @@ public java.lang.String getClientId();
 
 Client ID for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
 
 ---
 
@@ -2838,7 +3003,7 @@ public java.lang.String getClientSecret();
 
 Client secret for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
 
 ---
 
@@ -2852,7 +3017,7 @@ public java.lang.String getDomain();
 
 Domain for `ntlm` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
 
 ---
 
@@ -2866,7 +3031,7 @@ public java.lang.String getPassword();
 
 Password for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#password SyntheticsTest#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#password SyntheticsTest#password}
 
 ---
 
@@ -2880,7 +3045,7 @@ public java.lang.String getRegion();
 
 Region for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#region SyntheticsTest#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#region SyntheticsTest#region}
 
 ---
 
@@ -2894,7 +3059,7 @@ public java.lang.String getResource();
 
 Resource for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
 
 ---
 
@@ -2908,7 +3073,7 @@ public java.lang.String getScope();
 
 Scope for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
 
 ---
 
@@ -2922,7 +3087,7 @@ public java.lang.String getSecretKey();
 
 Secret key for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
 
 ---
 
@@ -2936,7 +3101,7 @@ public java.lang.String getServiceName();
 
 Service name for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
 
 ---
 
@@ -2950,7 +3115,7 @@ public java.lang.String getSessionToken();
 
 Session token for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
 
 ---
 
@@ -2964,7 +3129,7 @@ public java.lang.String getTokenApiAuthentication();
 
 Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
 
 ---
 
@@ -2978,7 +3143,7 @@ public java.lang.String getType();
 
 Type of basic authentication to use when performing the test. Defaults to `"web"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -2992,7 +3157,7 @@ public java.lang.String getUsername();
 
 Username for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#username SyntheticsTest#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#username SyntheticsTest#username}
 
 ---
 
@@ -3006,7 +3171,7 @@ public java.lang.String getWorkstation();
 
 Workstation for `ntlm` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
 
 ---
 
@@ -3042,7 +3207,7 @@ public SyntheticsTestApiStepRequestClientCertificateCert getCert();
 
 cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
 
 ---
 
@@ -3056,7 +3221,7 @@ public SyntheticsTestApiStepRequestClientCertificateKey getKey();
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#key SyntheticsTest#key}
 
 ---
 
@@ -3092,7 +3257,7 @@ public java.lang.String getContent();
 
 Content of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -3106,7 +3271,7 @@ public java.lang.String getFilename();
 
 File name for the certificate. Defaults to `"Provided in Terraform config"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
 
 ---
 
@@ -3142,7 +3307,7 @@ public java.lang.String getContent();
 
 Content of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -3156,7 +3321,7 @@ public java.lang.String getFilename();
 
 File name for the certificate. Defaults to `"Provided in Terraform config"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
 
 ---
 
@@ -3239,7 +3404,7 @@ public java.lang.Object getAllowInsecure();
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
 
 ---
 
@@ -3253,7 +3418,7 @@ public java.lang.String getBody();
 
 The request body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#body SyntheticsTest#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#body SyntheticsTest#body}
 
 ---
 
@@ -3267,7 +3432,7 @@ public java.lang.String getBodyType();
 
 Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
 
 ---
 
@@ -3281,7 +3446,7 @@ public java.lang.String getCallType();
 
 The type of gRPC call to perform. Valid values are `healthcheck`, `unary`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
 
 ---
 
@@ -3297,7 +3462,7 @@ By default, the client certificate is applied on the domain of the starting URL 
 
 If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
 
 ---
 
@@ -3311,7 +3476,7 @@ public java.lang.String getDnsServer();
 
 DNS server to use for DNS tests (`subtype = "dns"`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
 
 ---
 
@@ -3325,7 +3490,7 @@ public java.lang.String getDnsServerPort();
 
 DNS server port to use for DNS tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
 
 ---
 
@@ -3339,7 +3504,7 @@ public java.lang.Object getFollowRedirects();
 
 Determines whether or not the API HTTP test should follow redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
 
 ---
 
@@ -3353,7 +3518,7 @@ public java.lang.String getHost();
 
 Host name to perform the test with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#host SyntheticsTest#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#host SyntheticsTest#host}
 
 ---
 
@@ -3369,7 +3534,7 @@ HTTP version to use for an HTTP request in an API test or step.
 
 Valid values are `http1`, `http2`, `any`. Defaults to `"any"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
 
 ---
 
@@ -3383,7 +3548,7 @@ public java.lang.String getMessage();
 
 For UDP and websocket tests, message to send with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#message SyntheticsTest#message}
 
 ---
 
@@ -3399,7 +3564,7 @@ Either the HTTP method/verb to use or a gRPC method available on the service set
 
 Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#method SyntheticsTest#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#method SyntheticsTest#method}
 
 ---
 
@@ -3413,7 +3578,7 @@ public java.lang.Object getNoSavingResponseBody();
 
 Determines whether or not to save the response body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
 
 ---
 
@@ -3427,7 +3592,7 @@ public java.lang.Number getNumberOfPackets();
 
 Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
 
 ---
 
@@ -3441,7 +3606,7 @@ public java.lang.Object getPersistCookies();
 
 Persist cookies across redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
 
 ---
 
@@ -3455,7 +3620,7 @@ public java.lang.String getPlainProtoFile();
 
 The content of a proto file as a string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
 
 ---
 
@@ -3469,7 +3634,7 @@ public java.lang.String getPort();
 
 Port to use when performing the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#port SyntheticsTest#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#port SyntheticsTest#port}
 
 ---
 
@@ -3483,7 +3648,7 @@ public java.lang.String getProtoJsonDescriptor();
 
 A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
 
 ---
 
@@ -3497,7 +3662,7 @@ public java.lang.String getServername();
 
 For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
 
 ---
 
@@ -3511,7 +3676,7 @@ public java.lang.String getService();
 
 The gRPC service on which you want to perform the gRPC call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#service SyntheticsTest#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#service SyntheticsTest#service}
 
 ---
 
@@ -3527,7 +3692,7 @@ This will turn on a traceroute probe to discover all gateways along the path to 
 
 For ICMP tests (`subtype = "icmp"`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
 
 ---
 
@@ -3541,7 +3706,7 @@ public java.lang.Number getTimeout();
 
 Timeout in seconds for the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
 
 ---
 
@@ -3555,7 +3720,7 @@ public java.lang.String getUrl();
 
 The URL to send the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#url SyntheticsTest#url}
 
 ---
 
@@ -3597,7 +3762,7 @@ public java.lang.String getName();
 
 Name of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -3611,7 +3776,7 @@ public java.lang.Number getSize();
 
 Size of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#size SyntheticsTest#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#size SyntheticsTest#size}
 
 ---
 
@@ -3625,7 +3790,7 @@ public java.lang.String getType();
 
 Type of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -3639,7 +3804,7 @@ public java.lang.String getContent();
 
 Content of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -3653,7 +3818,7 @@ public java.lang.String getOriginalFileName();
 
 Original name of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
 
 ---
 
@@ -3689,7 +3854,7 @@ public java.lang.String getUrl();
 
 URL of the proxy to perform the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#url SyntheticsTest#url}
 
 ---
 
@@ -3703,7 +3868,7 @@ public java.util.Map<java.lang.String, java.lang.String> getHeaders();
 
 Header name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
 
 ---
 
@@ -3724,8 +3889,8 @@ SyntheticsTestApiStepRetry.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry.property.count">count</a></code> | <code>java.lang.Number</code> | Number of retries needed to consider a location as failed before sending a notification alert. Defaults to `0`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry.property.interval">interval</a></code> | <code>java.lang.Number</code> | Interval between a failed test and the next retry in milliseconds. Defaults to `300`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry.property.count">count</a></code> | <code>java.lang.Number</code> | Number of retries needed to consider a location as failed before sending a notification alert. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry.property.interval">interval</a></code> | <code>java.lang.Number</code> | Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`. |
 
 ---
 
@@ -3737,9 +3902,11 @@ public java.lang.Number getCount();
 
 - *Type:* java.lang.Number
 
-Number of retries needed to consider a location as failed before sending a notification alert. Defaults to `0`.
+Number of retries needed to consider a location as failed before sending a notification alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+Maximum value: `5`. Defaults to `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#count SyntheticsTest#count}
 
 ---
 
@@ -3751,9 +3918,9 @@ public java.lang.Number getInterval();
 
 - *Type:* java.lang.Number
 
-Interval between a failed test and the next retry in milliseconds. Defaults to `300`.
+Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
 
 ---
 
@@ -3805,7 +3972,7 @@ Type of assertion.
 
 **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `grpcMetadata`, `grpcProto`, `connection`, `bodyHash`, `javascript`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -3819,7 +3986,7 @@ public java.lang.String getCode();
 
 If assertion type is `javascript`, this is the JavaScript code that performs the assertions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#code SyntheticsTest#code}
 
 ---
 
@@ -3833,7 +4000,7 @@ public java.lang.String getOperator();
 
 Assertion operator. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -3847,7 +4014,7 @@ public java.lang.String getProperty();
 
 If assertion type is `header`, this is the header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#property SyntheticsTest#property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#property SyntheticsTest#property}
 
 ---
 
@@ -3861,7 +4028,7 @@ public java.lang.String getTarget();
 
 Expected value. Depends on the assertion type, refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test) for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#target SyntheticsTest#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#target SyntheticsTest#target}
 
 ---
 
@@ -3875,7 +4042,7 @@ public SyntheticsTestAssertionTargetjsonpath getTargetjsonpath();
 
 targetjsonpath block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
 
 ---
 
@@ -3889,7 +4056,7 @@ public SyntheticsTestAssertionTargetjsonschema getTargetjsonschema();
 
 targetjsonschema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
 
 ---
 
@@ -3903,7 +4070,7 @@ public SyntheticsTestAssertionTargetxpath getTargetxpath();
 
 targetxpath block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
 
 ---
 
@@ -3917,7 +4084,7 @@ public java.lang.String getTimingsScope();
 
 Timings scope for response time assertions. Valid values are `all`, `withoutDNS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
 
 ---
 
@@ -3957,7 +4124,7 @@ public java.lang.String getJsonpath();
 
 The JSON path to assert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
 
 ---
 
@@ -3971,7 +4138,7 @@ public java.lang.String getOperator();
 
 The specific operator to use on the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -3987,7 +4154,7 @@ The element from the list of results to assert on.
 
 Select from `firstElementMatches` (the first element in the list), `everyElementMatches` (every element in the list), `atLeastOneElementMatches` (at least one element in the list), or `serializationMatches` (the serialized value of the list). Defaults to `firstElementMatches`. Defaults to `"firstElementMatches"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
 
 ---
 
@@ -4001,7 +4168,7 @@ public java.lang.String getTargetvalue();
 
 Expected matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
 
 ---
 
@@ -4037,7 +4204,7 @@ public java.lang.String getJsonschema();
 
 The JSON Schema to validate the body against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
 
 ---
 
@@ -4051,7 +4218,7 @@ public java.lang.String getMetaschema();
 
 The meta schema to use for the JSON Schema. Defaults to `"draft-07"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
 
 ---
 
@@ -4089,7 +4256,7 @@ public java.lang.String getOperator();
 
 The specific operator to use on the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -4103,7 +4270,7 @@ public java.lang.String getXpath();
 
 The xpath to assert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
 
 ---
 
@@ -4117,7 +4284,7 @@ public java.lang.String getTargetvalue();
 
 Expected matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
 
 ---
 
@@ -4175,7 +4342,7 @@ public java.lang.String getName();
 
 Name of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -4189,7 +4356,7 @@ public SyntheticsTestBrowserStepParams getParams();
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#params SyntheticsTest#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#params SyntheticsTest#params}
 
 ---
 
@@ -4205,7 +4372,7 @@ Type of the step.
 
 Valid values are `assertCurrentUrl`, `assertElementAttribute`, `assertElementContent`, `assertElementPresent`, `assertEmail`, `assertFileDownload`, `assertFromJavascript`, `assertPageContains`, `assertPageLacks`, `click`, `extractFromJavascript`, `extractVariable`, `goToEmailLink`, `goToUrl`, `goToUrlAndMeasureTti`, `hover`, `playSubTest`, `pressKey`, `refresh`, `runApiTest`, `scroll`, `selectOption`, `typeText`, `uploadFiles`, `wait`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -4219,7 +4386,7 @@ public java.lang.Object getAllowFailure();
 
 Determines if the step should be allowed to fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
 
 ---
 
@@ -4233,7 +4400,7 @@ public java.lang.Object getAlwaysExecute();
 
 Determines whether or not to always execute this step even if the previous step failed or was skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#always_execute SyntheticsTest#always_execute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#always_execute SyntheticsTest#always_execute}
 
 ---
 
@@ -4247,7 +4414,7 @@ public java.lang.Object getExitIfSucceed();
 
 Determines whether or not to exit the test if the step succeeds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
 
 ---
 
@@ -4261,7 +4428,7 @@ public java.lang.Object getForceElementUpdate();
 
 Force update of the "element" parameter for the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#force_element_update SyntheticsTest#force_element_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#force_element_update SyntheticsTest#force_element_update}
 
 ---
 
@@ -4277,7 +4444,7 @@ Determines whether or not to consider the entire test as failed if this step fai
 
 Can be used only if `allow_failure` is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
 
 ---
 
@@ -4291,7 +4458,7 @@ public java.lang.Object getNoScreenshot();
 
 Prevents saving screenshots of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
 
 ---
 
@@ -4305,7 +4472,7 @@ public java.lang.Number getTimeout();
 
 Used to override the default timeout of a step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
 
 ---
 
@@ -4376,7 +4543,7 @@ public java.lang.String getAttribute();
 
 Name of the attribute to use for an "assert attribute" step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#attribute SyntheticsTest#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#attribute SyntheticsTest#attribute}
 
 ---
 
@@ -4392,7 +4559,7 @@ Check type to use for an assertion step.
 
 Valid values are `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `notStartsWith`, `greater`, `lower`, `greaterEquals`, `lowerEquals`, `matchRegex`, `between`, `isEmpty`, `notIsEmpty`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#check SyntheticsTest#check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#check SyntheticsTest#check}
 
 ---
 
@@ -4406,7 +4573,7 @@ public java.lang.String getClickType();
 
 Type of click to use for a "click" step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#click_type SyntheticsTest#click_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#click_type SyntheticsTest#click_type}
 
 ---
 
@@ -4420,7 +4587,7 @@ public java.lang.String getCode();
 
 Javascript code to use for the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#code SyntheticsTest#code}
 
 ---
 
@@ -4434,7 +4601,7 @@ public java.lang.Number getDelay();
 
 Delay between each key stroke for a "type test" step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
 
 ---
 
@@ -4448,7 +4615,7 @@ public java.lang.String getElement();
 
 Element to use for the step, JSON encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#element SyntheticsTest#element}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#element SyntheticsTest#element}
 
 ---
 
@@ -4462,7 +4629,7 @@ public SyntheticsTestBrowserStepParamsElementUserLocator getElementUserLocator()
 
 element_user_locator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#element_user_locator SyntheticsTest#element_user_locator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#element_user_locator SyntheticsTest#element_user_locator}
 
 ---
 
@@ -4476,7 +4643,7 @@ public java.lang.String getEmail();
 
 Details of the email for an "assert email" step, JSON encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#email SyntheticsTest#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#email SyntheticsTest#email}
 
 ---
 
@@ -4492,7 +4659,7 @@ JSON encoded string used for an "assert download" step.
 
 Refer to the examples for a usage example showing the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#file SyntheticsTest#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#file SyntheticsTest#file}
 
 ---
 
@@ -4506,7 +4673,7 @@ public java.lang.String getFiles();
 
 Details of the files for an "upload files" step, JSON encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#files SyntheticsTest#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#files SyntheticsTest#files}
 
 ---
 
@@ -4520,7 +4687,7 @@ public java.util.List<java.lang.String> getModifiers();
 
 Modifier to use for a "press key" step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#modifiers SyntheticsTest#modifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#modifiers SyntheticsTest#modifiers}
 
 ---
 
@@ -4534,7 +4701,7 @@ public java.lang.String getPlayingTabId();
 
 ID of the tab to play the subtest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#playing_tab_id SyntheticsTest#playing_tab_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#playing_tab_id SyntheticsTest#playing_tab_id}
 
 ---
 
@@ -4548,7 +4715,7 @@ public java.lang.String getRequest();
 
 Request for an API step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request SyntheticsTest#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request SyntheticsTest#request}
 
 ---
 
@@ -4562,7 +4729,7 @@ public java.lang.String getSubtestPublicId();
 
 ID of the Synthetics test to use as subtest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
 
 ---
 
@@ -4576,7 +4743,7 @@ public java.lang.String getValue();
 
 Value of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -4590,7 +4757,7 @@ public SyntheticsTestBrowserStepParamsVariable getVariable();
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
 
 ---
 
@@ -4604,7 +4771,7 @@ public java.lang.Object getWithClick();
 
 For "file upload" steps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#with_click SyntheticsTest#with_click}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#with_click SyntheticsTest#with_click}
 
 ---
 
@@ -4618,7 +4785,7 @@ public java.lang.Number getX();
 
 X coordinates for a "scroll step".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}
 
 ---
 
@@ -4632,7 +4799,7 @@ public java.lang.Number getY();
 
 Y coordinates for a "scroll step".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}
 
 ---
 
@@ -4669,7 +4836,7 @@ public SyntheticsTestBrowserStepParamsElementUserLocatorValue getValue();
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -4683,7 +4850,7 @@ public java.lang.Object getFailTestOnCannotLocate();
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
 
 ---
 
@@ -4704,7 +4871,7 @@ SyntheticsTestBrowserStepParamsElementUserLocatorValue.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue.property.type">type</a></code> | <code>java.lang.String</code> | Defaults to `"css"`. |
 
 ---
@@ -4717,7 +4884,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}.
 
 ---
 
@@ -4731,7 +4898,7 @@ public java.lang.String getType();
 
 Defaults to `"css"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -4767,7 +4934,7 @@ public java.lang.String getExample();
 
 Example of the extracted variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#example SyntheticsTest#example}
 
 ---
 
@@ -4781,7 +4948,7 @@ public java.lang.String getName();
 
 Name of the extracted variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -4826,7 +4993,7 @@ public java.lang.String getName();
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -4840,7 +5007,7 @@ public java.lang.String getType();
 
 Type of browser test variable. Valid values are `element`, `email`, `global`, `javascript`, `text`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -4854,7 +5021,7 @@ public java.lang.String getExample();
 
 Example for the variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#example SyntheticsTest#example}
 
 ---
 
@@ -4870,7 +5037,7 @@ ID of the global variable to use.
 
 This is actually only used (and required) in the case of using a variable of type `global`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#id SyntheticsTest#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4887,7 +5054,7 @@ public java.lang.String getPattern();
 
 Pattern of the variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
 
 ---
 
@@ -4903,7 +5070,7 @@ Determines whether or not the browser test variable is obfuscated.
 
 Can only be used with a browser variable of type `text`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
 
 ---
 
@@ -4938,6 +5105,7 @@ SyntheticsTestConfig.builder()
 //  .browserStep(java.util.List<SyntheticsTestBrowserStep>)
 //  .browserVariable(IResolvable)
 //  .browserVariable(java.util.List<SyntheticsTestBrowserVariable>)
+//  .configInitialApplicationArguments(java.util.Map<java.lang.String, java.lang.String>)
 //  .configVariable(IResolvable)
 //  .configVariable(java.util.List<SyntheticsTestConfigVariable>)
 //  .deviceIds(java.util.List<java.lang.String>)
@@ -4945,6 +5113,9 @@ SyntheticsTestConfig.builder()
 //  .forceDeleteDependencies(IResolvable)
 //  .id(java.lang.String)
 //  .message(java.lang.String)
+//  .mobileOptionsList(SyntheticsTestMobileOptionsListStruct)
+//  .mobileStep(IResolvable)
+//  .mobileStep(java.util.List<SyntheticsTestMobileStep>)
 //  .optionsList(SyntheticsTestOptionsListStruct)
 //  .requestBasicauth(SyntheticsTestRequestBasicauth)
 //  .requestClientCertificate(SyntheticsTestRequestClientCertificate)
@@ -4981,11 +5152,14 @@ SyntheticsTestConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion">assertion</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | assertion block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep">browserStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | browser_step block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable">browserVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | browser_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configInitialApplicationArguments">configInitialApplicationArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Initial application arguments for the mobile test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable">configVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | config_variable block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | Required if `type = "browser"`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | Required if `type = "browser"`. Array with the different device IDs used to run the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies">forceDeleteDependencies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.message">message</a></code> | <code>java.lang.String</code> | A message to include with notifications for this synthetics test. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileOptionsList">mobileOptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | mobile_options_list block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep">mobileStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | mobile_step block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList">optionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestBasicauth">requestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestClientCertificate">requestClientCertificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
@@ -5084,7 +5258,7 @@ Array of locations used to run the test.
 
 Refer to [the Datadog Synthetics location data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/synthetics_locations) to retrieve the list of locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
 
 ---
 
@@ -5098,7 +5272,7 @@ public java.lang.String getName();
 
 Name of Datadog synthetics test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -5112,7 +5286,7 @@ public java.lang.String getStatus();
 
 Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#status SyntheticsTest#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#status SyntheticsTest#status}
 
 ---
 
@@ -5126,7 +5300,7 @@ public java.lang.String getType();
 
 Synthetics test type. Valid values are `api`, `browser`, `mobile`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -5140,7 +5314,7 @@ public java.lang.Object getApiStep();
 
 api_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
 
 ---
 
@@ -5154,7 +5328,7 @@ public java.lang.Object getAssertion();
 
 assertion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
 
 ---
 
@@ -5168,7 +5342,7 @@ public java.lang.Object getBrowserStep();
 
 browser_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
 
 ---
 
@@ -5182,7 +5356,21 @@ public java.lang.Object getBrowserVariable();
 
 browser_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
+
+---
+
+##### `configInitialApplicationArguments`<sup>Optional</sup> <a name="configInitialApplicationArguments" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configInitialApplicationArguments"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getConfigInitialApplicationArguments();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Initial application arguments for the mobile test.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#config_initial_application_arguments SyntheticsTest#config_initial_application_arguments}
 
 ---
 
@@ -5196,7 +5384,7 @@ public java.lang.Object getConfigVariable();
 
 config_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
 
 ---
 
@@ -5208,11 +5396,9 @@ public java.util.List<java.lang.String> getDeviceIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Required if `type = "browser"`.
+Required if `type = "browser"`. Array with the different device IDs used to run the test.
 
-Array with the different device IDs used to run the test. Valid values are `laptop_large`, `tablet`, `mobile_small`, `chrome.laptop_large`, `chrome.tablet`, `chrome.mobile_small`, `firefox.laptop_large`, `firefox.tablet`, `firefox.mobile_small`, `edge.laptop_large`, `edge.tablet`, `edge.mobile_small`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
 
 ---
 
@@ -5226,7 +5412,7 @@ public java.lang.Object getForceDeleteDependencies();
 
 A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
 
 ---
 
@@ -5238,7 +5424,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#id SyntheticsTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#id SyntheticsTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5257,7 +5443,35 @@ A message to include with notifications for this synthetics test.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+
+---
+
+##### `mobileOptionsList`<sup>Optional</sup> <a name="mobileOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileOptionsList"></a>
+
+```java
+public SyntheticsTestMobileOptionsListStruct getMobileOptionsList();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a>
+
+mobile_options_list block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#mobile_options_list SyntheticsTest#mobile_options_list}
+
+---
+
+##### `mobileStep`<sup>Optional</sup> <a name="mobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep"></a>
+
+```java
+public java.lang.Object getMobileStep();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
+
+mobile_step block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#mobile_step SyntheticsTest#mobile_step}
 
 ---
 
@@ -5271,7 +5485,7 @@ public SyntheticsTestOptionsListStruct getOptionsList();
 
 options_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
 
 ---
 
@@ -5285,7 +5499,7 @@ public SyntheticsTestRequestBasicauth getRequestBasicauth();
 
 request_basicauth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
 
 ---
 
@@ -5299,7 +5513,7 @@ public SyntheticsTestRequestClientCertificate getRequestClientCertificate();
 
 request_client_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
 
 ---
 
@@ -5313,7 +5527,7 @@ public SyntheticsTestRequestDefinition getRequestDefinition();
 
 request_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
 
 ---
 
@@ -5327,7 +5541,7 @@ public java.lang.Object getRequestFile();
 
 request_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
 
 ---
 
@@ -5341,7 +5555,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRequestHeaders();
 
 Header name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
 
 ---
 
@@ -5355,7 +5569,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRequestMetadata();
 
 Metadata to include when performing the gRPC request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
 
 ---
 
@@ -5369,7 +5583,7 @@ public SyntheticsTestRequestProxy getRequestProxy();
 
 request_proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
 
 ---
 
@@ -5383,7 +5597,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRequestQuery();
 
 Query arguments name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
 
 ---
 
@@ -5397,7 +5611,7 @@ public java.lang.String getSetCookie();
 
 Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
 
 ---
 
@@ -5413,7 +5627,7 @@ The subtype of the Synthetic API test.
 
 Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`, `udp`, `websocket`, `grpc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
 
 ---
 
@@ -5429,7 +5643,7 @@ A list of tags to associate with your synthetics test.
 
 This can help you categorize and filter tests in the manage synthetics page of the UI. Default is an empty list (`[]`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
 
 ---
 
@@ -5443,7 +5657,7 @@ public java.lang.String getVariablesFromScript();
 
 Variables defined from JavaScript code for API HTTP tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
 
 ---
 
@@ -5488,7 +5702,7 @@ public java.lang.String getName();
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -5502,7 +5716,7 @@ public java.lang.String getType();
 
 Type of test configuration variable. Valid values are `global`, `text`, `email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -5518,7 +5732,7 @@ Example for the variable.
 
 This value is not returned by the api when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#example SyntheticsTest#example}
 
 ---
 
@@ -5532,7 +5746,7 @@ public java.lang.String getId();
 
 When type = `global`, ID of the global variable to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#id SyntheticsTest#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5551,7 +5765,7 @@ Pattern of the variable.
 
 This value is not returned by the api when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
 
 ---
 
@@ -5565,7 +5779,1451 @@ public java.lang.Object getSecure();
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+
+---
+
+### SyntheticsTestMobileOptionsListBindings <a name="SyntheticsTestMobileOptionsListBindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListBindings;
+
+SyntheticsTestMobileOptionsListBindings.builder()
+//  .principals(java.util.List<java.lang.String>)
+//  .relation(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings.property.principals">principals</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#principals SyntheticsTest#principals}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings.property.relation">relation</a></code> | <code>java.lang.String</code> | Valid values are `editor`, `viewer`. |
+
+---
+
+##### `principals`<sup>Optional</sup> <a name="principals" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings.property.principals"></a>
+
+```java
+public java.util.List<java.lang.String> getPrincipals();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#principals SyntheticsTest#principals}.
+
+---
+
+##### `relation`<sup>Optional</sup> <a name="relation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings.property.relation"></a>
+
+```java
+public java.lang.String getRelation();
+```
+
+- *Type:* java.lang.String
+
+Valid values are `editor`, `viewer`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#relation SyntheticsTest#relation}
+
+---
+
+### SyntheticsTestMobileOptionsListCi <a name="SyntheticsTestMobileOptionsListCi" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListCi;
+
+SyntheticsTestMobileOptionsListCi.builder()
+    .executionRule(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi.property.executionRule">executionRule</a></code> | <code>java.lang.String</code> | Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`. |
+
+---
+
+##### `executionRule`<sup>Required</sup> <a name="executionRule" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi.property.executionRule"></a>
+
+```java
+public java.lang.String getExecutionRule();
+```
+
+- *Type:* java.lang.String
+
+Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+
+---
+
+### SyntheticsTestMobileOptionsListMobileApplication <a name="SyntheticsTestMobileOptionsListMobileApplication" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListMobileApplication;
+
+SyntheticsTestMobileOptionsListMobileApplication.builder()
+    .applicationId(java.lang.String)
+    .referenceId(java.lang.String)
+    .referenceType(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.referenceId">referenceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#reference_id SyntheticsTest#reference_id}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.referenceType">referenceType</a></code> | <code>java.lang.String</code> | Valid values are `latest`, `version`. |
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.applicationId"></a>
+
+```java
+public java.lang.String getApplicationId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}.
+
+---
+
+##### `referenceId`<sup>Required</sup> <a name="referenceId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.referenceId"></a>
+
+```java
+public java.lang.String getReferenceId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#reference_id SyntheticsTest#reference_id}.
+
+---
+
+##### `referenceType`<sup>Required</sup> <a name="referenceType" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.referenceType"></a>
+
+```java
+public java.lang.String getReferenceType();
+```
+
+- *Type:* java.lang.String
+
+Valid values are `latest`, `version`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#reference_type SyntheticsTest#reference_type}
+
+---
+
+### SyntheticsTestMobileOptionsListMonitorOptions <a name="SyntheticsTestMobileOptionsListMonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListMonitorOptions;
+
+SyntheticsTestMobileOptionsListMonitorOptions.builder()
+//  .escalationMessage(java.lang.String)
+//  .notificationPresetName(java.lang.String)
+//  .renotifyInterval(java.lang.Number)
+//  .renotifyOccurrences(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.property.escalationMessage">escalationMessage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.property.notificationPresetName">notificationPresetName</a></code> | <code>java.lang.String</code> | Valid values are `show_all`, `hide_all`, `hide_query`, `hide_handles`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.property.renotifyInterval">renotifyInterval</a></code> | <code>java.lang.Number</code> | Specify a renotification frequency in minutes. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.property.renotifyOccurrences">renotifyOccurrences</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}. |
+
+---
+
+##### `escalationMessage`<sup>Optional</sup> <a name="escalationMessage" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.property.escalationMessage"></a>
+
+```java
+public java.lang.String getEscalationMessage();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}.
+
+---
+
+##### `notificationPresetName`<sup>Optional</sup> <a name="notificationPresetName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.property.notificationPresetName"></a>
+
+```java
+public java.lang.String getNotificationPresetName();
+```
+
+- *Type:* java.lang.String
+
+Valid values are `show_all`, `hide_all`, `hide_query`, `hide_handles`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
+
+---
+
+##### `renotifyInterval`<sup>Optional</sup> <a name="renotifyInterval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.property.renotifyInterval"></a>
+
+```java
+public java.lang.Number getRenotifyInterval();
+```
+
+- *Type:* java.lang.Number
+
+Specify a renotification frequency in minutes.
+
+Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`. Defaults to `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+
+---
+
+##### `renotifyOccurrences`<sup>Optional</sup> <a name="renotifyOccurrences" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.property.renotifyOccurrences"></a>
+
+```java
+public java.lang.Number getRenotifyOccurrences();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}.
+
+---
+
+### SyntheticsTestMobileOptionsListRetry <a name="SyntheticsTestMobileOptionsListRetry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListRetry;
+
+SyntheticsTestMobileOptionsListRetry.builder()
+//  .count(java.lang.Number)
+//  .interval(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry.property.count">count</a></code> | <code>java.lang.Number</code> | Number of retries needed to consider a location as failed before sending a notification alert. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry.property.interval">interval</a></code> | <code>java.lang.Number</code> | Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry.property.count"></a>
+
+```java
+public java.lang.Number getCount();
+```
+
+- *Type:* java.lang.Number
+
+Number of retries needed to consider a location as failed before sending a notification alert.
+
+Maximum value: `5`. Defaults to `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+
+---
+
+##### `interval`<sup>Optional</sup> <a name="interval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry.property.interval"></a>
+
+```java
+public java.lang.Number getInterval();
+```
+
+- *Type:* java.lang.Number
+
+Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+
+---
+
+### SyntheticsTestMobileOptionsListScheduling <a name="SyntheticsTestMobileOptionsListScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListScheduling;
+
+SyntheticsTestMobileOptionsListScheduling.builder()
+    .timeframes(IResolvable)
+    .timeframes(java.util.List<SyntheticsTestMobileOptionsListSchedulingTimeframes>)
+    .timezone(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes">timeframes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>></code> | timeframes block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timezone">timezone</a></code> | <code>java.lang.String</code> | Timezone in which the timeframe is based. |
+
+---
+
+##### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes"></a>
+
+```java
+public java.lang.Object getTimeframes();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
+
+timeframes block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
+
+---
+
+##### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timezone"></a>
+
+```java
+public java.lang.String getTimezone();
+```
+
+- *Type:* java.lang.String
+
+Timezone in which the timeframe is based.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
+
+---
+
+### SyntheticsTestMobileOptionsListSchedulingTimeframes <a name="SyntheticsTestMobileOptionsListSchedulingTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListSchedulingTimeframes;
+
+SyntheticsTestMobileOptionsListSchedulingTimeframes.builder()
+    .day(java.lang.Number)
+    .from(java.lang.String)
+    .to(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes.property.day">day</a></code> | <code>java.lang.Number</code> | Number representing the day of the week. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes.property.from">from</a></code> | <code>java.lang.String</code> | The hour of the day on which scheduling starts. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes.property.to">to</a></code> | <code>java.lang.String</code> | The hour of the day on which scheduling ends. |
+
+---
+
+##### `day`<sup>Required</sup> <a name="day" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes.property.day"></a>
+
+```java
+public java.lang.Number getDay();
+```
+
+- *Type:* java.lang.Number
+
+Number representing the day of the week.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#day SyntheticsTest#day}
+
+---
+
+##### `from`<sup>Required</sup> <a name="from" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes.property.from"></a>
+
+```java
+public java.lang.String getFrom();
+```
+
+- *Type:* java.lang.String
+
+The hour of the day on which scheduling starts.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#from SyntheticsTest#from}
+
+---
+
+##### `to`<sup>Required</sup> <a name="to" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes.property.to"></a>
+
+```java
+public java.lang.String getTo();
+```
+
+- *Type:* java.lang.String
+
+The hour of the day on which scheduling ends.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+
+---
+
+### SyntheticsTestMobileOptionsListStruct <a name="SyntheticsTestMobileOptionsListStruct" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListStruct;
+
+SyntheticsTestMobileOptionsListStruct.builder()
+    .deviceIds(java.util.List<java.lang.String>)
+    .mobileApplication(SyntheticsTestMobileOptionsListMobileApplication)
+    .tickEvery(java.lang.Number)
+//  .allowApplicationCrash(java.lang.Boolean)
+//  .allowApplicationCrash(IResolvable)
+//  .bindings(IResolvable)
+//  .bindings(java.util.List<SyntheticsTestMobileOptionsListBindings>)
+//  .ci(SyntheticsTestMobileOptionsListCi)
+//  .defaultStepTimeout(java.lang.Number)
+//  .disableAutoAcceptAlert(java.lang.Boolean)
+//  .disableAutoAcceptAlert(IResolvable)
+//  .minFailureDuration(java.lang.Number)
+//  .monitorName(java.lang.String)
+//  .monitorOptions(SyntheticsTestMobileOptionsListMonitorOptions)
+//  .monitorPriority(java.lang.Number)
+//  .noScreenshot(java.lang.Boolean)
+//  .noScreenshot(IResolvable)
+//  .restrictedRoles(java.util.List<java.lang.String>)
+//  .retry(SyntheticsTestMobileOptionsListRetry)
+//  .scheduling(SyntheticsTestMobileOptionsListScheduling)
+//  .verbosity(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.mobileApplication">mobileApplication</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | mobile_application block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.tickEvery">tickEvery</a></code> | <code>java.lang.Number</code> | How often the test should run (in seconds). |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash">allowApplicationCrash</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings">bindings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>></code> | bindings block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | ci block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.defaultStepTimeout">defaultStepTimeout</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert">disableAutoAcceptAlert</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.minFailureDuration">minFailureDuration</a></code> | <code>java.lang.Number</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorName">monitorName</a></code> | <code>java.lang.String</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorOptions">monitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | monitor_options block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorPriority">monitorPriority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | retry block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | scheduling block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.verbosity">verbosity</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#verbosity SyntheticsTest#verbosity}. |
+
+---
+
+##### `deviceIds`<sup>Required</sup> <a name="deviceIds" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.deviceIds"></a>
+
+```java
+public java.util.List<java.lang.String> getDeviceIds();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}.
+
+---
+
+##### `mobileApplication`<sup>Required</sup> <a name="mobileApplication" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.mobileApplication"></a>
+
+```java
+public SyntheticsTestMobileOptionsListMobileApplication getMobileApplication();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a>
+
+mobile_application block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#mobile_application SyntheticsTest#mobile_application}
+
+---
+
+##### `tickEvery`<sup>Required</sup> <a name="tickEvery" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.tickEvery"></a>
+
+```java
+public java.lang.Number getTickEvery();
+```
+
+- *Type:* java.lang.Number
+
+How often the test should run (in seconds).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+
+---
+
+##### `allowApplicationCrash`<sup>Optional</sup> <a name="allowApplicationCrash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash"></a>
+
+```java
+public java.lang.Object getAllowApplicationCrash();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}.
+
+---
+
+##### `bindings`<sup>Optional</sup> <a name="bindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings"></a>
+
+```java
+public java.lang.Object getBindings();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
+
+bindings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#bindings SyntheticsTest#bindings}
+
+---
+
+##### `ci`<sup>Optional</sup> <a name="ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.ci"></a>
+
+```java
+public SyntheticsTestMobileOptionsListCi getCi();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a>
+
+ci block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+
+---
+
+##### `defaultStepTimeout`<sup>Optional</sup> <a name="defaultStepTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.defaultStepTimeout"></a>
+
+```java
+public java.lang.Number getDefaultStepTimeout();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}.
+
+---
+
+##### `disableAutoAcceptAlert`<sup>Optional</sup> <a name="disableAutoAcceptAlert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert"></a>
+
+```java
+public java.lang.Object getDisableAutoAcceptAlert();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}.
+
+---
+
+##### `minFailureDuration`<sup>Optional</sup> <a name="minFailureDuration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.minFailureDuration"></a>
+
+```java
+public java.lang.Number getMinFailureDuration();
+```
+
+- *Type:* java.lang.Number
+
+Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+
+---
+
+##### `monitorName`<sup>Optional</sup> <a name="monitorName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorName"></a>
+
+```java
+public java.lang.String getMonitorName();
+```
+
+- *Type:* java.lang.String
+
+The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+
+---
+
+##### `monitorOptions`<sup>Optional</sup> <a name="monitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorOptions"></a>
+
+```java
+public SyntheticsTestMobileOptionsListMonitorOptions getMonitorOptions();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a>
+
+monitor_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+
+---
+
+##### `monitorPriority`<sup>Optional</sup> <a name="monitorPriority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorPriority"></a>
+
+```java
+public java.lang.Number getMonitorPriority();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
+
+---
+
+##### `noScreenshot`<sup>Optional</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot"></a>
+
+```java
+public java.lang.Object getNoScreenshot();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Prevents saving screenshots of the steps.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+
+---
+
+##### `restrictedRoles`<sup>Optional</sup> <a name="restrictedRoles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.restrictedRoles"></a>
+
+```java
+public java.util.List<java.lang.String> getRestrictedRoles();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+A list of role identifiers pulled from the Roles API to restrict read and write access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+
+---
+
+##### `retry`<sup>Optional</sup> <a name="retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.retry"></a>
+
+```java
+public SyntheticsTestMobileOptionsListRetry getRetry();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a>
+
+retry block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+
+---
+
+##### `scheduling`<sup>Optional</sup> <a name="scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.scheduling"></a>
+
+```java
+public SyntheticsTestMobileOptionsListScheduling getScheduling();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a>
+
+scheduling block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
+
+---
+
+##### `verbosity`<sup>Optional</sup> <a name="verbosity" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.verbosity"></a>
+
+```java
+public java.lang.Number getVerbosity();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#verbosity SyntheticsTest#verbosity}.
+
+---
+
+### SyntheticsTestMobileStep <a name="SyntheticsTestMobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStep;
+
+SyntheticsTestMobileStep.builder()
+    .name(java.lang.String)
+    .params(SyntheticsTestMobileStepParams)
+    .type(java.lang.String)
+//  .allowFailure(java.lang.Boolean)
+//  .allowFailure(IResolvable)
+//  .hasNewStepElement(java.lang.Boolean)
+//  .hasNewStepElement(IResolvable)
+//  .isCritical(java.lang.Boolean)
+//  .isCritical(IResolvable)
+//  .noScreenshot(java.lang.Boolean)
+//  .noScreenshot(IResolvable)
+//  .publicId(java.lang.String)
+//  .timeout(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.name">name</a></code> | <code>java.lang.String</code> | The name of the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | params block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.type">type</a></code> | <code>java.lang.String</code> | The type of the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean set to allow this step to fail. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement">hasNewStepElement</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean set to determine if the step has a new step element. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean set to not take a screenshot for the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.publicId">publicId</a></code> | <code>java.lang.String</code> | The public ID of the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | The time before declaring a step failed. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The name of the step.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+
+---
+
+##### `params`<sup>Required</sup> <a name="params" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.params"></a>
+
+```java
+public SyntheticsTestMobileStepParams getParams();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#params SyntheticsTest#params}
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+The type of the step.
+
+Valid values are `assertElementContent`, `assertScreenContains`, `assertScreenLacks`, `doubleTap`, `extractVariable`, `flick`, `openDeeplink`, `playSubTest`, `pressBack`, `restartApplication`, `rotate`, `scroll`, `scrollToElement`, `tap`, `toggleWiFi`, `typeText`, `wait`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+
+---
+
+##### `allowFailure`<sup>Optional</sup> <a name="allowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure"></a>
+
+```java
+public java.lang.Object getAllowFailure();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+A boolean set to allow this step to fail.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+
+---
+
+##### `hasNewStepElement`<sup>Optional</sup> <a name="hasNewStepElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement"></a>
+
+```java
+public java.lang.Object getHasNewStepElement();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+A boolean set to determine if the step has a new step element.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#has_new_step_element SyntheticsTest#has_new_step_element}
+
+---
+
+##### `isCritical`<sup>Optional</sup> <a name="isCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical"></a>
+
+```java
+public java.lang.Object getIsCritical();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+
+---
+
+##### `noScreenshot`<sup>Optional</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot"></a>
+
+```java
+public java.lang.Object getNoScreenshot();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+A boolean set to not take a screenshot for the step.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+
+---
+
+##### `publicId`<sup>Optional</sup> <a name="publicId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.publicId"></a>
+
+```java
+public java.lang.String getPublicId();
+```
+
+- *Type:* java.lang.String
+
+The public ID of the step.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#public_id SyntheticsTest#public_id}
+
+---
+
+##### `timeout`<sup>Optional</sup> <a name="timeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.timeout"></a>
+
+```java
+public java.lang.Number getTimeout();
+```
+
+- *Type:* java.lang.Number
+
+The time before declaring a step failed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+
+---
+
+### SyntheticsTestMobileStepParams <a name="SyntheticsTestMobileStepParams" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParams;
+
+SyntheticsTestMobileStepParams.builder()
+//  .check(java.lang.String)
+//  .delay(java.lang.Number)
+//  .direction(java.lang.String)
+//  .element(SyntheticsTestMobileStepParamsElement)
+//  .enable(java.lang.Boolean)
+//  .enable(IResolvable)
+//  .maxScrolls(java.lang.Number)
+//  .positions(IResolvable)
+//  .positions(java.util.List<SyntheticsTestMobileStepParamsPositions>)
+//  .subtestPublicId(java.lang.String)
+//  .value(java.lang.String)
+//  .variable(SyntheticsTestMobileStepParamsVariable)
+//  .withEnter(java.lang.Boolean)
+//  .withEnter(IResolvable)
+//  .x(java.lang.Number)
+//  .y(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.check">check</a></code> | <code>java.lang.String</code> | Check type to use for an assertion step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.delay">delay</a></code> | <code>java.lang.Number</code> | Delay between each key stroke for a "type test" step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.direction">direction</a></code> | <code>java.lang.String</code> | Valid values are `up`, `down`, `left`, `right`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.element">element</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | element block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable">enable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.maxScrolls">maxScrolls</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions">positions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>></code> | positions block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.subtestPublicId">subtestPublicId</a></code> | <code>java.lang.String</code> | ID of the Synthetics test to use as subtest. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.value">value</a></code> | <code>java.lang.String</code> | Value of the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter">withEnter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.x">x</a></code> | <code>java.lang.Number</code> | X coordinates for a "scroll step". |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.y">y</a></code> | <code>java.lang.Number</code> | Y coordinates for a "scroll step". |
+
+---
+
+##### `check`<sup>Optional</sup> <a name="check" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.check"></a>
+
+```java
+public java.lang.String getCheck();
+```
+
+- *Type:* java.lang.String
+
+Check type to use for an assertion step.
+
+Valid values are `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `notStartsWith`, `greater`, `lower`, `greaterEquals`, `lowerEquals`, `matchRegex`, `between`, `isEmpty`, `notIsEmpty`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#check SyntheticsTest#check}
+
+---
+
+##### `delay`<sup>Optional</sup> <a name="delay" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.delay"></a>
+
+```java
+public java.lang.Number getDelay();
+```
+
+- *Type:* java.lang.Number
+
+Delay between each key stroke for a "type test" step.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+
+---
+
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Valid values are `up`, `down`, `left`, `right`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#direction SyntheticsTest#direction}
+
+---
+
+##### `element`<sup>Optional</sup> <a name="element" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.element"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElement getElement();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a>
+
+element block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#element SyntheticsTest#element}
+
+---
+
+##### `enable`<sup>Optional</sup> <a name="enable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable"></a>
+
+```java
+public java.lang.Object getEnable();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}.
+
+---
+
+##### `maxScrolls`<sup>Optional</sup> <a name="maxScrolls" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.maxScrolls"></a>
+
+```java
+public java.lang.Number getMaxScrolls();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}.
+
+---
+
+##### `positions`<sup>Optional</sup> <a name="positions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions"></a>
+
+```java
+public java.lang.Object getPositions();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
+
+positions block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#positions SyntheticsTest#positions}
+
+---
+
+##### `subtestPublicId`<sup>Optional</sup> <a name="subtestPublicId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.subtestPublicId"></a>
+
+```java
+public java.lang.String getSubtestPublicId();
+```
+
+- *Type:* java.lang.String
+
+ID of the Synthetics test to use as subtest.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+Value of the step.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+
+---
+
+##### `variable`<sup>Optional</sup> <a name="variable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.variable"></a>
+
+```java
+public SyntheticsTestMobileStepParamsVariable getVariable();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a>
+
+variable block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
+
+---
+
+##### `withEnter`<sup>Optional</sup> <a name="withEnter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter"></a>
+
+```java
+public java.lang.Object getWithEnter();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}.
+
+---
+
+##### `x`<sup>Optional</sup> <a name="x" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.x"></a>
+
+```java
+public java.lang.Number getX();
+```
+
+- *Type:* java.lang.Number
+
+X coordinates for a "scroll step".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+
+---
+
+##### `y`<sup>Optional</sup> <a name="y" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.y"></a>
+
+```java
+public java.lang.Number getY();
+```
+
+- *Type:* java.lang.Number
+
+Y coordinates for a "scroll step".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+
+---
+
+### SyntheticsTestMobileStepParamsElement <a name="SyntheticsTestMobileStepParamsElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElement;
+
+SyntheticsTestMobileStepParamsElement.builder()
+//  .context(java.lang.String)
+//  .contextType(java.lang.String)
+//  .elementDescription(java.lang.String)
+//  .multiLocator(java.util.Map<java.lang.String, java.lang.String>)
+//  .relativePosition(SyntheticsTestMobileStepParamsElementRelativePosition)
+//  .textContent(java.lang.String)
+//  .userLocator(SyntheticsTestMobileStepParamsElementUserLocator)
+//  .viewName(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.context">context</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#context SyntheticsTest#context}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.contextType">contextType</a></code> | <code>java.lang.String</code> | Valid values are `native`, `web`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.elementDescription">elementDescription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#element_description SyntheticsTest#element_description}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.multiLocator">multiLocator</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#multi_locator SyntheticsTest#multi_locator}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.relativePosition">relativePosition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition">SyntheticsTestMobileStepParamsElementRelativePosition</a></code> | relative_position block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.textContent">textContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#text_content SyntheticsTest#text_content}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.userLocator">userLocator</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a></code> | user_locator block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.viewName">viewName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#view_name SyntheticsTest#view_name}. |
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.context"></a>
+
+```java
+public java.lang.String getContext();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#context SyntheticsTest#context}.
+
+---
+
+##### `contextType`<sup>Optional</sup> <a name="contextType" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.contextType"></a>
+
+```java
+public java.lang.String getContextType();
+```
+
+- *Type:* java.lang.String
+
+Valid values are `native`, `web`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#context_type SyntheticsTest#context_type}
+
+---
+
+##### `elementDescription`<sup>Optional</sup> <a name="elementDescription" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.elementDescription"></a>
+
+```java
+public java.lang.String getElementDescription();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#element_description SyntheticsTest#element_description}.
+
+---
+
+##### `multiLocator`<sup>Optional</sup> <a name="multiLocator" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.multiLocator"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getMultiLocator();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#multi_locator SyntheticsTest#multi_locator}.
+
+---
+
+##### `relativePosition`<sup>Optional</sup> <a name="relativePosition" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.relativePosition"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementRelativePosition getRelativePosition();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition">SyntheticsTestMobileStepParamsElementRelativePosition</a>
+
+relative_position block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#relative_position SyntheticsTest#relative_position}
+
+---
+
+##### `textContent`<sup>Optional</sup> <a name="textContent" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.textContent"></a>
+
+```java
+public java.lang.String getTextContent();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#text_content SyntheticsTest#text_content}.
+
+---
+
+##### `userLocator`<sup>Optional</sup> <a name="userLocator" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.userLocator"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementUserLocator getUserLocator();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a>
+
+user_locator block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#user_locator SyntheticsTest#user_locator}
+
+---
+
+##### `viewName`<sup>Optional</sup> <a name="viewName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.viewName"></a>
+
+```java
+public java.lang.String getViewName();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#view_name SyntheticsTest#view_name}.
+
+---
+
+### SyntheticsTestMobileStepParamsElementRelativePosition <a name="SyntheticsTestMobileStepParamsElementRelativePosition" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElementRelativePosition;
+
+SyntheticsTestMobileStepParamsElementRelativePosition.builder()
+//  .x(java.lang.Number)
+//  .y(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.property.x">x</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.property.y">y</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}. |
+
+---
+
+##### `x`<sup>Optional</sup> <a name="x" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.property.x"></a>
+
+```java
+public java.lang.Number getX();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}.
+
+---
+
+##### `y`<sup>Optional</sup> <a name="y" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.property.y"></a>
+
+```java
+public java.lang.Number getY();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}.
+
+---
+
+### SyntheticsTestMobileStepParamsElementUserLocator <a name="SyntheticsTestMobileStepParamsElementUserLocator" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElementUserLocator;
+
+SyntheticsTestMobileStepParamsElementUserLocator.builder()
+//  .failTestOnCannotLocate(java.lang.Boolean)
+//  .failTestOnCannotLocate(IResolvable)
+//  .values(IResolvable)
+//  .values(java.util.List<SyntheticsTestMobileStepParamsElementUserLocatorValues>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values">values</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>></code> | values block. |
+
+---
+
+##### `failTestOnCannotLocate`<sup>Optional</sup> <a name="failTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate"></a>
+
+```java
+public java.lang.Object getFailTestOnCannotLocate();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values"></a>
+
+```java
+public java.lang.Object getValues();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
+
+values block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#values SyntheticsTest#values}
+
+---
+
+### SyntheticsTestMobileStepParamsElementUserLocatorValues <a name="SyntheticsTestMobileStepParamsElementUserLocatorValues" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElementUserLocatorValues;
+
+SyntheticsTestMobileStepParamsElementUserLocatorValues.builder()
+//  .type(java.lang.String)
+//  .value(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues.property.type">type</a></code> | <code>java.lang.String</code> | Valid values are `accessibility-id`, `id`, `ios-predicate-string`, `ios-class-chain`, `xpath`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}. |
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+Valid values are `accessibility-id`, `id`, `ios-predicate-string`, `ios-class-chain`, `xpath`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}.
+
+---
+
+### SyntheticsTestMobileStepParamsPositions <a name="SyntheticsTestMobileStepParamsPositions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsPositions;
+
+SyntheticsTestMobileStepParamsPositions.builder()
+//  .x(java.lang.Number)
+//  .y(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.property.x">x</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.property.y">y</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}. |
+
+---
+
+##### `x`<sup>Optional</sup> <a name="x" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.property.x"></a>
+
+```java
+public java.lang.Number getX();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}.
+
+---
+
+##### `y`<sup>Optional</sup> <a name="y" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.property.y"></a>
+
+```java
+public java.lang.Number getY();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}.
+
+---
+
+### SyntheticsTestMobileStepParamsVariable <a name="SyntheticsTestMobileStepParamsVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsVariable;
+
+SyntheticsTestMobileStepParamsVariable.builder()
+    .name(java.lang.String)
+//  .example(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable.property.name">name</a></code> | <code>java.lang.String</code> | Name of the extracted variable. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable.property.example">example</a></code> | <code>java.lang.String</code> | Example of the extracted variable. Defaults to `""`. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the extracted variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+
+---
+
+##### `example`<sup>Optional</sup> <a name="example" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable.property.example"></a>
+
+```java
+public java.lang.String getExample();
+```
+
+- *Type:* java.lang.String
+
+Example of the extracted variable. Defaults to `""`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#example SyntheticsTest#example}
 
 ---
 
@@ -5599,7 +7257,7 @@ public java.lang.String getExecutionRule();
 
 Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
 
 ---
 
@@ -5635,7 +7293,7 @@ Specify a renotification frequency in minutes.
 
 Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
 
 ---
 
@@ -5656,8 +7314,8 @@ SyntheticsTestOptionsListRetry.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry.property.count">count</a></code> | <code>java.lang.Number</code> | Number of retries needed to consider a location as failed before sending a notification alert. Defaults to `0`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry.property.interval">interval</a></code> | <code>java.lang.Number</code> | Interval between a failed test and the next retry in milliseconds. Defaults to `300`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry.property.count">count</a></code> | <code>java.lang.Number</code> | Number of retries needed to consider a location as failed before sending a notification alert. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry.property.interval">interval</a></code> | <code>java.lang.Number</code> | Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`. |
 
 ---
 
@@ -5669,9 +7327,11 @@ public java.lang.Number getCount();
 
 - *Type:* java.lang.Number
 
-Number of retries needed to consider a location as failed before sending a notification alert. Defaults to `0`.
+Number of retries needed to consider a location as failed before sending a notification alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+Maximum value: `5`. Defaults to `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#count SyntheticsTest#count}
 
 ---
 
@@ -5683,9 +7343,9 @@ public java.lang.Number getInterval();
 
 - *Type:* java.lang.Number
 
-Interval between a failed test and the next retry in milliseconds. Defaults to `300`.
+Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
 
 ---
 
@@ -5724,7 +7384,7 @@ public java.lang.Object getIsEnabled();
 
 Determines whether RUM data is collected during test runs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
 
 ---
 
@@ -5738,7 +7398,7 @@ public java.lang.String getApplicationId();
 
 RUM application ID used to collect RUM data for the browser test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
 
 ---
 
@@ -5752,7 +7412,7 @@ public java.lang.Number getClientTokenId();
 
 RUM application API key ID used to collect RUM data for the browser test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
 
 ---
 
@@ -5789,7 +7449,7 @@ public java.lang.Object getTimeframes();
 
 timeframes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
 
 ---
 
@@ -5803,7 +7463,7 @@ public java.lang.String getTimezone();
 
 Timezone in which the timeframe is based.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
 
 ---
 
@@ -5841,7 +7501,7 @@ public java.lang.Number getDay();
 
 Number representing the day of the week.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#day SyntheticsTest#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#day SyntheticsTest#day}
 
 ---
 
@@ -5855,7 +7515,7 @@ public java.lang.String getFrom();
 
 The hour of the day on which scheduling starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#from SyntheticsTest#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#from SyntheticsTest#from}
 
 ---
 
@@ -5869,7 +7529,7 @@ public java.lang.String getTo();
 
 The hour of the day on which scheduling ends.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#to SyntheticsTest#to}
 
 ---
 
@@ -5932,7 +7592,7 @@ SyntheticsTestOptionsListStruct.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minLocationFailed">minLocationFailed</a></code> | <code>java.lang.Number</code> | Minimum number of locations in failure required to trigger an alert. Defaults to `1`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorName">monitorName</a></code> | <code>java.lang.String</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorOptions">monitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority">monitorPriority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority">monitorPriority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
@@ -5951,7 +7611,7 @@ public java.lang.Number getTickEvery();
 
 How often the test should run (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
 
 ---
 
@@ -5965,7 +7625,7 @@ public java.lang.Object getAcceptSelfSigned();
 
 For SSL test, whether or not the test should allow self signed certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
 
 ---
 
@@ -5979,7 +7639,7 @@ public java.lang.Object getAllowInsecure();
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
 
 ---
 
@@ -5993,7 +7653,7 @@ public java.lang.Object getCheckCertificateRevocation();
 
 For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
 
 ---
 
@@ -6007,7 +7667,7 @@ public SyntheticsTestOptionsListCi getCi();
 
 ci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
 
 ---
 
@@ -6021,7 +7681,7 @@ public java.lang.Object getDisableCors();
 
 Disable Cross-Origin Resource Sharing for browser tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
 
 ---
 
@@ -6035,7 +7695,7 @@ public java.lang.Object getDisableCsp();
 
 Disable Content Security Policy for browser tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
 
 ---
 
@@ -6049,7 +7709,7 @@ public java.lang.Object getFollowRedirects();
 
 Determines whether or not the API HTTP test should follow redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
 
 ---
 
@@ -6065,7 +7725,7 @@ HTTP version to use for an HTTP request in an API test or step.
 
 Valid values are `http1`, `http2`, `any`. Defaults to `"any"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
 
 ---
 
@@ -6079,7 +7739,7 @@ public java.lang.Object getIgnoreServerCertificateError();
 
 Ignore server certificate error for browser tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
 
 ---
 
@@ -6093,7 +7753,7 @@ public java.lang.Number getInitialNavigationTimeout();
 
 Timeout before declaring the initial step as failed (in seconds) for browser tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
 
 ---
 
@@ -6107,7 +7767,7 @@ public java.lang.Number getMinFailureDuration();
 
 Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
 
 ---
 
@@ -6121,7 +7781,7 @@ public java.lang.Number getMinLocationFailed();
 
 Minimum number of locations in failure required to trigger an alert. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
 
 ---
 
@@ -6135,7 +7795,7 @@ public java.lang.String getMonitorName();
 
 The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
 
 ---
 
@@ -6149,7 +7809,7 @@ public SyntheticsTestOptionsListMonitorOptions getMonitorOptions();
 
 monitor_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
 
 ---
 
@@ -6161,7 +7821,7 @@ public java.lang.Number getMonitorPriority();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
 
 ---
 
@@ -6175,7 +7835,7 @@ public java.lang.Object getNoScreenshot();
 
 Prevents saving screenshots of the steps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
 
 ---
 
@@ -6189,7 +7849,7 @@ public java.util.List<java.lang.String> getRestrictedRoles();
 
 A list of role identifiers pulled from the Roles API to restrict read and write access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
 
 ---
 
@@ -6203,7 +7863,7 @@ public SyntheticsTestOptionsListRetry getRetry();
 
 retry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
 
 ---
 
@@ -6217,7 +7877,7 @@ public SyntheticsTestOptionsListRumSettings getRumSettings();
 
 rum_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
 
 ---
 
@@ -6231,7 +7891,7 @@ public SyntheticsTestOptionsListScheduling getScheduling();
 
 scheduling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
 
 ---
 
@@ -6297,7 +7957,7 @@ public java.lang.String getAccessKey();
 
 Access key for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
 
 ---
 
@@ -6311,7 +7971,7 @@ public java.lang.String getAccessTokenUrl();
 
 Access token url for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
 
 ---
 
@@ -6325,7 +7985,7 @@ public java.lang.String getAudience();
 
 Audience for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
 
 ---
 
@@ -6339,7 +7999,7 @@ public java.lang.String getClientId();
 
 Client ID for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
 
 ---
 
@@ -6353,7 +8013,7 @@ public java.lang.String getClientSecret();
 
 Client secret for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
 
 ---
 
@@ -6367,7 +8027,7 @@ public java.lang.String getDomain();
 
 Domain for `ntlm` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
 
 ---
 
@@ -6381,7 +8041,7 @@ public java.lang.String getPassword();
 
 Password for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#password SyntheticsTest#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#password SyntheticsTest#password}
 
 ---
 
@@ -6395,7 +8055,7 @@ public java.lang.String getRegion();
 
 Region for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#region SyntheticsTest#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#region SyntheticsTest#region}
 
 ---
 
@@ -6409,7 +8069,7 @@ public java.lang.String getResource();
 
 Resource for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
 
 ---
 
@@ -6423,7 +8083,7 @@ public java.lang.String getScope();
 
 Scope for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
 
 ---
 
@@ -6437,7 +8097,7 @@ public java.lang.String getSecretKey();
 
 Secret key for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
 
 ---
 
@@ -6451,7 +8111,7 @@ public java.lang.String getServiceName();
 
 Service name for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
 
 ---
 
@@ -6465,7 +8125,7 @@ public java.lang.String getSessionToken();
 
 Session token for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
 
 ---
 
@@ -6479,7 +8139,7 @@ public java.lang.String getTokenApiAuthentication();
 
 Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
 
 ---
 
@@ -6493,7 +8153,7 @@ public java.lang.String getType();
 
 Type of basic authentication to use when performing the test. Defaults to `"web"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -6507,7 +8167,7 @@ public java.lang.String getUsername();
 
 Username for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#username SyntheticsTest#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#username SyntheticsTest#username}
 
 ---
 
@@ -6521,7 +8181,7 @@ public java.lang.String getWorkstation();
 
 Workstation for `ntlm` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
 
 ---
 
@@ -6557,7 +8217,7 @@ public SyntheticsTestRequestClientCertificateCert getCert();
 
 cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
 
 ---
 
@@ -6571,7 +8231,7 @@ public SyntheticsTestRequestClientCertificateKey getKey();
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#key SyntheticsTest#key}
 
 ---
 
@@ -6607,7 +8267,7 @@ public java.lang.String getContent();
 
 Content of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -6621,7 +8281,7 @@ public java.lang.String getFilename();
 
 File name for the certificate. Defaults to `"Provided in Terraform config"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
 
 ---
 
@@ -6657,7 +8317,7 @@ public java.lang.String getContent();
 
 Content of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -6671,7 +8331,7 @@ public java.lang.String getFilename();
 
 File name for the certificate. Defaults to `"Provided in Terraform config"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
 
 ---
 
@@ -6748,7 +8408,7 @@ public java.lang.String getBody();
 
 The request body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#body SyntheticsTest#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#body SyntheticsTest#body}
 
 ---
 
@@ -6762,7 +8422,7 @@ public java.lang.String getBodyType();
 
 Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
 
 ---
 
@@ -6776,7 +8436,7 @@ public java.lang.String getCallType();
 
 The type of gRPC call to perform. Valid values are `healthcheck`, `unary`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
 
 ---
 
@@ -6792,7 +8452,7 @@ By default, the client certificate is applied on the domain of the starting URL 
 
 If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
 
 ---
 
@@ -6806,7 +8466,7 @@ public java.lang.String getDnsServer();
 
 DNS server to use for DNS tests (`subtype = "dns"`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
 
 ---
 
@@ -6820,7 +8480,7 @@ public java.lang.String getDnsServerPort();
 
 DNS server port to use for DNS tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
 
 ---
 
@@ -6834,7 +8494,7 @@ public java.lang.String getHost();
 
 Host name to perform the test with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#host SyntheticsTest#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#host SyntheticsTest#host}
 
 ---
 
@@ -6850,7 +8510,7 @@ HTTP version to use for an HTTP request in an API test or step.
 
 **Deprecated.** Use `http_version` in the `options_list` field instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
 
 ---
 
@@ -6864,7 +8524,7 @@ public java.lang.String getMessage();
 
 For UDP and websocket tests, message to send with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#message SyntheticsTest#message}
 
 ---
 
@@ -6880,7 +8540,7 @@ Either the HTTP method/verb to use or a gRPC method available on the service set
 
 Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#method SyntheticsTest#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#method SyntheticsTest#method}
 
 ---
 
@@ -6894,7 +8554,7 @@ public java.lang.Object getNoSavingResponseBody();
 
 Determines whether or not to save the response body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
 
 ---
 
@@ -6908,7 +8568,7 @@ public java.lang.Number getNumberOfPackets();
 
 Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
 
 ---
 
@@ -6922,7 +8582,7 @@ public java.lang.Object getPersistCookies();
 
 Persist cookies across redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
 
 ---
 
@@ -6936,7 +8596,7 @@ public java.lang.String getPlainProtoFile();
 
 The content of a proto file as a string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
 
 ---
 
@@ -6950,7 +8610,7 @@ public java.lang.String getPort();
 
 Port to use when performing the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#port SyntheticsTest#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#port SyntheticsTest#port}
 
 ---
 
@@ -6964,7 +8624,7 @@ public java.lang.String getProtoJsonDescriptor();
 
 A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
 
 ---
 
@@ -6978,7 +8638,7 @@ public java.lang.String getServername();
 
 For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
 
 ---
 
@@ -6992,7 +8652,7 @@ public java.lang.String getService();
 
 The gRPC service on which you want to perform the gRPC call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#service SyntheticsTest#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#service SyntheticsTest#service}
 
 ---
 
@@ -7008,7 +8668,7 @@ This will turn on a traceroute probe to discover all gateways along the path to 
 
 For ICMP tests (`subtype = "icmp"`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
 
 ---
 
@@ -7022,7 +8682,7 @@ public java.lang.Number getTimeout();
 
 Timeout in seconds for the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
 
 ---
 
@@ -7036,7 +8696,7 @@ public java.lang.String getUrl();
 
 The URL to send the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#url SyntheticsTest#url}
 
 ---
 
@@ -7078,7 +8738,7 @@ public java.lang.String getName();
 
 Name of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -7092,7 +8752,7 @@ public java.lang.Number getSize();
 
 Size of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#size SyntheticsTest#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#size SyntheticsTest#size}
 
 ---
 
@@ -7106,7 +8766,7 @@ public java.lang.String getType();
 
 Type of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -7120,7 +8780,7 @@ public java.lang.String getContent();
 
 Content of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -7134,7 +8794,7 @@ public java.lang.String getOriginalFileName();
 
 Original name of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
 
 ---
 
@@ -7170,7 +8830,7 @@ public java.lang.String getUrl();
 
 URL of the proxy to perform the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#url SyntheticsTest#url}
 
 ---
 
@@ -7184,7 +8844,7 @@ public java.util.Map<java.lang.String, java.lang.String> getHeaders();
 
 Header name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
 
 ---
 
@@ -9985,6 +11645,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRetry">putRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.resetAllowFailure">resetAllowFailure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.resetAssertion">resetAssertion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.resetExitIfSucceed">resetExitIfSucceed</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.resetExtractedValue">resetExtractedValue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.resetIsCritical">resetIsCritical</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.resetRequestBasicauth">resetRequestBasicauth</a></code> | *No description.* |
@@ -10259,6 +11920,12 @@ public void resetAllowFailure()
 public void resetAssertion()
 ```
 
+##### `resetExitIfSucceed` <a name="resetExitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.resetExitIfSucceed"></a>
+
+```java
+public void resetExitIfSucceed()
+```
+
 ##### `resetExtractedValue` <a name="resetExtractedValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.resetExtractedValue"></a>
 
 ```java
@@ -10354,6 +12021,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetryOutputReference">SyntheticsTestApiStepRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput">allowFailureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput">assertionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput">exitIfSucceedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput">extractedValueInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput">isCriticalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -10369,6 +12037,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.subtypeInput">subtypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestHeaders">requestHeaders</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -10501,6 +12170,16 @@ public java.lang.Object getAssertionInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>>
+
+---
+
+##### `exitIfSucceedInput`<sup>Optional</sup> <a name="exitIfSucceedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput"></a>
+
+```java
+public java.lang.Object getExitIfSucceedInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -10648,6 +12327,16 @@ public java.lang.Number getValueInput();
 
 ```java
 public java.lang.Object getAllowFailure();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `exitIfSucceed`<sup>Required</sup> <a name="exitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed"></a>
+
+```java
+public java.lang.Object getExitIfSucceed();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -19799,6 +21488,7096 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>
+
+---
+
+
+### SyntheticsTestMobileOptionsListBindingsList <a name="SyntheticsTestMobileOptionsListBindingsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListBindingsList;
+
+new SyntheticsTestMobileOptionsListBindingsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.get"></a>
+
+```java
+public SyntheticsTestMobileOptionsListBindingsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
+
+---
+
+
+### SyntheticsTestMobileOptionsListBindingsOutputReference <a name="SyntheticsTestMobileOptionsListBindingsOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListBindingsOutputReference;
+
+new SyntheticsTestMobileOptionsListBindingsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.resetPrincipals">resetPrincipals</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.resetRelation">resetRelation</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPrincipals` <a name="resetPrincipals" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.resetPrincipals"></a>
+
+```java
+public void resetPrincipals()
+```
+
+##### `resetRelation` <a name="resetRelation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.resetRelation"></a>
+
+```java
+public void resetRelation()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.principalsInput">principalsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relationInput">relationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.principals">principals</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relation">relation</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `principalsInput`<sup>Optional</sup> <a name="principalsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.principalsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getPrincipalsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `relationInput`<sup>Optional</sup> <a name="relationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relationInput"></a>
+
+```java
+public java.lang.String getRelationInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `principals`<sup>Required</sup> <a name="principals" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.principals"></a>
+
+```java
+public java.util.List<java.lang.String> getPrincipals();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `relation`<sup>Required</sup> <a name="relation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relation"></a>
+
+```java
+public java.lang.String getRelation();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>
+
+---
+
+
+### SyntheticsTestMobileOptionsListCiOutputReference <a name="SyntheticsTestMobileOptionsListCiOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListCiOutputReference;
+
+new SyntheticsTestMobileOptionsListCiOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.executionRuleInput">executionRuleInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.executionRule">executionRule</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `executionRuleInput`<sup>Optional</sup> <a name="executionRuleInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.executionRuleInput"></a>
+
+```java
+public java.lang.String getExecutionRuleInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `executionRule`<sup>Required</sup> <a name="executionRule" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.executionRule"></a>
+
+```java
+public java.lang.String getExecutionRule();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileOptionsListCi getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a>
+
+---
+
+
+### SyntheticsTestMobileOptionsListMobileApplicationOutputReference <a name="SyntheticsTestMobileOptionsListMobileApplicationOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListMobileApplicationOutputReference;
+
+new SyntheticsTestMobileOptionsListMobileApplicationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.applicationIdInput">applicationIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.referenceIdInput">referenceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.referenceTypeInput">referenceTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.referenceId">referenceId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.referenceType">referenceType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `applicationIdInput`<sup>Optional</sup> <a name="applicationIdInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.applicationIdInput"></a>
+
+```java
+public java.lang.String getApplicationIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `referenceIdInput`<sup>Optional</sup> <a name="referenceIdInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.referenceIdInput"></a>
+
+```java
+public java.lang.String getReferenceIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `referenceTypeInput`<sup>Optional</sup> <a name="referenceTypeInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.referenceTypeInput"></a>
+
+```java
+public java.lang.String getReferenceTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.applicationId"></a>
+
+```java
+public java.lang.String getApplicationId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `referenceId`<sup>Required</sup> <a name="referenceId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.referenceId"></a>
+
+```java
+public java.lang.String getReferenceId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `referenceType`<sup>Required</sup> <a name="referenceType" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.referenceType"></a>
+
+```java
+public java.lang.String getReferenceType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileOptionsListMobileApplication getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a>
+
+---
+
+
+### SyntheticsTestMobileOptionsListMonitorOptionsOutputReference <a name="SyntheticsTestMobileOptionsListMonitorOptionsOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference;
+
+new SyntheticsTestMobileOptionsListMonitorOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resetEscalationMessage">resetEscalationMessage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resetNotificationPresetName">resetNotificationPresetName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resetRenotifyInterval">resetRenotifyInterval</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resetRenotifyOccurrences">resetRenotifyOccurrences</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEscalationMessage` <a name="resetEscalationMessage" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resetEscalationMessage"></a>
+
+```java
+public void resetEscalationMessage()
+```
+
+##### `resetNotificationPresetName` <a name="resetNotificationPresetName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resetNotificationPresetName"></a>
+
+```java
+public void resetNotificationPresetName()
+```
+
+##### `resetRenotifyInterval` <a name="resetRenotifyInterval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resetRenotifyInterval"></a>
+
+```java
+public void resetRenotifyInterval()
+```
+
+##### `resetRenotifyOccurrences` <a name="resetRenotifyOccurrences" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.resetRenotifyOccurrences"></a>
+
+```java
+public void resetRenotifyOccurrences()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.escalationMessageInput">escalationMessageInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.notificationPresetNameInput">notificationPresetNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.renotifyIntervalInput">renotifyIntervalInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.renotifyOccurrencesInput">renotifyOccurrencesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.escalationMessage">escalationMessage</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.notificationPresetName">notificationPresetName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.renotifyInterval">renotifyInterval</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.renotifyOccurrences">renotifyOccurrences</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `escalationMessageInput`<sup>Optional</sup> <a name="escalationMessageInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.escalationMessageInput"></a>
+
+```java
+public java.lang.String getEscalationMessageInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `notificationPresetNameInput`<sup>Optional</sup> <a name="notificationPresetNameInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.notificationPresetNameInput"></a>
+
+```java
+public java.lang.String getNotificationPresetNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `renotifyIntervalInput`<sup>Optional</sup> <a name="renotifyIntervalInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.renotifyIntervalInput"></a>
+
+```java
+public java.lang.Number getRenotifyIntervalInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `renotifyOccurrencesInput`<sup>Optional</sup> <a name="renotifyOccurrencesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.renotifyOccurrencesInput"></a>
+
+```java
+public java.lang.Number getRenotifyOccurrencesInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `escalationMessage`<sup>Required</sup> <a name="escalationMessage" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.escalationMessage"></a>
+
+```java
+public java.lang.String getEscalationMessage();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `notificationPresetName`<sup>Required</sup> <a name="notificationPresetName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.notificationPresetName"></a>
+
+```java
+public java.lang.String getNotificationPresetName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `renotifyInterval`<sup>Required</sup> <a name="renotifyInterval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.renotifyInterval"></a>
+
+```java
+public java.lang.Number getRenotifyInterval();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `renotifyOccurrences`<sup>Required</sup> <a name="renotifyOccurrences" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.renotifyOccurrences"></a>
+
+```java
+public java.lang.Number getRenotifyOccurrences();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileOptionsListMonitorOptions getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a>
+
+---
+
+
+### SyntheticsTestMobileOptionsListRetryOutputReference <a name="SyntheticsTestMobileOptionsListRetryOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListRetryOutputReference;
+
+new SyntheticsTestMobileOptionsListRetryOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.resetCount">resetCount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.resetInterval">resetInterval</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCount` <a name="resetCount" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.resetCount"></a>
+
+```java
+public void resetCount()
+```
+
+##### `resetInterval` <a name="resetInterval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.resetInterval"></a>
+
+```java
+public void resetInterval()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.countInput">countInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.intervalInput">intervalInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.interval">interval</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `countInput`<sup>Optional</sup> <a name="countInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.countInput"></a>
+
+```java
+public java.lang.Number getCountInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `intervalInput`<sup>Optional</sup> <a name="intervalInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.intervalInput"></a>
+
+```java
+public java.lang.Number getIntervalInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `count`<sup>Required</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.count"></a>
+
+```java
+public java.lang.Number getCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `interval`<sup>Required</sup> <a name="interval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.interval"></a>
+
+```java
+public java.lang.Number getInterval();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileOptionsListRetry getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a>
+
+---
+
+
+### SyntheticsTestMobileOptionsListSchedulingOutputReference <a name="SyntheticsTestMobileOptionsListSchedulingOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListSchedulingOutputReference;
+
+new SyntheticsTestMobileOptionsListSchedulingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.putTimeframes">putTimeframes</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putTimeframes` <a name="putTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.putTimeframes"></a>
+
+```java
+public void putTimeframes(IResolvable OR java.util.List<SyntheticsTestMobileOptionsListSchedulingTimeframes> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.putTimeframes.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframes">timeframes</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList">SyntheticsTestMobileOptionsListSchedulingTimeframesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput">timeframesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezoneInput">timezoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezone">timezone</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframes"></a>
+
+```java
+public SyntheticsTestMobileOptionsListSchedulingTimeframesList getTimeframes();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList">SyntheticsTestMobileOptionsListSchedulingTimeframesList</a>
+
+---
+
+##### `timeframesInput`<sup>Optional</sup> <a name="timeframesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput"></a>
+
+```java
+public java.lang.Object getTimeframesInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
+
+---
+
+##### `timezoneInput`<sup>Optional</sup> <a name="timezoneInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezoneInput"></a>
+
+```java
+public java.lang.String getTimezoneInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezone"></a>
+
+```java
+public java.lang.String getTimezone();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileOptionsListScheduling getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a>
+
+---
+
+
+### SyntheticsTestMobileOptionsListSchedulingTimeframesList <a name="SyntheticsTestMobileOptionsListSchedulingTimeframesList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListSchedulingTimeframesList;
+
+new SyntheticsTestMobileOptionsListSchedulingTimeframesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.get"></a>
+
+```java
+public SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
+
+---
+
+
+### SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference <a name="SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference;
+
+new SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.dayInput">dayInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.fromInput">fromInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.toInput">toInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.day">day</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.from">from</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.to">to</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `dayInput`<sup>Optional</sup> <a name="dayInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.dayInput"></a>
+
+```java
+public java.lang.Number getDayInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `fromInput`<sup>Optional</sup> <a name="fromInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.fromInput"></a>
+
+```java
+public java.lang.String getFromInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `toInput`<sup>Optional</sup> <a name="toInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.toInput"></a>
+
+```java
+public java.lang.String getToInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `day`<sup>Required</sup> <a name="day" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.day"></a>
+
+```java
+public java.lang.Number getDay();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `from`<sup>Required</sup> <a name="from" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.from"></a>
+
+```java
+public java.lang.String getFrom();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `to`<sup>Required</sup> <a name="to" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.to"></a>
+
+```java
+public java.lang.String getTo();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>
+
+---
+
+
+### SyntheticsTestMobileOptionsListStructOutputReference <a name="SyntheticsTestMobileOptionsListStructOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListStructOutputReference;
+
+new SyntheticsTestMobileOptionsListStructOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putBindings">putBindings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putCi">putCi</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putMobileApplication">putMobileApplication</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putMonitorOptions">putMonitorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putRetry">putRetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putScheduling">putScheduling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetAllowApplicationCrash">resetAllowApplicationCrash</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetBindings">resetBindings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetCi">resetCi</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetDefaultStepTimeout">resetDefaultStepTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetDisableAutoAcceptAlert">resetDisableAutoAcceptAlert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetMinFailureDuration">resetMinFailureDuration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetMonitorName">resetMonitorName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetMonitorOptions">resetMonitorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetMonitorPriority">resetMonitorPriority</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetNoScreenshot">resetNoScreenshot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetRestrictedRoles">resetRestrictedRoles</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetRetry">resetRetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetScheduling">resetScheduling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetVerbosity">resetVerbosity</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putBindings` <a name="putBindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putBindings"></a>
+
+```java
+public void putBindings(IResolvable OR java.util.List<SyntheticsTestMobileOptionsListBindings> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putBindings.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
+
+---
+
+##### `putCi` <a name="putCi" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putCi"></a>
+
+```java
+public void putCi(SyntheticsTestMobileOptionsListCi value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putCi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a>
+
+---
+
+##### `putMobileApplication` <a name="putMobileApplication" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putMobileApplication"></a>
+
+```java
+public void putMobileApplication(SyntheticsTestMobileOptionsListMobileApplication value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putMobileApplication.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a>
+
+---
+
+##### `putMonitorOptions` <a name="putMonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putMonitorOptions"></a>
+
+```java
+public void putMonitorOptions(SyntheticsTestMobileOptionsListMonitorOptions value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putMonitorOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a>
+
+---
+
+##### `putRetry` <a name="putRetry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putRetry"></a>
+
+```java
+public void putRetry(SyntheticsTestMobileOptionsListRetry value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putRetry.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a>
+
+---
+
+##### `putScheduling` <a name="putScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putScheduling"></a>
+
+```java
+public void putScheduling(SyntheticsTestMobileOptionsListScheduling value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putScheduling.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a>
+
+---
+
+##### `resetAllowApplicationCrash` <a name="resetAllowApplicationCrash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetAllowApplicationCrash"></a>
+
+```java
+public void resetAllowApplicationCrash()
+```
+
+##### `resetBindings` <a name="resetBindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetBindings"></a>
+
+```java
+public void resetBindings()
+```
+
+##### `resetCi` <a name="resetCi" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetCi"></a>
+
+```java
+public void resetCi()
+```
+
+##### `resetDefaultStepTimeout` <a name="resetDefaultStepTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetDefaultStepTimeout"></a>
+
+```java
+public void resetDefaultStepTimeout()
+```
+
+##### `resetDisableAutoAcceptAlert` <a name="resetDisableAutoAcceptAlert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetDisableAutoAcceptAlert"></a>
+
+```java
+public void resetDisableAutoAcceptAlert()
+```
+
+##### `resetMinFailureDuration` <a name="resetMinFailureDuration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetMinFailureDuration"></a>
+
+```java
+public void resetMinFailureDuration()
+```
+
+##### `resetMonitorName` <a name="resetMonitorName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetMonitorName"></a>
+
+```java
+public void resetMonitorName()
+```
+
+##### `resetMonitorOptions` <a name="resetMonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetMonitorOptions"></a>
+
+```java
+public void resetMonitorOptions()
+```
+
+##### `resetMonitorPriority` <a name="resetMonitorPriority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetMonitorPriority"></a>
+
+```java
+public void resetMonitorPriority()
+```
+
+##### `resetNoScreenshot` <a name="resetNoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetNoScreenshot"></a>
+
+```java
+public void resetNoScreenshot()
+```
+
+##### `resetRestrictedRoles` <a name="resetRestrictedRoles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetRestrictedRoles"></a>
+
+```java
+public void resetRestrictedRoles()
+```
+
+##### `resetRetry` <a name="resetRetry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetRetry"></a>
+
+```java
+public void resetRetry()
+```
+
+##### `resetScheduling` <a name="resetScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetScheduling"></a>
+
+```java
+public void resetScheduling()
+```
+
+##### `resetVerbosity` <a name="resetVerbosity" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.resetVerbosity"></a>
+
+```java
+public void resetVerbosity()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindings">bindings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList">SyntheticsTestMobileOptionsListBindingsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference">SyntheticsTestMobileOptionsListCiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.mobileApplication">mobileApplication</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference">SyntheticsTestMobileOptionsListMobileApplicationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptions">monitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference">SyntheticsTestMobileOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference">SyntheticsTestMobileOptionsListRetryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference">SyntheticsTestMobileOptionsListSchedulingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput">allowApplicationCrashInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput">bindingsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.ciInput">ciInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeoutInput">defaultStepTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIdsInput">deviceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput">disableAutoAcceptAlertInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDurationInput">minFailureDurationInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.mobileApplicationInput">mobileApplicationInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorNameInput">monitorNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptionsInput">monitorOptionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriorityInput">monitorPriorityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRolesInput">restrictedRolesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retryInput">retryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.schedulingInput">schedulingInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEveryInput">tickEveryInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosityInput">verbosityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash">allowApplicationCrash</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeout">defaultStepTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert">disableAutoAcceptAlert</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDuration">minFailureDuration</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorName">monitorName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriority">monitorPriority</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEvery">tickEvery</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosity">verbosity</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `bindings`<sup>Required</sup> <a name="bindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindings"></a>
+
+```java
+public SyntheticsTestMobileOptionsListBindingsList getBindings();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList">SyntheticsTestMobileOptionsListBindingsList</a>
+
+---
+
+##### `ci`<sup>Required</sup> <a name="ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.ci"></a>
+
+```java
+public SyntheticsTestMobileOptionsListCiOutputReference getCi();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference">SyntheticsTestMobileOptionsListCiOutputReference</a>
+
+---
+
+##### `mobileApplication`<sup>Required</sup> <a name="mobileApplication" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.mobileApplication"></a>
+
+```java
+public SyntheticsTestMobileOptionsListMobileApplicationOutputReference getMobileApplication();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference">SyntheticsTestMobileOptionsListMobileApplicationOutputReference</a>
+
+---
+
+##### `monitorOptions`<sup>Required</sup> <a name="monitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptions"></a>
+
+```java
+public SyntheticsTestMobileOptionsListMonitorOptionsOutputReference getMonitorOptions();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference">SyntheticsTestMobileOptionsListMonitorOptionsOutputReference</a>
+
+---
+
+##### `retry`<sup>Required</sup> <a name="retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retry"></a>
+
+```java
+public SyntheticsTestMobileOptionsListRetryOutputReference getRetry();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference">SyntheticsTestMobileOptionsListRetryOutputReference</a>
+
+---
+
+##### `scheduling`<sup>Required</sup> <a name="scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.scheduling"></a>
+
+```java
+public SyntheticsTestMobileOptionsListSchedulingOutputReference getScheduling();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference">SyntheticsTestMobileOptionsListSchedulingOutputReference</a>
+
+---
+
+##### `allowApplicationCrashInput`<sup>Optional</sup> <a name="allowApplicationCrashInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput"></a>
+
+```java
+public java.lang.Object getAllowApplicationCrashInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `bindingsInput`<sup>Optional</sup> <a name="bindingsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput"></a>
+
+```java
+public java.lang.Object getBindingsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
+
+---
+
+##### `ciInput`<sup>Optional</sup> <a name="ciInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.ciInput"></a>
+
+```java
+public SyntheticsTestMobileOptionsListCi getCiInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a>
+
+---
+
+##### `defaultStepTimeoutInput`<sup>Optional</sup> <a name="defaultStepTimeoutInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeoutInput"></a>
+
+```java
+public java.lang.Number getDefaultStepTimeoutInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `deviceIdsInput`<sup>Optional</sup> <a name="deviceIdsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIdsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getDeviceIdsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `disableAutoAcceptAlertInput`<sup>Optional</sup> <a name="disableAutoAcceptAlertInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput"></a>
+
+```java
+public java.lang.Object getDisableAutoAcceptAlertInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `minFailureDurationInput`<sup>Optional</sup> <a name="minFailureDurationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDurationInput"></a>
+
+```java
+public java.lang.Number getMinFailureDurationInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `mobileApplicationInput`<sup>Optional</sup> <a name="mobileApplicationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.mobileApplicationInput"></a>
+
+```java
+public SyntheticsTestMobileOptionsListMobileApplication getMobileApplicationInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a>
+
+---
+
+##### `monitorNameInput`<sup>Optional</sup> <a name="monitorNameInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorNameInput"></a>
+
+```java
+public java.lang.String getMonitorNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `monitorOptionsInput`<sup>Optional</sup> <a name="monitorOptionsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptionsInput"></a>
+
+```java
+public SyntheticsTestMobileOptionsListMonitorOptions getMonitorOptionsInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a>
+
+---
+
+##### `monitorPriorityInput`<sup>Optional</sup> <a name="monitorPriorityInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriorityInput"></a>
+
+```java
+public java.lang.Number getMonitorPriorityInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `noScreenshotInput`<sup>Optional</sup> <a name="noScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput"></a>
+
+```java
+public java.lang.Object getNoScreenshotInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `restrictedRolesInput`<sup>Optional</sup> <a name="restrictedRolesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRolesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getRestrictedRolesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `retryInput`<sup>Optional</sup> <a name="retryInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retryInput"></a>
+
+```java
+public SyntheticsTestMobileOptionsListRetry getRetryInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a>
+
+---
+
+##### `schedulingInput`<sup>Optional</sup> <a name="schedulingInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.schedulingInput"></a>
+
+```java
+public SyntheticsTestMobileOptionsListScheduling getSchedulingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a>
+
+---
+
+##### `tickEveryInput`<sup>Optional</sup> <a name="tickEveryInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEveryInput"></a>
+
+```java
+public java.lang.Number getTickEveryInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `verbosityInput`<sup>Optional</sup> <a name="verbosityInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosityInput"></a>
+
+```java
+public java.lang.Number getVerbosityInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `allowApplicationCrash`<sup>Required</sup> <a name="allowApplicationCrash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash"></a>
+
+```java
+public java.lang.Object getAllowApplicationCrash();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `defaultStepTimeout`<sup>Required</sup> <a name="defaultStepTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeout"></a>
+
+```java
+public java.lang.Number getDefaultStepTimeout();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `deviceIds`<sup>Required</sup> <a name="deviceIds" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIds"></a>
+
+```java
+public java.util.List<java.lang.String> getDeviceIds();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `disableAutoAcceptAlert`<sup>Required</sup> <a name="disableAutoAcceptAlert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert"></a>
+
+```java
+public java.lang.Object getDisableAutoAcceptAlert();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `minFailureDuration`<sup>Required</sup> <a name="minFailureDuration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDuration"></a>
+
+```java
+public java.lang.Number getMinFailureDuration();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `monitorName`<sup>Required</sup> <a name="monitorName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorName"></a>
+
+```java
+public java.lang.String getMonitorName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `monitorPriority`<sup>Required</sup> <a name="monitorPriority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriority"></a>
+
+```java
+public java.lang.Number getMonitorPriority();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `noScreenshot`<sup>Required</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot"></a>
+
+```java
+public java.lang.Object getNoScreenshot();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `restrictedRoles`<sup>Required</sup> <a name="restrictedRoles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRoles"></a>
+
+```java
+public java.util.List<java.lang.String> getRestrictedRoles();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `tickEvery`<sup>Required</sup> <a name="tickEvery" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEvery"></a>
+
+```java
+public java.lang.Number getTickEvery();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `verbosity`<sup>Required</sup> <a name="verbosity" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosity"></a>
+
+```java
+public java.lang.Number getVerbosity();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileOptionsListStruct getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a>
+
+---
+
+
+### SyntheticsTestMobileStepList <a name="SyntheticsTestMobileStepList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepList;
+
+new SyntheticsTestMobileStepList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.get"></a>
+
+```java
+public SyntheticsTestMobileStepOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
+
+---
+
+
+### SyntheticsTestMobileStepOutputReference <a name="SyntheticsTestMobileStepOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepOutputReference;
+
+new SyntheticsTestMobileStepOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.putParams">putParams</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetAllowFailure">resetAllowFailure</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetHasNewStepElement">resetHasNewStepElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetIsCritical">resetIsCritical</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetNoScreenshot">resetNoScreenshot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetPublicId">resetPublicId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetTimeout">resetTimeout</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putParams` <a name="putParams" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.putParams"></a>
+
+```java
+public void putParams(SyntheticsTestMobileStepParams value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.putParams.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a>
+
+---
+
+##### `resetAllowFailure` <a name="resetAllowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetAllowFailure"></a>
+
+```java
+public void resetAllowFailure()
+```
+
+##### `resetHasNewStepElement` <a name="resetHasNewStepElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetHasNewStepElement"></a>
+
+```java
+public void resetHasNewStepElement()
+```
+
+##### `resetIsCritical` <a name="resetIsCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetIsCritical"></a>
+
+```java
+public void resetIsCritical()
+```
+
+##### `resetNoScreenshot` <a name="resetNoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetNoScreenshot"></a>
+
+```java
+public void resetNoScreenshot()
+```
+
+##### `resetPublicId` <a name="resetPublicId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetPublicId"></a>
+
+```java
+public void resetPublicId()
+```
+
+##### `resetTimeout` <a name="resetTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.resetTimeout"></a>
+
+```java
+public void resetTimeout()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference">SyntheticsTestMobileStepParamsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput">allowFailureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput">hasNewStepElementInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput">isCriticalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.paramsInput">paramsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicIdInput">publicIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeoutInput">timeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement">hasNewStepElement</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicId">publicId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `params`<sup>Required</sup> <a name="params" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.params"></a>
+
+```java
+public SyntheticsTestMobileStepParamsOutputReference getParams();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference">SyntheticsTestMobileStepParamsOutputReference</a>
+
+---
+
+##### `allowFailureInput`<sup>Optional</sup> <a name="allowFailureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput"></a>
+
+```java
+public java.lang.Object getAllowFailureInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `hasNewStepElementInput`<sup>Optional</sup> <a name="hasNewStepElementInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput"></a>
+
+```java
+public java.lang.Object getHasNewStepElementInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `isCriticalInput`<sup>Optional</sup> <a name="isCriticalInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput"></a>
+
+```java
+public java.lang.Object getIsCriticalInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `noScreenshotInput`<sup>Optional</sup> <a name="noScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput"></a>
+
+```java
+public java.lang.Object getNoScreenshotInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `paramsInput`<sup>Optional</sup> <a name="paramsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.paramsInput"></a>
+
+```java
+public SyntheticsTestMobileStepParams getParamsInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a>
+
+---
+
+##### `publicIdInput`<sup>Optional</sup> <a name="publicIdInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicIdInput"></a>
+
+```java
+public java.lang.String getPublicIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `timeoutInput`<sup>Optional</sup> <a name="timeoutInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeoutInput"></a>
+
+```java
+public java.lang.Number getTimeoutInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.typeInput"></a>
+
+```java
+public java.lang.String getTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `allowFailure`<sup>Required</sup> <a name="allowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure"></a>
+
+```java
+public java.lang.Object getAllowFailure();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `hasNewStepElement`<sup>Required</sup> <a name="hasNewStepElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement"></a>
+
+```java
+public java.lang.Object getHasNewStepElement();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `isCritical`<sup>Required</sup> <a name="isCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical"></a>
+
+```java
+public java.lang.Object getIsCritical();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `noScreenshot`<sup>Required</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot"></a>
+
+```java
+public java.lang.Object getNoScreenshot();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `publicId`<sup>Required</sup> <a name="publicId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicId"></a>
+
+```java
+public java.lang.String getPublicId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `timeout`<sup>Required</sup> <a name="timeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeout"></a>
+
+```java
+public java.lang.Number getTimeout();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>
+
+---
+
+
+### SyntheticsTestMobileStepParamsElementOutputReference <a name="SyntheticsTestMobileStepParamsElementOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElementOutputReference;
+
+new SyntheticsTestMobileStepParamsElementOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.putRelativePosition">putRelativePosition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.putUserLocator">putUserLocator</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetContext">resetContext</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetContextType">resetContextType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetElementDescription">resetElementDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetMultiLocator">resetMultiLocator</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetRelativePosition">resetRelativePosition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetTextContent">resetTextContent</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetUserLocator">resetUserLocator</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetViewName">resetViewName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putRelativePosition` <a name="putRelativePosition" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.putRelativePosition"></a>
+
+```java
+public void putRelativePosition(SyntheticsTestMobileStepParamsElementRelativePosition value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.putRelativePosition.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition">SyntheticsTestMobileStepParamsElementRelativePosition</a>
+
+---
+
+##### `putUserLocator` <a name="putUserLocator" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.putUserLocator"></a>
+
+```java
+public void putUserLocator(SyntheticsTestMobileStepParamsElementUserLocator value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.putUserLocator.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a>
+
+---
+
+##### `resetContext` <a name="resetContext" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetContext"></a>
+
+```java
+public void resetContext()
+```
+
+##### `resetContextType` <a name="resetContextType" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetContextType"></a>
+
+```java
+public void resetContextType()
+```
+
+##### `resetElementDescription` <a name="resetElementDescription" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetElementDescription"></a>
+
+```java
+public void resetElementDescription()
+```
+
+##### `resetMultiLocator` <a name="resetMultiLocator" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetMultiLocator"></a>
+
+```java
+public void resetMultiLocator()
+```
+
+##### `resetRelativePosition` <a name="resetRelativePosition" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetRelativePosition"></a>
+
+```java
+public void resetRelativePosition()
+```
+
+##### `resetTextContent` <a name="resetTextContent" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetTextContent"></a>
+
+```java
+public void resetTextContent()
+```
+
+##### `resetUserLocator` <a name="resetUserLocator" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetUserLocator"></a>
+
+```java
+public void resetUserLocator()
+```
+
+##### `resetViewName` <a name="resetViewName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.resetViewName"></a>
+
+```java
+public void resetViewName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.relativePosition">relativePosition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference">SyntheticsTestMobileStepParamsElementRelativePositionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.userLocator">userLocator</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference">SyntheticsTestMobileStepParamsElementUserLocatorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.contextInput">contextInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.contextTypeInput">contextTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.elementDescriptionInput">elementDescriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.multiLocatorInput">multiLocatorInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.relativePositionInput">relativePositionInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition">SyntheticsTestMobileStepParamsElementRelativePosition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.textContentInput">textContentInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.userLocatorInput">userLocatorInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.viewNameInput">viewNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.context">context</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.contextType">contextType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.elementDescription">elementDescription</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.multiLocator">multiLocator</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.textContent">textContent</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.viewName">viewName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `relativePosition`<sup>Required</sup> <a name="relativePosition" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.relativePosition"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementRelativePositionOutputReference getRelativePosition();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference">SyntheticsTestMobileStepParamsElementRelativePositionOutputReference</a>
+
+---
+
+##### `userLocator`<sup>Required</sup> <a name="userLocator" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.userLocator"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementUserLocatorOutputReference getUserLocator();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference">SyntheticsTestMobileStepParamsElementUserLocatorOutputReference</a>
+
+---
+
+##### `contextInput`<sup>Optional</sup> <a name="contextInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.contextInput"></a>
+
+```java
+public java.lang.String getContextInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `contextTypeInput`<sup>Optional</sup> <a name="contextTypeInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.contextTypeInput"></a>
+
+```java
+public java.lang.String getContextTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `elementDescriptionInput`<sup>Optional</sup> <a name="elementDescriptionInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.elementDescriptionInput"></a>
+
+```java
+public java.lang.String getElementDescriptionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `multiLocatorInput`<sup>Optional</sup> <a name="multiLocatorInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.multiLocatorInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getMultiLocatorInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `relativePositionInput`<sup>Optional</sup> <a name="relativePositionInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.relativePositionInput"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementRelativePosition getRelativePositionInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition">SyntheticsTestMobileStepParamsElementRelativePosition</a>
+
+---
+
+##### `textContentInput`<sup>Optional</sup> <a name="textContentInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.textContentInput"></a>
+
+```java
+public java.lang.String getTextContentInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `userLocatorInput`<sup>Optional</sup> <a name="userLocatorInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.userLocatorInput"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementUserLocator getUserLocatorInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a>
+
+---
+
+##### `viewNameInput`<sup>Optional</sup> <a name="viewNameInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.viewNameInput"></a>
+
+```java
+public java.lang.String getViewNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `context`<sup>Required</sup> <a name="context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.context"></a>
+
+```java
+public java.lang.String getContext();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `contextType`<sup>Required</sup> <a name="contextType" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.contextType"></a>
+
+```java
+public java.lang.String getContextType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `elementDescription`<sup>Required</sup> <a name="elementDescription" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.elementDescription"></a>
+
+```java
+public java.lang.String getElementDescription();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `multiLocator`<sup>Required</sup> <a name="multiLocator" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.multiLocator"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getMultiLocator();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `textContent`<sup>Required</sup> <a name="textContent" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.textContent"></a>
+
+```java
+public java.lang.String getTextContent();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `viewName`<sup>Required</sup> <a name="viewName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.viewName"></a>
+
+```java
+public java.lang.String getViewName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElement getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a>
+
+---
+
+
+### SyntheticsTestMobileStepParamsElementRelativePositionOutputReference <a name="SyntheticsTestMobileStepParamsElementRelativePositionOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference;
+
+new SyntheticsTestMobileStepParamsElementRelativePositionOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.resetX">resetX</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.resetY">resetY</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetX` <a name="resetX" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.resetX"></a>
+
+```java
+public void resetX()
+```
+
+##### `resetY` <a name="resetY" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.resetY"></a>
+
+```java
+public void resetY()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.xInput">xInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.yInput">yInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.x">x</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.y">y</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition">SyntheticsTestMobileStepParamsElementRelativePosition</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `xInput`<sup>Optional</sup> <a name="xInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.xInput"></a>
+
+```java
+public java.lang.Number getXInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `yInput`<sup>Optional</sup> <a name="yInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.yInput"></a>
+
+```java
+public java.lang.Number getYInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.x"></a>
+
+```java
+public java.lang.Number getX();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `y`<sup>Required</sup> <a name="y" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.y"></a>
+
+```java
+public java.lang.Number getY();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementRelativePosition getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition">SyntheticsTestMobileStepParamsElementRelativePosition</a>
+
+---
+
+
+### SyntheticsTestMobileStepParamsElementUserLocatorOutputReference <a name="SyntheticsTestMobileStepParamsElementUserLocatorOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference;
+
+new SyntheticsTestMobileStepParamsElementUserLocatorOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.putValues">putValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.resetFailTestOnCannotLocate">resetFailTestOnCannotLocate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.resetValues">resetValues</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putValues` <a name="putValues" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.putValues"></a>
+
+```java
+public void putValues(IResolvable OR java.util.List<SyntheticsTestMobileStepParamsElementUserLocatorValues> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.putValues.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
+
+---
+
+##### `resetFailTestOnCannotLocate` <a name="resetFailTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.resetFailTestOnCannotLocate"></a>
+
+```java
+public void resetFailTestOnCannotLocate()
+```
+
+##### `resetValues` <a name="resetValues" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.resetValues"></a>
+
+```java
+public void resetValues()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.values">values</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList">SyntheticsTestMobileStepParamsElementUserLocatorValuesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">failTestOnCannotLocateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput">valuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.values"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementUserLocatorValuesList getValues();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList">SyntheticsTestMobileStepParamsElementUserLocatorValuesList</a>
+
+---
+
+##### `failTestOnCannotLocateInput`<sup>Optional</sup> <a name="failTestOnCannotLocateInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput"></a>
+
+```java
+public java.lang.Object getFailTestOnCannotLocateInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `valuesInput`<sup>Optional</sup> <a name="valuesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput"></a>
+
+```java
+public java.lang.Object getValuesInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
+
+---
+
+##### `failTestOnCannotLocate`<sup>Required</sup> <a name="failTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate"></a>
+
+```java
+public java.lang.Object getFailTestOnCannotLocate();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementUserLocator getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a>
+
+---
+
+
+### SyntheticsTestMobileStepParamsElementUserLocatorValuesList <a name="SyntheticsTestMobileStepParamsElementUserLocatorValuesList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElementUserLocatorValuesList;
+
+new SyntheticsTestMobileStepParamsElementUserLocatorValuesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.get"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
+
+---
+
+
+### SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference <a name="SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference;
+
+new SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.resetType">resetType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.resetValue">resetValue</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetType` <a name="resetType" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.resetType"></a>
+
+```java
+public void resetType()
+```
+
+##### `resetValue` <a name="resetValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.resetValue"></a>
+
+```java
+public void resetValue()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.typeInput"></a>
+
+```java
+public java.lang.String getTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.valueInput"></a>
+
+```java
+public java.lang.String getValueInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>
+
+---
+
+
+### SyntheticsTestMobileStepParamsOutputReference <a name="SyntheticsTestMobileStepParamsOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsOutputReference;
+
+new SyntheticsTestMobileStepParamsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putElement">putElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putPositions">putPositions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putVariable">putVariable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetCheck">resetCheck</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetDelay">resetDelay</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetDirection">resetDirection</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetElement">resetElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetEnable">resetEnable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetMaxScrolls">resetMaxScrolls</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetPositions">resetPositions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetSubtestPublicId">resetSubtestPublicId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetValue">resetValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetVariable">resetVariable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetWithEnter">resetWithEnter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetX">resetX</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetY">resetY</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putElement` <a name="putElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putElement"></a>
+
+```java
+public void putElement(SyntheticsTestMobileStepParamsElement value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putElement.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a>
+
+---
+
+##### `putPositions` <a name="putPositions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putPositions"></a>
+
+```java
+public void putPositions(IResolvable OR java.util.List<SyntheticsTestMobileStepParamsPositions> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putPositions.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
+
+---
+
+##### `putVariable` <a name="putVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putVariable"></a>
+
+```java
+public void putVariable(SyntheticsTestMobileStepParamsVariable value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putVariable.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a>
+
+---
+
+##### `resetCheck` <a name="resetCheck" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetCheck"></a>
+
+```java
+public void resetCheck()
+```
+
+##### `resetDelay` <a name="resetDelay" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetDelay"></a>
+
+```java
+public void resetDelay()
+```
+
+##### `resetDirection` <a name="resetDirection" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetDirection"></a>
+
+```java
+public void resetDirection()
+```
+
+##### `resetElement` <a name="resetElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetElement"></a>
+
+```java
+public void resetElement()
+```
+
+##### `resetEnable` <a name="resetEnable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetEnable"></a>
+
+```java
+public void resetEnable()
+```
+
+##### `resetMaxScrolls` <a name="resetMaxScrolls" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetMaxScrolls"></a>
+
+```java
+public void resetMaxScrolls()
+```
+
+##### `resetPositions` <a name="resetPositions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetPositions"></a>
+
+```java
+public void resetPositions()
+```
+
+##### `resetSubtestPublicId` <a name="resetSubtestPublicId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetSubtestPublicId"></a>
+
+```java
+public void resetSubtestPublicId()
+```
+
+##### `resetValue` <a name="resetValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetValue"></a>
+
+```java
+public void resetValue()
+```
+
+##### `resetVariable` <a name="resetVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetVariable"></a>
+
+```java
+public void resetVariable()
+```
+
+##### `resetWithEnter` <a name="resetWithEnter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetWithEnter"></a>
+
+```java
+public void resetWithEnter()
+```
+
+##### `resetX` <a name="resetX" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetX"></a>
+
+```java
+public void resetX()
+```
+
+##### `resetY` <a name="resetY" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.resetY"></a>
+
+```java
+public void resetY()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.element">element</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference">SyntheticsTestMobileStepParamsElementOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positions">positions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList">SyntheticsTestMobileStepParamsPositionsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference">SyntheticsTestMobileStepParamsVariableOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.checkInput">checkInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delayInput">delayInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.elementInput">elementInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput">enableInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrollsInput">maxScrollsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput">positionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicIdInput">subtestPublicIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.variableInput">variableInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput">withEnterInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.xInput">xInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.yInput">yInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.check">check</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delay">delay</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable">enable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrolls">maxScrolls</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicId">subtestPublicId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter">withEnter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.x">x</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.y">y</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `element`<sup>Required</sup> <a name="element" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.element"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElementOutputReference getElement();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference">SyntheticsTestMobileStepParamsElementOutputReference</a>
+
+---
+
+##### `positions`<sup>Required</sup> <a name="positions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positions"></a>
+
+```java
+public SyntheticsTestMobileStepParamsPositionsList getPositions();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList">SyntheticsTestMobileStepParamsPositionsList</a>
+
+---
+
+##### `variable`<sup>Required</sup> <a name="variable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.variable"></a>
+
+```java
+public SyntheticsTestMobileStepParamsVariableOutputReference getVariable();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference">SyntheticsTestMobileStepParamsVariableOutputReference</a>
+
+---
+
+##### `checkInput`<sup>Optional</sup> <a name="checkInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.checkInput"></a>
+
+```java
+public java.lang.String getCheckInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `delayInput`<sup>Optional</sup> <a name="delayInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delayInput"></a>
+
+```java
+public java.lang.Number getDelayInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `elementInput`<sup>Optional</sup> <a name="elementInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.elementInput"></a>
+
+```java
+public SyntheticsTestMobileStepParamsElement getElementInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a>
+
+---
+
+##### `enableInput`<sup>Optional</sup> <a name="enableInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput"></a>
+
+```java
+public java.lang.Object getEnableInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `maxScrollsInput`<sup>Optional</sup> <a name="maxScrollsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrollsInput"></a>
+
+```java
+public java.lang.Number getMaxScrollsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `positionsInput`<sup>Optional</sup> <a name="positionsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput"></a>
+
+```java
+public java.lang.Object getPositionsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
+
+---
+
+##### `subtestPublicIdInput`<sup>Optional</sup> <a name="subtestPublicIdInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicIdInput"></a>
+
+```java
+public java.lang.String getSubtestPublicIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.valueInput"></a>
+
+```java
+public java.lang.String getValueInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `variableInput`<sup>Optional</sup> <a name="variableInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.variableInput"></a>
+
+```java
+public SyntheticsTestMobileStepParamsVariable getVariableInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a>
+
+---
+
+##### `withEnterInput`<sup>Optional</sup> <a name="withEnterInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput"></a>
+
+```java
+public java.lang.Object getWithEnterInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `xInput`<sup>Optional</sup> <a name="xInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.xInput"></a>
+
+```java
+public java.lang.Number getXInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `yInput`<sup>Optional</sup> <a name="yInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.yInput"></a>
+
+```java
+public java.lang.Number getYInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `check`<sup>Required</sup> <a name="check" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.check"></a>
+
+```java
+public java.lang.String getCheck();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `delay`<sup>Required</sup> <a name="delay" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delay"></a>
+
+```java
+public java.lang.Number getDelay();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `enable`<sup>Required</sup> <a name="enable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable"></a>
+
+```java
+public java.lang.Object getEnable();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `maxScrolls`<sup>Required</sup> <a name="maxScrolls" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrolls"></a>
+
+```java
+public java.lang.Number getMaxScrolls();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `subtestPublicId`<sup>Required</sup> <a name="subtestPublicId" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicId"></a>
+
+```java
+public java.lang.String getSubtestPublicId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `withEnter`<sup>Required</sup> <a name="withEnter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter"></a>
+
+```java
+public java.lang.Object getWithEnter();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.x"></a>
+
+```java
+public java.lang.Number getX();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `y`<sup>Required</sup> <a name="y" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.y"></a>
+
+```java
+public java.lang.Number getY();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileStepParams getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a>
+
+---
+
+
+### SyntheticsTestMobileStepParamsPositionsList <a name="SyntheticsTestMobileStepParamsPositionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsPositionsList;
+
+new SyntheticsTestMobileStepParamsPositionsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.get"></a>
+
+```java
+public SyntheticsTestMobileStepParamsPositionsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
+
+---
+
+
+### SyntheticsTestMobileStepParamsPositionsOutputReference <a name="SyntheticsTestMobileStepParamsPositionsOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsPositionsOutputReference;
+
+new SyntheticsTestMobileStepParamsPositionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.resetX">resetX</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.resetY">resetY</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetX` <a name="resetX" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.resetX"></a>
+
+```java
+public void resetX()
+```
+
+##### `resetY` <a name="resetY" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.resetY"></a>
+
+```java
+public void resetY()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.xInput">xInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.yInput">yInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.x">x</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.y">y</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `xInput`<sup>Optional</sup> <a name="xInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.xInput"></a>
+
+```java
+public java.lang.Number getXInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `yInput`<sup>Optional</sup> <a name="yInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.yInput"></a>
+
+```java
+public java.lang.Number getYInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.x"></a>
+
+```java
+public java.lang.Number getX();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `y`<sup>Required</sup> <a name="y" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.y"></a>
+
+```java
+public java.lang.Number getY();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>
+
+---
+
+
+### SyntheticsTestMobileStepParamsVariableOutputReference <a name="SyntheticsTestMobileStepParamsVariableOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsVariableOutputReference;
+
+new SyntheticsTestMobileStepParamsVariableOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.resetExample">resetExample</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetExample` <a name="resetExample" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.resetExample"></a>
+
+```java
+public void resetExample()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.exampleInput">exampleInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.example">example</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `exampleInput`<sup>Optional</sup> <a name="exampleInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.exampleInput"></a>
+
+```java
+public java.lang.String getExampleInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `example`<sup>Required</sup> <a name="example" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.example"></a>
+
+```java
+public java.lang.String getExample();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.property.internalValue"></a>
+
+```java
+public SyntheticsTestMobileStepParamsVariable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a>
 
 ---
 

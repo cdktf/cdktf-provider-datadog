@@ -4,7 +4,7 @@
 
 ### IpAllowlist <a name="IpAllowlist" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Whether the IP Allowlist is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
 
 ---
 
@@ -613,7 +613,7 @@ The construct id used in the generated config for the IpAllowlist to import.
 
 The id of the existing IpAllowlist that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/ip_allowlist#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/ip_allowlist#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -979,7 +979,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Whether the IP Allowlist is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
 
 ---
 
@@ -993,7 +993,7 @@ entry: typing.Union[IResolvable, typing.List[IpAllowlistEntry]]
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
 
 ---
 
@@ -1029,7 +1029,7 @@ cidr_block: str
 
 IP address or range of addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}
 
 ---
 
@@ -1043,7 +1043,7 @@ note: str
 
 Note accompanying IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/ip_allowlist#note IpAllowlist#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/ip_allowlist#note IpAllowlist#note}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### SyntheticsConcurrencyCap <a name="SyntheticsConcurrencyCap" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Value of the on-demand concurrency cap, customizing the number of Synthetic tests run in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
 
 ---
 
@@ -535,7 +535,7 @@ The construct id used in the generated config for the SyntheticsConcurrencyCap t
 
 The id of the existing SyntheticsConcurrencyCap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_concurrency_cap#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_concurrency_cap#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -881,7 +881,7 @@ public java.lang.Number getOnDemandConcurrencyCap();
 
 Value of the on-demand concurrency cap, customizing the number of Synthetic tests run in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
 
 ---
 

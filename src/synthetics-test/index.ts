@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test
+// https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Required if `type = "browser"`. Array with the different device IDs used to run the test. Valid values are `laptop_large`, `tablet`, `mobile_small`, `chrome.laptop_large`, `chrome.tablet`, `chrome.mobile_small`, `firefox.laptop_large`, `firefox.tablet`, `firefox.mobile_small`, `edge.laptop_large`, `edge.tablet`, `edge.mobile_small`.
+  * Initial application arguments for the mobile test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#config_initial_application_arguments SyntheticsTest#config_initial_application_arguments}
+  */
+  readonly configInitialApplicationArguments?: { [key: string]: string };
+  /**
+  * Required if `type = "browser"`. Array with the different device IDs used to run the test.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
   */
   readonly deviceIds?: string[];
   /**
   * A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
   */
   readonly forceDeleteDependencies?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#id SyntheticsTest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,139 +35,151 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   /**
   * Array of locations used to run the test. Refer to [the Datadog Synthetics location data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/synthetics_locations) to retrieve the list of locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
   */
   readonly locations: string[];
   /**
   * A message to include with notifications for this synthetics test. Email notifications can be sent to specific users by using the same `@username` notation as events. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#message SyntheticsTest#message}
   */
   readonly message?: string;
   /**
   * Name of Datadog synthetics test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Header name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * Metadata to include when performing the gRPC request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
   */
   readonly requestMetadata?: { [key: string]: string };
   /**
   * Query arguments name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
   */
   readonly requestQuery?: { [key: string]: string };
   /**
   * Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
   */
   readonly setCookie?: string;
   /**
   * Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#status SyntheticsTest#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#status SyntheticsTest#status}
   */
   readonly status: string;
   /**
   * The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`, `udp`, `websocket`, `grpc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
   */
   readonly subtype?: string;
   /**
   * A list of tags to associate with your synthetics test. This can help you categorize and filter tests in the manage synthetics page of the UI. Default is an empty list (`[]`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
   */
   readonly tags?: string[];
   /**
   * Synthetics test type. Valid values are `api`, `browser`, `mobile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * Variables defined from JavaScript code for API HTTP tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
   */
   readonly variablesFromScript?: string;
   /**
   * api_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
   */
   readonly apiStep?: SyntheticsTestApiStep[] | cdktf.IResolvable;
   /**
   * assertion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
   */
   readonly assertion?: SyntheticsTestAssertion[] | cdktf.IResolvable;
   /**
   * browser_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
   */
   readonly browserStep?: SyntheticsTestBrowserStep[] | cdktf.IResolvable;
   /**
   * browser_variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
   */
   readonly browserVariable?: SyntheticsTestBrowserVariable[] | cdktf.IResolvable;
   /**
   * config_variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
   */
   readonly configVariable?: SyntheticsTestConfigVariable[] | cdktf.IResolvable;
   /**
+  * mobile_options_list block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#mobile_options_list SyntheticsTest#mobile_options_list}
+  */
+  readonly mobileOptionsList?: SyntheticsTestMobileOptionsListStruct;
+  /**
+  * mobile_step block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#mobile_step SyntheticsTest#mobile_step}
+  */
+  readonly mobileStep?: SyntheticsTestMobileStep[] | cdktf.IResolvable;
+  /**
   * options_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
   */
   readonly optionsList?: SyntheticsTestOptionsListStruct;
   /**
   * request_basicauth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
   */
   readonly requestBasicauth?: SyntheticsTestRequestBasicauth;
   /**
   * request_client_certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
   */
   readonly requestClientCertificate?: SyntheticsTestRequestClientCertificate;
   /**
   * request_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
   */
   readonly requestDefinition?: SyntheticsTestRequestDefinition;
   /**
   * request_file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
   */
   readonly requestFile?: SyntheticsTestRequestFile[] | cdktf.IResolvable;
   /**
   * request_proxy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
   */
   readonly requestProxy?: SyntheticsTestRequestProxy;
 }
@@ -174,25 +187,25 @@ export interface SyntheticsTestApiStepAssertionTargetjsonpath {
   /**
   * The element from the list of results to assert on. Select from `firstElementMatches` (the first element in the list), `everyElementMatches` (every element in the list), `atLeastOneElementMatches` (at least one element in the list), or `serializationMatches` (the serialized value of the list). Defaults to `firstElementMatches`. Defaults to `"firstElementMatches"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
   */
   readonly elementsoperator?: string;
   /**
   * The JSON path to assert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
   */
   readonly jsonpath: string;
   /**
   * The specific operator to use on the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator: string;
   /**
   * Expected matching value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
   */
   readonly targetvalue?: string;
 }
@@ -359,13 +372,13 @@ export interface SyntheticsTestApiStepAssertionTargetjsonschema {
   /**
   * The JSON Schema to validate the body against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
   */
   readonly jsonschema: string;
   /**
   * The meta schema to use for the JSON Schema. Defaults to `"draft-07"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
   */
   readonly metaschema?: string;
 }
@@ -477,19 +490,19 @@ export interface SyntheticsTestApiStepAssertionTargetxpath {
   /**
   * The specific operator to use on the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator: string;
   /**
   * Expected matching value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
   */
   readonly targetvalue?: string;
   /**
   * The xpath to assert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
   */
   readonly xpath: string;
 }
@@ -627,55 +640,55 @@ export interface SyntheticsTestApiStepAssertion {
   /**
   * If assertion type is `javascript`, this is the JavaScript code that performs the assertions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#code SyntheticsTest#code}
   */
   readonly code?: string;
   /**
   * Assertion operator. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator?: string;
   /**
   * If assertion type is `header`, this is the header name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#property SyntheticsTest#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#property SyntheticsTest#property}
   */
   readonly property?: string;
   /**
   * Expected value. Depends on the assertion type, refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test) for details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#target SyntheticsTest#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#target SyntheticsTest#target}
   */
   readonly target?: string;
   /**
   * Timings scope for response time assertions. Valid values are `all`, `withoutDNS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
   */
   readonly timingsScope?: string;
   /**
   * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `grpcMetadata`, `grpcProto`, `connection`, `bodyHash`, `javascript`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * targetjsonpath block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
   */
   readonly targetjsonpath?: SyntheticsTestApiStepAssertionTargetjsonpath;
   /**
   * targetjsonschema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
   */
   readonly targetjsonschema?: SyntheticsTestApiStepAssertionTargetjsonschema;
   /**
   * targetxpath block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
   */
   readonly targetxpath?: SyntheticsTestApiStepAssertionTargetxpath;
 }
@@ -1022,13 +1035,13 @@ export interface SyntheticsTestApiStepExtractedValueParser {
   /**
   * Type of parser for a Synthetics global variable from a synthetics test. Valid values are `raw`, `json_path`, `regex`, `x_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * Regex or JSON path used for the parser. Not used with type `raw`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value?: string;
 }
@@ -1140,29 +1153,29 @@ export interface SyntheticsTestApiStepExtractedValue {
   /**
   * When type is `http_header` or `grpc_metadata`, name of the header or metadatum to extract.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#field SyntheticsTest#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#field SyntheticsTest#field}
   */
   readonly field?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Determines whether or not the extracted value will be obfuscated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
   */
   readonly secure?: boolean | cdktf.IResolvable;
   /**
   * Property of the Synthetics Test Response to use for the variable. Valid values are `grpc_message`, `grpc_metadata`, `http_body`, `http_header`, `http_status_code`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#parser SyntheticsTest#parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#parser SyntheticsTest#parser}
   */
   readonly parser: SyntheticsTestApiStepExtractedValueParser;
 }
@@ -1387,103 +1400,103 @@ export interface SyntheticsTestApiStepRequestBasicauth {
   /**
   * Access key for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
   */
   readonly accessKey?: string;
   /**
   * Access token url for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
   */
   readonly accessTokenUrl?: string;
   /**
   * Audience for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
   */
   readonly audience?: string;
   /**
   * Client ID for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
   */
   readonly clientId?: string;
   /**
   * Client secret for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Domain for `ntlm` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
   */
   readonly domain?: string;
   /**
   * Password for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#password SyntheticsTest#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#password SyntheticsTest#password}
   */
   readonly password?: string;
   /**
   * Region for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#region SyntheticsTest#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#region SyntheticsTest#region}
   */
   readonly region?: string;
   /**
   * Resource for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
   */
   readonly resource?: string;
   /**
   * Scope for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
   */
   readonly scope?: string;
   /**
   * Secret key for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
   */
   readonly secretKey?: string;
   /**
   * Service name for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
   */
   readonly serviceName?: string;
   /**
   * Session token for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
   */
   readonly sessionToken?: string;
   /**
   * Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
   */
   readonly tokenApiAuthentication?: string;
   /**
   * Type of basic authentication to use when performing the test. Defaults to `"web"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type?: string;
   /**
   * Username for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#username SyntheticsTest#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#username SyntheticsTest#username}
   */
   readonly username?: string;
   /**
   * Workstation for `ntlm` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
   */
   readonly workstation?: string;
 }
@@ -2033,13 +2046,13 @@ export interface SyntheticsTestApiStepRequestClientCertificateCert {
   /**
   * Content of the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content: string;
   /**
   * File name for the certificate. Defaults to `"Provided in Terraform config"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
   */
   readonly filename?: string;
 }
@@ -2151,13 +2164,13 @@ export interface SyntheticsTestApiStepRequestClientCertificateKey {
   /**
   * Content of the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content: string;
   /**
   * File name for the certificate. Defaults to `"Provided in Terraform config"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
   */
   readonly filename?: string;
 }
@@ -2269,13 +2282,13 @@ export interface SyntheticsTestApiStepRequestClientCertificate {
   /**
   * cert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
   */
   readonly cert: SyntheticsTestApiStepRequestClientCertificateCert;
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#key SyntheticsTest#key}
   */
   readonly key: SyntheticsTestApiStepRequestClientCertificateKey;
 }
@@ -2384,139 +2397,139 @@ export interface SyntheticsTestApiStepRequestDefinition {
   /**
   * Allows loading insecure content for a request in an API test or in a multistep API test step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
   * The request body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#body SyntheticsTest#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#body SyntheticsTest#body}
   */
   readonly body?: string;
   /**
   * Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
   */
   readonly bodyType?: string;
   /**
   * The type of gRPC call to perform. Valid values are `healthcheck`, `unary`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
   */
   readonly callType?: string;
   /**
   * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
   */
   readonly certificateDomains?: string[];
   /**
   * DNS server to use for DNS tests (`subtype = "dns"`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
   */
   readonly dnsServer?: string;
   /**
   * DNS server port to use for DNS tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
   */
   readonly dnsServerPort?: string;
   /**
   * Determines whether or not the API HTTP test should follow redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
   */
   readonly followRedirects?: boolean | cdktf.IResolvable;
   /**
   * Host name to perform the test with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#host SyntheticsTest#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#host SyntheticsTest#host}
   */
   readonly host?: string;
   /**
   * HTTP version to use for an HTTP request in an API test or step. Valid values are `http1`, `http2`, `any`. Defaults to `"any"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
   */
   readonly httpVersion?: string;
   /**
   * For UDP and websocket tests, message to send with the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#message SyntheticsTest#message}
   */
   readonly message?: string;
   /**
   * Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#method SyntheticsTest#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#method SyntheticsTest#method}
   */
   readonly method?: string;
   /**
   * Determines whether or not to save the response body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
   */
   readonly noSavingResponseBody?: boolean | cdktf.IResolvable;
   /**
   * Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
   */
   readonly numberOfPackets?: number;
   /**
   * Persist cookies across redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
   */
   readonly persistCookies?: boolean | cdktf.IResolvable;
   /**
   * The content of a proto file as a string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
   */
   readonly plainProtoFile?: string;
   /**
   * Port to use when performing the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#port SyntheticsTest#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#port SyntheticsTest#port}
   */
   readonly port?: string;
   /**
   * A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
   */
   readonly protoJsonDescriptor?: string;
   /**
   * For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
   */
   readonly servername?: string;
   /**
   * The gRPC service on which you want to perform the gRPC call.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#service SyntheticsTest#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#service SyntheticsTest#service}
   */
   readonly service?: string;
   /**
   * This will turn on a traceroute probe to discover all gateways along the path to the host destination. For ICMP tests (`subtype = "icmp"`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
   */
   readonly shouldTrackHops?: boolean | cdktf.IResolvable;
   /**
   * Timeout in seconds for the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
   */
   readonly timeout?: number;
   /**
   * The URL to send the request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#url SyntheticsTest#url}
   */
   readonly url?: string;
 }
@@ -3240,31 +3253,31 @@ export interface SyntheticsTestApiStepRequestFile {
   /**
   * Content of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content?: string;
   /**
   * Name of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Original name of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
   */
   readonly originalFileName?: string;
   /**
   * Size of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#size SyntheticsTest#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#size SyntheticsTest#size}
   */
   readonly size: number;
   /**
   * Type of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
 }
@@ -3494,13 +3507,13 @@ export interface SyntheticsTestApiStepRequestProxy {
   /**
   * Header name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
   */
   readonly headers?: { [key: string]: string };
   /**
   * URL of the proxy to perform the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#url SyntheticsTest#url}
   */
   readonly url: string;
 }
@@ -3610,15 +3623,15 @@ export class SyntheticsTestApiStepRequestProxyOutputReference extends cdktf.Comp
 }
 export interface SyntheticsTestApiStepRetry {
   /**
-  * Number of retries needed to consider a location as failed before sending a notification alert. Defaults to `0`.
+  * Number of retries needed to consider a location as failed before sending a notification alert. Maximum value: `5`. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#count SyntheticsTest#count}
   */
   readonly count?: number;
   /**
-  * Interval between a failed test and the next retry in milliseconds. Defaults to `300`.
+  * Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
   */
   readonly interval?: number;
 }
@@ -3733,97 +3746,103 @@ export interface SyntheticsTestApiStep {
   /**
   * Determines whether or not to continue with test if this step fails.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
   */
   readonly allowFailure?: boolean | cdktf.IResolvable;
   /**
+  * Determines whether or not to exit the test if the step succeeds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
+  */
+  readonly exitIfSucceed?: boolean | cdktf.IResolvable;
+  /**
   * Determines whether or not to consider the entire test as failed if this step fails. Can be used only if `allow_failure` is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
   */
   readonly isCritical?: boolean | cdktf.IResolvable;
   /**
   * The name of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Header name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * Metadata to include when performing the gRPC request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
   */
   readonly requestMetadata?: { [key: string]: string };
   /**
   * Query arguments name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
   */
   readonly requestQuery?: { [key: string]: string };
   /**
   * The subtype of the Synthetic multi-step API test step. Valid values are `http`, `grpc`, `wait`. Defaults to `"http"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
   */
   readonly subtype?: string;
   /**
   * The time to wait in seconds. Minimum value: 0. Maximum value: 180.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value?: number;
   /**
   * assertion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
   */
   readonly assertion?: SyntheticsTestApiStepAssertion[] | cdktf.IResolvable;
   /**
   * extracted_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#extracted_value SyntheticsTest#extracted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#extracted_value SyntheticsTest#extracted_value}
   */
   readonly extractedValue?: SyntheticsTestApiStepExtractedValue[] | cdktf.IResolvable;
   /**
   * request_basicauth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
   */
   readonly requestBasicauth?: SyntheticsTestApiStepRequestBasicauth;
   /**
   * request_client_certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
   */
   readonly requestClientCertificate?: SyntheticsTestApiStepRequestClientCertificate;
   /**
   * request_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
   */
   readonly requestDefinition?: SyntheticsTestApiStepRequestDefinition;
   /**
   * request_file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
   */
   readonly requestFile?: SyntheticsTestApiStepRequestFile[] | cdktf.IResolvable;
   /**
   * request_proxy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
   */
   readonly requestProxy?: SyntheticsTestApiStepRequestProxy;
   /**
   * retry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
   */
   readonly retry?: SyntheticsTestApiStepRetry;
 }
@@ -3835,6 +3854,7 @@ export function syntheticsTestApiStepToTerraform(struct?: SyntheticsTestApiStep 
   }
   return {
     allow_failure: cdktf.booleanToTerraform(struct!.allowFailure),
+    exit_if_succeed: cdktf.booleanToTerraform(struct!.exitIfSucceed),
     is_critical: cdktf.booleanToTerraform(struct!.isCritical),
     name: cdktf.stringToTerraform(struct!.name),
     request_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requestHeaders),
@@ -3862,6 +3882,12 @@ export function syntheticsTestApiStepToHclTerraform(struct?: SyntheticsTestApiSt
   const attrs = {
     allow_failure: {
       value: cdktf.booleanToHclTerraform(struct!.allowFailure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    exit_if_succeed: {
+      value: cdktf.booleanToHclTerraform(struct!.exitIfSucceed),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3986,6 +4012,10 @@ export class SyntheticsTestApiStepOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.allowFailure = this._allowFailure;
     }
+    if (this._exitIfSucceed !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exitIfSucceed = this._exitIfSucceed;
+    }
     if (this._isCritical !== undefined) {
       hasAnyValues = true;
       internalValueResult.isCritical = this._isCritical;
@@ -4054,6 +4084,7 @@ export class SyntheticsTestApiStepOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._allowFailure = undefined;
+      this._exitIfSucceed = undefined;
       this._isCritical = undefined;
       this._name = undefined;
       this._requestHeaders = undefined;
@@ -4078,6 +4109,7 @@ export class SyntheticsTestApiStepOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._allowFailure = value.allowFailure;
+      this._exitIfSucceed = value.exitIfSucceed;
       this._isCritical = value.isCritical;
       this._name = value.name;
       this._requestHeaders = value.requestHeaders;
@@ -4110,6 +4142,22 @@ export class SyntheticsTestApiStepOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get allowFailureInput() {
     return this._allowFailure;
+  }
+
+  // exit_if_succeed - computed: false, optional: true, required: false
+  private _exitIfSucceed?: boolean | cdktf.IResolvable; 
+  public get exitIfSucceed() {
+    return this.getBooleanAttribute('exit_if_succeed');
+  }
+  public set exitIfSucceed(value: boolean | cdktf.IResolvable) {
+    this._exitIfSucceed = value;
+  }
+  public resetExitIfSucceed() {
+    this._exitIfSucceed = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exitIfSucceedInput() {
+    return this._exitIfSucceed;
   }
 
   // is_critical - computed: false, optional: true, required: false
@@ -4373,25 +4421,25 @@ export interface SyntheticsTestAssertionTargetjsonpath {
   /**
   * The element from the list of results to assert on. Select from `firstElementMatches` (the first element in the list), `everyElementMatches` (every element in the list), `atLeastOneElementMatches` (at least one element in the list), or `serializationMatches` (the serialized value of the list). Defaults to `firstElementMatches`. Defaults to `"firstElementMatches"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
   */
   readonly elementsoperator?: string;
   /**
   * The JSON path to assert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
   */
   readonly jsonpath: string;
   /**
   * The specific operator to use on the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator: string;
   /**
   * Expected matching value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
   */
   readonly targetvalue?: string;
 }
@@ -4558,13 +4606,13 @@ export interface SyntheticsTestAssertionTargetjsonschema {
   /**
   * The JSON Schema to validate the body against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
   */
   readonly jsonschema: string;
   /**
   * The meta schema to use for the JSON Schema. Defaults to `"draft-07"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
   */
   readonly metaschema?: string;
 }
@@ -4676,19 +4724,19 @@ export interface SyntheticsTestAssertionTargetxpath {
   /**
   * The specific operator to use on the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator: string;
   /**
   * Expected matching value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
   */
   readonly targetvalue?: string;
   /**
   * The xpath to assert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
   */
   readonly xpath: string;
 }
@@ -4826,55 +4874,55 @@ export interface SyntheticsTestAssertion {
   /**
   * If assertion type is `javascript`, this is the JavaScript code that performs the assertions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#code SyntheticsTest#code}
   */
   readonly code?: string;
   /**
   * Assertion operator. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator?: string;
   /**
   * If assertion type is `header`, this is the header name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#property SyntheticsTest#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#property SyntheticsTest#property}
   */
   readonly property?: string;
   /**
   * Expected value. Depends on the assertion type, refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test) for details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#target SyntheticsTest#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#target SyntheticsTest#target}
   */
   readonly target?: string;
   /**
   * Timings scope for response time assertions. Valid values are `all`, `withoutDNS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
   */
   readonly timingsScope?: string;
   /**
   * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `grpcMetadata`, `grpcProto`, `connection`, `bodyHash`, `javascript`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * targetjsonpath block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
   */
   readonly targetjsonpath?: SyntheticsTestAssertionTargetjsonpath;
   /**
   * targetjsonschema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
   */
   readonly targetjsonschema?: SyntheticsTestAssertionTargetjsonschema;
   /**
   * targetxpath block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
   */
   readonly targetxpath?: SyntheticsTestAssertionTargetxpath;
 }
@@ -5221,11 +5269,11 @@ export interface SyntheticsTestBrowserStepParamsElementUserLocatorValue {
   /**
   * Defaults to `"css"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value: string;
 }
@@ -5337,13 +5385,13 @@ export interface SyntheticsTestBrowserStepParamsElementUserLocator {
   /**
   * Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
   */
   readonly failTestOnCannotLocate?: boolean | cdktf.IResolvable;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value: SyntheticsTestBrowserStepParamsElementUserLocatorValue;
 }
@@ -5455,13 +5503,13 @@ export interface SyntheticsTestBrowserStepParamsVariable {
   /**
   * Example of the extracted variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#example SyntheticsTest#example}
   */
   readonly example?: string;
   /**
   * Name of the extracted variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name?: string;
 }
@@ -5576,115 +5624,115 @@ export interface SyntheticsTestBrowserStepParams {
   /**
   * Name of the attribute to use for an "assert attribute" step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#attribute SyntheticsTest#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#attribute SyntheticsTest#attribute}
   */
   readonly attribute?: string;
   /**
   * Check type to use for an assertion step. Valid values are `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `notStartsWith`, `greater`, `lower`, `greaterEquals`, `lowerEquals`, `matchRegex`, `between`, `isEmpty`, `notIsEmpty`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#check SyntheticsTest#check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#check SyntheticsTest#check}
   */
   readonly check?: string;
   /**
   * Type of click to use for a "click" step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#click_type SyntheticsTest#click_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#click_type SyntheticsTest#click_type}
   */
   readonly clickType?: string;
   /**
   * Javascript code to use for the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#code SyntheticsTest#code}
   */
   readonly code?: string;
   /**
   * Delay between each key stroke for a "type test" step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
   */
   readonly delay?: number;
   /**
   * Element to use for the step, JSON encoded string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#element SyntheticsTest#element}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#element SyntheticsTest#element}
   */
   readonly element?: string;
   /**
   * Details of the email for an "assert email" step, JSON encoded string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#email SyntheticsTest#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#email SyntheticsTest#email}
   */
   readonly email?: string;
   /**
   * JSON encoded string used for an "assert download" step. Refer to the examples for a usage example showing the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#file SyntheticsTest#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#file SyntheticsTest#file}
   */
   readonly file?: string;
   /**
   * Details of the files for an "upload files" step, JSON encoded string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#files SyntheticsTest#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#files SyntheticsTest#files}
   */
   readonly files?: string;
   /**
   * Modifier to use for a "press key" step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#modifiers SyntheticsTest#modifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#modifiers SyntheticsTest#modifiers}
   */
   readonly modifiers?: string[];
   /**
   * ID of the tab to play the subtest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#playing_tab_id SyntheticsTest#playing_tab_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#playing_tab_id SyntheticsTest#playing_tab_id}
   */
   readonly playingTabId?: string;
   /**
   * Request for an API step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#request SyntheticsTest#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#request SyntheticsTest#request}
   */
   readonly request?: string;
   /**
   * ID of the Synthetics test to use as subtest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
   */
   readonly subtestPublicId?: string;
   /**
   * Value of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value?: string;
   /**
   * For "file upload" steps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#with_click SyntheticsTest#with_click}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#with_click SyntheticsTest#with_click}
   */
   readonly withClick?: boolean | cdktf.IResolvable;
   /**
   * X coordinates for a "scroll step".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}
   */
   readonly x?: number;
   /**
   * Y coordinates for a "scroll step".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}
   */
   readonly y?: number;
   /**
   * element_user_locator block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#element_user_locator SyntheticsTest#element_user_locator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#element_user_locator SyntheticsTest#element_user_locator}
   */
   readonly elementUserLocator?: SyntheticsTestBrowserStepParamsElementUserLocator;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
   */
   readonly variable?: SyntheticsTestBrowserStepParamsVariable;
 }
@@ -6292,61 +6340,61 @@ export interface SyntheticsTestBrowserStep {
   /**
   * Determines if the step should be allowed to fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
   */
   readonly allowFailure?: boolean | cdktf.IResolvable;
   /**
   * Determines whether or not to always execute this step even if the previous step failed or was skipped.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#always_execute SyntheticsTest#always_execute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#always_execute SyntheticsTest#always_execute}
   */
   readonly alwaysExecute?: boolean | cdktf.IResolvable;
   /**
   * Determines whether or not to exit the test if the step succeeds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
   */
   readonly exitIfSucceed?: boolean | cdktf.IResolvable;
   /**
   * Force update of the "element" parameter for the step
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#force_element_update SyntheticsTest#force_element_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#force_element_update SyntheticsTest#force_element_update}
   */
   readonly forceElementUpdate?: boolean | cdktf.IResolvable;
   /**
   * Determines whether or not to consider the entire test as failed if this step fails. Can be used only if `allow_failure` is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
   */
   readonly isCritical?: boolean | cdktf.IResolvable;
   /**
   * Name of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Prevents saving screenshots of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
   */
   readonly noScreenshot?: boolean | cdktf.IResolvable;
   /**
   * Used to override the default timeout of a step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
   */
   readonly timeout?: number;
   /**
   * Type of the step. Valid values are `assertCurrentUrl`, `assertElementAttribute`, `assertElementContent`, `assertElementPresent`, `assertEmail`, `assertFileDownload`, `assertFromJavascript`, `assertPageContains`, `assertPageLacks`, `click`, `extractFromJavascript`, `extractVariable`, `goToEmailLink`, `goToUrl`, `goToUrlAndMeasureTti`, `hover`, `playSubTest`, `pressKey`, `refresh`, `runApiTest`, `scroll`, `selectOption`, `typeText`, `uploadFiles`, `wait`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#params SyntheticsTest#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#params SyntheticsTest#params}
   */
   readonly params: SyntheticsTestBrowserStepParams;
 }
@@ -6716,13 +6764,13 @@ export interface SyntheticsTestBrowserVariable {
   /**
   * Example for the variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#example SyntheticsTest#example}
   */
   readonly example?: string;
   /**
   * ID of the global variable to use. This is actually only used (and required) in the case of using a variable of type `global`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#id SyntheticsTest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6731,25 +6779,25 @@ export interface SyntheticsTestBrowserVariable {
   /**
   * Name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Pattern of the variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
   */
   readonly pattern?: string;
   /**
   * Determines whether or not the browser test variable is obfuscated. Can only be used with a browser variable of type `text`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
   */
   readonly secure?: boolean | cdktf.IResolvable;
   /**
   * Type of browser test variable. Valid values are `element`, `email`, `global`, `javascript`, `text`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
 }
@@ -7006,13 +7054,13 @@ export interface SyntheticsTestConfigVariable {
   /**
   * Example for the variable. This value is not returned by the api when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#example SyntheticsTest#example}
   */
   readonly example?: string;
   /**
   * When type = `global`, ID of the global variable to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#id SyntheticsTest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7021,25 +7069,25 @@ export interface SyntheticsTestConfigVariable {
   /**
   * Name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Pattern of the variable. This value is not returned by the api when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
   */
   readonly pattern?: string;
   /**
   * Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
   */
   readonly secure?: boolean | cdktf.IResolvable;
   /**
   * Type of test configuration variable. Valid values are `global`, `text`, `email`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
 }
@@ -7292,11 +7340,3479 @@ export class SyntheticsTestConfigVariableList extends cdktf.ComplexList {
     return new SyntheticsTestConfigVariableOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface SyntheticsTestMobileOptionsListBindings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#principals SyntheticsTest#principals}
+  */
+  readonly principals?: string[];
+  /**
+  * Valid values are `editor`, `viewer`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#relation SyntheticsTest#relation}
+  */
+  readonly relation?: string;
+}
+
+export function syntheticsTestMobileOptionsListBindingsToTerraform(struct?: SyntheticsTestMobileOptionsListBindings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.principals),
+    relation: cdktf.stringToTerraform(struct!.relation),
+  }
+}
+
+
+export function syntheticsTestMobileOptionsListBindingsToHclTerraform(struct?: SyntheticsTestMobileOptionsListBindings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    principals: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.principals),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    relation: {
+      value: cdktf.stringToHclTerraform(struct!.relation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileOptionsListBindingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SyntheticsTestMobileOptionsListBindings | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._principals !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principals = this._principals;
+    }
+    if (this._relation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.relation = this._relation;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileOptionsListBindings | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._principals = undefined;
+      this._relation = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._principals = value.principals;
+      this._relation = value.relation;
+    }
+  }
+
+  // principals - computed: false, optional: true, required: false
+  private _principals?: string[]; 
+  public get principals() {
+    return this.getListAttribute('principals');
+  }
+  public set principals(value: string[]) {
+    this._principals = value;
+  }
+  public resetPrincipals() {
+    this._principals = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalsInput() {
+    return this._principals;
+  }
+
+  // relation - computed: false, optional: true, required: false
+  private _relation?: string; 
+  public get relation() {
+    return this.getStringAttribute('relation');
+  }
+  public set relation(value: string) {
+    this._relation = value;
+  }
+  public resetRelation() {
+    this._relation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get relationInput() {
+    return this._relation;
+  }
+}
+
+export class SyntheticsTestMobileOptionsListBindingsList extends cdktf.ComplexList {
+  public internalValue? : SyntheticsTestMobileOptionsListBindings[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SyntheticsTestMobileOptionsListBindingsOutputReference {
+    return new SyntheticsTestMobileOptionsListBindingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SyntheticsTestMobileOptionsListCi {
+  /**
+  * Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+  */
+  readonly executionRule: string;
+}
+
+export function syntheticsTestMobileOptionsListCiToTerraform(struct?: SyntheticsTestMobileOptionsListCiOutputReference | SyntheticsTestMobileOptionsListCi): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    execution_rule: cdktf.stringToTerraform(struct!.executionRule),
+  }
+}
+
+
+export function syntheticsTestMobileOptionsListCiToHclTerraform(struct?: SyntheticsTestMobileOptionsListCiOutputReference | SyntheticsTestMobileOptionsListCi): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    execution_rule: {
+      value: cdktf.stringToHclTerraform(struct!.executionRule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileOptionsListCiOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileOptionsListCi | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._executionRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.executionRule = this._executionRule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileOptionsListCi | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._executionRule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._executionRule = value.executionRule;
+    }
+  }
+
+  // execution_rule - computed: false, optional: false, required: true
+  private _executionRule?: string; 
+  public get executionRule() {
+    return this.getStringAttribute('execution_rule');
+  }
+  public set executionRule(value: string) {
+    this._executionRule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionRuleInput() {
+    return this._executionRule;
+  }
+}
+export interface SyntheticsTestMobileOptionsListMobileApplication {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
+  */
+  readonly applicationId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#reference_id SyntheticsTest#reference_id}
+  */
+  readonly referenceId: string;
+  /**
+  * Valid values are `latest`, `version`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#reference_type SyntheticsTest#reference_type}
+  */
+  readonly referenceType: string;
+}
+
+export function syntheticsTestMobileOptionsListMobileApplicationToTerraform(struct?: SyntheticsTestMobileOptionsListMobileApplicationOutputReference | SyntheticsTestMobileOptionsListMobileApplication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    application_id: cdktf.stringToTerraform(struct!.applicationId),
+    reference_id: cdktf.stringToTerraform(struct!.referenceId),
+    reference_type: cdktf.stringToTerraform(struct!.referenceType),
+  }
+}
+
+
+export function syntheticsTestMobileOptionsListMobileApplicationToHclTerraform(struct?: SyntheticsTestMobileOptionsListMobileApplicationOutputReference | SyntheticsTestMobileOptionsListMobileApplication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    application_id: {
+      value: cdktf.stringToHclTerraform(struct!.applicationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    reference_id: {
+      value: cdktf.stringToHclTerraform(struct!.referenceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    reference_type: {
+      value: cdktf.stringToHclTerraform(struct!.referenceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileOptionsListMobileApplicationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileOptionsListMobileApplication | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._applicationId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applicationId = this._applicationId;
+    }
+    if (this._referenceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.referenceId = this._referenceId;
+    }
+    if (this._referenceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.referenceType = this._referenceType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileOptionsListMobileApplication | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._applicationId = undefined;
+      this._referenceId = undefined;
+      this._referenceType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._applicationId = value.applicationId;
+      this._referenceId = value.referenceId;
+      this._referenceType = value.referenceType;
+    }
+  }
+
+  // application_id - computed: false, optional: false, required: true
+  private _applicationId?: string; 
+  public get applicationId() {
+    return this.getStringAttribute('application_id');
+  }
+  public set applicationId(value: string) {
+    this._applicationId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationIdInput() {
+    return this._applicationId;
+  }
+
+  // reference_id - computed: false, optional: false, required: true
+  private _referenceId?: string; 
+  public get referenceId() {
+    return this.getStringAttribute('reference_id');
+  }
+  public set referenceId(value: string) {
+    this._referenceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get referenceIdInput() {
+    return this._referenceId;
+  }
+
+  // reference_type - computed: false, optional: false, required: true
+  private _referenceType?: string; 
+  public get referenceType() {
+    return this.getStringAttribute('reference_type');
+  }
+  public set referenceType(value: string) {
+    this._referenceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get referenceTypeInput() {
+    return this._referenceType;
+  }
+}
+export interface SyntheticsTestMobileOptionsListMonitorOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}
+  */
+  readonly escalationMessage?: string;
+  /**
+  * Valid values are `show_all`, `hide_all`, `hide_query`, `hide_handles`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
+  */
+  readonly notificationPresetName?: string;
+  /**
+  * Specify a renotification frequency in minutes. Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`. Defaults to `0`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+  */
+  readonly renotifyInterval?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
+  */
+  readonly renotifyOccurrences?: number;
+}
+
+export function syntheticsTestMobileOptionsListMonitorOptionsToTerraform(struct?: SyntheticsTestMobileOptionsListMonitorOptionsOutputReference | SyntheticsTestMobileOptionsListMonitorOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    escalation_message: cdktf.stringToTerraform(struct!.escalationMessage),
+    notification_preset_name: cdktf.stringToTerraform(struct!.notificationPresetName),
+    renotify_interval: cdktf.numberToTerraform(struct!.renotifyInterval),
+    renotify_occurrences: cdktf.numberToTerraform(struct!.renotifyOccurrences),
+  }
+}
+
+
+export function syntheticsTestMobileOptionsListMonitorOptionsToHclTerraform(struct?: SyntheticsTestMobileOptionsListMonitorOptionsOutputReference | SyntheticsTestMobileOptionsListMonitorOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    escalation_message: {
+      value: cdktf.stringToHclTerraform(struct!.escalationMessage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    notification_preset_name: {
+      value: cdktf.stringToHclTerraform(struct!.notificationPresetName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    renotify_interval: {
+      value: cdktf.numberToHclTerraform(struct!.renotifyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    renotify_occurrences: {
+      value: cdktf.numberToHclTerraform(struct!.renotifyOccurrences),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileOptionsListMonitorOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileOptionsListMonitorOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._escalationMessage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.escalationMessage = this._escalationMessage;
+    }
+    if (this._notificationPresetName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationPresetName = this._notificationPresetName;
+    }
+    if (this._renotifyInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.renotifyInterval = this._renotifyInterval;
+    }
+    if (this._renotifyOccurrences !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.renotifyOccurrences = this._renotifyOccurrences;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileOptionsListMonitorOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._escalationMessage = undefined;
+      this._notificationPresetName = undefined;
+      this._renotifyInterval = undefined;
+      this._renotifyOccurrences = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._escalationMessage = value.escalationMessage;
+      this._notificationPresetName = value.notificationPresetName;
+      this._renotifyInterval = value.renotifyInterval;
+      this._renotifyOccurrences = value.renotifyOccurrences;
+    }
+  }
+
+  // escalation_message - computed: false, optional: true, required: false
+  private _escalationMessage?: string; 
+  public get escalationMessage() {
+    return this.getStringAttribute('escalation_message');
+  }
+  public set escalationMessage(value: string) {
+    this._escalationMessage = value;
+  }
+  public resetEscalationMessage() {
+    this._escalationMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get escalationMessageInput() {
+    return this._escalationMessage;
+  }
+
+  // notification_preset_name - computed: false, optional: true, required: false
+  private _notificationPresetName?: string; 
+  public get notificationPresetName() {
+    return this.getStringAttribute('notification_preset_name');
+  }
+  public set notificationPresetName(value: string) {
+    this._notificationPresetName = value;
+  }
+  public resetNotificationPresetName() {
+    this._notificationPresetName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationPresetNameInput() {
+    return this._notificationPresetName;
+  }
+
+  // renotify_interval - computed: false, optional: true, required: false
+  private _renotifyInterval?: number; 
+  public get renotifyInterval() {
+    return this.getNumberAttribute('renotify_interval');
+  }
+  public set renotifyInterval(value: number) {
+    this._renotifyInterval = value;
+  }
+  public resetRenotifyInterval() {
+    this._renotifyInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get renotifyIntervalInput() {
+    return this._renotifyInterval;
+  }
+
+  // renotify_occurrences - computed: false, optional: true, required: false
+  private _renotifyOccurrences?: number; 
+  public get renotifyOccurrences() {
+    return this.getNumberAttribute('renotify_occurrences');
+  }
+  public set renotifyOccurrences(value: number) {
+    this._renotifyOccurrences = value;
+  }
+  public resetRenotifyOccurrences() {
+    this._renotifyOccurrences = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get renotifyOccurrencesInput() {
+    return this._renotifyOccurrences;
+  }
+}
+export interface SyntheticsTestMobileOptionsListRetry {
+  /**
+  * Number of retries needed to consider a location as failed before sending a notification alert. Maximum value: `5`. Defaults to `0`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+  */
+  readonly count?: number;
+  /**
+  * Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+  */
+  readonly interval?: number;
+}
+
+export function syntheticsTestMobileOptionsListRetryToTerraform(struct?: SyntheticsTestMobileOptionsListRetryOutputReference | SyntheticsTestMobileOptionsListRetry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    count: cdktf.numberToTerraform(struct!.count),
+    interval: cdktf.numberToTerraform(struct!.interval),
+  }
+}
+
+
+export function syntheticsTestMobileOptionsListRetryToHclTerraform(struct?: SyntheticsTestMobileOptionsListRetryOutputReference | SyntheticsTestMobileOptionsListRetry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileOptionsListRetryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileOptionsListRetry | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._count !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._interval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interval = this._interval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileOptionsListRetry | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._count = undefined;
+      this._interval = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._count = value.count;
+      this._interval = value.interval;
+    }
+  }
+
+  // count - computed: false, optional: true, required: false
+  private _count?: number; 
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+  public set count(value: number) {
+    this._count = value;
+  }
+  public resetCount() {
+    this._count = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countInput() {
+    return this._count;
+  }
+
+  // interval - computed: false, optional: true, required: false
+  private _interval?: number; 
+  public get interval() {
+    return this.getNumberAttribute('interval');
+  }
+  public set interval(value: number) {
+    this._interval = value;
+  }
+  public resetInterval() {
+    this._interval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intervalInput() {
+    return this._interval;
+  }
+}
+export interface SyntheticsTestMobileOptionsListSchedulingTimeframes {
+  /**
+  * Number representing the day of the week
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#day SyntheticsTest#day}
+  */
+  readonly day: number;
+  /**
+  * The hour of the day on which scheduling starts.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#from SyntheticsTest#from}
+  */
+  readonly from: string;
+  /**
+  * The hour of the day on which scheduling ends.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+  */
+  readonly to: string;
+}
+
+export function syntheticsTestMobileOptionsListSchedulingTimeframesToTerraform(struct?: SyntheticsTestMobileOptionsListSchedulingTimeframes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day: cdktf.numberToTerraform(struct!.day),
+    from: cdktf.stringToTerraform(struct!.from),
+    to: cdktf.stringToTerraform(struct!.to),
+  }
+}
+
+
+export function syntheticsTestMobileOptionsListSchedulingTimeframesToHclTerraform(struct?: SyntheticsTestMobileOptionsListSchedulingTimeframes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.numberToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    from: {
+      value: cdktf.stringToHclTerraform(struct!.from),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    to: {
+      value: cdktf.stringToHclTerraform(struct!.to),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SyntheticsTestMobileOptionsListSchedulingTimeframes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._from !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.from = this._from;
+    }
+    if (this._to !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.to = this._to;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileOptionsListSchedulingTimeframes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._day = undefined;
+      this._from = undefined;
+      this._to = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._day = value.day;
+      this._from = value.from;
+      this._to = value.to;
+    }
+  }
+
+  // day - computed: false, optional: false, required: true
+  private _day?: number; 
+  public get day() {
+    return this.getNumberAttribute('day');
+  }
+  public set day(value: number) {
+    this._day = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // from - computed: false, optional: false, required: true
+  private _from?: string; 
+  public get from() {
+    return this.getStringAttribute('from');
+  }
+  public set from(value: string) {
+    this._from = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromInput() {
+    return this._from;
+  }
+
+  // to - computed: false, optional: false, required: true
+  private _to?: string; 
+  public get to() {
+    return this.getStringAttribute('to');
+  }
+  public set to(value: string) {
+    this._to = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toInput() {
+    return this._to;
+  }
+}
+
+export class SyntheticsTestMobileOptionsListSchedulingTimeframesList extends cdktf.ComplexList {
+  public internalValue? : SyntheticsTestMobileOptionsListSchedulingTimeframes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference {
+    return new SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SyntheticsTestMobileOptionsListScheduling {
+  /**
+  * Timezone in which the timeframe is based.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
+  */
+  readonly timezone: string;
+  /**
+  * timeframes block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
+  */
+  readonly timeframes: SyntheticsTestMobileOptionsListSchedulingTimeframes[] | cdktf.IResolvable;
+}
+
+export function syntheticsTestMobileOptionsListSchedulingToTerraform(struct?: SyntheticsTestMobileOptionsListSchedulingOutputReference | SyntheticsTestMobileOptionsListScheduling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    timezone: cdktf.stringToTerraform(struct!.timezone),
+    timeframes: cdktf.listMapper(syntheticsTestMobileOptionsListSchedulingTimeframesToTerraform, true)(struct!.timeframes),
+  }
+}
+
+
+export function syntheticsTestMobileOptionsListSchedulingToHclTerraform(struct?: SyntheticsTestMobileOptionsListSchedulingOutputReference | SyntheticsTestMobileOptionsListScheduling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    timezone: {
+      value: cdktf.stringToHclTerraform(struct!.timezone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeframes: {
+      value: cdktf.listMapperHcl(syntheticsTestMobileOptionsListSchedulingTimeframesToHclTerraform, true)(struct!.timeframes),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SyntheticsTestMobileOptionsListSchedulingTimeframesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileOptionsListSchedulingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileOptionsListScheduling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._timezone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timezone = this._timezone;
+    }
+    if (this._timeframes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeframes = this._timeframes?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileOptionsListScheduling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._timezone = undefined;
+      this._timeframes.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._timezone = value.timezone;
+      this._timeframes.internalValue = value.timeframes;
+    }
+  }
+
+  // timezone - computed: false, optional: false, required: true
+  private _timezone?: string; 
+  public get timezone() {
+    return this.getStringAttribute('timezone');
+  }
+  public set timezone(value: string) {
+    this._timezone = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timezoneInput() {
+    return this._timezone;
+  }
+
+  // timeframes - computed: false, optional: false, required: true
+  private _timeframes = new SyntheticsTestMobileOptionsListSchedulingTimeframesList(this, "timeframes", true);
+  public get timeframes() {
+    return this._timeframes;
+  }
+  public putTimeframes(value: SyntheticsTestMobileOptionsListSchedulingTimeframes[] | cdktf.IResolvable) {
+    this._timeframes.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeframesInput() {
+    return this._timeframes.internalValue;
+  }
+}
+export interface SyntheticsTestMobileOptionsListStruct {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}
+  */
+  readonly allowApplicationCrash?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}
+  */
+  readonly defaultStepTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
+  */
+  readonly deviceIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}
+  */
+  readonly disableAutoAcceptAlert?: boolean | cdktf.IResolvable;
+  /**
+  * Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+  */
+  readonly minFailureDuration?: number;
+  /**
+  * The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+  */
+  readonly monitorName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}
+  */
+  readonly monitorPriority?: number;
+  /**
+  * Prevents saving screenshots of the steps.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+  */
+  readonly noScreenshot?: boolean | cdktf.IResolvable;
+  /**
+  * A list of role identifiers pulled from the Roles API to restrict read and write access.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+  */
+  readonly restrictedRoles?: string[];
+  /**
+  * How often the test should run (in seconds).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+  */
+  readonly tickEvery: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#verbosity SyntheticsTest#verbosity}
+  */
+  readonly verbosity?: number;
+  /**
+  * bindings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#bindings SyntheticsTest#bindings}
+  */
+  readonly bindings?: SyntheticsTestMobileOptionsListBindings[] | cdktf.IResolvable;
+  /**
+  * ci block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+  */
+  readonly ci?: SyntheticsTestMobileOptionsListCi;
+  /**
+  * mobile_application block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#mobile_application SyntheticsTest#mobile_application}
+  */
+  readonly mobileApplication: SyntheticsTestMobileOptionsListMobileApplication;
+  /**
+  * monitor_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+  */
+  readonly monitorOptions?: SyntheticsTestMobileOptionsListMonitorOptions;
+  /**
+  * retry block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+  */
+  readonly retry?: SyntheticsTestMobileOptionsListRetry;
+  /**
+  * scheduling block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
+  */
+  readonly scheduling?: SyntheticsTestMobileOptionsListScheduling;
+}
+
+export function syntheticsTestMobileOptionsListStructToTerraform(struct?: SyntheticsTestMobileOptionsListStructOutputReference | SyntheticsTestMobileOptionsListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allow_application_crash: cdktf.booleanToTerraform(struct!.allowApplicationCrash),
+    default_step_timeout: cdktf.numberToTerraform(struct!.defaultStepTimeout),
+    device_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deviceIds),
+    disable_auto_accept_alert: cdktf.booleanToTerraform(struct!.disableAutoAcceptAlert),
+    min_failure_duration: cdktf.numberToTerraform(struct!.minFailureDuration),
+    monitor_name: cdktf.stringToTerraform(struct!.monitorName),
+    monitor_priority: cdktf.numberToTerraform(struct!.monitorPriority),
+    no_screenshot: cdktf.booleanToTerraform(struct!.noScreenshot),
+    restricted_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.restrictedRoles),
+    tick_every: cdktf.numberToTerraform(struct!.tickEvery),
+    verbosity: cdktf.numberToTerraform(struct!.verbosity),
+    bindings: cdktf.listMapper(syntheticsTestMobileOptionsListBindingsToTerraform, true)(struct!.bindings),
+    ci: syntheticsTestMobileOptionsListCiToTerraform(struct!.ci),
+    mobile_application: syntheticsTestMobileOptionsListMobileApplicationToTerraform(struct!.mobileApplication),
+    monitor_options: syntheticsTestMobileOptionsListMonitorOptionsToTerraform(struct!.monitorOptions),
+    retry: syntheticsTestMobileOptionsListRetryToTerraform(struct!.retry),
+    scheduling: syntheticsTestMobileOptionsListSchedulingToTerraform(struct!.scheduling),
+  }
+}
+
+
+export function syntheticsTestMobileOptionsListStructToHclTerraform(struct?: SyntheticsTestMobileOptionsListStructOutputReference | SyntheticsTestMobileOptionsListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_application_crash: {
+      value: cdktf.booleanToHclTerraform(struct!.allowApplicationCrash),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    default_step_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.defaultStepTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    device_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.deviceIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    disable_auto_accept_alert: {
+      value: cdktf.booleanToHclTerraform(struct!.disableAutoAcceptAlert),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    min_failure_duration: {
+      value: cdktf.numberToHclTerraform(struct!.minFailureDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    monitor_name: {
+      value: cdktf.stringToHclTerraform(struct!.monitorName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    monitor_priority: {
+      value: cdktf.numberToHclTerraform(struct!.monitorPriority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    no_screenshot: {
+      value: cdktf.booleanToHclTerraform(struct!.noScreenshot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    restricted_roles: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.restrictedRoles),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    tick_every: {
+      value: cdktf.numberToHclTerraform(struct!.tickEvery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    verbosity: {
+      value: cdktf.numberToHclTerraform(struct!.verbosity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    bindings: {
+      value: cdktf.listMapperHcl(syntheticsTestMobileOptionsListBindingsToHclTerraform, true)(struct!.bindings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileOptionsListBindingsList",
+    },
+    ci: {
+      value: syntheticsTestMobileOptionsListCiToHclTerraform(struct!.ci),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileOptionsListCiList",
+    },
+    mobile_application: {
+      value: syntheticsTestMobileOptionsListMobileApplicationToHclTerraform(struct!.mobileApplication),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileOptionsListMobileApplicationList",
+    },
+    monitor_options: {
+      value: syntheticsTestMobileOptionsListMonitorOptionsToHclTerraform(struct!.monitorOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileOptionsListMonitorOptionsList",
+    },
+    retry: {
+      value: syntheticsTestMobileOptionsListRetryToHclTerraform(struct!.retry),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileOptionsListRetryList",
+    },
+    scheduling: {
+      value: syntheticsTestMobileOptionsListSchedulingToHclTerraform(struct!.scheduling),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileOptionsListSchedulingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileOptionsListStructOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileOptionsListStruct | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowApplicationCrash !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowApplicationCrash = this._allowApplicationCrash;
+    }
+    if (this._defaultStepTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultStepTimeout = this._defaultStepTimeout;
+    }
+    if (this._deviceIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceIds = this._deviceIds;
+    }
+    if (this._disableAutoAcceptAlert !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disableAutoAcceptAlert = this._disableAutoAcceptAlert;
+    }
+    if (this._minFailureDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minFailureDuration = this._minFailureDuration;
+    }
+    if (this._monitorName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.monitorName = this._monitorName;
+    }
+    if (this._monitorPriority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.monitorPriority = this._monitorPriority;
+    }
+    if (this._noScreenshot !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noScreenshot = this._noScreenshot;
+    }
+    if (this._restrictedRoles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restrictedRoles = this._restrictedRoles;
+    }
+    if (this._tickEvery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tickEvery = this._tickEvery;
+    }
+    if (this._verbosity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.verbosity = this._verbosity;
+    }
+    if (this._bindings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bindings = this._bindings?.internalValue;
+    }
+    if (this._ci?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ci = this._ci?.internalValue;
+    }
+    if (this._mobileApplication?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mobileApplication = this._mobileApplication?.internalValue;
+    }
+    if (this._monitorOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.monitorOptions = this._monitorOptions?.internalValue;
+    }
+    if (this._retry?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retry = this._retry?.internalValue;
+    }
+    if (this._scheduling?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scheduling = this._scheduling?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileOptionsListStruct | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowApplicationCrash = undefined;
+      this._defaultStepTimeout = undefined;
+      this._deviceIds = undefined;
+      this._disableAutoAcceptAlert = undefined;
+      this._minFailureDuration = undefined;
+      this._monitorName = undefined;
+      this._monitorPriority = undefined;
+      this._noScreenshot = undefined;
+      this._restrictedRoles = undefined;
+      this._tickEvery = undefined;
+      this._verbosity = undefined;
+      this._bindings.internalValue = undefined;
+      this._ci.internalValue = undefined;
+      this._mobileApplication.internalValue = undefined;
+      this._monitorOptions.internalValue = undefined;
+      this._retry.internalValue = undefined;
+      this._scheduling.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowApplicationCrash = value.allowApplicationCrash;
+      this._defaultStepTimeout = value.defaultStepTimeout;
+      this._deviceIds = value.deviceIds;
+      this._disableAutoAcceptAlert = value.disableAutoAcceptAlert;
+      this._minFailureDuration = value.minFailureDuration;
+      this._monitorName = value.monitorName;
+      this._monitorPriority = value.monitorPriority;
+      this._noScreenshot = value.noScreenshot;
+      this._restrictedRoles = value.restrictedRoles;
+      this._tickEvery = value.tickEvery;
+      this._verbosity = value.verbosity;
+      this._bindings.internalValue = value.bindings;
+      this._ci.internalValue = value.ci;
+      this._mobileApplication.internalValue = value.mobileApplication;
+      this._monitorOptions.internalValue = value.monitorOptions;
+      this._retry.internalValue = value.retry;
+      this._scheduling.internalValue = value.scheduling;
+    }
+  }
+
+  // allow_application_crash - computed: false, optional: true, required: false
+  private _allowApplicationCrash?: boolean | cdktf.IResolvable; 
+  public get allowApplicationCrash() {
+    return this.getBooleanAttribute('allow_application_crash');
+  }
+  public set allowApplicationCrash(value: boolean | cdktf.IResolvable) {
+    this._allowApplicationCrash = value;
+  }
+  public resetAllowApplicationCrash() {
+    this._allowApplicationCrash = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowApplicationCrashInput() {
+    return this._allowApplicationCrash;
+  }
+
+  // default_step_timeout - computed: false, optional: true, required: false
+  private _defaultStepTimeout?: number; 
+  public get defaultStepTimeout() {
+    return this.getNumberAttribute('default_step_timeout');
+  }
+  public set defaultStepTimeout(value: number) {
+    this._defaultStepTimeout = value;
+  }
+  public resetDefaultStepTimeout() {
+    this._defaultStepTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultStepTimeoutInput() {
+    return this._defaultStepTimeout;
+  }
+
+  // device_ids - computed: false, optional: false, required: true
+  private _deviceIds?: string[]; 
+  public get deviceIds() {
+    return this.getListAttribute('device_ids');
+  }
+  public set deviceIds(value: string[]) {
+    this._deviceIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceIdsInput() {
+    return this._deviceIds;
+  }
+
+  // disable_auto_accept_alert - computed: false, optional: true, required: false
+  private _disableAutoAcceptAlert?: boolean | cdktf.IResolvable; 
+  public get disableAutoAcceptAlert() {
+    return this.getBooleanAttribute('disable_auto_accept_alert');
+  }
+  public set disableAutoAcceptAlert(value: boolean | cdktf.IResolvable) {
+    this._disableAutoAcceptAlert = value;
+  }
+  public resetDisableAutoAcceptAlert() {
+    this._disableAutoAcceptAlert = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableAutoAcceptAlertInput() {
+    return this._disableAutoAcceptAlert;
+  }
+
+  // min_failure_duration - computed: false, optional: true, required: false
+  private _minFailureDuration?: number; 
+  public get minFailureDuration() {
+    return this.getNumberAttribute('min_failure_duration');
+  }
+  public set minFailureDuration(value: number) {
+    this._minFailureDuration = value;
+  }
+  public resetMinFailureDuration() {
+    this._minFailureDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minFailureDurationInput() {
+    return this._minFailureDuration;
+  }
+
+  // monitor_name - computed: false, optional: true, required: false
+  private _monitorName?: string; 
+  public get monitorName() {
+    return this.getStringAttribute('monitor_name');
+  }
+  public set monitorName(value: string) {
+    this._monitorName = value;
+  }
+  public resetMonitorName() {
+    this._monitorName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorNameInput() {
+    return this._monitorName;
+  }
+
+  // monitor_priority - computed: false, optional: true, required: false
+  private _monitorPriority?: number; 
+  public get monitorPriority() {
+    return this.getNumberAttribute('monitor_priority');
+  }
+  public set monitorPriority(value: number) {
+    this._monitorPriority = value;
+  }
+  public resetMonitorPriority() {
+    this._monitorPriority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorPriorityInput() {
+    return this._monitorPriority;
+  }
+
+  // no_screenshot - computed: false, optional: true, required: false
+  private _noScreenshot?: boolean | cdktf.IResolvable; 
+  public get noScreenshot() {
+    return this.getBooleanAttribute('no_screenshot');
+  }
+  public set noScreenshot(value: boolean | cdktf.IResolvable) {
+    this._noScreenshot = value;
+  }
+  public resetNoScreenshot() {
+    this._noScreenshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noScreenshotInput() {
+    return this._noScreenshot;
+  }
+
+  // restricted_roles - computed: false, optional: true, required: false
+  private _restrictedRoles?: string[]; 
+  public get restrictedRoles() {
+    return cdktf.Fn.tolist(this.getListAttribute('restricted_roles'));
+  }
+  public set restrictedRoles(value: string[]) {
+    this._restrictedRoles = value;
+  }
+  public resetRestrictedRoles() {
+    this._restrictedRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictedRolesInput() {
+    return this._restrictedRoles;
+  }
+
+  // tick_every - computed: false, optional: false, required: true
+  private _tickEvery?: number; 
+  public get tickEvery() {
+    return this.getNumberAttribute('tick_every');
+  }
+  public set tickEvery(value: number) {
+    this._tickEvery = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tickEveryInput() {
+    return this._tickEvery;
+  }
+
+  // verbosity - computed: false, optional: true, required: false
+  private _verbosity?: number; 
+  public get verbosity() {
+    return this.getNumberAttribute('verbosity');
+  }
+  public set verbosity(value: number) {
+    this._verbosity = value;
+  }
+  public resetVerbosity() {
+    this._verbosity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get verbosityInput() {
+    return this._verbosity;
+  }
+
+  // bindings - computed: false, optional: true, required: false
+  private _bindings = new SyntheticsTestMobileOptionsListBindingsList(this, "bindings", false);
+  public get bindings() {
+    return this._bindings;
+  }
+  public putBindings(value: SyntheticsTestMobileOptionsListBindings[] | cdktf.IResolvable) {
+    this._bindings.internalValue = value;
+  }
+  public resetBindings() {
+    this._bindings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bindingsInput() {
+    return this._bindings.internalValue;
+  }
+
+  // ci - computed: false, optional: true, required: false
+  private _ci = new SyntheticsTestMobileOptionsListCiOutputReference(this, "ci");
+  public get ci() {
+    return this._ci;
+  }
+  public putCi(value: SyntheticsTestMobileOptionsListCi) {
+    this._ci.internalValue = value;
+  }
+  public resetCi() {
+    this._ci.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ciInput() {
+    return this._ci.internalValue;
+  }
+
+  // mobile_application - computed: false, optional: false, required: true
+  private _mobileApplication = new SyntheticsTestMobileOptionsListMobileApplicationOutputReference(this, "mobile_application");
+  public get mobileApplication() {
+    return this._mobileApplication;
+  }
+  public putMobileApplication(value: SyntheticsTestMobileOptionsListMobileApplication) {
+    this._mobileApplication.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mobileApplicationInput() {
+    return this._mobileApplication.internalValue;
+  }
+
+  // monitor_options - computed: false, optional: true, required: false
+  private _monitorOptions = new SyntheticsTestMobileOptionsListMonitorOptionsOutputReference(this, "monitor_options");
+  public get monitorOptions() {
+    return this._monitorOptions;
+  }
+  public putMonitorOptions(value: SyntheticsTestMobileOptionsListMonitorOptions) {
+    this._monitorOptions.internalValue = value;
+  }
+  public resetMonitorOptions() {
+    this._monitorOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorOptionsInput() {
+    return this._monitorOptions.internalValue;
+  }
+
+  // retry - computed: false, optional: true, required: false
+  private _retry = new SyntheticsTestMobileOptionsListRetryOutputReference(this, "retry");
+  public get retry() {
+    return this._retry;
+  }
+  public putRetry(value: SyntheticsTestMobileOptionsListRetry) {
+    this._retry.internalValue = value;
+  }
+  public resetRetry() {
+    this._retry.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryInput() {
+    return this._retry.internalValue;
+  }
+
+  // scheduling - computed: false, optional: true, required: false
+  private _scheduling = new SyntheticsTestMobileOptionsListSchedulingOutputReference(this, "scheduling");
+  public get scheduling() {
+    return this._scheduling;
+  }
+  public putScheduling(value: SyntheticsTestMobileOptionsListScheduling) {
+    this._scheduling.internalValue = value;
+  }
+  public resetScheduling() {
+    this._scheduling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulingInput() {
+    return this._scheduling.internalValue;
+  }
+}
+export interface SyntheticsTestMobileStepParamsElementRelativePosition {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+  */
+  readonly x?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+  */
+  readonly y?: number;
+}
+
+export function syntheticsTestMobileStepParamsElementRelativePositionToTerraform(struct?: SyntheticsTestMobileStepParamsElementRelativePositionOutputReference | SyntheticsTestMobileStepParamsElementRelativePosition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    x: cdktf.numberToTerraform(struct!.x),
+    y: cdktf.numberToTerraform(struct!.y),
+  }
+}
+
+
+export function syntheticsTestMobileStepParamsElementRelativePositionToHclTerraform(struct?: SyntheticsTestMobileStepParamsElementRelativePositionOutputReference | SyntheticsTestMobileStepParamsElementRelativePosition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    x: {
+      value: cdktf.numberToHclTerraform(struct!.x),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y: {
+      value: cdktf.numberToHclTerraform(struct!.y),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileStepParamsElementRelativePositionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileStepParamsElementRelativePosition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._x !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.x = this._x;
+    }
+    if (this._y !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.y = this._y;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileStepParamsElementRelativePosition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._x = undefined;
+      this._y = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._x = value.x;
+      this._y = value.y;
+    }
+  }
+
+  // x - computed: false, optional: true, required: false
+  private _x?: number; 
+  public get x() {
+    return this.getNumberAttribute('x');
+  }
+  public set x(value: number) {
+    this._x = value;
+  }
+  public resetX() {
+    this._x = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xInput() {
+    return this._x;
+  }
+
+  // y - computed: false, optional: true, required: false
+  private _y?: number; 
+  public get y() {
+    return this.getNumberAttribute('y');
+  }
+  public set y(value: number) {
+    this._y = value;
+  }
+  public resetY() {
+    this._y = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yInput() {
+    return this._y;
+  }
+}
+export interface SyntheticsTestMobileStepParamsElementUserLocatorValues {
+  /**
+  * Valid values are `accessibility-id`, `id`, `ios-predicate-string`, `ios-class-chain`, `xpath`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  */
+  readonly type?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  */
+  readonly value?: string;
+}
+
+export function syntheticsTestMobileStepParamsElementUserLocatorValuesToTerraform(struct?: SyntheticsTestMobileStepParamsElementUserLocatorValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function syntheticsTestMobileStepParamsElementUserLocatorValuesToHclTerraform(struct?: SyntheticsTestMobileStepParamsElementUserLocatorValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SyntheticsTestMobileStepParamsElementUserLocatorValues | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileStepParamsElementUserLocatorValues | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class SyntheticsTestMobileStepParamsElementUserLocatorValuesList extends cdktf.ComplexList {
+  public internalValue? : SyntheticsTestMobileStepParamsElementUserLocatorValues[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference {
+    return new SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SyntheticsTestMobileStepParamsElementUserLocator {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
+  */
+  readonly failTestOnCannotLocate?: boolean | cdktf.IResolvable;
+  /**
+  * values block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#values SyntheticsTest#values}
+  */
+  readonly values?: SyntheticsTestMobileStepParamsElementUserLocatorValues[] | cdktf.IResolvable;
+}
+
+export function syntheticsTestMobileStepParamsElementUserLocatorToTerraform(struct?: SyntheticsTestMobileStepParamsElementUserLocatorOutputReference | SyntheticsTestMobileStepParamsElementUserLocator): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    fail_test_on_cannot_locate: cdktf.booleanToTerraform(struct!.failTestOnCannotLocate),
+    values: cdktf.listMapper(syntheticsTestMobileStepParamsElementUserLocatorValuesToTerraform, true)(struct!.values),
+  }
+}
+
+
+export function syntheticsTestMobileStepParamsElementUserLocatorToHclTerraform(struct?: SyntheticsTestMobileStepParamsElementUserLocatorOutputReference | SyntheticsTestMobileStepParamsElementUserLocator): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fail_test_on_cannot_locate: {
+      value: cdktf.booleanToHclTerraform(struct!.failTestOnCannotLocate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    values: {
+      value: cdktf.listMapperHcl(syntheticsTestMobileStepParamsElementUserLocatorValuesToHclTerraform, true)(struct!.values),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileStepParamsElementUserLocatorValuesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileStepParamsElementUserLocatorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileStepParamsElementUserLocator | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._failTestOnCannotLocate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failTestOnCannotLocate = this._failTestOnCannotLocate;
+    }
+    if (this._values?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileStepParamsElementUserLocator | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._failTestOnCannotLocate = undefined;
+      this._values.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._failTestOnCannotLocate = value.failTestOnCannotLocate;
+      this._values.internalValue = value.values;
+    }
+  }
+
+  // fail_test_on_cannot_locate - computed: false, optional: true, required: false
+  private _failTestOnCannotLocate?: boolean | cdktf.IResolvable; 
+  public get failTestOnCannotLocate() {
+    return this.getBooleanAttribute('fail_test_on_cannot_locate');
+  }
+  public set failTestOnCannotLocate(value: boolean | cdktf.IResolvable) {
+    this._failTestOnCannotLocate = value;
+  }
+  public resetFailTestOnCannotLocate() {
+    this._failTestOnCannotLocate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failTestOnCannotLocateInput() {
+    return this._failTestOnCannotLocate;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values = new SyntheticsTestMobileStepParamsElementUserLocatorValuesList(this, "values", false);
+  public get values() {
+    return this._values;
+  }
+  public putValues(value: SyntheticsTestMobileStepParamsElementUserLocatorValues[] | cdktf.IResolvable) {
+    this._values.internalValue = value;
+  }
+  public resetValues() {
+    this._values.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values.internalValue;
+  }
+}
+export interface SyntheticsTestMobileStepParamsElement {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#context SyntheticsTest#context}
+  */
+  readonly context?: string;
+  /**
+  * Valid values are `native`, `web`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#context_type SyntheticsTest#context_type}
+  */
+  readonly contextType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#element_description SyntheticsTest#element_description}
+  */
+  readonly elementDescription?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#multi_locator SyntheticsTest#multi_locator}
+  */
+  readonly multiLocator?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#text_content SyntheticsTest#text_content}
+  */
+  readonly textContent?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#view_name SyntheticsTest#view_name}
+  */
+  readonly viewName?: string;
+  /**
+  * relative_position block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#relative_position SyntheticsTest#relative_position}
+  */
+  readonly relativePosition?: SyntheticsTestMobileStepParamsElementRelativePosition;
+  /**
+  * user_locator block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#user_locator SyntheticsTest#user_locator}
+  */
+  readonly userLocator?: SyntheticsTestMobileStepParamsElementUserLocator;
+}
+
+export function syntheticsTestMobileStepParamsElementToTerraform(struct?: SyntheticsTestMobileStepParamsElementOutputReference | SyntheticsTestMobileStepParamsElement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    context: cdktf.stringToTerraform(struct!.context),
+    context_type: cdktf.stringToTerraform(struct!.contextType),
+    element_description: cdktf.stringToTerraform(struct!.elementDescription),
+    multi_locator: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.multiLocator),
+    text_content: cdktf.stringToTerraform(struct!.textContent),
+    view_name: cdktf.stringToTerraform(struct!.viewName),
+    relative_position: syntheticsTestMobileStepParamsElementRelativePositionToTerraform(struct!.relativePosition),
+    user_locator: syntheticsTestMobileStepParamsElementUserLocatorToTerraform(struct!.userLocator),
+  }
+}
+
+
+export function syntheticsTestMobileStepParamsElementToHclTerraform(struct?: SyntheticsTestMobileStepParamsElementOutputReference | SyntheticsTestMobileStepParamsElement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    context: {
+      value: cdktf.stringToHclTerraform(struct!.context),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    context_type: {
+      value: cdktf.stringToHclTerraform(struct!.contextType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    element_description: {
+      value: cdktf.stringToHclTerraform(struct!.elementDescription),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    multi_locator: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.multiLocator),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    text_content: {
+      value: cdktf.stringToHclTerraform(struct!.textContent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    view_name: {
+      value: cdktf.stringToHclTerraform(struct!.viewName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    relative_position: {
+      value: syntheticsTestMobileStepParamsElementRelativePositionToHclTerraform(struct!.relativePosition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileStepParamsElementRelativePositionList",
+    },
+    user_locator: {
+      value: syntheticsTestMobileStepParamsElementUserLocatorToHclTerraform(struct!.userLocator),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileStepParamsElementUserLocatorList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileStepParamsElementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileStepParamsElement | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._context !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.context = this._context;
+    }
+    if (this._contextType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contextType = this._contextType;
+    }
+    if (this._elementDescription !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.elementDescription = this._elementDescription;
+    }
+    if (this._multiLocator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.multiLocator = this._multiLocator;
+    }
+    if (this._textContent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.textContent = this._textContent;
+    }
+    if (this._viewName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.viewName = this._viewName;
+    }
+    if (this._relativePosition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.relativePosition = this._relativePosition?.internalValue;
+    }
+    if (this._userLocator?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userLocator = this._userLocator?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileStepParamsElement | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._context = undefined;
+      this._contextType = undefined;
+      this._elementDescription = undefined;
+      this._multiLocator = undefined;
+      this._textContent = undefined;
+      this._viewName = undefined;
+      this._relativePosition.internalValue = undefined;
+      this._userLocator.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._context = value.context;
+      this._contextType = value.contextType;
+      this._elementDescription = value.elementDescription;
+      this._multiLocator = value.multiLocator;
+      this._textContent = value.textContent;
+      this._viewName = value.viewName;
+      this._relativePosition.internalValue = value.relativePosition;
+      this._userLocator.internalValue = value.userLocator;
+    }
+  }
+
+  // context - computed: false, optional: true, required: false
+  private _context?: string; 
+  public get context() {
+    return this.getStringAttribute('context');
+  }
+  public set context(value: string) {
+    this._context = value;
+  }
+  public resetContext() {
+    this._context = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextInput() {
+    return this._context;
+  }
+
+  // context_type - computed: false, optional: true, required: false
+  private _contextType?: string; 
+  public get contextType() {
+    return this.getStringAttribute('context_type');
+  }
+  public set contextType(value: string) {
+    this._contextType = value;
+  }
+  public resetContextType() {
+    this._contextType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextTypeInput() {
+    return this._contextType;
+  }
+
+  // element_description - computed: false, optional: true, required: false
+  private _elementDescription?: string; 
+  public get elementDescription() {
+    return this.getStringAttribute('element_description');
+  }
+  public set elementDescription(value: string) {
+    this._elementDescription = value;
+  }
+  public resetElementDescription() {
+    this._elementDescription = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elementDescriptionInput() {
+    return this._elementDescription;
+  }
+
+  // multi_locator - computed: false, optional: true, required: false
+  private _multiLocator?: { [key: string]: string }; 
+  public get multiLocator() {
+    return this.getStringMapAttribute('multi_locator');
+  }
+  public set multiLocator(value: { [key: string]: string }) {
+    this._multiLocator = value;
+  }
+  public resetMultiLocator() {
+    this._multiLocator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multiLocatorInput() {
+    return this._multiLocator;
+  }
+
+  // text_content - computed: false, optional: true, required: false
+  private _textContent?: string; 
+  public get textContent() {
+    return this.getStringAttribute('text_content');
+  }
+  public set textContent(value: string) {
+    this._textContent = value;
+  }
+  public resetTextContent() {
+    this._textContent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get textContentInput() {
+    return this._textContent;
+  }
+
+  // view_name - computed: false, optional: true, required: false
+  private _viewName?: string; 
+  public get viewName() {
+    return this.getStringAttribute('view_name');
+  }
+  public set viewName(value: string) {
+    this._viewName = value;
+  }
+  public resetViewName() {
+    this._viewName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get viewNameInput() {
+    return this._viewName;
+  }
+
+  // relative_position - computed: false, optional: true, required: false
+  private _relativePosition = new SyntheticsTestMobileStepParamsElementRelativePositionOutputReference(this, "relative_position");
+  public get relativePosition() {
+    return this._relativePosition;
+  }
+  public putRelativePosition(value: SyntheticsTestMobileStepParamsElementRelativePosition) {
+    this._relativePosition.internalValue = value;
+  }
+  public resetRelativePosition() {
+    this._relativePosition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get relativePositionInput() {
+    return this._relativePosition.internalValue;
+  }
+
+  // user_locator - computed: false, optional: true, required: false
+  private _userLocator = new SyntheticsTestMobileStepParamsElementUserLocatorOutputReference(this, "user_locator");
+  public get userLocator() {
+    return this._userLocator;
+  }
+  public putUserLocator(value: SyntheticsTestMobileStepParamsElementUserLocator) {
+    this._userLocator.internalValue = value;
+  }
+  public resetUserLocator() {
+    this._userLocator.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userLocatorInput() {
+    return this._userLocator.internalValue;
+  }
+}
+export interface SyntheticsTestMobileStepParamsPositions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+  */
+  readonly x?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+  */
+  readonly y?: number;
+}
+
+export function syntheticsTestMobileStepParamsPositionsToTerraform(struct?: SyntheticsTestMobileStepParamsPositions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    x: cdktf.numberToTerraform(struct!.x),
+    y: cdktf.numberToTerraform(struct!.y),
+  }
+}
+
+
+export function syntheticsTestMobileStepParamsPositionsToHclTerraform(struct?: SyntheticsTestMobileStepParamsPositions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    x: {
+      value: cdktf.numberToHclTerraform(struct!.x),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y: {
+      value: cdktf.numberToHclTerraform(struct!.y),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileStepParamsPositionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SyntheticsTestMobileStepParamsPositions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._x !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.x = this._x;
+    }
+    if (this._y !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.y = this._y;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileStepParamsPositions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._x = undefined;
+      this._y = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._x = value.x;
+      this._y = value.y;
+    }
+  }
+
+  // x - computed: false, optional: true, required: false
+  private _x?: number; 
+  public get x() {
+    return this.getNumberAttribute('x');
+  }
+  public set x(value: number) {
+    this._x = value;
+  }
+  public resetX() {
+    this._x = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xInput() {
+    return this._x;
+  }
+
+  // y - computed: false, optional: true, required: false
+  private _y?: number; 
+  public get y() {
+    return this.getNumberAttribute('y');
+  }
+  public set y(value: number) {
+    this._y = value;
+  }
+  public resetY() {
+    this._y = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yInput() {
+    return this._y;
+  }
+}
+
+export class SyntheticsTestMobileStepParamsPositionsList extends cdktf.ComplexList {
+  public internalValue? : SyntheticsTestMobileStepParamsPositions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SyntheticsTestMobileStepParamsPositionsOutputReference {
+    return new SyntheticsTestMobileStepParamsPositionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SyntheticsTestMobileStepParamsVariable {
+  /**
+  * Example of the extracted variable. Defaults to `""`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+  */
+  readonly example?: string;
+  /**
+  * Name of the extracted variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  */
+  readonly name: string;
+}
+
+export function syntheticsTestMobileStepParamsVariableToTerraform(struct?: SyntheticsTestMobileStepParamsVariableOutputReference | SyntheticsTestMobileStepParamsVariable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    example: cdktf.stringToTerraform(struct!.example),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function syntheticsTestMobileStepParamsVariableToHclTerraform(struct?: SyntheticsTestMobileStepParamsVariableOutputReference | SyntheticsTestMobileStepParamsVariable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    example: {
+      value: cdktf.stringToHclTerraform(struct!.example),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileStepParamsVariableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileStepParamsVariable | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._example !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.example = this._example;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileStepParamsVariable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._example = undefined;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._example = value.example;
+      this._name = value.name;
+    }
+  }
+
+  // example - computed: false, optional: true, required: false
+  private _example?: string; 
+  public get example() {
+    return this.getStringAttribute('example');
+  }
+  public set example(value: string) {
+    this._example = value;
+  }
+  public resetExample() {
+    this._example = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exampleInput() {
+    return this._example;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface SyntheticsTestMobileStepParams {
+  /**
+  * Check type to use for an assertion step. Valid values are `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `notStartsWith`, `greater`, `lower`, `greaterEquals`, `lowerEquals`, `matchRegex`, `between`, `isEmpty`, `notIsEmpty`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#check SyntheticsTest#check}
+  */
+  readonly check?: string;
+  /**
+  * Delay between each key stroke for a "type test" step.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+  */
+  readonly delay?: number;
+  /**
+  * Valid values are `up`, `down`, `left`, `right`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#direction SyntheticsTest#direction}
+  */
+  readonly direction?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}
+  */
+  readonly enable?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}
+  */
+  readonly maxScrolls?: number;
+  /**
+  * ID of the Synthetics test to use as subtest.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+  */
+  readonly subtestPublicId?: string;
+  /**
+  * Value of the step.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  */
+  readonly value?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}
+  */
+  readonly withEnter?: boolean | cdktf.IResolvable;
+  /**
+  * X coordinates for a "scroll step".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+  */
+  readonly x?: number;
+  /**
+  * Y coordinates for a "scroll step".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+  */
+  readonly y?: number;
+  /**
+  * element block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#element SyntheticsTest#element}
+  */
+  readonly element?: SyntheticsTestMobileStepParamsElement;
+  /**
+  * positions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#positions SyntheticsTest#positions}
+  */
+  readonly positions?: SyntheticsTestMobileStepParamsPositions[] | cdktf.IResolvable;
+  /**
+  * variable block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
+  */
+  readonly variable?: SyntheticsTestMobileStepParamsVariable;
+}
+
+export function syntheticsTestMobileStepParamsToTerraform(struct?: SyntheticsTestMobileStepParamsOutputReference | SyntheticsTestMobileStepParams): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    check: cdktf.stringToTerraform(struct!.check),
+    delay: cdktf.numberToTerraform(struct!.delay),
+    direction: cdktf.stringToTerraform(struct!.direction),
+    enable: cdktf.booleanToTerraform(struct!.enable),
+    max_scrolls: cdktf.numberToTerraform(struct!.maxScrolls),
+    subtest_public_id: cdktf.stringToTerraform(struct!.subtestPublicId),
+    value: cdktf.stringToTerraform(struct!.value),
+    with_enter: cdktf.booleanToTerraform(struct!.withEnter),
+    x: cdktf.numberToTerraform(struct!.x),
+    y: cdktf.numberToTerraform(struct!.y),
+    element: syntheticsTestMobileStepParamsElementToTerraform(struct!.element),
+    positions: cdktf.listMapper(syntheticsTestMobileStepParamsPositionsToTerraform, true)(struct!.positions),
+    variable: syntheticsTestMobileStepParamsVariableToTerraform(struct!.variable),
+  }
+}
+
+
+export function syntheticsTestMobileStepParamsToHclTerraform(struct?: SyntheticsTestMobileStepParamsOutputReference | SyntheticsTestMobileStepParams): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    check: {
+      value: cdktf.stringToHclTerraform(struct!.check),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delay: {
+      value: cdktf.numberToHclTerraform(struct!.delay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    direction: {
+      value: cdktf.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable: {
+      value: cdktf.booleanToHclTerraform(struct!.enable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    max_scrolls: {
+      value: cdktf.numberToHclTerraform(struct!.maxScrolls),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    subtest_public_id: {
+      value: cdktf.stringToHclTerraform(struct!.subtestPublicId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    with_enter: {
+      value: cdktf.booleanToHclTerraform(struct!.withEnter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    x: {
+      value: cdktf.numberToHclTerraform(struct!.x),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y: {
+      value: cdktf.numberToHclTerraform(struct!.y),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    element: {
+      value: syntheticsTestMobileStepParamsElementToHclTerraform(struct!.element),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileStepParamsElementList",
+    },
+    positions: {
+      value: cdktf.listMapperHcl(syntheticsTestMobileStepParamsPositionsToHclTerraform, true)(struct!.positions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileStepParamsPositionsList",
+    },
+    variable: {
+      value: syntheticsTestMobileStepParamsVariableToHclTerraform(struct!.variable),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileStepParamsVariableList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileStepParamsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestMobileStepParams | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._check !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.check = this._check;
+    }
+    if (this._delay !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delay = this._delay;
+    }
+    if (this._direction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.direction = this._direction;
+    }
+    if (this._enable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enable = this._enable;
+    }
+    if (this._maxScrolls !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxScrolls = this._maxScrolls;
+    }
+    if (this._subtestPublicId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subtestPublicId = this._subtestPublicId;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    if (this._withEnter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.withEnter = this._withEnter;
+    }
+    if (this._x !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.x = this._x;
+    }
+    if (this._y !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.y = this._y;
+    }
+    if (this._element?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.element = this._element?.internalValue;
+    }
+    if (this._positions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.positions = this._positions?.internalValue;
+    }
+    if (this._variable?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.variable = this._variable?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileStepParams | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._check = undefined;
+      this._delay = undefined;
+      this._direction = undefined;
+      this._enable = undefined;
+      this._maxScrolls = undefined;
+      this._subtestPublicId = undefined;
+      this._value = undefined;
+      this._withEnter = undefined;
+      this._x = undefined;
+      this._y = undefined;
+      this._element.internalValue = undefined;
+      this._positions.internalValue = undefined;
+      this._variable.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._check = value.check;
+      this._delay = value.delay;
+      this._direction = value.direction;
+      this._enable = value.enable;
+      this._maxScrolls = value.maxScrolls;
+      this._subtestPublicId = value.subtestPublicId;
+      this._value = value.value;
+      this._withEnter = value.withEnter;
+      this._x = value.x;
+      this._y = value.y;
+      this._element.internalValue = value.element;
+      this._positions.internalValue = value.positions;
+      this._variable.internalValue = value.variable;
+    }
+  }
+
+  // check - computed: false, optional: true, required: false
+  private _check?: string; 
+  public get check() {
+    return this.getStringAttribute('check');
+  }
+  public set check(value: string) {
+    this._check = value;
+  }
+  public resetCheck() {
+    this._check = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checkInput() {
+    return this._check;
+  }
+
+  // delay - computed: false, optional: true, required: false
+  private _delay?: number; 
+  public get delay() {
+    return this.getNumberAttribute('delay');
+  }
+  public set delay(value: number) {
+    this._delay = value;
+  }
+  public resetDelay() {
+    this._delay = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delayInput() {
+    return this._delay;
+  }
+
+  // direction - computed: false, optional: true, required: false
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  public resetDirection() {
+    this._direction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
+  // enable - computed: false, optional: true, required: false
+  private _enable?: boolean | cdktf.IResolvable; 
+  public get enable() {
+    return this.getBooleanAttribute('enable');
+  }
+  public set enable(value: boolean | cdktf.IResolvable) {
+    this._enable = value;
+  }
+  public resetEnable() {
+    this._enable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableInput() {
+    return this._enable;
+  }
+
+  // max_scrolls - computed: false, optional: true, required: false
+  private _maxScrolls?: number; 
+  public get maxScrolls() {
+    return this.getNumberAttribute('max_scrolls');
+  }
+  public set maxScrolls(value: number) {
+    this._maxScrolls = value;
+  }
+  public resetMaxScrolls() {
+    this._maxScrolls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxScrollsInput() {
+    return this._maxScrolls;
+  }
+
+  // subtest_public_id - computed: false, optional: true, required: false
+  private _subtestPublicId?: string; 
+  public get subtestPublicId() {
+    return this.getStringAttribute('subtest_public_id');
+  }
+  public set subtestPublicId(value: string) {
+    this._subtestPublicId = value;
+  }
+  public resetSubtestPublicId() {
+    this._subtestPublicId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subtestPublicIdInput() {
+    return this._subtestPublicId;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+
+  // with_enter - computed: false, optional: true, required: false
+  private _withEnter?: boolean | cdktf.IResolvable; 
+  public get withEnter() {
+    return this.getBooleanAttribute('with_enter');
+  }
+  public set withEnter(value: boolean | cdktf.IResolvable) {
+    this._withEnter = value;
+  }
+  public resetWithEnter() {
+    this._withEnter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get withEnterInput() {
+    return this._withEnter;
+  }
+
+  // x - computed: false, optional: true, required: false
+  private _x?: number; 
+  public get x() {
+    return this.getNumberAttribute('x');
+  }
+  public set x(value: number) {
+    this._x = value;
+  }
+  public resetX() {
+    this._x = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xInput() {
+    return this._x;
+  }
+
+  // y - computed: false, optional: true, required: false
+  private _y?: number; 
+  public get y() {
+    return this.getNumberAttribute('y');
+  }
+  public set y(value: number) {
+    this._y = value;
+  }
+  public resetY() {
+    this._y = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yInput() {
+    return this._y;
+  }
+
+  // element - computed: false, optional: true, required: false
+  private _element = new SyntheticsTestMobileStepParamsElementOutputReference(this, "element");
+  public get element() {
+    return this._element;
+  }
+  public putElement(value: SyntheticsTestMobileStepParamsElement) {
+    this._element.internalValue = value;
+  }
+  public resetElement() {
+    this._element.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elementInput() {
+    return this._element.internalValue;
+  }
+
+  // positions - computed: false, optional: true, required: false
+  private _positions = new SyntheticsTestMobileStepParamsPositionsList(this, "positions", false);
+  public get positions() {
+    return this._positions;
+  }
+  public putPositions(value: SyntheticsTestMobileStepParamsPositions[] | cdktf.IResolvable) {
+    this._positions.internalValue = value;
+  }
+  public resetPositions() {
+    this._positions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get positionsInput() {
+    return this._positions.internalValue;
+  }
+
+  // variable - computed: false, optional: true, required: false
+  private _variable = new SyntheticsTestMobileStepParamsVariableOutputReference(this, "variable");
+  public get variable() {
+    return this._variable;
+  }
+  public putVariable(value: SyntheticsTestMobileStepParamsVariable) {
+    this._variable.internalValue = value;
+  }
+  public resetVariable() {
+    this._variable.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variableInput() {
+    return this._variable.internalValue;
+  }
+}
+export interface SyntheticsTestMobileStep {
+  /**
+  * A boolean set to allow this step to fail.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+  */
+  readonly allowFailure?: boolean | cdktf.IResolvable;
+  /**
+  * A boolean set to determine if the step has a new step element.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#has_new_step_element SyntheticsTest#has_new_step_element}
+  */
+  readonly hasNewStepElement?: boolean | cdktf.IResolvable;
+  /**
+  * A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+  */
+  readonly isCritical?: boolean | cdktf.IResolvable;
+  /**
+  * The name of the step.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  */
+  readonly name: string;
+  /**
+  * A boolean set to not take a screenshot for the step.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+  */
+  readonly noScreenshot?: boolean | cdktf.IResolvable;
+  /**
+  * The public ID of the step.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#public_id SyntheticsTest#public_id}
+  */
+  readonly publicId?: string;
+  /**
+  * The time before declaring a step failed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+  */
+  readonly timeout?: number;
+  /**
+  * The type of the step. Valid values are `assertElementContent`, `assertScreenContains`, `assertScreenLacks`, `doubleTap`, `extractVariable`, `flick`, `openDeeplink`, `playSubTest`, `pressBack`, `restartApplication`, `rotate`, `scroll`, `scrollToElement`, `tap`, `toggleWiFi`, `typeText`, `wait`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  */
+  readonly type: string;
+  /**
+  * params block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#params SyntheticsTest#params}
+  */
+  readonly params: SyntheticsTestMobileStepParams;
+}
+
+export function syntheticsTestMobileStepToTerraform(struct?: SyntheticsTestMobileStep | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allow_failure: cdktf.booleanToTerraform(struct!.allowFailure),
+    has_new_step_element: cdktf.booleanToTerraform(struct!.hasNewStepElement),
+    is_critical: cdktf.booleanToTerraform(struct!.isCritical),
+    name: cdktf.stringToTerraform(struct!.name),
+    no_screenshot: cdktf.booleanToTerraform(struct!.noScreenshot),
+    public_id: cdktf.stringToTerraform(struct!.publicId),
+    timeout: cdktf.numberToTerraform(struct!.timeout),
+    type: cdktf.stringToTerraform(struct!.type),
+    params: syntheticsTestMobileStepParamsToTerraform(struct!.params),
+  }
+}
+
+
+export function syntheticsTestMobileStepToHclTerraform(struct?: SyntheticsTestMobileStep | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_failure: {
+      value: cdktf.booleanToHclTerraform(struct!.allowFailure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    has_new_step_element: {
+      value: cdktf.booleanToHclTerraform(struct!.hasNewStepElement),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_critical: {
+      value: cdktf.booleanToHclTerraform(struct!.isCritical),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    no_screenshot: {
+      value: cdktf.booleanToHclTerraform(struct!.noScreenshot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    public_id: {
+      value: cdktf.stringToHclTerraform(struct!.publicId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout: {
+      value: cdktf.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    params: {
+      value: syntheticsTestMobileStepParamsToHclTerraform(struct!.params),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsTestMobileStepParamsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SyntheticsTestMobileStepOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SyntheticsTestMobileStep | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowFailure !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowFailure = this._allowFailure;
+    }
+    if (this._hasNewStepElement !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hasNewStepElement = this._hasNewStepElement;
+    }
+    if (this._isCritical !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isCritical = this._isCritical;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._noScreenshot !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noScreenshot = this._noScreenshot;
+    }
+    if (this._publicId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicId = this._publicId;
+    }
+    if (this._timeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeout = this._timeout;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._params?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.params = this._params?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestMobileStep | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowFailure = undefined;
+      this._hasNewStepElement = undefined;
+      this._isCritical = undefined;
+      this._name = undefined;
+      this._noScreenshot = undefined;
+      this._publicId = undefined;
+      this._timeout = undefined;
+      this._type = undefined;
+      this._params.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowFailure = value.allowFailure;
+      this._hasNewStepElement = value.hasNewStepElement;
+      this._isCritical = value.isCritical;
+      this._name = value.name;
+      this._noScreenshot = value.noScreenshot;
+      this._publicId = value.publicId;
+      this._timeout = value.timeout;
+      this._type = value.type;
+      this._params.internalValue = value.params;
+    }
+  }
+
+  // allow_failure - computed: false, optional: true, required: false
+  private _allowFailure?: boolean | cdktf.IResolvable; 
+  public get allowFailure() {
+    return this.getBooleanAttribute('allow_failure');
+  }
+  public set allowFailure(value: boolean | cdktf.IResolvable) {
+    this._allowFailure = value;
+  }
+  public resetAllowFailure() {
+    this._allowFailure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowFailureInput() {
+    return this._allowFailure;
+  }
+
+  // has_new_step_element - computed: false, optional: true, required: false
+  private _hasNewStepElement?: boolean | cdktf.IResolvable; 
+  public get hasNewStepElement() {
+    return this.getBooleanAttribute('has_new_step_element');
+  }
+  public set hasNewStepElement(value: boolean | cdktf.IResolvable) {
+    this._hasNewStepElement = value;
+  }
+  public resetHasNewStepElement() {
+    this._hasNewStepElement = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hasNewStepElementInput() {
+    return this._hasNewStepElement;
+  }
+
+  // is_critical - computed: false, optional: true, required: false
+  private _isCritical?: boolean | cdktf.IResolvable; 
+  public get isCritical() {
+    return this.getBooleanAttribute('is_critical');
+  }
+  public set isCritical(value: boolean | cdktf.IResolvable) {
+    this._isCritical = value;
+  }
+  public resetIsCritical() {
+    this._isCritical = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isCriticalInput() {
+    return this._isCritical;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // no_screenshot - computed: false, optional: true, required: false
+  private _noScreenshot?: boolean | cdktf.IResolvable; 
+  public get noScreenshot() {
+    return this.getBooleanAttribute('no_screenshot');
+  }
+  public set noScreenshot(value: boolean | cdktf.IResolvable) {
+    this._noScreenshot = value;
+  }
+  public resetNoScreenshot() {
+    this._noScreenshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noScreenshotInput() {
+    return this._noScreenshot;
+  }
+
+  // public_id - computed: false, optional: true, required: false
+  private _publicId?: string; 
+  public get publicId() {
+    return this.getStringAttribute('public_id');
+  }
+  public set publicId(value: string) {
+    this._publicId = value;
+  }
+  public resetPublicId() {
+    this._publicId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicIdInput() {
+    return this._publicId;
+  }
+
+  // timeout - computed: false, optional: true, required: false
+  private _timeout?: number; 
+  public get timeout() {
+    return this.getNumberAttribute('timeout');
+  }
+  public set timeout(value: number) {
+    this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // params - computed: false, optional: false, required: true
+  private _params = new SyntheticsTestMobileStepParamsOutputReference(this, "params");
+  public get params() {
+    return this._params;
+  }
+  public putParams(value: SyntheticsTestMobileStepParams) {
+    this._params.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paramsInput() {
+    return this._params.internalValue;
+  }
+}
+
+export class SyntheticsTestMobileStepList extends cdktf.ComplexList {
+  public internalValue? : SyntheticsTestMobileStep[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SyntheticsTestMobileStepOutputReference {
+    return new SyntheticsTestMobileStepOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SyntheticsTestOptionsListCi {
   /**
   * Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
   */
   readonly executionRule?: string;
 }
@@ -7382,7 +10898,7 @@ export interface SyntheticsTestOptionsListMonitorOptions {
   /**
   * Specify a renotification frequency in minutes. Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
   */
   readonly renotifyInterval?: number;
 }
@@ -7466,15 +10982,15 @@ export class SyntheticsTestOptionsListMonitorOptionsOutputReference extends cdkt
 }
 export interface SyntheticsTestOptionsListRetry {
   /**
-  * Number of retries needed to consider a location as failed before sending a notification alert. Defaults to `0`.
+  * Number of retries needed to consider a location as failed before sending a notification alert. Maximum value: `5`. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#count SyntheticsTest#count}
   */
   readonly count?: number;
   /**
-  * Interval between a failed test and the next retry in milliseconds. Defaults to `300`.
+  * Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
   */
   readonly interval?: number;
 }
@@ -7589,19 +11105,19 @@ export interface SyntheticsTestOptionsListRumSettings {
   /**
   * RUM application ID used to collect RUM data for the browser test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
   */
   readonly applicationId?: string;
   /**
   * RUM application API key ID used to collect RUM data for the browser test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
   */
   readonly clientTokenId?: number;
   /**
   * Determines whether RUM data is collected during test runs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
   */
   readonly isEnabled: boolean | cdktf.IResolvable;
 }
@@ -7742,19 +11258,19 @@ export interface SyntheticsTestOptionsListSchedulingTimeframes {
   /**
   * Number representing the day of the week
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#day SyntheticsTest#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#day SyntheticsTest#day}
   */
   readonly day: number;
   /**
   * The hour of the day on which scheduling starts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#from SyntheticsTest#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#from SyntheticsTest#from}
   */
   readonly from: string;
   /**
   * The hour of the day on which scheduling ends.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#to SyntheticsTest#to}
   */
   readonly to: string;
 }
@@ -7921,13 +11437,13 @@ export interface SyntheticsTestOptionsListScheduling {
   /**
   * Timezone in which the timeframe is based.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
   */
   readonly timezone: string;
   /**
   * timeframes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
   */
   readonly timeframes: SyntheticsTestOptionsListSchedulingTimeframes[] | cdktf.IResolvable;
 }
@@ -8036,125 +11552,125 @@ export interface SyntheticsTestOptionsListStruct {
   /**
   * For SSL test, whether or not the test should allow self signed certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
   */
   readonly acceptSelfSigned?: boolean | cdktf.IResolvable;
   /**
   * Allows loading insecure content for a request in an API test or in a multistep API test step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
   * For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
   */
   readonly checkCertificateRevocation?: boolean | cdktf.IResolvable;
   /**
   * Disable Cross-Origin Resource Sharing for browser tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
   */
   readonly disableCors?: boolean | cdktf.IResolvable;
   /**
   * Disable Content Security Policy for browser tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
   */
   readonly disableCsp?: boolean | cdktf.IResolvable;
   /**
   * Determines whether or not the API HTTP test should follow redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
   */
   readonly followRedirects?: boolean | cdktf.IResolvable;
   /**
   * HTTP version to use for an HTTP request in an API test or step. Valid values are `http1`, `http2`, `any`. Defaults to `"any"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
   */
   readonly httpVersion?: string;
   /**
   * Ignore server certificate error for browser tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
   */
   readonly ignoreServerCertificateError?: boolean | cdktf.IResolvable;
   /**
   * Timeout before declaring the initial step as failed (in seconds) for browser tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
   */
   readonly initialNavigationTimeout?: number;
   /**
   * Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
   */
   readonly minFailureDuration?: number;
   /**
   * Minimum number of locations in failure required to trigger an alert. Defaults to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
   */
   readonly minLocationFailed?: number;
   /**
   * The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
   */
   readonly monitorName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}
   */
   readonly monitorPriority?: number;
   /**
   * Prevents saving screenshots of the steps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
   */
   readonly noScreenshot?: boolean | cdktf.IResolvable;
   /**
   * A list of role identifiers pulled from the Roles API to restrict read and write access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * How often the test should run (in seconds).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
   */
   readonly tickEvery: number;
   /**
   * ci block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
   */
   readonly ci?: SyntheticsTestOptionsListCi;
   /**
   * monitor_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
   */
   readonly monitorOptions?: SyntheticsTestOptionsListMonitorOptions;
   /**
   * retry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
   */
   readonly retry?: SyntheticsTestOptionsListRetry;
   /**
   * rum_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
   */
   readonly rumSettings?: SyntheticsTestOptionsListRumSettings;
   /**
   * scheduling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
   */
   readonly scheduling?: SyntheticsTestOptionsListScheduling;
 }
@@ -8817,103 +12333,103 @@ export interface SyntheticsTestRequestBasicauth {
   /**
   * Access key for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
   */
   readonly accessKey?: string;
   /**
   * Access token url for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
   */
   readonly accessTokenUrl?: string;
   /**
   * Audience for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
   */
   readonly audience?: string;
   /**
   * Client ID for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
   */
   readonly clientId?: string;
   /**
   * Client secret for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Domain for `ntlm` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
   */
   readonly domain?: string;
   /**
   * Password for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#password SyntheticsTest#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#password SyntheticsTest#password}
   */
   readonly password?: string;
   /**
   * Region for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#region SyntheticsTest#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#region SyntheticsTest#region}
   */
   readonly region?: string;
   /**
   * Resource for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
   */
   readonly resource?: string;
   /**
   * Scope for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
   */
   readonly scope?: string;
   /**
   * Secret key for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
   */
   readonly secretKey?: string;
   /**
   * Service name for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
   */
   readonly serviceName?: string;
   /**
   * Session token for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
   */
   readonly sessionToken?: string;
   /**
   * Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
   */
   readonly tokenApiAuthentication?: string;
   /**
   * Type of basic authentication to use when performing the test. Defaults to `"web"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type?: string;
   /**
   * Username for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#username SyntheticsTest#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#username SyntheticsTest#username}
   */
   readonly username?: string;
   /**
   * Workstation for `ntlm` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
   */
   readonly workstation?: string;
 }
@@ -9463,13 +12979,13 @@ export interface SyntheticsTestRequestClientCertificateCert {
   /**
   * Content of the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content: string;
   /**
   * File name for the certificate. Defaults to `"Provided in Terraform config"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
   */
   readonly filename?: string;
 }
@@ -9581,13 +13097,13 @@ export interface SyntheticsTestRequestClientCertificateKey {
   /**
   * Content of the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content: string;
   /**
   * File name for the certificate. Defaults to `"Provided in Terraform config"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
   */
   readonly filename?: string;
 }
@@ -9699,13 +13215,13 @@ export interface SyntheticsTestRequestClientCertificate {
   /**
   * cert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
   */
   readonly cert: SyntheticsTestRequestClientCertificateCert;
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#key SyntheticsTest#key}
   */
   readonly key: SyntheticsTestRequestClientCertificateKey;
 }
@@ -9814,127 +13330,127 @@ export interface SyntheticsTestRequestDefinition {
   /**
   * The request body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#body SyntheticsTest#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#body SyntheticsTest#body}
   */
   readonly body?: string;
   /**
   * Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
   */
   readonly bodyType?: string;
   /**
   * The type of gRPC call to perform. Valid values are `healthcheck`, `unary`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
   */
   readonly callType?: string;
   /**
   * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
   */
   readonly certificateDomains?: string[];
   /**
   * DNS server to use for DNS tests (`subtype = "dns"`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
   */
   readonly dnsServer?: string;
   /**
   * DNS server port to use for DNS tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
   */
   readonly dnsServerPort?: string;
   /**
   * Host name to perform the test with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#host SyntheticsTest#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#host SyntheticsTest#host}
   */
   readonly host?: string;
   /**
   * HTTP version to use for an HTTP request in an API test or step. **Deprecated.** Use `http_version` in the `options_list` field instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
   */
   readonly httpVersion?: string;
   /**
   * For UDP and websocket tests, message to send with the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#message SyntheticsTest#message}
   */
   readonly message?: string;
   /**
   * Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#method SyntheticsTest#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#method SyntheticsTest#method}
   */
   readonly method?: string;
   /**
   * Determines whether or not to save the response body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
   */
   readonly noSavingResponseBody?: boolean | cdktf.IResolvable;
   /**
   * Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
   */
   readonly numberOfPackets?: number;
   /**
   * Persist cookies across redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
   */
   readonly persistCookies?: boolean | cdktf.IResolvable;
   /**
   * The content of a proto file as a string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
   */
   readonly plainProtoFile?: string;
   /**
   * Port to use when performing the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#port SyntheticsTest#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#port SyntheticsTest#port}
   */
   readonly port?: string;
   /**
   * A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
   */
   readonly protoJsonDescriptor?: string;
   /**
   * For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
   */
   readonly servername?: string;
   /**
   * The gRPC service on which you want to perform the gRPC call.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#service SyntheticsTest#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#service SyntheticsTest#service}
   */
   readonly service?: string;
   /**
   * This will turn on a traceroute probe to discover all gateways along the path to the host destination. For ICMP tests (`subtype = "icmp"`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
   */
   readonly shouldTrackHops?: boolean | cdktf.IResolvable;
   /**
   * Timeout in seconds for the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
   */
   readonly timeout?: number;
   /**
   * The URL to send the request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#url SyntheticsTest#url}
   */
   readonly url?: string;
 }
@@ -10600,31 +14116,31 @@ export interface SyntheticsTestRequestFile {
   /**
   * Content of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content?: string;
   /**
   * Name of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Original name of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
   */
   readonly originalFileName?: string;
   /**
   * Size of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#size SyntheticsTest#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#size SyntheticsTest#size}
   */
   readonly size: number;
   /**
   * Type of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
 }
@@ -10854,13 +14370,13 @@ export interface SyntheticsTestRequestProxy {
   /**
   * Header name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
   */
   readonly headers?: { [key: string]: string };
   /**
   * URL of the proxy to perform the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#url SyntheticsTest#url}
   */
   readonly url: string;
 }
@@ -10970,7 +14486,7 @@ export class SyntheticsTestRequestProxyOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test datadog_synthetics_test}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test datadog_synthetics_test}
 */
 export class SyntheticsTest extends cdktf.TerraformResource {
 
@@ -10986,7 +14502,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SyntheticsTest resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsTest to import
-  * @param importFromId The id of the existing SyntheticsTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsTest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -10998,7 +14514,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.49.0/docs/resources/synthetics_test datadog_synthetics_test} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/synthetics_test datadog_synthetics_test} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -11009,7 +14525,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.49.0',
+        providerVersion: '3.50.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -11020,6 +14536,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._configInitialApplicationArguments = config.configInitialApplicationArguments;
     this._deviceIds = config.deviceIds;
     this._forceDeleteDependencies = config.forceDeleteDependencies;
     this._id = config.id;
@@ -11040,6 +14557,8 @@ export class SyntheticsTest extends cdktf.TerraformResource {
     this._browserStep.internalValue = config.browserStep;
     this._browserVariable.internalValue = config.browserVariable;
     this._configVariable.internalValue = config.configVariable;
+    this._mobileOptionsList.internalValue = config.mobileOptionsList;
+    this._mobileStep.internalValue = config.mobileStep;
     this._optionsList.internalValue = config.optionsList;
     this._requestBasicauth.internalValue = config.requestBasicauth;
     this._requestClientCertificate.internalValue = config.requestClientCertificate;
@@ -11051,6 +14570,22 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // config_initial_application_arguments - computed: false, optional: true, required: false
+  private _configInitialApplicationArguments?: { [key: string]: string }; 
+  public get configInitialApplicationArguments() {
+    return this.getStringMapAttribute('config_initial_application_arguments');
+  }
+  public set configInitialApplicationArguments(value: { [key: string]: string }) {
+    this._configInitialApplicationArguments = value;
+  }
+  public resetConfigInitialApplicationArguments() {
+    this._configInitialApplicationArguments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configInitialApplicationArgumentsInput() {
+    return this._configInitialApplicationArguments;
+  }
 
   // device_ids - computed: false, optional: true, required: false
   private _deviceIds?: string[]; 
@@ -11365,6 +14900,38 @@ export class SyntheticsTest extends cdktf.TerraformResource {
     return this._configVariable.internalValue;
   }
 
+  // mobile_options_list - computed: false, optional: true, required: false
+  private _mobileOptionsList = new SyntheticsTestMobileOptionsListStructOutputReference(this, "mobile_options_list");
+  public get mobileOptionsList() {
+    return this._mobileOptionsList;
+  }
+  public putMobileOptionsList(value: SyntheticsTestMobileOptionsListStruct) {
+    this._mobileOptionsList.internalValue = value;
+  }
+  public resetMobileOptionsList() {
+    this._mobileOptionsList.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mobileOptionsListInput() {
+    return this._mobileOptionsList.internalValue;
+  }
+
+  // mobile_step - computed: false, optional: true, required: false
+  private _mobileStep = new SyntheticsTestMobileStepList(this, "mobile_step", false);
+  public get mobileStep() {
+    return this._mobileStep;
+  }
+  public putMobileStep(value: SyntheticsTestMobileStep[] | cdktf.IResolvable) {
+    this._mobileStep.internalValue = value;
+  }
+  public resetMobileStep() {
+    this._mobileStep.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mobileStepInput() {
+    return this._mobileStep.internalValue;
+  }
+
   // options_list - computed: false, optional: true, required: false
   private _optionsList = new SyntheticsTestOptionsListStructOutputReference(this, "options_list");
   public get optionsList() {
@@ -11467,6 +15034,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      config_initial_application_arguments: cdktf.hashMapper(cdktf.stringToTerraform)(this._configInitialApplicationArguments),
       device_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._deviceIds),
       force_delete_dependencies: cdktf.booleanToTerraform(this._forceDeleteDependencies),
       id: cdktf.stringToTerraform(this._id),
@@ -11487,6 +15055,8 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       browser_step: cdktf.listMapper(syntheticsTestBrowserStepToTerraform, true)(this._browserStep.internalValue),
       browser_variable: cdktf.listMapper(syntheticsTestBrowserVariableToTerraform, true)(this._browserVariable.internalValue),
       config_variable: cdktf.listMapper(syntheticsTestConfigVariableToTerraform, true)(this._configVariable.internalValue),
+      mobile_options_list: syntheticsTestMobileOptionsListStructToTerraform(this._mobileOptionsList.internalValue),
+      mobile_step: cdktf.listMapper(syntheticsTestMobileStepToTerraform, true)(this._mobileStep.internalValue),
       options_list: syntheticsTestOptionsListStructToTerraform(this._optionsList.internalValue),
       request_basicauth: syntheticsTestRequestBasicauthToTerraform(this._requestBasicauth.internalValue),
       request_client_certificate: syntheticsTestRequestClientCertificateToTerraform(this._requestClientCertificate.internalValue),
@@ -11498,6 +15068,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      config_initial_application_arguments: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._configInitialApplicationArguments),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
       device_ids: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._deviceIds),
         isBlock: false,
@@ -11617,6 +15193,18 @@ export class SyntheticsTest extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "SyntheticsTestConfigVariableList",
+      },
+      mobile_options_list: {
+        value: syntheticsTestMobileOptionsListStructToHclTerraform(this._mobileOptionsList.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestMobileOptionsListStructList",
+      },
+      mobile_step: {
+        value: cdktf.listMapperHcl(syntheticsTestMobileStepToHclTerraform, true)(this._mobileStep.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsTestMobileStepList",
       },
       options_list: {
         value: syntheticsTestOptionsListStructToHclTerraform(this._optionsList.internalValue),
