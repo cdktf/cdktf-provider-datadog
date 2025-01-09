@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/domain_allowlist
+// https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/domain_allowlist
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DomainAllowlistConfig extends cdktf.TerraformMetaArguments {
   /**
   * The domains within the domain allowlist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
   */
   readonly domains: string[];
   /**
   * Whether the Email Domain Allowlist is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/domain_allowlist datadog_domain_allowlist}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/domain_allowlist datadog_domain_allowlist}
 */
 export class DomainAllowlist extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class DomainAllowlist extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DomainAllowlist resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DomainAllowlist to import
-  * @param importFromId The id of the existing DomainAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/domain_allowlist#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DomainAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/domain_allowlist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DomainAllowlist to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class DomainAllowlist extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/domain_allowlist datadog_domain_allowlist} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/domain_allowlist datadog_domain_allowlist} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class DomainAllowlist extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_domain_allowlist',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.50.0',
+        providerVersion: '3.51.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -103,6 +103,7 @@ Object.defineProperty(exports, 'dataDatadogLogsArchivesOrder', { get: function (
 Object.defineProperty(exports, 'dataDatadogLogsIndexes', { get: function () { return require('./data-datadog-logs-indexes'); } });
 Object.defineProperty(exports, 'dataDatadogLogsIndexesOrder', { get: function () { return require('./data-datadog-logs-indexes-order'); } });
 Object.defineProperty(exports, 'dataDatadogLogsPipelines', { get: function () { return require('./data-datadog-logs-pipelines'); } });
+Object.defineProperty(exports, 'dataDatadogLogsPipelinesOrder', { get: function () { return require('./data-datadog-logs-pipelines-order'); } });
 Object.defineProperty(exports, 'dataDatadogMonitor', { get: function () { return require('./data-datadog-monitor'); } });
 Object.defineProperty(exports, 'dataDatadogMonitorConfigPolicies', { get: function () { return require('./data-datadog-monitor-config-policies'); } });
 Object.defineProperty(exports, 'dataDatadogMonitors', { get: function () { return require('./data-datadog-monitors'); } });

@@ -103,6 +103,7 @@ export * as dataDatadogLogsArchivesOrder from './data-datadog-logs-archives-orde
 export * as dataDatadogLogsIndexes from './data-datadog-logs-indexes';
 export * as dataDatadogLogsIndexesOrder from './data-datadog-logs-indexes-order';
 export * as dataDatadogLogsPipelines from './data-datadog-logs-pipelines';
+export * as dataDatadogLogsPipelinesOrder from './data-datadog-logs-pipelines-order';
 export * as dataDatadogMonitor from './data-datadog-monitor';
 export * as dataDatadogMonitorConfigPolicies from './data-datadog-monitor-config-policies';
 export * as dataDatadogMonitors from './data-datadog-monitors';

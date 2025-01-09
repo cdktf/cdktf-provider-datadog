@@ -33,6 +33,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexes](./dataDatadogLogsIndexes.python.md)
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.python.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.python.md)
+- [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.python.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.python.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.python.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.python.md)

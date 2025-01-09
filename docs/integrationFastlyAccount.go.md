@@ -4,7 +4,7 @@
 
 ### IntegrationFastlyAccount <a name="IntegrationFastlyAccount" id="@cdktf/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the IntegrationFastlyAccount t
 
 The id of the existing IntegrationFastlyAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/integration_fastly_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/integration_fastly_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ ApiKey *string
 
 The API key for the Fastly account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
 
 ---
 
@@ -847,7 +847,7 @@ Name *string
 
 The name of the Fastly account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
 
 ---
 
