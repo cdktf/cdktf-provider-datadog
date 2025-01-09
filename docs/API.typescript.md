@@ -33,6 +33,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexes](./dataDatadogLogsIndexes.typescript.md)
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.typescript.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.typescript.md)
+- [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.typescript.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.typescript.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.typescript.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.typescript.md)

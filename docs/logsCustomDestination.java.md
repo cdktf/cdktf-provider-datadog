@@ -4,7 +4,7 @@
 
 ### LogsCustomDestination <a name="LogsCustomDestination" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestination.Initializer"></a>
 
@@ -129,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 The custom destination name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 elasticsearch_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether logs matching this custom destination should be forwarded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether tags from the forwarded logs should be forwarded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 List of [tag keys](https://docs.datadoghq.com/getting_started/tagging/#define-tags) to be filtered. 				An empty list represents no restriction is in place and either all or no tags will be 				forwarded depending on `forward_tags_restriction_list_type` parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
 
 ---
 
@@ -183,7 +183,7 @@ If `ALLOW_LIST`, then only tags whose keys on the forwarded logs match the ones 
 are forwarded.
 `BLOCK_LIST` works the opposite way. It does not forward the tags matching the ones on the list. Valid values are `ALLOW_LIST`, `BLOCK_LIST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 http_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The custom destination query filter. Logs matching this query are forwarded to the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 splunk_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
 
 ---
 
@@ -735,7 +735,7 @@ The construct id used in the generated config for the LogsCustomDestination to i
 
 The id of the existing LogsCustomDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1278,7 +1278,7 @@ public java.lang.String getName();
 
 The custom destination name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
 
 ---
 
@@ -1292,7 +1292,7 @@ public java.lang.Object getElasticsearchDestination();
 
 elasticsearch_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
 
 ---
 
@@ -1306,7 +1306,7 @@ public java.lang.Object getEnabled();
 
 Whether logs matching this custom destination should be forwarded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
 
 ---
 
@@ -1320,7 +1320,7 @@ public java.lang.Object getForwardTags();
 
 Whether tags from the forwarded logs should be forwarded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
 
 ---
 
@@ -1334,7 +1334,7 @@ public java.util.List<java.lang.String> getForwardTagsRestrictionList();
 
 List of [tag keys](https://docs.datadoghq.com/getting_started/tagging/#define-tags) to be filtered. 				An empty list represents no restriction is in place and either all or no tags will be 				forwarded depending on `forward_tags_restriction_list_type` parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
 
 ---
 
@@ -1352,7 +1352,7 @@ If `ALLOW_LIST`, then only tags whose keys on the forwarded logs match the ones 
 are forwarded.
 `BLOCK_LIST` works the opposite way. It does not forward the tags matching the ones on the list. Valid values are `ALLOW_LIST`, `BLOCK_LIST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
 
 ---
 
@@ -1366,7 +1366,7 @@ public java.lang.Object getHttpDestination();
 
 http_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
 
 ---
 
@@ -1380,7 +1380,7 @@ public java.lang.String getQuery();
 
 The custom destination query filter. Logs matching this query are forwarded to the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
 
 ---
 
@@ -1394,7 +1394,7 @@ public java.lang.Object getSplunkDestination();
 
 splunk_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
 
 ---
 
@@ -1437,7 +1437,7 @@ The destination for which logs will be forwarded to.
 
 Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
 
 ---
 
@@ -1451,7 +1451,7 @@ public java.lang.String getIndexName();
 
 Name of the Elasticsearch index (must follow [Elasticsearch's criteria](https://www.elastic.co/guide/en/elasticsearch/reference/8.11/indices-create-index.html#indices-create-api-path-params)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
 
 ---
 
@@ -1465,7 +1465,7 @@ public java.lang.Object getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
 
 ---
 
@@ -1487,7 +1487,7 @@ You can customize the index rotation naming pattern by choosing one of these opt
 If this field is missing or is blank, it means that the index name will always be the same
 (that is, no rotation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
 
 ---
 
@@ -1523,7 +1523,7 @@ public java.lang.String getPassword();
 
 The password of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
 
 ---
 
@@ -1537,7 +1537,7 @@ public java.lang.String getUsername();
 
 The username of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
 
 ---
 
@@ -1579,7 +1579,7 @@ The destination for which logs will be forwarded to.
 
 Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
 
 ---
 
@@ -1593,7 +1593,7 @@ public java.lang.Object getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
 
 ---
 
@@ -1607,7 +1607,7 @@ public java.lang.Object getCustomHeaderAuth();
 
 custom_header_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
 
 ---
 
@@ -1643,7 +1643,7 @@ public java.lang.String getPassword();
 
 The password of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
 
 ---
 
@@ -1657,7 +1657,7 @@ public java.lang.String getUsername();
 
 The username of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
 
 ---
 
@@ -1693,7 +1693,7 @@ public java.lang.String getHeaderName();
 
 The header name of the authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
 
 ---
 
@@ -1707,7 +1707,7 @@ public java.lang.String getHeaderValue();
 
 The header value of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
 
 ---
 
@@ -1743,7 +1743,7 @@ public java.lang.String getAccessToken();
 
 Access token of the Splunk HTTP Event Collector. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
 
 ---
 
@@ -1759,7 +1759,7 @@ The destination for which logs will be forwarded to.
 
 Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
 
 ---
 

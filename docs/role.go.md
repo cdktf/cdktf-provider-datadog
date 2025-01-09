@@ -4,12 +4,12 @@
 
 ### Role <a name="Role" id="@cdktf/provider-datadog.role.Role"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role datadog_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role datadog_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.role.Role.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.NewRole(scope Construct, id *string, config RoleConfig) Role
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.role.Role.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.role.Role.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.role.Role.putPermission">PutPermission</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.Role.resetDefaultPermissionsOptOut">ResetDefaultPermissionsOptOut</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.resetPermission">ResetPermission</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.resetValidate">ResetValidate</a></code> | *No description.* |
@@ -380,6 +381,12 @@ func PutPermission(value interface{})
 
 ---
 
+##### `ResetDefaultPermissionsOptOut` <a name="ResetDefaultPermissionsOptOut" id="@cdktf/provider-datadog.role.Role.resetDefaultPermissionsOptOut"></a>
+
+```go
+func ResetDefaultPermissionsOptOut()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-datadog.role.Role.resetId"></a>
 
 ```go
@@ -412,7 +419,7 @@ func ResetValidate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.role.Role.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.Role_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.role.Role.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.Role_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ role.Role_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.role.Role.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.Role_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ role.Role_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.role.Role.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.Role_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +508,7 @@ The construct id used in the generated config for the Role to import.
 
 The id of the existing Role that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,10 +540,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.permission">Permission</a></code> | <code><a href="#@cdktf/provider-datadog.role.RolePermissionList">RolePermissionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.userCount">UserCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.Role.property.defaultPermissionsOptOutInput">DefaultPermissionsOptOutInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.permissionInput">PermissionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.validateInput">ValidateInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.Role.property.defaultPermissionsOptOut">DefaultPermissionsOptOut</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.validate">Validate</a></code> | <code>interface{}</code> | *No description.* |
@@ -705,6 +714,16 @@ func UserCount() *f64
 
 ---
 
+##### `DefaultPermissionsOptOutInput`<sup>Optional</sup> <a name="DefaultPermissionsOptOutInput" id="@cdktf/provider-datadog.role.Role.property.defaultPermissionsOptOutInput"></a>
+
+```go
+func DefaultPermissionsOptOutInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.role.Role.property.idInput"></a>
 
 ```go
@@ -739,6 +758,16 @@ func PermissionInput() interface{}
 
 ```go
 func ValidateInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DefaultPermissionsOptOut`<sup>Required</sup> <a name="DefaultPermissionsOptOut" id="@cdktf/provider-datadog.role.Role.property.defaultPermissionsOptOut"></a>
+
+```go
+func DefaultPermissionsOptOut() interface{}
 ```
 
 - *Type:* interface{}
@@ -800,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.role.RoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 &role.RoleConfig {
 	Connection: interface{},
@@ -811,6 +840,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	DefaultPermissionsOptOut: interface{},
 	Id: *string,
 	Permission: interface{},
 	Validate: interface{},
@@ -829,7 +859,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.name">Name</a></code> | <code>*string</code> | Name of the role. |
-| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#id Role#id}. |
+| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.defaultPermissionsOptOut">DefaultPermissionsOptOut</a></code> | <code>interface{}</code> | If set to `true`, the role does not have default (restricted) permissions unless they are explicitly set. |
+| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.permission">Permission</a></code> | <code>interface{}</code> | permission block. |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.validate">Validate</a></code> | <code>interface{}</code> | If set to `false`, skip the validation call done during plan. |
 
@@ -915,7 +946,23 @@ Name *string
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#name Role#name}
+
+---
+
+##### `DefaultPermissionsOptOut`<sup>Optional</sup> <a name="DefaultPermissionsOptOut" id="@cdktf/provider-datadog.role.RoleConfig.property.defaultPermissionsOptOut"></a>
+
+```go
+DefaultPermissionsOptOut interface{}
+```
+
+- *Type:* interface{}
+
+If set to `true`, the role does not have default (restricted) permissions unless they are explicitly set.
+
+The `include_restricted` attribute for the `datadog_permissions` data source must be set to `true` to manage default permissions in Terraform.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#default_permissions_opt_out Role#default_permissions_opt_out}
 
 ---
 
@@ -927,7 +974,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#id Role#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#id Role#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -944,7 +991,7 @@ Permission interface{}
 
 permission block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#permission Role#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#permission Role#permission}
 
 ---
 
@@ -958,7 +1005,7 @@ Validate interface{}
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#validate Role#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#validate Role#validate}
 
 ---
 
@@ -967,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.role.RolePermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 &role.RolePermission {
 	Id: *string,
@@ -992,7 +1039,7 @@ Id *string
 
 ID of the permission to assign.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#id Role#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#id Role#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1006,7 +1053,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.role.RolePermissionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.NewRolePermissionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RolePermissionList
 ```
@@ -1166,7 +1213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.role.RolePermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.NewRolePermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RolePermissionOutputReference
 ```

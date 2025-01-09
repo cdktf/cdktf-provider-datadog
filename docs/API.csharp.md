@@ -33,6 +33,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexes](./dataDatadogLogsIndexes.csharp.md)
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.csharp.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.csharp.md)
+- [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.csharp.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.csharp.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.csharp.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.csharp.md)

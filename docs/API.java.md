@@ -33,6 +33,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexes](./dataDatadogLogsIndexes.java.md)
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.java.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.java.md)
+- [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.java.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.java.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.java.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.java.md)

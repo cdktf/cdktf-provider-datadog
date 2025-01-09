@@ -4,7 +4,7 @@
 
 ### Role <a name="Role" id="@cdktf/provider-datadog.role.Role"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role datadog_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role datadog_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.role.Role.Initializer"></a>
 
@@ -22,6 +22,7 @@ role.Role(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  default_permissions_opt_out: typing.Union[bool, IResolvable] = None,
   id: str = None,
   permission: typing.Union[IResolvable, typing.List[RolePermission]] = None,
   validate: typing.Union[bool, IResolvable] = None
@@ -40,7 +41,8 @@ role.Role(
 | <code><a href="#@cdktf/provider-datadog.role.Role.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the role. |
-| <code><a href="#@cdktf/provider-datadog.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#id Role#id}. |
+| <code><a href="#@cdktf/provider-datadog.role.Role.Initializer.parameter.defaultPermissionsOptOut">default_permissions_opt_out</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the role does not have default (restricted) permissions unless they are explicitly set. |
+| <code><a href="#@cdktf/provider-datadog.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-datadog.role.Role.Initializer.parameter.permission">permission</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a>]]</code> | permission block. |
 | <code><a href="#@cdktf/provider-datadog.role.Role.Initializer.parameter.validate">validate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `false`, skip the validation call done during plan. |
 
@@ -112,7 +114,19 @@ Must be unique amongst siblings in the same scope
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#name Role#name}
+
+---
+
+##### `default_permissions_opt_out`<sup>Optional</sup> <a name="default_permissions_opt_out" id="@cdktf/provider-datadog.role.Role.Initializer.parameter.defaultPermissionsOptOut"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If set to `true`, the role does not have default (restricted) permissions unless they are explicitly set.
+
+The `include_restricted` attribute for the `datadog_permissions` data source must be set to `true` to manage default permissions in Terraform.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#default_permissions_opt_out Role#default_permissions_opt_out}
 
 ---
 
@@ -120,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#id Role#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#id Role#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 permission block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#permission Role#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#permission Role#permission}
 
 ---
 
@@ -143,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#validate Role#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#validate Role#validate}
 
 ---
 
@@ -175,6 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.role.Role.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.role.Role.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.role.Role.putPermission">put_permission</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.Role.resetDefaultPermissionsOptOut">reset_default_permissions_opt_out</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.resetPermission">reset_permission</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.resetValidate">reset_validate</a></code> | *No description.* |
@@ -520,6 +535,12 @@ def put_permission(
 
 ---
 
+##### `reset_default_permissions_opt_out` <a name="reset_default_permissions_opt_out" id="@cdktf/provider-datadog.role.Role.resetDefaultPermissionsOptOut"></a>
+
+```python
+def reset_default_permissions_opt_out() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-datadog.role.Role.resetId"></a>
 
 ```python
@@ -652,7 +673,7 @@ The construct id used in the generated config for the Role to import.
 
 The id of the existing Role that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -684,10 +705,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.50
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.permission">permission</a></code> | <code><a href="#@cdktf/provider-datadog.role.RolePermissionList">RolePermissionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.userCount">user_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.Role.property.defaultPermissionsOptOutInput">default_permissions_opt_out_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.permissionInput">permission_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.validateInput">validate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.Role.property.defaultPermissionsOptOut">default_permissions_opt_out</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.validate">validate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -856,6 +879,16 @@ user_count: typing.Union[int, float]
 
 ---
 
+##### `default_permissions_opt_out_input`<sup>Optional</sup> <a name="default_permissions_opt_out_input" id="@cdktf/provider-datadog.role.Role.property.defaultPermissionsOptOutInput"></a>
+
+```python
+default_permissions_opt_out_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-datadog.role.Role.property.idInput"></a>
 
 ```python
@@ -890,6 +923,16 @@ permission_input: typing.Union[IResolvable, typing.List[RolePermission]]
 
 ```python
 validate_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `default_permissions_opt_out`<sup>Required</sup> <a name="default_permissions_opt_out" id="@cdktf/provider-datadog.role.Role.property.defaultPermissionsOptOut"></a>
+
+```python
+default_permissions_opt_out: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -962,6 +1005,7 @@ role.RoleConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  default_permissions_opt_out: typing.Union[bool, IResolvable] = None,
   id: str = None,
   permission: typing.Union[IResolvable, typing.List[RolePermission]] = None,
   validate: typing.Union[bool, IResolvable] = None
@@ -980,7 +1024,8 @@ role.RoleConfig(
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.name">name</a></code> | <code>str</code> | Name of the role. |
-| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#id Role#id}. |
+| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.defaultPermissionsOptOut">default_permissions_opt_out</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the role does not have default (restricted) permissions unless they are explicitly set. |
+| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.permission">permission</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a>]]</code> | permission block. |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.validate">validate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `false`, skip the validation call done during plan. |
 
@@ -1066,7 +1111,23 @@ name: str
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#name Role#name}
+
+---
+
+##### `default_permissions_opt_out`<sup>Optional</sup> <a name="default_permissions_opt_out" id="@cdktf/provider-datadog.role.RoleConfig.property.defaultPermissionsOptOut"></a>
+
+```python
+default_permissions_opt_out: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If set to `true`, the role does not have default (restricted) permissions unless they are explicitly set.
+
+The `include_restricted` attribute for the `datadog_permissions` data source must be set to `true` to manage default permissions in Terraform.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#default_permissions_opt_out Role#default_permissions_opt_out}
 
 ---
 
@@ -1078,7 +1139,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#id Role#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#id Role#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1156,7 @@ permission: typing.Union[IResolvable, typing.List[RolePermission]]
 
 permission block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#permission Role#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#permission Role#permission}
 
 ---
 
@@ -1109,7 +1170,7 @@ validate: typing.Union[bool, IResolvable]
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#validate Role#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#validate Role#validate}
 
 ---
 
@@ -1143,7 +1204,7 @@ id: str
 
 ID of the permission to assign.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.50.0/docs/resources/role#id Role#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/role#id Role#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
