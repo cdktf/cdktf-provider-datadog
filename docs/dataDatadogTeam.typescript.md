@@ -4,7 +4,7 @@
 
 ### DataDatadogTeam <a name="DataDatadogTeam" id="@cdktf/provider-datadog.dataDatadogTeam.DataDatadogTeam"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/team datadog_team}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team datadog_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeam.DataDatadogTeam.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataDatadogTeam to import.
 
 The id of the existing DataDatadogTeam that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ public readonly filterKeyword: string;
 
 Search query. Can be team name, team handle, or email of team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/team#filter_keyword DataDatadogTeam#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team#filter_keyword DataDatadogTeam#filter_keyword}
 
 ---
 
@@ -793,7 +793,7 @@ public readonly teamId: string;
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/team#team_id DataDatadogTeam#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team#team_id DataDatadogTeam#team_id}
 
 ---
 

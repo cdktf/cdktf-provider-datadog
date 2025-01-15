@@ -4,7 +4,7 @@
 
 ### ApplicationKey <a name="ApplicationKey" id="@cdktf/provider-datadog.applicationKey.ApplicationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/application_key datadog_application_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key datadog_application_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.Initializer"></a>
 
@@ -21,7 +21,8 @@ applicationKey.ApplicationKey(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str
+  name: str,
+  scopes: typing.List[str] = None
 )
 ```
 
@@ -37,6 +38,7 @@ applicationKey.ApplicationKey(
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.Initializer.parameter.name">name</a></code> | <code>str</code> | Name for Application Key. |
+| <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.Initializer.parameter.scopes">scopes</a></code> | <code>typing.List[str]</code> | Authorization scopes for the Application Key. Application Keys configured with no scopes have full access. |
 
 ---
 
@@ -106,7 +108,17 @@ Must be unique amongst siblings in the same scope
 
 Name for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/application_key#name ApplicationKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key#name ApplicationKey#name}
+
+---
+
+##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.Initializer.parameter.scopes"></a>
+
+- *Type:* typing.List[str]
+
+Authorization scopes for the Application Key. Application Keys configured with no scopes have full access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key#scopes ApplicationKey#scopes}
 
 ---
 
@@ -137,6 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.resetScopes">reset_scopes</a></code> | *No description.* |
 
 ---
 
@@ -465,6 +478,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_scopes` <a name="reset_scopes" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.resetScopes"></a>
+
+```python
+def reset_scopes() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -579,7 +598,7 @@ The construct id used in the generated config for the ApplicationKey to import.
 
 The id of the existing ApplicationKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,7 +631,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.scopesInput">scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
@@ -788,6 +809,16 @@ name_input: str
 
 ---
 
+##### `scopes_input`<sup>Optional</sup> <a name="scopes_input" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.property.scopesInput"></a>
+
+```python
+scopes_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.property.name"></a>
 
 ```python
@@ -795,6 +826,16 @@ name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.property.scopes"></a>
+
+```python
+scopes: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -833,7 +874,8 @@ applicationKey.ApplicationKeyConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str
+  name: str,
+  scopes: typing.List[str] = None
 )
 ```
 
@@ -849,6 +891,7 @@ applicationKey.ApplicationKeyConfig(
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.name">name</a></code> | <code>str</code> | Name for Application Key. |
+| <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | Authorization scopes for the Application Key. Application Keys configured with no scopes have full access. |
 
 ---
 
@@ -932,7 +975,21 @@ name: str
 
 Name for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/application_key#name ApplicationKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key#name ApplicationKey#name}
+
+---
+
+##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.scopes"></a>
+
+```python
+scopes: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Authorization scopes for the Application Key. Application Keys configured with no scopes have full access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key#scopes ApplicationKey#scopes}
 
 ---
 
