@@ -1,3 +1,3 @@
 # `datadog_logs_index_order`
 
-Refer to the Terraform Registry for docs: [`datadog_logs_index_order`](https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/logs_index_order).
+Refer to the Terraform Registry for docs: [`datadog_logs_index_order`](https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/logs_index_order).

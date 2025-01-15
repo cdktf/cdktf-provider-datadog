@@ -4,7 +4,7 @@
 
 ### ApplicationKey <a name="ApplicationKey" id="@cdktf/provider-datadog.applicationKey.ApplicationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/application_key datadog_application_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key datadog_application_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.resetScopes">ResetScopes</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetScopes` <a name="ResetScopes" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.resetScopes"></a>
+
+```go
+func ResetScopes()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +474,7 @@ The construct id used in the generated config for the ApplicationKey to import.
 
 The id of the existing ApplicationKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -500,7 +507,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.scopesInput">ScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKey.property.scopes">Scopes</a></code> | <code>*[]*string</code> | *No description.* |
 
 ---
 
@@ -676,6 +685,16 @@ func NameInput() *string
 
 ---
 
+##### `ScopesInput`<sup>Optional</sup> <a name="ScopesInput" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.property.scopesInput"></a>
+
+```go
+func ScopesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.property.name"></a>
 
 ```go
@@ -683,6 +702,16 @@ func Name() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.property.scopes"></a>
+
+```go
+func Scopes() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -722,6 +751,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/applicationkey"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	Scopes: *[]*string,
 }
 ```
 
@@ -737,6 +767,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/applicationkey"
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.name">Name</a></code> | <code>*string</code> | Name for Application Key. |
+| <code><a href="#@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Authorization scopes for the Application Key. Application Keys configured with no scopes have full access. |
 
 ---
 
@@ -820,7 +851,21 @@ Name *string
 
 Name for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/resources/application_key#name ApplicationKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key#name ApplicationKey#name}
+
+---
+
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktf/provider-datadog.applicationKey.ApplicationKeyConfig.property.scopes"></a>
+
+```go
+Scopes *[]*string
+```
+
+- *Type:* *[]*string
+
+Authorization scopes for the Application Key. Application Keys configured with no scopes have full access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/application_key#scopes ApplicationKey#scopes}
 
 ---
 

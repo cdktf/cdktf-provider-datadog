@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/rum_application
+// https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/rum_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogRumApplicationConfig extends cdktf.TerraformMetaArgu
   /**
   * ID of the RUM application. Cannot be used with name and type filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/rum_application#id DataDatadogRumApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/rum_application#id DataDatadogRumApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,19 +24,19 @@ export interface DataDatadogRumApplicationConfig extends cdktf.TerraformMetaArgu
   /**
   * The name used to search for a RUM application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/rum_application#name_filter DataDatadogRumApplication#name_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/rum_application#name_filter DataDatadogRumApplication#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * The type used to search for a RUM application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/rum_application#type_filter DataDatadogRumApplication#type_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/rum_application#type_filter DataDatadogRumApplication#type_filter}
   */
   readonly typeFilter?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/rum_application datadog_rum_application}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/rum_application datadog_rum_application}
 */
 export class DataDatadogRumApplication extends cdktf.TerraformDataSource {
 
@@ -52,7 +52,7 @@ export class DataDatadogRumApplication extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogRumApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogRumApplication to import
-  * @param importFromId The id of the existing DataDatadogRumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/rum_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogRumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/rum_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogRumApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -64,7 +64,7 @@ export class DataDatadogRumApplication extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/rum_application datadog_rum_application} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/rum_application datadog_rum_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,7 @@ export class DataDatadogRumApplication extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_rum_application',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.51.0',
+        providerVersion: '3.52.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key
+// https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogApplicationKeyConfig extends cdktf.TerraformMetaArgu
   /**
   * Whether to use exact match when searching by name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key#exact_match DataDatadogApplicationKey#exact_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#exact_match DataDatadogApplicationKey#exact_match}
   */
   readonly exactMatch?: boolean | cdktf.IResolvable;
   /**
   * Id for Application Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,13 +30,19 @@ export interface DataDatadogApplicationKeyConfig extends cdktf.TerraformMetaArgu
   /**
   * Name for Application Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
   */
   readonly name?: string;
+  /**
+  * Authorization scopes for the Application Key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#scopes DataDatadogApplicationKey#scopes}
+  */
+  readonly scopes?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key datadog_application_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key datadog_application_key}
 */
 export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
 
@@ -52,7 +58,7 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogApplicationKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogApplicationKey to import
-  * @param importFromId The id of the existing DataDatadogApplicationKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogApplicationKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogApplicationKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -64,7 +70,7 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.51.0/docs/data-sources/application_key datadog_application_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key datadog_application_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +81,7 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_application_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.51.0',
+        providerVersion: '3.52.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -89,6 +95,7 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
     this._exactMatch = config.exactMatch;
     this._id = config.id;
     this._name = config.name;
+    this._scopes = config.scopes;
   }
 
   // ==========
@@ -148,6 +155,22 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
     return this._name;
   }
 
+  // scopes - computed: false, optional: true, required: false
+  private _scopes?: string[]; 
+  public get scopes() {
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
+  }
+  public set scopes(value: string[]) {
+    this._scopes = value;
+  }
+  public resetScopes() {
+    this._scopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopesInput() {
+    return this._scopes;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -157,6 +180,7 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
       exact_match: cdktf.booleanToTerraform(this._exactMatch),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
     };
   }
 
@@ -179,6 +203,12 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
     };
 
