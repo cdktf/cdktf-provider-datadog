@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/integration_fastly_service
+// https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_fastly_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface IntegrationFastlyServiceConfig extends cdktf.TerraformMetaArgum
   /**
   * Fastly Account id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
   */
   readonly accountId?: string;
   /**
   * The ID of the Fastly service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
   */
   readonly serviceId: string;
   /**
   * A list of tags for the Fastly service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
   */
   readonly tags?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_fastly_service datadog_integration_fastly_service}
 */
 export class IntegrationFastlyService extends cdktf.TerraformResource {
 
@@ -49,7 +44,7 @@ export class IntegrationFastlyService extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationFastlyService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationFastlyService to import
-  * @param importFromId The id of the existing IntegrationFastlyService that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/integration_fastly_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationFastlyService that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_fastly_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationFastlyService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class IntegrationFastlyService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class IntegrationFastlyService extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_fastly_service',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.52.0',
+        providerVersion: '3.52.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

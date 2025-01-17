@@ -4,7 +4,7 @@
 
 ### DataDatadogTeamMemberships <a name="DataDatadogTeamMemberships" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team_memberships datadog_team_memberships}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/team_memberships datadog_team_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When true, `filter_keyword` string is exact matched against the user's `email`, followed by `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Search query, can be user email or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
 
 ---
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the DataDatadogTeamMemberships
 
 The id of the existing DataDatadogTeamMemberships that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team_memberships#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/team_memberships#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,7 +882,7 @@ team_id: str
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
 
 ---
 
@@ -896,7 +896,7 @@ exact_match: typing.Union[bool, IResolvable]
 
 When true, `filter_keyword` string is exact matched against the user's `email`, followed by `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
 
 ---
 
@@ -910,7 +910,7 @@ filter_keyword: str
 
 Search query, can be user email or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
 
 ---
 
