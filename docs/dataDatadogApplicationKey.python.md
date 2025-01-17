@@ -4,7 +4,7 @@
 
 ### DataDatadogApplicationKey <a name="DataDatadogApplicationKey" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key datadog_application_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/application_key datadog_application_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.Initializer"></a>
 
@@ -23,8 +23,7 @@ dataDatadogApplicationKey.DataDatadogApplicationKey(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   exact_match: typing.Union[bool, IResolvable] = None,
   id: str = None,
-  name: str = None,
-  scopes: typing.List[str] = None
+  name: str = None
 )
 ```
 
@@ -42,7 +41,6 @@ dataDatadogApplicationKey.DataDatadogApplicationKey(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.Initializer.parameter.exactMatch">exact_match</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to use exact match when searching by name. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Id for Application Key. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.Initializer.parameter.name">name</a></code> | <code>str</code> | Name for Application Key. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.Initializer.parameter.scopes">scopes</a></code> | <code>typing.List[str]</code> | Authorization scopes for the Application Key. |
 
 ---
 
@@ -112,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Whether to use exact match when searching by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#exact_match DataDatadogApplicationKey#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/application_key#exact_match DataDatadogApplicationKey#exact_match}
 
 ---
 
@@ -122,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Id for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,17 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
-
----
-
-##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.Initializer.parameter.scopes"></a>
-
-- *Type:* typing.List[str]
-
-Authorization scopes for the Application Key.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#scopes DataDatadogApplicationKey#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
 
 ---
 
@@ -173,7 +161,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.resetExactMatch">reset_exact_match</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.resetName">reset_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.resetScopes">reset_scopes</a></code> | *No description.* |
 
 ---
 
@@ -412,12 +399,6 @@ def reset_id() -> None
 def reset_name() -> None
 ```
 
-##### `reset_scopes` <a name="reset_scopes" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.resetScopes"></a>
-
-```python
-def reset_scopes() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -532,7 +513,7 @@ The construct id used in the generated config for the DataDatadogApplicationKey 
 
 The id of the existing DataDatadogApplicationKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/application_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -564,11 +545,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.exactMatchInput">exact_match_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.scopesInput">scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.exactMatch">exact_match</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
@@ -734,16 +713,6 @@ name_input: str
 
 ---
 
-##### `scopes_input`<sup>Optional</sup> <a name="scopes_input" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.scopesInput"></a>
-
-```python
-scopes_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 ##### `exact_match`<sup>Required</sup> <a name="exact_match" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.exactMatch"></a>
 
 ```python
@@ -771,16 +740,6 @@ name: str
 ```
 
 - *Type:* str
-
----
-
-##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.property.scopes"></a>
-
-```python
-scopes: typing.List[str]
-```
-
-- *Type:* typing.List[str]
 
 ---
 
@@ -821,8 +780,7 @@ dataDatadogApplicationKey.DataDatadogApplicationKeyConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   exact_match: typing.Union[bool, IResolvable] = None,
   id: str = None,
-  name: str = None,
-  scopes: typing.List[str] = None
+  name: str = None
 )
 ```
 
@@ -840,7 +798,6 @@ dataDatadogApplicationKey.DataDatadogApplicationKeyConfig(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKeyConfig.property.exactMatch">exact_match</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to use exact match when searching by name. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKeyConfig.property.id">id</a></code> | <code>str</code> | Id for Application Key. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKeyConfig.property.name">name</a></code> | <code>str</code> | Name for Application Key. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKeyConfig.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | Authorization scopes for the Application Key. |
 
 ---
 
@@ -924,7 +881,7 @@ exact_match: typing.Union[bool, IResolvable]
 
 Whether to use exact match when searching by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#exact_match DataDatadogApplicationKey#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/application_key#exact_match DataDatadogApplicationKey#exact_match}
 
 ---
 
@@ -938,7 +895,7 @@ id: str
 
 Id for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -955,21 +912,7 @@ name: str
 
 Name for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
-
----
-
-##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKeyConfig.property.scopes"></a>
-
-```python
-scopes: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Authorization scopes for the Application Key.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.0/docs/data-sources/application_key#scopes DataDatadogApplicationKey#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
 
 ---
 
