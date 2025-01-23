@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/user_role
+// https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/user_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface UserRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the role that the user is assigned to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/user_role#role_id UserRole#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/user_role#role_id UserRole#role_id}
   */
   readonly roleId: string;
   /**
   * The ID of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/user_role#user_id UserRole#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/user_role#user_id UserRole#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/user_role datadog_user_role}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/user_role datadog_user_role}
 */
 export class UserRole extends cdktf.TerraformResource {
 
@@ -43,7 +38,7 @@ export class UserRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserRole to import
-  * @param importFromId The id of the existing UserRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class UserRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/user_role datadog_user_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/user_role datadog_user_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class UserRole extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_user_role',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.52.1',
+        providerVersion: '3.53.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

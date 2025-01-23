@@ -4,12 +4,12 @@
 
 ### DataDatadogSecurityMonitoringSuppressions <a name="DataDatadogSecurityMonitoringSuppressions" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuritymonitoringsuppressions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringsuppressions"
 
 datadatadogsecuritymonitoringsuppressions.NewDataDatadogSecurityMonitoringSuppressions(scope Construct, id *string, config DataDatadogSecurityMonitoringSuppressionsConfig) DataDatadogSecurityMonitoringSuppressions
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuritymonitoringsuppressions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringsuppressions"
 
 datadatadogsecuritymonitoringsuppressions.DataDatadogSecurityMonitoringSuppressions_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuritymonitoringsuppressions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringsuppressions"
 
 datadatadogsecuritymonitoringsuppressions.DataDatadogSecurityMonitoringSuppressions_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatadogsecuritymonitoringsuppressions.DataDatadogSecurityMonitoringSuppressi
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuritymonitoringsuppressions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringsuppressions"
 
 datadatadogsecuritymonitoringsuppressions.DataDatadogSecurityMonitoringSuppressions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatadogsecuritymonitoringsuppressions.DataDatadogSecurityMonitoringSuppressi
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuritymonitoringsuppressions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringsuppressions"
 
 datadatadogsecuritymonitoringsuppressions.DataDatadogSecurityMonitoringSuppressions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatadogSecurityMonitor
 
 The id of the existing DataDatadogSecurityMonitoringSuppressions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/data-sources/security_monitoring_suppressions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/data-sources/security_monitoring_suppressions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuritymonitoringsuppressions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringsuppressions"
 
 &datadatadogsecuritymonitoringsuppressions.DataDatadogSecurityMonitoringSuppressionsConfig {
 	Connection: interface{},
@@ -678,7 +678,7 @@ Provisioners *[]interface{}
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuritymonitoringsuppressions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringsuppressions"
 
 &datadatadogsecuritymonitoringsuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressions {
 
@@ -693,7 +693,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuri
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuritymonitoringsuppressions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringsuppressions"
 
 datadatadogsecuritymonitoringsuppressions.NewDataDatadogSecurityMonitoringSuppressionsSuppressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringSuppressionsSuppressionsList
 ```
@@ -842,7 +842,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogsecuritymonitoringsuppressions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringsuppressions"
 
 datadatadogsecuritymonitoringsuppressions.NewDataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference
 ```
@@ -1072,6 +1072,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.ruleQuery">RuleQuery</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.startDate">StartDate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.suppressionQuery">SuppressionQuery</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressions">DataDatadogSecurityMonitoringSuppressionsSuppressions</a></code> | *No description.* |
 
@@ -1165,6 +1166,16 @@ func Name() *string
 
 ```go
 func RuleQuery() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StartDate`<sup>Required</sup> <a name="StartDate" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.startDate"></a>
+
+```go
+func StartDate() *string
 ```
 
 - *Type:* *string

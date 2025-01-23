@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface CloudConfigurationRuleConfig extends cdktf.TerraformMetaArgumen
   /**
   * Whether the cloud configuration rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Defaults to empty list. This function will be deprecated soon. Use the notification rules function instead. Fields to group by when generating signals, e.g. @resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#group_by CloudConfigurationRule#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#group_by CloudConfigurationRule#group_by}
   */
   readonly groupBy?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,55 +29,55 @@ export interface CloudConfigurationRuleConfig extends cdktf.TerraformMetaArgumen
   /**
   * The message associated to the rule that will be shown in findings and signals.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
   */
   readonly message: string;
   /**
   * The name of the cloud configuration rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
   */
   readonly name: string;
   /**
   * This function will be deprecated soon. Use the notification rules function instead. Notification targets for signals. Defaults to empty list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
   */
   readonly notifications?: string[];
   /**
   * Policy written in Rego format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
   */
   readonly policy: string;
   /**
   * Related resource types to be checked by the rule. Defaults to empty list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
   */
   readonly relatedResourceTypes?: string[];
   /**
   * Main resource type to be checked by the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
   */
   readonly resourceType: string;
   /**
   * Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
   */
   readonly severity: string;
   /**
   * Tags of the rule, propagated to findings and signals. Defaults to empty list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
   */
   readonly tags?: string[];
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
   */
   readonly filter?: CloudConfigurationRuleFilter[] | cdktf.IResolvable;
 }
@@ -90,13 +85,13 @@ export interface CloudConfigurationRuleFilter {
   /**
   * The type of filtering action. Valid values are `require`, `suppress`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#action CloudConfigurationRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#action CloudConfigurationRule#action}
   */
   readonly action: string;
   /**
   * Query for selecting logs to apply the filtering action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#query CloudConfigurationRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#query CloudConfigurationRule#query}
   */
   readonly query: string;
 }
@@ -235,7 +230,7 @@ export class CloudConfigurationRuleFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}
 */
 export class CloudConfigurationRule extends cdktf.TerraformResource {
 
@@ -251,7 +246,7 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudConfigurationRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudConfigurationRule to import
-  * @param importFromId The id of the existing CloudConfigurationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudConfigurationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudConfigurationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -263,7 +258,7 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.52.1/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -274,7 +269,7 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_cloud_configuration_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.52.1',
+        providerVersion: '3.53.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
