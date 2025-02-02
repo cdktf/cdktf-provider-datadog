@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 datadatadogdashboardlist.NewDataDatadogDashboardList(scope Construct, id *string, config DataDatadogDashboardListConfig) DataDatadogDashboardList
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 datadatadogdashboardlist.DataDatadogDashboardList_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 datadatadogdashboardlist.DataDatadogDashboardList_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatadogdashboardlist.DataDatadogDashboardList_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 datadatadogdashboardlist.DataDatadogDashboardList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatadogdashboardlist.DataDatadogDashboardList_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 datadatadogdashboardlist.DataDatadogDashboardList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 &datadatadogdashboardlist.DataDatadogDashboardListConfig {
 	Connection: interface{},
