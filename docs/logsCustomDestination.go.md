@@ -4,12 +4,12 @@
 
 ### LogsCustomDestination <a name="LogsCustomDestination" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestination(scope Construct, id *string, config LogsCustomDestinationConfig) LogsCustomDestination
 ```
@@ -473,7 +473,7 @@ func ResetSplunkDestination()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.LogsCustomDestination_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.LogsCustomDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ logscustomdestination.LogsCustomDestination_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.LogsCustomDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ logscustomdestination.LogsCustomDestination_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.LogsCustomDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -562,7 +562,7 @@ The construct id used in the generated config for the LogsCustomDestination to i
 
 The id of the existing LogsCustomDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -971,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationConfig {
 	Connection: interface{},
@@ -1096,7 +1096,7 @@ Name *string
 
 The custom destination name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
 
 ---
 
@@ -1110,7 +1110,7 @@ ElasticsearchDestination interface{}
 
 elasticsearch_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
 
 ---
 
@@ -1124,7 +1124,7 @@ Enabled interface{}
 
 Whether logs matching this custom destination should be forwarded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
 
 ---
 
@@ -1138,7 +1138,7 @@ ForwardTags interface{}
 
 Whether tags from the forwarded logs should be forwarded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
 
 ---
 
@@ -1152,7 +1152,7 @@ ForwardTagsRestrictionList *[]*string
 
 List of [tag keys](https://docs.datadoghq.com/getting_started/tagging/#define-tags) to be filtered. 				An empty list represents no restriction is in place and either all or no tags will be 				forwarded depending on `forward_tags_restriction_list_type` parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
 
 ---
 
@@ -1170,7 +1170,7 @@ If `ALLOW_LIST`, then only tags whose keys on the forwarded logs match the ones 
 are forwarded.
 `BLOCK_LIST` works the opposite way. It does not forward the tags matching the ones on the list. Valid values are `ALLOW_LIST`, `BLOCK_LIST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
 
 ---
 
@@ -1184,7 +1184,7 @@ HttpDestination interface{}
 
 http_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
 
 ---
 
@@ -1198,7 +1198,7 @@ Query *string
 
 The custom destination query filter. Logs matching this query are forwarded to the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
 
 ---
 
@@ -1212,7 +1212,7 @@ SplunkDestination interface{}
 
 splunk_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
 
 ---
 
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationElasticsearchDestination {
 	Endpoint: *string,
@@ -1254,7 +1254,7 @@ The destination for which logs will be forwarded to.
 
 Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
 
 ---
 
@@ -1268,7 +1268,7 @@ IndexName *string
 
 Name of the Elasticsearch index (must follow [Elasticsearch's criteria](https://www.elastic.co/guide/en/elasticsearch/reference/8.11/indices-create-index.html#indices-create-api-path-params)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
 
 ---
 
@@ -1282,7 +1282,7 @@ BasicAuth interface{}
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
 
 ---
 
@@ -1304,7 +1304,7 @@ You can customize the index rotation naming pattern by choosing one of these opt
 If this field is missing or is blank, it means that the index name will always be the same
 (that is, no rotation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
 
 ---
 
@@ -1313,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationElasticsearchDestinationBasicAuth {
 	Password: *string,
@@ -1340,7 +1340,7 @@ Password *string
 
 The password of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
 
 ---
 
@@ -1354,7 +1354,7 @@ Username *string
 
 The username of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
 
 ---
 
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationHttpDestination {
 	Endpoint: *string,
@@ -1394,7 +1394,7 @@ The destination for which logs will be forwarded to.
 
 Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
 
 ---
 
@@ -1408,7 +1408,7 @@ BasicAuth interface{}
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
 
 ---
 
@@ -1422,7 +1422,7 @@ CustomHeaderAuth interface{}
 
 custom_header_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
 
 ---
 
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationHttpDestinationBasicAuth {
 	Password: *string,
@@ -1458,7 +1458,7 @@ Password *string
 
 The password of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
 
 ---
 
@@ -1472,7 +1472,7 @@ Username *string
 
 The username of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
 
 ---
 
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationHttpDestinationCustomHeaderAuth {
 	HeaderName: *string,
@@ -1508,7 +1508,7 @@ HeaderName *string
 
 The header name of the authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
 
 ---
 
@@ -1522,7 +1522,7 @@ HeaderValue *string
 
 The header value of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
 
 ---
 
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationSplunkDestination {
 	AccessToken: *string,
@@ -1558,7 +1558,7 @@ AccessToken *string
 
 Access token of the Splunk HTTP Event Collector. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
 
 ---
 
@@ -1574,7 +1574,7 @@ The destination for which logs will be forwarded to.
 
 Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
 
 ---
 
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationElasticsearchDestinationBasicAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationElasticsearchDestinationBasicAuthList
 ```
@@ -1745,7 +1745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference
 ```
@@ -2056,7 +2056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationElasticsearchDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationElasticsearchDestinationList
 ```
@@ -2216,7 +2216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationElasticsearchDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationElasticsearchDestinationOutputReference
 ```
@@ -2598,7 +2598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationBasicAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationHttpDestinationBasicAuthList
 ```
@@ -2758,7 +2758,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationHttpDestinationBasicAuthOutputReference
 ```
@@ -3069,7 +3069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationCustomHeaderAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationHttpDestinationCustomHeaderAuthList
 ```
@@ -3229,7 +3229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference
 ```
@@ -3540,7 +3540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationHttpDestinationList
 ```
@@ -3700,7 +3700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationHttpDestinationOutputReference
 ```
@@ -4073,7 +4073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationSplunkDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationSplunkDestinationList
 ```
@@ -4233,7 +4233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/logscustomdestination"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationSplunkDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationSplunkDestinationOutputReference
 ```
