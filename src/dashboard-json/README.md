@@ -1,3 +1,3 @@
 # `datadog_dashboard_json`
 
-Refer to the Terraform Registry for docs: [`datadog_dashboard_json`](https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/dashboard_json).
+Refer to the Terraform Registry for docs: [`datadog_dashboard_json`](https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/dashboard_json).

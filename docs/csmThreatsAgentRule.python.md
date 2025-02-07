@@ -4,7 +4,7 @@
 
 ### CsmThreatsAgentRule <a name="CsmThreatsAgentRule" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Indicates Whether the Agent rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The SECL expression of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A description for the Agent rule. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
 
 ---
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the CsmThreatsAgentRule to imp
 
 The id of the existing CsmThreatsAgentRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1036,7 +1036,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Indicates Whether the Agent rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
 
 ---
 
@@ -1050,7 +1050,7 @@ expression: str
 
 The SECL expression of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -1064,7 +1064,7 @@ name: str
 
 The name of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -1078,7 +1078,7 @@ description: str
 
 A description for the Agent rule. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
 
 ---
 

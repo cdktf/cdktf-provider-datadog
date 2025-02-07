@@ -4,7 +4,7 @@
 
 ### Monitor <a name="Monitor" id="@cdktf/provider-datadog.monitor.Monitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor datadog_monitor}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor datadog_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.Monitor.Initializer"></a>
 
@@ -736,7 +736,7 @@ The construct id used in the generated config for the Monitor to import.
 
 The id of the existing Monitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1776,7 +1776,7 @@ new MonitorConfig {
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete">ForceDelete</a></code> | <code>object</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">GroupbySimpleMonitor</a></code> | <code>object</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration">GroupRetentionDuration</a></code> | <code>string</code> | The time span after which groups with missing data are dropped from the monitor state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#id Monitor#id}. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#id Monitor#id}. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags">IncludeTags</a></code> | <code>object</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.locked">Locked</a></code> | <code>object</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholds">MonitorThresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
@@ -1885,7 +1885,7 @@ A message to include with notifications for this monitor.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#message Monitor#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#message Monitor#message}
 
 ---
 
@@ -1899,7 +1899,7 @@ public string Name { get; set; }
 
 Name of Datadog monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -1917,7 +1917,7 @@ Note this is not the same query you see in the UI and the syntax is different de
 
 **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -1933,7 +1933,7 @@ The type of the monitor.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#type Monitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#type Monitor#type}
 
 ---
 
@@ -1949,7 +1949,7 @@ A boolean indicating whether or not to include a list of log values which trigge
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
 
 ---
 
@@ -1965,7 +1965,7 @@ Whether or not a list of samples which triggered the alert is included.
 
 This is only used by CI Test and Pipeline monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
 
 ---
 
@@ -1979,7 +1979,7 @@ public string EscalationMessage { get; set; }
 
 A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
 
 ---
 
@@ -1995,7 +1995,7 @@ public double EvaluationDelay { get; set; }
 
 For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
 
 ---
 
@@ -2009,7 +2009,7 @@ public object ForceDelete { get; set; }
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#force_delete Monitor#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#force_delete Monitor#force_delete}
 
 ---
 
@@ -2025,7 +2025,7 @@ Whether or not to trigger one alert if any source breaches a threshold.
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
 
 ---
 
@@ -2041,7 +2041,7 @@ The time span after which groups with missing data are dropped from the monitor 
 
 The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
 
 ---
 
@@ -2053,7 +2053,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#id Monitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#id Monitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2070,7 +2070,7 @@ public object IncludeTags { get; set; }
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#include_tags Monitor#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#include_tags Monitor#include_tags}
 
 ---
 
@@ -2086,7 +2086,7 @@ A boolean indicating whether changes to this monitor should be restricted to the
 
 Defaults to `false`. **Deprecated.** Use `restricted_roles`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#locked Monitor#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#locked Monitor#locked}
 
 ---
 
@@ -2100,7 +2100,7 @@ public MonitorMonitorThresholds MonitorThresholds { get; set; }
 
 monitor_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
 
 ---
 
@@ -2114,7 +2114,7 @@ public MonitorMonitorThresholdWindows MonitorThresholdWindows { get; set; }
 
 monitor_threshold_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
 
 ---
 
@@ -2130,7 +2130,7 @@ The time (in seconds) to skip evaluations for new groups.
 
 `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
 
 ---
 
@@ -2146,7 +2146,7 @@ public double NewHostDelay { get; set; }
 
 See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
 
 ---
 
@@ -2162,7 +2162,7 @@ The number of minutes before a monitor will notify when data stops reporting.
 
 We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
 
 ---
 
@@ -2176,7 +2176,7 @@ public string NotificationPresetName { get; set; }
 
 Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
 
 ---
 
@@ -2190,7 +2190,7 @@ public object NotifyAudit { get; set; }
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
 
 ---
 
@@ -2206,7 +2206,7 @@ Controls what granularity a monitor alerts on.
 
 Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region`. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#notify_by Monitor#notify_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#notify_by Monitor#notify_by}
 
 ---
 
@@ -2220,7 +2220,7 @@ public object NotifyNoData { get; set; }
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
 
 ---
 
@@ -2236,7 +2236,7 @@ Controls how groups or monitors are treated if an evaluation does not return any
 
 The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
 
 ---
 
@@ -2250,7 +2250,7 @@ public string Priority { get; set; }
 
 Integer from 1 (high) to 5 (low) indicating alert severity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#priority Monitor#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#priority Monitor#priority}
 
 ---
 
@@ -2266,7 +2266,7 @@ The number of minutes after the last notification before a monitor will re-notif
 
 It will only re-notify if it's not resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
 
 ---
 
@@ -2280,7 +2280,7 @@ public double RenotifyOccurrences { get; set; }
 
 The number of re-notification messages that should be sent on the current status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
 
 ---
 
@@ -2294,7 +2294,7 @@ public string[] RenotifyStatuses { get; set; }
 
 The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
 
 ---
 
@@ -2310,7 +2310,7 @@ A boolean indicating whether this monitor needs a full window of data before it'
 
 Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
 
 ---
 
@@ -2326,7 +2326,7 @@ A list of unique role identifiers to define which roles are allowed to edit the 
 
 Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. Roles unique identifiers can be pulled from the [Roles API](https://docs.datadoghq.com/api/latest/roles/#list-roles) in the `data.id` field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
 
 ---
 
@@ -2340,7 +2340,7 @@ public MonitorSchedulingOptions SchedulingOptions { get; set; }
 
 scheduling_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
 
 ---
 
@@ -2356,7 +2356,7 @@ A list of tags to associate with your monitor.
 
 This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#tags Monitor#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#tags Monitor#tags}
 
 ---
 
@@ -2372,7 +2372,7 @@ The number of hours of the monitor not reporting data before it automatically re
 
 The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
 
 ---
 
@@ -2386,7 +2386,7 @@ public object Validate { get; set; }
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#validate Monitor#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#validate Monitor#validate}
 
 ---
 
@@ -2400,7 +2400,7 @@ public MonitorVariables Variables { get; set; }
 
 variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#variables Monitor#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#variables Monitor#variables}
 
 ---
 
@@ -2444,7 +2444,7 @@ public string Critical { get; set; }
 
 The monitor `CRITICAL` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#critical Monitor#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#critical Monitor#critical}
 
 ---
 
@@ -2458,7 +2458,7 @@ public string CriticalRecovery { get; set; }
 
 The monitor `CRITICAL` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
 
 ---
 
@@ -2472,7 +2472,7 @@ public string Ok { get; set; }
 
 The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#ok Monitor#ok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#ok Monitor#ok}
 
 ---
 
@@ -2486,7 +2486,7 @@ public string Unknown { get; set; }
 
 The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#unknown Monitor#unknown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#unknown Monitor#unknown}
 
 ---
 
@@ -2500,7 +2500,7 @@ public string Warning { get; set; }
 
 The monitor `WARNING` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#warning Monitor#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#warning Monitor#warning}
 
 ---
 
@@ -2514,7 +2514,7 @@ public string WarningRecovery { get; set; }
 
 The monitor `WARNING` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
 
 ---
 
@@ -2550,7 +2550,7 @@ public string RecoveryWindow { get; set; }
 
 Describes how long an anomalous metric must be normal before the alert recovers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
 
 ---
 
@@ -2564,7 +2564,7 @@ public string TriggerWindow { get; set; }
 
 Describes how long a metric must be anomalous before an alert triggers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
 
 ---
 
@@ -2600,7 +2600,7 @@ public MonitorSchedulingOptionsCustomSchedule CustomSchedule { get; set; }
 
 custom_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
 
 ---
 
@@ -2614,7 +2614,7 @@ public MonitorSchedulingOptionsEvaluationWindow EvaluationWindow { get; set; }
 
 evaluation_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
 
 ---
 
@@ -2648,7 +2648,7 @@ public MonitorSchedulingOptionsCustomScheduleRecurrence Recurrence { get; set; }
 
 recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#recurrence Monitor#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#recurrence Monitor#recurrence}
 
 ---
 
@@ -2686,7 +2686,7 @@ public string Rrule { get; set; }
 
 Must be a valid `rrule`. See API docs for supported fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#rrule Monitor#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#rrule Monitor#rrule}
 
 ---
 
@@ -2700,7 +2700,7 @@ public string Timezone { get; set; }
 
 'tz database' format. Example: `America/New_York` or `UTC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#timezone Monitor#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#timezone Monitor#timezone}
 
 ---
 
@@ -2714,7 +2714,7 @@ public string Start { get; set; }
 
 Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#start Monitor#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#start Monitor#start}
 
 ---
 
@@ -2754,7 +2754,7 @@ The time of the day at which a one day cumulative evaluation window starts.
 
 Must be defined in UTC time in `HH:mm` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#day_starts Monitor#day_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#day_starts Monitor#day_starts}
 
 ---
 
@@ -2770,7 +2770,7 @@ The minute of the hour at which a one hour cumulative evaluation window starts.
 
 Must be between 0 and 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
 
 ---
 
@@ -2786,7 +2786,7 @@ The day of the month at which a one month cumulative evaluation window starts.
 
 Must be a value of 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#month_starts Monitor#month_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#month_starts Monitor#month_starts}
 
 ---
 
@@ -2798,6 +2798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new MonitorVariables {
+    object CloudCostQuery = null,
     object EventQuery = null
 };
 ```
@@ -2806,7 +2807,22 @@ new MonitorVariables {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery">CloudCostQuery</a></code> | <code>object</code> | cloud_cost_query block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery">EventQuery</a></code> | <code>object</code> | event_query block. |
+
+---
+
+##### `CloudCostQuery`<sup>Optional</sup> <a name="CloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery"></a>
+
+```csharp
+public object CloudCostQuery { get; set; }
+```
+
+- *Type:* object
+
+cloud_cost_query block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
 
 ---
 
@@ -2820,7 +2836,91 @@ public object EventQuery { get; set; }
 
 event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#event_query Monitor#event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#event_query Monitor#event_query}
+
+---
+
+### MonitorVariablesCloudCostQuery <a name="MonitorVariablesCloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new MonitorVariablesCloudCostQuery {
+    string DataSource,
+    string Name,
+    string Query,
+    string Aggregator = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.dataSource">DataSource</a></code> | <code>string</code> | The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.name">Name</a></code> | <code>string</code> | The name of the query for use in formulas. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.query">Query</a></code> | <code>string</code> | The cloud cost query definition. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.aggregator">Aggregator</a></code> | <code>string</code> | The aggregation methods available for cloud cost queries. |
+
+---
+
+##### `DataSource`<sup>Required</sup> <a name="DataSource" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.dataSource"></a>
+
+```csharp
+public string DataSource { get; set; }
+```
+
+- *Type:* string
+
+The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#data_source Monitor#data_source}
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.name"></a>
+
+```csharp
+public string Name { get; set; }
+```
+
+- *Type:* string
+
+The name of the query for use in formulas.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#name Monitor#name}
+
+---
+
+##### `Query`<sup>Required</sup> <a name="Query" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.query"></a>
+
+```csharp
+public string Query { get; set; }
+```
+
+- *Type:* string
+
+The cloud cost query definition.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#query Monitor#query}
+
+---
+
+##### `Aggregator`<sup>Optional</sup> <a name="Aggregator" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.aggregator"></a>
+
+```csharp
+public string Aggregator { get; set; }
+```
+
+- *Type:* string
+
+The aggregation methods available for cloud cost queries.
+
+Valid values are `avg`, `sum`, `max`, `min`, `last`, `area`, `l2norm`, `percentile`, `stddev`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#aggregator Monitor#aggregator}
 
 ---
 
@@ -2864,7 +2964,7 @@ public object Compute { get; set; }
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -2878,7 +2978,7 @@ public string DataSource { get; set; }
 
 The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -2892,7 +2992,7 @@ public string Name { get; set; }
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -2906,7 +3006,7 @@ public MonitorVariablesEventQuerySearch Search { get; set; }
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -2920,7 +3020,7 @@ public object GroupBy { get; set; }
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -2934,7 +3034,7 @@ public string[] Indexes { get; set; }
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -2974,7 +3074,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -2988,7 +3088,7 @@ public double Interval { get; set; }
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -3002,7 +3102,7 @@ public string Metric { get; set; }
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -3040,7 +3140,7 @@ public string Facet { get; set; }
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -3054,7 +3154,7 @@ public double Limit { get; set; }
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -3068,7 +3168,7 @@ public MonitorVariablesEventQueryGroupBySort Sort { get; set; }
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -3108,7 +3208,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -3122,7 +3222,7 @@ public string Metric { get; set; }
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -3136,7 +3236,7 @@ public string Order { get; set; }
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -3170,7 +3270,7 @@ public string Query { get; set; }
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -5177,6 +5277,528 @@ public MonitorSchedulingOptions InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>
+
+---
+
+
+### MonitorVariablesCloudCostQueryList <a name="MonitorVariablesCloudCostQueryList" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new MonitorVariablesCloudCostQueryList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.get"></a>
+
+```csharp
+private MonitorVariablesCloudCostQueryOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### MonitorVariablesCloudCostQueryOutputReference <a name="MonitorVariablesCloudCostQueryOutputReference" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new MonitorVariablesCloudCostQueryOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resetAggregator">ResetAggregator</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAggregator` <a name="ResetAggregator" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resetAggregator"></a>
+
+```csharp
+private void ResetAggregator()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregatorInput">AggregatorInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSourceInput">DataSourceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.queryInput">QueryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregator">Aggregator</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSource">DataSource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.query">Query</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AggregatorInput`<sup>Optional</sup> <a name="AggregatorInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregatorInput"></a>
+
+```csharp
+public string AggregatorInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DataSourceInput`<sup>Optional</sup> <a name="DataSourceInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSourceInput"></a>
+
+```csharp
+public string DataSourceInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.nameInput"></a>
+
+```csharp
+public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `QueryInput`<sup>Optional</sup> <a name="QueryInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.queryInput"></a>
+
+```csharp
+public string QueryInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Aggregator`<sup>Required</sup> <a name="Aggregator" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregator"></a>
+
+```csharp
+public string Aggregator { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DataSource`<sup>Required</sup> <a name="DataSource" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSource"></a>
+
+```csharp
+public string DataSource { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Query`<sup>Required</sup> <a name="Query" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.query"></a>
+
+```csharp
+public string Query { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -7470,7 +8092,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery">PutCloudCostQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery">PutEventQuery</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resetCloudCostQuery">ResetCloudCostQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resetEventQuery">ResetEventQuery</a></code> | *No description.* |
 
 ---
@@ -7625,6 +8249,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutCloudCostQuery` <a name="PutCloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery"></a>
+
+```csharp
+private void PutCloudCostQuery(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery.parameter.value"></a>
+
+- *Type:* object
+
+---
+
 ##### `PutEventQuery` <a name="PutEventQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery"></a>
 
 ```csharp
@@ -7636,6 +8272,12 @@ private void PutEventQuery(object Value)
 - *Type:* object
 
 ---
+
+##### `ResetCloudCostQuery` <a name="ResetCloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resetCloudCostQuery"></a>
+
+```csharp
+private void ResetCloudCostQuery()
+```
 
 ##### `ResetEventQuery` <a name="ResetEventQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resetEventQuery"></a>
 
@@ -7650,7 +8292,9 @@ private void ResetEventQuery()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQuery">CloudCostQuery</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList">MonitorVariablesCloudCostQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQuery">EventQuery</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList">MonitorVariablesEventQueryList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput">CloudCostQueryInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput">EventQueryInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
 
@@ -7680,6 +8324,16 @@ public string Fqn { get; }
 
 ---
 
+##### `CloudCostQuery`<sup>Required</sup> <a name="CloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQuery"></a>
+
+```csharp
+public MonitorVariablesCloudCostQueryList CloudCostQuery { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList">MonitorVariablesCloudCostQueryList</a>
+
+---
+
 ##### `EventQuery`<sup>Required</sup> <a name="EventQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQuery"></a>
 
 ```csharp
@@ -7687,6 +8341,16 @@ public MonitorVariablesEventQueryList EventQuery { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList">MonitorVariablesEventQueryList</a>
+
+---
+
+##### `CloudCostQueryInput`<sup>Optional</sup> <a name="CloudCostQueryInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput"></a>
+
+```csharp
+public object CloudCostQueryInput { get; }
+```
+
+- *Type:* object
 
 ---
 

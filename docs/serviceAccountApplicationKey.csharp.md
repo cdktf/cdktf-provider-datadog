@@ -4,7 +4,7 @@
 
 ### ServiceAccountApplicationKey <a name="ServiceAccountApplicationKey" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.resetScopes">ResetScopes</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetScopes` <a name="ResetScopes" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.resetScopes"></a>
+
+```csharp
+private void ResetScopes()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +474,7 @@ The construct id used in the generated config for the ServiceAccountApplicationK
 
 The id of the existing ServiceAccountApplicationKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/service_account_application_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/service_account_application_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -502,8 +509,10 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.53
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.last4">Last4</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.scopesInput">ScopesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.serviceAccountIdInput">ServiceAccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.scopes">Scopes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.serviceAccountId">ServiceAccountId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -700,6 +709,16 @@ public string NameInput { get; }
 
 ---
 
+##### `ScopesInput`<sup>Optional</sup> <a name="ScopesInput" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.scopesInput"></a>
+
+```csharp
+public string[] ScopesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `ServiceAccountIdInput`<sup>Optional</sup> <a name="ServiceAccountIdInput" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.serviceAccountIdInput"></a>
 
 ```csharp
@@ -717,6 +736,16 @@ public string Name { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.property.scopes"></a>
+
+```csharp
+public string[] Scopes { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -766,7 +795,8 @@ new ServiceAccountApplicationKeyConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Name,
-    string ServiceAccountId
+    string ServiceAccountId,
+    string[] Scopes = null
 };
 ```
 
@@ -783,6 +813,7 @@ new ServiceAccountApplicationKeyConfig {
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKeyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKeyConfig.property.name">Name</a></code> | <code>string</code> | Name of the application key. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKeyConfig.property.serviceAccountId">ServiceAccountId</a></code> | <code>string</code> | ID of the service account that owns this key. |
+| <code><a href="#@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKeyConfig.property.scopes">Scopes</a></code> | <code>string[]</code> | Authorization scopes for the Application Key. Application Keys configured with no scopes have full access. |
 
 ---
 
@@ -866,7 +897,7 @@ public string Name { get; set; }
 
 Name of the application key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
 
 ---
 
@@ -880,7 +911,21 @@ public string ServiceAccountId { get; set; }
 
 ID of the service account that owns this key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
+
+---
+
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKeyConfig.property.scopes"></a>
+
+```csharp
+public string[] Scopes { get; set; }
+```
+
+- *Type:* string[]
+
+Authorization scopes for the Application Key. Application Keys configured with no scopes have full access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/service_account_application_key#scopes ServiceAccountApplicationKey#scopes}
 
 ---
 

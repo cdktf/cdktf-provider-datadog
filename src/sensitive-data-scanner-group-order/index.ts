@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/sensitive_data_scanner_group_order
+// https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/sensitive_data_scanner_group_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface SensitiveDataScannerGroupOrderConfig extends cdktf.TerraformMet
   /**
   * The list of Sensitive Data Scanner group IDs, in order. Logs are tested against the query filter of each index one by one following the order of the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
   */
   readonly groupIds: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}
 */
 export class SensitiveDataScannerGroupOrder extends cdktf.TerraformResource {
 
@@ -37,7 +37,7 @@ export class SensitiveDataScannerGroupOrder extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SensitiveDataScannerGroupOrder resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SensitiveDataScannerGroupOrder to import
-  * @param importFromId The id of the existing SensitiveDataScannerGroupOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/sensitive_data_scanner_group_order#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SensitiveDataScannerGroupOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/sensitive_data_scanner_group_order#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SensitiveDataScannerGroupOrder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +49,7 @@ export class SensitiveDataScannerGroupOrder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class SensitiveDataScannerGroupOrder extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_sensitive_data_scanner_group_order',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.53.0',
+        providerVersion: '3.54.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

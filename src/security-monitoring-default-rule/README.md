@@ -1,3 +1,3 @@
 # `datadog_security_monitoring_default_rule`
 
-Refer to the Terraform Registry for docs: [`datadog_security_monitoring_default_rule`](https://registry.terraform.io/providers/datadog/datadog/3.53.0/docs/resources/security_monitoring_default_rule).
+Refer to the Terraform Registry for docs: [`datadog_security_monitoring_default_rule`](https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/security_monitoring_default_rule).
