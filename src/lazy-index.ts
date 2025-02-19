@@ -64,6 +64,7 @@ Object.defineProperty(exports, 'securityMonitoringDefaultRule', { get: function 
 Object.defineProperty(exports, 'securityMonitoringFilter', { get: function () { return require('./security-monitoring-filter'); } });
 Object.defineProperty(exports, 'securityMonitoringRule', { get: function () { return require('./security-monitoring-rule'); } });
 Object.defineProperty(exports, 'securityMonitoringSuppression', { get: function () { return require('./security-monitoring-suppression'); } });
+Object.defineProperty(exports, 'securityNotificationRule', { get: function () { return require('./security-notification-rule'); } });
 Object.defineProperty(exports, 'sensitiveDataScannerGroup', { get: function () { return require('./sensitive-data-scanner-group'); } });
 Object.defineProperty(exports, 'sensitiveDataScannerGroupOrder', { get: function () { return require('./sensitive-data-scanner-group-order'); } });
 Object.defineProperty(exports, 'sensitiveDataScannerRule', { get: function () { return require('./sensitive-data-scanner-rule'); } });
@@ -126,6 +127,7 @@ Object.defineProperty(exports, 'dataDatadogSyntheticsLocations', { get: function
 Object.defineProperty(exports, 'dataDatadogSyntheticsTest', { get: function () { return require('./data-datadog-synthetics-test'); } });
 Object.defineProperty(exports, 'dataDatadogTeam', { get: function () { return require('./data-datadog-team'); } });
 Object.defineProperty(exports, 'dataDatadogTeamMemberships', { get: function () { return require('./data-datadog-team-memberships'); } });
+Object.defineProperty(exports, 'dataDatadogTeams', { get: function () { return require('./data-datadog-teams'); } });
 Object.defineProperty(exports, 'dataDatadogUser', { get: function () { return require('./data-datadog-user'); } });
 Object.defineProperty(exports, 'dataDatadogUsers', { get: function () { return require('./data-datadog-users'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });

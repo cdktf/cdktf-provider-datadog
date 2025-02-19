@@ -4,7 +4,7 @@
 
 ### ApiKey <a name="ApiKey" id="@cdktf/provider-datadog.apiKey.ApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key datadog_api_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key datadog_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apiKey.ApiKey.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.resetRemoteConfigReadEnabled">ResetRemoteConfigReadEnabled</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetRemoteConfigReadEnabled` <a name="ResetRemoteConfigReadEnabled" id="@cdktf/provider-datadog.apiKey.ApiKey.resetRemoteConfigReadEnabled"></a>
+
+```go
+func ResetRemoteConfigReadEnabled()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +474,7 @@ The construct id used in the generated config for the ApiKey to import.
 
 The id of the existing ApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -500,7 +507,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.remoteConfigReadEnabledInput">RemoteConfigReadEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.remoteConfigReadEnabled">RemoteConfigReadEnabled</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -676,6 +685,16 @@ func NameInput() *string
 
 ---
 
+##### `RemoteConfigReadEnabledInput`<sup>Optional</sup> <a name="RemoteConfigReadEnabledInput" id="@cdktf/provider-datadog.apiKey.ApiKey.property.remoteConfigReadEnabledInput"></a>
+
+```go
+func RemoteConfigReadEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.apiKey.ApiKey.property.name"></a>
 
 ```go
@@ -683,6 +702,16 @@ func Name() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `RemoteConfigReadEnabled`<sup>Required</sup> <a name="RemoteConfigReadEnabled" id="@cdktf/provider-datadog.apiKey.ApiKey.property.remoteConfigReadEnabled"></a>
+
+```go
+func RemoteConfigReadEnabled() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -722,6 +751,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/apikey"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	RemoteConfigReadEnabled: interface{},
 }
 ```
 
@@ -737,6 +767,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/apikey"
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.name">Name</a></code> | <code>*string</code> | Name for API Key. |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.remoteConfigReadEnabled">RemoteConfigReadEnabled</a></code> | <code>interface{}</code> | Whether the API key is used for remote config. |
 
 ---
 
@@ -820,7 +851,23 @@ Name *string
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key#name ApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#name ApiKey#name}
+
+---
+
+##### `RemoteConfigReadEnabled`<sup>Optional</sup> <a name="RemoteConfigReadEnabled" id="@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.remoteConfigReadEnabled"></a>
+
+```go
+RemoteConfigReadEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Whether the API key is used for remote config.
+
+Warning : default value is true for backwards compatibility Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
 
 ---
 
