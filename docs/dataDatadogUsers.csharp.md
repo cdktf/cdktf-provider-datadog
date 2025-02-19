@@ -4,7 +4,7 @@
 
 ### DataDatadogUsers <a name="DataDatadogUsers" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/users datadog_users}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/users datadog_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataDatadogUsers to import
 
 The id of the existing DataDatadogUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,7 +734,7 @@ public string Filter { get; set; }
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/users#filter DataDatadogUsers#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/users#filter DataDatadogUsers#filter}
 
 ---
 
@@ -748,7 +748,7 @@ public string FilterStatus { get; set; }
 
 Filter on status attribute. Comma-separated list with possible values of Active, Pending, and Disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
 
 ---
 
@@ -1144,9 +1144,19 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.disabled">Disabled</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.email">Email</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.handle">Handle</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.icon">Icon</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.mfaEnabled">MfaEnabled</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.modifiedAt">ModifiedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.serviceAccount">ServiceAccount</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.status">Status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.title">Title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.verified">Verified</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsers">DataDatadogUsersUsers</a></code> | *No description.* |
 
 ---
@@ -1175,10 +1185,50 @@ public string Fqn { get; }
 
 ---
 
+##### `CreatedAt`<sup>Required</sup> <a name="CreatedAt" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.createdAt"></a>
+
+```csharp
+public string CreatedAt { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.disabled"></a>
+
+```csharp
+public IResolvable Disabled { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
 ##### `Email`<sup>Required</sup> <a name="Email" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.email"></a>
 
 ```csharp
 public string Email { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Handle`<sup>Required</sup> <a name="Handle" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.handle"></a>
+
+```csharp
+public string Handle { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Icon`<sup>Required</sup> <a name="Icon" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.icon"></a>
+
+```csharp
+public string Icon { get; }
 ```
 
 - *Type:* string
@@ -1195,6 +1245,26 @@ public string Id { get; }
 
 ---
 
+##### `MfaEnabled`<sup>Required</sup> <a name="MfaEnabled" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.mfaEnabled"></a>
+
+```csharp
+public IResolvable MfaEnabled { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `ModifiedAt`<sup>Required</sup> <a name="ModifiedAt" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.modifiedAt"></a>
+
+```csharp
+public string ModifiedAt { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.name"></a>
 
 ```csharp
@@ -1202,6 +1272,46 @@ public string Name { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `ServiceAccount`<sup>Required</sup> <a name="ServiceAccount" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.serviceAccount"></a>
+
+```csharp
+public IResolvable ServiceAccount { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.status"></a>
+
+```csharp
+public string Status { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Title`<sup>Required</sup> <a name="Title" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.title"></a>
+
+```csharp
+public string Title { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Verified`<sup>Required</sup> <a name="Verified" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.verified"></a>
+
+```csharp
+public IResolvable Verified { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
 
 ---
 

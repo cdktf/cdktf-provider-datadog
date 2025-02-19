@@ -4,7 +4,7 @@
 
 ### DataDatadogUsers <a name="DataDatadogUsers" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/users datadog_users}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/users datadog_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsers.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataDatadogUsers to import
 
 The id of the existing DataDatadogUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -724,7 +724,7 @@ public readonly filter: string;
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/users#filter DataDatadogUsers#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/users#filter DataDatadogUsers#filter}
 
 ---
 
@@ -738,7 +738,7 @@ public readonly filterStatus: string;
 
 Filter on status attribute. Comma-separated list with possible values of Active, Pending, and Disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
 
 ---
 
@@ -1132,9 +1132,19 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.email">email</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.handle">handle</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.icon">icon</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.mfaEnabled">mfaEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.modifiedAt">modifiedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.title">title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.verified">verified</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsers">DataDatadogUsersUsers</a></code> | *No description.* |
 
 ---
@@ -1163,10 +1173,50 @@ public readonly fqn: string;
 
 ---
 
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.disabled"></a>
+
+```typescript
+public readonly disabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
 ##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.email"></a>
 
 ```typescript
 public readonly email: string;
+```
+
+- *Type:* string
+
+---
+
+##### `handle`<sup>Required</sup> <a name="handle" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.handle"></a>
+
+```typescript
+public readonly handle: string;
+```
+
+- *Type:* string
+
+---
+
+##### `icon`<sup>Required</sup> <a name="icon" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.icon"></a>
+
+```typescript
+public readonly icon: string;
 ```
 
 - *Type:* string
@@ -1183,6 +1233,26 @@ public readonly id: string;
 
 ---
 
+##### `mfaEnabled`<sup>Required</sup> <a name="mfaEnabled" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.mfaEnabled"></a>
+
+```typescript
+public readonly mfaEnabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `modifiedAt`<sup>Required</sup> <a name="modifiedAt" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.modifiedAt"></a>
+
+```typescript
+public readonly modifiedAt: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.name"></a>
 
 ```typescript
@@ -1190,6 +1260,46 @@ public readonly name: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `serviceAccount`<sup>Required</sup> <a name="serviceAccount" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+---
+
+##### `verified`<sup>Required</sup> <a name="verified" id="@cdktf/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.property.verified"></a>
+
+```typescript
+public readonly verified: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 

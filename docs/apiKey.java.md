@@ -4,7 +4,7 @@
 
 ### ApiKey <a name="ApiKey" id="@cdktf/provider-datadog.apiKey.ApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key datadog_api_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key datadog_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apiKey.ApiKey.Initializer"></a>
 
@@ -24,6 +24,8 @@ ApiKey.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
+//  .remoteConfigReadEnabled(java.lang.Boolean)
+//  .remoteConfigReadEnabled(IResolvable)
     .build();
 ```
 
@@ -39,6 +41,7 @@ ApiKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name for API Key. |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.remoteConfigReadEnabled">remoteConfigReadEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the API key is used for remote config. |
 
 ---
 
@@ -108,7 +111,19 @@ Must be unique amongst siblings in the same scope
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key#name ApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#name ApiKey#name}
+
+---
+
+##### `remoteConfigReadEnabled`<sup>Optional</sup> <a name="remoteConfigReadEnabled" id="@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.remoteConfigReadEnabled"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Whether the API key is used for remote config.
+
+Warning : default value is true for backwards compatibility Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
 
 ---
 
@@ -139,6 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.resetRemoteConfigReadEnabled">resetRemoteConfigReadEnabled</a></code> | *No description.* |
 
 ---
 
@@ -432,6 +448,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetRemoteConfigReadEnabled` <a name="resetRemoteConfigReadEnabled" id="@cdktf/provider-datadog.apiKey.ApiKey.resetRemoteConfigReadEnabled"></a>
+
+```java
+public void resetRemoteConfigReadEnabled()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -535,7 +557,7 @@ The construct id used in the generated config for the ApiKey to import.
 
 The id of the existing ApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -568,7 +590,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.remoteConfigReadEnabledInput">remoteConfigReadEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.remoteConfigReadEnabled">remoteConfigReadEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -744,6 +768,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `remoteConfigReadEnabledInput`<sup>Optional</sup> <a name="remoteConfigReadEnabledInput" id="@cdktf/provider-datadog.apiKey.ApiKey.property.remoteConfigReadEnabledInput"></a>
+
+```java
+public java.lang.Object getRemoteConfigReadEnabledInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.apiKey.ApiKey.property.name"></a>
 
 ```java
@@ -751,6 +785,16 @@ public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `remoteConfigReadEnabled`<sup>Required</sup> <a name="remoteConfigReadEnabled" id="@cdktf/provider-datadog.apiKey.ApiKey.property.remoteConfigReadEnabled"></a>
+
+```java
+public java.lang.Object getRemoteConfigReadEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -794,6 +838,8 @@ ApiKeyConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
+//  .remoteConfigReadEnabled(java.lang.Boolean)
+//  .remoteConfigReadEnabled(IResolvable)
     .build();
 ```
 
@@ -809,6 +855,7 @@ ApiKeyConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name for API Key. |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.remoteConfigReadEnabled">remoteConfigReadEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the API key is used for remote config. |
 
 ---
 
@@ -892,7 +939,23 @@ public java.lang.String getName();
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key#name ApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#name ApiKey#name}
+
+---
+
+##### `remoteConfigReadEnabled`<sup>Optional</sup> <a name="remoteConfigReadEnabled" id="@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.remoteConfigReadEnabled"></a>
+
+```java
+public java.lang.Object getRemoteConfigReadEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Whether the API key is used for remote config.
+
+Warning : default value is true for backwards compatibility Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
 
 ---
 

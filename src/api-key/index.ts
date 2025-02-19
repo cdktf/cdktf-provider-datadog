@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key
+// https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,19 @@ export interface ApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for API Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key#name ApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#name ApiKey#name}
   */
   readonly name: string;
+  /**
+  * Whether the API key is used for remote config. Warning : default value is true for backwards compatibility Defaults to `true`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
+  */
+  readonly remoteConfigReadEnabled?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key datadog_api_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key datadog_api_key}
 */
 export class ApiKey extends cdktf.TerraformResource {
 
@@ -37,7 +38,7 @@ export class ApiKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiKey to import
-  * @param importFromId The id of the existing ApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +50,7 @@ export class ApiKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/api_key datadog_api_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/api_key datadog_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +61,7 @@ export class ApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_api_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.54.0',
+        providerVersion: '3.55.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -72,6 +73,7 @@ export class ApiKey extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._name = config.name;
+    this._remoteConfigReadEnabled = config.remoteConfigReadEnabled;
   }
 
   // ==========
@@ -101,6 +103,22 @@ export class ApiKey extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // remote_config_read_enabled - computed: true, optional: true, required: false
+  private _remoteConfigReadEnabled?: boolean | cdktf.IResolvable; 
+  public get remoteConfigReadEnabled() {
+    return this.getBooleanAttribute('remote_config_read_enabled');
+  }
+  public set remoteConfigReadEnabled(value: boolean | cdktf.IResolvable) {
+    this._remoteConfigReadEnabled = value;
+  }
+  public resetRemoteConfigReadEnabled() {
+    this._remoteConfigReadEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteConfigReadEnabledInput() {
+    return this._remoteConfigReadEnabled;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -108,6 +126,7 @@ export class ApiKey extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
+      remote_config_read_enabled: cdktf.booleanToTerraform(this._remoteConfigReadEnabled),
     };
   }
 
@@ -118,6 +137,12 @@ export class ApiKey extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      remote_config_read_enabled: {
+        value: cdktf.booleanToHclTerraform(this._remoteConfigReadEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
     };
 

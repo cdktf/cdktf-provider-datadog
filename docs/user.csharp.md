@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktf/provider-datadog.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.user.User.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,8 +888,8 @@ new UserConfig {
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.email">Email</a></code> | <code>string</code> | Email address for user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.disabled">Disabled</a></code> | <code>object</code> | Whether the user is disabled. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.name">Name</a></code> | <code>string</code> | Name for user. |
+| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.name">Name</a></code> | <code>string</code> | User's name. Should be set only for password authentication, as it is overridden by Google or SAML authentication. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.roles">Roles</a></code> | <code>string[]</code> | A list of role IDs to assign to the user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.sendUserInvitation">SendUserInvitation</a></code> | <code>object</code> | Whether an invitation email should be sent when the user is created. Defaults to `true`. |
 
@@ -975,7 +975,7 @@ public string Email { get; set; }
 
 Email address for user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/user#email User#email}
 
 ---
 
@@ -989,7 +989,7 @@ public object Disabled { get; set; }
 
 Whether the user is disabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/user#disabled User#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/user#disabled User#disabled}
 
 ---
 
@@ -1001,7 +1001,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,9 +1016,9 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Name for user.
+User's name. Should be set only for password authentication, as it is overridden by Google or SAML authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/user#name User#name}
 
 ---
 
@@ -1032,7 +1032,7 @@ public string[] Roles { get; set; }
 
 A list of role IDs to assign to the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/user#roles User#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/user#roles User#roles}
 
 ---
 
@@ -1046,7 +1046,7 @@ public object SendUserInvitation { get; set; }
 
 Whether an invitation email should be sent when the user is created. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.54.0/docs/resources/user#send_user_invitation User#send_user_invitation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/user#send_user_invitation User#send_user_invitation}
 
 ---
 
