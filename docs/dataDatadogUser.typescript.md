@@ -4,7 +4,7 @@
 
 ### DataDatadogUser <a name="DataDatadogUser" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/data-sources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataDatadogUser to import.
 
 The id of the existing DataDatadogUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -407,8 +407,18 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.email">email</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.handle">handle</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.icon">icon</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.mfaEnabled">mfaEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.modifiedAt">modifiedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.serviceAccount">serviceAccount</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.title">title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.verified">verified</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.exactMatchInput">exactMatchInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.filterInput">filterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -540,10 +550,70 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.disabled"></a>
+
+```typescript
+public readonly disabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
 ##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.email"></a>
 
 ```typescript
 public readonly email: string;
+```
+
+- *Type:* string
+
+---
+
+##### `handle`<sup>Required</sup> <a name="handle" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.handle"></a>
+
+```typescript
+public readonly handle: string;
+```
+
+- *Type:* string
+
+---
+
+##### `icon`<sup>Required</sup> <a name="icon" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.icon"></a>
+
+```typescript
+public readonly icon: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mfaEnabled`<sup>Required</sup> <a name="mfaEnabled" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.mfaEnabled"></a>
+
+```typescript
+public readonly mfaEnabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `modifiedAt`<sup>Required</sup> <a name="modifiedAt" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.modifiedAt"></a>
+
+```typescript
+public readonly modifiedAt: string;
 ```
 
 - *Type:* string
@@ -557,6 +627,46 @@ public readonly name: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `serviceAccount`<sup>Required</sup> <a name="serviceAccount" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+---
+
+##### `verified`<sup>Required</sup> <a name="verified" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.verified"></a>
+
+```typescript
+public readonly verified: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -663,7 +773,7 @@ const dataDatadogUserConfig: dataDatadogUser.DataDatadogUserConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.filter">filter</a></code> | <code>string</code> | Filter all users by the given string. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.exactMatch">exactMatch</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/user#id DataDatadogUser#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/data-sources/user#id DataDatadogUser#id}. |
 
 ---
 
@@ -747,7 +857,7 @@ public readonly filter: string;
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/user#filter DataDatadogUser#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/data-sources/user#filter DataDatadogUser#filter}
 
 ---
 
@@ -761,7 +871,7 @@ public readonly exactMatch: boolean | IResolvable;
 
 When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
 
 ---
 
@@ -773,7 +883,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/data-sources/user#id DataDatadogUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/data-sources/user#id DataDatadogUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

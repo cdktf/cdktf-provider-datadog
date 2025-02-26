@@ -4,7 +4,7 @@
 
 ### SyntheticsGlobalVariable <a name="SyntheticsGlobalVariable" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.putParseTestOptions">putParseTestOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetIsFido">resetIsFido</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetIsTotp">resetIsTotp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetOptions">resetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetParseTestId">resetParseTestId</a></code> | *No description.* |
@@ -84,6 +85,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetRestrictedRoles">resetRestrictedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetSecure">resetSecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetValue">resetValue</a></code> | *No description.* |
 
 ---
 
@@ -411,6 +413,12 @@ public resetDescription(): void
 public resetId(): void
 ```
 
+##### `resetIsFido` <a name="resetIsFido" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetIsFido"></a>
+
+```typescript
+public resetIsFido(): void
+```
+
 ##### `resetIsTotp` <a name="resetIsTotp" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetIsTotp"></a>
 
 ```typescript
@@ -451,6 +459,12 @@ public resetSecure(): void
 
 ```typescript
 public resetTags(): void
+```
+
+##### `resetValue` <a name="resetValue" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.resetValue"></a>
+
+```typescript
+public resetValue(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -556,7 +570,7 @@ The construct id used in the generated config for the SyntheticsGlobalVariable t
 
 The id of the existing SyntheticsGlobalVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -590,6 +604,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.parseTestOptions">parseTestOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsOutputReference">SyntheticsGlobalVariableParseTestOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.isFidoInput">isFidoInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.isTotpInput">isTotpInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.optionsInput">optionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptions">SyntheticsGlobalVariableOptions</a></code> | *No description.* |
@@ -601,6 +616,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.isFido">isFido</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.isTotp">isTotp</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.parseTestId">parseTestId</a></code> | <code>string</code> | *No description.* |
@@ -793,6 +809,16 @@ public readonly idInput: string;
 
 ---
 
+##### `isFidoInput`<sup>Optional</sup> <a name="isFidoInput" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.isFidoInput"></a>
+
+```typescript
+public readonly isFidoInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `isTotpInput`<sup>Optional</sup> <a name="isTotpInput" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.isTotpInput"></a>
 
 ```typescript
@@ -900,6 +926,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `isFido`<sup>Required</sup> <a name="isFido" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.isFido"></a>
+
+```typescript
+public readonly isFido: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -1015,9 +1051,9 @@ const syntheticsGlobalVariableConfig: syntheticsGlobalVariable.SyntheticsGlobalV
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.name">name</a></code> | <code>string</code> | Synthetics global variable name. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.value">value</a></code> | <code>string</code> | The value of the global variable. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.description">description</a></code> | <code>string</code> | Description of the global variable. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#id SyntheticsGlobalVariable#id}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#id SyntheticsGlobalVariable#id}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.isFido">isFido</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the global variable is a FIDO variable. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.isTotp">isTotp</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the global variable is a TOTP variable. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.options">options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptions">SyntheticsGlobalVariableOptions</a></code> | options block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.parseTestId">parseTestId</a></code> | <code>string</code> | Id of the Synthetics test to use for a variable from test. |
@@ -1025,6 +1061,7 @@ const syntheticsGlobalVariableConfig: syntheticsGlobalVariable.SyntheticsGlobalV
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.restrictedRoles">restrictedRoles</a></code> | <code>string[]</code> | A list of role identifiers to associate with the Synthetics global variable. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.secure">secure</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the value of the global variable is hidden. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.tags">tags</a></code> | <code>string[]</code> | A list of tags to associate with your synthetics global variable. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.value">value</a></code> | <code>string</code> | The value of the global variable. This setting is ignored if `is_fido` is set to `true` and required otherwise. |
 
 ---
 
@@ -1108,21 +1145,7 @@ public readonly name: string;
 
 Synthetics global variable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
-
----
-
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.value"></a>
-
-```typescript
-public readonly value: string;
-```
-
-- *Type:* string
-
-The value of the global variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
 
 ---
 
@@ -1136,7 +1159,7 @@ public readonly description: string;
 
 Description of the global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
 
 ---
 
@@ -1148,10 +1171,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#id SyntheticsGlobalVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#id SyntheticsGlobalVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `isFido`<sup>Optional</sup> <a name="isFido" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.isFido"></a>
+
+```typescript
+public readonly isFido: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If set to true, the global variable is a FIDO variable. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#is_fido SyntheticsGlobalVariable#is_fido}
 
 ---
 
@@ -1165,7 +1202,7 @@ public readonly isTotp: boolean | IResolvable;
 
 If set to true, the global variable is a TOTP variable. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#is_totp SyntheticsGlobalVariable#is_totp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#is_totp SyntheticsGlobalVariable#is_totp}
 
 ---
 
@@ -1179,7 +1216,7 @@ public readonly options: SyntheticsGlobalVariableOptions;
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
 
 ---
 
@@ -1193,7 +1230,7 @@ public readonly parseTestId: string;
 
 Id of the Synthetics test to use for a variable from test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
 
 ---
 
@@ -1207,7 +1244,7 @@ public readonly parseTestOptions: SyntheticsGlobalVariableParseTestOptions;
 
 parse_test_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
 
 ---
 
@@ -1221,7 +1258,7 @@ public readonly restrictedRoles: string[];
 
 A list of role identifiers to associate with the Synthetics global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
 
 ---
 
@@ -1235,9 +1272,9 @@ public readonly secure: boolean | IResolvable;
 
 If set to true, the value of the global variable is hidden.
 
-This setting is ignored if `is_totp` is set to `true`. Defaults to `false`.
+This setting is ignored if `is_totp` or `is_fido` is set to `true`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
 
 ---
 
@@ -1251,7 +1288,21 @@ public readonly tags: string[];
 
 A list of tags to associate with your synthetics global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+The value of the global variable. This setting is ignored if `is_fido` is set to `true` and required otherwise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
 
 ---
 
@@ -1283,7 +1334,7 @@ public readonly totpParameters: SyntheticsGlobalVariableOptionsTotpParameters;
 
 totp_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
 
 ---
 
@@ -1316,7 +1367,7 @@ public readonly digits: number;
 
 Number of digits for the OTP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
 
 ---
 
@@ -1330,7 +1381,7 @@ public readonly refreshInterval: number;
 
 Interval for which to refresh the token (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
 
 ---
 
@@ -1365,7 +1416,7 @@ public readonly type: string;
 
 Defines the source to use to extract the value. Valid values are `http_body`, `http_header`, `http_status_code`, `local_variable`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
 
 ---
 
@@ -1379,7 +1430,7 @@ public readonly field: string;
 
 Required when type = `http_header`. Defines the header to use to extract the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
 
 ---
 
@@ -1393,7 +1444,7 @@ public readonly localVariableName: string;
 
 When type is `local_variable`, name of the local variable to use to extract the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
 
 ---
 
@@ -1407,7 +1458,7 @@ public readonly parser: SyntheticsGlobalVariableParseTestOptionsParser;
 
 parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
 
 ---
 
@@ -1440,7 +1491,7 @@ public readonly type: string;
 
 Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`, `x_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
 
 ---
 
@@ -1454,7 +1505,7 @@ public readonly value: string;
 
 Value for the parser to use, required for type `json_path` or `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
 
 ---
 
