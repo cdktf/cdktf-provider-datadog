@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/cloud_workload_security_agent_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/cloud_workload_security_agent_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface CloudWorkloadSecurityAgentRuleConfig extends cdktf.TerraformMet
   /**
   * The description of the Agent rule. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/cloud_workload_security_agent_rule#description CloudWorkloadSecurityAgentRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/cloud_workload_security_agent_rule#description CloudWorkloadSecurityAgentRule#description}
   */
   readonly description?: string;
   /**
   * Whether the Agent rule is enabled. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/cloud_workload_security_agent_rule#enabled CloudWorkloadSecurityAgentRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/cloud_workload_security_agent_rule#enabled CloudWorkloadSecurityAgentRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The SECL expression of the Agent rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/cloud_workload_security_agent_rule#expression CloudWorkloadSecurityAgentRule#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/cloud_workload_security_agent_rule#expression CloudWorkloadSecurityAgentRule#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/cloud_workload_security_agent_rule#id CloudWorkloadSecurityAgentRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/cloud_workload_security_agent_rule#id CloudWorkloadSecurityAgentRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,13 +40,13 @@ export interface CloudWorkloadSecurityAgentRuleConfig extends cdktf.TerraformMet
   /**
   * The name of the Agent rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/cloud_workload_security_agent_rule#name CloudWorkloadSecurityAgentRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/cloud_workload_security_agent_rule#name CloudWorkloadSecurityAgentRule#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}
 */
 export class CloudWorkloadSecurityAgentRule extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class CloudWorkloadSecurityAgentRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudWorkloadSecurityAgentRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudWorkloadSecurityAgentRule to import
-  * @param importFromId The id of the existing CloudWorkloadSecurityAgentRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/cloud_workload_security_agent_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudWorkloadSecurityAgentRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/cloud_workload_security_agent_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudWorkloadSecurityAgentRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class CloudWorkloadSecurityAgentRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class CloudWorkloadSecurityAgentRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_cloud_workload_security_agent_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.55.0',
+        providerVersion: '3.56.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

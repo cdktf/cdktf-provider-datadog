@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration
+// https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
   /**
   * Toggle to include/exclude tags as queryable for your metric. Can only be applied to metrics that have one or more tags configured. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#exclude_tags_mode MetricTagConfiguration#exclude_tags_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#exclude_tags_mode MetricTagConfiguration#exclude_tags_mode}
   */
   readonly excludeTagsMode?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +28,31 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
   /**
   * Toggle to include/exclude percentiles for a distribution metric. Defaults to false. Can only be applied to metrics that have a `metric_type` of distribution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
   */
   readonly includePercentiles?: boolean | cdktf.IResolvable;
   /**
   * The metric name for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
   */
   readonly metricName: string;
   /**
   * The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
   */
   readonly metricType: string;
   /**
   * A list of tag keys that will be queryable for your metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
   */
   readonly tags: string[];
   /**
   * aggregations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
   */
   readonly aggregations?: MetricTagConfigurationAggregations[] | cdktf.IResolvable;
 }
@@ -60,13 +60,13 @@ export interface MetricTagConfigurationAggregations {
   /**
   * A space aggregation for use in query. Valid values are `avg`, `max`, `min`, `sum`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#space MetricTagConfiguration#space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#space MetricTagConfiguration#space}
   */
   readonly space: string;
   /**
   * A time aggregation for use in query. Valid values are `avg`, `count`, `max`, `min`, `sum`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#time MetricTagConfiguration#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#time MetricTagConfiguration#time}
   */
   readonly time: string;
 }
@@ -205,7 +205,7 @@ export class MetricTagConfigurationAggregationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}
 */
 export class MetricTagConfiguration extends cdktf.TerraformResource {
 
@@ -221,7 +221,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MetricTagConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MetricTagConfiguration to import
-  * @param importFromId The id of the existing MetricTagConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MetricTagConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MetricTagConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -233,7 +233,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.55.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -244,7 +244,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_metric_tag_configuration',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.55.0',
+        providerVersion: '3.56.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
