@@ -4,7 +4,7 @@
 
 ### SecurityNotificationRule <a name="SecurityNotificationRule" id="@cdktf/provider-datadog.securityNotificationRule.SecurityNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule datadog_security_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule datadog_security_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityNotificationRule.SecurityNotificationRule.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the rule (must be unique).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#name SecurityNotificationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#name SecurityNotificationRule#name}
 
 ---
 
@@ -134,7 +134,7 @@ A target must be prefixed with an
 
 Indicates whether the rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#enabled SecurityNotificationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#enabled SecurityNotificationRule#enabled}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#selectors SecurityNotificationRule#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#selectors SecurityNotificationRule#selectors}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Specifies the time period, in seconds, used to aggregate the notification. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#time_aggregation SecurityNotificationRule#time_aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#time_aggregation SecurityNotificationRule#time_aggregation}
 
 ---
 
@@ -534,7 +534,7 @@ def put_selectors(
 
 Specifies security rule types for filtering signals and vulnerabilities that generate notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#rule_types SecurityNotificationRule#rule_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#rule_types SecurityNotificationRule#rule_types}
 
 ---
 
@@ -546,7 +546,7 @@ The type of security issues the rule applies to.
 
 Use `security_signals` for rules based on security signals and `security_findings` for those based on vulnerabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#trigger_source SecurityNotificationRule#trigger_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#trigger_source SecurityNotificationRule#trigger_source}
 
 ---
 
@@ -556,7 +556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Comprises one or several key:value pairs for filtering security issues based on tags and attributes. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#query SecurityNotificationRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#query SecurityNotificationRule#query}
 
 ---
 
@@ -566,7 +566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The security rules severities to consider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#severities SecurityNotificationRule#severities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#severities SecurityNotificationRule#severities}
 
 ---
 
@@ -702,7 +702,7 @@ The construct id used in the generated config for the SecurityNotificationRule t
 
 The id of the existing SecurityNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1217,7 +1217,7 @@ name: str
 
 The name of the rule (must be unique).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#name SecurityNotificationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#name SecurityNotificationRule#name}
 
 ---
 
@@ -1245,7 +1245,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Indicates whether the rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#enabled SecurityNotificationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#enabled SecurityNotificationRule#enabled}
 
 ---
 
@@ -1259,7 +1259,7 @@ selectors: SecurityNotificationRuleSelectors
 
 selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#selectors SecurityNotificationRule#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#selectors SecurityNotificationRule#selectors}
 
 ---
 
@@ -1273,7 +1273,7 @@ time_aggregation: typing.Union[int, float]
 
 Specifies the time period, in seconds, used to aggregate the notification. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#time_aggregation SecurityNotificationRule#time_aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#time_aggregation SecurityNotificationRule#time_aggregation}
 
 ---
 
@@ -1313,7 +1313,7 @@ rule_types: typing.List[str]
 
 Specifies security rule types for filtering signals and vulnerabilities that generate notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#rule_types SecurityNotificationRule#rule_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#rule_types SecurityNotificationRule#rule_types}
 
 ---
 
@@ -1329,7 +1329,7 @@ The type of security issues the rule applies to.
 
 Use `security_signals` for rules based on security signals and `security_findings` for those based on vulnerabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#trigger_source SecurityNotificationRule#trigger_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#trigger_source SecurityNotificationRule#trigger_source}
 
 ---
 
@@ -1343,7 +1343,7 @@ query: str
 
 Comprises one or several key:value pairs for filtering security issues based on tags and attributes. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#query SecurityNotificationRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#query SecurityNotificationRule#query}
 
 ---
 
@@ -1357,7 +1357,7 @@ severities: typing.List[str]
 
 The security rules severities to consider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.56.0/docs/resources/security_notification_rule#severities SecurityNotificationRule#severities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/security_notification_rule#severities SecurityNotificationRule#severities}
 
 ---
 

@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [actionConnection](./actionConnection.go.md)
 - [apiKey](./apiKey.go.md)
 - [apmRetentionFilter](./apmRetentionFilter.go.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.go.md)
@@ -16,6 +17,7 @@ The following submodules are available:
 - [dashboard](./dashboard.go.md)
 - [dashboardJson](./dashboardJson.go.md)
 - [dashboardList](./dashboardList.go.md)
+- [dataDatadogActionConnection](./dataDatadogActionConnection.go.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.go.md)
 - [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.go.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.go.md)
@@ -77,6 +79,7 @@ The following submodules are available:
 - [integrationGcp](./integrationGcp.go.md)
 - [integrationGcpSts](./integrationGcpSts.go.md)
 - [integrationMsTeamsTenantBasedHandle](./integrationMsTeamsTenantBasedHandle.go.md)
+- [integrationMsTeamsWorkflowsWebhookHandle](./integrationMsTeamsWorkflowsWebhookHandle.go.md)
 - [integrationOpsgenieServiceObject](./integrationOpsgenieServiceObject.go.md)
 - [integrationPagerduty](./integrationPagerduty.go.md)
 - [integrationPagerdutyServiceObject](./integrationPagerdutyServiceObject.go.md)

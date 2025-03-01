@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [actionConnection](./actionConnection.csharp.md)
 - [apiKey](./apiKey.csharp.md)
 - [apmRetentionFilter](./apmRetentionFilter.csharp.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.csharp.md)
@@ -16,6 +17,7 @@ The following submodules are available:
 - [dashboard](./dashboard.csharp.md)
 - [dashboardJson](./dashboardJson.csharp.md)
 - [dashboardList](./dashboardList.csharp.md)
+- [dataDatadogActionConnection](./dataDatadogActionConnection.csharp.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.csharp.md)
 - [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.csharp.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.csharp.md)
@@ -77,6 +79,7 @@ The following submodules are available:
 - [integrationGcp](./integrationGcp.csharp.md)
 - [integrationGcpSts](./integrationGcpSts.csharp.md)
 - [integrationMsTeamsTenantBasedHandle](./integrationMsTeamsTenantBasedHandle.csharp.md)
+- [integrationMsTeamsWorkflowsWebhookHandle](./integrationMsTeamsWorkflowsWebhookHandle.csharp.md)
 - [integrationOpsgenieServiceObject](./integrationOpsgenieServiceObject.csharp.md)
 - [integrationPagerduty](./integrationPagerduty.csharp.md)
 - [integrationPagerdutyServiceObject](./integrationPagerdutyServiceObject.csharp.md)

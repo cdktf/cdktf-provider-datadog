@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [actionConnection](./actionConnection.typescript.md)
 - [apiKey](./apiKey.typescript.md)
 - [apmRetentionFilter](./apmRetentionFilter.typescript.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.typescript.md)
@@ -16,6 +17,7 @@ The following submodules are available:
 - [dashboard](./dashboard.typescript.md)
 - [dashboardJson](./dashboardJson.typescript.md)
 - [dashboardList](./dashboardList.typescript.md)
+- [dataDatadogActionConnection](./dataDatadogActionConnection.typescript.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.typescript.md)
 - [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.typescript.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.typescript.md)
@@ -77,6 +79,7 @@ The following submodules are available:
 - [integrationGcp](./integrationGcp.typescript.md)
 - [integrationGcpSts](./integrationGcpSts.typescript.md)
 - [integrationMsTeamsTenantBasedHandle](./integrationMsTeamsTenantBasedHandle.typescript.md)
+- [integrationMsTeamsWorkflowsWebhookHandle](./integrationMsTeamsWorkflowsWebhookHandle.typescript.md)
 - [integrationOpsgenieServiceObject](./integrationOpsgenieServiceObject.typescript.md)
 - [integrationPagerduty](./integrationPagerduty.typescript.md)
 - [integrationPagerdutyServiceObject](./integrationPagerdutyServiceObject.typescript.md)
