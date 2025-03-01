@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [actionConnection](./actionConnection.java.md)
 - [apiKey](./apiKey.java.md)
 - [apmRetentionFilter](./apmRetentionFilter.java.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.java.md)
@@ -16,6 +17,7 @@ The following submodules are available:
 - [dashboard](./dashboard.java.md)
 - [dashboardJson](./dashboardJson.java.md)
 - [dashboardList](./dashboardList.java.md)
+- [dataDatadogActionConnection](./dataDatadogActionConnection.java.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.java.md)
 - [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.java.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.java.md)
@@ -77,6 +79,7 @@ The following submodules are available:
 - [integrationGcp](./integrationGcp.java.md)
 - [integrationGcpSts](./integrationGcpSts.java.md)
 - [integrationMsTeamsTenantBasedHandle](./integrationMsTeamsTenantBasedHandle.java.md)
+- [integrationMsTeamsWorkflowsWebhookHandle](./integrationMsTeamsWorkflowsWebhookHandle.java.md)
 - [integrationOpsgenieServiceObject](./integrationOpsgenieServiceObject.java.md)
 - [integrationPagerduty](./integrationPagerduty.java.md)
 - [integrationPagerdutyServiceObject](./integrationPagerdutyServiceObject.java.md)

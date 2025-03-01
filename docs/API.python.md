@@ -4,6 +4,7 @@
 
 The following submodules are available:
 
+- [actionConnection](./actionConnection.python.md)
 - [apiKey](./apiKey.python.md)
 - [apmRetentionFilter](./apmRetentionFilter.python.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.python.md)
@@ -16,6 +17,7 @@ The following submodules are available:
 - [dashboard](./dashboard.python.md)
 - [dashboardJson](./dashboardJson.python.md)
 - [dashboardList](./dashboardList.python.md)
+- [dataDatadogActionConnection](./dataDatadogActionConnection.python.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.python.md)
 - [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.python.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.python.md)
@@ -77,6 +79,7 @@ The following submodules are available:
 - [integrationGcp](./integrationGcp.python.md)
 - [integrationGcpSts](./integrationGcpSts.python.md)
 - [integrationMsTeamsTenantBasedHandle](./integrationMsTeamsTenantBasedHandle.python.md)
+- [integrationMsTeamsWorkflowsWebhookHandle](./integrationMsTeamsWorkflowsWebhookHandle.python.md)
 - [integrationOpsgenieServiceObject](./integrationOpsgenieServiceObject.python.md)
 - [integrationPagerduty](./integrationPagerduty.python.md)
 - [integrationPagerdutyServiceObject](./integrationPagerdutyServiceObject.python.md)
