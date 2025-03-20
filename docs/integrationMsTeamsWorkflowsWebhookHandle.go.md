@@ -4,12 +4,12 @@
 
 ### IntegrationMsTeamsWorkflowsWebhookHandle <a name="IntegrationMsTeamsWorkflowsWebhookHandle" id="@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationmsteamsworkflowswebhookhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamsworkflowswebhookhandle"
 
 integrationmsteamsworkflowswebhookhandle.NewIntegrationMsTeamsWorkflowsWebhookHandle(scope Construct, id *string, config IntegrationMsTeamsWorkflowsWebhookHandleConfig) IntegrationMsTeamsWorkflowsWebhookHandle
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationmsteamsworkflowswebhookhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamsworkflowswebhookhandle"
 
 integrationmsteamsworkflowswebhookhandle.IntegrationMsTeamsWorkflowsWebhookHandle_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationmsteamsworkflowswebhookhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamsworkflowswebhookhandle"
 
 integrationmsteamsworkflowswebhookhandle.IntegrationMsTeamsWorkflowsWebhookHandle_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ integrationmsteamsworkflowswebhookhandle.IntegrationMsTeamsWorkflowsWebhookHandl
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationmsteamsworkflowswebhookhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamsworkflowswebhookhandle"
 
 integrationmsteamsworkflowswebhookhandle.IntegrationMsTeamsWorkflowsWebhookHandle_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ integrationmsteamsworkflowswebhookhandle.IntegrationMsTeamsWorkflowsWebhookHandl
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationmsteamsworkflowswebhookhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamsworkflowswebhookhandle"
 
 integrationmsteamsworkflowswebhookhandle.IntegrationMsTeamsWorkflowsWebhookHandle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the IntegrationMsTeamsWorkflow
 
 The id of the existing IntegrationMsTeamsWorkflowsWebhookHandle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/integration_ms_teams_workflows_webhook_handle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_ms_teams_workflows_webhook_handle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationmsteamsworkflowswebhookhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamsworkflowswebhookhandle"
 
 &integrationmsteamsworkflowswebhookhandle.IntegrationMsTeamsWorkflowsWebhookHandleConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ Name *string
 
 Your Microsoft Workflows webhook handle name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
 
 ---
 
@@ -847,7 +847,7 @@ Url *string
 
 Your Microsoft Workflows webhook URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
 
 ---
 

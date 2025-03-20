@@ -9,6 +9,8 @@ The following submodules are available:
 - [apmRetentionFilter](./apmRetentionFilter.typescript.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.typescript.md)
 - [applicationKey](./applicationKey.typescript.md)
+- [appsecWafCustomRule](./appsecWafCustomRule.typescript.md)
+- [appsecWafExclusionFilter](./appsecWafExclusionFilter.typescript.md)
 - [authnMapping](./authnMapping.typescript.md)
 - [childOrganization](./childOrganization.typescript.md)
 - [cloudConfigurationRule](./cloudConfigurationRule.typescript.md)
@@ -61,12 +63,14 @@ The following submodules are available:
 - [dataDatadogTeams](./dataDatadogTeams.typescript.md)
 - [dataDatadogUser](./dataDatadogUser.typescript.md)
 - [dataDatadogUsers](./dataDatadogUsers.typescript.md)
+- [dataDatadogWorkflowAutomation](./dataDatadogWorkflowAutomation.typescript.md)
 - [domainAllowlist](./domainAllowlist.typescript.md)
 - [downtime](./downtime.typescript.md)
 - [downtimeSchedule](./downtimeSchedule.typescript.md)
 - [integrationAws](./integrationAws.typescript.md)
 - [integrationAwsAccount](./integrationAwsAccount.typescript.md)
 - [integrationAwsEventBridge](./integrationAwsEventBridge.typescript.md)
+- [integrationAwsExternalId](./integrationAwsExternalId.typescript.md)
 - [integrationAwsLambdaArn](./integrationAwsLambdaArn.typescript.md)
 - [integrationAwsLogCollection](./integrationAwsLogCollection.typescript.md)
 - [integrationAwsTagFilter](./integrationAwsTagFilter.typescript.md)
@@ -134,6 +138,7 @@ The following submodules are available:
 - [userRole](./userRole.typescript.md)
 - [webhook](./webhook.typescript.md)
 - [webhookCustomVariable](./webhookCustomVariable.typescript.md)
+- [workflowAutomation](./workflowAutomation.typescript.md)
 
 
 

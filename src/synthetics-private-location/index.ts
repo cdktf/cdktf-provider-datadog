@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location
+// https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,47 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface SyntheticsPrivateLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Description of the private location.
+  * Description of the private location. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Synthetics private location name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
   */
   readonly name: string;
   /**
   * A list of tags to associate with your synthetics private location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
   */
   readonly tags?: string[];
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location#metadata SyntheticsPrivateLocation#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location#metadata SyntheticsPrivateLocation#metadata}
   */
-  readonly metadata?: SyntheticsPrivateLocationMetadata;
+  readonly metadata?: SyntheticsPrivateLocationMetadata[] | cdktf.IResolvable;
 }
 export interface SyntheticsPrivateLocationMetadata {
   /**
-  * A list of role identifiers pulled from the Roles API to restrict read and write access. **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
+  * A set of role identifiers pulled from the Roles API to restrict read and write access. **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location#restricted_roles SyntheticsPrivateLocation#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location#restricted_roles SyntheticsPrivateLocation#restricted_roles}
   */
   readonly restrictedRoles?: string[];
 }
 
-export function syntheticsPrivateLocationMetadataToTerraform(struct?: SyntheticsPrivateLocationMetadataOutputReference | SyntheticsPrivateLocationMetadata): any {
+export function syntheticsPrivateLocationMetadataToTerraform(struct?: SyntheticsPrivateLocationMetadata | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -64,7 +52,7 @@ export function syntheticsPrivateLocationMetadataToTerraform(struct?: Synthetics
 }
 
 
-export function syntheticsPrivateLocationMetadataToHclTerraform(struct?: SyntheticsPrivateLocationMetadataOutputReference | SyntheticsPrivateLocationMetadata): any {
+export function syntheticsPrivateLocationMetadataToHclTerraform(struct?: SyntheticsPrivateLocationMetadata | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -84,16 +72,22 @@ export function syntheticsPrivateLocationMetadataToHclTerraform(struct?: Synthet
 
 export class SyntheticsPrivateLocationMetadataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SyntheticsPrivateLocationMetadata | undefined {
+  public get internalValue(): SyntheticsPrivateLocationMetadata | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._restrictedRoles !== undefined) {
@@ -103,13 +97,19 @@ export class SyntheticsPrivateLocationMetadataOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SyntheticsPrivateLocationMetadata | undefined) {
+  public set internalValue(value: SyntheticsPrivateLocationMetadata | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._restrictedRoles = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._restrictedRoles = value.restrictedRoles;
     }
   }
@@ -131,8 +131,28 @@ export class SyntheticsPrivateLocationMetadataOutputReference extends cdktf.Comp
   }
 }
 
+export class SyntheticsPrivateLocationMetadataList extends cdktf.ComplexList {
+  public internalValue? : SyntheticsPrivateLocationMetadata[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SyntheticsPrivateLocationMetadataOutputReference {
+    return new SyntheticsPrivateLocationMetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}
 */
 export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
 
@@ -148,7 +168,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SyntheticsPrivateLocation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsPrivateLocation to import
-  * @param importFromId The id of the existing SyntheticsPrivateLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsPrivateLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsPrivateLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -160,7 +180,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.57.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -171,7 +191,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_private_location',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.57.0',
+        providerVersion: '3.58.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -183,7 +203,6 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._description = config.description;
-    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
     this._metadata.internalValue = config.metadata;
@@ -198,7 +217,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
     return this.getStringAttribute('config');
   }
 
-  // description - computed: false, optional: true, required: false
+  // description - computed: true, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -214,20 +233,9 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -243,7 +251,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // tags - computed: false, optional: true, required: false
+  // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
     return this.getListAttribute('tags');
@@ -260,11 +268,11 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata = new SyntheticsPrivateLocationMetadataOutputReference(this, "metadata");
+  private _metadata = new SyntheticsPrivateLocationMetadataList(this, "metadata", false);
   public get metadata() {
     return this._metadata;
   }
-  public putMetadata(value: SyntheticsPrivateLocationMetadata) {
+  public putMetadata(value: SyntheticsPrivateLocationMetadata[] | cdktf.IResolvable) {
     this._metadata.internalValue = value;
   }
   public resetMetadata() {
@@ -282,10 +290,9 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      metadata: syntheticsPrivateLocationMetadataToTerraform(this._metadata.internalValue),
+      metadata: cdktf.listMapper(syntheticsPrivateLocationMetadataToTerraform, true)(this._metadata.internalValue),
     };
   }
 
@@ -293,12 +300,6 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
     const attrs = {
       description: {
         value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -316,7 +317,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
         storageClassType: "stringList",
       },
       metadata: {
-        value: syntheticsPrivateLocationMetadataToHclTerraform(this._metadata.internalValue),
+        value: cdktf.listMapperHcl(syntheticsPrivateLocationMetadataToHclTerraform, true)(this._metadata.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SyntheticsPrivateLocationMetadataList",

@@ -9,6 +9,8 @@ The following submodules are available:
 - [apmRetentionFilter](./apmRetentionFilter.java.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.java.md)
 - [applicationKey](./applicationKey.java.md)
+- [appsecWafCustomRule](./appsecWafCustomRule.java.md)
+- [appsecWafExclusionFilter](./appsecWafExclusionFilter.java.md)
 - [authnMapping](./authnMapping.java.md)
 - [childOrganization](./childOrganization.java.md)
 - [cloudConfigurationRule](./cloudConfigurationRule.java.md)
@@ -61,12 +63,14 @@ The following submodules are available:
 - [dataDatadogTeams](./dataDatadogTeams.java.md)
 - [dataDatadogUser](./dataDatadogUser.java.md)
 - [dataDatadogUsers](./dataDatadogUsers.java.md)
+- [dataDatadogWorkflowAutomation](./dataDatadogWorkflowAutomation.java.md)
 - [domainAllowlist](./domainAllowlist.java.md)
 - [downtime](./downtime.java.md)
 - [downtimeSchedule](./downtimeSchedule.java.md)
 - [integrationAws](./integrationAws.java.md)
 - [integrationAwsAccount](./integrationAwsAccount.java.md)
 - [integrationAwsEventBridge](./integrationAwsEventBridge.java.md)
+- [integrationAwsExternalId](./integrationAwsExternalId.java.md)
 - [integrationAwsLambdaArn](./integrationAwsLambdaArn.java.md)
 - [integrationAwsLogCollection](./integrationAwsLogCollection.java.md)
 - [integrationAwsTagFilter](./integrationAwsTagFilter.java.md)
@@ -134,6 +138,7 @@ The following submodules are available:
 - [userRole](./userRole.java.md)
 - [webhook](./webhook.java.md)
 - [webhookCustomVariable](./webhookCustomVariable.java.md)
+- [workflowAutomation](./workflowAutomation.java.md)
 
 
 

@@ -9,6 +9,8 @@ The following submodules are available:
 - [apmRetentionFilter](./apmRetentionFilter.go.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.go.md)
 - [applicationKey](./applicationKey.go.md)
+- [appsecWafCustomRule](./appsecWafCustomRule.go.md)
+- [appsecWafExclusionFilter](./appsecWafExclusionFilter.go.md)
 - [authnMapping](./authnMapping.go.md)
 - [childOrganization](./childOrganization.go.md)
 - [cloudConfigurationRule](./cloudConfigurationRule.go.md)
@@ -61,12 +63,14 @@ The following submodules are available:
 - [dataDatadogTeams](./dataDatadogTeams.go.md)
 - [dataDatadogUser](./dataDatadogUser.go.md)
 - [dataDatadogUsers](./dataDatadogUsers.go.md)
+- [dataDatadogWorkflowAutomation](./dataDatadogWorkflowAutomation.go.md)
 - [domainAllowlist](./domainAllowlist.go.md)
 - [downtime](./downtime.go.md)
 - [downtimeSchedule](./downtimeSchedule.go.md)
 - [integrationAws](./integrationAws.go.md)
 - [integrationAwsAccount](./integrationAwsAccount.go.md)
 - [integrationAwsEventBridge](./integrationAwsEventBridge.go.md)
+- [integrationAwsExternalId](./integrationAwsExternalId.go.md)
 - [integrationAwsLambdaArn](./integrationAwsLambdaArn.go.md)
 - [integrationAwsLogCollection](./integrationAwsLogCollection.go.md)
 - [integrationAwsTagFilter](./integrationAwsTagFilter.go.md)
@@ -134,6 +138,7 @@ The following submodules are available:
 - [userRole](./userRole.go.md)
 - [webhook](./webhook.go.md)
 - [webhookCustomVariable](./webhookCustomVariable.go.md)
+- [workflowAutomation](./workflowAutomation.go.md)
 
 
 
