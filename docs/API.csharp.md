@@ -9,6 +9,8 @@ The following submodules are available:
 - [apmRetentionFilter](./apmRetentionFilter.csharp.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.csharp.md)
 - [applicationKey](./applicationKey.csharp.md)
+- [appsecWafCustomRule](./appsecWafCustomRule.csharp.md)
+- [appsecWafExclusionFilter](./appsecWafExclusionFilter.csharp.md)
 - [authnMapping](./authnMapping.csharp.md)
 - [childOrganization](./childOrganization.csharp.md)
 - [cloudConfigurationRule](./cloudConfigurationRule.csharp.md)
@@ -61,12 +63,14 @@ The following submodules are available:
 - [dataDatadogTeams](./dataDatadogTeams.csharp.md)
 - [dataDatadogUser](./dataDatadogUser.csharp.md)
 - [dataDatadogUsers](./dataDatadogUsers.csharp.md)
+- [dataDatadogWorkflowAutomation](./dataDatadogWorkflowAutomation.csharp.md)
 - [domainAllowlist](./domainAllowlist.csharp.md)
 - [downtime](./downtime.csharp.md)
 - [downtimeSchedule](./downtimeSchedule.csharp.md)
 - [integrationAws](./integrationAws.csharp.md)
 - [integrationAwsAccount](./integrationAwsAccount.csharp.md)
 - [integrationAwsEventBridge](./integrationAwsEventBridge.csharp.md)
+- [integrationAwsExternalId](./integrationAwsExternalId.csharp.md)
 - [integrationAwsLambdaArn](./integrationAwsLambdaArn.csharp.md)
 - [integrationAwsLogCollection](./integrationAwsLogCollection.csharp.md)
 - [integrationAwsTagFilter](./integrationAwsTagFilter.csharp.md)
@@ -134,6 +138,7 @@ The following submodules are available:
 - [userRole](./userRole.csharp.md)
 - [webhook](./webhook.csharp.md)
 - [webhookCustomVariable](./webhookCustomVariable.csharp.md)
+- [workflowAutomation](./workflowAutomation.csharp.md)
 
 
 

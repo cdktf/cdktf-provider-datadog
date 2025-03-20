@@ -9,6 +9,8 @@ The following submodules are available:
 - [apmRetentionFilter](./apmRetentionFilter.python.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.python.md)
 - [applicationKey](./applicationKey.python.md)
+- [appsecWafCustomRule](./appsecWafCustomRule.python.md)
+- [appsecWafExclusionFilter](./appsecWafExclusionFilter.python.md)
 - [authnMapping](./authnMapping.python.md)
 - [childOrganization](./childOrganization.python.md)
 - [cloudConfigurationRule](./cloudConfigurationRule.python.md)
@@ -61,12 +63,14 @@ The following submodules are available:
 - [dataDatadogTeams](./dataDatadogTeams.python.md)
 - [dataDatadogUser](./dataDatadogUser.python.md)
 - [dataDatadogUsers](./dataDatadogUsers.python.md)
+- [dataDatadogWorkflowAutomation](./dataDatadogWorkflowAutomation.python.md)
 - [domainAllowlist](./domainAllowlist.python.md)
 - [downtime](./downtime.python.md)
 - [downtimeSchedule](./downtimeSchedule.python.md)
 - [integrationAws](./integrationAws.python.md)
 - [integrationAwsAccount](./integrationAwsAccount.python.md)
 - [integrationAwsEventBridge](./integrationAwsEventBridge.python.md)
+- [integrationAwsExternalId](./integrationAwsExternalId.python.md)
 - [integrationAwsLambdaArn](./integrationAwsLambdaArn.python.md)
 - [integrationAwsLogCollection](./integrationAwsLogCollection.python.md)
 - [integrationAwsTagFilter](./integrationAwsTagFilter.python.md)
@@ -134,6 +138,7 @@ The following submodules are available:
 - [userRole](./userRole.python.md)
 - [webhook](./webhook.python.md)
 - [webhookCustomVariable](./webhookCustomVariable.python.md)
+- [workflowAutomation](./workflowAutomation.python.md)
 
 
 

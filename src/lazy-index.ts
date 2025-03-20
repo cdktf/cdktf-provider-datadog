@@ -9,6 +9,8 @@ Object.defineProperty(exports, 'apiKey', { get: function () { return require('./
 Object.defineProperty(exports, 'apmRetentionFilter', { get: function () { return require('./apm-retention-filter'); } });
 Object.defineProperty(exports, 'apmRetentionFilterOrder', { get: function () { return require('./apm-retention-filter-order'); } });
 Object.defineProperty(exports, 'applicationKey', { get: function () { return require('./application-key'); } });
+Object.defineProperty(exports, 'appsecWafCustomRule', { get: function () { return require('./appsec-waf-custom-rule'); } });
+Object.defineProperty(exports, 'appsecWafExclusionFilter', { get: function () { return require('./appsec-waf-exclusion-filter'); } });
 Object.defineProperty(exports, 'authnMapping', { get: function () { return require('./authn-mapping'); } });
 Object.defineProperty(exports, 'childOrganization', { get: function () { return require('./child-organization'); } });
 Object.defineProperty(exports, 'cloudConfigurationRule', { get: function () { return require('./cloud-configuration-rule'); } });
@@ -23,6 +25,7 @@ Object.defineProperty(exports, 'downtimeSchedule', { get: function () { return r
 Object.defineProperty(exports, 'integrationAws', { get: function () { return require('./integration-aws'); } });
 Object.defineProperty(exports, 'integrationAwsAccount', { get: function () { return require('./integration-aws-account'); } });
 Object.defineProperty(exports, 'integrationAwsEventBridge', { get: function () { return require('./integration-aws-event-bridge'); } });
+Object.defineProperty(exports, 'integrationAwsExternalId', { get: function () { return require('./integration-aws-external-id'); } });
 Object.defineProperty(exports, 'integrationAwsLambdaArn', { get: function () { return require('./integration-aws-lambda-arn'); } });
 Object.defineProperty(exports, 'integrationAwsLogCollection', { get: function () { return require('./integration-aws-log-collection'); } });
 Object.defineProperty(exports, 'integrationAwsTagFilter', { get: function () { return require('./integration-aws-tag-filter'); } });
@@ -89,6 +92,7 @@ Object.defineProperty(exports, 'user', { get: function () { return require('./us
 Object.defineProperty(exports, 'userRole', { get: function () { return require('./user-role'); } });
 Object.defineProperty(exports, 'webhook', { get: function () { return require('./webhook'); } });
 Object.defineProperty(exports, 'webhookCustomVariable', { get: function () { return require('./webhook-custom-variable'); } });
+Object.defineProperty(exports, 'workflowAutomation', { get: function () { return require('./workflow-automation'); } });
 Object.defineProperty(exports, 'dataDatadogActionConnection', { get: function () { return require('./data-datadog-action-connection'); } });
 Object.defineProperty(exports, 'dataDatadogApiKey', { get: function () { return require('./data-datadog-api-key'); } });
 Object.defineProperty(exports, 'dataDatadogApmRetentionFiltersOrder', { get: function () { return require('./data-datadog-apm-retention-filters-order'); } });
@@ -133,5 +137,6 @@ Object.defineProperty(exports, 'dataDatadogTeamMemberships', { get: function () 
 Object.defineProperty(exports, 'dataDatadogTeams', { get: function () { return require('./data-datadog-teams'); } });
 Object.defineProperty(exports, 'dataDatadogUser', { get: function () { return require('./data-datadog-user'); } });
 Object.defineProperty(exports, 'dataDatadogUsers', { get: function () { return require('./data-datadog-users'); } });
+Object.defineProperty(exports, 'dataDatadogWorkflowAutomation', { get: function () { return require('./data-datadog-workflow-automation'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 
