@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/logs_pipelines_order
 // generated from terraform resource schema
 
