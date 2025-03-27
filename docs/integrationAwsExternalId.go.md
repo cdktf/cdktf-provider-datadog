@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsexternalid"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawsexternalid"
 
 integrationawsexternalid.NewIntegrationAwsExternalId(scope Construct, id *string, config IntegrationAwsExternalIdConfig) IntegrationAwsExternalId
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsexternalid"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawsexternalid"
 
 integrationawsexternalid.IntegrationAwsExternalId_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsexternalid"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawsexternalid"
 
 integrationawsexternalid.IntegrationAwsExternalId_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ integrationawsexternalid.IntegrationAwsExternalId_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsexternalid"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawsexternalid"
 
 integrationawsexternalid.IntegrationAwsExternalId_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ integrationawsexternalid.IntegrationAwsExternalId_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsexternalid"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawsexternalid"
 
 integrationawsexternalid.IntegrationAwsExternalId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsexternalid"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/integrationawsexternalid"
 
 &integrationawsexternalid.IntegrationAwsExternalIdConfig {
 	Connection: interface{},
