@@ -4,7 +4,7 @@
 
 ### ActionConnection <a name="ActionConnection" id="@cdktf/provider-datadog.actionConnection.ActionConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection datadog_action_connection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection datadog_action_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.actionConnection.ActionConnection.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#aws ActionConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#aws ActionConnection#aws}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#http ActionConnection#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#http ActionConnection#http}
 
 ---
 
@@ -599,7 +599,7 @@ The construct id used in the generated config for the ActionConnection to import
 
 The id of the existing ActionConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -901,7 +901,7 @@ public ActionConnectionAwsAssumeRole getAssumeRole();
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
 
 ---
 
@@ -922,8 +922,8 @@ ActionConnectionAwsAssumeRole.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole.property.accountId">accountId</a></code> | <code>java.lang.String</code> | AWS account that the connection is created for. |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole.property.role">role</a></code> | <code>java.lang.String</code> | Role to assume. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole.property.accountId">accountId</a></code> | <code>java.lang.String</code> | AWS account that the connection is created for. String length must be at least 1. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole.property.role">role</a></code> | <code>java.lang.String</code> | Role to assume. String length must be at least 1. |
 
 ---
 
@@ -935,9 +935,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-AWS account that the connection is created for.
+AWS account that the connection is created for. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#account_id ActionConnection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#account_id ActionConnection#account_id}
 
 ---
 
@@ -949,9 +949,9 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Role to assume.
+Role to assume. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#role ActionConnection#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#role ActionConnection#role}
 
 ---
 
@@ -1077,7 +1077,7 @@ public java.lang.String getName();
 
 Name of the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1091,7 +1091,7 @@ public ActionConnectionAws getAws();
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#aws ActionConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#aws ActionConnection#aws}
 
 ---
 
@@ -1105,7 +1105,7 @@ public ActionConnectionHttp getHttp();
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#http ActionConnection#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#http ActionConnection#http}
 
 ---
 
@@ -1126,7 +1126,7 @@ ActionConnectionHttp.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttp.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | Base HTTP url for the integration. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttp.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | Base HTTP url for the integration. String length must be at least 1. |
 | <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttp.property.tokenAuth">tokenAuth</a></code> | <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuth">ActionConnectionHttpTokenAuth</a></code> | token_auth block. |
 
 ---
@@ -1139,9 +1139,9 @@ public java.lang.String getBaseUrl();
 
 - *Type:* java.lang.String
 
-Base HTTP url for the integration.
+Base HTTP url for the integration. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#base_url ActionConnection#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#base_url ActionConnection#base_url}
 
 ---
 
@@ -1155,7 +1155,7 @@ public ActionConnectionHttpTokenAuth getTokenAuth();
 
 token_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
 
 ---
 
@@ -1198,7 +1198,7 @@ public ActionConnectionHttpTokenAuthBody getBody();
 
 body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#body ActionConnection#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#body ActionConnection#body}
 
 ---
 
@@ -1212,7 +1212,7 @@ public java.lang.Object getHeader();
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#header ActionConnection#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#header ActionConnection#header}
 
 ---
 
@@ -1226,7 +1226,7 @@ public java.lang.Object getToken();
 
 token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#token ActionConnection#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#token ActionConnection#token}
 
 ---
 
@@ -1240,7 +1240,7 @@ public java.lang.Object getUrlParameter();
 
 url_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
 
 ---
 
@@ -1261,8 +1261,8 @@ ActionConnectionHttpTokenAuthBody.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBody.property.content">content</a></code> | <code>java.lang.String</code> | Serialized body content. |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBody.property.contentType">contentType</a></code> | <code>java.lang.String</code> | Content type of the body. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBody.property.content">content</a></code> | <code>java.lang.String</code> | Serialized body content. String length must be at least 1. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBody.property.contentType">contentType</a></code> | <code>java.lang.String</code> | Content type of the body. String length must be at least 1. |
 
 ---
 
@@ -1274,9 +1274,9 @@ public java.lang.String getContent();
 
 - *Type:* java.lang.String
 
-Serialized body content.
+Serialized body content. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#content ActionConnection#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#content ActionConnection#content}
 
 ---
 
@@ -1288,9 +1288,9 @@ public java.lang.String getContentType();
 
 - *Type:* java.lang.String
 
-Content type of the body.
+Content type of the body. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#content_type ActionConnection#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#content_type ActionConnection#content_type}
 
 ---
 
@@ -1311,8 +1311,8 @@ ActionConnectionHttpTokenAuthHeader.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeader.property.name">name</a></code> | <code>java.lang.String</code> | Header name. |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeader.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#value ActionConnection#value}. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeader.property.name">name</a></code> | <code>java.lang.String</code> | Header name. String length must be at least 1. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeader.property.value">value</a></code> | <code>java.lang.String</code> | String length must be at least 1. |
 
 ---
 
@@ -1324,9 +1324,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Header name.
+Header name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1338,7 +1338,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#value ActionConnection#value}.
+String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -1360,9 +1362,9 @@ ActionConnectionHttpTokenAuthToken.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthToken.property.name">name</a></code> | <code>java.lang.String</code> | Token name. |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthToken.property.type">type</a></code> | <code>java.lang.String</code> | Token type. |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthToken.property.value">value</a></code> | <code>java.lang.String</code> | Token value. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthToken.property.name">name</a></code> | <code>java.lang.String</code> | Token name. String length must be at least 1. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthToken.property.type">type</a></code> | <code>java.lang.String</code> | Token type Valid values are `SECRET`. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthToken.property.value">value</a></code> | <code>java.lang.String</code> | Token value. String length must be at least 1. |
 
 ---
 
@@ -1374,9 +1376,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Token name.
+Token name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1388,9 +1390,9 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Token type.
+Token type Valid values are `SECRET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#type ActionConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#type ActionConnection#type}
 
 ---
 
@@ -1402,9 +1404,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Token value.
+Token value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -1425,8 +1427,8 @@ ActionConnectionHttpTokenAuthUrlParameter.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameter.property.name">name</a></code> | <code>java.lang.String</code> | URL parameter name. |
-| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameter.property.value">value</a></code> | <code>java.lang.String</code> | URL parameter value. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameter.property.name">name</a></code> | <code>java.lang.String</code> | URL parameter name. String length must be at least 1. |
+| <code><a href="#@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameter.property.value">value</a></code> | <code>java.lang.String</code> | URL parameter value. String length must be at least 1. |
 
 ---
 
@@ -1438,9 +1440,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-URL parameter name.
+URL parameter name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1452,9 +1454,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-URL parameter value.
+URL parameter value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 

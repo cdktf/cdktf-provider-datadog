@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/security_monitoring_suppressions
+// https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/security_monitoring_suppressions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -130,7 +130,7 @@ export class DataDatadogSecurityMonitoringSuppressionsSuppressionsList extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}
 */
 export class DataDatadogSecurityMonitoringSuppressions extends cdktf.TerraformDataSource {
 
@@ -146,7 +146,7 @@ export class DataDatadogSecurityMonitoringSuppressions extends cdktf.TerraformDa
   * Generates CDKTF code for importing a DataDatadogSecurityMonitoringSuppressions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogSecurityMonitoringSuppressions to import
-  * @param importFromId The id of the existing DataDatadogSecurityMonitoringSuppressions that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/security_monitoring_suppressions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogSecurityMonitoringSuppressions that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/security_monitoring_suppressions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogSecurityMonitoringSuppressions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -158,7 +158,7 @@ export class DataDatadogSecurityMonitoringSuppressions extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -169,7 +169,7 @@ export class DataDatadogSecurityMonitoringSuppressions extends cdktf.TerraformDa
       terraformResourceType: 'datadog_security_monitoring_suppressions',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.58.0',
+        providerVersion: '3.59.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### MetricMetadata <a name="MetricMetadata" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata datadog_metric_metadata}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata datadog_metric_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer"></a>
 
@@ -47,7 +47,7 @@ MetricMetadata.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.metric">metric</a></code> | <code>java.lang.String</code> | The name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the metric. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
+| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.perUnit">perUnit</a></code> | <code>java.lang.String</code> | Per unit of the metric such as `second` in `bytes per second`. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.shortName">shortName</a></code> | <code>java.lang.String</code> | A short name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.statsdInterval">statsdInterval</a></code> | <code>java.lang.Number</code> | If applicable, statsd flush interval in seconds for the metric. |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A description of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#description MetricMetadata#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#description MetricMetadata#description}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#id MetricMetadata#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#id MetricMetadata#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Per unit of the metric such as `second` in `bytes per second`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A short name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If applicable, statsd flush interval in seconds for the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
 
 ---
 
@@ -185,7 +185,7 @@ Metric type such as `count`, `gauge`, or `rate`.
 
 Updating a metric of type `distribution` is not supported. If you would like to see the `distribution` type returned, contact [Datadog support](https://docs.datadoghq.com/help/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#type MetricMetadata#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#type MetricMetadata#type}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Primary unit of the metric such as `byte` or `operation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the MetricMetadata to import.
 
 The id of the existing MetricMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1085,7 +1085,7 @@ MetricMetadataConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.metric">metric</a></code> | <code>java.lang.String</code> | The name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the metric. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
+| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.perUnit">perUnit</a></code> | <code>java.lang.String</code> | Per unit of the metric such as `second` in `bytes per second`. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.shortName">shortName</a></code> | <code>java.lang.String</code> | A short name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.statsdInterval">statsdInterval</a></code> | <code>java.lang.Number</code> | If applicable, statsd flush interval in seconds for the metric. |
@@ -1174,7 +1174,7 @@ public java.lang.String getMetric();
 
 The name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
 
 ---
 
@@ -1188,7 +1188,7 @@ public java.lang.String getDescription();
 
 A description of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#description MetricMetadata#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#description MetricMetadata#description}
 
 ---
 
@@ -1200,7 +1200,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#id MetricMetadata#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#id MetricMetadata#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1217,7 +1217,7 @@ public java.lang.String getPerUnit();
 
 Per unit of the metric such as `second` in `bytes per second`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
 
 ---
 
@@ -1231,7 +1231,7 @@ public java.lang.String getShortName();
 
 A short name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
 
 ---
 
@@ -1245,7 +1245,7 @@ public java.lang.Number getStatsdInterval();
 
 If applicable, statsd flush interval in seconds for the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
 
 ---
 
@@ -1261,7 +1261,7 @@ Metric type such as `count`, `gauge`, or `rate`.
 
 Updating a metric of type `distribution` is not supported. If you would like to see the `distribution` type returned, contact [Datadog support](https://docs.datadoghq.com/help/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#type MetricMetadata#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#type MetricMetadata#type}
 
 ---
 
@@ -1275,7 +1275,7 @@ public java.lang.String getUnit();
 
 Primary unit of the metric such as `byte` or `operation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
 
 ---
 

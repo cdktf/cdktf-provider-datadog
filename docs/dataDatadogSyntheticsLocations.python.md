@@ -4,7 +4,7 @@
 
 ### DataDatadogSyntheticsLocations <a name="DataDatadogSyntheticsLocations" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer"></a>
 
@@ -20,8 +20,7 @@ dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations(
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  id: str = None
+  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None
 )
 ```
 
@@ -36,7 +35,6 @@ dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#id DataDatadogSyntheticsLocations#id}. |
 
 ---
 
@@ -100,17 +98,6 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#id DataDatadogSyntheticsLocations#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -132,7 +119,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -353,12 +339,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -473,7 +453,7 @@ The construct id used in the generated config for the DataDatadogSyntheticsLocat
 
 The id of the existing DataDatadogSyntheticsLocations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/synthetics_locations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -501,9 +481,8 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.locations">locations</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.locations">locations</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 
 ---
 
@@ -629,26 +608,6 @@ provider: TerraformProvider
 
 ---
 
-##### `locations`<sup>Required</sup> <a name="locations" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.locations"></a>
-
-```python
-locations: StringMap
-```
-
-- *Type:* cdktf.StringMap
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.id"></a>
 
 ```python
@@ -656,6 +615,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `locations`<sup>Required</sup> <a name="locations" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.locations"></a>
+
+```python
+locations: StringMap
+```
+
+- *Type:* cdktf.StringMap
 
 ---
 
@@ -693,8 +662,7 @@ dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig(
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  id: str = None
+  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None
 )
 ```
 
@@ -709,7 +677,6 @@ dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#id DataDatadogSyntheticsLocations#id}. |
 
 ---
 
@@ -780,21 +747,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 ```
 
 - *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#id DataDatadogSyntheticsLocations#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 

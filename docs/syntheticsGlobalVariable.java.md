@@ -4,7 +4,7 @@
 
 ### SyntheticsGlobalVariable <a name="SyntheticsGlobalVariable" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer"></a>
 
@@ -53,7 +53,7 @@ SyntheticsGlobalVariable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Synthetics global variable name. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Synthetics global variable name. Must be all uppercase with underscores. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the global variable. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer.parameter.isFido">isFido</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, the global variable is a FIDO variable. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer.parameter.isTotp">isTotp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, the global variable is a TOTP variable. Defaults to `false`. |
@@ -131,9 +131,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Synthetics global variable name.
+Synthetics global variable name. Must be all uppercase with underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Description of the global variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If set to true, the global variable is a FIDO variable. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#is_fido SyntheticsGlobalVariable#is_fido}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#is_fido SyntheticsGlobalVariable#is_fido}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If set to true, the global variable is a TOTP variable. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#is_totp SyntheticsGlobalVariable#is_totp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#is_totp SyntheticsGlobalVariable#is_totp}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Id of the Synthetics test to use for a variable from test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 parse_test_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
 
 ---
 
@@ -205,7 +205,7 @@ A list of role identifiers to associate with the Synthetics global variable.
 
 **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
 
 ---
 
@@ -217,7 +217,7 @@ If set to true, the value of the global variable is hidden.
 
 This setting is automatically set to `true` if `is_totp` or `is_fido` is set to `true`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of tags to associate with your synthetics global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The value of the global variable. Required unless `is_fido` is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
 
 ---
 
@@ -760,7 +760,7 @@ The construct id used in the generated config for the SyntheticsGlobalVariable t
 
 The id of the existing SyntheticsGlobalVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1257,7 +1257,7 @@ SyntheticsGlobalVariableConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.name">name</a></code> | <code>java.lang.String</code> | Synthetics global variable name. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.name">name</a></code> | <code>java.lang.String</code> | Synthetics global variable name. Must be all uppercase with underscores. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the global variable. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.isFido">isFido</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, the global variable is a FIDO variable. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.isTotp">isTotp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, the global variable is a TOTP variable. Defaults to `false`. |
@@ -1349,9 +1349,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Synthetics global variable name.
+Synthetics global variable name. Must be all uppercase with underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
 
 ---
 
@@ -1365,7 +1365,7 @@ public java.lang.String getDescription();
 
 Description of the global variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
 
 ---
 
@@ -1379,7 +1379,7 @@ public java.lang.Object getIsFido();
 
 If set to true, the global variable is a FIDO variable. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#is_fido SyntheticsGlobalVariable#is_fido}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#is_fido SyntheticsGlobalVariable#is_fido}
 
 ---
 
@@ -1393,7 +1393,7 @@ public java.lang.Object getIsTotp();
 
 If set to true, the global variable is a TOTP variable. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#is_totp SyntheticsGlobalVariable#is_totp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#is_totp SyntheticsGlobalVariable#is_totp}
 
 ---
 
@@ -1407,7 +1407,7 @@ public java.lang.Object getOptions();
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
 
 ---
 
@@ -1421,7 +1421,7 @@ public java.lang.String getParseTestId();
 
 Id of the Synthetics test to use for a variable from test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
 
 ---
 
@@ -1435,7 +1435,7 @@ public java.lang.Object getParseTestOptions();
 
 parse_test_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
 
 ---
 
@@ -1451,7 +1451,7 @@ A list of role identifiers to associate with the Synthetics global variable.
 
 **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
 
 ---
 
@@ -1467,7 +1467,7 @@ If set to true, the value of the global variable is hidden.
 
 This setting is automatically set to `true` if `is_totp` or `is_fido` is set to `true`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
 
 ---
 
@@ -1481,7 +1481,7 @@ public java.util.List<java.lang.String> getTags();
 
 A list of tags to associate with your synthetics global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
 
 ---
 
@@ -1495,7 +1495,7 @@ public java.lang.String getValue();
 
 The value of the global variable. Required unless `is_fido` is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
 
 ---
 
@@ -1530,7 +1530,7 @@ public java.lang.Object getTotpParameters();
 
 totp_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
 
 ---
 
@@ -1551,8 +1551,8 @@ SyntheticsGlobalVariableOptionsTotpParameters.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters.property.digits">digits</a></code> | <code>java.lang.Number</code> | Number of digits for the OTP. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters.property.refreshInterval">refreshInterval</a></code> | <code>java.lang.Number</code> | Interval for which to refresh the token (in seconds). |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters.property.digits">digits</a></code> | <code>java.lang.Number</code> | Number of digits for the OTP. Value must be between 4 and 10. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters.property.refreshInterval">refreshInterval</a></code> | <code>java.lang.Number</code> | Interval for which to refresh the token (in seconds). Value must be between 0 and 999. |
 
 ---
 
@@ -1564,9 +1564,9 @@ public java.lang.Number getDigits();
 
 - *Type:* java.lang.Number
 
-Number of digits for the OTP.
+Number of digits for the OTP. Value must be between 4 and 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
 
 ---
 
@@ -1578,9 +1578,9 @@ public java.lang.Number getRefreshInterval();
 
 - *Type:* java.lang.Number
 
-Interval for which to refresh the token (in seconds).
+Interval for which to refresh the token (in seconds). Value must be between 0 and 999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
 
 ---
 
@@ -1621,7 +1621,7 @@ public java.lang.String getType();
 
 Defines the source to use to extract the value. Valid values are `http_body`, `http_header`, `http_status_code`, `local_variable`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
 
 ---
 
@@ -1635,7 +1635,7 @@ public java.lang.String getField();
 
 Required when type = `http_header`. Defines the header to use to extract the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
 
 ---
 
@@ -1649,7 +1649,7 @@ public java.lang.String getLocalVariableName();
 
 When type is `local_variable`, name of the local variable to use to extract the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
 
 ---
 
@@ -1663,7 +1663,7 @@ public java.lang.Object getParser();
 
 parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
 
 ---
 
@@ -1699,7 +1699,7 @@ public java.lang.String getType();
 
 Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`, `x_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
 
 ---
 
@@ -1713,7 +1713,7 @@ public java.lang.String getValue();
 
 Value for the parser to use, required for type `json_path` or `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
 
 ---
 

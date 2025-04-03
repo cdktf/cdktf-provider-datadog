@@ -4,7 +4,7 @@
 
 ### DataDatadogSyntheticsLocations <a name="DataDatadogSyntheticsLocations" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer"></a>
 
@@ -23,7 +23,6 @@ DataDatadogSyntheticsLocations.Builder.create(Construct scope, java.lang.String 
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -38,7 +37,6 @@ DataDatadogSyntheticsLocations.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#id DataDatadogSyntheticsLocations#id}. |
 
 ---
 
@@ -102,17 +100,6 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#id DataDatadogSyntheticsLocations#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -134,7 +121,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -330,12 +316,6 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.resetId"></a>
-
-```java
-public void resetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -439,7 +419,7 @@ The construct id used in the generated config for the DataDatadogSyntheticsLocat
 
 The id of the existing DataDatadogSyntheticsLocations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/synthetics_locations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -467,9 +447,8 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.locations">locations</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.locations">locations</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 
 ---
 
@@ -595,26 +574,6 @@ public TerraformProvider getProvider();
 
 ---
 
-##### `locations`<sup>Required</sup> <a name="locations" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.locations"></a>
-
-```java
-public StringMap getLocations();
-```
-
-- *Type:* com.hashicorp.cdktf.StringMap
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.id"></a>
 
 ```java
@@ -622,6 +581,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `locations`<sup>Required</sup> <a name="locations" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.property.locations"></a>
+
+```java
+public StringMap getLocations();
+```
+
+- *Type:* com.hashicorp.cdktf.StringMap
 
 ---
 
@@ -664,7 +633,6 @@ DataDatadogSyntheticsLocationsConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -679,7 +647,6 @@ DataDatadogSyntheticsLocationsConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#id DataDatadogSyntheticsLocations#id}. |
 
 ---
 
@@ -750,21 +717,6 @@ public java.lang.Object getProvisioners();
 ```
 
 - *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/synthetics_locations#id DataDatadogSyntheticsLocations#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 

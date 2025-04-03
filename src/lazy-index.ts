@@ -8,6 +8,7 @@ Object.defineProperty(exports, 'actionConnection', { get: function () { return r
 Object.defineProperty(exports, 'apiKey', { get: function () { return require('./api-key'); } });
 Object.defineProperty(exports, 'apmRetentionFilter', { get: function () { return require('./apm-retention-filter'); } });
 Object.defineProperty(exports, 'apmRetentionFilterOrder', { get: function () { return require('./apm-retention-filter-order'); } });
+Object.defineProperty(exports, 'appBuilderApp', { get: function () { return require('./app-builder-app'); } });
 Object.defineProperty(exports, 'applicationKey', { get: function () { return require('./application-key'); } });
 Object.defineProperty(exports, 'appsecWafCustomRule', { get: function () { return require('./appsec-waf-custom-rule'); } });
 Object.defineProperty(exports, 'appsecWafExclusionFilter', { get: function () { return require('./appsec-waf-exclusion-filter'); } });
@@ -65,6 +66,8 @@ Object.defineProperty(exports, 'restrictionPolicy', { get: function () { return 
 Object.defineProperty(exports, 'role', { get: function () { return require('./role'); } });
 Object.defineProperty(exports, 'rumApplication', { get: function () { return require('./rum-application'); } });
 Object.defineProperty(exports, 'rumMetric', { get: function () { return require('./rum-metric'); } });
+Object.defineProperty(exports, 'rumRetentionFilter', { get: function () { return require('./rum-retention-filter'); } });
+Object.defineProperty(exports, 'rumRetentionFiltersOrder', { get: function () { return require('./rum-retention-filters-order'); } });
 Object.defineProperty(exports, 'securityMonitoringDefaultRule', { get: function () { return require('./security-monitoring-default-rule'); } });
 Object.defineProperty(exports, 'securityMonitoringFilter', { get: function () { return require('./security-monitoring-filter'); } });
 Object.defineProperty(exports, 'securityMonitoringRule', { get: function () { return require('./security-monitoring-rule'); } });
@@ -96,6 +99,7 @@ Object.defineProperty(exports, 'workflowAutomation', { get: function () { return
 Object.defineProperty(exports, 'dataDatadogActionConnection', { get: function () { return require('./data-datadog-action-connection'); } });
 Object.defineProperty(exports, 'dataDatadogApiKey', { get: function () { return require('./data-datadog-api-key'); } });
 Object.defineProperty(exports, 'dataDatadogApmRetentionFiltersOrder', { get: function () { return require('./data-datadog-apm-retention-filters-order'); } });
+Object.defineProperty(exports, 'dataDatadogAppBuilderApp', { get: function () { return require('./data-datadog-app-builder-app'); } });
 Object.defineProperty(exports, 'dataDatadogApplicationKey', { get: function () { return require('./data-datadog-application-key'); } });
 Object.defineProperty(exports, 'dataDatadogCloudWorkloadSecurityAgentRules', { get: function () { return require('./data-datadog-cloud-workload-security-agent-rules'); } });
 Object.defineProperty(exports, 'dataDatadogCsmThreatsAgentRules', { get: function () { return require('./data-datadog-csm-threats-agent-rules'); } });
@@ -121,6 +125,7 @@ Object.defineProperty(exports, 'dataDatadogRole', { get: function () { return re
 Object.defineProperty(exports, 'dataDatadogRoleUsers', { get: function () { return require('./data-datadog-role-users'); } });
 Object.defineProperty(exports, 'dataDatadogRoles', { get: function () { return require('./data-datadog-roles'); } });
 Object.defineProperty(exports, 'dataDatadogRumApplication', { get: function () { return require('./data-datadog-rum-application'); } });
+Object.defineProperty(exports, 'dataDatadogRumRetentionFilters', { get: function () { return require('./data-datadog-rum-retention-filters'); } });
 Object.defineProperty(exports, 'dataDatadogSecurityMonitoringFilters', { get: function () { return require('./data-datadog-security-monitoring-filters'); } });
 Object.defineProperty(exports, 'dataDatadogSecurityMonitoringRules', { get: function () { return require('./data-datadog-security-monitoring-rules'); } });
 Object.defineProperty(exports, 'dataDatadogSecurityMonitoringSuppressions', { get: function () { return require('./data-datadog-security-monitoring-suppressions'); } });
@@ -129,6 +134,7 @@ Object.defineProperty(exports, 'dataDatadogSensitiveDataScannerStandardPattern',
 Object.defineProperty(exports, 'dataDatadogServiceAccount', { get: function () { return require('./data-datadog-service-account'); } });
 Object.defineProperty(exports, 'dataDatadogServiceLevelObjective', { get: function () { return require('./data-datadog-service-level-objective'); } });
 Object.defineProperty(exports, 'dataDatadogServiceLevelObjectives', { get: function () { return require('./data-datadog-service-level-objectives'); } });
+Object.defineProperty(exports, 'dataDatadogSoftwareCatalog', { get: function () { return require('./data-datadog-software-catalog'); } });
 Object.defineProperty(exports, 'dataDatadogSyntheticsGlobalVariable', { get: function () { return require('./data-datadog-synthetics-global-variable'); } });
 Object.defineProperty(exports, 'dataDatadogSyntheticsLocations', { get: function () { return require('./data-datadog-synthetics-locations'); } });
 Object.defineProperty(exports, 'dataDatadogSyntheticsTest', { get: function () { return require('./data-datadog-synthetics-test'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive
+// https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface LogsArchiveConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#id LogsArchive#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#id LogsArchive#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,49 +22,49 @@ export interface LogsArchiveConfig extends cdktf.TerraformMetaArguments {
   /**
   * To store the tags in the archive, set the value `true`. If it is set to `false`, the tags will be dropped when the logs are sent to the archive. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
   */
   readonly includeTags?: boolean | cdktf.IResolvable;
   /**
   * Your archive name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#name LogsArchive#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#name LogsArchive#name}
   */
   readonly name: string;
   /**
   * The archive query/filter. Logs matching this query are included in the archive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#query LogsArchive#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#query LogsArchive#query}
   */
   readonly query: string;
   /**
   * To limit the rehydration scan size for the archive, set a value in GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
   */
   readonly rehydrationMaxScanSizeInGb?: number;
   /**
   * An array of tags to add to rehydrated logs from an archive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
   */
   readonly rehydrationTags?: string[];
   /**
   * azure_archive block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
   */
   readonly azureArchive?: LogsArchiveAzureArchive;
   /**
   * gcs_archive block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
   */
   readonly gcsArchive?: LogsArchiveGcsArchive;
   /**
   * s3_archive block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
   */
   readonly s3Archive?: LogsArchiveS3Archive;
 }
@@ -72,31 +72,31 @@ export interface LogsArchiveAzureArchive {
   /**
   * Your client id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
   */
   readonly clientId: string;
   /**
   * The container where the archive is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#container LogsArchive#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#container LogsArchive#container}
   */
   readonly container: string;
   /**
   * The path where the archive is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#path LogsArchive#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#path LogsArchive#path}
   */
   readonly path?: string;
   /**
   * The associated storage account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
   */
   readonly storageAccount: string;
   /**
   * Your tenant id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
   */
   readonly tenantId: string;
 }
@@ -286,25 +286,25 @@ export interface LogsArchiveGcsArchive {
   /**
   * Name of your GCS bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
   */
   readonly bucket: string;
   /**
   * Your client email.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
   */
   readonly clientEmail: string;
   /**
   * Path where the archive is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#path LogsArchive#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#path LogsArchive#path}
   */
   readonly path?: string;
   /**
   * Your project id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
   */
   readonly projectId?: string;
 }
@@ -471,39 +471,45 @@ export interface LogsArchiveS3Archive {
   /**
   * Your AWS account id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
   */
   readonly accountId: string;
   /**
   * Name of your s3 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
   */
   readonly bucket: string;
   /**
   * The AWS KMS encryption key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
   */
   readonly encryptionKey?: string;
   /**
   * The type of encryption on your archive. Valid values are `NO_OVERRIDE`, `SSE_S3`, `SSE_KMS`. Defaults to `"NO_OVERRIDE"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
   */
   readonly encryptionType?: string;
   /**
   * Path where the archive is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#path LogsArchive#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#path LogsArchive#path}
   */
   readonly path?: string;
   /**
   * Your AWS role name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
   */
   readonly roleName: string;
+  /**
+  * The AWS S3 storage class used to upload the logs. Valid values are `STANDARD`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER_IR`. Defaults to `"STANDARD"`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#storage_class LogsArchive#storage_class}
+  */
+  readonly storageClass?: string;
 }
 
 export function logsArchiveS3ArchiveToTerraform(struct?: LogsArchiveS3ArchiveOutputReference | LogsArchiveS3Archive): any {
@@ -518,6 +524,7 @@ export function logsArchiveS3ArchiveToTerraform(struct?: LogsArchiveS3ArchiveOut
     encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
     path: cdktf.stringToTerraform(struct!.path),
     role_name: cdktf.stringToTerraform(struct!.roleName),
+    storage_class: cdktf.stringToTerraform(struct!.storageClass),
   }
 }
 
@@ -560,6 +567,12 @@ export function logsArchiveS3ArchiveToHclTerraform(struct?: LogsArchiveS3Archive
     },
     role_name: {
       value: cdktf.stringToHclTerraform(struct!.roleName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_class: {
+      value: cdktf.stringToHclTerraform(struct!.storageClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -608,6 +621,10 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.roleName = this._roleName;
     }
+    if (this._storageClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageClass = this._storageClass;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -620,6 +637,7 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
       this._encryptionType = undefined;
       this._path = undefined;
       this._roleName = undefined;
+      this._storageClass = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -629,6 +647,7 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
       this._encryptionType = value.encryptionType;
       this._path = value.path;
       this._roleName = value.roleName;
+      this._storageClass = value.storageClass;
     }
   }
 
@@ -718,10 +737,26 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
   public get roleNameInput() {
     return this._roleName;
   }
+
+  // storage_class - computed: false, optional: true, required: false
+  private _storageClass?: string; 
+  public get storageClass() {
+    return this.getStringAttribute('storage_class');
+  }
+  public set storageClass(value: string) {
+    this._storageClass = value;
+  }
+  public resetStorageClass() {
+    this._storageClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageClassInput() {
+    return this._storageClass;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive datadog_logs_archive}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive datadog_logs_archive}
 */
 export class LogsArchive extends cdktf.TerraformResource {
 
@@ -737,7 +772,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LogsArchive resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsArchive to import
-  * @param importFromId The id of the existing LogsArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsArchive to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -749,7 +784,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/logs_archive datadog_logs_archive} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/logs_archive datadog_logs_archive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -760,7 +795,7 @@ export class LogsArchive extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_archive',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.58.0',
+        providerVersion: '3.59.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

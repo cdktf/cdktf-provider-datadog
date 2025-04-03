@@ -4,7 +4,7 @@
 
 ### DataDatadogTeams <a name="DataDatadogTeams" id="@cdktf/provider-datadog.dataDatadogTeams.DataDatadogTeams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/teams datadog_teams}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/teams datadog_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeams.DataDatadogTeams.Initializer"></a>
 
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataDatadogTeams to import
 
 The id of the existing DataDatadogTeams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,7 +767,7 @@ public string FilterKeyword { get; set; }
 
 Search query. Can be team name, team handle, or email of team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/teams#filter_keyword DataDatadogTeams#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/teams#filter_keyword DataDatadogTeams#filter_keyword}
 
 ---
 
@@ -781,7 +781,7 @@ public object FilterMe { get; set; }
 
 When true, only returns teams the current user belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/teams#filter_me DataDatadogTeams#filter_me}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/teams#filter_me DataDatadogTeams#filter_me}
 
 ---
 
@@ -795,7 +795,7 @@ public object Teams { get; set; }
 
 teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/data-sources/teams#teams DataDatadogTeams#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/data-sources/teams#teams DataDatadogTeams#teams}
 
 ---
 
