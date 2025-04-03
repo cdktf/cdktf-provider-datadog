@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_aws_event_bridge
+// https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface IntegrationAwsEventBridgeConfig extends cdktf.TerraformMetaArgu
   /**
   * Your AWS Account ID without dashes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_aws_event_bridge#account_id IntegrationAwsEventBridge#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge#account_id IntegrationAwsEventBridge#account_id}
   */
   readonly accountId: string;
   /**
   * True if Datadog should create the event bus in addition to the event source. Requires the `events:CreateEventBus` permission. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_aws_event_bridge#create_event_bus IntegrationAwsEventBridge#create_event_bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge#create_event_bus IntegrationAwsEventBridge#create_event_bus}
   */
   readonly createEventBus?: boolean | cdktf.IResolvable;
   /**
   * The given part of the event source name, which is then combined with an assigned suffix to form the full name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_aws_event_bridge#event_generator_name IntegrationAwsEventBridge#event_generator_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge#event_generator_name IntegrationAwsEventBridge#event_generator_name}
   */
   readonly eventGeneratorName: string;
   /**
   * The event source's [AWS region](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_aws_event_bridge#region IntegrationAwsEventBridge#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge#region IntegrationAwsEventBridge#region}
   */
   readonly region: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge}
 */
 export class IntegrationAwsEventBridge extends cdktf.TerraformResource {
 
@@ -55,7 +50,7 @@ export class IntegrationAwsEventBridge extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationAwsEventBridge resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationAwsEventBridge to import
-  * @param importFromId The id of the existing IntegrationAwsEventBridge that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_aws_event_bridge#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationAwsEventBridge that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationAwsEventBridge to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +62,7 @@ export class IntegrationAwsEventBridge extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class IntegrationAwsEventBridge extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_aws_event_bridge',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.58.0',
+        providerVersion: '3.59.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

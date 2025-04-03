@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection
+// https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,33 +10,33 @@ export interface ActionConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the connection
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#name ActionConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#name ActionConnection#name}
   */
   readonly name: string;
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#aws ActionConnection#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#aws ActionConnection#aws}
   */
   readonly aws?: ActionConnectionAws;
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#http ActionConnection#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#http ActionConnection#http}
   */
   readonly http?: ActionConnectionHttp;
 }
 export interface ActionConnectionAwsAssumeRole {
   /**
-  * AWS account that the connection is created for
+  * AWS account that the connection is created for. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#account_id ActionConnection#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#account_id ActionConnection#account_id}
   */
   readonly accountId?: string;
   /**
-  * Role to assume
+  * Role to assume. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#role ActionConnection#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#role ActionConnection#role}
   */
   readonly role?: string;
 }
@@ -176,7 +171,7 @@ export interface ActionConnectionAws {
   /**
   * assume_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
   */
   readonly assumeRole?: ActionConnectionAwsAssumeRole;
 }
@@ -270,15 +265,15 @@ export class ActionConnectionAwsOutputReference extends cdktf.ComplexObject {
 }
 export interface ActionConnectionHttpTokenAuthBody {
   /**
-  * Serialized body content
+  * Serialized body content. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#content ActionConnection#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#content ActionConnection#content}
   */
   readonly content?: string;
   /**
-  * Content type of the body
+  * Content type of the body. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#content_type ActionConnection#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#content_type ActionConnection#content_type}
   */
   readonly contentType?: string;
 }
@@ -401,13 +396,15 @@ export class ActionConnectionHttpTokenAuthBodyOutputReference extends cdktf.Comp
 }
 export interface ActionConnectionHttpTokenAuthHeader {
   /**
-  * Header name
+  * Header name. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#name ActionConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#name ActionConnection#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#value ActionConnection#value}
+  *  String length must be at least 1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#value ActionConnection#value}
   */
   readonly value?: string;
 }
@@ -552,21 +549,21 @@ export class ActionConnectionHttpTokenAuthHeaderList extends cdktf.ComplexList {
 }
 export interface ActionConnectionHttpTokenAuthToken {
   /**
-  * Token name
+  * Token name. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#name ActionConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#name ActionConnection#name}
   */
   readonly name?: string;
   /**
-  * Token type
+  * Token type Valid values are `SECRET`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#type ActionConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#type ActionConnection#type}
   */
   readonly type?: string;
   /**
-  * Token value
+  * Token value. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#value ActionConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#value ActionConnection#value}
   */
   readonly value?: string;
 }
@@ -740,15 +737,15 @@ export class ActionConnectionHttpTokenAuthTokenList extends cdktf.ComplexList {
 }
 export interface ActionConnectionHttpTokenAuthUrlParameter {
   /**
-  * URL parameter name
+  * URL parameter name. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#name ActionConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#name ActionConnection#name}
   */
   readonly name?: string;
   /**
-  * URL parameter value
+  * URL parameter value. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#value ActionConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#value ActionConnection#value}
   */
   readonly value?: string;
 }
@@ -895,25 +892,25 @@ export interface ActionConnectionHttpTokenAuth {
   /**
   * body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#body ActionConnection#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#body ActionConnection#body}
   */
   readonly body?: ActionConnectionHttpTokenAuthBody;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#header ActionConnection#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#header ActionConnection#header}
   */
   readonly header?: ActionConnectionHttpTokenAuthHeader[] | cdktf.IResolvable;
   /**
   * token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#token ActionConnection#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#token ActionConnection#token}
   */
   readonly token?: ActionConnectionHttpTokenAuthToken[] | cdktf.IResolvable;
   /**
   * url_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
   */
   readonly urlParameter?: ActionConnectionHttpTokenAuthUrlParameter[] | cdktf.IResolvable;
 }
@@ -1094,15 +1091,15 @@ export class ActionConnectionHttpTokenAuthOutputReference extends cdktf.ComplexO
 }
 export interface ActionConnectionHttp {
   /**
-  * Base HTTP url for the integration
+  * Base HTTP url for the integration. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#base_url ActionConnection#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#base_url ActionConnection#base_url}
   */
   readonly baseUrl?: string;
   /**
   * token_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
   */
   readonly tokenAuth?: ActionConnectionHttpTokenAuth;
 }
@@ -1225,7 +1222,7 @@ export class ActionConnectionHttpOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection datadog_action_connection}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection datadog_action_connection}
 */
 export class ActionConnection extends cdktf.TerraformResource {
 
@@ -1241,7 +1238,7 @@ export class ActionConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ActionConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActionConnection to import
-  * @param importFromId The id of the existing ActionConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ActionConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActionConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1253,7 +1250,7 @@ export class ActionConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/action_connection datadog_action_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/action_connection datadog_action_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1264,7 +1261,7 @@ export class ActionConnection extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_action_connection',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.58.0',
+        providerVersion: '3.59.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `datadog_downtime_schedule`
 
-Refer to the Terraform Registry for docs: [`datadog_downtime_schedule`](https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/downtime_schedule).
+Refer to the Terraform Registry for docs: [`datadog_downtime_schedule`](https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/downtime_schedule).
