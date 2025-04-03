@@ -4,7 +4,7 @@
 
 ### SoftwareCatalog <a name="SoftwareCatalog" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/software_catalog datadog_software_catalog}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/software_catalog datadog_software_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer"></a>
 
@@ -38,7 +38,7 @@ SoftwareCatalog.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer.parameter.entity">entity</a></code> | <code>java.lang.String</code> | The catalog entity definition. |
+| <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer.parameter.entity">entity</a></code> | <code>java.lang.String</code> | The catalog entity definition. Entity must be a valid entity YAML/JSON structure. |
 
 ---
 
@@ -106,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-The catalog entity definition.
+The catalog entity definition. Entity must be a valid entity YAML/JSON structure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
 
 ---
 
@@ -535,7 +535,7 @@ The construct id used in the generated config for the SoftwareCatalog to import.
 
 The id of the existing SoftwareCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/software_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/software_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,7 +797,7 @@ SoftwareCatalogConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.entity">entity</a></code> | <code>java.lang.String</code> | The catalog entity definition. |
+| <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.entity">entity</a></code> | <code>java.lang.String</code> | The catalog entity definition. Entity must be a valid entity YAML/JSON structure. |
 
 ---
 
@@ -879,9 +879,9 @@ public java.lang.String getEntity();
 
 - *Type:* java.lang.String
 
-The catalog entity definition.
+The catalog entity definition. Entity must be a valid entity YAML/JSON structure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
 
 ---
 

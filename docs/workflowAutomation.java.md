@@ -4,7 +4,7 @@
 
 ### WorkflowAutomation <a name="WorkflowAutomation" id="@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation datadog_workflow_automation}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation datadog_workflow_automation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer"></a>
 
@@ -45,7 +45,7 @@ WorkflowAutomation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the workflow. |
-| <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the workflow. |
+| <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the workflow. String length must be at least 1. |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.published">published</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set the workflow to published or unpublished. |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.specJson">specJson</a></code> | <code>java.lang.String</code> | The spec defines what the workflow does. |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags of the workflow. |
@@ -119,7 +119,7 @@ Must be unique amongst siblings in the same scope
 
 Description of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
 
 ---
 
@@ -127,9 +127,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Name of the workflow.
+Name of the workflow. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
 
 ---
 
@@ -141,7 +141,7 @@ Set the workflow to published or unpublished.
 
 Workflows in an unpublished state are only executable through manual runs. Automatic triggers such as Schedule do not execute the workflow until it is published.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The spec defines what the workflow does.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Tags of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
 
 ---
 
@@ -171,7 +171,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If a webhook trigger is defined on this workflow, a webhookSecret is required and should be provided here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
+String length must be at least 16.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
 
 ---
 
@@ -605,7 +607,7 @@ The construct id used in the generated config for the WorkflowAutomation to impo
 
 The id of the existing WorkflowAutomation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -984,7 +986,7 @@ WorkflowAutomationConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the workflow. |
-| <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the workflow. |
+| <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the workflow. String length must be at least 1. |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.published">published</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set the workflow to published or unpublished. |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.specJson">specJson</a></code> | <code>java.lang.String</code> | The spec defines what the workflow does. |
 | <code><a href="#@cdktf/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags of the workflow. |
@@ -1072,7 +1074,7 @@ public java.lang.String getDescription();
 
 Description of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
 
 ---
 
@@ -1084,9 +1086,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Name of the workflow.
+Name of the workflow. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
 
 ---
 
@@ -1102,7 +1104,7 @@ Set the workflow to published or unpublished.
 
 Workflows in an unpublished state are only executable through manual runs. Automatic triggers such as Schedule do not execute the workflow until it is published.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
 
 ---
 
@@ -1116,7 +1118,7 @@ public java.lang.String getSpecJson();
 
 The spec defines what the workflow does.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
 
 ---
 
@@ -1130,7 +1132,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
 
 ---
 
@@ -1144,7 +1146,9 @@ public java.lang.String getWebhookSecret();
 
 If a webhook trigger is defined on this workflow, a webhookSecret is required and should be provided here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
+String length must be at least 16.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
 
 ---
 

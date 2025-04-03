@@ -4,7 +4,7 @@
 
 ### SoftwareCatalog <a name="SoftwareCatalog" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/software_catalog datadog_software_catalog}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/software_catalog datadog_software_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the SoftwareCatalog to import.
 
 The id of the existing SoftwareCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/software_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/software_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,7 +716,7 @@ const softwareCatalogConfig: softwareCatalog.SoftwareCatalogConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.entity">entity</a></code> | <code>string</code> | The catalog entity definition. |
+| <code><a href="#@cdktf/provider-datadog.softwareCatalog.SoftwareCatalogConfig.property.entity">entity</a></code> | <code>string</code> | The catalog entity definition. Entity must be a valid entity YAML/JSON structure. |
 
 ---
 
@@ -798,9 +798,9 @@ public readonly entity: string;
 
 - *Type:* string
 
-The catalog entity definition.
+The catalog entity definition. Entity must be a valid entity YAML/JSON structure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.58.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
 
 ---
 
