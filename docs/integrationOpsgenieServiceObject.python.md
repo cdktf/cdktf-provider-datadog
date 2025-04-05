@@ -4,7 +4,7 @@
 
 ### IntegrationOpsgenieServiceObject <a name="IntegrationOpsgenieServiceObject" id="@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.Initializer"></a>
 
@@ -44,7 +44,7 @@ integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject(
 | <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.Initializer.parameter.opsgenieApiKey">opsgenie_api_key</a></code> | <code>str</code> | The Opsgenie API key for the Opsgenie service. |
 | <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.Initializer.parameter.region">region</a></code> | <code>str</code> | The region for the Opsgenie service. Valid values are `us`, `eu`, `custom`. |
 | <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.Initializer.parameter.customUrl">custom_url</a></code> | <code>str</code> | The custom url for a custom region. |
-| <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name for the Opsgenie service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#name IntegrationOpsgenieServiceObject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#name IntegrationOpsgenieServiceObject#name}
 
 ---
 
@@ -126,7 +126,7 @@ The Opsgenie API key for the Opsgenie service.
 
 Note: Since the Datadog API never returns Opsgenie API keys, it is impossible to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform). The best way to solve a drift is to manually mark the Service Object resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html) to have it destroyed and recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#opsgenie_api_key IntegrationOpsgenieServiceObject#opsgenie_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#opsgenie_api_key IntegrationOpsgenieServiceObject#opsgenie_api_key}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The region for the Opsgenie service. Valid values are `us`, `eu`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#region IntegrationOpsgenieServiceObject#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#region IntegrationOpsgenieServiceObject#region}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The custom url for a custom region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#custom_url IntegrationOpsgenieServiceObject#custom_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#custom_url IntegrationOpsgenieServiceObject#custom_url}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -644,7 +644,7 @@ The construct id used in the generated config for the IntegrationOpsgenieService
 
 The id of the existing IntegrationOpsgenieServiceObject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -987,7 +987,7 @@ integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig(
 | <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.opsgenieApiKey">opsgenie_api_key</a></code> | <code>str</code> | The Opsgenie API key for the Opsgenie service. |
 | <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.region">region</a></code> | <code>str</code> | The region for the Opsgenie service. Valid values are `us`, `eu`, `custom`. |
 | <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.customUrl">custom_url</a></code> | <code>str</code> | The custom url for a custom region. |
-| <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}. |
 
 ---
 
@@ -1071,7 +1071,7 @@ name: str
 
 The name for the Opsgenie service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#name IntegrationOpsgenieServiceObject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#name IntegrationOpsgenieServiceObject#name}
 
 ---
 
@@ -1087,7 +1087,7 @@ The Opsgenie API key for the Opsgenie service.
 
 Note: Since the Datadog API never returns Opsgenie API keys, it is impossible to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform). The best way to solve a drift is to manually mark the Service Object resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html) to have it destroyed and recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#opsgenie_api_key IntegrationOpsgenieServiceObject#opsgenie_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#opsgenie_api_key IntegrationOpsgenieServiceObject#opsgenie_api_key}
 
 ---
 
@@ -1101,7 +1101,7 @@ region: str
 
 The region for the Opsgenie service. Valid values are `us`, `eu`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#region IntegrationOpsgenieServiceObject#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#region IntegrationOpsgenieServiceObject#region}
 
 ---
 
@@ -1115,7 +1115,7 @@ custom_url: str
 
 The custom url for a custom region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#custom_url IntegrationOpsgenieServiceObject#custom_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#custom_url IntegrationOpsgenieServiceObject#custom_url}
 
 ---
 
@@ -1127,7 +1127,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
