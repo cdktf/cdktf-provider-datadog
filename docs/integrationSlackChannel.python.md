@@ -4,7 +4,7 @@
 
 ### IntegrationSlackChannel <a name="IntegrationSlackChannel" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel datadog_integration_slack_channel}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer"></a>
 
@@ -42,7 +42,7 @@ integrationSlackChannel.IntegrationSlackChannel(
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.accountName">account_name</a></code> | <code>str</code> | Slack account name. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.channelName">channel_name</a></code> | <code>str</code> | Slack channel name. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.display">display</a></code> | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay">IntegrationSlackChannelDisplay</a></code> | display block. |
-| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Slack account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Slack channel name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 display block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -509,6 +509,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ```python
 def put_display(
   message: typing.Union[bool, IResolvable] = None,
+  mute_buttons: typing.Union[bool, IResolvable] = None,
   notified: typing.Union[bool, IResolvable] = None,
   snapshot: typing.Union[bool, IResolvable] = None,
   tags: typing.Union[bool, IResolvable] = None
@@ -521,7 +522,17 @@ def put_display(
 
 Show the main body of the alert event. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
+
+---
+
+###### `mute_buttons`<sup>Optional</sup> <a name="mute_buttons" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.putDisplay.parameter.muteButtons"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Show interactive buttons to mute the alerting monitor. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#mute_buttons IntegrationSlackChannel#mute_buttons}
 
 ---
 
@@ -539,7 +550,7 @@ Show the list of.
 
 Show the alert event's snapshot image. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
 
 ---
 
@@ -549,7 +560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Show the scopes on which the monitor alerted. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
 
 ---
 
@@ -673,7 +684,7 @@ The construct id used in the generated config for the IntegrationSlackChannel to
 
 The id of the existing IntegrationSlackChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -992,7 +1003,7 @@ integrationSlackChannel.IntegrationSlackChannelConfig(
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.accountName">account_name</a></code> | <code>str</code> | Slack account name. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.channelName">channel_name</a></code> | <code>str</code> | Slack channel name. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.display">display</a></code> | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay">IntegrationSlackChannelDisplay</a></code> | display block. |
-| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}. |
 
 ---
 
@@ -1076,7 +1087,7 @@ account_name: str
 
 Slack account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
 
 ---
 
@@ -1090,7 +1101,7 @@ channel_name: str
 
 Slack channel name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
 
 ---
 
@@ -1104,7 +1115,7 @@ display: IntegrationSlackChannelDisplay
 
 display block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
 
 ---
 
@@ -1116,7 +1127,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,6 +1143,7 @@ from cdktf_cdktf_provider_datadog import integration_slack_channel
 
 integrationSlackChannel.IntegrationSlackChannelDisplay(
   message: typing.Union[bool, IResolvable] = None,
+  mute_buttons: typing.Union[bool, IResolvable] = None,
   notified: typing.Union[bool, IResolvable] = None,
   snapshot: typing.Union[bool, IResolvable] = None,
   tags: typing.Union[bool, IResolvable] = None
@@ -1143,6 +1155,7 @@ integrationSlackChannel.IntegrationSlackChannelDisplay(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.message">message</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show the main body of the alert event. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.muteButtons">mute_buttons</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show interactive buttons to mute the alerting monitor. Defaults to `true`. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.notified">notified</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show the list of. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.snapshot">snapshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show the alert event's snapshot image. Defaults to `true`. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.tags">tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show the scopes on which the monitor alerted. Defaults to `true`. |
@@ -1159,7 +1172,21 @@ message: typing.Union[bool, IResolvable]
 
 Show the main body of the alert event. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
+
+---
+
+##### `mute_buttons`<sup>Optional</sup> <a name="mute_buttons" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.muteButtons"></a>
+
+```python
+mute_buttons: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Show interactive buttons to mute the alerting monitor. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#mute_buttons IntegrationSlackChannel#mute_buttons}
 
 ---
 
@@ -1185,7 +1212,7 @@ snapshot: typing.Union[bool, IResolvable]
 
 Show the alert event's snapshot image. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
 
 ---
 
@@ -1199,7 +1226,7 @@ tags: typing.Union[bool, IResolvable]
 
 Show the scopes on which the monitor alerted. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
 
 ---
 
@@ -1259,6 +1286,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.resetMessage">reset_message</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.resetMuteButtons">reset_mute_buttons</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.resetNotified">reset_notified</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.resetSnapshot">reset_snapshot</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.resetTags">reset_tags</a></code> | *No description.* |
@@ -1443,6 +1471,12 @@ Returns a reversible string representation.
 def reset_message() -> None
 ```
 
+##### `reset_mute_buttons` <a name="reset_mute_buttons" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.resetMuteButtons"></a>
+
+```python
+def reset_mute_buttons() -> None
+```
+
 ##### `reset_notified` <a name="reset_notified" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.resetNotified"></a>
 
 ```python
@@ -1469,10 +1503,12 @@ def reset_tags() -> None
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.messageInput">message_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.muteButtonsInput">mute_buttons_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.notifiedInput">notified_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.snapshotInput">snapshot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.tagsInput">tags_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.message">message</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.muteButtons">mute_buttons</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.notified">notified</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.snapshot">snapshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.tags">tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1514,6 +1550,16 @@ message_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `mute_buttons_input`<sup>Optional</sup> <a name="mute_buttons_input" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.muteButtonsInput"></a>
+
+```python
+mute_buttons_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `notified_input`<sup>Optional</sup> <a name="notified_input" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.notifiedInput"></a>
 
 ```python
@@ -1548,6 +1594,16 @@ tags_input: typing.Union[bool, IResolvable]
 
 ```python
 message: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `mute_buttons`<sup>Required</sup> <a name="mute_buttons" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.property.muteButtons"></a>
+
+```python
+mute_buttons: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]

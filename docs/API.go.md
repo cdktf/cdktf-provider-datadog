@@ -107,6 +107,7 @@ The following submodules are available:
 - [monitor](./monitor.go.md)
 - [monitorConfigPolicy](./monitorConfigPolicy.go.md)
 - [monitorJson](./monitorJson.go.md)
+- [observabilityPipeline](./observabilityPipeline.go.md)
 - [openapiApi](./openapiApi.go.md)
 - [organizationSettings](./organizationSettings.go.md)
 - [powerpack](./powerpack.go.md)
