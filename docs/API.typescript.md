@@ -107,6 +107,7 @@ The following submodules are available:
 - [monitor](./monitor.typescript.md)
 - [monitorConfigPolicy](./monitorConfigPolicy.typescript.md)
 - [monitorJson](./monitorJson.typescript.md)
+- [observabilityPipeline](./observabilityPipeline.typescript.md)
 - [openapiApi](./openapiApi.typescript.md)
 - [organizationSettings](./organizationSettings.typescript.md)
 - [powerpack](./powerpack.typescript.md)

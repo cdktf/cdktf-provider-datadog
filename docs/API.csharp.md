@@ -107,6 +107,7 @@ The following submodules are available:
 - [monitor](./monitor.csharp.md)
 - [monitorConfigPolicy](./monitorConfigPolicy.csharp.md)
 - [monitorJson](./monitorJson.csharp.md)
+- [observabilityPipeline](./observabilityPipeline.csharp.md)
 - [openapiApi](./openapiApi.csharp.md)
 - [organizationSettings](./organizationSettings.csharp.md)
 - [powerpack](./powerpack.csharp.md)

@@ -59,6 +59,7 @@ Object.defineProperty(exports, 'metricTagConfiguration', { get: function () { re
 Object.defineProperty(exports, 'monitor', { get: function () { return require('./monitor'); } });
 Object.defineProperty(exports, 'monitorConfigPolicy', { get: function () { return require('./monitor-config-policy'); } });
 Object.defineProperty(exports, 'monitorJson', { get: function () { return require('./monitor-json'); } });
+Object.defineProperty(exports, 'observabilityPipeline', { get: function () { return require('./observability-pipeline'); } });
 Object.defineProperty(exports, 'openapiApi', { get: function () { return require('./openapi-api'); } });
 Object.defineProperty(exports, 'organizationSettings', { get: function () { return require('./organization-settings'); } });
 Object.defineProperty(exports, 'powerpack', { get: function () { return require('./powerpack'); } });

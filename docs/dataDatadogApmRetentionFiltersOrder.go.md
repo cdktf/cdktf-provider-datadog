@@ -4,7 +4,7 @@
 
 ### DataDatadogApmRetentionFiltersOrder <a name="DataDatadogApmRetentionFiltersOrder" id="@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatadogApmRetentionFil
 
 The id of the existing DataDatadogApmRetentionFiltersOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/data-sources/apm_retention_filters_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/data-sources/apm_retention_filters_order#import import section} in the documentation of this resource for the id to use
 
 ---
 

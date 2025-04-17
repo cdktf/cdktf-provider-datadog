@@ -59,6 +59,7 @@ export * as metricTagConfiguration from './metric-tag-configuration';
 export * as monitor from './monitor';
 export * as monitorConfigPolicy from './monitor-config-policy';
 export * as monitorJson from './monitor-json';
+export * as observabilityPipeline from './observability-pipeline';
 export * as openapiApi from './openapi-api';
 export * as organizationSettings from './organization-settings';
 export * as powerpack from './powerpack';

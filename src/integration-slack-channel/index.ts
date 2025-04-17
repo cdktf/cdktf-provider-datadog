@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel
+// https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface IntegrationSlackChannelConfig extends cdktf.TerraformMetaArgume
   /**
   * Slack account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
   */
   readonly accountName: string;
   /**
   * Slack channel name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface IntegrationSlackChannelConfig extends cdktf.TerraformMetaArgume
   /**
   * display block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
   */
   readonly display: IntegrationSlackChannelDisplay;
 }
@@ -42,25 +42,31 @@ export interface IntegrationSlackChannelDisplay {
   /**
   * Show the main body of the alert event. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
   */
   readonly message?: boolean | cdktf.IResolvable;
   /**
+  * Show interactive buttons to mute the alerting monitor. Defaults to `true`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#mute_buttons IntegrationSlackChannel#mute_buttons}
+  */
+  readonly muteButtons?: boolean | cdktf.IResolvable;
+  /**
   * Show the list of @-handles in the alert event. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#notified IntegrationSlackChannel#notified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#notified IntegrationSlackChannel#notified}
   */
   readonly notified?: boolean | cdktf.IResolvable;
   /**
   * Show the alert event's snapshot image. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
   */
   readonly snapshot?: boolean | cdktf.IResolvable;
   /**
   * Show the scopes on which the monitor alerted. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
   */
   readonly tags?: boolean | cdktf.IResolvable;
 }
@@ -72,6 +78,7 @@ export function integrationSlackChannelDisplayToTerraform(struct?: IntegrationSl
   }
   return {
     message: cdktf.booleanToTerraform(struct!.message),
+    mute_buttons: cdktf.booleanToTerraform(struct!.muteButtons),
     notified: cdktf.booleanToTerraform(struct!.notified),
     snapshot: cdktf.booleanToTerraform(struct!.snapshot),
     tags: cdktf.booleanToTerraform(struct!.tags),
@@ -87,6 +94,12 @@ export function integrationSlackChannelDisplayToHclTerraform(struct?: Integratio
   const attrs = {
     message: {
       value: cdktf.booleanToHclTerraform(struct!.message),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    mute_buttons: {
+      value: cdktf.booleanToHclTerraform(struct!.muteButtons),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -133,6 +146,10 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.message = this._message;
     }
+    if (this._muteButtons !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.muteButtons = this._muteButtons;
+    }
     if (this._notified !== undefined) {
       hasAnyValues = true;
       internalValueResult.notified = this._notified;
@@ -152,6 +169,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
     if (value === undefined) {
       this.isEmptyObject = false;
       this._message = undefined;
+      this._muteButtons = undefined;
       this._notified = undefined;
       this._snapshot = undefined;
       this._tags = undefined;
@@ -159,6 +177,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._message = value.message;
+      this._muteButtons = value.muteButtons;
       this._notified = value.notified;
       this._snapshot = value.snapshot;
       this._tags = value.tags;
@@ -179,6 +198,22 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get messageInput() {
     return this._message;
+  }
+
+  // mute_buttons - computed: false, optional: true, required: false
+  private _muteButtons?: boolean | cdktf.IResolvable; 
+  public get muteButtons() {
+    return this.getBooleanAttribute('mute_buttons');
+  }
+  public set muteButtons(value: boolean | cdktf.IResolvable) {
+    this._muteButtons = value;
+  }
+  public resetMuteButtons() {
+    this._muteButtons = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get muteButtonsInput() {
+    return this._muteButtons;
   }
 
   // notified - computed: false, optional: true, required: false
@@ -231,7 +266,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel datadog_integration_slack_channel}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}
 */
 export class IntegrationSlackChannel extends cdktf.TerraformResource {
 
@@ -247,7 +282,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationSlackChannel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationSlackChannel to import
-  * @param importFromId The id of the existing IntegrationSlackChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationSlackChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationSlackChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -259,7 +294,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.59.1/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -270,7 +305,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_slack_channel',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.59.1',
+        providerVersion: '3.60.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

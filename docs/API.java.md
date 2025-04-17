@@ -107,6 +107,7 @@ The following submodules are available:
 - [monitor](./monitor.java.md)
 - [monitorConfigPolicy](./monitorConfigPolicy.java.md)
 - [monitorJson](./monitorJson.java.md)
+- [observabilityPipeline](./observabilityPipeline.java.md)
 - [openapiApi](./openapiApi.java.md)
 - [organizationSettings](./organizationSettings.java.md)
 - [powerpack](./powerpack.java.md)

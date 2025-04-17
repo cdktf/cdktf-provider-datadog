@@ -107,6 +107,7 @@ The following submodules are available:
 - [monitor](./monitor.python.md)
 - [monitorConfigPolicy](./monitorConfigPolicy.python.md)
 - [monitorJson](./monitorJson.python.md)
+- [observabilityPipeline](./observabilityPipeline.python.md)
 - [openapiApi](./openapiApi.python.md)
 - [organizationSettings](./organizationSettings.python.md)
 - [powerpack](./powerpack.python.md)
