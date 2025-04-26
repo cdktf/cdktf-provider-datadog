@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline
+// https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface ObservabilityPipelineConfig extends cdktf.TerraformMetaArgument
   /**
   * The pipeline name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
   */
   readonly config?: ObservabilityPipelineConfigA;
 }
@@ -29,7 +24,7 @@ export interface ObservabilityPipelineConfigDestinationsDatadogLogs {
   /**
   * The unique ID of the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,7 +33,7 @@ export interface ObservabilityPipelineConfigDestinationsDatadogLogs {
   /**
   * The inputs for the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
   */
   readonly inputs: string[];
 }
@@ -179,7 +174,7 @@ export interface ObservabilityPipelineConfigDestinations {
   /**
   * datadog_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
   */
   readonly datadogLogs?: ObservabilityPipelineConfigDestinationsDatadogLogs[] | cdktf.IResolvable;
 }
@@ -275,13 +270,13 @@ export interface ObservabilityPipelineConfigProcessorsAddFieldsField {
   /**
   * The field name to add.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The value to assign to the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -422,7 +417,7 @@ export interface ObservabilityPipelineConfigProcessorsAddFields {
   /**
   * The unique ID of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -431,19 +426,19 @@ export interface ObservabilityPipelineConfigProcessorsAddFields {
   /**
   * A Datadog search query used to determine which logs this processor targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * The inputs for the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
   */
   readonly inputs: string[];
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field?: ObservabilityPipelineConfigProcessorsAddFieldsField[] | cdktf.IResolvable;
 }
@@ -639,7 +634,7 @@ export interface ObservabilityPipelineConfigProcessorsFilter {
   /**
   * The unique ID of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -648,13 +643,13 @@ export interface ObservabilityPipelineConfigProcessorsFilter {
   /**
   * A Datadog search query used to determine which logs should pass through the filter. Logs that match this query continue to downstream components; others are dropped.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * The inputs for the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
   */
   readonly inputs: string[];
 }
@@ -821,13 +816,13 @@ export interface ObservabilityPipelineConfigProcessorsParseJson {
   /**
   * The field to parse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field: string;
   /**
   * The unique ID of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,13 +831,13 @@ export interface ObservabilityPipelineConfigProcessorsParseJson {
   /**
   * A Datadog search query used to determine which logs this processor targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * The inputs for the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
   */
   readonly inputs: string[];
 }
@@ -1035,13 +1030,13 @@ export interface ObservabilityPipelineConfigProcessorsQuotaLimit {
   /**
   * Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
   */
   readonly enforce: string;
   /**
   * The daily quota limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
   */
   readonly limit: number;
 }
@@ -1160,13 +1155,13 @@ export interface ObservabilityPipelineConfigProcessorsQuotaOverridesField {
   /**
   * The field name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The field value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -1307,13 +1302,13 @@ export interface ObservabilityPipelineConfigProcessorsQuotaOverridesLimit {
   /**
   * Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
   */
   readonly enforce: string;
   /**
   * The daily quota limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
   */
   readonly limit: number;
 }
@@ -1432,13 +1427,13 @@ export interface ObservabilityPipelineConfigProcessorsQuotaOverrides {
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field?: ObservabilityPipelineConfigProcessorsQuotaOverridesField[] | cdktf.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
   */
   readonly limit: ObservabilityPipelineConfigProcessorsQuotaOverridesLimit;
 }
@@ -1582,13 +1577,13 @@ export interface ObservabilityPipelineConfigProcessorsQuota {
   /**
   * Whether to drop events exceeding the limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
   */
   readonly dropEvents: boolean | cdktf.IResolvable;
   /**
   * The unique ID of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1597,43 +1592,43 @@ export interface ObservabilityPipelineConfigProcessorsQuota {
   /**
   * Whether to ignore when partition fields are missing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
   */
   readonly ignoreWhenMissingPartitions?: boolean | cdktf.IResolvable;
   /**
   * A Datadog search query used to determine which logs this processor targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * The inputs for the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
   */
   readonly inputs: string[];
   /**
   * The name of the quota.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * List of partition fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
   */
   readonly partitionFields?: string[];
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
   */
   readonly limit: ObservabilityPipelineConfigProcessorsQuotaLimit;
   /**
   * overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#overrides ObservabilityPipeline#overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#overrides ObservabilityPipeline#overrides}
   */
   readonly overrides?: ObservabilityPipelineConfigProcessorsQuotaOverrides[] | cdktf.IResolvable;
 }
@@ -1965,13 +1960,13 @@ export interface ObservabilityPipelineConfigProcessorsRemoveFields {
   /**
   * List of fields to remove from the events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
   */
   readonly fields: string[];
   /**
   * The unique ID of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1980,13 +1975,13 @@ export interface ObservabilityPipelineConfigProcessorsRemoveFields {
   /**
   * A Datadog search query used to determine which logs this processor targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * The inputs for the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
   */
   readonly inputs: string[];
 }
@@ -2179,19 +2174,19 @@ export interface ObservabilityPipelineConfigProcessorsRenameFieldsField {
   /**
   * Destination field name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
   */
   readonly destination: string;
   /**
   * Whether to keep the original field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
   */
   readonly preserveSource: boolean | cdktf.IResolvable;
   /**
   * Source field to rename.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
   */
   readonly source: string;
 }
@@ -2358,7 +2353,7 @@ export interface ObservabilityPipelineConfigProcessorsRenameFields {
   /**
   * The unique ID of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2367,19 +2362,19 @@ export interface ObservabilityPipelineConfigProcessorsRenameFields {
   /**
   * A Datadog search query used to determine which logs this processor targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * he inputs for the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
   */
   readonly inputs: string[];
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field?: ObservabilityPipelineConfigProcessorsRenameFieldsField[] | cdktf.IResolvable;
 }
@@ -2575,37 +2570,37 @@ export interface ObservabilityPipelineConfigProcessors {
   /**
   * add_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
   */
   readonly addFields?: ObservabilityPipelineConfigProcessorsAddFields[] | cdktf.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
   */
   readonly filter?: ObservabilityPipelineConfigProcessorsFilter[] | cdktf.IResolvable;
   /**
   * parse_json block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
   */
   readonly parseJson?: ObservabilityPipelineConfigProcessorsParseJson[] | cdktf.IResolvable;
   /**
   * quota block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
   */
   readonly quota?: ObservabilityPipelineConfigProcessorsQuota[] | cdktf.IResolvable;
   /**
   * remove_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
   */
   readonly removeFields?: ObservabilityPipelineConfigProcessorsRemoveFields[] | cdktf.IResolvable;
   /**
   * rename_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
   */
   readonly renameFields?: ObservabilityPipelineConfigProcessorsRenameFields[] | cdktf.IResolvable;
 }
@@ -2846,19 +2841,19 @@ export interface ObservabilityPipelineConfigSourcesDatadogAgentTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
 }
@@ -3031,7 +3026,7 @@ export interface ObservabilityPipelineConfigSourcesDatadogAgent {
   /**
   * The unique ID of the source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3040,7 +3035,7 @@ export interface ObservabilityPipelineConfigSourcesDatadogAgent {
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourcesDatadogAgentTls[] | cdktf.IResolvable;
 }
@@ -3184,13 +3179,13 @@ export interface ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption {
   /**
   * The name of the librdkafka option.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The value of the librdkafka option.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -3331,7 +3326,7 @@ export interface ObservabilityPipelineConfigSourcesKafkaSasl {
   /**
   * SASL mechanism to use (e.g., PLAIN, SCRAM-SHA-256, SCRAM-SHA-512). Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
   */
   readonly mechanism: string;
 }
@@ -3424,19 +3419,19 @@ export interface ObservabilityPipelineConfigSourcesKafkaTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
 }
@@ -3609,13 +3604,13 @@ export interface ObservabilityPipelineConfigSourcesKafka {
   /**
   * The Kafka consumer group ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
   */
   readonly groupId: string;
   /**
   * The unique ID of the source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3624,25 +3619,25 @@ export interface ObservabilityPipelineConfigSourcesKafka {
   /**
   * A list of Kafka topic names to subscribe to. The source ingests messages from each topic specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
   */
   readonly topics: string[];
   /**
   * librdkafka_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
   */
   readonly librdkafkaOption?: ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption[] | cdktf.IResolvable;
   /**
   * sasl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
   */
   readonly sasl: ObservabilityPipelineConfigSourcesKafkaSasl;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourcesKafkaTls[] | cdktf.IResolvable;
 }
@@ -3893,13 +3888,13 @@ export interface ObservabilityPipelineConfigSources {
   /**
   * datadog_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
   */
   readonly datadogAgent?: ObservabilityPipelineConfigSourcesDatadogAgent[] | cdktf.IResolvable;
   /**
   * kafka block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
   */
   readonly kafka?: ObservabilityPipelineConfigSourcesKafka[] | cdktf.IResolvable;
 }
@@ -4024,19 +4019,19 @@ export interface ObservabilityPipelineConfigA {
   /**
   * destinations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#destinations ObservabilityPipeline#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#destinations ObservabilityPipeline#destinations}
   */
   readonly destinations?: ObservabilityPipelineConfigDestinations;
   /**
   * processors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#processors ObservabilityPipeline#processors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#processors ObservabilityPipeline#processors}
   */
   readonly processors?: ObservabilityPipelineConfigProcessors;
   /**
   * sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
   */
   readonly sources?: ObservabilityPipelineConfigSources;
 }
@@ -4188,7 +4183,7 @@ export class ObservabilityPipelineConfigAOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline datadog_observability_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline datadog_observability_pipeline}
 */
 export class ObservabilityPipeline extends cdktf.TerraformResource {
 
@@ -4204,7 +4199,7 @@ export class ObservabilityPipeline extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ObservabilityPipeline resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservabilityPipeline to import
-  * @param importFromId The id of the existing ObservabilityPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservabilityPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservabilityPipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4216,7 +4211,7 @@ export class ObservabilityPipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/observability_pipeline datadog_observability_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4227,7 +4222,7 @@ export class ObservabilityPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_observability_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.60.0',
+        providerVersion: '3.60.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

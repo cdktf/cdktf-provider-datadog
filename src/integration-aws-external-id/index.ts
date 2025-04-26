@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_aws_external_id
+// https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/integration_aws_external_id
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface IntegrationAwsExternalIdConfig extends cdktf.TerraformMetaArgum
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/integration_aws_external_id datadog_integration_aws_external_id}
 */
 export class IntegrationAwsExternalId extends cdktf.TerraformResource {
 
@@ -31,7 +26,7 @@ export class IntegrationAwsExternalId extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationAwsExternalId resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationAwsExternalId to import
-  * @param importFromId The id of the existing IntegrationAwsExternalId that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_aws_external_id#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationAwsExternalId that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/integration_aws_external_id#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationAwsExternalId to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -43,7 +38,7 @@ export class IntegrationAwsExternalId extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +49,7 @@ export class IntegrationAwsExternalId extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_aws_external_id',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.60.0',
+        providerVersion: '3.60.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
