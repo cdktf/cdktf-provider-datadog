@@ -4,7 +4,7 @@
 
 ### RestrictionPolicy <a name="RestrictionPolicy" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/restriction_policy datadog_restriction_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/restriction_policy datadog_restriction_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicy.Initializer"></a>
 
@@ -118,7 +118,7 @@ Restrictions :
 * Dashboards : support is in private beta. Reach out to your Datadog contact or support to enable this.
 * Monitors : Management of restriction policy through terraform is currently not available
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 bindings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
 
 ---
 
@@ -623,7 +623,7 @@ The construct id used in the generated config for the RestrictionPolicy to impor
 
 The id of the existing RestrictionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/restriction_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/restriction_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -907,7 +907,7 @@ An array of principals.
 
 A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role`, `team`, `user`, and `org`. Org ID can be obtained using a `GET /api/v2/current_user` API request. Find it in the `data.relationships.org.data.id` field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
 
 ---
 
@@ -921,7 +921,7 @@ relation: str
 
 The role/level of access. See this page for more details https://docs.datadoghq.com/api/latest/restriction-policies/#supported-relations-for-resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
 
 ---
 
@@ -1051,7 +1051,7 @@ Restrictions :
 * Dashboards : support is in private beta. Reach out to your Datadog contact or support to enable this.
 * Monitors : Management of restriction policy through terraform is currently not available
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
 
 ---
 
@@ -1065,7 +1065,7 @@ bindings: typing.Union[IResolvable, typing.List[RestrictionPolicyBindings]]
 
 bindings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
 
 ---
 

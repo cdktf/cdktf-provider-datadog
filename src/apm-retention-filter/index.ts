@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter
+// https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,37 @@ export interface ApmRetentionFilterConfig extends cdktf.TerraformMetaArguments {
   /**
   * the status of the retention filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * The type of the retention filter, currently only spans-processing-sampling is available. Valid values are `spans-sampling-processor`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
   */
   readonly filterType: string;
   /**
   * The name of the retention filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
   */
   readonly name: string;
   /**
-  * Sample rate to apply to spans going through this retention filter as a string, a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00.
+  * Sample rate to apply to spans going through this retention filter as a string; a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
   */
   readonly rate: string;
   /**
+  * Sample rate to apply to traces with spans going through this retention filter as a string; a value of 1.0 keeps all traces matching the query. Value must be between 0.00 and 1.00.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#trace_rate ApmRetentionFilter#trace_rate}
+  */
+  readonly traceRate?: string;
+  /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
   */
   readonly filter?: ApmRetentionFilterFilter;
 }
@@ -47,7 +53,7 @@ export interface ApmRetentionFilterFilter {
   /**
   * The search query - follow the span search syntax, use `AND` between tags and `\` to escape special characters, use nanosecond for duration. Defaults to `"*"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
   */
   readonly query?: string;
 }
@@ -141,7 +147,7 @@ export class ApmRetentionFilterFilterOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter datadog_apm_retention_filter}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter datadog_apm_retention_filter}
 */
 export class ApmRetentionFilter extends cdktf.TerraformResource {
 
@@ -157,7 +163,7 @@ export class ApmRetentionFilter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApmRetentionFilter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApmRetentionFilter to import
-  * @param importFromId The id of the existing ApmRetentionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApmRetentionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApmRetentionFilter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -169,7 +175,7 @@ export class ApmRetentionFilter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +186,7 @@ export class ApmRetentionFilter extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_apm_retention_filter',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.60.0',
+        providerVersion: '3.60.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -195,6 +201,7 @@ export class ApmRetentionFilter extends cdktf.TerraformResource {
     this._filterType = config.filterType;
     this._name = config.name;
     this._rate = config.rate;
+    this._traceRate = config.traceRate;
     this._filter.internalValue = config.filter;
   }
 
@@ -259,6 +266,22 @@ export class ApmRetentionFilter extends cdktf.TerraformResource {
     return this._rate;
   }
 
+  // trace_rate - computed: false, optional: true, required: false
+  private _traceRate?: string; 
+  public get traceRate() {
+    return this.getStringAttribute('trace_rate');
+  }
+  public set traceRate(value: string) {
+    this._traceRate = value;
+  }
+  public resetTraceRate() {
+    this._traceRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get traceRateInput() {
+    return this._traceRate;
+  }
+
   // filter - computed: false, optional: true, required: false
   private _filter = new ApmRetentionFilterFilterOutputReference(this, "filter");
   public get filter() {
@@ -285,6 +308,7 @@ export class ApmRetentionFilter extends cdktf.TerraformResource {
       filter_type: cdktf.stringToTerraform(this._filterType),
       name: cdktf.stringToTerraform(this._name),
       rate: cdktf.stringToTerraform(this._rate),
+      trace_rate: cdktf.stringToTerraform(this._traceRate),
       filter: apmRetentionFilterFilterToTerraform(this._filter.internalValue),
     };
   }
@@ -311,6 +335,12 @@ export class ApmRetentionFilter extends cdktf.TerraformResource {
       },
       rate: {
         value: cdktf.stringToHclTerraform(this._rate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trace_rate: {
+        value: cdktf.stringToHclTerraform(this._traceRate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
