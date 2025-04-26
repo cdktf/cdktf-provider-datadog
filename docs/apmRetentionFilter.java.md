@@ -4,7 +4,7 @@
 
 ### ApmRetentionFilter <a name="ApmRetentionFilter" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter datadog_apm_retention_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter datadog_apm_retention_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer"></a>
 
@@ -29,6 +29,7 @@ ApmRetentionFilter.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
     .rate(java.lang.String)
 //  .filter(ApmRetentionFilterFilter)
+//  .traceRate(java.lang.String)
     .build();
 ```
 
@@ -46,8 +47,9 @@ ApmRetentionFilter.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | the status of the retention filter. |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer.parameter.filterType">filterType</a></code> | <code>java.lang.String</code> | The type of the retention filter, currently only spans-processing-sampling is available. Valid values are `spans-sampling-processor`. |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the retention filter. |
-| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer.parameter.rate">rate</a></code> | <code>java.lang.String</code> | Sample rate to apply to spans going through this retention filter as a string, a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00. |
+| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer.parameter.rate">rate</a></code> | <code>java.lang.String</code> | Sample rate to apply to spans going through this retention filter as a string; |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilter">ApmRetentionFilterFilter</a></code> | filter block. |
+| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer.parameter.traceRate">traceRate</a></code> | <code>java.lang.String</code> | Sample rate to apply to traces with spans going through this retention filter as a string; |
 
 ---
 
@@ -117,7 +119,7 @@ Must be unique amongst siblings in the same scope
 
 the status of the retention filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
 
 ---
 
@@ -127,7 +129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The type of the retention filter, currently only spans-processing-sampling is available. Valid values are `spans-sampling-processor`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
 
 ---
 
@@ -137,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the retention filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
 
 ---
 
@@ -145,9 +147,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Sample rate to apply to spans going through this retention filter as a string, a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00.
+Sample rate to apply to spans going through this retention filter as a string;
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
+a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
 
 ---
 
@@ -157,7 +161,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
+
+---
+
+##### `traceRate`<sup>Optional</sup> <a name="traceRate" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer.parameter.traceRate"></a>
+
+- *Type:* java.lang.String
+
+Sample rate to apply to traces with spans going through this retention filter as a string;
+
+a value of 1.0 keeps all traces matching the query. Value must be between 0.00 and 1.00.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#trace_rate ApmRetentionFilter#trace_rate}
 
 ---
 
@@ -190,6 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.putFilter">putFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.resetFilter">resetFilter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.resetTraceRate">resetTraceRate</a></code> | *No description.* |
 
 ---
 
@@ -501,6 +518,12 @@ public void putFilter(ApmRetentionFilterFilter value)
 public void resetFilter()
 ```
 
+##### `resetTraceRate` <a name="resetTraceRate" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.resetTraceRate"></a>
+
+```java
+public void resetTraceRate()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -604,7 +627,7 @@ The construct id used in the generated config for the ApmRetentionFilter to impo
 
 The id of the existing ApmRetentionFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,10 +664,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.60
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.filterTypeInput">filterTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.rateInput">rateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.traceRateInput">traceRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.filterType">filterType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.rate">rate</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.traceRate">traceRate</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -860,6 +885,16 @@ public java.lang.String getRateInput();
 
 ---
 
+##### `traceRateInput`<sup>Optional</sup> <a name="traceRateInput" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.traceRateInput"></a>
+
+```java
+public java.lang.String getTraceRateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.enabled"></a>
 
 ```java
@@ -894,6 +929,16 @@ public java.lang.String getName();
 
 ```java
 public java.lang.String getRate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `traceRate`<sup>Required</sup> <a name="traceRate" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.property.traceRate"></a>
+
+```java
+public java.lang.String getTraceRate();
 ```
 
 - *Type:* java.lang.String
@@ -945,6 +990,7 @@ ApmRetentionFilterConfig.builder()
     .name(java.lang.String)
     .rate(java.lang.String)
 //  .filter(ApmRetentionFilterFilter)
+//  .traceRate(java.lang.String)
     .build();
 ```
 
@@ -962,8 +1008,9 @@ ApmRetentionFilterConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | the status of the retention filter. |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.property.filterType">filterType</a></code> | <code>java.lang.String</code> | The type of the retention filter, currently only spans-processing-sampling is available. Valid values are `spans-sampling-processor`. |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the retention filter. |
-| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.property.rate">rate</a></code> | <code>java.lang.String</code> | Sample rate to apply to spans going through this retention filter as a string, a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00. |
+| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.property.rate">rate</a></code> | <code>java.lang.String</code> | Sample rate to apply to spans going through this retention filter as a string; |
 | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilter">ApmRetentionFilterFilter</a></code> | filter block. |
+| <code><a href="#@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.property.traceRate">traceRate</a></code> | <code>java.lang.String</code> | Sample rate to apply to traces with spans going through this retention filter as a string; |
 
 ---
 
@@ -1047,7 +1094,7 @@ public java.lang.Object getEnabled();
 
 the status of the retention filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
 
 ---
 
@@ -1061,7 +1108,7 @@ public java.lang.String getFilterType();
 
 The type of the retention filter, currently only spans-processing-sampling is available. Valid values are `spans-sampling-processor`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
 
 ---
 
@@ -1075,7 +1122,7 @@ public java.lang.String getName();
 
 The name of the retention filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
 
 ---
 
@@ -1087,9 +1134,11 @@ public java.lang.String getRate();
 
 - *Type:* java.lang.String
 
-Sample rate to apply to spans going through this retention filter as a string, a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00.
+Sample rate to apply to spans going through this retention filter as a string;
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
+a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
 
 ---
 
@@ -1103,7 +1152,23 @@ public ApmRetentionFilterFilter getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
+
+---
+
+##### `traceRate`<sup>Optional</sup> <a name="traceRate" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.property.traceRate"></a>
+
+```java
+public java.lang.String getTraceRate();
+```
+
+- *Type:* java.lang.String
+
+Sample rate to apply to traces with spans going through this retention filter as a string;
+
+a value of 1.0 keeps all traces matching the query. Value must be between 0.00 and 1.00.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#trace_rate ApmRetentionFilter#trace_rate}
 
 ---
 
@@ -1139,7 +1204,7 @@ The search query - follow the span search syntax, use `AND` between tags and `\`
 
 Defaults to `"*"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.0/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.60.1/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
 
 ---
 
