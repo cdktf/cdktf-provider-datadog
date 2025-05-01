@@ -59,6 +59,7 @@ Object.defineProperty(exports, 'metricTagConfiguration', { get: function () { re
 Object.defineProperty(exports, 'monitor', { get: function () { return require('./monitor'); } });
 Object.defineProperty(exports, 'monitorConfigPolicy', { get: function () { return require('./monitor-config-policy'); } });
 Object.defineProperty(exports, 'monitorJson', { get: function () { return require('./monitor-json'); } });
+Object.defineProperty(exports, 'monitorNotificationRule', { get: function () { return require('./monitor-notification-rule'); } });
 Object.defineProperty(exports, 'observabilityPipeline', { get: function () { return require('./observability-pipeline'); } });
 Object.defineProperty(exports, 'openapiApi', { get: function () { return require('./openapi-api'); } });
 Object.defineProperty(exports, 'organizationSettings', { get: function () { return require('./organization-settings'); } });
@@ -117,6 +118,7 @@ Object.defineProperty(exports, 'dataDatadogLogsIndexes', { get: function () { re
 Object.defineProperty(exports, 'dataDatadogLogsIndexesOrder', { get: function () { return require('./data-datadog-logs-indexes-order'); } });
 Object.defineProperty(exports, 'dataDatadogLogsPipelines', { get: function () { return require('./data-datadog-logs-pipelines'); } });
 Object.defineProperty(exports, 'dataDatadogLogsPipelinesOrder', { get: function () { return require('./data-datadog-logs-pipelines-order'); } });
+Object.defineProperty(exports, 'dataDatadogMetricTags', { get: function () { return require('./data-datadog-metric-tags'); } });
 Object.defineProperty(exports, 'dataDatadogMonitor', { get: function () { return require('./data-datadog-monitor'); } });
 Object.defineProperty(exports, 'dataDatadogMonitorConfigPolicies', { get: function () { return require('./data-datadog-monitor-config-policies'); } });
 Object.defineProperty(exports, 'dataDatadogMonitors', { get: function () { return require('./data-datadog-monitors'); } });
