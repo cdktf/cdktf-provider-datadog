@@ -73,6 +73,7 @@ export * as rumRetentionFiltersOrder from './rum-retention-filters-order';
 export * as securityMonitoringDefaultRule from './security-monitoring-default-rule';
 export * as securityMonitoringFilter from './security-monitoring-filter';
 export * as securityMonitoringRule from './security-monitoring-rule';
+export * as securityMonitoringRuleJson from './security-monitoring-rule-json';
 export * as securityMonitoringSuppression from './security-monitoring-suppression';
 export * as securityNotificationRule from './security-notification-rule';
 export * as sensitiveDataScannerGroup from './sensitive-data-scanner-group';

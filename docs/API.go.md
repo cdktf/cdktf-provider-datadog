@@ -123,6 +123,7 @@ The following submodules are available:
 - [securityMonitoringDefaultRule](./securityMonitoringDefaultRule.go.md)
 - [securityMonitoringFilter](./securityMonitoringFilter.go.md)
 - [securityMonitoringRule](./securityMonitoringRule.go.md)
+- [securityMonitoringRuleJson](./securityMonitoringRuleJson.go.md)
 - [securityMonitoringSuppression](./securityMonitoringSuppression.go.md)
 - [securityNotificationRule](./securityNotificationRule.go.md)
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.go.md)

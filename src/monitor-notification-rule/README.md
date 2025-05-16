@@ -1,3 +1,3 @@
 # `datadog_monitor_notification_rule`
 
-Refer to the Terraform Registry for docs: [`datadog_monitor_notification_rule`](https://registry.terraform.io/providers/datadog/datadog/3.61.0/docs/resources/monitor_notification_rule).
+Refer to the Terraform Registry for docs: [`datadog_monitor_notification_rule`](https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/monitor_notification_rule).

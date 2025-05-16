@@ -73,6 +73,7 @@ Object.defineProperty(exports, 'rumRetentionFiltersOrder', { get: function () { 
 Object.defineProperty(exports, 'securityMonitoringDefaultRule', { get: function () { return require('./security-monitoring-default-rule'); } });
 Object.defineProperty(exports, 'securityMonitoringFilter', { get: function () { return require('./security-monitoring-filter'); } });
 Object.defineProperty(exports, 'securityMonitoringRule', { get: function () { return require('./security-monitoring-rule'); } });
+Object.defineProperty(exports, 'securityMonitoringRuleJson', { get: function () { return require('./security-monitoring-rule-json'); } });
 Object.defineProperty(exports, 'securityMonitoringSuppression', { get: function () { return require('./security-monitoring-suppression'); } });
 Object.defineProperty(exports, 'securityNotificationRule', { get: function () { return require('./security-notification-rule'); } });
 Object.defineProperty(exports, 'sensitiveDataScannerGroup', { get: function () { return require('./sensitive-data-scanner-group'); } });
