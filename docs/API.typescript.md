@@ -123,6 +123,7 @@ The following submodules are available:
 - [securityMonitoringDefaultRule](./securityMonitoringDefaultRule.typescript.md)
 - [securityMonitoringFilter](./securityMonitoringFilter.typescript.md)
 - [securityMonitoringRule](./securityMonitoringRule.typescript.md)
+- [securityMonitoringRuleJson](./securityMonitoringRuleJson.typescript.md)
 - [securityMonitoringSuppression](./securityMonitoringSuppression.typescript.md)
 - [securityNotificationRule](./securityNotificationRule.typescript.md)
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.typescript.md)

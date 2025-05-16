@@ -123,6 +123,7 @@ The following submodules are available:
 - [securityMonitoringDefaultRule](./securityMonitoringDefaultRule.csharp.md)
 - [securityMonitoringFilter](./securityMonitoringFilter.csharp.md)
 - [securityMonitoringRule](./securityMonitoringRule.csharp.md)
+- [securityMonitoringRuleJson](./securityMonitoringRuleJson.csharp.md)
 - [securityMonitoringSuppression](./securityMonitoringSuppression.csharp.md)
 - [securityNotificationRule](./securityNotificationRule.csharp.md)
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.csharp.md)

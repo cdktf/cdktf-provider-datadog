@@ -123,6 +123,7 @@ The following submodules are available:
 - [securityMonitoringDefaultRule](./securityMonitoringDefaultRule.python.md)
 - [securityMonitoringFilter](./securityMonitoringFilter.python.md)
 - [securityMonitoringRule](./securityMonitoringRule.python.md)
+- [securityMonitoringRuleJson](./securityMonitoringRuleJson.python.md)
 - [securityMonitoringSuppression](./securityMonitoringSuppression.python.md)
 - [securityNotificationRule](./securityNotificationRule.python.md)
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.python.md)

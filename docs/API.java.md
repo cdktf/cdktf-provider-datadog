@@ -123,6 +123,7 @@ The following submodules are available:
 - [securityMonitoringDefaultRule](./securityMonitoringDefaultRule.java.md)
 - [securityMonitoringFilter](./securityMonitoringFilter.java.md)
 - [securityMonitoringRule](./securityMonitoringRule.java.md)
+- [securityMonitoringRuleJson](./securityMonitoringRuleJson.java.md)
 - [securityMonitoringSuppression](./securityMonitoringSuppression.java.md)
 - [securityNotificationRule](./securityNotificationRule.java.md)
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.java.md)
