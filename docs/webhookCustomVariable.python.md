@@ -4,7 +4,7 @@
 
 ### WebhookCustomVariable <a name="WebhookCustomVariable" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Whether the custom variable is secret or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The value of the custom variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
 
 ---
 
@@ -603,7 +603,7 @@ The construct id used in the generated config for the WebhookCustomVariable to i
 
 The id of the existing WebhookCustomVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -993,7 +993,7 @@ is_secret: typing.Union[bool, IResolvable]
 
 Whether the custom variable is secret or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
 
 ---
 
@@ -1007,7 +1007,7 @@ name: str
 
 The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
 
 ---
 
@@ -1021,7 +1021,7 @@ value: str
 
 The value of the custom variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
 
 ---
 

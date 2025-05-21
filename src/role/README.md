@@ -1,3 +1,3 @@
 # `datadog_role`
 
-Refer to the Terraform Registry for docs: [`datadog_role`](https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/role).
+Refer to the Terraform Registry for docs: [`datadog_role`](https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/role).

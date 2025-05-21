@@ -1,3 +1,3 @@
 # `datadog_software_catalog`
 
-Refer to the Terraform Registry for docs: [`datadog_software_catalog`](https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/software_catalog).
+Refer to the Terraform Registry for docs: [`datadog_software_catalog`](https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/software_catalog).

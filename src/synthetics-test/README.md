@@ -1,3 +1,3 @@
 # `datadog_synthetics_test`
 
-Refer to the Terraform Registry for docs: [`datadog_synthetics_test`](https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/synthetics_test).
+Refer to the Terraform Registry for docs: [`datadog_synthetics_test`](https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/synthetics_test).
