@@ -1,3 +1,3 @@
 # `datadog_app_builder_app`
 
-Refer to the Terraform Registry for docs: [`datadog_app_builder_app`](https://registry.terraform.io/providers/datadog/datadog/3.62.0/docs/resources/app_builder_app).
+Refer to the Terraform Registry for docs: [`datadog_app_builder_app`](https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/resources/app_builder_app).
