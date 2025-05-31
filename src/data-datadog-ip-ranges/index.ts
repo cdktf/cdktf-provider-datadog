@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/data-sources/ip_ranges
+// https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/data-sources/ip_ranges
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogIpRangesConfig extends cdktf.TerraformMetaArguments 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/data-sources/ip_ranges datadog_ip_ranges}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/data-sources/ip_ranges datadog_ip_ranges}
 */
 export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
 
@@ -31,7 +31,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogIpRanges resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogIpRanges to import
-  * @param importFromId The id of the existing DataDatadogIpRanges that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogIpRanges that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogIpRanges to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -43,7 +43,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.63.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.63.0',
+        providerVersion: '3.65.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

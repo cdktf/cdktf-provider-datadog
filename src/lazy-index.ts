@@ -16,6 +16,7 @@ Object.defineProperty(exports, 'authnMapping', { get: function () { return requi
 Object.defineProperty(exports, 'childOrganization', { get: function () { return require('./child-organization'); } });
 Object.defineProperty(exports, 'cloudConfigurationRule', { get: function () { return require('./cloud-configuration-rule'); } });
 Object.defineProperty(exports, 'cloudWorkloadSecurityAgentRule', { get: function () { return require('./cloud-workload-security-agent-rule'); } });
+Object.defineProperty(exports, 'complianceCustomFramework', { get: function () { return require('./compliance-custom-framework'); } });
 Object.defineProperty(exports, 'csmThreatsAgentRule', { get: function () { return require('./csm-threats-agent-rule'); } });
 Object.defineProperty(exports, 'dashboard', { get: function () { return require('./dashboard'); } });
 Object.defineProperty(exports, 'dashboardJson', { get: function () { return require('./dashboard-json'); } });
@@ -61,6 +62,9 @@ Object.defineProperty(exports, 'monitorConfigPolicy', { get: function () { retur
 Object.defineProperty(exports, 'monitorJson', { get: function () { return require('./monitor-json'); } });
 Object.defineProperty(exports, 'monitorNotificationRule', { get: function () { return require('./monitor-notification-rule'); } });
 Object.defineProperty(exports, 'observabilityPipeline', { get: function () { return require('./observability-pipeline'); } });
+Object.defineProperty(exports, 'onCallEscalationPolicy', { get: function () { return require('./on-call-escalation-policy'); } });
+Object.defineProperty(exports, 'onCallSchedule', { get: function () { return require('./on-call-schedule'); } });
+Object.defineProperty(exports, 'onCallTeamRoutingRules', { get: function () { return require('./on-call-team-routing-rules'); } });
 Object.defineProperty(exports, 'openapiApi', { get: function () { return require('./openapi-api'); } });
 Object.defineProperty(exports, 'organizationSettings', { get: function () { return require('./organization-settings'); } });
 Object.defineProperty(exports, 'powerpack', { get: function () { return require('./powerpack'); } });
