@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallSchedule.OnCallSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.NewOnCallSchedule(scope Construct, id *string, config OnCallScheduleConfig) OnCallSchedule
 ```
@@ -405,7 +405,7 @@ func ResetTeams()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.onCallSchedule.OnCallSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.OnCallSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.onCallSchedule.OnCallSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.OnCallSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ oncallschedule.OnCallSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.onCallSchedule.OnCallSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.OnCallSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ oncallschedule.OnCallSchedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.onCallSchedule.OnCallSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.OnCallSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 &oncallschedule.OnCallScheduleConfig {
 	Connection: interface{},
@@ -959,14 +959,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 &oncallschedule.OnCallScheduleLayer {
 	EffectiveDate: *string,
 	Name: *string,
 	Users: *[]*string,
 	EndDate: *string,
-	Interval: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.onCallSchedule.OnCallScheduleLayerInterval,
+	Interval: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.onCallSchedule.OnCallScheduleLayerInterval,
 	Restriction: interface{},
 	RotationStart: *string,
 }
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerInterval.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 &oncallschedule.OnCallScheduleLayerInterval {
 	Days: *f64,
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 &oncallschedule.OnCallScheduleLayerRestriction {
 	EndDay: *string,
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerIntervalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.NewOnCallScheduleLayerIntervalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallScheduleLayerIntervalOutputReference
 ```
@@ -1530,7 +1530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.NewOnCallScheduleLayerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallScheduleLayerList
 ```
@@ -1690,7 +1690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.NewOnCallScheduleLayerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallScheduleLayerOutputReference
 ```
@@ -2176,7 +2176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.NewOnCallScheduleLayerRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallScheduleLayerRestrictionList
 ```
@@ -2336,7 +2336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/oncallschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule"
 
 oncallschedule.NewOnCallScheduleLayerRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallScheduleLayerRestrictionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitornotificationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitornotificationrule"
 
 monitornotificationrule.NewMonitorNotificationRule(scope Construct, id *string, config MonitorNotificationRuleConfig) MonitorNotificationRule
 ```
@@ -391,7 +391,7 @@ func PutFilter(value MonitorNotificationRuleFilter)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitornotificationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitornotificationrule"
 
 monitornotificationrule.MonitorNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitornotificationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitornotificationrule"
 
 monitornotificationrule.MonitorNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ monitornotificationrule.MonitorNotificationRule_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitornotificationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitornotificationrule"
 
 monitornotificationrule.MonitorNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ monitornotificationrule.MonitorNotificationRule_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitornotificationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitornotificationrule"
 
 monitornotificationrule.MonitorNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitornotificationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitornotificationrule"
 
 &monitornotificationrule.MonitorNotificationRuleConfig {
 	Connection: interface{},
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitornotificati
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v11.monitorNotificationRule.MonitorNotificationRuleFilter,
+	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.monitorNotificationRule.MonitorNotificationRuleFilter,
 	Name: *string,
 	Recipients: *[]*string,
 }
@@ -907,7 +907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitornotificationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitornotificationrule"
 
 &monitornotificationrule.MonitorNotificationRuleFilter {
 	Tags: *[]*string,
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/monitornotificationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitornotificationrule"
 
 monitornotificationrule.NewMonitorNotificationRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorNotificationRuleFilterOutputReference
 ```
