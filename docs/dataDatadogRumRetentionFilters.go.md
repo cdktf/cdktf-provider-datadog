@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumretentionfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters"
 
 datadatadogrumretentionfilters.NewDataDatadogRumRetentionFilters(scope Construct, id *string, config DataDatadogRumRetentionFiltersConfig) DataDatadogRumRetentionFilters
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumretentionfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters"
 
 datadatadogrumretentionfilters.DataDatadogRumRetentionFilters_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumretentionfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters"
 
 datadatadogrumretentionfilters.DataDatadogRumRetentionFilters_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatadogrumretentionfilters.DataDatadogRumRetentionFilters_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumretentionfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters"
 
 datadatadogrumretentionfilters.DataDatadogRumRetentionFilters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatadogrumretentionfilters.DataDatadogRumRetentionFilters_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumretentionfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters"
 
 datadatadogrumretentionfilters.DataDatadogRumRetentionFilters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFiltersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumretentionfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters"
 
 &datadatadogrumretentionfilters.DataDatadogRumRetentionFiltersConfig {
 	Connection: interface{},
@@ -705,7 +705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFiltersRetentionFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumretentionfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters"
 
 &datadatadogrumretentionfilters.DataDatadogRumRetentionFiltersRetentionFilters {
 
@@ -720,7 +720,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumret
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFiltersRetentionFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumretentionfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters"
 
 datadatadogrumretentionfilters.NewDataDatadogRumRetentionFiltersRetentionFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogRumRetentionFiltersRetentionFiltersList
 ```
@@ -869,7 +869,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFiltersRetentionFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v11/datadatadogrumretentionfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters"
 
 datadatadogrumretentionfilters.NewDataDatadogRumRetentionFiltersRetentionFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogRumRetentionFiltersRetentionFiltersOutputReference
 ```
