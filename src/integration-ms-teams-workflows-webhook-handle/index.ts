@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/integration_ms_teams_workflows_webhook_handle
 // generated from terraform resource schema
 
