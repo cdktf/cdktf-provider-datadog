@@ -17,7 +17,10 @@ Object.defineProperty(exports, 'childOrganization', { get: function () { return 
 Object.defineProperty(exports, 'cloudConfigurationRule', { get: function () { return require('./cloud-configuration-rule'); } });
 Object.defineProperty(exports, 'cloudWorkloadSecurityAgentRule', { get: function () { return require('./cloud-workload-security-agent-rule'); } });
 Object.defineProperty(exports, 'complianceCustomFramework', { get: function () { return require('./compliance-custom-framework'); } });
+Object.defineProperty(exports, 'complianceResourceEvaluationFilter', { get: function () { return require('./compliance-resource-evaluation-filter'); } });
+Object.defineProperty(exports, 'costBudget', { get: function () { return require('./cost-budget'); } });
 Object.defineProperty(exports, 'csmThreatsAgentRule', { get: function () { return require('./csm-threats-agent-rule'); } });
+Object.defineProperty(exports, 'csmThreatsPolicy', { get: function () { return require('./csm-threats-policy'); } });
 Object.defineProperty(exports, 'dashboard', { get: function () { return require('./dashboard'); } });
 Object.defineProperty(exports, 'dashboardJson', { get: function () { return require('./dashboard-json'); } });
 Object.defineProperty(exports, 'dashboardList', { get: function () { return require('./dashboard-list'); } });
@@ -109,7 +112,9 @@ Object.defineProperty(exports, 'dataDatadogApmRetentionFiltersOrder', { get: fun
 Object.defineProperty(exports, 'dataDatadogAppBuilderApp', { get: function () { return require('./data-datadog-app-builder-app'); } });
 Object.defineProperty(exports, 'dataDatadogApplicationKey', { get: function () { return require('./data-datadog-application-key'); } });
 Object.defineProperty(exports, 'dataDatadogCloudWorkloadSecurityAgentRules', { get: function () { return require('./data-datadog-cloud-workload-security-agent-rules'); } });
+Object.defineProperty(exports, 'dataDatadogCostBudget', { get: function () { return require('./data-datadog-cost-budget'); } });
 Object.defineProperty(exports, 'dataDatadogCsmThreatsAgentRules', { get: function () { return require('./data-datadog-csm-threats-agent-rules'); } });
+Object.defineProperty(exports, 'dataDatadogCsmThreatsPolicies', { get: function () { return require('./data-datadog-csm-threats-policies'); } });
 Object.defineProperty(exports, 'dataDatadogDashboard', { get: function () { return require('./data-datadog-dashboard'); } });
 Object.defineProperty(exports, 'dataDatadogDashboardList', { get: function () { return require('./data-datadog-dashboard-list'); } });
 Object.defineProperty(exports, 'dataDatadogHosts', { get: function () { return require('./data-datadog-hosts'); } });

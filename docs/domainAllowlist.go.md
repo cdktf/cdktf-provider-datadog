@@ -4,7 +4,7 @@
 
 ### DomainAllowlist <a name="DomainAllowlist" id="@cdktf/provider-datadog.domainAllowlist.DomainAllowlist"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/domain_allowlist datadog_domain_allowlist}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/domain_allowlist datadog_domain_allowlist}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.domainAllowlist.DomainAllowlist.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the DomainAllowlist to import.
 
 The id of the existing DomainAllowlist that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/domain_allowlist#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/domain_allowlist#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ Domains *[]*string
 
 The domains within the domain allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
 
 ---
 
@@ -847,7 +847,7 @@ Enabled interface{}
 
 Whether the Email Domain Allowlist is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
 
 ---
 

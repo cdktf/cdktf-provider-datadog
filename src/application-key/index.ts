@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/application_key
+// https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/application_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ApplicationKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for Application Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/application_key#name ApplicationKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/application_key#name ApplicationKey#name}
   */
   readonly name: string;
   /**
   * Authorization scopes for the Application Key. Application Keys configured with no scopes have full access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/application_key#scopes ApplicationKey#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/application_key#scopes ApplicationKey#scopes}
   */
   readonly scopes?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/application_key datadog_application_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/application_key datadog_application_key}
 */
 export class ApplicationKey extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationKey to import
-  * @param importFromId The id of the existing ApplicationKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/application_key datadog_application_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/application_key datadog_application_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_application_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.65.0',
+        providerVersion: '3.66.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
