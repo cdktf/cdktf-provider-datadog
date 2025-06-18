@@ -4,7 +4,7 @@
 
 ### SyntheticsPrivateLocation <a name="SyntheticsPrivateLocation" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer"></a>
 
@@ -22,6 +22,7 @@ syntheticsPrivateLocation.SyntheticsPrivateLocation(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  api_key: str = None,
   description: str = None,
   metadata: typing.Union[IResolvable, typing.List[SyntheticsPrivateLocationMetadata]] = None,
   tags: typing.List[str] = None
@@ -40,6 +41,7 @@ syntheticsPrivateLocation.SyntheticsPrivateLocation(
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.name">name</a></code> | <code>str</code> | Synthetics private location name. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.apiKey">api_key</a></code> | <code>str</code> | API key used to generate the private location configuration. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the private location. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata">SyntheticsPrivateLocationMetadata</a>]]</code> | metadata block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your synthetics private location. |
@@ -112,7 +114,17 @@ Must be unique amongst siblings in the same scope
 
 Synthetics private location name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+
+---
+
+##### `api_key`<sup>Optional</sup> <a name="api_key" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.apiKey"></a>
+
+- *Type:* str
+
+API key used to generate the private location configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#api_key SyntheticsPrivateLocation#api_key}
 
 ---
 
@@ -122,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Description of the private location. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
 
 ---
 
@@ -132,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#metadata SyntheticsPrivateLocation#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#metadata SyntheticsPrivateLocation#metadata}
 
 ---
 
@@ -142,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of tags to associate with your synthetics private location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
 
 ---
 
@@ -174,6 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.putMetadata">put_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetApiKey">reset_api_key</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetMetadata">reset_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetTags">reset_tags</a></code> | *No description.* |
@@ -519,6 +532,12 @@ def put_metadata(
 
 ---
 
+##### `reset_api_key` <a name="reset_api_key" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetApiKey"></a>
+
+```python
+def reset_api_key() -> None
+```
+
 ##### `reset_description` <a name="reset_description" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetDescription"></a>
 
 ```python
@@ -651,7 +670,7 @@ The construct id used in the generated config for the SyntheticsPrivateLocation 
 
 The id of the existing SyntheticsPrivateLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -684,10 +703,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.65
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.config">config</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadataList">SyntheticsPrivateLocationMetadataList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.apiKeyInput">api_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.metadataInput">metadata_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata">SyntheticsPrivateLocationMetadata</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -866,6 +887,16 @@ metadata: SyntheticsPrivateLocationMetadataList
 
 ---
 
+##### `api_key_input`<sup>Optional</sup> <a name="api_key_input" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.apiKeyInput"></a>
+
+```python
+api_key_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.descriptionInput"></a>
 
 ```python
@@ -903,6 +934,16 @@ tags_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `api_key`<sup>Required</sup> <a name="api_key" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.property.apiKey"></a>
+
+```python
+api_key: str
+```
+
+- *Type:* str
 
 ---
 
@@ -972,6 +1013,7 @@ syntheticsPrivateLocation.SyntheticsPrivateLocationConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  api_key: str = None,
   description: str = None,
   metadata: typing.Union[IResolvable, typing.List[SyntheticsPrivateLocationMetadata]] = None,
   tags: typing.List[str] = None
@@ -990,6 +1032,7 @@ syntheticsPrivateLocation.SyntheticsPrivateLocationConfig(
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.name">name</a></code> | <code>str</code> | Synthetics private location name. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.apiKey">api_key</a></code> | <code>str</code> | API key used to generate the private location configuration. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.description">description</a></code> | <code>str</code> | Description of the private location. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.metadata">metadata</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata">SyntheticsPrivateLocationMetadata</a>]]</code> | metadata block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your synthetics private location. |
@@ -1076,7 +1119,21 @@ name: str
 
 Synthetics private location name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+
+---
+
+##### `api_key`<sup>Optional</sup> <a name="api_key" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.apiKey"></a>
+
+```python
+api_key: str
+```
+
+- *Type:* str
+
+API key used to generate the private location configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#api_key SyntheticsPrivateLocation#api_key}
 
 ---
 
@@ -1090,7 +1147,7 @@ description: str
 
 Description of the private location. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
 
 ---
 
@@ -1104,7 +1161,7 @@ metadata: typing.Union[IResolvable, typing.List[SyntheticsPrivateLocationMetadat
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#metadata SyntheticsPrivateLocation#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#metadata SyntheticsPrivateLocation#metadata}
 
 ---
 
@@ -1118,7 +1175,7 @@ tags: typing.List[str]
 
 A list of tags to associate with your synthetics private location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
 
 ---
 
@@ -1154,7 +1211,7 @@ A set of role identifiers pulled from the Roles API to restrict read and write a
 
 **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/synthetics_private_location#restricted_roles SyntheticsPrivateLocation#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/synthetics_private_location#restricted_roles SyntheticsPrivateLocation#restricted_roles}
 
 ---
 

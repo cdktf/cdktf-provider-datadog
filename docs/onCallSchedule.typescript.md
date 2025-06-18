@@ -4,7 +4,7 @@
 
 ### OnCallSchedule <a name="OnCallSchedule" id="@cdktf/provider-datadog.onCallSchedule.OnCallSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule datadog_on_call_schedule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule datadog_on_call_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallSchedule.OnCallSchedule.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the OnCallSchedule to import.
 
 The id of the existing OnCallSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -896,7 +896,7 @@ public readonly name: string;
 
 A human-readable name for the new schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
 
 ---
 
@@ -910,7 +910,7 @@ public readonly timeZone: string;
 
 The time zone in which the schedule is defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
 
 ---
 
@@ -924,7 +924,7 @@ public readonly layer: IResolvable | OnCallScheduleLayer[];
 
 layer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
 
 ---
 
@@ -938,7 +938,7 @@ public readonly teams: string[];
 
 A list of team ids associated with the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
 
 ---
 
@@ -976,7 +976,7 @@ public readonly effectiveDate: string;
 
 The date/time when this layer should become active (in ISO 8601).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#effective_date OnCallSchedule#effective_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#effective_date OnCallSchedule#effective_date}
 
 ---
 
@@ -990,7 +990,7 @@ public readonly name: string;
 
 The name of this layer. Should be unique within the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly users: string[];
 
 List of user IDs for the layer. Can either be a valid user id or null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#users OnCallSchedule#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#users OnCallSchedule#users}
 
 ---
 
@@ -1018,7 +1018,7 @@ public readonly endDate: string;
 
 The date/time after which this layer no longer applies (in ISO 8601).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#end_date OnCallSchedule#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#end_date OnCallSchedule#end_date}
 
 ---
 
@@ -1032,7 +1032,7 @@ public readonly interval: OnCallScheduleLayerInterval;
 
 interval block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#interval OnCallSchedule#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#interval OnCallSchedule#interval}
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly restriction: IResolvable | OnCallScheduleLayerRestriction[];
 
 restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#restriction OnCallSchedule#restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#restriction OnCallSchedule#restriction}
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly rotationStart: string;
 
 The date/time when the rotation for this layer starts (in ISO 8601).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#rotation_start OnCallSchedule#rotation_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#rotation_start OnCallSchedule#rotation_start}
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly days: number;
 
 The number of full days in each rotation period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly seconds: number;
 
 For intervals that are not expressible in whole days, this will be added to `days`. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly endDay: string;
 
 The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#end_day OnCallSchedule#end_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#end_day OnCallSchedule#end_day}
 
 ---
 
@@ -1156,7 +1156,7 @@ public readonly endTime: string;
 
 The time of day when the restriction ends (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#end_time OnCallSchedule#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#end_time OnCallSchedule#end_time}
 
 ---
 
@@ -1170,7 +1170,7 @@ public readonly startDay: string;
 
 The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#start_day OnCallSchedule#start_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#start_day OnCallSchedule#start_day}
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly startTime: string;
 
 The time of day when the restriction begins (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.65.0/docs/resources/on_call_schedule#start_time OnCallSchedule#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#start_time OnCallSchedule#start_time}
 
 ---
 
