@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination
+// https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface LogsCustomDestinationConfig extends cdktf.TerraformMetaArgument
   /**
   * Whether logs matching this custom destination should be forwarded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Whether tags from the forwarded logs should be forwarded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
   */
   readonly forwardTags?: boolean | cdktf.IResolvable;
   /**
@@ -29,7 +29,7 @@ export interface LogsCustomDestinationConfig extends cdktf.TerraformMetaArgument
   * 				An empty list represents no restriction is in place and either all or no tags will be
   * 				forwarded depending on `forward_tags_restriction_list_type` parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
   */
   readonly forwardTagsRestrictionList?: string[];
   /**
@@ -38,37 +38,43 @@ export interface LogsCustomDestinationConfig extends cdktf.TerraformMetaArgument
   * 				are forwarded.
   * 				`BLOCK_LIST` works the opposite way. It does not forward the tags matching the ones on the list. Valid values are `ALLOW_LIST`, `BLOCK_LIST`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
   */
   readonly forwardTagsRestrictionListType?: string;
   /**
   * The custom destination name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
   */
   readonly name: string;
   /**
   * The custom destination query filter. Logs matching this query are forwarded to the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
   */
   readonly query?: string;
   /**
   * elasticsearch_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
   */
   readonly elasticsearchDestination?: LogsCustomDestinationElasticsearchDestination[] | cdktf.IResolvable;
   /**
   * http_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
   */
   readonly httpDestination?: LogsCustomDestinationHttpDestination[] | cdktf.IResolvable;
   /**
+  * microsoft_sentinel_destination block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#microsoft_sentinel_destination LogsCustomDestination#microsoft_sentinel_destination}
+  */
+  readonly microsoftSentinelDestination?: LogsCustomDestinationMicrosoftSentinelDestination[] | cdktf.IResolvable;
+  /**
   * splunk_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
   */
   readonly splunkDestination?: LogsCustomDestinationSplunkDestination[] | cdktf.IResolvable;
 }
@@ -76,13 +82,13 @@ export interface LogsCustomDestinationElasticsearchDestinationBasicAuth {
   /**
   * The password of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
   */
   readonly password: string;
   /**
   * The username of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
   */
   readonly username: string;
 }
@@ -223,13 +229,13 @@ export interface LogsCustomDestinationElasticsearchDestination {
   /**
   * The destination for which logs will be forwarded to. Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
   */
   readonly endpoint: string;
   /**
   * Name of the Elasticsearch index (must follow [Elasticsearch's criteria](https://www.elastic.co/guide/en/elasticsearch/reference/8.11/indices-create-index.html#indices-create-api-path-params)).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
   */
   readonly indexName: string;
   /**
@@ -243,13 +249,13 @@ export interface LogsCustomDestinationElasticsearchDestination {
   * 							If this field is missing or is blank, it means that the index name will always be the same
   * 							(that is, no rotation).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
   */
   readonly indexRotation?: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
   */
   readonly basicAuth?: LogsCustomDestinationElasticsearchDestinationBasicAuth[] | cdktf.IResolvable;
 }
@@ -448,13 +454,13 @@ export interface LogsCustomDestinationHttpDestinationBasicAuth {
   /**
   * The password of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
   */
   readonly password: string;
   /**
   * The username of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
   */
   readonly username: string;
 }
@@ -595,13 +601,13 @@ export interface LogsCustomDestinationHttpDestinationCustomHeaderAuth {
   /**
   * The header name of the authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
   */
   readonly headerName: string;
   /**
   * The header value of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
   */
   readonly headerValue: string;
 }
@@ -742,19 +748,19 @@ export interface LogsCustomDestinationHttpDestination {
   /**
   * The destination for which logs will be forwarded to. Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
   */
   readonly endpoint: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
   */
   readonly basicAuth?: LogsCustomDestinationHttpDestinationBasicAuth[] | cdktf.IResolvable;
   /**
   * custom_header_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
   */
   readonly customHeaderAuth?: LogsCustomDestinationHttpDestinationCustomHeaderAuth[] | cdktf.IResolvable;
 }
@@ -923,17 +929,260 @@ export class LogsCustomDestinationHttpDestinationList extends cdktf.ComplexList 
     return new LogsCustomDestinationHttpDestinationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface LogsCustomDestinationMicrosoftSentinelDestination {
+  /**
+  * Client ID from the Datadog Azure Integration.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#client_id LogsCustomDestination#client_id}
+  */
+  readonly clientId: string;
+  /**
+  * Azure Data Collection Endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#data_collection_endpoint LogsCustomDestination#data_collection_endpoint}
+  */
+  readonly dataCollectionEndpoint: string;
+  /**
+  *  Azure Data Collection Rule ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#data_collection_rule_id LogsCustomDestination#data_collection_rule_id}
+  */
+  readonly dataCollectionRuleId: string;
+  /**
+  * Azure stream name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#stream_name LogsCustomDestination#stream_name}
+  */
+  readonly streamName: string;
+  /**
+  * Tenant ID from the Datadog Azure Integration.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#tenant_id LogsCustomDestination#tenant_id}
+  */
+  readonly tenantId: string;
+}
+
+export function logsCustomDestinationMicrosoftSentinelDestinationToTerraform(struct?: LogsCustomDestinationMicrosoftSentinelDestination | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    data_collection_endpoint: cdktf.stringToTerraform(struct!.dataCollectionEndpoint),
+    data_collection_rule_id: cdktf.stringToTerraform(struct!.dataCollectionRuleId),
+    stream_name: cdktf.stringToTerraform(struct!.streamName),
+    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+  }
+}
+
+
+export function logsCustomDestinationMicrosoftSentinelDestinationToHclTerraform(struct?: LogsCustomDestinationMicrosoftSentinelDestination | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_collection_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.dataCollectionEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_collection_rule_id: {
+      value: cdktf.stringToHclTerraform(struct!.dataCollectionRuleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.streamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LogsCustomDestinationMicrosoftSentinelDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsCustomDestinationMicrosoftSentinelDestination | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._dataCollectionEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataCollectionEndpoint = this._dataCollectionEndpoint;
+    }
+    if (this._dataCollectionRuleId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataCollectionRuleId = this._dataCollectionRuleId;
+    }
+    if (this._streamName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.streamName = this._streamName;
+    }
+    if (this._tenantId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tenantId = this._tenantId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomDestinationMicrosoftSentinelDestination | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._clientId = undefined;
+      this._dataCollectionEndpoint = undefined;
+      this._dataCollectionRuleId = undefined;
+      this._streamName = undefined;
+      this._tenantId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._clientId = value.clientId;
+      this._dataCollectionEndpoint = value.dataCollectionEndpoint;
+      this._dataCollectionRuleId = value.dataCollectionRuleId;
+      this._streamName = value.streamName;
+      this._tenantId = value.tenantId;
+    }
+  }
+
+  // client_id - computed: false, optional: false, required: true
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // data_collection_endpoint - computed: false, optional: false, required: true
+  private _dataCollectionEndpoint?: string; 
+  public get dataCollectionEndpoint() {
+    return this.getStringAttribute('data_collection_endpoint');
+  }
+  public set dataCollectionEndpoint(value: string) {
+    this._dataCollectionEndpoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataCollectionEndpointInput() {
+    return this._dataCollectionEndpoint;
+  }
+
+  // data_collection_rule_id - computed: false, optional: false, required: true
+  private _dataCollectionRuleId?: string; 
+  public get dataCollectionRuleId() {
+    return this.getStringAttribute('data_collection_rule_id');
+  }
+  public set dataCollectionRuleId(value: string) {
+    this._dataCollectionRuleId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataCollectionRuleIdInput() {
+    return this._dataCollectionRuleId;
+  }
+
+  // stream_name - computed: false, optional: false, required: true
+  private _streamName?: string; 
+  public get streamName() {
+    return this.getStringAttribute('stream_name');
+  }
+  public set streamName(value: string) {
+    this._streamName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get streamNameInput() {
+    return this._streamName;
+  }
+
+  // tenant_id - computed: false, optional: false, required: true
+  private _tenantId?: string; 
+  public get tenantId() {
+    return this.getStringAttribute('tenant_id');
+  }
+  public set tenantId(value: string) {
+    this._tenantId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenantIdInput() {
+    return this._tenantId;
+  }
+}
+
+export class LogsCustomDestinationMicrosoftSentinelDestinationList extends cdktf.ComplexList {
+  public internalValue? : LogsCustomDestinationMicrosoftSentinelDestination[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsCustomDestinationMicrosoftSentinelDestinationOutputReference {
+    return new LogsCustomDestinationMicrosoftSentinelDestinationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LogsCustomDestinationSplunkDestination {
   /**
   * Access token of the Splunk HTTP Event Collector. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
   */
   readonly accessToken: string;
   /**
   * The destination for which logs will be forwarded to. Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
   */
   readonly endpoint: string;
 }
@@ -1072,7 +1321,7 @@ export class LogsCustomDestinationSplunkDestinationList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}
 */
 export class LogsCustomDestination extends cdktf.TerraformResource {
 
@@ -1088,7 +1337,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LogsCustomDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsCustomDestination to import
-  * @param importFromId The id of the existing LogsCustomDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsCustomDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsCustomDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1100,7 +1349,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1111,7 +1360,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_custom_destination',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.66.0',
+        providerVersion: '3.67.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1130,6 +1379,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
     this._query = config.query;
     this._elasticsearchDestination.internalValue = config.elasticsearchDestination;
     this._httpDestination.internalValue = config.httpDestination;
+    this._microsoftSentinelDestination.internalValue = config.microsoftSentinelDestination;
     this._splunkDestination.internalValue = config.splunkDestination;
   }
 
@@ -1267,6 +1517,22 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
     return this._httpDestination.internalValue;
   }
 
+  // microsoft_sentinel_destination - computed: false, optional: true, required: false
+  private _microsoftSentinelDestination = new LogsCustomDestinationMicrosoftSentinelDestinationList(this, "microsoft_sentinel_destination", false);
+  public get microsoftSentinelDestination() {
+    return this._microsoftSentinelDestination;
+  }
+  public putMicrosoftSentinelDestination(value: LogsCustomDestinationMicrosoftSentinelDestination[] | cdktf.IResolvable) {
+    this._microsoftSentinelDestination.internalValue = value;
+  }
+  public resetMicrosoftSentinelDestination() {
+    this._microsoftSentinelDestination.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get microsoftSentinelDestinationInput() {
+    return this._microsoftSentinelDestination.internalValue;
+  }
+
   // splunk_destination - computed: false, optional: true, required: false
   private _splunkDestination = new LogsCustomDestinationSplunkDestinationList(this, "splunk_destination", false);
   public get splunkDestination() {
@@ -1297,6 +1563,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
       query: cdktf.stringToTerraform(this._query),
       elasticsearch_destination: cdktf.listMapper(logsCustomDestinationElasticsearchDestinationToTerraform, true)(this._elasticsearchDestination.internalValue),
       http_destination: cdktf.listMapper(logsCustomDestinationHttpDestinationToTerraform, true)(this._httpDestination.internalValue),
+      microsoft_sentinel_destination: cdktf.listMapper(logsCustomDestinationMicrosoftSentinelDestinationToTerraform, true)(this._microsoftSentinelDestination.internalValue),
       splunk_destination: cdktf.listMapper(logsCustomDestinationSplunkDestinationToTerraform, true)(this._splunkDestination.internalValue),
     };
   }
@@ -1350,6 +1617,12 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "LogsCustomDestinationHttpDestinationList",
+      },
+      microsoft_sentinel_destination: {
+        value: cdktf.listMapperHcl(logsCustomDestinationMicrosoftSentinelDestinationToHclTerraform, true)(this._microsoftSentinelDestination.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LogsCustomDestinationMicrosoftSentinelDestinationList",
       },
       splunk_destination: {
         value: cdktf.listMapperHcl(logsCustomDestinationSplunkDestinationToHclTerraform, true)(this._splunkDestination.internalValue),

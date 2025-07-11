@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/data-sources/csm_threats_agent_rules
+// https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/data-sources/csm_threats_agent_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,9 +15,58 @@ export interface DataDatadogCsmThreatsAgentRulesConfig extends cdktf.TerraformMe
   /**
   * Listing only the rules in the policy with this field as the ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/data-sources/csm_threats_agent_rules#policy_id DataDatadogCsmThreatsAgentRules#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/data-sources/csm_threats_agent_rules#policy_id DataDatadogCsmThreatsAgentRules#policy_id}
   */
   readonly policyId?: string;
+}
+export interface DataDatadogCsmThreatsAgentRulesAgentRulesActionsHash {
+}
+
+export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsHashToTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRulesActionsHash): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsHashToHclTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRulesActionsHash): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogCsmThreatsAgentRulesAgentRulesActionsHash | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogCsmThreatsAgentRulesAgentRulesActionsHash | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 }
 export interface DataDatadogCsmThreatsAgentRulesAgentRulesActionsSet {
 }
@@ -154,6 +203,12 @@ export class DataDatadogCsmThreatsAgentRulesAgentRulesActionsOutputReference ext
     }
   }
 
+  // hash - computed: true, optional: false, required: false
+  private _hash = new DataDatadogCsmThreatsAgentRulesAgentRulesActionsHashOutputReference(this, "hash");
+  public get hash() {
+    return this._hash;
+  }
+
   // set - computed: true, optional: false, required: false
   private _set = new DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference(this, "set");
   public get set() {
@@ -287,7 +342,7 @@ export class DataDatadogCsmThreatsAgentRulesAgentRulesList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}
 */
 export class DataDatadogCsmThreatsAgentRules extends cdktf.TerraformDataSource {
 
@@ -303,7 +358,7 @@ export class DataDatadogCsmThreatsAgentRules extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogCsmThreatsAgentRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCsmThreatsAgentRules to import
-  * @param importFromId The id of the existing DataDatadogCsmThreatsAgentRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/data-sources/csm_threats_agent_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCsmThreatsAgentRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/data-sources/csm_threats_agent_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCsmThreatsAgentRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -315,7 +370,7 @@ export class DataDatadogCsmThreatsAgentRules extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -326,7 +381,7 @@ export class DataDatadogCsmThreatsAgentRules extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_csm_threats_agent_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.66.0',
+        providerVersion: '3.67.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
