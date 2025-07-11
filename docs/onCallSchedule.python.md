@@ -4,7 +4,7 @@
 
 ### OnCallSchedule <a name="OnCallSchedule" id="@cdktf/provider-datadog.onCallSchedule.OnCallSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule datadog_on_call_schedule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule datadog_on_call_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallSchedule.OnCallSchedule.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 A human-readable name for the new schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The time zone in which the schedule is defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 layer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of team ids associated with the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
 
 ---
 
@@ -644,7 +644,7 @@ The construct id used in the generated config for the OnCallSchedule to import.
 
 The id of the existing OnCallSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1058,7 +1058,7 @@ name: str
 
 A human-readable name for the new schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
 
 ---
 
@@ -1072,7 +1072,7 @@ time_zone: str
 
 The time zone in which the schedule is defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
 
 ---
 
@@ -1086,7 +1086,7 @@ layer: typing.Union[IResolvable, typing.List[OnCallScheduleLayer]]
 
 layer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
 
 ---
 
@@ -1100,7 +1100,7 @@ teams: typing.List[str]
 
 A list of team ids associated with the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
 
 ---
 
@@ -1114,11 +1114,11 @@ from cdktf_cdktf_provider_datadog import on_call_schedule
 onCallSchedule.OnCallScheduleLayer(
   effective_date: str,
   name: str,
+  rotation_start: str,
   users: typing.List[str],
   end_date: str = None,
   interval: OnCallScheduleLayerInterval = None,
-  restriction: typing.Union[IResolvable, typing.List[OnCallScheduleLayerRestriction]] = None,
-  rotation_start: str = None
+  restriction: typing.Union[IResolvable, typing.List[OnCallScheduleLayerRestriction]] = None
 )
 ```
 
@@ -1128,11 +1128,11 @@ onCallSchedule.OnCallScheduleLayer(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.effectiveDate">effective_date</a></code> | <code>str</code> | The date/time when this layer should become active (in ISO 8601). |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.name">name</a></code> | <code>str</code> | The name of this layer. Should be unique within the schedule. |
+| <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.rotationStart">rotation_start</a></code> | <code>str</code> | The date/time when the rotation for this layer starts (in ISO 8601). |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.users">users</a></code> | <code>typing.List[str]</code> | List of user IDs for the layer. Can either be a valid user id or null. |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.endDate">end_date</a></code> | <code>str</code> | The date/time after which this layer no longer applies (in ISO 8601). |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.interval">interval</a></code> | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerInterval">OnCallScheduleLayerInterval</a></code> | interval block. |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.restriction">restriction</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction">OnCallScheduleLayerRestriction</a>]]</code> | restriction block. |
-| <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.rotationStart">rotation_start</a></code> | <code>str</code> | The date/time when the rotation for this layer starts (in ISO 8601). |
 
 ---
 
@@ -1146,7 +1146,7 @@ effective_date: str
 
 The date/time when this layer should become active (in ISO 8601).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#effective_date OnCallSchedule#effective_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#effective_date OnCallSchedule#effective_date}
 
 ---
 
@@ -1160,7 +1160,21 @@ name: str
 
 The name of this layer. Should be unique within the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+
+---
+
+##### `rotation_start`<sup>Required</sup> <a name="rotation_start" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.rotationStart"></a>
+
+```python
+rotation_start: str
+```
+
+- *Type:* str
+
+The date/time when the rotation for this layer starts (in ISO 8601).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#rotation_start OnCallSchedule#rotation_start}
 
 ---
 
@@ -1174,7 +1188,7 @@ users: typing.List[str]
 
 List of user IDs for the layer. Can either be a valid user id or null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#users OnCallSchedule#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#users OnCallSchedule#users}
 
 ---
 
@@ -1188,7 +1202,7 @@ end_date: str
 
 The date/time after which this layer no longer applies (in ISO 8601).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#end_date OnCallSchedule#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#end_date OnCallSchedule#end_date}
 
 ---
 
@@ -1202,7 +1216,7 @@ interval: OnCallScheduleLayerInterval
 
 interval block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#interval OnCallSchedule#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#interval OnCallSchedule#interval}
 
 ---
 
@@ -1216,21 +1230,7 @@ restriction: typing.Union[IResolvable, typing.List[OnCallScheduleLayerRestrictio
 
 restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#restriction OnCallSchedule#restriction}
-
----
-
-##### `rotation_start`<sup>Optional</sup> <a name="rotation_start" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer.property.rotationStart"></a>
-
-```python
-rotation_start: str
-```
-
-- *Type:* str
-
-The date/time when the rotation for this layer starts (in ISO 8601).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#rotation_start OnCallSchedule#rotation_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#restriction OnCallSchedule#restriction}
 
 ---
 
@@ -1266,7 +1266,7 @@ days: typing.Union[int, float]
 
 The number of full days in each rotation period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
 
 ---
 
@@ -1280,7 +1280,7 @@ seconds: typing.Union[int, float]
 
 For intervals that are not expressible in whole days, this will be added to `days`. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
 
 ---
 
@@ -1292,10 +1292,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import on_call_schedule
 
 onCallSchedule.OnCallScheduleLayerRestriction(
-  end_day: str = None,
-  end_time: str = None,
-  start_day: str = None,
-  start_time: str = None
+  end_day: str,
+  end_time: str,
+  start_day: str,
+  start_time: str
 )
 ```
 
@@ -1310,7 +1310,7 @@ onCallSchedule.OnCallScheduleLayerRestriction(
 
 ---
 
-##### `end_day`<sup>Optional</sup> <a name="end_day" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction.property.endDay"></a>
+##### `end_day`<sup>Required</sup> <a name="end_day" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction.property.endDay"></a>
 
 ```python
 end_day: str
@@ -1320,11 +1320,11 @@ end_day: str
 
 The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#end_day OnCallSchedule#end_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#end_day OnCallSchedule#end_day}
 
 ---
 
-##### `end_time`<sup>Optional</sup> <a name="end_time" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction.property.endTime"></a>
+##### `end_time`<sup>Required</sup> <a name="end_time" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction.property.endTime"></a>
 
 ```python
 end_time: str
@@ -1334,11 +1334,11 @@ end_time: str
 
 The time of day when the restriction ends (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#end_time OnCallSchedule#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#end_time OnCallSchedule#end_time}
 
 ---
 
-##### `start_day`<sup>Optional</sup> <a name="start_day" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction.property.startDay"></a>
+##### `start_day`<sup>Required</sup> <a name="start_day" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction.property.startDay"></a>
 
 ```python
 start_day: str
@@ -1348,11 +1348,11 @@ start_day: str
 
 The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#start_day OnCallSchedule#start_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#start_day OnCallSchedule#start_day}
 
 ---
 
-##### `start_time`<sup>Optional</sup> <a name="start_time" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction.property.startTime"></a>
+##### `start_time`<sup>Required</sup> <a name="start_time" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction.property.startTime"></a>
 
 ```python
 start_time: str
@@ -1362,7 +1362,7 @@ start_time: str
 
 The time of day when the restriction begins (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#start_time OnCallSchedule#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#start_time OnCallSchedule#start_time}
 
 ---
 
@@ -1948,7 +1948,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerOutputReference.resetEndDate">reset_end_date</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerOutputReference.resetInterval">reset_interval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerOutputReference.resetRestriction">reset_restriction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerOutputReference.resetRotationStart">reset_rotation_start</a></code> | *No description.* |
 
 ---
 
@@ -2139,7 +2138,7 @@ def put_interval(
 
 The number of full days in each rotation period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
 
 ---
 
@@ -2149,7 +2148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 For intervals that are not expressible in whole days, this will be added to `days`. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.66.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
 
 ---
 
@@ -2183,12 +2182,6 @@ def reset_interval() -> None
 
 ```python
 def reset_restriction() -> None
-```
-
-##### `reset_rotation_start` <a name="reset_rotation_start" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerOutputReference.resetRotationStart"></a>
-
-```python
-def reset_rotation_start() -> None
 ```
 
 
@@ -2645,10 +2638,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.resetEndDay">reset_end_day</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.resetEndTime">reset_end_time</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.resetStartDay">reset_start_day</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.resetStartTime">reset_start_time</a></code> | *No description.* |
 
 ---
 
@@ -2823,30 +2812,6 @@ def to_string() -> str
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
-
-##### `reset_end_day` <a name="reset_end_day" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.resetEndDay"></a>
-
-```python
-def reset_end_day() -> None
-```
-
-##### `reset_end_time` <a name="reset_end_time" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.resetEndTime"></a>
-
-```python
-def reset_end_time() -> None
-```
-
-##### `reset_start_day` <a name="reset_start_day" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.resetStartDay"></a>
-
-```python
-def reset_start_day() -> None
-```
-
-##### `reset_start_time` <a name="reset_start_time" id="@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference.resetStartTime"></a>
-
-```python
-def reset_start_time() -> None
-```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
