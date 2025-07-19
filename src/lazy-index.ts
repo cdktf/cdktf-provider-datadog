@@ -9,6 +9,7 @@ Object.defineProperty(exports, 'apiKey', { get: function () { return require('./
 Object.defineProperty(exports, 'apmRetentionFilter', { get: function () { return require('./apm-retention-filter'); } });
 Object.defineProperty(exports, 'apmRetentionFilterOrder', { get: function () { return require('./apm-retention-filter-order'); } });
 Object.defineProperty(exports, 'appBuilderApp', { get: function () { return require('./app-builder-app'); } });
+Object.defineProperty(exports, 'appKeyRegistration', { get: function () { return require('./app-key-registration'); } });
 Object.defineProperty(exports, 'applicationKey', { get: function () { return require('./application-key'); } });
 Object.defineProperty(exports, 'appsecWafCustomRule', { get: function () { return require('./appsec-waf-custom-rule'); } });
 Object.defineProperty(exports, 'appsecWafExclusionFilter', { get: function () { return require('./appsec-waf-exclusion-filter'); } });

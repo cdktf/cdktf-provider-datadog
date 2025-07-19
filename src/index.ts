@@ -9,6 +9,7 @@ export * as apiKey from './api-key';
 export * as apmRetentionFilter from './apm-retention-filter';
 export * as apmRetentionFilterOrder from './apm-retention-filter-order';
 export * as appBuilderApp from './app-builder-app';
+export * as appKeyRegistration from './app-key-registration';
 export * as applicationKey from './application-key';
 export * as appsecWafCustomRule from './appsec-waf-custom-rule';
 export * as appsecWafExclusionFilter from './appsec-waf-exclusion-filter';
