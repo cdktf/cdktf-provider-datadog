@@ -9,6 +9,7 @@ The following submodules are available:
 - [apmRetentionFilter](./apmRetentionFilter.csharp.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.csharp.md)
 - [appBuilderApp](./appBuilderApp.csharp.md)
+- [appKeyRegistration](./appKeyRegistration.csharp.md)
 - [applicationKey](./applicationKey.csharp.md)
 - [appsecWafCustomRule](./appsecWafCustomRule.csharp.md)
 - [appsecWafExclusionFilter](./appsecWafExclusionFilter.csharp.md)

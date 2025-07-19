@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location
+// https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface SyntheticsPrivateLocationConfig extends cdktf.TerraformMetaArgu
   /**
   * API key used to generate the private location configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location#api_key SyntheticsPrivateLocation#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location#api_key SyntheticsPrivateLocation#api_key}
   */
   readonly apiKey?: string;
   /**
   * Description of the private location. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
   */
   readonly description?: string;
   /**
   * Synthetics private location name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
   */
   readonly name: string;
   /**
   * A list of tags to associate with your synthetics private location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
   */
   readonly tags?: string[];
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location#metadata SyntheticsPrivateLocation#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location#metadata SyntheticsPrivateLocation#metadata}
   */
   readonly metadata?: SyntheticsPrivateLocationMetadata[] | cdktf.IResolvable;
 }
@@ -47,7 +47,7 @@ export interface SyntheticsPrivateLocationMetadata {
   /**
   * A set of role identifiers pulled from the Roles API to restrict read and write access. **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location#restricted_roles SyntheticsPrivateLocation#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location#restricted_roles SyntheticsPrivateLocation#restricted_roles}
   */
   readonly restrictedRoles?: string[];
 }
@@ -163,7 +163,7 @@ export class SyntheticsPrivateLocationMetadataList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location datadog_synthetics_private_location}
 */
 export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
 
@@ -179,7 +179,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SyntheticsPrivateLocation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsPrivateLocation to import
-  * @param importFromId The id of the existing SyntheticsPrivateLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsPrivateLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsPrivateLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -191,7 +191,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/synthetics_private_location datadog_synthetics_private_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +202,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_private_location',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.67.0',
+        providerVersion: '3.68.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
