@@ -4,7 +4,7 @@
 
 ### OnCallEscalationPolicy <a name="OnCallEscalationPolicy" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 A human-readable name for the escalation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If true, pages will be automatically resolved if unacknowledged after the final step. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
 
 ---
 
@@ -140,7 +140,7 @@ If set, policy will be retried this many times after the final step.
 
 Must be in the range 0-10. Value must be between 0 and 10. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of team ids associated with the escalation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
 
 ---
 
@@ -628,7 +628,7 @@ The construct id used in the generated config for the OnCallEscalationPolicy to 
 
 The id of the existing OnCallEscalationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1072,7 +1072,7 @@ public java.lang.String getName();
 
 A human-readable name for the escalation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
 
 ---
 
@@ -1086,7 +1086,7 @@ public java.lang.Object getResolvePageOnPolicyEnd();
 
 If true, pages will be automatically resolved if unacknowledged after the final step. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
 
 ---
 
@@ -1102,7 +1102,7 @@ If set, policy will be retried this many times after the final step.
 
 Must be in the range 0-10. Value must be between 0 and 10. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
 
 ---
 
@@ -1116,7 +1116,7 @@ public java.lang.Object getStep();
 
 step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
 
 ---
 
@@ -1130,7 +1130,7 @@ public java.util.List<java.lang.String> getTeams();
 
 A list of team ids associated with the escalation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
 
 ---
 
@@ -1169,7 +1169,7 @@ public java.lang.Number getEscalateAfterSeconds();
 
 Defines how many seconds to wait before escalating to the next step. Value must be between 60 and 36000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#escalate_after_seconds OnCallEscalationPolicy#escalate_after_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#escalate_after_seconds OnCallEscalationPolicy#escalate_after_seconds}
 
 ---
 
@@ -1185,7 +1185,7 @@ Specifies how this escalation step will assign targets.
 
 Can be `default` (page all targets at once) or `round-robin`. Valid values are `default`, `round-robin`. Defaults to `"default"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#assignment OnCallEscalationPolicy#assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#assignment OnCallEscalationPolicy#assignment}
 
 ---
 
@@ -1199,7 +1199,7 @@ public java.lang.Object getTarget();
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#target OnCallEscalationPolicy#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#target OnCallEscalationPolicy#target}
 
 ---
 
@@ -1237,7 +1237,7 @@ public java.lang.String getSchedule();
 
 Targeted schedule ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#schedule OnCallEscalationPolicy#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#schedule OnCallEscalationPolicy#schedule}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getTeam();
 
 Targeted team ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#team OnCallEscalationPolicy#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#team OnCallEscalationPolicy#team}
 
 ---
 
@@ -1265,7 +1265,7 @@ public java.lang.String getUser();
 
 Targeted user ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/resources/on_call_escalation_policy#user OnCallEscalationPolicy#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/on_call_escalation_policy#user OnCallEscalationPolicy#user}
 
 ---
 

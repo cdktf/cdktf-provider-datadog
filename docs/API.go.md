@@ -9,6 +9,7 @@ The following submodules are available:
 - [apmRetentionFilter](./apmRetentionFilter.go.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.go.md)
 - [appBuilderApp](./appBuilderApp.go.md)
+- [appKeyRegistration](./appKeyRegistration.go.md)
 - [applicationKey](./applicationKey.go.md)
 - [appsecWafCustomRule](./appsecWafCustomRule.go.md)
 - [appsecWafExclusionFilter](./appsecWafExclusionFilter.go.md)

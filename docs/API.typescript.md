@@ -9,6 +9,7 @@ The following submodules are available:
 - [apmRetentionFilter](./apmRetentionFilter.typescript.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.typescript.md)
 - [appBuilderApp](./appBuilderApp.typescript.md)
+- [appKeyRegistration](./appKeyRegistration.typescript.md)
 - [applicationKey](./applicationKey.typescript.md)
 - [appsecWafCustomRule](./appsecWafCustomRule.typescript.md)
 - [appsecWafExclusionFilter](./appsecWafExclusionFilter.typescript.md)

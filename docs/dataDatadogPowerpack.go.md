@@ -4,7 +4,7 @@
 
 ### DataDatadogPowerpack <a name="DataDatadogPowerpack" id="@cdktf/provider-datadog.dataDatadogPowerpack.DataDatadogPowerpack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/data-sources/powerpack datadog_powerpack}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/powerpack datadog_powerpack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogPowerpack.DataDatadogPowerpack.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatadogPowerpack to im
 
 The id of the existing DataDatadogPowerpack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/data-sources/powerpack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/powerpack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,7 +685,7 @@ Name *string
 
 The name of the Powerpack to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.67.0/docs/data-sources/powerpack#name DataDatadogPowerpack#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/data-sources/powerpack#name DataDatadogPowerpack#name}
 
 ---
 
