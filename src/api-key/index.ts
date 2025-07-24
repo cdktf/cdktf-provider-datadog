@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/api_key
+// https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for API Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/api_key#name ApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/api_key#name ApiKey#name}
   */
   readonly name: string;
   /**
   * Whether the API key is used for remote config. Set to true only if remote config is enabled in `/organization-settings/remote-config`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
   */
   readonly remoteConfigReadEnabled?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/api_key datadog_api_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/api_key datadog_api_key}
 */
 export class ApiKey extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ApiKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiKey to import
-  * @param importFromId The id of the existing ApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class ApiKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.68.0/docs/resources/api_key datadog_api_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/api_key datadog_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_api_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.68.0',
+        providerVersion: '3.69.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
