@@ -4,7 +4,7 @@
 
 ### DataDatadogRumRetentionFilters <a name="DataDatadogRumRetentionFilters" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
 
 ---
 
@@ -431,7 +431,7 @@ The construct id used in the generated config for the DataDatadogRumRetentionFil
 
 The id of the existing DataDatadogRumRetentionFilters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/rum_retention_filters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/rum_retention_filters#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ public java.lang.String getApplicationId();
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
 
 ---
 
