@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget
+// https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface CostBudgetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The month when the budget ends (YYYYMM).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#end_month CostBudget#end_month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#end_month CostBudget#end_month}
   */
   readonly endMonth: number;
   /**
   * The ID of the budget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#id CostBudget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#id CostBudget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,35 +30,35 @@ export interface CostBudgetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The cost query used to track against the budget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#metrics_query CostBudget#metrics_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#metrics_query CostBudget#metrics_query}
   */
   readonly metricsQuery: string;
   /**
   * The name of the budget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#name CostBudget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#name CostBudget#name}
   */
   readonly name: string;
   /**
   * The month when the budget starts (YYYYMM).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#start_month CostBudget#start_month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#start_month CostBudget#start_month}
   */
   readonly startMonth: number;
   /**
   * entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#entries CostBudget#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#entries CostBudget#entries}
   */
   readonly entries?: CostBudgetEntries[] | cdktf.IResolvable;
 }
 export interface CostBudgetEntriesTagFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
   */
   readonly tagKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}
   */
   readonly tagValue: string;
 }
@@ -197,17 +197,17 @@ export class CostBudgetEntriesTagFiltersList extends cdktf.ComplexList {
 }
 export interface CostBudgetEntries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#amount CostBudget#amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#amount CostBudget#amount}
   */
   readonly amount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#month CostBudget#month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#month CostBudget#month}
   */
   readonly month: number;
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#tag_filters CostBudget#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#tag_filters CostBudget#tag_filters}
   */
   readonly tagFilters?: CostBudgetEntriesTagFilters[] | cdktf.IResolvable;
 }
@@ -375,7 +375,7 @@ export class CostBudgetEntriesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget datadog_cost_budget}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget datadog_cost_budget}
 */
 export class CostBudget extends cdktf.TerraformResource {
 
@@ -391,7 +391,7 @@ export class CostBudget extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CostBudget resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CostBudget to import
-  * @param importFromId The id of the existing CostBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CostBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CostBudget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -403,7 +403,7 @@ export class CostBudget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs/resources/cost_budget datadog_cost_budget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/cost_budget datadog_cost_budget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -414,7 +414,7 @@ export class CostBudget extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_cost_budget',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.69.0',
+        providerVersion: '3.70.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

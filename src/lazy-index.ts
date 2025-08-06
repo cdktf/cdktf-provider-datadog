@@ -28,6 +28,7 @@ Object.defineProperty(exports, 'dashboardList', { get: function () { return requ
 Object.defineProperty(exports, 'domainAllowlist', { get: function () { return require('./domain-allowlist'); } });
 Object.defineProperty(exports, 'downtime', { get: function () { return require('./downtime'); } });
 Object.defineProperty(exports, 'downtimeSchedule', { get: function () { return require('./downtime-schedule'); } });
+Object.defineProperty(exports, 'incidentType', { get: function () { return require('./incident-type'); } });
 Object.defineProperty(exports, 'integrationAws', { get: function () { return require('./integration-aws'); } });
 Object.defineProperty(exports, 'integrationAwsAccount', { get: function () { return require('./integration-aws-account'); } });
 Object.defineProperty(exports, 'integrationAwsEventBridge', { get: function () { return require('./integration-aws-event-bridge'); } });
@@ -119,6 +120,7 @@ Object.defineProperty(exports, 'dataDatadogCsmThreatsPolicies', { get: function 
 Object.defineProperty(exports, 'dataDatadogDashboard', { get: function () { return require('./data-datadog-dashboard'); } });
 Object.defineProperty(exports, 'dataDatadogDashboardList', { get: function () { return require('./data-datadog-dashboard-list'); } });
 Object.defineProperty(exports, 'dataDatadogHosts', { get: function () { return require('./data-datadog-hosts'); } });
+Object.defineProperty(exports, 'dataDatadogIncidentType', { get: function () { return require('./data-datadog-incident-type'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableLogsServices', { get: function () { return require('./data-datadog-integration-aws-available-logs-services'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableNamespaces', { get: function () { return require('./data-datadog-integration-aws-available-namespaces'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsLogsServices', { get: function () { return require('./data-datadog-integration-aws-logs-services'); } });
