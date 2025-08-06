@@ -4,7 +4,7 @@
 
 ### DatadogProvider <a name="DatadogProvider" id="@cdktf/provider-datadog.provider.DatadogProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs datadog}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs datadog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer"></a>
 
@@ -61,12 +61,18 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetApiKey">resetApiKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetApiUrl">resetApiUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetAppKey">resetAppKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetAwsAccessKeyId">resetAwsAccessKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetAwsSecretAccessKey">resetAwsSecretAccessKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetAwsSessionToken">resetAwsSessionToken</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetCloudProviderRegion">resetCloudProviderRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetCloudProviderType">resetCloudProviderType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetDefaultTags">resetDefaultTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffBase">resetHttpClientRetryBackoffBase</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffMultiplier">resetHttpClientRetryBackoffMultiplier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryEnabled">resetHttpClientRetryEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryMaxRetries">resetHttpClientRetryMaxRetries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryTimeout">resetHttpClientRetryTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetOrgUuid">resetOrgUuid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetValidate">resetValidate</a></code> | *No description.* |
 
 ---
@@ -165,6 +171,36 @@ public resetApiUrl(): void
 public resetAppKey(): void
 ```
 
+##### `resetAwsAccessKeyId` <a name="resetAwsAccessKeyId" id="@cdktf/provider-datadog.provider.DatadogProvider.resetAwsAccessKeyId"></a>
+
+```typescript
+public resetAwsAccessKeyId(): void
+```
+
+##### `resetAwsSecretAccessKey` <a name="resetAwsSecretAccessKey" id="@cdktf/provider-datadog.provider.DatadogProvider.resetAwsSecretAccessKey"></a>
+
+```typescript
+public resetAwsSecretAccessKey(): void
+```
+
+##### `resetAwsSessionToken` <a name="resetAwsSessionToken" id="@cdktf/provider-datadog.provider.DatadogProvider.resetAwsSessionToken"></a>
+
+```typescript
+public resetAwsSessionToken(): void
+```
+
+##### `resetCloudProviderRegion` <a name="resetCloudProviderRegion" id="@cdktf/provider-datadog.provider.DatadogProvider.resetCloudProviderRegion"></a>
+
+```typescript
+public resetCloudProviderRegion(): void
+```
+
+##### `resetCloudProviderType` <a name="resetCloudProviderType" id="@cdktf/provider-datadog.provider.DatadogProvider.resetCloudProviderType"></a>
+
+```typescript
+public resetCloudProviderType(): void
+```
+
 ##### `resetDefaultTags` <a name="resetDefaultTags" id="@cdktf/provider-datadog.provider.DatadogProvider.resetDefaultTags"></a>
 
 ```typescript
@@ -199,6 +235,12 @@ public resetHttpClientRetryMaxRetries(): void
 
 ```typescript
 public resetHttpClientRetryTimeout(): void
+```
+
+##### `resetOrgUuid` <a name="resetOrgUuid" id="@cdktf/provider-datadog.provider.DatadogProvider.resetOrgUuid"></a>
+
+```typescript
+public resetOrgUuid(): void
 ```
 
 ##### `resetValidate` <a name="resetValidate" id="@cdktf/provider-datadog.provider.DatadogProvider.resetValidate"></a>
@@ -310,7 +352,7 @@ The construct id used in the generated config for the DatadogProvider to import.
 
 The id of the existing DatadogProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -339,22 +381,34 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.69
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiUrlInput">apiUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.appKeyInput">appKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.awsAccessKeyIdInput">awsAccessKeyIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.awsSecretAccessKeyInput">awsSecretAccessKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.awsSessionTokenInput">awsSessionTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.cloudProviderRegionInput">cloudProviderRegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.cloudProviderTypeInput">cloudProviderTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.defaultTagsInput">defaultTagsInput</a></code> | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderDefaultTags">DatadogProviderDefaultTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBaseInput">httpClientRetryBackoffBaseInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplierInput">httpClientRetryBackoffMultiplierInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabledInput">httpClientRetryEnabledInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetriesInput">httpClientRetryMaxRetriesInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeoutInput">httpClientRetryTimeoutInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.orgUuidInput">orgUuidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validateInput">validateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiUrl">apiUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.appKey">appKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.awsAccessKeyId">awsAccessKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.awsSessionToken">awsSessionToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.cloudProviderRegion">cloudProviderRegion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.cloudProviderType">cloudProviderType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderDefaultTags">DatadogProviderDefaultTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBase">httpClientRetryBackoffBase</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplier">httpClientRetryBackoffMultiplier</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabled">httpClientRetryEnabled</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetries">httpClientRetryMaxRetries</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeout">httpClientRetryTimeout</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.orgUuid">orgUuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validate">validate</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -491,6 +545,56 @@ public readonly appKeyInput: string;
 
 ---
 
+##### `awsAccessKeyIdInput`<sup>Optional</sup> <a name="awsAccessKeyIdInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.awsAccessKeyIdInput"></a>
+
+```typescript
+public readonly awsAccessKeyIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `awsSecretAccessKeyInput`<sup>Optional</sup> <a name="awsSecretAccessKeyInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.awsSecretAccessKeyInput"></a>
+
+```typescript
+public readonly awsSecretAccessKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `awsSessionTokenInput`<sup>Optional</sup> <a name="awsSessionTokenInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.awsSessionTokenInput"></a>
+
+```typescript
+public readonly awsSessionTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cloudProviderRegionInput`<sup>Optional</sup> <a name="cloudProviderRegionInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.cloudProviderRegionInput"></a>
+
+```typescript
+public readonly cloudProviderRegionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cloudProviderTypeInput`<sup>Optional</sup> <a name="cloudProviderTypeInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.cloudProviderTypeInput"></a>
+
+```typescript
+public readonly cloudProviderTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `defaultTagsInput`<sup>Optional</sup> <a name="defaultTagsInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.defaultTagsInput"></a>
 
 ```typescript
@@ -551,6 +655,16 @@ public readonly httpClientRetryTimeoutInput: number;
 
 ---
 
+##### `orgUuidInput`<sup>Optional</sup> <a name="orgUuidInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.orgUuidInput"></a>
+
+```typescript
+public readonly orgUuidInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `validateInput`<sup>Optional</sup> <a name="validateInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.validateInput"></a>
 
 ```typescript
@@ -585,6 +699,56 @@ public readonly apiUrl: string;
 
 ```typescript
 public readonly appKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `awsAccessKeyId`<sup>Optional</sup> <a name="awsAccessKeyId" id="@cdktf/provider-datadog.provider.DatadogProvider.property.awsAccessKeyId"></a>
+
+```typescript
+public readonly awsAccessKeyId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `awsSecretAccessKey`<sup>Optional</sup> <a name="awsSecretAccessKey" id="@cdktf/provider-datadog.provider.DatadogProvider.property.awsSecretAccessKey"></a>
+
+```typescript
+public readonly awsSecretAccessKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `awsSessionToken`<sup>Optional</sup> <a name="awsSessionToken" id="@cdktf/provider-datadog.provider.DatadogProvider.property.awsSessionToken"></a>
+
+```typescript
+public readonly awsSessionToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cloudProviderRegion`<sup>Optional</sup> <a name="cloudProviderRegion" id="@cdktf/provider-datadog.provider.DatadogProvider.property.cloudProviderRegion"></a>
+
+```typescript
+public readonly cloudProviderRegion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cloudProviderType`<sup>Optional</sup> <a name="cloudProviderType" id="@cdktf/provider-datadog.provider.DatadogProvider.property.cloudProviderType"></a>
+
+```typescript
+public readonly cloudProviderType: string;
 ```
 
 - *Type:* string
@@ -651,6 +815,16 @@ public readonly httpClientRetryTimeout: number;
 
 ---
 
+##### `orgUuid`<sup>Optional</sup> <a name="orgUuid" id="@cdktf/provider-datadog.provider.DatadogProvider.property.orgUuid"></a>
+
+```typescript
+public readonly orgUuid: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.provider.DatadogProvider.property.validate"></a>
 
 ```typescript
@@ -699,12 +873,18 @@ const datadogProviderConfig: provider.DatadogProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.apiKey">apiKey</a></code> | <code>string</code> | (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.apiUrl">apiUrl</a></code> | <code>string</code> | The API URL. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.appKey">appKey</a></code> | <code>string</code> | (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.awsAccessKeyId">awsAccessKeyId</a></code> | <code>string</code> | The AWS access key ID; |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>string</code> | The AWS secret access key; |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.awsSessionToken">awsSessionToken</a></code> | <code>string</code> | The AWS session token; |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.cloudProviderRegion">cloudProviderRegion</a></code> | <code>string</code> | The cloud provider region specifier; used for cloud-provider-based authentication. For example, `us-east-1` for AWS. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.cloudProviderType">cloudProviderType</a></code> | <code>string</code> | Specifies the cloud provider used for cloud-provider-based authentication, enabling keyless access without API or app keys. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderDefaultTags">DatadogProviderDefaultTags</a></code> | default_tags block. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffBase">httpClientRetryBackoffBase</a></code> | <code>number</code> | The HTTP request retry back off base. Defaults to 2. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffMultiplier">httpClientRetryBackoffMultiplier</a></code> | <code>number</code> | The HTTP request retry back off multiplier. Defaults to 2. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryEnabled">httpClientRetryEnabled</a></code> | <code>string</code> | Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryMaxRetries">httpClientRetryMaxRetries</a></code> | <code>number</code> | The HTTP request maximum retry number. Defaults to 3. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryTimeout">httpClientRetryTimeout</a></code> | <code>number</code> | The HTTP request retry timeout period. Defaults to 60 seconds. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.orgUuid">orgUuid</a></code> | <code>string</code> | The organization UUID; used for cloud-provider-based authentication. See the [Datadog API documentation](https://docs.datadoghq.com/api/v1/organizations/) for more information. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.validate">validate</a></code> | <code>string</code> | Enables validation of the provided API key during provider initialization. |
 
 ---
@@ -719,7 +899,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#alias DatadogProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#alias DatadogProvider#alias}
 
 ---
 
@@ -733,7 +913,7 @@ public readonly apiKey: string;
 
 (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#api_key DatadogProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#api_key DatadogProvider#api_key}
 
 ---
 
@@ -749,7 +929,7 @@ The API URL.
 
 This can also be set via the DD_HOST environment variable, and defaults to `https://api.datadoghq.com`. Note that this URL must not end with the `/api/` path. For example, `https://api.datadoghq.com/` is a correct value, while `https://api.datadoghq.com/api/` is not. And if you're working with "EU" version of Datadog, use `https://api.datadoghq.eu/`. Other Datadog region examples: `https://api.us5.datadoghq.com/`, `https://api.us3.datadoghq.com/` and `https://api.ddog-gov.com/`. See https://docs.datadoghq.com/getting_started/site/ for all available regions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#api_url DatadogProvider#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#api_url DatadogProvider#api_url}
 
 ---
 
@@ -763,7 +943,85 @@ public readonly appKey: string;
 
 (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#app_key DatadogProvider#app_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#app_key DatadogProvider#app_key}
+
+---
+
+##### `awsAccessKeyId`<sup>Optional</sup> <a name="awsAccessKeyId" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.awsAccessKeyId"></a>
+
+```typescript
+public readonly awsAccessKeyId: string;
+```
+
+- *Type:* string
+
+The AWS access key ID;
+
+used for cloud-provider-based authentication. This can also be set using the `AWS_ACCESS_KEY_ID` environment variable. Required when using `cloud_provider_type` set to `aws`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#aws_access_key_id DatadogProvider#aws_access_key_id}
+
+---
+
+##### `awsSecretAccessKey`<sup>Optional</sup> <a name="awsSecretAccessKey" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.awsSecretAccessKey"></a>
+
+```typescript
+public readonly awsSecretAccessKey: string;
+```
+
+- *Type:* string
+
+The AWS secret access key;
+
+used for cloud-provider-based authentication. This can also be set using the `AWS_SECRET_ACCESS_KEY` environment variable. Required when using `cloud_provider_type` set to `aws`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#aws_secret_access_key DatadogProvider#aws_secret_access_key}
+
+---
+
+##### `awsSessionToken`<sup>Optional</sup> <a name="awsSessionToken" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.awsSessionToken"></a>
+
+```typescript
+public readonly awsSessionToken: string;
+```
+
+- *Type:* string
+
+The AWS session token;
+
+used for cloud-provider-based authentication. This can also be set using the `AWS_SESSION_TOKEN` environment variable. Required when using `cloud_provider_type` set to `aws` and using temporary credentials.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#aws_session_token DatadogProvider#aws_session_token}
+
+---
+
+##### `cloudProviderRegion`<sup>Optional</sup> <a name="cloudProviderRegion" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.cloudProviderRegion"></a>
+
+```typescript
+public readonly cloudProviderRegion: string;
+```
+
+- *Type:* string
+
+The cloud provider region specifier; used for cloud-provider-based authentication. For example, `us-east-1` for AWS.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#cloud_provider_region DatadogProvider#cloud_provider_region}
+
+---
+
+##### `cloudProviderType`<sup>Optional</sup> <a name="cloudProviderType" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.cloudProviderType"></a>
+
+```typescript
+public readonly cloudProviderType: string;
+```
+
+- *Type:* string
+
+Specifies the cloud provider used for cloud-provider-based authentication, enabling keyless access without API or app keys.
+
+Only [`aws`] is supported. This feature is in Preview. If you'd like to enable it for your organization, contact [support](https://docs.datadoghq.com/help/).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#cloud_provider_type DatadogProvider#cloud_provider_type}
 
 ---
 
@@ -777,7 +1035,7 @@ public readonly defaultTags: DatadogProviderDefaultTags;
 
 default_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#default_tags DatadogProvider#default_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#default_tags DatadogProvider#default_tags}
 
 ---
 
@@ -791,7 +1049,7 @@ public readonly httpClientRetryBackoffBase: number;
 
 The HTTP request retry back off base. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
 
 ---
 
@@ -805,7 +1063,7 @@ public readonly httpClientRetryBackoffMultiplier: number;
 
 The HTTP request retry back off multiplier. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
 
 ---
 
@@ -819,7 +1077,7 @@ public readonly httpClientRetryEnabled: string;
 
 Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
 
 ---
 
@@ -833,7 +1091,7 @@ public readonly httpClientRetryMaxRetries: number;
 
 The HTTP request maximum retry number. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
 
 ---
 
@@ -847,7 +1105,21 @@ public readonly httpClientRetryTimeout: number;
 
 The HTTP request retry timeout period. Defaults to 60 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
+
+---
+
+##### `orgUuid`<sup>Optional</sup> <a name="orgUuid" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.orgUuid"></a>
+
+```typescript
+public readonly orgUuid: string;
+```
+
+- *Type:* string
+
+The organization UUID; used for cloud-provider-based authentication. See the [Datadog API documentation](https://docs.datadoghq.com/api/v1/organizations/) for more information.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#org_uuid DatadogProvider#org_uuid}
 
 ---
 
@@ -863,7 +1135,7 @@ Enables validation of the provided API key during provider initialization.
 
 Valid values are [`true`, `false`]. Default is true. When false, api_key won't be checked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#validate DatadogProvider#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#validate DatadogProvider#validate}
 
 ---
 
@@ -895,7 +1167,7 @@ public readonly tags: {[ key: string ]: string};
 
 [Experimental - Logs Pipelines, Monitors Security Monitoring Rules, and Service Level Objectives only] Resource tags to be applied by default across all resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.69.0/docs#tags DatadogProvider#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs#tags DatadogProvider#tags}
 
 ---
 
