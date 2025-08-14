@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/rum_application
+// https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/rum_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface RumApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the RUM application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/rum_application#name RumApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/rum_application#name RumApplication#name}
   */
   readonly name: string;
   /**
   * Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/rum_application#type RumApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/rum_application#type RumApplication#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/rum_application datadog_rum_application}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/rum_application datadog_rum_application}
 */
 export class RumApplication extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class RumApplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RumApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumApplication to import
-  * @param importFromId The id of the existing RumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class RumApplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/rum_application datadog_rum_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/rum_application datadog_rum_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class RumApplication extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_rum_application',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.70.0',
+        providerVersion: '3.71.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
