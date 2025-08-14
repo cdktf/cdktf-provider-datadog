@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [actionConnection](./actionConnection.java.md)
+- [agentlessScanningAwsScanOptions](./agentlessScanningAwsScanOptions.java.md)
 - [apiKey](./apiKey.java.md)
 - [apmRetentionFilter](./apmRetentionFilter.java.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.java.md)
@@ -48,6 +49,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.java.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.java.md)
 - [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.java.md)
+- [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.java.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.java.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.java.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.java.md)

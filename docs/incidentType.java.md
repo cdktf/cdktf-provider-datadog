@@ -4,7 +4,7 @@
 
 ### IncidentType <a name="IncidentType" id="@cdktf/provider-datadog.incidentType.IncidentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/incident_type datadog_incident_type}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/incident_type datadog_incident_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.incidentType.IncidentType.Initializer"></a>
 
@@ -113,7 +113,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the incident type. Must be between 1 and 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/incident_type#name IncidentType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/incident_type#name IncidentType#name}
 
 ---
 
@@ -123,7 +123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Description of the incident type. The description can have a maximum of 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/incident_type#description IncidentType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/incident_type#description IncidentType#description}
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether this incident type is the default type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/incident_type#is_default IncidentType#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/incident_type#is_default IncidentType#is_default}
 
 ---
 
@@ -574,7 +574,7 @@ The construct id used in the generated config for the IncidentType to import.
 
 The id of the existing IncidentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -969,7 +969,7 @@ public java.lang.String getName();
 
 Name of the incident type. Must be between 1 and 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/incident_type#name IncidentType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/incident_type#name IncidentType#name}
 
 ---
 
@@ -983,7 +983,7 @@ public java.lang.String getDescription();
 
 Description of the incident type. The description can have a maximum of 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/incident_type#description IncidentType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/incident_type#description IncidentType#description}
 
 ---
 
@@ -997,7 +997,7 @@ public java.lang.Object getIsDefault();
 
 Whether this incident type is the default type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/incident_type#is_default IncidentType#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/incident_type#is_default IncidentType#is_default}
 
 ---
 

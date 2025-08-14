@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [actionConnection](./actionConnection.typescript.md)
+- [agentlessScanningAwsScanOptions](./agentlessScanningAwsScanOptions.typescript.md)
 - [apiKey](./apiKey.typescript.md)
 - [apmRetentionFilter](./apmRetentionFilter.typescript.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.typescript.md)
@@ -48,6 +49,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.typescript.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.typescript.md)
 - [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.typescript.md)
+- [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.typescript.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.typescript.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.typescript.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.typescript.md)

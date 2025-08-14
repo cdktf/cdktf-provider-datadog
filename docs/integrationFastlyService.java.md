@@ -4,7 +4,7 @@
 
 ### IntegrationFastlyService <a name="IntegrationFastlyService" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the Fastly service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Fastly Account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of tags for the Fastly service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
 
 ---
 
@@ -573,7 +573,7 @@ The construct id used in the generated config for the IntegrationFastlyService t
 
 The id of the existing IntegrationFastlyService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -967,7 +967,7 @@ public java.lang.String getServiceId();
 
 The ID of the Fastly service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
 
 ---
 
@@ -981,7 +981,7 @@ public java.lang.String getAccountId();
 
 Fastly Account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
 
 ---
 
@@ -995,7 +995,7 @@ public java.util.List<java.lang.String> getTags();
 
 A list of tags for the Fastly service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
 
 ---
 
