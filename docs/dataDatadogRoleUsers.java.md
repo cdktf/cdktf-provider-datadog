@@ -4,7 +4,7 @@
 
 ### DataDatadogRoleUsers <a name="DataDatadogRoleUsers" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/role_users datadog_role_users}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/role_users datadog_role_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers.Initializer"></a>
 
@@ -113,7 +113,7 @@ Must be unique amongst siblings in the same scope
 
 The role's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
 
 ---
 
@@ -123,7 +123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When true, `filter_keyword` string is exact matched against the user's `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Search query, can be user name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
 
 ---
 
@@ -470,7 +470,7 @@ The construct id used in the generated config for the DataDatadogRoleUsers to im
 
 The id of the existing DataDatadogRoleUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/role_users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/role_users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ public java.lang.String getRoleId();
 
 The role's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/role_users#role_id DataDatadogRoleUsers#role_id}
 
 ---
 
@@ -868,7 +868,7 @@ public java.lang.Object getExactMatch();
 
 When true, `filter_keyword` string is exact matched against the user's `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/role_users#exact_match DataDatadogRoleUsers#exact_match}
 
 ---
 
@@ -882,7 +882,7 @@ public java.lang.String getFilter();
 
 Search query, can be user name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/role_users#filter DataDatadogRoleUsers#filter}
 
 ---
 

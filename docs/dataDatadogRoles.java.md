@@ -4,7 +4,7 @@
 
 ### DataDatadogRoles <a name="DataDatadogRoles" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/roles datadog_roles}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/roles datadog_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.Initializer"></a>
 
@@ -40,7 +40,7 @@ DataDatadogRoles.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.Initializer.parameter.filter">filter</a></code> | <code>java.lang.String</code> | Filter all roles by the given string. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/roles#id DataDatadogRoles#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/roles#id DataDatadogRoles#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Filter all roles by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/roles#filter DataDatadogRoles#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/roles#filter DataDatadogRoles#filter}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/roles#id DataDatadogRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/roles#id DataDatadogRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -458,7 +458,7 @@ The construct id used in the generated config for the DataDatadogRoles to import
 
 The id of the existing DataDatadogRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ DataDatadogRolesConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.filter">filter</a></code> | <code>java.lang.String</code> | Filter all roles by the given string. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/roles#id DataDatadogRoles#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/roles#id DataDatadogRoles#id}. |
 
 ---
 
@@ -806,7 +806,7 @@ public java.lang.String getFilter();
 
 Filter all roles by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/roles#filter DataDatadogRoles#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/roles#filter DataDatadogRoles#filter}
 
 ---
 
@@ -818,7 +818,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.70.0/docs/data-sources/roles#id DataDatadogRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/data-sources/roles#id DataDatadogRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

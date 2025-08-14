@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [actionConnection](./actionConnection.go.md)
+- [agentlessScanningAwsScanOptions](./agentlessScanningAwsScanOptions.go.md)
 - [apiKey](./apiKey.go.md)
 - [apmRetentionFilter](./apmRetentionFilter.go.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.go.md)
@@ -48,6 +49,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.go.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.go.md)
 - [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.go.md)
+- [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.go.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.go.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.go.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.go.md)

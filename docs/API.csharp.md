@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [actionConnection](./actionConnection.csharp.md)
+- [agentlessScanningAwsScanOptions](./agentlessScanningAwsScanOptions.csharp.md)
 - [apiKey](./apiKey.csharp.md)
 - [apmRetentionFilter](./apmRetentionFilter.csharp.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.csharp.md)
@@ -48,6 +49,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.csharp.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.csharp.md)
 - [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.csharp.md)
+- [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.csharp.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.csharp.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.csharp.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.csharp.md)
