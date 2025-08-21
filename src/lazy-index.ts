@@ -26,6 +26,7 @@ Object.defineProperty(exports, 'csmThreatsPolicy', { get: function () { return r
 Object.defineProperty(exports, 'dashboard', { get: function () { return require('./dashboard'); } });
 Object.defineProperty(exports, 'dashboardJson', { get: function () { return require('./dashboard-json'); } });
 Object.defineProperty(exports, 'dashboardList', { get: function () { return require('./dashboard-list'); } });
+Object.defineProperty(exports, 'dataset', { get: function () { return require('./dataset'); } });
 Object.defineProperty(exports, 'domainAllowlist', { get: function () { return require('./domain-allowlist'); } });
 Object.defineProperty(exports, 'downtime', { get: function () { return require('./downtime'); } });
 Object.defineProperty(exports, 'downtimeSchedule', { get: function () { return require('./downtime-schedule'); } });
@@ -124,6 +125,7 @@ Object.defineProperty(exports, 'dataDatadogHosts', { get: function () { return r
 Object.defineProperty(exports, 'dataDatadogIncidentType', { get: function () { return require('./data-datadog-incident-type'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableLogsServices', { get: function () { return require('./data-datadog-integration-aws-available-logs-services'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableNamespaces', { get: function () { return require('./data-datadog-integration-aws-available-namespaces'); } });
+Object.defineProperty(exports, 'dataDatadogIntegrationAwsIamPermissions', { get: function () { return require('./data-datadog-integration-aws-iam-permissions'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsLogsServices', { get: function () { return require('./data-datadog-integration-aws-logs-services'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsNamespaceRules', { get: function () { return require('./data-datadog-integration-aws-namespace-rules'); } });
 Object.defineProperty(exports, 'dataDatadogIpRanges', { get: function () { return require('./data-datadog-ip-ranges'); } });
