@@ -4,7 +4,7 @@
 
 ### ApiKey <a name="ApiKey" id="@cdktf/provider-datadog.apiKey.ApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/api_key datadog_api_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/api_key datadog_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apiKey.ApiKey.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/api_key#name ApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/api_key#name ApiKey#name}
 
 ---
 
@@ -120,7 +120,7 @@ Whether the API key is used for remote config.
 
 Set to true only if remote config is enabled in `/organization-settings/remote-config`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
 
 ---
 
@@ -600,7 +600,7 @@ The construct id used in the generated config for the ApiKey to import.
 
 The id of the existing ApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -977,7 +977,7 @@ name: str
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/api_key#name ApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/api_key#name ApiKey#name}
 
 ---
 
@@ -993,7 +993,7 @@ Whether the API key is used for remote config.
 
 Set to true only if remote config is enabled in `/organization-settings/remote-config`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
 
 ---
 
