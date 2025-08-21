@@ -4,7 +4,7 @@
 
 ### ObservabilityPipeline <a name="ObservabilityPipeline" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the ObservabilityPipeline to i
 
 The id of the existing ObservabilityPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ public string Name { get; set; }
 
 The pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -867,7 +867,7 @@ public ObservabilityPipelineConfigA Config { get; set; }
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
 
 ---
 
@@ -905,7 +905,7 @@ public ObservabilityPipelineConfigDestinations Destinations { get; set; }
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#destinations ObservabilityPipeline#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#destinations ObservabilityPipeline#destinations}
 
 ---
 
@@ -919,7 +919,7 @@ public ObservabilityPipelineConfigProcessors Processors { get; set; }
 
 processors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#processors ObservabilityPipeline#processors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#processors ObservabilityPipeline#processors}
 
 ---
 
@@ -933,7 +933,7 @@ public ObservabilityPipelineConfigSources Sources { get; set; }
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
 
 ---
 
@@ -946,7 +946,10 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigDestinations {
     object AmazonOpensearch = null,
+    object AmazonS3 = null,
+    object AmazonSecurityLake = null,
     object AzureStorage = null,
+    object CrowdstrikeNextGenSiem = null,
     object DatadogLogs = null,
     object Elasticsearch = null,
     object GoogleChronicle = null,
@@ -956,6 +959,7 @@ new ObservabilityPipelineConfigDestinations {
     object Opensearch = null,
     object Rsyslog = null,
     object SentinelOne = null,
+    object Socket = null,
     object SplunkHec = null,
     object SumoLogic = null,
     object SyslogNg = null
@@ -967,7 +971,10 @@ new ObservabilityPipelineConfigDestinations {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonOpensearch">AmazonOpensearch</a></code> | <code>object</code> | amazon_opensearch block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonS3">AmazonS3</a></code> | <code>object</code> | amazon_s3 block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonSecurityLake">AmazonSecurityLake</a></code> | <code>object</code> | amazon_security_lake block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.azureStorage">AzureStorage</a></code> | <code>object</code> | azure_storage block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.crowdstrikeNextGenSiem">CrowdstrikeNextGenSiem</a></code> | <code>object</code> | crowdstrike_next_gen_siem block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.datadogLogs">DatadogLogs</a></code> | <code>object</code> | datadog_logs block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.elasticsearch">Elasticsearch</a></code> | <code>object</code> | elasticsearch block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googleChronicle">GoogleChronicle</a></code> | <code>object</code> | google_chronicle block. |
@@ -977,6 +984,7 @@ new ObservabilityPipelineConfigDestinations {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.opensearch">Opensearch</a></code> | <code>object</code> | opensearch block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.rsyslog">Rsyslog</a></code> | <code>object</code> | rsyslog block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.sentinelOne">SentinelOne</a></code> | <code>object</code> | sentinel_one block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.socket">Socket</a></code> | <code>object</code> | socket block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.splunkHec">SplunkHec</a></code> | <code>object</code> | splunk_hec block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.sumoLogic">SumoLogic</a></code> | <code>object</code> | sumo_logic block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.syslogNg">SyslogNg</a></code> | <code>object</code> | syslog_ng block. |
@@ -993,7 +1001,35 @@ public object AmazonOpensearch { get; set; }
 
 amazon_opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
+
+---
+
+##### `AmazonS3`<sup>Optional</sup> <a name="AmazonS3" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonS3"></a>
+
+```csharp
+public object AmazonS3 { get; set; }
+```
+
+- *Type:* object
+
+amazon_s3 block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+
+---
+
+##### `AmazonSecurityLake`<sup>Optional</sup> <a name="AmazonSecurityLake" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonSecurityLake"></a>
+
+```csharp
+public object AmazonSecurityLake { get; set; }
+```
+
+- *Type:* object
+
+amazon_security_lake block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
 
 ---
 
@@ -1007,7 +1043,21 @@ public object AzureStorage { get; set; }
 
 azure_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
+
+---
+
+##### `CrowdstrikeNextGenSiem`<sup>Optional</sup> <a name="CrowdstrikeNextGenSiem" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.crowdstrikeNextGenSiem"></a>
+
+```csharp
+public object CrowdstrikeNextGenSiem { get; set; }
+```
+
+- *Type:* object
+
+crowdstrike_next_gen_siem block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
 
 ---
 
@@ -1021,7 +1071,7 @@ public object DatadogLogs { get; set; }
 
 datadog_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
 
 ---
 
@@ -1035,7 +1085,7 @@ public object Elasticsearch { get; set; }
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
 
 ---
 
@@ -1049,7 +1099,7 @@ public object GoogleChronicle { get; set; }
 
 google_chronicle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#google_chronicle ObservabilityPipeline#google_chronicle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#google_chronicle ObservabilityPipeline#google_chronicle}
 
 ---
 
@@ -1063,7 +1113,7 @@ public object GoogleCloudStorage { get; set; }
 
 google_cloud_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
 
 ---
 
@@ -1077,7 +1127,7 @@ public object MicrosoftSentinel { get; set; }
 
 microsoft_sentinel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
 
 ---
 
@@ -1091,7 +1141,7 @@ public object NewRelic { get; set; }
 
 new_relic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
 
 ---
 
@@ -1105,7 +1155,7 @@ public object Opensearch { get; set; }
 
 opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
 
 ---
 
@@ -1119,7 +1169,7 @@ public object Rsyslog { get; set; }
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
 
 ---
 
@@ -1133,7 +1183,21 @@ public object SentinelOne { get; set; }
 
 sentinel_one block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
+
+---
+
+##### `Socket`<sup>Optional</sup> <a name="Socket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.socket"></a>
+
+```csharp
+public object Socket { get; set; }
+```
+
+- *Type:* object
+
+socket block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -1147,7 +1211,7 @@ public object SplunkHec { get; set; }
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -1161,7 +1225,7 @@ public object SumoLogic { get; set; }
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -1175,7 +1239,7 @@ public object SyslogNg { get; set; }
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -1215,7 +1279,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1232,7 +1296,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the input for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1246,7 +1310,7 @@ public ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth Auth { get; s
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1260,7 +1324,7 @@ public string BulkIndex { get; set; }
 
 The index or datastream to write logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -1302,7 +1366,7 @@ public string Strategy { get; set; }
 
 The authentication strategy to use (e.g. aws or basic).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -1316,7 +1380,7 @@ public string AssumeRole { get; set; }
 
 ARN of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -1330,7 +1394,7 @@ public string AwsRegion { get; set; }
 
 AWS region override (if applicable).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
 
 ---
 
@@ -1344,7 +1408,7 @@ public string ExternalId { get; set; }
 
 External ID for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -1358,7 +1422,471 @@ public string SessionName { get; set; }
 
 Session name for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+
+---
+
+### ObservabilityPipelineConfigDestinationsAmazonS3 <a name="ObservabilityPipelineConfigDestinationsAmazonS3" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonS3 {
+    string Bucket,
+    string Id,
+    string[] Inputs,
+    string KeyPrefix,
+    string Region,
+    string StorageClass,
+    ObservabilityPipelineConfigDestinationsAmazonS3Auth Auth = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.bucket">Bucket</a></code> | <code>string</code> | S3 bucket name. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.id">Id</a></code> | <code>string</code> | Unique identifier for the destination component. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this component. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.keyPrefix">KeyPrefix</a></code> | <code>string</code> | Prefix for object keys. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.region">Region</a></code> | <code>string</code> | AWS region of the S3 bucket. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.storageClass">StorageClass</a></code> | <code>string</code> | S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth">ObservabilityPipelineConfigDestinationsAmazonS3Auth</a></code> | auth block. |
+
+---
+
+##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.bucket"></a>
+
+```csharp
+public string Bucket { get; set; }
+```
+
+- *Type:* string
+
+S3 bucket name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+Unique identifier for the destination component.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; set; }
+```
+
+- *Type:* string[]
+
+A list of component IDs whose output is used as the `input` for this component.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+
+---
+
+##### `KeyPrefix`<sup>Required</sup> <a name="KeyPrefix" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.keyPrefix"></a>
+
+```csharp
+public string KeyPrefix { get; set; }
+```
+
+- *Type:* string
+
+Prefix for object keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+AWS region of the S3 bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+
+---
+
+##### `StorageClass`<sup>Required</sup> <a name="StorageClass" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.storageClass"></a>
+
+```csharp
+public string StorageClass { get; set; }
+```
+
+- *Type:* string
+
+S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+
+---
+
+##### `Auth`<sup>Optional</sup> <a name="Auth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3.property.auth"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsAmazonS3Auth Auth { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth">ObservabilityPipelineConfigDestinationsAmazonS3Auth</a>
+
+auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+
+---
+
+### ObservabilityPipelineConfigDestinationsAmazonS3Auth <a name="ObservabilityPipelineConfigDestinationsAmazonS3Auth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonS3Auth {
+    string AssumeRole = null,
+    string ExternalId = null,
+    string SessionName = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth.property.assumeRole">AssumeRole</a></code> | <code>string</code> | The Amazon Resource Name (ARN) of the role to assume. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth.property.externalId">ExternalId</a></code> | <code>string</code> | A unique identifier for cross-account role assumption. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth.property.sessionName">SessionName</a></code> | <code>string</code> | A session identifier used for logging and tracing the assumed role session. |
+
+---
+
+##### `AssumeRole`<sup>Optional</sup> <a name="AssumeRole" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth.property.assumeRole"></a>
+
+```csharp
+public string AssumeRole { get; set; }
+```
+
+- *Type:* string
+
+The Amazon Resource Name (ARN) of the role to assume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+
+---
+
+##### `ExternalId`<sup>Optional</sup> <a name="ExternalId" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth.property.externalId"></a>
+
+```csharp
+public string ExternalId { get; set; }
+```
+
+- *Type:* string
+
+A unique identifier for cross-account role assumption.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+
+---
+
+##### `SessionName`<sup>Optional</sup> <a name="SessionName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth.property.sessionName"></a>
+
+```csharp
+public string SessionName { get; set; }
+```
+
+- *Type:* string
+
+A session identifier used for logging and tracing the assumed role session.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+
+---
+
+### ObservabilityPipelineConfigDestinationsAmazonSecurityLake <a name="ObservabilityPipelineConfigDestinationsAmazonSecurityLake" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonSecurityLake {
+    string Bucket,
+    string CustomSourceName,
+    string Id,
+    string[] Inputs,
+    string Region,
+    ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth Auth = null,
+    ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls Tls = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.bucket">Bucket</a></code> | <code>string</code> | Name of the Amazon S3 bucket in Security Lake (3-63 characters). |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.customSourceName">CustomSourceName</a></code> | <code>string</code> | Custom source name for the logs in Security Lake. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.id">Id</a></code> | <code>string</code> | Unique identifier for the destination component. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this component. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.region">Region</a></code> | <code>string</code> | AWS region of the Security Lake bucket. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth</a></code> | auth block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls</a></code> | tls block. |
+
+---
+
+##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.bucket"></a>
+
+```csharp
+public string Bucket { get; set; }
+```
+
+- *Type:* string
+
+Name of the Amazon S3 bucket in Security Lake (3-63 characters).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+
+---
+
+##### `CustomSourceName`<sup>Required</sup> <a name="CustomSourceName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.customSourceName"></a>
+
+```csharp
+public string CustomSourceName { get; set; }
+```
+
+- *Type:* string
+
+Custom source name for the logs in Security Lake.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#custom_source_name ObservabilityPipeline#custom_source_name}
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+Unique identifier for the destination component.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; set; }
+```
+
+- *Type:* string[]
+
+A list of component IDs whose output is used as the `input` for this component.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+AWS region of the Security Lake bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+
+---
+
+##### `Auth`<sup>Optional</sup> <a name="Auth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.auth"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth Auth { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth</a>
+
+auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+
+---
+
+##### `Tls`<sup>Optional</sup> <a name="Tls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake.property.tls"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls Tls { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls</a>
+
+tls block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+
+---
+
+### ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth <a name="ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth {
+    string AssumeRole = null,
+    string ExternalId = null,
+    string SessionName = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth.property.assumeRole">AssumeRole</a></code> | <code>string</code> | The Amazon Resource Name (ARN) of the role to assume. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth.property.externalId">ExternalId</a></code> | <code>string</code> | A unique identifier for cross-account role assumption. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth.property.sessionName">SessionName</a></code> | <code>string</code> | A session identifier used for logging and tracing the assumed role session. |
+
+---
+
+##### `AssumeRole`<sup>Optional</sup> <a name="AssumeRole" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth.property.assumeRole"></a>
+
+```csharp
+public string AssumeRole { get; set; }
+```
+
+- *Type:* string
+
+The Amazon Resource Name (ARN) of the role to assume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+
+---
+
+##### `ExternalId`<sup>Optional</sup> <a name="ExternalId" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth.property.externalId"></a>
+
+```csharp
+public string ExternalId { get; set; }
+```
+
+- *Type:* string
+
+A unique identifier for cross-account role assumption.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+
+---
+
+##### `SessionName`<sup>Optional</sup> <a name="SessionName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth.property.sessionName"></a>
+
+```csharp
+public string SessionName { get; set; }
+```
+
+- *Type:* string
+
+A session identifier used for logging and tracing the assumed role session.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+
+---
+
+### ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls <a name="ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls {
+    string CaFile = null,
+    string CrtFile = null,
+    string KeyFile = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
+
+---
+
+##### `CaFile`<sup>Optional</sup> <a name="CaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls.property.caFile"></a>
+
+```csharp
+public string CaFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+
+---
+
+##### `CrtFile`<sup>Optional</sup> <a name="CrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+
+---
+
+##### `KeyFile`<sup>Optional</sup> <a name="KeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -1398,7 +1926,7 @@ public string ContainerName { get; set; }
 
 The name of the Azure Blob Storage container to store logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
 
 ---
 
@@ -1412,7 +1940,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1429,7 +1957,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1443,7 +1971,224 @@ public string BlobPrefix { get; set; }
 
 Optional prefix for blobs written to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
+
+---
+
+### ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem <a name="ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem {
+    string Encoding,
+    string Id,
+    string[] Inputs,
+    ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression Compression = null,
+    ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls Tls = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.encoding">Encoding</a></code> | <code>string</code> | Encoding format for log events. Valid values are `json`, `raw_message`. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.id">Id</a></code> | <code>string</code> | Unique identifier for the destination component. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this component. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.compression">Compression</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression</a></code> | compression block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls</a></code> | tls block. |
+
+---
+
+##### `Encoding`<sup>Required</sup> <a name="Encoding" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.encoding"></a>
+
+```csharp
+public string Encoding { get; set; }
+```
+
+- *Type:* string
+
+Encoding format for log events. Valid values are `json`, `raw_message`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+Unique identifier for the destination component.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; set; }
+```
+
+- *Type:* string[]
+
+A list of component IDs whose output is used as the `input` for this component.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+
+---
+
+##### `Compression`<sup>Optional</sup> <a name="Compression" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.compression"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression Compression { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression</a>
+
+compression block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+
+---
+
+##### `Tls`<sup>Optional</sup> <a name="Tls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem.property.tls"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls Tls { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls</a>
+
+tls block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+
+---
+
+### ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression <a name="ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression {
+    string Algorithm = null,
+    double Level = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression.property.algorithm">Algorithm</a></code> | <code>string</code> | Compression algorithm for log events. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression.property.level">Level</a></code> | <code>double</code> | Compression level. |
+
+---
+
+##### `Algorithm`<sup>Optional</sup> <a name="Algorithm" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression.property.algorithm"></a>
+
+```csharp
+public string Algorithm { get; set; }
+```
+
+- *Type:* string
+
+Compression algorithm for log events.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+
+---
+
+##### `Level`<sup>Optional</sup> <a name="Level" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression.property.level"></a>
+
+```csharp
+public double Level { get; set; }
+```
+
+- *Type:* double
+
+Compression level.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+
+---
+
+### ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls <a name="ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls {
+    string CaFile = null,
+    string CrtFile = null,
+    string KeyFile = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
+
+---
+
+##### `CaFile`<sup>Optional</sup> <a name="CaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls.property.caFile"></a>
+
+```csharp
+public string CaFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+
+---
+
+##### `CrtFile`<sup>Optional</sup> <a name="CrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+
+---
+
+##### `KeyFile`<sup>Optional</sup> <a name="KeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -1479,7 +2224,7 @@ public string Id { get; set; }
 
 The unique ID of the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1496,7 +2241,7 @@ public string[] Inputs { get; set; }
 
 The inputs for the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1536,7 +2281,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1553,7 +2298,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1567,7 +2312,7 @@ public string ApiVersion { get; set; }
 
 The Elasticsearch API version to use. Set to `auto` to auto-detect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
 
 ---
 
@@ -1581,7 +2326,7 @@ public string BulkIndex { get; set; }
 
 The index or datastream to write logs to in Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -1625,7 +2370,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1642,7 +2387,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1656,7 +2401,7 @@ public ObservabilityPipelineConfigDestinationsGoogleChronicleAuth Auth { get; se
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1670,7 +2415,7 @@ public string CustomerId { get; set; }
 
 The Google Chronicle customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
 
 ---
 
@@ -1684,7 +2429,7 @@ public string Encoding { get; set; }
 
 The encoding format for the logs sent to Chronicle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -1698,7 +2443,7 @@ public string LogType { get; set; }
 
 The log type metadata associated with the Chronicle destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
 
 ---
 
@@ -1732,7 +2477,7 @@ public string CredentialsFile { get; set; }
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -1780,7 +2525,7 @@ public string Acl { get; set; }
 
 Access control list setting for objects written to the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
 
 ---
 
@@ -1794,7 +2539,7 @@ public ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth Auth { get;
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1808,7 +2553,7 @@ public string Bucket { get; set; }
 
 Name of the GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -1822,7 +2567,7 @@ public string Id { get; set; }
 
 Unique identifier for the destination component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1839,7 +2584,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1853,7 +2598,7 @@ public string StorageClass { get; set; }
 
 Storage class used for objects stored in GCS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
 
 ---
 
@@ -1867,7 +2612,7 @@ public string KeyPrefix { get; set; }
 
 Optional prefix for object keys within the GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
 
 ---
 
@@ -1881,7 +2626,7 @@ public object Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
 
 ---
 
@@ -1915,7 +2660,7 @@ public string CredentialsFile { get; set; }
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -1951,7 +2696,7 @@ public string Name { get; set; }
 
 The metadata key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -1965,7 +2710,7 @@ public string Value { get; set; }
 
 The metadata value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -2009,7 +2754,7 @@ public string ClientId { get; set; }
 
 Azure AD client ID used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
 
 ---
 
@@ -2023,7 +2768,7 @@ public string DcrImmutableId { get; set; }
 
 The immutable ID of the Data Collection Rule (DCR).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
 
 ---
 
@@ -2037,7 +2782,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2054,7 +2799,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2068,7 +2813,7 @@ public string Table { get; set; }
 
 The name of the Log Analytics table where logs will be sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
 
 ---
 
@@ -2082,7 +2827,7 @@ public string TenantId { get; set; }
 
 Azure AD tenant ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
 
 ---
 
@@ -2120,7 +2865,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2137,7 +2882,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2151,7 +2896,7 @@ public string Region { get; set; }
 
 The New Relic region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -2189,7 +2934,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2206,7 +2951,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2220,7 +2965,7 @@ public string BulkIndex { get; set; }
 
 The index or datastream to write logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -2260,7 +3005,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2277,7 +3022,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2291,7 +3036,7 @@ public double Keepalive { get; set; }
 
 Optional socket keepalive duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
 
 ---
 
@@ -2305,7 +3050,7 @@ public ObservabilityPipelineConfigDestinationsRsyslogTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -2327,7 +3072,7 @@ new ObservabilityPipelineConfigDestinationsRsyslogTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -2341,9 +3086,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -2357,7 +3102,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -2371,7 +3116,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -2409,7 +3154,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2426,7 +3171,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2440,7 +3185,274 @@ public string Region { get; set; }
 
 The SentinelOne region to send logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+
+---
+
+### ObservabilityPipelineConfigDestinationsSocket <a name="ObservabilityPipelineConfigDestinationsSocket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsSocket {
+    string Encoding,
+    string Id,
+    string[] Inputs,
+    string Mode,
+    ObservabilityPipelineConfigDestinationsSocketFraming Framing = null,
+    ObservabilityPipelineConfigDestinationsSocketTls Tls = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.encoding">Encoding</a></code> | <code>string</code> | Encoding format for log events. Valid values are `json`, `raw_message`. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.id">Id</a></code> | <code>string</code> | The unique identifier for this destination. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this destination. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.mode">Mode</a></code> | <code>string</code> | The protocol used to send logs. Valid values are `tcp`, `udp`. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.framing">Framing</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming">ObservabilityPipelineConfigDestinationsSocketFraming</a></code> | framing block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls">ObservabilityPipelineConfigDestinationsSocketTls</a></code> | tls block. |
+
+---
+
+##### `Encoding`<sup>Required</sup> <a name="Encoding" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.encoding"></a>
+
+```csharp
+public string Encoding { get; set; }
+```
+
+- *Type:* string
+
+Encoding format for log events. Valid values are `json`, `raw_message`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+The unique identifier for this destination.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; set; }
+```
+
+- *Type:* string[]
+
+A list of component IDs whose output is used as the `input` for this destination.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.mode"></a>
+
+```csharp
+public string Mode { get; set; }
+```
+
+- *Type:* string
+
+The protocol used to send logs. Valid values are `tcp`, `udp`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+
+---
+
+##### `Framing`<sup>Optional</sup> <a name="Framing" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.framing"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsSocketFraming Framing { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming">ObservabilityPipelineConfigDestinationsSocketFraming</a>
+
+framing block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+
+---
+
+##### `Tls`<sup>Optional</sup> <a name="Tls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket.property.tls"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsSocketTls Tls { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls">ObservabilityPipelineConfigDestinationsSocketTls</a>
+
+tls block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+
+---
+
+### ObservabilityPipelineConfigDestinationsSocketFraming <a name="ObservabilityPipelineConfigDestinationsSocketFraming" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsSocketFraming {
+    string Method,
+    ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited CharacterDelimited = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming.property.method">Method</a></code> | <code>string</code> | The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming.property.characterDelimited">CharacterDelimited</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited</a></code> | character_delimited block. |
+
+---
+
+##### `Method`<sup>Required</sup> <a name="Method" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming.property.method"></a>
+
+```csharp
+public string Method { get; set; }
+```
+
+- *Type:* string
+
+The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+
+---
+
+##### `CharacterDelimited`<sup>Optional</sup> <a name="CharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming.property.characterDelimited"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited CharacterDelimited { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited</a>
+
+character_delimited block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+
+---
+
+### ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited <a name="ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited {
+    string Delimiter = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited.property.delimiter">Delimiter</a></code> | <code>string</code> | A single ASCII character used as a delimiter. |
+
+---
+
+##### `Delimiter`<sup>Optional</sup> <a name="Delimiter" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited.property.delimiter"></a>
+
+```csharp
+public string Delimiter { get; set; }
+```
+
+- *Type:* string
+
+A single ASCII character used as a delimiter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+
+---
+
+### ObservabilityPipelineConfigDestinationsSocketTls <a name="ObservabilityPipelineConfigDestinationsSocketTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsSocketTls {
+    string CaFile = null,
+    string CrtFile = null,
+    string KeyFile = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
+
+---
+
+##### `CaFile`<sup>Optional</sup> <a name="CaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls.property.caFile"></a>
+
+```csharp
+public string CaFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+
+---
+
+##### `CrtFile`<sup>Optional</sup> <a name="CrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+
+---
+
+##### `KeyFile`<sup>Optional</sup> <a name="KeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -2486,7 +3498,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2503,7 +3515,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2517,7 +3529,7 @@ public object AutoExtractTimestamp { get; set; }
 
 If `true`, Splunk tries to extract timestamps from incoming log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
 
 ---
 
@@ -2531,7 +3543,7 @@ public string Encoding { get; set; }
 
 Encoding format for log events. Valid values: `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -2545,7 +3557,7 @@ public string Index { get; set; }
 
 Optional name of the Splunk index where logs are written.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
 
 ---
 
@@ -2559,7 +3571,7 @@ public string Sourcetype { get; set; }
 
 The Splunk sourcetype to assign to log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
 
 ---
 
@@ -2605,7 +3617,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2622,7 +3634,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2636,7 +3648,7 @@ public string Encoding { get; set; }
 
 The output encoding format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -2650,7 +3662,7 @@ public object HeaderCustomFields { get; set; }
 
 header_custom_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#header_custom_fields ObservabilityPipeline#header_custom_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#header_custom_fields ObservabilityPipeline#header_custom_fields}
 
 ---
 
@@ -2664,7 +3676,7 @@ public string HeaderHostName { get; set; }
 
 Optional override for the host name header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
 
 ---
 
@@ -2678,7 +3690,7 @@ public string HeaderSourceCategory { get; set; }
 
 Optional override for the source category header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
 
 ---
 
@@ -2692,7 +3704,7 @@ public string HeaderSourceName { get; set; }
 
 Optional override for the source name header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
 
 ---
 
@@ -2728,7 +3740,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -2742,7 +3754,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -2782,7 +3794,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2799,7 +3811,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2813,7 +3825,7 @@ public double Keepalive { get; set; }
 
 Optional socket keepalive duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
 
 ---
 
@@ -2827,7 +3839,7 @@ public ObservabilityPipelineConfigDestinationsSyslogNgTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -2849,7 +3861,7 @@ new ObservabilityPipelineConfigDestinationsSyslogNgTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -2863,9 +3875,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -2879,7 +3891,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -2893,7 +3905,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -2907,6 +3919,8 @@ using HashiCorp.Cdktf.Providers.Datadog;
 new ObservabilityPipelineConfigProcessors {
     object AddEnvVars = null,
     object AddFields = null,
+    object CustomProcessor = null,
+    object DatadogTags = null,
     object Dedupe = null,
     object EnrichmentTable = null,
     object Filter = null,
@@ -2930,6 +3944,8 @@ new ObservabilityPipelineConfigProcessors {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.addEnvVars">AddEnvVars</a></code> | <code>object</code> | add_env_vars block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.addFields">AddFields</a></code> | <code>object</code> | add_fields block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.customProcessor">CustomProcessor</a></code> | <code>object</code> | custom_processor block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.datadogTags">DatadogTags</a></code> | <code>object</code> | datadog_tags block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.dedupe">Dedupe</a></code> | <code>object</code> | dedupe block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.enrichmentTable">EnrichmentTable</a></code> | <code>object</code> | enrichment_table block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.filter">Filter</a></code> | <code>object</code> | filter block. |
@@ -2957,7 +3973,7 @@ public object AddEnvVars { get; set; }
 
 add_env_vars block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
 
 ---
 
@@ -2971,7 +3987,35 @@ public object AddFields { get; set; }
 
 add_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
+
+---
+
+##### `CustomProcessor`<sup>Optional</sup> <a name="CustomProcessor" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.customProcessor"></a>
+
+```csharp
+public object CustomProcessor { get; set; }
+```
+
+- *Type:* object
+
+custom_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
+
+---
+
+##### `DatadogTags`<sup>Optional</sup> <a name="DatadogTags" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.datadogTags"></a>
+
+```csharp
+public object DatadogTags { get; set; }
+```
+
+- *Type:* object
+
+datadog_tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
 
 ---
 
@@ -2985,7 +4029,7 @@ public object Dedupe { get; set; }
 
 dedupe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
 
 ---
 
@@ -2999,7 +4043,7 @@ public object EnrichmentTable { get; set; }
 
 enrichment_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
 
 ---
 
@@ -3013,7 +4057,7 @@ public object Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
 
 ---
 
@@ -3027,7 +4071,7 @@ public object GenerateDatadogMetrics { get; set; }
 
 generate_datadog_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
 
 ---
 
@@ -3041,7 +4085,7 @@ public object OcsfMapper { get; set; }
 
 ocsf_mapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
 
 ---
 
@@ -3055,7 +4099,7 @@ public object ParseGrok { get; set; }
 
 parse_grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
 
 ---
 
@@ -3069,7 +4113,7 @@ public object ParseJson { get; set; }
 
 parse_json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
 
 ---
 
@@ -3083,7 +4127,7 @@ public object Quota { get; set; }
 
 quota block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
 
 ---
 
@@ -3097,7 +4141,7 @@ public object Reduce { get; set; }
 
 reduce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
 
 ---
 
@@ -3111,7 +4155,7 @@ public object RemoveFields { get; set; }
 
 remove_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
 
 ---
 
@@ -3125,7 +4169,7 @@ public object RenameFields { get; set; }
 
 rename_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
 
 ---
 
@@ -3139,7 +4183,7 @@ public object Sample { get; set; }
 
 sample block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
 
 ---
 
@@ -3153,7 +4197,7 @@ public object SensitiveDataScanner { get; set; }
 
 sensitive_data_scanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
 
 ---
 
@@ -3167,7 +4211,7 @@ public object Throttle { get; set; }
 
 throttle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
 
 ---
 
@@ -3207,7 +4251,7 @@ public string Id { get; set; }
 
 The unique identifier for this component. Used to reference this processor in the pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3224,7 +4268,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -3238,7 +4282,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3252,7 +4296,7 @@ public object Variables { get; set; }
 
 variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#variables ObservabilityPipeline#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#variables ObservabilityPipeline#variables}
 
 ---
 
@@ -3288,7 +4332,7 @@ public string Field { get; set; }
 
 The target field in the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -3302,7 +4346,7 @@ public string Name { get; set; }
 
 The name of the environment variable to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -3342,7 +4386,7 @@ public string Id { get; set; }
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3359,7 +4403,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -3373,7 +4417,7 @@ public string[] Inputs { get; set; }
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3387,7 +4431,7 @@ public object Field { get; set; }
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -3423,7 +4467,7 @@ public string Name { get; set; }
 
 The field name to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -3437,7 +4481,283 @@ public string Value { get; set; }
 
 The value to assign to the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+
+---
+
+### ObservabilityPipelineConfigProcessorsCustomProcessor <a name="ObservabilityPipelineConfigProcessorsCustomProcessor" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorsCustomProcessor {
+    string Id,
+    string[] Inputs,
+    object Remaps = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.id">Id</a></code> | <code>string</code> | The unique identifier for this processor. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the input for this processor. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.remaps">Remaps</a></code> | <code>object</code> | remaps block. |
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+The unique identifier for this processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; set; }
+```
+
+- *Type:* string[]
+
+A list of component IDs whose output is used as the input for this processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+
+---
+
+##### `Remaps`<sup>Optional</sup> <a name="Remaps" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.remaps"></a>
+
+```csharp
+public object Remaps { get; set; }
+```
+
+- *Type:* object
+
+remaps block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#remaps ObservabilityPipeline#remaps}
+
+---
+
+### ObservabilityPipelineConfigProcessorsCustomProcessorRemaps <a name="ObservabilityPipelineConfigProcessorsCustomProcessorRemaps" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorsCustomProcessorRemaps {
+    object DropOnError,
+    object Enabled,
+    string Include,
+    string Name,
+    string Source
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.dropOnError">DropOnError</a></code> | <code>object</code> | Whether to drop events that cause errors during transformation. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.enabled">Enabled</a></code> | <code>object</code> | Whether this remap rule is enabled. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to filter events for this specific remap rule. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.name">Name</a></code> | <code>string</code> | A descriptive name for this remap rule. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.source">Source</a></code> | <code>string</code> | The VRL script source code that defines the transformation logic. |
+
+---
+
+##### `DropOnError`<sup>Required</sup> <a name="DropOnError" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.dropOnError"></a>
+
+```csharp
+public object DropOnError { get; set; }
+```
+
+- *Type:* object
+
+Whether to drop events that cause errors during transformation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#drop_on_error ObservabilityPipeline#drop_on_error}
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.enabled"></a>
+
+```csharp
+public object Enabled { get; set; }
+```
+
+- *Type:* object
+
+Whether this remap rule is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+
+---
+
+##### `Include`<sup>Required</sup> <a name="Include" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.include"></a>
+
+```csharp
+public string Include { get; set; }
+```
+
+- *Type:* string
+
+A Datadog search query used to filter events for this specific remap rule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.name"></a>
+
+```csharp
+public string Name { get; set; }
+```
+
+- *Type:* string
+
+A descriptive name for this remap rule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+
+---
+
+##### `Source`<sup>Required</sup> <a name="Source" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.source"></a>
+
+```csharp
+public string Source { get; set; }
+```
+
+- *Type:* string
+
+The VRL script source code that defines the transformation logic.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+
+---
+
+### ObservabilityPipelineConfigProcessorsDatadogTags <a name="ObservabilityPipelineConfigProcessorsDatadogTags" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorsDatadogTags {
+    string Action,
+    string Id,
+    string Include,
+    string[] Inputs,
+    string[] Keys,
+    string Mode
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.action">Action</a></code> | <code>string</code> | Valid values are `include`, `exclude`. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.include">Include</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.inputs">Inputs</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.keys">Keys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.mode">Mode</a></code> | <code>string</code> | Valid values are `filter`. |
+
+---
+
+##### `Action`<sup>Required</sup> <a name="Action" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.action"></a>
+
+```csharp
+public string Action { get; set; }
+```
+
+- *Type:* string
+
+Valid values are `include`, `exclude`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Include`<sup>Required</sup> <a name="Include" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.include"></a>
+
+```csharp
+public string Include { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}.
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}.
+
+---
+
+##### `Keys`<sup>Required</sup> <a name="Keys" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.keys"></a>
+
+```csharp
+public string[] Keys { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}.
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.mode"></a>
+
+```csharp
+public string Mode { get; set; }
+```
+
+- *Type:* string
+
+Valid values are `filter`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -3479,7 +4799,7 @@ public string[] Fields { get; set; }
 
 A list of log field paths to check for duplicates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -3493,7 +4813,7 @@ public string Id { get; set; }
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3510,7 +4830,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -3524,7 +4844,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3538,7 +4858,7 @@ public string Mode { get; set; }
 
 The deduplication mode to apply to the fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -3582,7 +4902,7 @@ public string Id { get; set; }
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3599,7 +4919,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -3613,7 +4933,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3627,7 +4947,7 @@ public string Target { get; set; }
 
 Path where enrichment results should be stored in the log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
 
 ---
 
@@ -3641,7 +4961,7 @@ public ObservabilityPipelineConfigProcessorsEnrichmentTableFile File { get; set;
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
 
 ---
 
@@ -3655,7 +4975,7 @@ public ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip Geoip { get; se
 
 geoip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
 
 ---
 
@@ -3695,7 +5015,7 @@ public ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding Encoding
 
 encoding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -3709,7 +5029,7 @@ public object Key { get; set; }
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
 
 ---
 
@@ -3723,7 +5043,7 @@ public string Path { get; set; }
 
 Path to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -3737,7 +5057,7 @@ public object Schema { get; set; }
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#schema ObservabilityPipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#schema ObservabilityPipeline#schema}
 
 ---
 
@@ -3775,7 +5095,7 @@ public string Delimiter { get; set; }
 
 The `encoding` `delimiter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -3789,7 +5109,7 @@ public object IncludesHeaders { get; set; }
 
 The `encoding` `includes_headers`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
 
 ---
 
@@ -3803,7 +5123,7 @@ public string Type { get; set; }
 
 File encoding format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
 
 ---
 
@@ -3841,7 +5161,7 @@ public string Column { get; set; }
 
 The `items` `column`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
 
 ---
 
@@ -3855,7 +5175,7 @@ public string Comparison { get; set; }
 
 The comparison method (e.g. equals).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
 
 ---
 
@@ -3869,7 +5189,7 @@ public string Field { get; set; }
 
 The `items` `field`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -3905,7 +5225,7 @@ public string Column { get; set; }
 
 The `items` `column`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
 
 ---
 
@@ -3919,7 +5239,7 @@ public string Type { get; set; }
 
 The type of the column (e.g. string, boolean, integer, etc.).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
 
 ---
 
@@ -3957,7 +5277,7 @@ public string KeyField { get; set; }
 
 Path to the IP field in the log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 
 ---
 
@@ -3971,7 +5291,7 @@ public string Locale { get; set; }
 
 Locale used to resolve geographical names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
 
 ---
 
@@ -3985,7 +5305,7 @@ public string Path { get; set; }
 
 Path to the GeoIP database file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -4023,7 +5343,7 @@ public string Id { get; set; }
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4042,7 +5362,7 @@ A Datadog search query used to determine which logs should pass through the filt
 
 Logs that match this query continue to downstream components; others are dropped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4056,7 +5376,7 @@ public string[] Inputs { get; set; }
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4096,7 +5416,7 @@ public string Id { get; set; }
 
 The unique identifier for this component. Used to reference this component in other parts of the pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4113,7 +5433,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4127,7 +5447,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4141,7 +5461,7 @@ public object Metrics { get; set; }
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#metrics ObservabilityPipeline#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#metrics ObservabilityPipeline#metrics}
 
 ---
 
@@ -4183,7 +5503,7 @@ public string Include { get; set; }
 
 Datadog filter query to match logs for metric generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4197,7 +5517,7 @@ public string MetricType { get; set; }
 
 Type of metric to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
 
 ---
 
@@ -4211,7 +5531,7 @@ public string Name { get; set; }
 
 Name of the custom metric to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -4225,7 +5545,7 @@ public string[] GroupBy { get; set; }
 
 Optional fields used to group the metric series.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -4239,7 +5559,7 @@ public ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue V
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -4275,7 +5595,7 @@ public string Strategy { get; set; }
 
 Metric value strategy: `increment_by_one` or `increment_by_field`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -4289,7 +5609,7 @@ public string Field { get; set; }
 
 Name of the log field containing the numeric value to increment the metric by (used only for `increment_by_field`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -4329,7 +5649,7 @@ public string Id { get; set; }
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4346,7 +5666,7 @@ public string Include { get; set; }
 
 Search query to select logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4360,7 +5680,7 @@ public string[] Inputs { get; set; }
 
 List of component IDs whose output is used as input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4374,7 +5694,7 @@ public object Mapping { get; set; }
 
 mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
 
 ---
 
@@ -4410,7 +5730,7 @@ public string Include { get; set; }
 
 Search query for selecting which logs the mapping applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4424,7 +5744,7 @@ public string LibraryMapping { get; set; }
 
 Predefined library mapping for log transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
 
 ---
 
@@ -4466,7 +5786,7 @@ public string Id { get; set; }
 
 A unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4483,7 +5803,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4497,7 +5817,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4511,7 +5831,7 @@ public object DisableLibraryRules { get; set; }
 
 If set to `true`, disables the default Grok rules provided by Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
 
 ---
 
@@ -4525,7 +5845,7 @@ public object Rules { get; set; }
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#rules ObservabilityPipeline#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#rules ObservabilityPipeline#rules}
 
 ---
 
@@ -4563,7 +5883,7 @@ public string Source { get; set; }
 
 The name of the field in the log event to apply the Grok rules to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -4577,7 +5897,7 @@ public object MatchRule { get; set; }
 
 match_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
 
 ---
 
@@ -4591,7 +5911,7 @@ public object SupportRule { get; set; }
 
 support_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
 
 ---
 
@@ -4627,7 +5947,7 @@ public string Name { get; set; }
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -4641,7 +5961,7 @@ public string Rule { get; set; }
 
 The definition of the Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -4677,7 +5997,7 @@ public string Name { get; set; }
 
 The name of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -4691,7 +6011,7 @@ public string Rule { get; set; }
 
 The definition of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -4731,7 +6051,7 @@ public string Field { get; set; }
 
 The field to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -4745,7 +6065,7 @@ public string Id { get; set; }
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4762,7 +6082,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4776,7 +6096,7 @@ public string[] Inputs { get; set; }
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4828,7 +6148,7 @@ public object DropEvents { get; set; }
 
 Whether to drop events exceeding the limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
 
 ---
 
@@ -4842,7 +6162,7 @@ public string Id { get; set; }
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4859,7 +6179,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4873,7 +6193,7 @@ public string[] Inputs { get; set; }
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4887,7 +6207,7 @@ public ObservabilityPipelineConfigProcessorsQuotaLimit Limit { get; set; }
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -4901,7 +6221,7 @@ public string Name { get; set; }
 
 The name of the quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -4915,7 +6235,7 @@ public object IgnoreWhenMissingPartitions { get; set; }
 
 Whether to ignore when partition fields are missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
 
 ---
 
@@ -4929,7 +6249,7 @@ public string OverflowAction { get; set; }
 
 The action to take when the quota is exceeded: `drop`, `no_action`, or `overflow_routing`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
 
 ---
 
@@ -4943,7 +6263,7 @@ public object Overrides { get; set; }
 
 overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#overrides ObservabilityPipeline#overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#overrides ObservabilityPipeline#overrides}
 
 ---
 
@@ -4957,7 +6277,7 @@ public string[] PartitionFields { get; set; }
 
 List of partition fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
 
 ---
 
@@ -4993,7 +6313,7 @@ public string Enforce { get; set; }
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -5007,7 +6327,7 @@ public double Limit { get; set; }
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -5043,7 +6363,7 @@ public ObservabilityPipelineConfigProcessorsQuotaOverridesLimit Limit { get; set
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -5057,7 +6377,7 @@ public object Field { get; set; }
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -5093,7 +6413,7 @@ public string Name { get; set; }
 
 The field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -5107,7 +6427,7 @@ public string Value { get; set; }
 
 The field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -5143,7 +6463,7 @@ public string Enforce { get; set; }
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -5157,7 +6477,7 @@ public double Limit { get; set; }
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -5199,7 +6519,7 @@ public string[] GroupBy { get; set; }
 
 A list of fields used to group log events for merging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -5213,7 +6533,7 @@ public string Id { get; set; }
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5230,7 +6550,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5244,7 +6564,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -5258,7 +6578,7 @@ public object MergeStrategies { get; set; }
 
 merge_strategies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#merge_strategies ObservabilityPipeline#merge_strategies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#merge_strategies ObservabilityPipeline#merge_strategies}
 
 ---
 
@@ -5294,7 +6614,7 @@ public string Path { get; set; }
 
 The field path in the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -5308,7 +6628,7 @@ public string Strategy { get; set; }
 
 The merge strategy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -5348,7 +6668,7 @@ public string[] Fields { get; set; }
 
 List of fields to remove from the events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -5362,7 +6682,7 @@ public string Id { get; set; }
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5379,7 +6699,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5393,7 +6713,7 @@ public string[] Inputs { get; set; }
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -5433,7 +6753,7 @@ public string Id { get; set; }
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5450,7 +6770,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5464,7 +6784,7 @@ public string[] Inputs { get; set; }
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -5478,7 +6798,7 @@ public object Field { get; set; }
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -5516,7 +6836,7 @@ public string Destination { get; set; }
 
 Destination field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
 
 ---
 
@@ -5530,7 +6850,7 @@ public object PreserveSource { get; set; }
 
 Whether to keep the original field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
 
 ---
 
@@ -5544,7 +6864,7 @@ public string Source { get; set; }
 
 Source field to rename.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -5588,7 +6908,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (for example, as the `input` to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5605,7 +6925,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5619,7 +6939,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -5633,7 +6953,7 @@ public double Percentage { get; set; }
 
 The percentage of logs to sample.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
 
 ---
 
@@ -5647,7 +6967,7 @@ public double Rate { get; set; }
 
 Number of events to sample (1 in N).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#rate ObservabilityPipeline#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#rate ObservabilityPipeline#rate}
 
 ---
 
@@ -5689,7 +7009,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5706,7 +7026,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5720,7 +7040,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -5734,7 +7054,7 @@ public object Rules { get; set; }
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#rules ObservabilityPipeline#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#rules ObservabilityPipeline#rules}
 
 ---
 
@@ -5778,7 +7098,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOpti
 
 keyword_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
 
 ---
 
@@ -5792,7 +7112,7 @@ public string Name { get; set; }
 
 A name identifying the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -5806,7 +7126,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch OnM
 
 on_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
 
 ---
 
@@ -5820,7 +7140,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern Pat
 
 pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
 
 ---
 
@@ -5834,7 +7154,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope Scope
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
 
 ---
 
@@ -5848,7 +7168,7 @@ public string[] Tags { get; set; }
 
 Tags assigned to this rule for filtering and classification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
 
 ---
 
@@ -5884,7 +7204,7 @@ public string[] Keywords { get; set; }
 
 A list of keywords to match near the sensitive pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
 
 ---
 
@@ -5898,7 +7218,7 @@ public double Proximity { get; set; }
 
 Maximum number of tokens between a keyword and a sensitive value match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
 
 ---
 
@@ -5936,7 +7256,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash
 
 hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
 
 ---
 
@@ -5950,7 +7270,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPart
 
 partial_redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
 
 ---
 
@@ -5964,7 +7284,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchReda
 
 redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
 
 ---
 
@@ -6013,7 +7333,7 @@ public double Characters { get; set; }
 
 Number of characters to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
 
 ---
 
@@ -6027,7 +7347,7 @@ public string Direction { get; set; }
 
 Direction from which to keep characters: `first` or `last`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
 
 ---
 
@@ -6061,7 +7381,7 @@ public string Replace { get; set; }
 
 Replacement string for redacted values (e.g., `***`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
 
 ---
 
@@ -6097,7 +7417,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCust
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
 
 ---
 
@@ -6111,7 +7431,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibr
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
 
 ---
 
@@ -6145,7 +7465,7 @@ public string Rule { get; set; }
 
 A regular expression used to detect sensitive values. Must be a valid regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -6181,7 +7501,7 @@ public string Id { get; set; }
 
 Identifier for a predefined pattern from the sensitive data scanner pattern library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6198,7 +7518,7 @@ public object UseRecommendedKeywords { get; set; }
 
 Whether to augment the pattern with recommended keywords (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
 
 ---
 
@@ -6236,7 +7556,7 @@ public object All { get; set; }
 
 Scan all fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
 
 ---
 
@@ -6250,7 +7570,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclud
 
 exclude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
 
 ---
 
@@ -6264,7 +7584,7 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclud
 
 include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -6298,7 +7618,7 @@ public string[] Fields { get; set; }
 
 The fields to exclude from scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -6332,7 +7652,7 @@ public string[] Fields { get; set; }
 
 The fields to include in scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -6376,7 +7696,7 @@ public string Id { get; set; }
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6393,7 +7713,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -6407,7 +7727,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -6421,7 +7741,7 @@ public double Threshold { get; set; }
 
 The number of events to allow before throttling is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
 
 ---
 
@@ -6435,7 +7755,7 @@ public double Window { get; set; }
 
 The time window in seconds over which the threshold applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
 
 ---
 
@@ -6449,7 +7769,7 @@ public string[] GroupBy { get; set; }
 
 Optional list of fields used to group events before applying throttling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -6472,6 +7792,7 @@ new ObservabilityPipelineConfigSources {
     object Kafka = null,
     object Logstash = null,
     object Rsyslog = null,
+    object Socket = null,
     object SplunkHec = null,
     object SplunkTcp = null,
     object SumoLogic = null,
@@ -6494,6 +7815,7 @@ new ObservabilityPipelineConfigSources {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.kafka">Kafka</a></code> | <code>object</code> | kafka block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.logstash">Logstash</a></code> | <code>object</code> | logstash block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.rsyslog">Rsyslog</a></code> | <code>object</code> | rsyslog block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.socket">Socket</a></code> | <code>object</code> | socket block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.splunkHec">SplunkHec</a></code> | <code>object</code> | splunk_hec block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.splunkTcp">SplunkTcp</a></code> | <code>object</code> | splunk_tcp block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.sumoLogic">SumoLogic</a></code> | <code>object</code> | sumo_logic block. |
@@ -6511,7 +7833,7 @@ public object AmazonDataFirehose { get; set; }
 
 amazon_data_firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
 
 ---
 
@@ -6525,7 +7847,7 @@ public object AmazonS3 { get; set; }
 
 amazon_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
 
 ---
 
@@ -6539,7 +7861,7 @@ public object DatadogAgent { get; set; }
 
 datadog_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
 
 ---
 
@@ -6553,7 +7875,7 @@ public object FluentBit { get; set; }
 
 fluent_bit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
 
 ---
 
@@ -6567,7 +7889,7 @@ public object Fluentd { get; set; }
 
 fluentd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
 
 ---
 
@@ -6581,7 +7903,7 @@ public object GooglePubsub { get; set; }
 
 google_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
 
 ---
 
@@ -6595,7 +7917,7 @@ public object HttpClient { get; set; }
 
 http_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
 
 ---
 
@@ -6609,7 +7931,7 @@ public object HttpServer { get; set; }
 
 http_server block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
 
 ---
 
@@ -6623,7 +7945,7 @@ public object Kafka { get; set; }
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
 
 ---
 
@@ -6637,7 +7959,7 @@ public object Logstash { get; set; }
 
 logstash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
 
 ---
 
@@ -6651,7 +7973,21 @@ public object Rsyslog { get; set; }
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+
+---
+
+##### `Socket`<sup>Optional</sup> <a name="Socket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.socket"></a>
+
+```csharp
+public object Socket { get; set; }
+```
+
+- *Type:* object
+
+socket block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -6665,7 +8001,7 @@ public object SplunkHec { get; set; }
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -6679,7 +8015,7 @@ public object SplunkTcp { get; set; }
 
 splunk_tcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
 
 ---
 
@@ -6693,7 +8029,7 @@ public object SumoLogic { get; set; }
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -6707,7 +8043,7 @@ public object SyslogNg { get; set; }
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -6747,7 +8083,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6764,7 +8100,7 @@ public ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth Auth { get; set;
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -6778,7 +8114,7 @@ public ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -6816,7 +8152,7 @@ public string AssumeRole { get; set; }
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -6830,7 +8166,7 @@ public string ExternalId { get; set; }
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -6844,7 +8180,7 @@ public string SessionName { get; set; }
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -6866,7 +8202,7 @@ new ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -6880,9 +8216,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -6896,7 +8232,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -6910,7 +8246,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -6952,7 +8288,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6969,7 +8305,7 @@ public string Region { get; set; }
 
 AWS region where the S3 bucket resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -6983,7 +8319,7 @@ public ObservabilityPipelineConfigSourcesAmazonS3Auth Auth { get; set; }
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -6997,7 +8333,7 @@ public ObservabilityPipelineConfigSourcesAmazonS3Tls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -7035,7 +8371,7 @@ public string AssumeRole { get; set; }
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -7049,7 +8385,7 @@ public string ExternalId { get; set; }
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -7063,7 +8399,7 @@ public string SessionName { get; set; }
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -7085,7 +8421,7 @@ new ObservabilityPipelineConfigSourcesAmazonS3Tls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Tls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Tls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Tls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Tls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -7099,9 +8435,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -7115,7 +8451,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -7129,7 +8465,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -7165,7 +8501,7 @@ public string Id { get; set; }
 
 The unique ID of the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7182,7 +8518,7 @@ public ObservabilityPipelineConfigSourcesDatadogAgentTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -7204,7 +8540,7 @@ new ObservabilityPipelineConfigSourcesDatadogAgentTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -7218,9 +8554,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -7234,7 +8570,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -7248,7 +8584,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -7286,7 +8622,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (for example, as the `input` to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7303,7 +8639,7 @@ public ObservabilityPipelineConfigSourcesFluentBitTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -7325,7 +8661,7 @@ new ObservabilityPipelineConfigSourcesFluentBitTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -7339,9 +8675,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -7355,7 +8691,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -7369,7 +8705,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -7407,7 +8743,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (for example, as the `input` to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7424,7 +8760,7 @@ public ObservabilityPipelineConfigSourcesFluentdTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -7446,7 +8782,7 @@ new ObservabilityPipelineConfigSourcesFluentdTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -7460,9 +8796,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -7476,7 +8812,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -7490,7 +8826,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -7534,7 +8870,7 @@ public ObservabilityPipelineConfigSourcesGooglePubsubAuth Auth { get; set; }
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -7548,7 +8884,7 @@ public string Decoding { get; set; }
 
 The decoding format used to interpret incoming logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -7564,7 +8900,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7581,7 +8917,7 @@ public string Project { get; set; }
 
 The GCP project ID that owns the Pub/Sub subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
 
 ---
 
@@ -7595,7 +8931,7 @@ public string Subscription { get; set; }
 
 The Pub/Sub subscription name from which messages are consumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
 
 ---
 
@@ -7609,7 +8945,7 @@ public ObservabilityPipelineConfigSourcesGooglePubsubTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -7643,7 +8979,7 @@ public string CredentialsFile { get; set; }
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -7665,7 +9001,7 @@ new ObservabilityPipelineConfigSourcesGooglePubsubTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -7679,9 +9015,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -7695,7 +9031,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -7709,7 +9045,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -7753,7 +9089,7 @@ public string Decoding { get; set; }
 
 The decoding format used to interpret incoming logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -7769,7 +9105,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7786,7 +9122,7 @@ public string AuthStrategy { get; set; }
 
 Optional authentication strategy for HTTP requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -7800,7 +9136,7 @@ public double ScrapeIntervalSecs { get; set; }
 
 The interval (in seconds) between HTTP scrape requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
 
 ---
 
@@ -7814,7 +9150,7 @@ public double ScrapeTimeoutSecs { get; set; }
 
 The timeout (in seconds) for each scrape request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
 
 ---
 
@@ -7828,7 +9164,7 @@ public ObservabilityPipelineConfigSourcesHttpClientTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -7850,7 +9186,7 @@ new ObservabilityPipelineConfigSourcesHttpClientTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -7864,9 +9200,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -7880,7 +9216,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -7894,7 +9230,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -7934,7 +9270,7 @@ public string AuthStrategy { get; set; }
 
 HTTP authentication method. Valid values are `none`, `plain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -7948,7 +9284,7 @@ public string Decoding { get; set; }
 
 The decoding format used to interpret incoming logs. Valid values are `json`, `gelf`, `syslog`, `bytes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -7962,7 +9298,7 @@ public string Id { get; set; }
 
 Unique ID for the HTTP server source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7979,7 +9315,7 @@ public ObservabilityPipelineConfigSourcesHttpServerTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8001,7 +9337,7 @@ new ObservabilityPipelineConfigSourcesHttpServerTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -8015,9 +9351,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8031,7 +9367,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8045,7 +9381,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8089,7 +9425,7 @@ public string GroupId { get; set; }
 
 The Kafka consumer group ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
 
 ---
 
@@ -8103,7 +9439,7 @@ public string Id { get; set; }
 
 The unique ID of the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8120,7 +9456,7 @@ public string[] Topics { get; set; }
 
 A list of Kafka topic names to subscribe to. The source ingests messages from each topic specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
 
 ---
 
@@ -8134,7 +9470,7 @@ public object LibrdkafkaOption { get; set; }
 
 librdkafka_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
 
 ---
 
@@ -8148,7 +9484,7 @@ public ObservabilityPipelineConfigSourcesKafkaSasl Sasl { get; set; }
 
 sasl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
 
 ---
 
@@ -8162,7 +9498,7 @@ public ObservabilityPipelineConfigSourcesKafkaTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8198,7 +9534,7 @@ public string Name { get; set; }
 
 The name of the librdkafka option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -8212,7 +9548,7 @@ public string Value { get; set; }
 
 The value of the librdkafka option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -8246,7 +9582,7 @@ public string Mechanism { get; set; }
 
 SASL mechanism to use (e.g., PLAIN, SCRAM-SHA-256, SCRAM-SHA-512). Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
 
 ---
 
@@ -8268,7 +9604,7 @@ new ObservabilityPipelineConfigSourcesKafkaTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -8282,9 +9618,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8298,7 +9634,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8312,7 +9648,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8350,7 +9686,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8367,7 +9703,7 @@ public ObservabilityPipelineConfigSourcesLogstashTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8389,7 +9725,7 @@ new ObservabilityPipelineConfigSourcesLogstashTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -8403,9 +9739,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8419,7 +9755,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8433,7 +9769,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8473,7 +9809,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8490,7 +9826,7 @@ public string Mode { get; set; }
 
 Protocol used by the syslog source to receive messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -8504,7 +9840,7 @@ public ObservabilityPipelineConfigSourcesRsyslogTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8526,7 +9862,7 @@ new ObservabilityPipelineConfigSourcesRsyslogTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -8540,9 +9876,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8556,7 +9892,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8570,7 +9906,242 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+
+---
+
+### ObservabilityPipelineConfigSourcesSocket <a name="ObservabilityPipelineConfigSourcesSocket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigSourcesSocket {
+    string Id,
+    string Mode,
+    ObservabilityPipelineConfigSourcesSocketFraming Framing = null,
+    ObservabilityPipelineConfigSourcesSocketTls Tls = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket.property.id">Id</a></code> | <code>string</code> | The unique identifier for this component. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket.property.mode">Mode</a></code> | <code>string</code> | The protocol used to receive logs. Valid values are `tcp`, `udp`. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket.property.framing">Framing</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming">ObservabilityPipelineConfigSourcesSocketFraming</a></code> | framing block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls">ObservabilityPipelineConfigSourcesSocketTls</a></code> | tls block. |
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+The unique identifier for this component.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket.property.mode"></a>
+
+```csharp
+public string Mode { get; set; }
+```
+
+- *Type:* string
+
+The protocol used to receive logs. Valid values are `tcp`, `udp`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+
+---
+
+##### `Framing`<sup>Optional</sup> <a name="Framing" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket.property.framing"></a>
+
+```csharp
+public ObservabilityPipelineConfigSourcesSocketFraming Framing { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming">ObservabilityPipelineConfigSourcesSocketFraming</a>
+
+framing block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+
+---
+
+##### `Tls`<sup>Optional</sup> <a name="Tls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket.property.tls"></a>
+
+```csharp
+public ObservabilityPipelineConfigSourcesSocketTls Tls { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls">ObservabilityPipelineConfigSourcesSocketTls</a>
+
+tls block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+
+---
+
+### ObservabilityPipelineConfigSourcesSocketFraming <a name="ObservabilityPipelineConfigSourcesSocketFraming" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigSourcesSocketFraming {
+    ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited CharacterDelimited = null,
+    string Method = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming.property.characterDelimited">CharacterDelimited</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited</a></code> | character_delimited block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming.property.method">Method</a></code> | <code>string</code> | The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`, `octet_counting`, `chunked_gelf`. |
+
+---
+
+##### `CharacterDelimited`<sup>Optional</sup> <a name="CharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming.property.characterDelimited"></a>
+
+```csharp
+public ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited CharacterDelimited { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited</a>
+
+character_delimited block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+
+---
+
+##### `Method`<sup>Optional</sup> <a name="Method" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming.property.method"></a>
+
+```csharp
+public string Method { get; set; }
+```
+
+- *Type:* string
+
+The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`, `octet_counting`, `chunked_gelf`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+
+---
+
+### ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited <a name="ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited {
+    string Delimiter = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited.property.delimiter">Delimiter</a></code> | <code>string</code> | A single ASCII character used as a delimiter. |
+
+---
+
+##### `Delimiter`<sup>Optional</sup> <a name="Delimiter" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited.property.delimiter"></a>
+
+```csharp
+public string Delimiter { get; set; }
+```
+
+- *Type:* string
+
+A single ASCII character used as a delimiter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+
+---
+
+### ObservabilityPipelineConfigSourcesSocketTls <a name="ObservabilityPipelineConfigSourcesSocketTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigSourcesSocketTls {
+    string CaFile = null,
+    string CrtFile = null,
+    string KeyFile = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
+
+---
+
+##### `CaFile`<sup>Optional</sup> <a name="CaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls.property.caFile"></a>
+
+```csharp
+public string CaFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+
+---
+
+##### `CrtFile`<sup>Optional</sup> <a name="CrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+
+---
+
+##### `KeyFile`<sup>Optional</sup> <a name="KeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8608,7 +10179,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8625,7 +10196,7 @@ public ObservabilityPipelineConfigSourcesSplunkHecTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8647,7 +10218,7 @@ new ObservabilityPipelineConfigSourcesSplunkHecTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -8661,9 +10232,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8677,7 +10248,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8691,7 +10262,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8729,7 +10300,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8746,7 +10317,7 @@ public ObservabilityPipelineConfigSourcesSplunkTcpTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8768,7 +10339,7 @@ new ObservabilityPipelineConfigSourcesSplunkTcpTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -8782,9 +10353,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8798,7 +10369,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8812,7 +10383,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8848,7 +10419,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8891,7 +10462,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8908,7 +10479,7 @@ public string Mode { get; set; }
 
 Protocol used by the syslog source to receive messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -8922,7 +10493,7 @@ public ObservabilityPipelineConfigSourcesSyslogNgTls Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8944,7 +10515,7 @@ new ObservabilityPipelineConfigSourcesSyslogNgTls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 
@@ -8958,9 +10529,9 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Path to the Certificate Authority (CA) file used to validate the server’s TLS certificate.
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8974,7 +10545,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8988,7 +10559,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.71.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -10298,6 +11869,2236 @@ public object InternalValue { get; }
 ---
 
 
+### ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference <a name="ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.resetAssumeRole">ResetAssumeRole</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.resetExternalId">ResetExternalId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.resetSessionName">ResetSessionName</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAssumeRole` <a name="ResetAssumeRole" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.resetAssumeRole"></a>
+
+```csharp
+private void ResetAssumeRole()
+```
+
+##### `ResetExternalId` <a name="ResetExternalId" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.resetExternalId"></a>
+
+```csharp
+private void ResetExternalId()
+```
+
+##### `ResetSessionName` <a name="ResetSessionName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.resetSessionName"></a>
+
+```csharp
+private void ResetSessionName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.assumeRoleInput">AssumeRoleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.externalIdInput">ExternalIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.sessionNameInput">SessionNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.assumeRole">AssumeRole</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.sessionName">SessionName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AssumeRoleInput`<sup>Optional</sup> <a name="AssumeRoleInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.assumeRoleInput"></a>
+
+```csharp
+public string AssumeRoleInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalIdInput`<sup>Optional</sup> <a name="ExternalIdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.externalIdInput"></a>
+
+```csharp
+public string ExternalIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SessionNameInput`<sup>Optional</sup> <a name="SessionNameInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.sessionNameInput"></a>
+
+```csharp
+public string SessionNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AssumeRole`<sup>Required</sup> <a name="AssumeRole" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.assumeRole"></a>
+
+```csharp
+public string AssumeRole { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.externalId"></a>
+
+```csharp
+public string ExternalId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SessionName`<sup>Required</sup> <a name="SessionName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.sessionName"></a>
+
+```csharp
+public string SessionName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsAmazonS3List <a name="ObservabilityPipelineConfigDestinationsAmazonS3List" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonS3List(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationsAmazonS3OutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsAmazonS3OutputReference <a name="ObservabilityPipelineConfigDestinationsAmazonS3OutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonS3OutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.putAuth">PutAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.resetAuth">ResetAuth</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAuth` <a name="PutAuth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.putAuth"></a>
+
+```csharp
+private void PutAuth(ObservabilityPipelineConfigDestinationsAmazonS3Auth Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.putAuth.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth">ObservabilityPipelineConfigDestinationsAmazonS3Auth</a>
+
+---
+
+##### `ResetAuth` <a name="ResetAuth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.resetAuth"></a>
+
+```csharp
+private void ResetAuth()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference">ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.keyPrefixInput">KeyPrefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.storageClassInput">StorageClassInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.keyPrefix">KeyPrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.storageClass">StorageClass</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Auth`<sup>Required</sup> <a name="Auth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.auth"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference Auth { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference">ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference</a>
+
+---
+
+##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.authInput"></a>
+
+```csharp
+public object AuthInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `BucketInput`<sup>Optional</sup> <a name="BucketInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.bucketInput"></a>
+
+```csharp
+public string BucketInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InputsInput`<sup>Optional</sup> <a name="InputsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.inputsInput"></a>
+
+```csharp
+public string[] InputsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `KeyPrefixInput`<sup>Optional</sup> <a name="KeyPrefixInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.keyPrefixInput"></a>
+
+```csharp
+public string KeyPrefixInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StorageClassInput`<sup>Optional</sup> <a name="StorageClassInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.storageClassInput"></a>
+
+```csharp
+public string StorageClassInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.bucket"></a>
+
+```csharp
+public string Bucket { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `KeyPrefix`<sup>Required</sup> <a name="KeyPrefix" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.keyPrefix"></a>
+
+```csharp
+public string KeyPrefix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StorageClass`<sup>Required</sup> <a name="StorageClass" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.storageClass"></a>
+
+```csharp
+public string StorageClass { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference <a name="ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.resetAssumeRole">ResetAssumeRole</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.resetExternalId">ResetExternalId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.resetSessionName">ResetSessionName</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAssumeRole` <a name="ResetAssumeRole" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.resetAssumeRole"></a>
+
+```csharp
+private void ResetAssumeRole()
+```
+
+##### `ResetExternalId` <a name="ResetExternalId" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.resetExternalId"></a>
+
+```csharp
+private void ResetExternalId()
+```
+
+##### `ResetSessionName` <a name="ResetSessionName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.resetSessionName"></a>
+
+```csharp
+private void ResetSessionName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.assumeRoleInput">AssumeRoleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.externalIdInput">ExternalIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.sessionNameInput">SessionNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.assumeRole">AssumeRole</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.sessionName">SessionName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AssumeRoleInput`<sup>Optional</sup> <a name="AssumeRoleInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.assumeRoleInput"></a>
+
+```csharp
+public string AssumeRoleInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalIdInput`<sup>Optional</sup> <a name="ExternalIdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.externalIdInput"></a>
+
+```csharp
+public string ExternalIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SessionNameInput`<sup>Optional</sup> <a name="SessionNameInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.sessionNameInput"></a>
+
+```csharp
+public string SessionNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AssumeRole`<sup>Required</sup> <a name="AssumeRole" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.assumeRole"></a>
+
+```csharp
+public string AssumeRole { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.externalId"></a>
+
+```csharp
+public string ExternalId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SessionName`<sup>Required</sup> <a name="SessionName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.sessionName"></a>
+
+```csharp
+public string SessionName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList <a name="ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference <a name="ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.putAuth">PutAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.putTls">PutTls</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.resetAuth">ResetAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.resetTls">ResetTls</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAuth` <a name="PutAuth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.putAuth"></a>
+
+```csharp
+private void PutAuth(ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.putAuth.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth</a>
+
+---
+
+##### `PutTls` <a name="PutTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.putTls"></a>
+
+```csharp
+private void PutTls(ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.putTls.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls</a>
+
+---
+
+##### `ResetAuth` <a name="ResetAuth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.resetAuth"></a>
+
+```csharp
+private void ResetAuth()
+```
+
+##### `ResetTls` <a name="ResetTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.resetTls"></a>
+
+```csharp
+private void ResetTls()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.customSourceNameInput">CustomSourceNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.customSourceName">CustomSourceName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Auth`<sup>Required</sup> <a name="Auth" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.auth"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference Auth { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference</a>
+
+---
+
+##### `Tls`<sup>Required</sup> <a name="Tls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.tls"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference Tls { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference</a>
+
+---
+
+##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.authInput"></a>
+
+```csharp
+public object AuthInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `BucketInput`<sup>Optional</sup> <a name="BucketInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.bucketInput"></a>
+
+```csharp
+public string BucketInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CustomSourceNameInput`<sup>Optional</sup> <a name="CustomSourceNameInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.customSourceNameInput"></a>
+
+```csharp
+public string CustomSourceNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InputsInput`<sup>Optional</sup> <a name="InputsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.inputsInput"></a>
+
+```csharp
+public string[] InputsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.tlsInput"></a>
+
+```csharp
+public object TlsInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.bucket"></a>
+
+```csharp
+public string Bucket { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CustomSourceName`<sup>Required</sup> <a name="CustomSourceName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.customSourceName"></a>
+
+```csharp
+public string CustomSourceName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference <a name="ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.resetCaFile">ResetCaFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.resetCrtFile">ResetCrtFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.resetKeyFile">ResetKeyFile</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCaFile` <a name="ResetCaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.resetCaFile"></a>
+
+```csharp
+private void ResetCaFile()
+```
+
+##### `ResetCrtFile` <a name="ResetCrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.resetCrtFile"></a>
+
+```csharp
+private void ResetCrtFile()
+```
+
+##### `ResetKeyFile` <a name="ResetKeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.resetKeyFile"></a>
+
+```csharp
+private void ResetKeyFile()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.caFileInput">CaFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.crtFileInput">CrtFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.keyFileInput">KeyFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFileInput`<sup>Optional</sup> <a name="CaFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.caFileInput"></a>
+
+```csharp
+public string CaFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFileInput`<sup>Optional</sup> <a name="CrtFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.crtFileInput"></a>
+
+```csharp
+public string CrtFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFileInput`<sup>Optional</sup> <a name="KeyFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.keyFileInput"></a>
+
+```csharp
+public string KeyFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFile`<sup>Required</sup> <a name="CaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.caFile"></a>
+
+```csharp
+public string CaFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFile`<sup>Required</sup> <a name="CrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFile`<sup>Required</sup> <a name="KeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
 ### ObservabilityPipelineConfigDestinationsAzureStorageList <a name="ObservabilityPipelineConfigDestinationsAzureStorageList" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageList.Initializer"></a>
@@ -10810,6 +14611,1226 @@ public string[] Inputs { get; }
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference <a name="ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.resetAlgorithm">ResetAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.resetLevel">ResetLevel</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAlgorithm` <a name="ResetAlgorithm" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.resetAlgorithm"></a>
+
+```csharp
+private void ResetAlgorithm()
+```
+
+##### `ResetLevel` <a name="ResetLevel" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.resetLevel"></a>
+
+```csharp
+private void ResetLevel()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.algorithmInput">AlgorithmInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.levelInput">LevelInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.algorithm">Algorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.level">Level</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AlgorithmInput`<sup>Optional</sup> <a name="AlgorithmInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.algorithmInput"></a>
+
+```csharp
+public string AlgorithmInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LevelInput`<sup>Optional</sup> <a name="LevelInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.levelInput"></a>
+
+```csharp
+public double LevelInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.algorithm"></a>
+
+```csharp
+public string Algorithm { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.level"></a>
+
+```csharp
+public double Level { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList <a name="ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference <a name="ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.putCompression">PutCompression</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.putTls">PutTls</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.resetCompression">ResetCompression</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.resetTls">ResetTls</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutCompression` <a name="PutCompression" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.putCompression"></a>
+
+```csharp
+private void PutCompression(ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.putCompression.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression</a>
+
+---
+
+##### `PutTls` <a name="PutTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.putTls"></a>
+
+```csharp
+private void PutTls(ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.putTls.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls</a>
+
+---
+
+##### `ResetCompression` <a name="ResetCompression" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.resetCompression"></a>
+
+```csharp
+private void ResetCompression()
+```
+
+##### `ResetTls` <a name="ResetTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.resetTls"></a>
+
+```csharp
+private void ResetTls()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.compression">Compression</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.compressionInput">CompressionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.encoding">Encoding</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Compression`<sup>Required</sup> <a name="Compression" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.compression"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference Compression { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference</a>
+
+---
+
+##### `Tls`<sup>Required</sup> <a name="Tls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.tls"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference Tls { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference</a>
+
+---
+
+##### `CompressionInput`<sup>Optional</sup> <a name="CompressionInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.compressionInput"></a>
+
+```csharp
+public object CompressionInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `EncodingInput`<sup>Optional</sup> <a name="EncodingInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.encodingInput"></a>
+
+```csharp
+public string EncodingInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InputsInput`<sup>Optional</sup> <a name="InputsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.inputsInput"></a>
+
+```csharp
+public string[] InputsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.tlsInput"></a>
+
+```csharp
+public object TlsInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Encoding`<sup>Required</sup> <a name="Encoding" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.encoding"></a>
+
+```csharp
+public string Encoding { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference <a name="ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.resetCaFile">ResetCaFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.resetCrtFile">ResetCrtFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.resetKeyFile">ResetKeyFile</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCaFile` <a name="ResetCaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.resetCaFile"></a>
+
+```csharp
+private void ResetCaFile()
+```
+
+##### `ResetCrtFile` <a name="ResetCrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.resetCrtFile"></a>
+
+```csharp
+private void ResetCrtFile()
+```
+
+##### `ResetKeyFile` <a name="ResetKeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.resetKeyFile"></a>
+
+```csharp
+private void ResetKeyFile()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.caFileInput">CaFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.crtFileInput">CrtFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.keyFileInput">KeyFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFileInput`<sup>Optional</sup> <a name="CaFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.caFileInput"></a>
+
+```csharp
+public string CaFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFileInput`<sup>Optional</sup> <a name="CrtFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.crtFileInput"></a>
+
+```csharp
+public string CrtFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFileInput`<sup>Optional</sup> <a name="KeyFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.keyFileInput"></a>
+
+```csharp
+public string KeyFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFile`<sup>Required</sup> <a name="CaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.caFile"></a>
+
+```csharp
+public string CaFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFile`<sup>Required</sup> <a name="CrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFile`<sup>Required</sup> <a name="KeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.internalValue"></a>
 
 ```csharp
 public object InternalValue { get; }
@@ -15686,7 +20707,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonOpensearch">PutAmazonOpensearch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonS3">PutAmazonS3</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonSecurityLake">PutAmazonSecurityLake</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAzureStorage">PutAzureStorage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putCrowdstrikeNextGenSiem">PutCrowdstrikeNextGenSiem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putDatadogLogs">PutDatadogLogs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putElasticsearch">PutElasticsearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putGoogleChronicle">PutGoogleChronicle</a></code> | *No description.* |
@@ -15696,11 +20720,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putOpensearch">PutOpensearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putRsyslog">PutRsyslog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSentinelOne">PutSentinelOne</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSocket">PutSocket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSplunkHec">PutSplunkHec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSumoLogic">PutSumoLogic</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSyslogNg">PutSyslogNg</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetAmazonOpensearch">ResetAmazonOpensearch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetAmazonS3">ResetAmazonS3</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetAmazonSecurityLake">ResetAmazonSecurityLake</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetAzureStorage">ResetAzureStorage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetCrowdstrikeNextGenSiem">ResetCrowdstrikeNextGenSiem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetDatadogLogs">ResetDatadogLogs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetElasticsearch">ResetElasticsearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetGoogleChronicle">ResetGoogleChronicle</a></code> | *No description.* |
@@ -15710,6 +20738,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetOpensearch">ResetOpensearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetRsyslog">ResetRsyslog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetSentinelOne">ResetSentinelOne</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetSocket">ResetSocket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetSplunkHec">ResetSplunkHec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetSumoLogic">ResetSumoLogic</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetSyslogNg">ResetSyslogNg</a></code> | *No description.* |
@@ -15878,6 +20907,30 @@ private void PutAmazonOpensearch(object Value)
 
 ---
 
+##### `PutAmazonS3` <a name="PutAmazonS3" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonS3"></a>
+
+```csharp
+private void PutAmazonS3(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonS3.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `PutAmazonSecurityLake` <a name="PutAmazonSecurityLake" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonSecurityLake"></a>
+
+```csharp
+private void PutAmazonSecurityLake(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonSecurityLake.parameter.value"></a>
+
+- *Type:* object
+
+---
+
 ##### `PutAzureStorage` <a name="PutAzureStorage" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAzureStorage"></a>
 
 ```csharp
@@ -15885,6 +20938,18 @@ private void PutAzureStorage(object Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAzureStorage.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `PutCrowdstrikeNextGenSiem` <a name="PutCrowdstrikeNextGenSiem" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putCrowdstrikeNextGenSiem"></a>
+
+```csharp
+private void PutCrowdstrikeNextGenSiem(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putCrowdstrikeNextGenSiem.parameter.value"></a>
 
 - *Type:* object
 
@@ -15998,6 +21063,18 @@ private void PutSentinelOne(object Value)
 
 ---
 
+##### `PutSocket` <a name="PutSocket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSocket"></a>
+
+```csharp
+private void PutSocket(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSocket.parameter.value"></a>
+
+- *Type:* object
+
+---
+
 ##### `PutSplunkHec` <a name="PutSplunkHec" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSplunkHec"></a>
 
 ```csharp
@@ -16040,10 +21117,28 @@ private void PutSyslogNg(object Value)
 private void ResetAmazonOpensearch()
 ```
 
+##### `ResetAmazonS3` <a name="ResetAmazonS3" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetAmazonS3"></a>
+
+```csharp
+private void ResetAmazonS3()
+```
+
+##### `ResetAmazonSecurityLake` <a name="ResetAmazonSecurityLake" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetAmazonSecurityLake"></a>
+
+```csharp
+private void ResetAmazonSecurityLake()
+```
+
 ##### `ResetAzureStorage` <a name="ResetAzureStorage" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetAzureStorage"></a>
 
 ```csharp
 private void ResetAzureStorage()
+```
+
+##### `ResetCrowdstrikeNextGenSiem` <a name="ResetCrowdstrikeNextGenSiem" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetCrowdstrikeNextGenSiem"></a>
+
+```csharp
+private void ResetCrowdstrikeNextGenSiem()
 ```
 
 ##### `ResetDatadogLogs` <a name="ResetDatadogLogs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetDatadogLogs"></a>
@@ -16100,6 +21195,12 @@ private void ResetRsyslog()
 private void ResetSentinelOne()
 ```
 
+##### `ResetSocket` <a name="ResetSocket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetSocket"></a>
+
+```csharp
+private void ResetSocket()
+```
+
 ##### `ResetSplunkHec` <a name="ResetSplunkHec" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.resetSplunkHec"></a>
 
 ```csharp
@@ -16126,7 +21227,10 @@ private void ResetSyslogNg()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonOpensearch">AmazonOpensearch</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchList">ObservabilityPipelineConfigDestinationsAmazonOpensearchList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonS3">AmazonS3</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List">ObservabilityPipelineConfigDestinationsAmazonS3List</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonSecurityLake">AmazonSecurityLake</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.azureStorage">AzureStorage</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageList">ObservabilityPipelineConfigDestinationsAzureStorageList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.crowdstrikeNextGenSiem">CrowdstrikeNextGenSiem</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.datadogLogs">DatadogLogs</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsList">ObservabilityPipelineConfigDestinationsDatadogLogsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.elasticsearch">Elasticsearch</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchList">ObservabilityPipelineConfigDestinationsElasticsearchList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googleChronicle">GoogleChronicle</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleList">ObservabilityPipelineConfigDestinationsGoogleChronicleList</a></code> | *No description.* |
@@ -16136,11 +21240,15 @@ private void ResetSyslogNg()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.opensearch">Opensearch</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchList">ObservabilityPipelineConfigDestinationsOpensearchList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.rsyslog">Rsyslog</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogList">ObservabilityPipelineConfigDestinationsRsyslogList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sentinelOne">SentinelOne</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneList">ObservabilityPipelineConfigDestinationsSentinelOneList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.socket">Socket</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList">ObservabilityPipelineConfigDestinationsSocketList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.splunkHec">SplunkHec</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecList">ObservabilityPipelineConfigDestinationsSplunkHecList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sumoLogic">SumoLogic</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicList">ObservabilityPipelineConfigDestinationsSumoLogicList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.syslogNg">SyslogNg</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgList">ObservabilityPipelineConfigDestinationsSyslogNgList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonOpensearchInput">AmazonOpensearchInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonS3Input">AmazonS3Input</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonSecurityLakeInput">AmazonSecurityLakeInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.azureStorageInput">AzureStorageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.crowdstrikeNextGenSiemInput">CrowdstrikeNextGenSiemInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.datadogLogsInput">DatadogLogsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.elasticsearchInput">ElasticsearchInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googleChronicleInput">GoogleChronicleInput</a></code> | <code>object</code> | *No description.* |
@@ -16150,6 +21258,7 @@ private void ResetSyslogNg()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.opensearchInput">OpensearchInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.rsyslogInput">RsyslogInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sentinelOneInput">SentinelOneInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.socketInput">SocketInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.splunkHecInput">SplunkHecInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sumoLogicInput">SumoLogicInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.syslogNgInput">SyslogNgInput</a></code> | <code>object</code> | *No description.* |
@@ -16191,6 +21300,26 @@ public ObservabilityPipelineConfigDestinationsAmazonOpensearchList AmazonOpensea
 
 ---
 
+##### `AmazonS3`<sup>Required</sup> <a name="AmazonS3" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonS3"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsAmazonS3List AmazonS3 { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List">ObservabilityPipelineConfigDestinationsAmazonS3List</a>
+
+---
+
+##### `AmazonSecurityLake`<sup>Required</sup> <a name="AmazonSecurityLake" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonSecurityLake"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList AmazonSecurityLake { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList</a>
+
+---
+
 ##### `AzureStorage`<sup>Required</sup> <a name="AzureStorage" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.azureStorage"></a>
 
 ```csharp
@@ -16198,6 +21327,16 @@ public ObservabilityPipelineConfigDestinationsAzureStorageList AzureStorage { ge
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageList">ObservabilityPipelineConfigDestinationsAzureStorageList</a>
+
+---
+
+##### `CrowdstrikeNextGenSiem`<sup>Required</sup> <a name="CrowdstrikeNextGenSiem" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.crowdstrikeNextGenSiem"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList CrowdstrikeNextGenSiem { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList</a>
 
 ---
 
@@ -16291,6 +21430,16 @@ public ObservabilityPipelineConfigDestinationsSentinelOneList SentinelOne { get;
 
 ---
 
+##### `Socket`<sup>Required</sup> <a name="Socket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.socket"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsSocketList Socket { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList">ObservabilityPipelineConfigDestinationsSocketList</a>
+
+---
+
 ##### `SplunkHec`<sup>Required</sup> <a name="SplunkHec" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.splunkHec"></a>
 
 ```csharp
@@ -16331,10 +21480,40 @@ public object AmazonOpensearchInput { get; }
 
 ---
 
+##### `AmazonS3Input`<sup>Optional</sup> <a name="AmazonS3Input" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonS3Input"></a>
+
+```csharp
+public object AmazonS3Input { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AmazonSecurityLakeInput`<sup>Optional</sup> <a name="AmazonSecurityLakeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonSecurityLakeInput"></a>
+
+```csharp
+public object AmazonSecurityLakeInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `AzureStorageInput`<sup>Optional</sup> <a name="AzureStorageInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.azureStorageInput"></a>
 
 ```csharp
 public object AzureStorageInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `CrowdstrikeNextGenSiemInput`<sup>Optional</sup> <a name="CrowdstrikeNextGenSiemInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.crowdstrikeNextGenSiemInput"></a>
+
+```csharp
+public object CrowdstrikeNextGenSiemInput { get; }
 ```
 
 - *Type:* object
@@ -16425,6 +21604,16 @@ public object RsyslogInput { get; }
 
 ```csharp
 public object SentinelOneInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `SocketInput`<sup>Optional</sup> <a name="SocketInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.socketInput"></a>
+
+```csharp
+public object SocketInput { get; }
 ```
 
 - *Type:* object
@@ -17833,6 +23022,1532 @@ public string Region { get; }
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference <a name="ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.resetDelimiter">ResetDelimiter</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDelimiter` <a name="ResetDelimiter" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.resetDelimiter"></a>
+
+```csharp
+private void ResetDelimiter()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.delimiterInput">DelimiterInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.delimiter">Delimiter</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DelimiterInput`<sup>Optional</sup> <a name="DelimiterInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.delimiterInput"></a>
+
+```csharp
+public string DelimiterInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Delimiter`<sup>Required</sup> <a name="Delimiter" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.delimiter"></a>
+
+```csharp
+public string Delimiter { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsSocketFramingOutputReference <a name="ObservabilityPipelineConfigDestinationsSocketFramingOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsSocketFramingOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.putCharacterDelimited">PutCharacterDelimited</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.resetCharacterDelimited">ResetCharacterDelimited</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutCharacterDelimited` <a name="PutCharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.putCharacterDelimited"></a>
+
+```csharp
+private void PutCharacterDelimited(ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.putCharacterDelimited.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited</a>
+
+---
+
+##### `ResetCharacterDelimited` <a name="ResetCharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.resetCharacterDelimited"></a>
+
+```csharp
+private void ResetCharacterDelimited()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.characterDelimited">CharacterDelimited</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.characterDelimitedInput">CharacterDelimitedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.methodInput">MethodInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.method">Method</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CharacterDelimited`<sup>Required</sup> <a name="CharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.characterDelimited"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference CharacterDelimited { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference</a>
+
+---
+
+##### `CharacterDelimitedInput`<sup>Optional</sup> <a name="CharacterDelimitedInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.characterDelimitedInput"></a>
+
+```csharp
+public object CharacterDelimitedInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `MethodInput`<sup>Optional</sup> <a name="MethodInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.methodInput"></a>
+
+```csharp
+public string MethodInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Method`<sup>Required</sup> <a name="Method" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.method"></a>
+
+```csharp
+public string Method { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsSocketList <a name="ObservabilityPipelineConfigDestinationsSocketList" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsSocketList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationsSocketOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsSocketOutputReference <a name="ObservabilityPipelineConfigDestinationsSocketOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsSocketOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.putFraming">PutFraming</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.putTls">PutTls</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.resetFraming">ResetFraming</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.resetTls">ResetTls</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutFraming` <a name="PutFraming" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.putFraming"></a>
+
+```csharp
+private void PutFraming(ObservabilityPipelineConfigDestinationsSocketFraming Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.putFraming.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming">ObservabilityPipelineConfigDestinationsSocketFraming</a>
+
+---
+
+##### `PutTls` <a name="PutTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.putTls"></a>
+
+```csharp
+private void PutTls(ObservabilityPipelineConfigDestinationsSocketTls Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.putTls.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls">ObservabilityPipelineConfigDestinationsSocketTls</a>
+
+---
+
+##### `ResetFraming` <a name="ResetFraming" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.resetFraming"></a>
+
+```csharp
+private void ResetFraming()
+```
+
+##### `ResetTls` <a name="ResetTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.resetTls"></a>
+
+```csharp
+private void ResetTls()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.framing">Framing</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference">ObservabilityPipelineConfigDestinationsSocketFramingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference">ObservabilityPipelineConfigDestinationsSocketTlsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.framingInput">FramingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.encoding">Encoding</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Framing`<sup>Required</sup> <a name="Framing" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.framing"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsSocketFramingOutputReference Framing { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference">ObservabilityPipelineConfigDestinationsSocketFramingOutputReference</a>
+
+---
+
+##### `Tls`<sup>Required</sup> <a name="Tls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.tls"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationsSocketTlsOutputReference Tls { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference">ObservabilityPipelineConfigDestinationsSocketTlsOutputReference</a>
+
+---
+
+##### `EncodingInput`<sup>Optional</sup> <a name="EncodingInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.encodingInput"></a>
+
+```csharp
+public string EncodingInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FramingInput`<sup>Optional</sup> <a name="FramingInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.framingInput"></a>
+
+```csharp
+public object FramingInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InputsInput`<sup>Optional</sup> <a name="InputsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.inputsInput"></a>
+
+```csharp
+public string[] InputsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ModeInput`<sup>Optional</sup> <a name="ModeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.modeInput"></a>
+
+```csharp
+public string ModeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.tlsInput"></a>
+
+```csharp
+public object TlsInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Encoding`<sup>Required</sup> <a name="Encoding" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.encoding"></a>
+
+```csharp
+public string Encoding { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.mode"></a>
+
+```csharp
+public string Mode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigDestinationsSocketTlsOutputReference <a name="ObservabilityPipelineConfigDestinationsSocketTlsOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationsSocketTlsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.resetCaFile">ResetCaFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.resetCrtFile">ResetCrtFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.resetKeyFile">ResetKeyFile</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCaFile` <a name="ResetCaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.resetCaFile"></a>
+
+```csharp
+private void ResetCaFile()
+```
+
+##### `ResetCrtFile` <a name="ResetCrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.resetCrtFile"></a>
+
+```csharp
+private void ResetCrtFile()
+```
+
+##### `ResetKeyFile` <a name="ResetKeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.resetKeyFile"></a>
+
+```csharp
+private void ResetKeyFile()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.caFileInput">CaFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.crtFileInput">CrtFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.keyFileInput">KeyFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFileInput`<sup>Optional</sup> <a name="CaFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.caFileInput"></a>
+
+```csharp
+public string CaFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFileInput`<sup>Optional</sup> <a name="CrtFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.crtFileInput"></a>
+
+```csharp
+public string CrtFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFileInput`<sup>Optional</sup> <a name="KeyFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.keyFileInput"></a>
+
+```csharp
+public string KeyFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFile`<sup>Required</sup> <a name="CaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.caFile"></a>
+
+```csharp
+public string CaFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFile`<sup>Required</sup> <a name="CrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFile`<sup>Required</sup> <a name="KeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.internalValue"></a>
 
 ```csharp
 public object InternalValue { get; }
@@ -22424,6 +29139,1615 @@ public string[] Inputs { get; }
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigProcessorsCustomProcessorList <a name="ObservabilityPipelineConfigProcessorsCustomProcessorList" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorsCustomProcessorList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference <a name="ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.putRemaps">PutRemaps</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.resetRemaps">ResetRemaps</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutRemaps` <a name="PutRemaps" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.putRemaps"></a>
+
+```csharp
+private void PutRemaps(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.putRemaps.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `ResetRemaps` <a name="ResetRemaps" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.resetRemaps"></a>
+
+```csharp
+private void ResetRemaps()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.remaps">Remaps</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList">ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.remapsInput">RemapsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Remaps`<sup>Required</sup> <a name="Remaps" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.remaps"></a>
+
+```csharp
+public ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList Remaps { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList">ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList</a>
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InputsInput`<sup>Optional</sup> <a name="InputsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.inputsInput"></a>
+
+```csharp
+public string[] InputsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `RemapsInput`<sup>Optional</sup> <a name="RemapsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.remapsInput"></a>
+
+```csharp
+public object RemapsInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList <a name="ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference <a name="ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnErrorInput">DropOnErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.sourceInput">SourceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnError">DropOnError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.source">Source</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DropOnErrorInput`<sup>Optional</sup> <a name="DropOnErrorInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnErrorInput"></a>
+
+```csharp
+public object DropOnErrorInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabledInput"></a>
+
+```csharp
+public object EnabledInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `IncludeInput`<sup>Optional</sup> <a name="IncludeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.includeInput"></a>
+
+```csharp
+public string IncludeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.nameInput"></a>
+
+```csharp
+public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SourceInput`<sup>Optional</sup> <a name="SourceInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.sourceInput"></a>
+
+```csharp
+public string SourceInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DropOnError`<sup>Required</sup> <a name="DropOnError" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnError"></a>
+
+```csharp
+public object DropOnError { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabled"></a>
+
+```csharp
+public object Enabled { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Include`<sup>Required</sup> <a name="Include" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.include"></a>
+
+```csharp
+public string Include { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Source`<sup>Required</sup> <a name="Source" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.source"></a>
+
+```csharp
+public string Source { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigProcessorsDatadogTagsList <a name="ObservabilityPipelineConfigProcessorsDatadogTagsList" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorsDatadogTagsList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference <a name="ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.actionInput">ActionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.keysInput">KeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.action">Action</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.keys">Keys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ActionInput`<sup>Optional</sup> <a name="ActionInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.actionInput"></a>
+
+```csharp
+public string ActionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IncludeInput`<sup>Optional</sup> <a name="IncludeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.includeInput"></a>
+
+```csharp
+public string IncludeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InputsInput`<sup>Optional</sup> <a name="InputsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.inputsInput"></a>
+
+```csharp
+public string[] InputsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `KeysInput`<sup>Optional</sup> <a name="KeysInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.keysInput"></a>
+
+```csharp
+public string[] KeysInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ModeInput`<sup>Optional</sup> <a name="ModeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.modeInput"></a>
+
+```csharp
+public string ModeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Action`<sup>Required</sup> <a name="Action" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.action"></a>
+
+```csharp
+public string Action { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Include`<sup>Required</sup> <a name="Include" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.include"></a>
+
+```csharp
+public string Include { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Inputs`<sup>Required</sup> <a name="Inputs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.inputs"></a>
+
+```csharp
+public string[] Inputs { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `Keys`<sup>Required</sup> <a name="Keys" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.keys"></a>
+
+```csharp
+public string[] Keys { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.mode"></a>
+
+```csharp
+public string Mode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.internalValue"></a>
 
 ```csharp
 public object InternalValue { get; }
@@ -28595,6 +36919,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putAddEnvVars">PutAddEnvVars</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putAddFields">PutAddFields</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putCustomProcessor">PutCustomProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putDatadogTags">PutDatadogTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putDedupe">PutDedupe</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putEnrichmentTable">PutEnrichmentTable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putFilter">PutFilter</a></code> | *No description.* |
@@ -28611,6 +36937,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putThrottle">PutThrottle</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetAddEnvVars">ResetAddEnvVars</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetAddFields">ResetAddFields</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetCustomProcessor">ResetCustomProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetDatadogTags">ResetDatadogTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetDedupe">ResetDedupe</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetEnrichmentTable">ResetEnrichmentTable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetFilter">ResetFilter</a></code> | *No description.* |
@@ -28802,6 +37130,30 @@ private void PutAddFields(object Value)
 
 ---
 
+##### `PutCustomProcessor` <a name="PutCustomProcessor" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putCustomProcessor"></a>
+
+```csharp
+private void PutCustomProcessor(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putCustomProcessor.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `PutDatadogTags` <a name="PutDatadogTags" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putDatadogTags"></a>
+
+```csharp
+private void PutDatadogTags(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putDatadogTags.parameter.value"></a>
+
+- *Type:* object
+
+---
+
 ##### `PutDedupe` <a name="PutDedupe" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putDedupe"></a>
 
 ```csharp
@@ -28982,6 +37334,18 @@ private void ResetAddEnvVars()
 private void ResetAddFields()
 ```
 
+##### `ResetCustomProcessor` <a name="ResetCustomProcessor" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetCustomProcessor"></a>
+
+```csharp
+private void ResetCustomProcessor()
+```
+
+##### `ResetDatadogTags` <a name="ResetDatadogTags" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetDatadogTags"></a>
+
+```csharp
+private void ResetDatadogTags()
+```
+
 ##### `ResetDedupe` <a name="ResetDedupe" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.resetDedupe"></a>
 
 ```csharp
@@ -29075,6 +37439,8 @@ private void ResetThrottle()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addEnvVars">AddEnvVars</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsList">ObservabilityPipelineConfigProcessorsAddEnvVarsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addFields">AddFields</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsList">ObservabilityPipelineConfigProcessorsAddFieldsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.customProcessor">CustomProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList">ObservabilityPipelineConfigProcessorsCustomProcessorList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.datadogTags">DatadogTags</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList">ObservabilityPipelineConfigProcessorsDatadogTagsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.dedupe">Dedupe</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeList">ObservabilityPipelineConfigProcessorsDedupeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.enrichmentTable">EnrichmentTable</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableList">ObservabilityPipelineConfigProcessorsEnrichmentTableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterList">ObservabilityPipelineConfigProcessorsFilterList</a></code> | *No description.* |
@@ -29091,6 +37457,8 @@ private void ResetThrottle()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.throttle">Throttle</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleList">ObservabilityPipelineConfigProcessorsThrottleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addEnvVarsInput">AddEnvVarsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addFieldsInput">AddFieldsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.customProcessorInput">CustomProcessorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.datadogTagsInput">DatadogTagsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.dedupeInput">DedupeInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.enrichmentTableInput">EnrichmentTableInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.filterInput">FilterInput</a></code> | <code>object</code> | *No description.* |
@@ -29150,6 +37518,26 @@ public ObservabilityPipelineConfigProcessorsAddFieldsList AddFields { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsList">ObservabilityPipelineConfigProcessorsAddFieldsList</a>
+
+---
+
+##### `CustomProcessor`<sup>Required</sup> <a name="CustomProcessor" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.customProcessor"></a>
+
+```csharp
+public ObservabilityPipelineConfigProcessorsCustomProcessorList CustomProcessor { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList">ObservabilityPipelineConfigProcessorsCustomProcessorList</a>
+
+---
+
+##### `DatadogTags`<sup>Required</sup> <a name="DatadogTags" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.datadogTags"></a>
+
+```csharp
+public ObservabilityPipelineConfigProcessorsDatadogTagsList DatadogTags { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList">ObservabilityPipelineConfigProcessorsDatadogTagsList</a>
 
 ---
 
@@ -29307,6 +37695,26 @@ public object AddEnvVarsInput { get; }
 
 ```csharp
 public object AddFieldsInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `CustomProcessorInput`<sup>Optional</sup> <a name="CustomProcessorInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.customProcessorInput"></a>
+
+```csharp
+public object CustomProcessorInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `DatadogTagsInput`<sup>Optional</sup> <a name="DatadogTagsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.datadogTagsInput"></a>
+
+```csharp
+public object DatadogTagsInput { get; }
 ```
 
 - *Type:* object
@@ -53012,6 +61420,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putKafka">PutKafka</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putLogstash">PutLogstash</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putRsyslog">PutRsyslog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSocket">PutSocket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSplunkHec">PutSplunkHec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSplunkTcp">PutSplunkTcp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSumoLogic">PutSumoLogic</a></code> | *No description.* |
@@ -53027,6 +61436,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.resetKafka">ResetKafka</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.resetLogstash">ResetLogstash</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.resetRsyslog">ResetRsyslog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.resetSocket">ResetSocket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.resetSplunkHec">ResetSplunkHec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.resetSplunkTcp">ResetSplunkTcp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.resetSumoLogic">ResetSumoLogic</a></code> | *No description.* |
@@ -53316,6 +61726,18 @@ private void PutRsyslog(object Value)
 
 ---
 
+##### `PutSocket` <a name="PutSocket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSocket"></a>
+
+```csharp
+private void PutSocket(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSocket.parameter.value"></a>
+
+- *Type:* object
+
+---
+
 ##### `PutSplunkHec` <a name="PutSplunkHec" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSplunkHec"></a>
 
 ```csharp
@@ -53430,6 +61852,12 @@ private void ResetLogstash()
 private void ResetRsyslog()
 ```
 
+##### `ResetSocket` <a name="ResetSocket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.resetSocket"></a>
+
+```csharp
+private void ResetSocket()
+```
+
 ##### `ResetSplunkHec` <a name="ResetSplunkHec" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.resetSplunkHec"></a>
 
 ```csharp
@@ -53472,6 +61900,7 @@ private void ResetSyslogNg()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.kafka">Kafka</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaList">ObservabilityPipelineConfigSourcesKafkaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.logstash">Logstash</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashList">ObservabilityPipelineConfigSourcesLogstashList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.rsyslog">Rsyslog</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogList">ObservabilityPipelineConfigSourcesRsyslogList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.socket">Socket</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList">ObservabilityPipelineConfigSourcesSocketList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkHec">SplunkHec</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecList">ObservabilityPipelineConfigSourcesSplunkHecList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkTcp">SplunkTcp</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpList">ObservabilityPipelineConfigSourcesSplunkTcpList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.sumoLogic">SumoLogic</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicList">ObservabilityPipelineConfigSourcesSumoLogicList</a></code> | *No description.* |
@@ -53487,6 +61916,7 @@ private void ResetSyslogNg()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.kafkaInput">KafkaInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.logstashInput">LogstashInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.rsyslogInput">RsyslogInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.socketInput">SocketInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkHecInput">SplunkHecInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkTcpInput">SplunkTcpInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.sumoLogicInput">SumoLogicInput</a></code> | <code>object</code> | *No description.* |
@@ -53626,6 +62056,16 @@ public ObservabilityPipelineConfigSourcesRsyslogList Rsyslog { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogList">ObservabilityPipelineConfigSourcesRsyslogList</a>
+
+---
+
+##### `Socket`<sup>Required</sup> <a name="Socket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.socket"></a>
+
+```csharp
+public ObservabilityPipelineConfigSourcesSocketList Socket { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList">ObservabilityPipelineConfigSourcesSocketList</a>
 
 ---
 
@@ -53773,6 +62213,16 @@ public object LogstashInput { get; }
 
 ```csharp
 public object RsyslogInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `SocketInput`<sup>Optional</sup> <a name="SocketInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.socketInput"></a>
+
+```csharp
+public object SocketInput { get; }
 ```
 
 - *Type:* object
@@ -54676,6 +63126,1495 @@ public string KeyFile { get; }
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTlsOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference <a name="ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.resetDelimiter">ResetDelimiter</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDelimiter` <a name="ResetDelimiter" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.resetDelimiter"></a>
+
+```csharp
+private void ResetDelimiter()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.delimiterInput">DelimiterInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.delimiter">Delimiter</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DelimiterInput`<sup>Optional</sup> <a name="DelimiterInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.delimiterInput"></a>
+
+```csharp
+public string DelimiterInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Delimiter`<sup>Required</sup> <a name="Delimiter" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.delimiter"></a>
+
+```csharp
+public string Delimiter { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigSourcesSocketFramingOutputReference <a name="ObservabilityPipelineConfigSourcesSocketFramingOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigSourcesSocketFramingOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.putCharacterDelimited">PutCharacterDelimited</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.resetCharacterDelimited">ResetCharacterDelimited</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.resetMethod">ResetMethod</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutCharacterDelimited` <a name="PutCharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.putCharacterDelimited"></a>
+
+```csharp
+private void PutCharacterDelimited(ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.putCharacterDelimited.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited</a>
+
+---
+
+##### `ResetCharacterDelimited` <a name="ResetCharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.resetCharacterDelimited"></a>
+
+```csharp
+private void ResetCharacterDelimited()
+```
+
+##### `ResetMethod` <a name="ResetMethod" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.resetMethod"></a>
+
+```csharp
+private void ResetMethod()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.characterDelimited">CharacterDelimited</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.characterDelimitedInput">CharacterDelimitedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.methodInput">MethodInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.method">Method</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CharacterDelimited`<sup>Required</sup> <a name="CharacterDelimited" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.characterDelimited"></a>
+
+```csharp
+public ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference CharacterDelimited { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference</a>
+
+---
+
+##### `CharacterDelimitedInput`<sup>Optional</sup> <a name="CharacterDelimitedInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.characterDelimitedInput"></a>
+
+```csharp
+public object CharacterDelimitedInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `MethodInput`<sup>Optional</sup> <a name="MethodInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.methodInput"></a>
+
+```csharp
+public string MethodInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Method`<sup>Required</sup> <a name="Method" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.method"></a>
+
+```csharp
+public string Method { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigSourcesSocketList <a name="ObservabilityPipelineConfigSourcesSocketList" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigSourcesSocketList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigSourcesSocketOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigSourcesSocketOutputReference <a name="ObservabilityPipelineConfigSourcesSocketOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigSourcesSocketOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.putFraming">PutFraming</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.putTls">PutTls</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.resetFraming">ResetFraming</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.resetTls">ResetTls</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutFraming` <a name="PutFraming" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.putFraming"></a>
+
+```csharp
+private void PutFraming(ObservabilityPipelineConfigSourcesSocketFraming Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.putFraming.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming">ObservabilityPipelineConfigSourcesSocketFraming</a>
+
+---
+
+##### `PutTls` <a name="PutTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.putTls"></a>
+
+```csharp
+private void PutTls(ObservabilityPipelineConfigSourcesSocketTls Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.putTls.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls">ObservabilityPipelineConfigSourcesSocketTls</a>
+
+---
+
+##### `ResetFraming` <a name="ResetFraming" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.resetFraming"></a>
+
+```csharp
+private void ResetFraming()
+```
+
+##### `ResetTls` <a name="ResetTls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.resetTls"></a>
+
+```csharp
+private void ResetTls()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.framing">Framing</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference">ObservabilityPipelineConfigSourcesSocketFramingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference">ObservabilityPipelineConfigSourcesSocketTlsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.framingInput">FramingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Framing`<sup>Required</sup> <a name="Framing" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.framing"></a>
+
+```csharp
+public ObservabilityPipelineConfigSourcesSocketFramingOutputReference Framing { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference">ObservabilityPipelineConfigSourcesSocketFramingOutputReference</a>
+
+---
+
+##### `Tls`<sup>Required</sup> <a name="Tls" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.tls"></a>
+
+```csharp
+public ObservabilityPipelineConfigSourcesSocketTlsOutputReference Tls { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference">ObservabilityPipelineConfigSourcesSocketTlsOutputReference</a>
+
+---
+
+##### `FramingInput`<sup>Optional</sup> <a name="FramingInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.framingInput"></a>
+
+```csharp
+public object FramingInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ModeInput`<sup>Optional</sup> <a name="ModeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.modeInput"></a>
+
+```csharp
+public string ModeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.tlsInput"></a>
+
+```csharp
+public object TlsInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.mode"></a>
+
+```csharp
+public string Mode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ObservabilityPipelineConfigSourcesSocketTlsOutputReference <a name="ObservabilityPipelineConfigSourcesSocketTlsOutputReference" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new ObservabilityPipelineConfigSourcesSocketTlsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.resetCaFile">ResetCaFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.resetCrtFile">ResetCrtFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.resetKeyFile">ResetKeyFile</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCaFile` <a name="ResetCaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.resetCaFile"></a>
+
+```csharp
+private void ResetCaFile()
+```
+
+##### `ResetCrtFile` <a name="ResetCrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.resetCrtFile"></a>
+
+```csharp
+private void ResetCrtFile()
+```
+
+##### `ResetKeyFile` <a name="ResetKeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.resetKeyFile"></a>
+
+```csharp
+private void ResetKeyFile()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.caFileInput">CaFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.crtFileInput">CrtFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.keyFileInput">KeyFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFileInput`<sup>Optional</sup> <a name="CaFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.caFileInput"></a>
+
+```csharp
+public string CaFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFileInput`<sup>Optional</sup> <a name="CrtFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.crtFileInput"></a>
+
+```csharp
+public string CrtFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFileInput`<sup>Optional</sup> <a name="KeyFileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.keyFileInput"></a>
+
+```csharp
+public string KeyFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFile`<sup>Required</sup> <a name="CaFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.caFile"></a>
+
+```csharp
+public string CaFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFile`<sup>Required</sup> <a name="CrtFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFile`<sup>Required</sup> <a name="KeyFile" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.internalValue"></a>
 
 ```csharp
 public object InternalValue { get; }
