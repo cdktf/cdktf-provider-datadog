@@ -134,6 +134,7 @@ export * as dataDatadogLogsIndexes from './data-datadog-logs-indexes';
 export * as dataDatadogLogsIndexesOrder from './data-datadog-logs-indexes-order';
 export * as dataDatadogLogsPipelines from './data-datadog-logs-pipelines';
 export * as dataDatadogLogsPipelinesOrder from './data-datadog-logs-pipelines-order';
+export * as dataDatadogMetricActiveTagsAndAggregations from './data-datadog-metric-active-tags-and-aggregations';
 export * as dataDatadogMetricMetadata from './data-datadog-metric-metadata';
 export * as dataDatadogMetricTags from './data-datadog-metric-tags';
 export * as dataDatadogMonitor from './data-datadog-monitor';

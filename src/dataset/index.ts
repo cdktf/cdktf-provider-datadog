@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dataset
+// https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dataset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DatasetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dataset#name Dataset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dataset#name Dataset#name}
   */
   readonly name: string;
   /**
   * An array of principals. A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role` and `team`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dataset#principals Dataset#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dataset#principals Dataset#principals}
   */
   readonly principals: string[];
   /**
   * product_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dataset#product_filters Dataset#product_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dataset#product_filters Dataset#product_filters}
   */
   readonly productFilters?: DatasetProductFilters[] | cdktf.IResolvable;
 }
@@ -35,13 +35,13 @@ export interface DatasetProductFilters {
   /**
   * A list of tag-based filters used to restrict access to the product type. Each filter is formatted as `@tag.key:value`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dataset#filters Dataset#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dataset#filters Dataset#filters}
   */
   readonly filters: string[];
   /**
   * The product type of the dataset. Supported types: `apm`, `rum`, `synthetics`, `metrics`, `logs`, `sd_repoinfo`, `error_tracking`, `cloud_cost`, and `ml_obs`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dataset#product Dataset#product}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dataset#product Dataset#product}
   */
   readonly product: string;
 }
@@ -180,7 +180,7 @@ export class DatasetProductFiltersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dataset datadog_dataset}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dataset datadog_dataset}
 */
 export class Dataset extends cdktf.TerraformResource {
 
@@ -196,7 +196,7 @@ export class Dataset extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Dataset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Dataset to import
-  * @param importFromId The id of the existing Dataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dataset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Dataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dataset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Dataset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -208,7 +208,7 @@ export class Dataset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/dataset datadog_dataset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/dataset datadog_dataset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,7 +219,7 @@ export class Dataset extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_dataset',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.72.0',
+        providerVersion: '3.73.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

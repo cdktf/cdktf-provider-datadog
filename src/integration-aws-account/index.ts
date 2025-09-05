@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account
+// https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +15,55 @@ export interface IntegrationAwsAccountConfig extends cdktf.TerraformMetaArgument
   /**
   * Tags to apply to all metrics in the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
   */
   readonly accountTags?: string[];
   /**
   * Your AWS Account ID without dashes. Invalid aws_account_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
   */
   readonly awsAccountId: string;
   /**
   * AWS Account partition. Valid values are `aws`, `aws-cn`, `aws-us-gov`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
   */
   readonly awsPartition: string;
   /**
   * auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
   */
   readonly authConfig?: IntegrationAwsAccountAuthConfig;
   /**
   * aws_regions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
   */
   readonly awsRegions?: IntegrationAwsAccountAwsRegions;
   /**
   * logs_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
   */
   readonly logsConfig?: IntegrationAwsAccountLogsConfig;
   /**
   * metrics_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
   */
   readonly metricsConfig?: IntegrationAwsAccountMetricsConfig;
   /**
   * resources_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
   */
   readonly resourcesConfig?: IntegrationAwsAccountResourcesConfig;
   /**
   * traces_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
   */
   readonly tracesConfig?: IntegrationAwsAccountTracesConfig;
 }
@@ -71,13 +71,13 @@ export interface IntegrationAwsAccountAuthConfigAwsAuthConfigKeys {
   /**
   * AWS Access Key ID. Invalid access_key_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#access_key_id IntegrationAwsAccount#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#access_key_id IntegrationAwsAccount#access_key_id}
   */
   readonly accessKeyId?: string;
   /**
   * AWS Secret Access Key. This value is write-only; changes made outside of Terraform will not be drift-detected. Secret_access_key must be non-empty and not contain whitespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#secret_access_key IntegrationAwsAccount#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#secret_access_key IntegrationAwsAccount#secret_access_key}
   */
   readonly secretAccessKey?: string;
 }
@@ -202,13 +202,13 @@ export interface IntegrationAwsAccountAuthConfigAwsAuthConfigRole {
   /**
   * AWS IAM External ID for associated role. If omitted, one will be generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#external_id IntegrationAwsAccount#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#external_id IntegrationAwsAccount#external_id}
   */
   readonly externalId?: string;
   /**
   * AWS IAM Role name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#role_name IntegrationAwsAccount#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#role_name IntegrationAwsAccount#role_name}
   */
   readonly roleName?: string;
 }
@@ -333,13 +333,13 @@ export interface IntegrationAwsAccountAuthConfig {
   /**
   * aws_auth_config_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
   */
   readonly awsAuthConfigKeys?: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys;
   /**
   * aws_auth_config_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
   */
   readonly awsAuthConfigRole?: IntegrationAwsAccountAuthConfigAwsAuthConfigRole;
 }
@@ -464,13 +464,13 @@ export interface IntegrationAwsAccountAwsRegions {
   /**
   * Include all regions. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
   */
   readonly includeAll?: boolean | cdktf.IResolvable;
   /**
   * Include only these regions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
   */
   readonly includeOnly?: string[];
 }
@@ -591,19 +591,268 @@ export class IntegrationAwsAccountAwsRegionsOutputReference extends cdktf.Comple
     return this._includeOnly;
   }
 }
+export interface IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters {
+  /**
+  * The AWS service for which the tag filters defined in `tags` will be applied.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#source IntegrationAwsAccount#source}
+  */
+  readonly source: string;
+  /**
+  * The AWS resource tags to filter on for the service specified by `source`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
+  */
+  readonly tags: string[];
+}
+
+export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    source: cdktf.stringToTerraform(struct!.source),
+    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
+  }
+}
+
+
+export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._tags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._source = undefined;
+      this._tags = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._source = value.source;
+      this._tags = value.tags;
+    }
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+
+  // tags - computed: false, optional: false, required: true
+  private _tags?: string[]; 
+  public get tags() {
+    return this.getListAttribute('tags');
+  }
+  public set tags(value: string[]) {
+    this._tags = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+}
+
+export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList extends cdktf.ComplexList {
+  public internalValue? : IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference {
+    return new IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig {
+  /**
+  * tag_filters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+  */
+  readonly tagFilters?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktf.IResolvable;
+}
+
+export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    tag_filters: cdktf.listMapper(integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToTerraform, true)(struct!.tagFilters),
+  }
+}
+
+
+export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tag_filters: {
+      value: cdktf.listMapperHcl(integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToHclTerraform, true)(struct!.tagFilters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tagFilters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagFilters = this._tagFilters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._tagFilters.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._tagFilters.internalValue = value.tagFilters;
+    }
+  }
+
+  // tag_filters - computed: false, optional: true, required: false
+  private _tagFilters = new IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList(this, "tag_filters", false);
+  public get tagFilters() {
+    return this._tagFilters;
+  }
+  public putTagFilters(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktf.IResolvable) {
+    this._tagFilters.internalValue = value;
+  }
+  public resetTagFilters() {
+    this._tagFilters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagFiltersInput() {
+    return this._tagFilters.internalValue;
+  }
+}
 export interface IntegrationAwsAccountLogsConfigLambdaForwarder {
   /**
   * List of Datadog Lambda Log Forwarder ARNs in your AWS account. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#lambdas IntegrationAwsAccount#lambdas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#lambdas IntegrationAwsAccount#lambdas}
   */
   readonly lambdas?: string[];
   /**
   * List of service IDs set to enable automatic log collection. Use [`datadog_integration_aws_available_logs_services` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_logs_services) or [the AWS Logs Integration API](https://docs.datadoghq.com/api/latest/aws-logs-integration/?#get-list-of-aws-log-ready-services) to get allowed values. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#sources IntegrationAwsAccount#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#sources IntegrationAwsAccount#sources}
   */
   readonly sources?: string[];
+  /**
+  * log_source_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#log_source_config IntegrationAwsAccount#log_source_config}
+  */
+  readonly logSourceConfig?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig;
 }
 
 export function integrationAwsAccountLogsConfigLambdaForwarderToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarder | cdktf.IResolvable): any {
@@ -614,6 +863,7 @@ export function integrationAwsAccountLogsConfigLambdaForwarderToTerraform(struct
   return {
     lambdas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lambdas),
     sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    log_source_config: integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToTerraform(struct!.logSourceConfig),
   }
 }
 
@@ -635,6 +885,12 @@ export function integrationAwsAccountLogsConfigLambdaForwarderToHclTerraform(str
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
+    },
+    log_source_config: {
+      value: integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToHclTerraform(struct!.logSourceConfig),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig",
     },
   };
 
@@ -668,6 +924,10 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference exten
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
+    if (this._logSourceConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logSourceConfig = this._logSourceConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -677,6 +937,7 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference exten
       this.resolvableValue = undefined;
       this._lambdas = undefined;
       this._sources = undefined;
+      this._logSourceConfig.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -687,6 +948,7 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference exten
       this.resolvableValue = undefined;
       this._lambdas = value.lambdas;
       this._sources = value.sources;
+      this._logSourceConfig.internalValue = value.logSourceConfig;
     }
   }
 
@@ -721,12 +983,28 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference exten
   public get sourcesInput() {
     return this._sources;
   }
+
+  // log_source_config - computed: false, optional: true, required: false
+  private _logSourceConfig = new IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference(this, "log_source_config");
+  public get logSourceConfig() {
+    return this._logSourceConfig;
+  }
+  public putLogSourceConfig(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig) {
+    this._logSourceConfig.internalValue = value;
+  }
+  public resetLogSourceConfig() {
+    this._logSourceConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logSourceConfigInput() {
+    return this._logSourceConfig.internalValue;
+  }
 }
 export interface IntegrationAwsAccountLogsConfig {
   /**
   * lambda_forwarder block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#lambda_forwarder IntegrationAwsAccount#lambda_forwarder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#lambda_forwarder IntegrationAwsAccount#lambda_forwarder}
   */
   readonly lambdaForwarder?: IntegrationAwsAccountLogsConfigLambdaForwarder;
 }
@@ -820,15 +1098,15 @@ export class IntegrationAwsAccountLogsConfigOutputReference extends cdktf.Comple
 }
 export interface IntegrationAwsAccountMetricsConfigNamespaceFilters {
   /**
-  * Exclude only these namespaces from metrics collection. Use [`datadog_integration_aws_available_namespaces` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_namespaces) to get allowed values. Defaults to `["AWS/SQS", "AWS/ElasticMapReduce"]`. `AWS/SQS` and `AWS/ElasticMapReduce` are excluded by default to reduce your AWS CloudWatch costs from `GetMetricData` API calls.
+  * Exclude only these namespaces from metrics collection. Use [`datadog_integration_aws_available_namespaces` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_namespaces) to get allowed values. Defaults to `["AWS/SQS", "AWS/ElasticMapReduce", "AWS/Usage"]`. `AWS/SQS`, `AWS/ElasticMapReduce`, and `AWS/Usage` are excluded by default to reduce your AWS CloudWatch costs from `GetMetricData` API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
   */
   readonly excludeOnly?: string[];
   /**
   * Include only these namespaces for metrics collection. Use [`datadog_integration_aws_available_namespaces` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_namespaces) to get allowed values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
   */
   readonly includeOnly?: string[];
 }
@@ -953,13 +1231,13 @@ export interface IntegrationAwsAccountMetricsConfigTagFilters {
   /**
   * The AWS service for which the tag filters defined in `tags` will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
   */
   readonly namespace: string;
   /**
   * The AWS resource tags to filter on for the service specified by `namespace`. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
   */
   readonly tags?: string[];
 }
@@ -1103,37 +1381,37 @@ export interface IntegrationAwsAccountMetricsConfig {
   /**
   * Enable EC2 automute for AWS metrics Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#automute_enabled IntegrationAwsAccount#automute_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#automute_enabled IntegrationAwsAccount#automute_enabled}
   */
   readonly automuteEnabled?: boolean | cdktf.IResolvable;
   /**
   * Enable CloudWatch alarms collection Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#collect_cloudwatch_alarms IntegrationAwsAccount#collect_cloudwatch_alarms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#collect_cloudwatch_alarms IntegrationAwsAccount#collect_cloudwatch_alarms}
   */
   readonly collectCloudwatchAlarms?: boolean | cdktf.IResolvable;
   /**
   * Enable custom metrics collection Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#collect_custom_metrics IntegrationAwsAccount#collect_custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#collect_custom_metrics IntegrationAwsAccount#collect_custom_metrics}
   */
   readonly collectCustomMetrics?: boolean | cdktf.IResolvable;
   /**
   * Enable AWS metrics collection Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#enabled IntegrationAwsAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#enabled IntegrationAwsAccount#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * namespace_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#namespace_filters IntegrationAwsAccount#namespace_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#namespace_filters IntegrationAwsAccount#namespace_filters}
   */
   readonly namespaceFilters?: IntegrationAwsAccountMetricsConfigNamespaceFilters;
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
   */
   readonly tagFilters?: IntegrationAwsAccountMetricsConfigTagFilters[] | cdktf.IResolvable;
 }
@@ -1374,13 +1652,13 @@ export interface IntegrationAwsAccountResourcesConfig {
   /**
   * Enable Cloud Security Management to scan AWS resources for vulnerabilities, misconfigurations, identity risks, and compliance violations. Requires `extended_collection` to be set to `true`. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
   */
   readonly cloudSecurityPostureManagementCollection?: boolean | cdktf.IResolvable;
   /**
   * Whether Datadog collects additional attributes and configuration information about the resources in your AWS account. Required for `cloud_security_posture_management_collection`. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
   */
   readonly extendedCollection?: boolean | cdktf.IResolvable;
 }
@@ -1505,13 +1783,13 @@ export interface IntegrationAwsAccountTracesConfigXrayServices {
   /**
   * Include all services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
   */
   readonly includeAll?: boolean | cdktf.IResolvable;
   /**
   * Include only these services. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
   */
   readonly includeOnly?: string[];
 }
@@ -1636,7 +1914,7 @@ export interface IntegrationAwsAccountTracesConfig {
   /**
   * xray_services block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
   */
   readonly xrayServices?: IntegrationAwsAccountTracesConfigXrayServices;
 }
@@ -1730,7 +2008,7 @@ export class IntegrationAwsAccountTracesConfigOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account datadog_integration_aws_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account datadog_integration_aws_account}
 */
 export class IntegrationAwsAccount extends cdktf.TerraformResource {
 
@@ -1746,7 +2024,7 @@ export class IntegrationAwsAccount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationAwsAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationAwsAccount to import
-  * @param importFromId The id of the existing IntegrationAwsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationAwsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationAwsAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1758,7 +2036,7 @@ export class IntegrationAwsAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1769,7 +2047,7 @@ export class IntegrationAwsAccount extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_aws_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.72.0',
+        providerVersion: '3.73.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
