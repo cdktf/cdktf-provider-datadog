@@ -1,3 +1,3 @@
 # `data_datadog_logs_indexes`
 
-Refer to the Terraform Registry for docs: [`data_datadog_logs_indexes`](https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/data-sources/logs_indexes).
+Refer to the Terraform Registry for docs: [`data_datadog_logs_indexes`](https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/logs_indexes).

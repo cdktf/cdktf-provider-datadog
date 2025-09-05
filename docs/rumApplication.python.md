@@ -4,7 +4,7 @@
 
 ### RumApplication <a name="RumApplication" id="@cdktf/provider-datadog.rumApplication.RumApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_application datadog_rum_application}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application datadog_rum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.rumApplication.RumApplication.Initializer"></a>
 
@@ -22,6 +22,8 @@ rumApplication.RumApplication(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  product_analytics_retention_state: str = None,
+  rum_event_processing_state: str = None,
   type: str = None
 )
 ```
@@ -38,6 +40,8 @@ rumApplication.RumApplication(
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the RUM application. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.productAnalyticsRetentionState">product_analytics_retention_state</a></code> | <code>str</code> | Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.rumEventProcessingState">rum_event_processing_state</a></code> | <code>str</code> | Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`. |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`. |
 
 ---
@@ -108,7 +112,27 @@ Must be unique amongst siblings in the same scope
 
 Name of the RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_application#name RumApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#name RumApplication#name}
+
+---
+
+##### `product_analytics_retention_state`<sup>Optional</sup> <a name="product_analytics_retention_state" id="@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.productAnalyticsRetentionState"></a>
+
+- *Type:* str
+
+Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
+
+---
+
+##### `rum_event_processing_state`<sup>Optional</sup> <a name="rum_event_processing_state" id="@cdktf/provider-datadog.rumApplication.RumApplication.Initializer.parameter.rumEventProcessingState"></a>
+
+- *Type:* str
+
+Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
 
 ---
 
@@ -118,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_application#type RumApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#type RumApplication#type}
 
 ---
 
@@ -149,6 +173,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.resetProductAnalyticsRetentionState">reset_product_analytics_retention_state</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.resetRumEventProcessingState">reset_rum_event_processing_state</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.resetType">reset_type</a></code> | *No description.* |
 
 ---
@@ -478,6 +504,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_product_analytics_retention_state` <a name="reset_product_analytics_retention_state" id="@cdktf/provider-datadog.rumApplication.RumApplication.resetProductAnalyticsRetentionState"></a>
+
+```python
+def reset_product_analytics_retention_state() -> None
+```
+
+##### `reset_rum_event_processing_state` <a name="reset_rum_event_processing_state" id="@cdktf/provider-datadog.rumApplication.RumApplication.resetRumEventProcessingState"></a>
+
+```python
+def reset_rum_event_processing_state() -> None
+```
+
 ##### `reset_type` <a name="reset_type" id="@cdktf/provider-datadog.rumApplication.RumApplication.resetType"></a>
 
 ```python
@@ -598,7 +636,7 @@ The construct id used in the generated config for the RumApplication to import.
 
 The id of the existing RumApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,8 +669,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.72
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.clientToken">client_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.productAnalyticsRetentionStateInput">product_analytics_retention_state_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.rumEventProcessingStateInput">rum_event_processing_state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.productAnalyticsRetentionState">product_analytics_retention_state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.rumEventProcessingState">rum_event_processing_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.type">type</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -809,6 +851,26 @@ name_input: str
 
 ---
 
+##### `product_analytics_retention_state_input`<sup>Optional</sup> <a name="product_analytics_retention_state_input" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.productAnalyticsRetentionStateInput"></a>
+
+```python
+product_analytics_retention_state_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `rum_event_processing_state_input`<sup>Optional</sup> <a name="rum_event_processing_state_input" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.rumEventProcessingStateInput"></a>
+
+```python
+rum_event_processing_state_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.typeInput"></a>
 
 ```python
@@ -823,6 +885,26 @@ type_input: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `product_analytics_retention_state`<sup>Required</sup> <a name="product_analytics_retention_state" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.productAnalyticsRetentionState"></a>
+
+```python
+product_analytics_retention_state: str
+```
+
+- *Type:* str
+
+---
+
+##### `rum_event_processing_state`<sup>Required</sup> <a name="rum_event_processing_state" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.rumEventProcessingState"></a>
+
+```python
+rum_event_processing_state: str
 ```
 
 - *Type:* str
@@ -875,6 +957,8 @@ rumApplication.RumApplicationConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  product_analytics_retention_state: str = None,
+  rum_event_processing_state: str = None,
   type: str = None
 )
 ```
@@ -891,6 +975,8 @@ rumApplication.RumApplicationConfig(
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.name">name</a></code> | <code>str</code> | Name of the RUM application. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.productAnalyticsRetentionState">product_analytics_retention_state</a></code> | <code>str</code> | Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.rumEventProcessingState">rum_event_processing_state</a></code> | <code>str</code> | Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`. |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.type">type</a></code> | <code>str</code> | Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`. |
 
 ---
@@ -975,7 +1061,35 @@ name: str
 
 Name of the RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_application#name RumApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#name RumApplication#name}
+
+---
+
+##### `product_analytics_retention_state`<sup>Optional</sup> <a name="product_analytics_retention_state" id="@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.productAnalyticsRetentionState"></a>
+
+```python
+product_analytics_retention_state: str
+```
+
+- *Type:* str
+
+Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
+
+---
+
+##### `rum_event_processing_state`<sup>Optional</sup> <a name="rum_event_processing_state" id="@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.rumEventProcessingState"></a>
+
+```python
+rum_event_processing_state: str
+```
+
+- *Type:* str
+
+Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
 
 ---
 
@@ -989,7 +1103,7 @@ type: str
 
 Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_application#type RumApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_application#type RumApplication#type}
 
 ---
 

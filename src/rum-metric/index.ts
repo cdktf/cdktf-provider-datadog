@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric
+// https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface RumMetricConfig extends cdktf.TerraformMetaArguments {
   /**
   * The type of RUM events to filter on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#event_type RumMetric#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#event_type RumMetric#event_type}
   */
   readonly eventType: string;
   /**
   * The name of the RUM-based metric. This field can't be updated after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#name RumMetric#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#name RumMetric#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#compute RumMetric#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#compute RumMetric#compute}
   */
   readonly compute?: RumMetricCompute;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#filter RumMetric#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#filter RumMetric#filter}
   */
   readonly filter?: RumMetricFilter;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#group_by RumMetric#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#group_by RumMetric#group_by}
   */
   readonly groupBy?: RumMetricGroupBy[] | cdktf.IResolvable;
   /**
   * uniqueness block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
   */
   readonly uniqueness?: RumMetricUniqueness;
 }
@@ -53,19 +53,19 @@ export interface RumMetricCompute {
   /**
   * The type of aggregation to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#aggregation_type RumMetric#aggregation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#aggregation_type RumMetric#aggregation_type}
   */
   readonly aggregationType: string;
   /**
   * Toggle to include or exclude percentile aggregations for distribution metrics. Only present when `aggregation_type` is `distribution`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#include_percentiles RumMetric#include_percentiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#include_percentiles RumMetric#include_percentiles}
   */
   readonly includePercentiles?: boolean | cdktf.IResolvable;
   /**
   * The path to the value the RUM-based metric will aggregate on. Only present when `aggregation_type` is `distribution`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#path RumMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#path RumMetric#path}
   */
   readonly path?: string;
 }
@@ -216,7 +216,7 @@ export interface RumMetricFilter {
   /**
   * The search query. Follows RUM search syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#query RumMetric#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#query RumMetric#query}
   */
   readonly query?: string;
 }
@@ -312,13 +312,13 @@ export interface RumMetricGroupBy {
   /**
   * The path to the value the RUM-based metric will be aggregated over.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#path RumMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#path RumMetric#path}
   */
   readonly path?: string;
   /**
   * Name of the tag that gets created. By default, `path` is used as the tag name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#tag_name RumMetric#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#tag_name RumMetric#tag_name}
   */
   readonly tagName?: string;
 }
@@ -465,7 +465,7 @@ export interface RumMetricUniqueness {
   /**
   * When to count updatable events. `match` when the event is first seen, or `end` when the event is complete.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#when RumMetric#when}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#when RumMetric#when}
   */
   readonly when?: string;
 }
@@ -559,7 +559,7 @@ export class RumMetricUniquenessOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric datadog_rum_metric}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric datadog_rum_metric}
 */
 export class RumMetric extends cdktf.TerraformResource {
 
@@ -575,7 +575,7 @@ export class RumMetric extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RumMetric resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumMetric to import
-  * @param importFromId The id of the existing RumMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumMetric to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -587,7 +587,7 @@ export class RumMetric extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/rum_metric datadog_rum_metric} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/rum_metric datadog_rum_metric} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -598,7 +598,7 @@ export class RumMetric extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_rum_metric',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.72.0',
+        providerVersion: '3.73.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

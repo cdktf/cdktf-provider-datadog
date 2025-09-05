@@ -134,6 +134,7 @@ Object.defineProperty(exports, 'dataDatadogLogsIndexes', { get: function () { re
 Object.defineProperty(exports, 'dataDatadogLogsIndexesOrder', { get: function () { return require('./data-datadog-logs-indexes-order'); } });
 Object.defineProperty(exports, 'dataDatadogLogsPipelines', { get: function () { return require('./data-datadog-logs-pipelines'); } });
 Object.defineProperty(exports, 'dataDatadogLogsPipelinesOrder', { get: function () { return require('./data-datadog-logs-pipelines-order'); } });
+Object.defineProperty(exports, 'dataDatadogMetricActiveTagsAndAggregations', { get: function () { return require('./data-datadog-metric-active-tags-and-aggregations'); } });
 Object.defineProperty(exports, 'dataDatadogMetricMetadata', { get: function () { return require('./data-datadog-metric-metadata'); } });
 Object.defineProperty(exports, 'dataDatadogMetricTags', { get: function () { return require('./data-datadog-metric-tags'); } });
 Object.defineProperty(exports, 'dataDatadogMonitor', { get: function () { return require('./data-datadog-monitor'); } });
