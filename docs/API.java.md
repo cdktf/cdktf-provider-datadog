@@ -50,6 +50,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.java.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.java.md)
 - [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.java.md)
+- [dataDatadogMetricActiveTagsAndAggregations](./dataDatadogMetricActiveTagsAndAggregations.java.md)
 - [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.java.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.java.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.java.md)

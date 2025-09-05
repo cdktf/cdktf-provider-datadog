@@ -50,6 +50,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.csharp.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.csharp.md)
 - [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.csharp.md)
+- [dataDatadogMetricActiveTagsAndAggregations](./dataDatadogMetricActiveTagsAndAggregations.csharp.md)
 - [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.csharp.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.csharp.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.csharp.md)

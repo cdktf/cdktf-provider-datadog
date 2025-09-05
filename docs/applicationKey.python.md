@@ -4,7 +4,7 @@
 
 ### ApplicationKey <a name="ApplicationKey" id="@cdktf/provider-datadog.applicationKey.ApplicationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/application_key datadog_application_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/application_key datadog_application_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.applicationKey.ApplicationKey.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Name for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/application_key#name ApplicationKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/application_key#name ApplicationKey#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Authorization scopes for the Application Key. Application Keys configured with no scopes have full access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/application_key#scopes ApplicationKey#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/application_key#scopes ApplicationKey#scopes}
 
 ---
 
@@ -598,7 +598,7 @@ The construct id used in the generated config for the ApplicationKey to import.
 
 The id of the existing ApplicationKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/application_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +975,7 @@ name: str
 
 Name for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/application_key#name ApplicationKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/application_key#name ApplicationKey#name}
 
 ---
 
@@ -989,7 +989,7 @@ scopes: typing.List[str]
 
 Authorization scopes for the Application Key. Application Keys configured with no scopes have full access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.72.0/docs/resources/application_key#scopes ApplicationKey#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/application_key#scopes ApplicationKey#scopes}
 
 ---
 

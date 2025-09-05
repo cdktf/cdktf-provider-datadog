@@ -50,6 +50,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.typescript.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.typescript.md)
 - [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.typescript.md)
+- [dataDatadogMetricActiveTagsAndAggregations](./dataDatadogMetricActiveTagsAndAggregations.typescript.md)
 - [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.typescript.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.typescript.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.typescript.md)

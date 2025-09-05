@@ -50,6 +50,7 @@ The following submodules are available:
 - [dataDatadogLogsIndexesOrder](./dataDatadogLogsIndexesOrder.go.md)
 - [dataDatadogLogsPipelines](./dataDatadogLogsPipelines.go.md)
 - [dataDatadogLogsPipelinesOrder](./dataDatadogLogsPipelinesOrder.go.md)
+- [dataDatadogMetricActiveTagsAndAggregations](./dataDatadogMetricActiveTagsAndAggregations.go.md)
 - [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.go.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.go.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.go.md)
