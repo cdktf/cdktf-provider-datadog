@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringDefaultRule <a name="SecurityMonitoringDefaultRule" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer"></a>
 
@@ -582,7 +582,7 @@ The construct id used in the generated config for the SecurityMonitoringDefaultR
 
 The id of the existing SecurityMonitoringDefaultRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1020,7 +1020,7 @@ public string Status { get; set; }
 
 Status of the rule case to match. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
 
 ---
 
@@ -1034,7 +1034,7 @@ public string CustomStatus { get; set; }
 
 Status of the rule case to override. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#custom_status SecurityMonitoringDefaultRule#custom_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#custom_status SecurityMonitoringDefaultRule#custom_status}
 
 ---
 
@@ -1048,7 +1048,7 @@ public string[] Notifications { get; set; }
 
 Notification targets for each rule case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
 
 ---
 
@@ -1096,7 +1096,7 @@ new SecurityMonitoringDefaultRuleConfig {
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.customTags">CustomTags</a></code> | <code>string[]</code> | Custom tags for generated signals. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.enabled">Enabled</a></code> | <code>object</code> | Enable the rule. Defaults to `true`. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.filter">Filter</a></code> | <code>object</code> | filter block. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.options">Options</a></code> | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | options block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.query">Query</a></code> | <code>object</code> | query block. |
 
@@ -1182,7 +1182,7 @@ public object Case { get; set; }
 
 case block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
 
 ---
 
@@ -1196,7 +1196,7 @@ public string CustomMessage { get; set; }
 
 Custom Message (will override default message) for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
 
 ---
 
@@ -1210,7 +1210,7 @@ public string CustomName { get; set; }
 
 The name (will override default name) of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
 
 ---
 
@@ -1224,7 +1224,7 @@ public string[] CustomTags { get; set; }
 
 Custom tags for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
 
 ---
 
@@ -1238,7 +1238,7 @@ public object Enabled { get; set; }
 
 Enable the rule. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
 
 ---
 
@@ -1252,7 +1252,7 @@ public object Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
 
 ---
 
@@ -1264,7 +1264,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1281,7 +1281,7 @@ public SecurityMonitoringDefaultRuleOptions Options { get; set; }
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
 
 ---
 
@@ -1295,7 +1295,7 @@ public object Query { get; set; }
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 
 ---
 
@@ -1331,7 +1331,7 @@ public string Action { get; set; }
 
 The type of filtering action. Allowed enum values: require, suppress Valid values are `require`, `suppress`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
 
 ---
 
@@ -1345,7 +1345,7 @@ public string Query { get; set; }
 
 Query for selecting logs to apply the filtering action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 
 ---
 
@@ -1381,7 +1381,7 @@ If true, signals in non-production environments have a lower severity than what 
 
 The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
 
 ---
 
@@ -1399,6 +1399,7 @@ new SecurityMonitoringDefaultRuleQuery {
     string DataSource = null,
     string[] DistinctFields = null,
     string[] GroupByFields = null,
+    object HasOptionalGroupByFields = null,
     string Metric = null,
     string[] Metrics = null,
     string Name = null,
@@ -1416,6 +1417,7 @@ new SecurityMonitoringDefaultRuleQuery {
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.dataSource">DataSource</a></code> | <code>string</code> | Source of events. Valid values are `logs`, `audit`, `app_sec_spans`, `spans`, `security_runtime`, `network`, `events`. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.distinctFields">DistinctFields</a></code> | <code>string[]</code> | Field for which the cardinality is measured. Sent as an array. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.groupByFields">GroupByFields</a></code> | <code>string[]</code> | Fields to group by. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.hasOptionalGroupByFields">HasOptionalGroupByFields</a></code> | <code>object</code> | When false, events without a group-by value are ignored by the rule. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metric">Metric</a></code> | <code>string</code> | The target field to aggregate over when using the `sum`, `max`, or `geo_data` aggregations. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metrics">Metrics</a></code> | <code>string[]</code> | Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`, or `new_value` aggregations. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.name">Name</a></code> | <code>string</code> | Name of the query. Not compatible with `new_value` aggregations. |
@@ -1433,7 +1435,7 @@ public object AgentRule { get; set; }
 
 agent_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#agent_rule SecurityMonitoringDefaultRule#agent_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#agent_rule SecurityMonitoringDefaultRule#agent_rule}
 
 ---
 
@@ -1449,7 +1451,7 @@ The aggregation type.
 
 For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#aggregation SecurityMonitoringDefaultRule#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#aggregation SecurityMonitoringDefaultRule#aggregation}
 
 ---
 
@@ -1463,7 +1465,7 @@ public string CustomQueryExtension { get; set; }
 
 Query extension to append to the logs query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#custom_query_extension SecurityMonitoringDefaultRule#custom_query_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#custom_query_extension SecurityMonitoringDefaultRule#custom_query_extension}
 
 ---
 
@@ -1477,7 +1479,7 @@ public string DataSource { get; set; }
 
 Source of events. Valid values are `logs`, `audit`, `app_sec_spans`, `spans`, `security_runtime`, `network`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#data_source SecurityMonitoringDefaultRule#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#data_source SecurityMonitoringDefaultRule#data_source}
 
 ---
 
@@ -1491,7 +1493,7 @@ public string[] DistinctFields { get; set; }
 
 Field for which the cardinality is measured. Sent as an array.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#distinct_fields SecurityMonitoringDefaultRule#distinct_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#distinct_fields SecurityMonitoringDefaultRule#distinct_fields}
 
 ---
 
@@ -1505,7 +1507,23 @@ public string[] GroupByFields { get; set; }
 
 Fields to group by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#group_by_fields SecurityMonitoringDefaultRule#group_by_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#group_by_fields SecurityMonitoringDefaultRule#group_by_fields}
+
+---
+
+##### `HasOptionalGroupByFields`<sup>Optional</sup> <a name="HasOptionalGroupByFields" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.hasOptionalGroupByFields"></a>
+
+```csharp
+public object HasOptionalGroupByFields { get; set; }
+```
+
+- *Type:* object
+
+When false, events without a group-by value are ignored by the rule.
+
+When true, events with missing group-by fields are processed with `N/A`, replacing the missing values.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#has_optional_group_by_fields SecurityMonitoringDefaultRule#has_optional_group_by_fields}
 
 ---
 
@@ -1521,7 +1539,7 @@ The target field to aggregate over when using the `sum`, `max`, or `geo_data` ag
 
 **Deprecated.** Configure `metrics` instead. This attribute will be removed in the next major version of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#metric SecurityMonitoringDefaultRule#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#metric SecurityMonitoringDefaultRule#metric}
 
 ---
 
@@ -1537,7 +1555,7 @@ Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`
 
 The `sum`, `max`, and `geo_data` aggregations only accept one value in this list, whereas the `new_value` aggregation accepts up to five values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#metrics SecurityMonitoringDefaultRule#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#metrics SecurityMonitoringDefaultRule#metrics}
 
 ---
 
@@ -1551,7 +1569,7 @@ public string Name { get; set; }
 
 Name of the query. Not compatible with `new_value` aggregations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#name SecurityMonitoringDefaultRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#name SecurityMonitoringDefaultRule#name}
 
 ---
 
@@ -1565,7 +1583,7 @@ public string Query { get; set; }
 
 Query to run on logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 
 ---
 
@@ -1601,7 +1619,7 @@ public string AgentRuleId { get; set; }
 
 **Deprecated**. It won't be applied anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#agent_rule_id SecurityMonitoringDefaultRule#agent_rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#agent_rule_id SecurityMonitoringDefaultRule#agent_rule_id}
 
 ---
 
@@ -1615,7 +1633,7 @@ public string Expression { get; set; }
 
 **Deprecated**. It won't be applied anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_default_rule#expression SecurityMonitoringDefaultRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_default_rule#expression SecurityMonitoringDefaultRule#expression}
 
 ---
 
@@ -3583,6 +3601,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDataSource">ResetDataSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDistinctFields">ResetDistinctFields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetGroupByFields">ResetGroupByFields</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetHasOptionalGroupByFields">ResetHasOptionalGroupByFields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetric">ResetMetric</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetrics">ResetMetrics</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetName">ResetName</a></code> | *No description.* |
@@ -3788,6 +3807,12 @@ private void ResetDistinctFields()
 private void ResetGroupByFields()
 ```
 
+##### `ResetHasOptionalGroupByFields` <a name="ResetHasOptionalGroupByFields" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetHasOptionalGroupByFields"></a>
+
+```csharp
+private void ResetHasOptionalGroupByFields()
+```
+
 ##### `ResetMetric` <a name="ResetMetric" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetric"></a>
 
 ```csharp
@@ -3826,6 +3851,7 @@ private void ResetQuery()
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.dataSourceInput">DataSourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.distinctFieldsInput">DistinctFieldsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.groupByFieldsInput">GroupByFieldsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFieldsInput">HasOptionalGroupByFieldsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricInput">MetricInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricsInput">MetricsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
@@ -3835,6 +3861,7 @@ private void ResetQuery()
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.dataSource">DataSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.distinctFields">DistinctFields</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.groupByFields">GroupByFields</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFields">HasOptionalGroupByFields</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metric">Metric</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metrics">Metrics</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -3937,6 +3964,16 @@ public string[] GroupByFieldsInput { get; }
 
 ---
 
+##### `HasOptionalGroupByFieldsInput`<sup>Optional</sup> <a name="HasOptionalGroupByFieldsInput" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFieldsInput"></a>
+
+```csharp
+public object HasOptionalGroupByFieldsInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `MetricInput`<sup>Optional</sup> <a name="MetricInput" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricInput"></a>
 
 ```csharp
@@ -4024,6 +4061,16 @@ public string[] GroupByFields { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `HasOptionalGroupByFields`<sup>Required</sup> <a name="HasOptionalGroupByFields" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFields"></a>
+
+```csharp
+public object HasOptionalGroupByFields { get; }
+```
+
+- *Type:* object
 
 ---
 

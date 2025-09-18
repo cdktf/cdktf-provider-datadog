@@ -4,7 +4,7 @@
 
 ### MonitorNotificationRule <a name="MonitorNotificationRule" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the monitor notification rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 List of recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
 
 ---
 
@@ -572,7 +572,7 @@ The construct id used in the generated config for the MonitorNotificationRule to
 
 The id of the existing MonitorNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -966,7 +966,7 @@ public MonitorNotificationRuleFilter getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
 
 ---
 
@@ -980,7 +980,7 @@ public java.lang.String getName();
 
 The name of the monitor notification rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
 
 ---
 
@@ -994,7 +994,7 @@ public java.util.List<java.lang.String> getRecipients();
 
 List of recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
 
 ---
 
@@ -1028,7 +1028,7 @@ public java.util.List<java.lang.String> getTags();
 
 All tags that target monitors must match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
 
 ---
 

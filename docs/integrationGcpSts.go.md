@@ -4,7 +4,7 @@
 
 ### IntegrationGcpSts <a name="IntegrationGcpSts" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.putMetricNamespaceConfigs">PutMetricNamespaceConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.putMonitoredResourceConfigs">PutMonitoredResourceConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetAccountTags">ResetAccountTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetAutomute">ResetAutomute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetCloudRunRevisionFilters">ResetCloudRunRevisionFilters</a></code> | *No description.* |
@@ -83,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsResourceChangeCollectionEnabled">ResetIsResourceChangeCollectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsSecurityCommandCenterEnabled">ResetIsSecurityCommandCenterEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetMetricNamespaceConfigs">ResetMetricNamespaceConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetMonitoredResourceConfigs">ResetMonitoredResourceConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetResourceCollectionEnabled">ResetResourceCollectionEnabled</a></code> | *No description.* |
 
 ---
@@ -387,6 +389,18 @@ func PutMetricNamespaceConfigs(value interface{})
 
 ---
 
+##### `PutMonitoredResourceConfigs` <a name="PutMonitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.putMonitoredResourceConfigs"></a>
+
+```go
+func PutMonitoredResourceConfigs(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.putMonitoredResourceConfigs.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `ResetAccountTags` <a name="ResetAccountTags" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetAccountTags"></a>
 
 ```go
@@ -439,6 +453,12 @@ func ResetIsSecurityCommandCenterEnabled()
 
 ```go
 func ResetMetricNamespaceConfigs()
+```
+
+##### `ResetMonitoredResourceConfigs` <a name="ResetMonitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetMonitoredResourceConfigs"></a>
+
+```go
+func ResetMonitoredResourceConfigs()
 ```
 
 ##### `ResetResourceCollectionEnabled` <a name="ResetResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetResourceCollectionEnabled"></a>
@@ -550,7 +570,7 @@ The construct id used in the generated config for the IntegrationGcpSts to impor
 
 The id of the existing IntegrationGcpSts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,6 +603,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.delegateAccountEmail">DelegateAccountEmail</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.metricNamespaceConfigs">MetricNamespaceConfigs</a></code> | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigsList">IntegrationGcpStsMetricNamespaceConfigsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.monitoredResourceConfigs">MonitoredResourceConfigs</a></code> | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList">IntegrationGcpStsMonitoredResourceConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.accountTagsInput">AccountTagsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.automuteInput">AutomuteInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.clientEmailInput">ClientEmailInput</a></code> | <code>*string</code> | *No description.* |
@@ -593,6 +614,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isResourceChangeCollectionEnabledInput">IsResourceChangeCollectionEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isSecurityCommandCenterEnabledInput">IsSecurityCommandCenterEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.metricNamespaceConfigsInput">MetricNamespaceConfigsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.monitoredResourceConfigsInput">MonitoredResourceConfigsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.resourceCollectionEnabledInput">ResourceCollectionEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.accountTags">AccountTags</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.automute">Automute</a></code> | <code>interface{}</code> | *No description.* |
@@ -779,6 +801,16 @@ func MetricNamespaceConfigs() IntegrationGcpStsMetricNamespaceConfigsList
 
 ---
 
+##### `MonitoredResourceConfigs`<sup>Required</sup> <a name="MonitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.monitoredResourceConfigs"></a>
+
+```go
+func MonitoredResourceConfigs() IntegrationGcpStsMonitoredResourceConfigsList
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList">IntegrationGcpStsMonitoredResourceConfigsList</a>
+
+---
+
 ##### `AccountTagsInput`<sup>Optional</sup> <a name="AccountTagsInput" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.accountTagsInput"></a>
 
 ```go
@@ -873,6 +905,16 @@ func IsSecurityCommandCenterEnabledInput() interface{}
 
 ```go
 func MetricNamespaceConfigsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `MonitoredResourceConfigsInput`<sup>Optional</sup> <a name="MonitoredResourceConfigsInput" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.monitoredResourceConfigsInput"></a>
+
+```go
+func MonitoredResourceConfigsInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -1034,6 +1076,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts
 	IsResourceChangeCollectionEnabled: interface{},
 	IsSecurityCommandCenterEnabled: interface{},
 	MetricNamespaceConfigs: interface{},
+	MonitoredResourceConfigs: interface{},
 	ResourceCollectionEnabled: interface{},
 }
 ```
@@ -1052,13 +1095,14 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.clientEmail">ClientEmail</a></code> | <code>*string</code> | Your service account email address. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.accountTags">AccountTags</a></code> | <code>*[]*string</code> | Tags to be associated with GCP metrics and service checks from your account. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.automute">Automute</a></code> | <code>interface{}</code> | Silence monitors for expected GCE instance shutdowns. |
-| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.cloudRunRevisionFilters">CloudRunRevisionFilters</a></code> | <code>*[]*string</code> | Tags to filter which Cloud Run revisions are imported into Datadog. Only revisions that meet specified criteria are monitored. |
-| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.hostFilters">HostFilters</a></code> | <code>*[]*string</code> | Your Host Filters. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.cloudRunRevisionFilters">CloudRunRevisionFilters</a></code> | <code>*[]*string</code> | List of filters to limit the Cloud Run revisions that are pulled into Datadog by using tags. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.hostFilters">HostFilters</a></code> | <code>*[]*string</code> | List of filters to limit the VM instances that are pulled into Datadog by using tags. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isCspmEnabled">IsCspmEnabled</a></code> | <code>interface{}</code> | Whether Datadog collects cloud security posture management resources from your GCP project. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isPerProjectQuotaEnabled">IsPerProjectQuotaEnabled</a></code> | <code>interface{}</code> | When enabled, Datadog includes the `X-Goog-User-Project` header to attribute Google Cloud billing and quota usage to the monitored project instead of the default service account project. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isResourceChangeCollectionEnabled">IsResourceChangeCollectionEnabled</a></code> | <code>interface{}</code> | When enabled, Datadog scans for all resource change data in your Google Cloud environment. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isSecurityCommandCenterEnabled">IsSecurityCommandCenterEnabled</a></code> | <code>interface{}</code> | When enabled, Datadog will attempt to collect Security Command Center Findings. |
-| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.metricNamespaceConfigs">MetricNamespaceConfigs</a></code> | <code>interface{}</code> | Configuration for a GCP metric namespace. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.metricNamespaceConfigs">MetricNamespaceConfigs</a></code> | <code>interface{}</code> | Configurations for GCP metric namespaces. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.monitoredResourceConfigs">MonitoredResourceConfigs</a></code> | <code>interface{}</code> | Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>interface{}</code> | When enabled, Datadog scans for all resources in your GCP environment. |
 
 ---
@@ -1143,7 +1187,7 @@ ClientEmail *string
 
 Your service account email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
 
 ---
 
@@ -1157,7 +1201,7 @@ AccountTags *[]*string
 
 Tags to be associated with GCP metrics and service checks from your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#account_tags IntegrationGcpSts#account_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#account_tags IntegrationGcpSts#account_tags}
 
 ---
 
@@ -1171,7 +1215,7 @@ Automute interface{}
 
 Silence monitors for expected GCE instance shutdowns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
 
 ---
 
@@ -1183,9 +1227,11 @@ CloudRunRevisionFilters *[]*string
 
 - *Type:* *[]*string
 
-Tags to filter which Cloud Run revisions are imported into Datadog. Only revisions that meet specified criteria are monitored.
+List of filters to limit the Cloud Run revisions that are pulled into Datadog by using tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#cloud_run_revision_filters IntegrationGcpSts#cloud_run_revision_filters}
+Only Cloud Run revision resources that apply to specified filters are imported into Datadog.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#cloud_run_revision_filters IntegrationGcpSts#cloud_run_revision_filters}
 
 ---
 
@@ -1197,9 +1243,11 @@ HostFilters *[]*string
 
 - *Type:* *[]*string
 
-Your Host Filters.
+List of filters to limit the VM instances that are pulled into Datadog by using tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
+Only VM instance resources that apply to specified filters are imported into Datadog.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
 
 ---
 
@@ -1215,7 +1263,7 @@ Whether Datadog collects cloud security posture management resources from your G
 
 If enabled, requires `resource_collection_enabled` to also be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
 
 ---
 
@@ -1229,7 +1277,7 @@ IsPerProjectQuotaEnabled interface{}
 
 When enabled, Datadog includes the `X-Goog-User-Project` header to attribute Google Cloud billing and quota usage to the monitored project instead of the default service account project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#is_per_project_quota_enabled IntegrationGcpSts#is_per_project_quota_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#is_per_project_quota_enabled IntegrationGcpSts#is_per_project_quota_enabled}
 
 ---
 
@@ -1243,7 +1291,7 @@ IsResourceChangeCollectionEnabled interface{}
 
 When enabled, Datadog scans for all resource change data in your Google Cloud environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#is_resource_change_collection_enabled IntegrationGcpSts#is_resource_change_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#is_resource_change_collection_enabled IntegrationGcpSts#is_resource_change_collection_enabled}
 
 ---
 
@@ -1259,7 +1307,7 @@ When enabled, Datadog will attempt to collect Security Command Center Findings.
 
 Note: This requires additional permissions on the service account. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#is_security_command_center_enabled IntegrationGcpSts#is_security_command_center_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#is_security_command_center_enabled IntegrationGcpSts#is_security_command_center_enabled}
 
 ---
 
@@ -1271,9 +1319,23 @@ MetricNamespaceConfigs interface{}
 
 - *Type:* interface{}
 
-Configuration for a GCP metric namespace.
+Configurations for GCP metric namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#metric_namespace_configs IntegrationGcpSts#metric_namespace_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#metric_namespace_configs IntegrationGcpSts#metric_namespace_configs}
+
+---
+
+##### `MonitoredResourceConfigs`<sup>Optional</sup> <a name="MonitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.monitoredResourceConfigs"></a>
+
+```go
+MonitoredResourceConfigs interface{}
+```
+
+- *Type:* interface{}
+
+Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#monitored_resource_configs IntegrationGcpSts#monitored_resource_configs}
 
 ---
 
@@ -1287,7 +1349,7 @@ ResourceCollectionEnabled interface{}
 
 When enabled, Datadog scans for all resources in your GCP environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#resource_collection_enabled IntegrationGcpSts#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#resource_collection_enabled IntegrationGcpSts#resource_collection_enabled}
 
 ---
 
@@ -1308,8 +1370,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}. |
-| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}. |
 
 ---
 
@@ -1321,7 +1383,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}.
 
 ---
 
@@ -1333,10 +1395,56 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### IntegrationGcpStsMonitoredResourceConfigs <a name="IntegrationGcpStsMonitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+
+&integrationgcpsts.IntegrationGcpStsMonitoredResourceConfigs {
+	Filters: *[]*string,
+	Type: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.property.filters">Filters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#type IntegrationGcpSts#type}. |
+
+---
+
+##### `Filters`<sup>Optional</sup> <a name="Filters" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.property.filters"></a>
+
+```go
+Filters *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}.
+
+---
+
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.property.type"></a>
+
+```go
+Type *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp_sts#type IntegrationGcpSts#type}.
 
 ---
 
@@ -1817,6 +1925,491 @@ func Id() *string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### IntegrationGcpStsMonitoredResourceConfigsList <a name="IntegrationGcpStsMonitoredResourceConfigsList" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+
+integrationgcpsts.NewIntegrationGcpStsMonitoredResourceConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationGcpStsMonitoredResourceConfigsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.get"></a>
+
+```go
+func Get(index *f64) IntegrationGcpStsMonitoredResourceConfigsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### IntegrationGcpStsMonitoredResourceConfigsOutputReference <a name="IntegrationGcpStsMonitoredResourceConfigsOutputReference" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+
+integrationgcpsts.NewIntegrationGcpStsMonitoredResourceConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationGcpStsMonitoredResourceConfigsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.resetFilters">ResetFilters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.resetType">ResetType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetFilters` <a name="ResetFilters" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.resetFilters"></a>
+
+```go
+func ResetFilters()
+```
+
+##### `ResetType` <a name="ResetType" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.resetType"></a>
+
+```go
+func ResetType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.filtersInput">FiltersInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.filters">Filters</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FiltersInput`<sup>Optional</sup> <a name="FiltersInput" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.filtersInput"></a>
+
+```go
+func FiltersInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.typeInput"></a>
+
+```go
+func TypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Filters`<sup>Required</sup> <a name="Filters" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.filters"></a>
+
+```go
+func Filters() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.type"></a>
+
+```go
+func Type() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

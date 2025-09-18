@@ -4,7 +4,7 @@
 
 ### IntegrationGcp <a name="IntegrationGcp" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp datadog_integration_gcp}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp datadog_integration_gcp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp.Initializer"></a>
 
@@ -73,12 +73,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.putMonitoredResourceConfigs">putMonitoredResourceConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetAutomute">resetAutomute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetCloudRunRevisionFilters">resetCloudRunRevisionFilters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetCspmResourceCollectionEnabled">resetCspmResourceCollectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetHostFilters">resetHostFilters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetIsResourceChangeCollectionEnabled">resetIsResourceChangeCollectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetIsSecurityCommandCenterEnabled">resetIsSecurityCommandCenterEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetMonitoredResourceConfigs">resetMonitoredResourceConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetResourceCollectionEnabled">resetResourceCollectionEnabled</a></code> | *No description.* |
 
 ---
@@ -371,6 +373,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putMonitoredResourceConfigs` <a name="putMonitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp.putMonitoredResourceConfigs"></a>
+
+```typescript
+public putMonitoredResourceConfigs(value: IResolvable | IntegrationGcpMonitoredResourceConfigs[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp.putMonitoredResourceConfigs.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs">IntegrationGcpMonitoredResourceConfigs</a>[]
+
+---
+
 ##### `resetAutomute` <a name="resetAutomute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetAutomute"></a>
 
 ```typescript
@@ -405,6 +419,12 @@ public resetIsResourceChangeCollectionEnabled(): void
 
 ```typescript
 public resetIsSecurityCommandCenterEnabled(): void
+```
+
+##### `resetMonitoredResourceConfigs` <a name="resetMonitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetMonitoredResourceConfigs"></a>
+
+```typescript
+public resetMonitoredResourceConfigs(): void
 ```
 
 ##### `resetResourceCollectionEnabled` <a name="resetResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp.resetResourceCollectionEnabled"></a>
@@ -516,7 +536,7 @@ The construct id used in the generated config for the IntegrationGcp to import.
 
 The id of the existing IntegrationGcp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -547,6 +567,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.monitoredResourceConfigs">monitoredResourceConfigs</a></code> | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList">IntegrationGcpMonitoredResourceConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.automuteInput">automuteInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.clientEmailInput">clientEmailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.clientIdInput">clientIdInput</a></code> | <code>string</code> | *No description.* |
@@ -555,6 +576,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.hostFiltersInput">hostFiltersInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.isResourceChangeCollectionEnabledInput">isResourceChangeCollectionEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.isSecurityCommandCenterEnabledInput">isSecurityCommandCenterEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.monitoredResourceConfigsInput">monitoredResourceConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs">IntegrationGcpMonitoredResourceConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.privateKeyIdInput">privateKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.privateKeyInput">privateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
@@ -726,6 +748,16 @@ public readonly id: string;
 
 ---
 
+##### `monitoredResourceConfigs`<sup>Required</sup> <a name="monitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.monitoredResourceConfigs"></a>
+
+```typescript
+public readonly monitoredResourceConfigs: IntegrationGcpMonitoredResourceConfigsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList">IntegrationGcpMonitoredResourceConfigsList</a>
+
+---
+
 ##### `automuteInput`<sup>Optional</sup> <a name="automuteInput" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.automuteInput"></a>
 
 ```typescript
@@ -803,6 +835,16 @@ public readonly isSecurityCommandCenterEnabledInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `monitoredResourceConfigsInput`<sup>Optional</sup> <a name="monitoredResourceConfigsInput" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcp.property.monitoredResourceConfigsInput"></a>
+
+```typescript
+public readonly monitoredResourceConfigsInput: IResolvable | IntegrationGcpMonitoredResourceConfigs[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs">IntegrationGcpMonitoredResourceConfigs</a>[]
 
 ---
 
@@ -1013,11 +1055,12 @@ const integrationGcpConfig: integrationGcp.IntegrationGcpConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.privateKeyId">privateKeyId</a></code> | <code>string</code> | Your private key ID found in your JSON service account key. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.projectId">projectId</a></code> | <code>string</code> | Your Google Cloud project ID found in your JSON service account key. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.automute">automute</a></code> | <code>boolean \| cdktf.IResolvable</code> | Silence monitors for expected GCE instance shutdowns. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.cloudRunRevisionFilters">cloudRunRevisionFilters</a></code> | <code>string[]</code> | Tags to filter which Cloud Run revisions are imported into Datadog. Only revisions that meet specified criteria are monitored. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.cloudRunRevisionFilters">cloudRunRevisionFilters</a></code> | <code>string[]</code> | List of filters to limit the Cloud Run revisions that are pulled into Datadog by using tags. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.cspmResourceCollectionEnabled">cspmResourceCollectionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Datadog collects cloud security posture management resources from your GCP project. |
-| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.hostFilters">hostFilters</a></code> | <code>string</code> | Limit the GCE instances that are pulled into Datadog by using tags. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.hostFilters">hostFilters</a></code> | <code>string</code> | List of filters to limit the VM instances that are pulled into Datadog by using tags. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.isResourceChangeCollectionEnabled">isResourceChangeCollectionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, Datadog scans for all resource change data in your Google Cloud environment. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.isSecurityCommandCenterEnabled">isSecurityCommandCenterEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, Datadog will attempt to collect Security Command Center Findings. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.monitoredResourceConfigs">monitoredResourceConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs">IntegrationGcpMonitoredResourceConfigs</a>[]</code> | Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.resourceCollectionEnabled">resourceCollectionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, Datadog scans for all resources in your GCP environment. |
 
 ---
@@ -1102,7 +1145,7 @@ public readonly clientEmail: string;
 
 Your email found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
 
 ---
 
@@ -1116,7 +1159,7 @@ public readonly clientId: string;
 
 Your ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
 
 ---
 
@@ -1130,7 +1173,7 @@ public readonly privateKey: string;
 
 Your private key name found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
 
 ---
 
@@ -1144,7 +1187,7 @@ public readonly privateKeyId: string;
 
 Your private key ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
 
 ---
 
@@ -1158,7 +1201,7 @@ public readonly projectId: string;
 
 Your Google Cloud project ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
 
 ---
 
@@ -1172,7 +1215,7 @@ public readonly automute: boolean | IResolvable;
 
 Silence monitors for expected GCE instance shutdowns. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
 
 ---
 
@@ -1184,9 +1227,11 @@ public readonly cloudRunRevisionFilters: string[];
 
 - *Type:* string[]
 
-Tags to filter which Cloud Run revisions are imported into Datadog. Only revisions that meet specified criteria are monitored.
+List of filters to limit the Cloud Run revisions that are pulled into Datadog by using tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
+Only Cloud Run revision resources that apply to specified filters are imported into Datadog.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
 
 ---
 
@@ -1202,7 +1247,7 @@ Whether Datadog collects cloud security posture management resources from your G
 
 If enabled, requires `resource_collection_enabled` to also be enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
 
 ---
 
@@ -1214,11 +1259,11 @@ public readonly hostFilters: string;
 
 - *Type:* string
 
-Limit the GCE instances that are pulled into Datadog by using tags.
+List of filters to limit the VM instances that are pulled into Datadog by using tags.
 
-Only hosts that match one of the defined tags are imported into Datadog. Defaults to `""`.
+Only VM instance resources that apply to specified filters are imported into Datadog. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
 
 ---
 
@@ -1232,7 +1277,7 @@ public readonly isResourceChangeCollectionEnabled: boolean | IResolvable;
 
 When enabled, Datadog scans for all resource change data in your Google Cloud environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
 
 ---
 
@@ -1248,7 +1293,21 @@ When enabled, Datadog will attempt to collect Security Command Center Findings.
 
 Note: This requires additional permissions on the service account. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
+
+---
+
+##### `monitoredResourceConfigs`<sup>Optional</sup> <a name="monitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig.property.monitoredResourceConfigs"></a>
+
+```typescript
+public readonly monitoredResourceConfigs: IResolvable | IntegrationGcpMonitoredResourceConfigs[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs">IntegrationGcpMonitoredResourceConfigs</a>[]
+
+Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#monitored_resource_configs IntegrationGcp#monitored_resource_configs}
 
 ---
 
@@ -1262,7 +1321,536 @@ public readonly resourceCollectionEnabled: boolean | IResolvable;
 
 When enabled, Datadog scans for all resources in your GCP environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
+
+---
+
+### IntegrationGcpMonitoredResourceConfigs <a name="IntegrationGcpMonitoredResourceConfigs" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.Initializer"></a>
+
+```typescript
+import { integrationGcp } from '@cdktf/provider-datadog'
+
+const integrationGcpMonitoredResourceConfigs: integrationGcp.IntegrationGcpMonitoredResourceConfigs = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.filters">filters</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#type IntegrationGcp#type}. |
+
+---
+
+##### `filters`<sup>Optional</sup> <a name="filters" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.filters"></a>
+
+```typescript
+public readonly filters: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}.
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/integration_gcp#type IntegrationGcp#type}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### IntegrationGcpMonitoredResourceConfigsList <a name="IntegrationGcpMonitoredResourceConfigsList" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.Initializer"></a>
+
+```typescript
+import { integrationGcp } from '@cdktf/provider-datadog'
+
+new integrationGcp.IntegrationGcpMonitoredResourceConfigsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.get"></a>
+
+```typescript
+public get(index: number): IntegrationGcpMonitoredResourceConfigsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs">IntegrationGcpMonitoredResourceConfigs</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | IntegrationGcpMonitoredResourceConfigs[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs">IntegrationGcpMonitoredResourceConfigs</a>[]
+
+---
+
+
+### IntegrationGcpMonitoredResourceConfigsOutputReference <a name="IntegrationGcpMonitoredResourceConfigsOutputReference" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer"></a>
+
+```typescript
+import { integrationGcp } from '@cdktf/provider-datadog'
+
+new integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.resetFilters">resetFilters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.resetType">resetType</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetFilters` <a name="resetFilters" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.resetFilters"></a>
+
+```typescript
+public resetFilters(): void
+```
+
+##### `resetType` <a name="resetType" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.resetType"></a>
+
+```typescript
+public resetType(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.filtersInput">filtersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.filters">filters</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs">IntegrationGcpMonitoredResourceConfigs</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `filtersInput`<sup>Optional</sup> <a name="filtersInput" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.filtersInput"></a>
+
+```typescript
+public readonly filtersInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `filters`<sup>Required</sup> <a name="filters" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.filters"></a>
+
+```typescript
+public readonly filters: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | IntegrationGcpMonitoredResourceConfigs;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs">IntegrationGcpMonitoredResourceConfigs</a>
 
 ---
 
