@@ -30,6 +30,8 @@ Object.defineProperty(exports, 'dataset', { get: function () { return require('.
 Object.defineProperty(exports, 'domainAllowlist', { get: function () { return require('./domain-allowlist'); } });
 Object.defineProperty(exports, 'downtime', { get: function () { return require('./downtime'); } });
 Object.defineProperty(exports, 'downtimeSchedule', { get: function () { return require('./downtime-schedule'); } });
+Object.defineProperty(exports, 'incidentNotificationRule', { get: function () { return require('./incident-notification-rule'); } });
+Object.defineProperty(exports, 'incidentNotificationTemplate', { get: function () { return require('./incident-notification-template'); } });
 Object.defineProperty(exports, 'incidentType', { get: function () { return require('./incident-type'); } });
 Object.defineProperty(exports, 'integrationAws', { get: function () { return require('./integration-aws'); } });
 Object.defineProperty(exports, 'integrationAwsAccount', { get: function () { return require('./integration-aws-account'); } });
@@ -122,6 +124,8 @@ Object.defineProperty(exports, 'dataDatadogCsmThreatsPolicies', { get: function 
 Object.defineProperty(exports, 'dataDatadogDashboard', { get: function () { return require('./data-datadog-dashboard'); } });
 Object.defineProperty(exports, 'dataDatadogDashboardList', { get: function () { return require('./data-datadog-dashboard-list'); } });
 Object.defineProperty(exports, 'dataDatadogHosts', { get: function () { return require('./data-datadog-hosts'); } });
+Object.defineProperty(exports, 'dataDatadogIncidentNotificationRule', { get: function () { return require('./data-datadog-incident-notification-rule'); } });
+Object.defineProperty(exports, 'dataDatadogIncidentNotificationTemplate', { get: function () { return require('./data-datadog-incident-notification-template'); } });
 Object.defineProperty(exports, 'dataDatadogIncidentType', { get: function () { return require('./data-datadog-incident-type'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableLogsServices', { get: function () { return require('./data-datadog-integration-aws-available-logs-services'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableNamespaces', { get: function () { return require('./data-datadog-integration-aws-available-namespaces'); } });

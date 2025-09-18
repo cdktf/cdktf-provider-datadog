@@ -30,6 +30,8 @@ export * as dataset from './dataset';
 export * as domainAllowlist from './domain-allowlist';
 export * as downtime from './downtime';
 export * as downtimeSchedule from './downtime-schedule';
+export * as incidentNotificationRule from './incident-notification-rule';
+export * as incidentNotificationTemplate from './incident-notification-template';
 export * as incidentType from './incident-type';
 export * as integrationAws from './integration-aws';
 export * as integrationAwsAccount from './integration-aws-account';
@@ -122,6 +124,8 @@ export * as dataDatadogCsmThreatsPolicies from './data-datadog-csm-threats-polic
 export * as dataDatadogDashboard from './data-datadog-dashboard';
 export * as dataDatadogDashboardList from './data-datadog-dashboard-list';
 export * as dataDatadogHosts from './data-datadog-hosts';
+export * as dataDatadogIncidentNotificationRule from './data-datadog-incident-notification-rule';
+export * as dataDatadogIncidentNotificationTemplate from './data-datadog-incident-notification-template';
 export * as dataDatadogIncidentType from './data-datadog-incident-type';
 export * as dataDatadogIntegrationAwsAvailableLogsServices from './data-datadog-integration-aws-available-logs-services';
 export * as dataDatadogIntegrationAwsAvailableNamespaces from './data-datadog-integration-aws-available-namespaces';
