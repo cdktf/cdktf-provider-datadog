@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   /**
   * Whether the rule is enabled. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Additional grouping to perform on top of the query grouping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#group_signals_by SecurityMonitoringRule#group_signals_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#group_signals_by SecurityMonitoringRule#group_signals_by}
   */
   readonly groupSignalsBy?: string[];
   /**
   * Whether the notifications include the triggering group-by values in their title. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#has_extended_title SecurityMonitoringRule#has_extended_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#has_extended_title SecurityMonitoringRule#has_extended_title}
   */
   readonly hasExtendedTitle?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,81 +40,240 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   /**
   * Message for generated signals.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#message SecurityMonitoringRule#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#message SecurityMonitoringRule#message}
   */
   readonly message: string;
   /**
   * The name of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
   */
   readonly name: string;
   /**
   * Tags for generated signals. Note: if default tags are present at provider level, they will be added to this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#tags SecurityMonitoringRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#tags SecurityMonitoringRule#tags}
   */
   readonly tags?: string[];
   /**
   * The rule type. Valid values are `application_security`, `log_detection`, `workload_security`, `signal_correlation`. Defaults to `"log_detection"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
   */
   readonly type?: string;
   /**
   * Whether or not to validate the Rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#validate SecurityMonitoringRule#validate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#validate SecurityMonitoringRule#validate}
   */
   readonly validate?: boolean | cdktf.IResolvable;
   /**
+  * calculated_field block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#calculated_field SecurityMonitoringRule#calculated_field}
+  */
+  readonly calculatedField?: SecurityMonitoringRuleCalculatedField[] | cdktf.IResolvable;
+  /**
   * case block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#case SecurityMonitoringRule#case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#case SecurityMonitoringRule#case}
   */
   readonly case?: SecurityMonitoringRuleCase[] | cdktf.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#filter SecurityMonitoringRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#filter SecurityMonitoringRule#filter}
   */
   readonly filter?: SecurityMonitoringRuleFilter[] | cdktf.IResolvable;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
   */
   readonly options?: SecurityMonitoringRuleOptions;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
   readonly query?: SecurityMonitoringRuleQuery[] | cdktf.IResolvable;
   /**
   * reference_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#reference_tables SecurityMonitoringRule#reference_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#reference_tables SecurityMonitoringRule#reference_tables}
   */
   readonly referenceTables?: SecurityMonitoringRuleReferenceTables[] | cdktf.IResolvable;
   /**
+  * scheduling_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#scheduling_options SecurityMonitoringRule#scheduling_options}
+  */
+  readonly schedulingOptions?: SecurityMonitoringRuleSchedulingOptions;
+  /**
   * signal_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
   */
   readonly signalQuery?: SecurityMonitoringRuleSignalQuery[] | cdktf.IResolvable;
   /**
   * third_party_case block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#third_party_case SecurityMonitoringRule#third_party_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#third_party_case SecurityMonitoringRule#third_party_case}
   */
   readonly thirdPartyCase?: SecurityMonitoringRuleThirdPartyCase[] | cdktf.IResolvable;
+}
+export interface SecurityMonitoringRuleCalculatedField {
+  /**
+  * Expression.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#expression SecurityMonitoringRule#expression}
+  */
+  readonly expression: string;
+  /**
+  * Field name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+  */
+  readonly name: string;
+}
+
+export function securityMonitoringRuleCalculatedFieldToTerraform(struct?: SecurityMonitoringRuleCalculatedField | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    expression: cdktf.stringToTerraform(struct!.expression),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function securityMonitoringRuleCalculatedFieldToHclTerraform(struct?: SecurityMonitoringRuleCalculatedField | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SecurityMonitoringRuleCalculatedFieldOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SecurityMonitoringRuleCalculatedField | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SecurityMonitoringRuleCalculatedField | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._expression = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._expression = value.expression;
+      this._name = value.name;
+    }
+  }
+
+  // expression - computed: false, optional: false, required: true
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class SecurityMonitoringRuleCalculatedFieldList extends cdktf.ComplexList {
+  public internalValue? : SecurityMonitoringRuleCalculatedField[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SecurityMonitoringRuleCalculatedFieldOutputReference {
+    return new SecurityMonitoringRuleCalculatedFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface SecurityMonitoringRuleCaseActionOptions {
   /**
   * Duration of the action in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#duration SecurityMonitoringRule#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#duration SecurityMonitoringRule#duration}
   */
   readonly duration?: number;
 }
@@ -200,13 +359,13 @@ export interface SecurityMonitoringRuleCaseAction {
   /**
   * Type of action to perform when the case triggers. Valid values are `block_ip`, `block_user`, `user_behavior`, `flag_ip`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
   */
   readonly type: string;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
   */
   readonly options?: SecurityMonitoringRuleCaseActionOptions;
 }
@@ -350,31 +509,31 @@ export interface SecurityMonitoringRuleCase {
   /**
   * A rule case contains logical operations (`>`,`>=`, `&&`, `||`) to determine if a signal should be generated based on the event counts in the previously defined queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#condition SecurityMonitoringRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#condition SecurityMonitoringRule#condition}
   */
   readonly condition?: string;
   /**
   * Name of the case.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
   */
   readonly name?: string;
   /**
   * Notification targets for each rule case.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#notifications SecurityMonitoringRule#notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#notifications SecurityMonitoringRule#notifications}
   */
   readonly notifications?: string[];
   /**
   * Severity of the Security Signal. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#status SecurityMonitoringRule#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#status SecurityMonitoringRule#status}
   */
   readonly status: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#action SecurityMonitoringRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#action SecurityMonitoringRule#action}
   */
   readonly action?: SecurityMonitoringRuleCaseAction[] | cdktf.IResolvable;
 }
@@ -605,13 +764,13 @@ export interface SecurityMonitoringRuleFilter {
   /**
   * The type of filtering action. Valid values are `require`, `suppress`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#action SecurityMonitoringRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#action SecurityMonitoringRule#action}
   */
   readonly action: string;
   /**
   * Query for selecting logs to apply the filtering action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
   readonly query: string;
 }
@@ -752,7 +911,7 @@ export interface SecurityMonitoringRuleOptionsImpossibleTravelOptions {
   /**
   * If true, signals are suppressed for the first 24 hours. During that time, Datadog learns the user's regular access locations. This can be helpful to reduce noise and infer VPN usage or credentialed API access. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#baseline_user_locations SecurityMonitoringRule#baseline_user_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#baseline_user_locations SecurityMonitoringRule#baseline_user_locations}
   */
   readonly baselineUserLocations?: boolean | cdktf.IResolvable;
 }
@@ -838,25 +997,25 @@ export interface SecurityMonitoringRuleOptionsNewValueOptions {
   /**
   * The duration in days after which a learned value is forgotten. Valid values are `1`, `2`, `7`, `14`, `21`, `28`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#forget_after SecurityMonitoringRule#forget_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#forget_after SecurityMonitoringRule#forget_after}
   */
   readonly forgetAfter: number;
   /**
   * The duration in days during which values are learned, and after which signals will be generated for values that weren't learned. If set to 0, a signal will be generated for all new values after the first value is learned. Valid values are `0`, `1`, `7`. Defaults to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
   */
   readonly learningDuration?: number;
   /**
   * The learning method used to determine when signals should be generated for values that weren't learned. Valid values are `duration`, `threshold`. Defaults to `"duration"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#learning_method SecurityMonitoringRule#learning_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#learning_method SecurityMonitoringRule#learning_method}
   */
   readonly learningMethod?: string;
   /**
   * A number of occurrences after which signals are generated for values that weren't learned. Valid values are `0`, `1`. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#learning_threshold SecurityMonitoringRule#learning_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#learning_threshold SecurityMonitoringRule#learning_threshold}
   */
   readonly learningThreshold?: number;
 }
@@ -1026,13 +1185,13 @@ export interface SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQuery {
   /**
   * Fields to group by. If empty, each log triggers a signal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#group_by_fields SecurityMonitoringRule#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#group_by_fields SecurityMonitoringRule#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
   * Query to filter logs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
   readonly query: string;
 }
@@ -1176,25 +1335,25 @@ export interface SecurityMonitoringRuleOptionsThirdPartyRuleOptions {
   /**
   * Notification targets for the default rule case, when none of the third-party cases match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#default_notifications SecurityMonitoringRule#default_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#default_notifications SecurityMonitoringRule#default_notifications}
   */
   readonly defaultNotifications?: string[];
   /**
   * Severity of the default rule case, when none of the third-party cases match. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#default_status SecurityMonitoringRule#default_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#default_status SecurityMonitoringRule#default_status}
   */
   readonly defaultStatus: string;
   /**
   * A template for the signal title; if omitted, the title is generated based on the case name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#signal_title_template SecurityMonitoringRule#signal_title_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#signal_title_template SecurityMonitoringRule#signal_title_template}
   */
   readonly signalTitleTemplate?: string;
   /**
   * root_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#root_query SecurityMonitoringRule#root_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#root_query SecurityMonitoringRule#root_query}
   */
   readonly rootQuery: SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQuery[] | cdktf.IResolvable;
 }
@@ -1361,49 +1520,49 @@ export interface SecurityMonitoringRuleOptions {
   /**
   * If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise. The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#decrease_criticality_based_on_env SecurityMonitoringRule#decrease_criticality_based_on_env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#decrease_criticality_based_on_env SecurityMonitoringRule#decrease_criticality_based_on_env}
   */
   readonly decreaseCriticalityBasedOnEnv?: boolean | cdktf.IResolvable;
   /**
   * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`, `anomaly_threshold`. Defaults to `"threshold"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
   */
   readonly detectionMethod?: string;
   /**
   * A time window is specified to match when at least one of the cases matches true. This is a sliding window and evaluates in real time. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`, `43200`, `86400`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#evaluation_window SecurityMonitoringRule#evaluation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#evaluation_window SecurityMonitoringRule#evaluation_window}
   */
   readonly evaluationWindow?: number;
   /**
   * Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window (in seconds). Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`, `43200`, `86400`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#keep_alive SecurityMonitoringRule#keep_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#keep_alive SecurityMonitoringRule#keep_alive}
   */
   readonly keepAlive?: number;
   /**
   * A signal will “close” regardless of the query being matched once the time exceeds the maximum duration (in seconds). This time is calculated from the first seen timestamp. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`, `43200`, `86400`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#max_signal_duration SecurityMonitoringRule#max_signal_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#max_signal_duration SecurityMonitoringRule#max_signal_duration}
   */
   readonly maxSignalDuration?: number;
   /**
   * impossible_travel_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#impossible_travel_options SecurityMonitoringRule#impossible_travel_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#impossible_travel_options SecurityMonitoringRule#impossible_travel_options}
   */
   readonly impossibleTravelOptions?: SecurityMonitoringRuleOptionsImpossibleTravelOptions;
   /**
   * new_value_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#new_value_options SecurityMonitoringRule#new_value_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#new_value_options SecurityMonitoringRule#new_value_options}
   */
   readonly newValueOptions?: SecurityMonitoringRuleOptionsNewValueOptions;
   /**
   * third_party_rule_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#third_party_rule_options SecurityMonitoringRule#third_party_rule_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#third_party_rule_options SecurityMonitoringRule#third_party_rule_options}
   */
   readonly thirdPartyRuleOptions?: SecurityMonitoringRuleOptionsThirdPartyRuleOptions;
 }
@@ -1692,13 +1851,13 @@ export interface SecurityMonitoringRuleQueryAgentRule {
   /**
   * **Deprecated**. It won't be applied anymore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#agent_rule_id SecurityMonitoringRule#agent_rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#agent_rule_id SecurityMonitoringRule#agent_rule_id}
   */
   readonly agentRuleId: string;
   /**
   * **Deprecated**. It won't be applied anymore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#expression SecurityMonitoringRule#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#expression SecurityMonitoringRule#expression}
   */
   readonly expression: string;
 }
@@ -1839,55 +1998,67 @@ export interface SecurityMonitoringRuleQuery {
   /**
   * The aggregation type. For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`. Defaults to `"count"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
   */
   readonly aggregation?: string;
   /**
   * Source of events. Valid values are `logs`, `audit`, `app_sec_spans`, `spans`, `security_runtime`, `network`, `events`. Defaults to `"logs"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#data_source SecurityMonitoringRule#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#data_source SecurityMonitoringRule#data_source}
   */
   readonly dataSource?: string;
   /**
   * Field for which the cardinality is measured. Sent as an array.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#distinct_fields SecurityMonitoringRule#distinct_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#distinct_fields SecurityMonitoringRule#distinct_fields}
   */
   readonly distinctFields?: string[];
   /**
   * Fields to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#group_by_fields SecurityMonitoringRule#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#group_by_fields SecurityMonitoringRule#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
+  * When false, events without a group-by value are ignored by the rule. When true, events with missing group-by fields are processed with `N/A`, replacing the missing values. Defaults to `false`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#has_optional_group_by_fields SecurityMonitoringRule#has_optional_group_by_fields}
+  */
+  readonly hasOptionalGroupByFields?: boolean | cdktf.IResolvable;
+  /**
+  * List of indexes to run the query on when the data source is `logs`. Supports only one element. Used only for scheduled rules (in other words, when `scheduling_options` is defined).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#indexes SecurityMonitoringRule#indexes}
+  */
+  readonly indexes?: string[];
+  /**
   * The target field to aggregate over when using the `sum`, `max`, or `geo_data` aggregations. **Deprecated.** Configure `metrics` instead. This attribute will be removed in the next major version of the provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#metric SecurityMonitoringRule#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#metric SecurityMonitoringRule#metric}
   */
   readonly metric?: string;
   /**
   * Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`, or `new_value` aggregations. The `sum`, `max`, and `geo_data` aggregations only accept one value in this list, whereas the `new_value` aggregation accepts up to five values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#metrics SecurityMonitoringRule#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#metrics SecurityMonitoringRule#metrics}
   */
   readonly metrics?: string[];
   /**
   * Name of the query. Not compatible with `new_value` aggregations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
   */
   readonly name?: string;
   /**
   * Query to run on logs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
   readonly query: string;
   /**
   * agent_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#agent_rule SecurityMonitoringRule#agent_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#agent_rule SecurityMonitoringRule#agent_rule}
   */
   readonly agentRule?: SecurityMonitoringRuleQueryAgentRule[] | cdktf.IResolvable;
 }
@@ -1902,6 +2073,8 @@ export function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitori
     data_source: cdktf.stringToTerraform(struct!.dataSource),
     distinct_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.distinctFields),
     group_by_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupByFields),
+    has_optional_group_by_fields: cdktf.booleanToTerraform(struct!.hasOptionalGroupByFields),
+    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     metric: cdktf.stringToTerraform(struct!.metric),
     metrics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.metrics),
     name: cdktf.stringToTerraform(struct!.name),
@@ -1937,6 +2110,18 @@ export function securityMonitoringRuleQueryToHclTerraform(struct?: SecurityMonit
     },
     group_by_fields: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupByFields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    has_optional_group_by_fields: {
+      value: cdktf.booleanToHclTerraform(struct!.hasOptionalGroupByFields),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    indexes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2013,6 +2198,14 @@ export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.groupByFields = this._groupByFields;
     }
+    if (this._hasOptionalGroupByFields !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hasOptionalGroupByFields = this._hasOptionalGroupByFields;
+    }
+    if (this._indexes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.indexes = this._indexes;
+    }
     if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
@@ -2044,6 +2237,8 @@ export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObj
       this._dataSource = undefined;
       this._distinctFields = undefined;
       this._groupByFields = undefined;
+      this._hasOptionalGroupByFields = undefined;
+      this._indexes = undefined;
       this._metric = undefined;
       this._metrics = undefined;
       this._name = undefined;
@@ -2061,6 +2256,8 @@ export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObj
       this._dataSource = value.dataSource;
       this._distinctFields = value.distinctFields;
       this._groupByFields = value.groupByFields;
+      this._hasOptionalGroupByFields = value.hasOptionalGroupByFields;
+      this._indexes = value.indexes;
       this._metric = value.metric;
       this._metrics = value.metrics;
       this._name = value.name;
@@ -2131,6 +2328,38 @@ export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObj
   // Temporarily expose input value. Use with caution.
   public get groupByFieldsInput() {
     return this._groupByFields;
+  }
+
+  // has_optional_group_by_fields - computed: false, optional: true, required: false
+  private _hasOptionalGroupByFields?: boolean | cdktf.IResolvable; 
+  public get hasOptionalGroupByFields() {
+    return this.getBooleanAttribute('has_optional_group_by_fields');
+  }
+  public set hasOptionalGroupByFields(value: boolean | cdktf.IResolvable) {
+    this._hasOptionalGroupByFields = value;
+  }
+  public resetHasOptionalGroupByFields() {
+    this._hasOptionalGroupByFields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hasOptionalGroupByFieldsInput() {
+    return this._hasOptionalGroupByFields;
+  }
+
+  // indexes - computed: false, optional: true, required: false
+  private _indexes?: string[]; 
+  public get indexes() {
+    return this.getListAttribute('indexes');
+  }
+  public set indexes(value: string[]) {
+    this._indexes = value;
+  }
+  public resetIndexes() {
+    this._indexes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indexesInput() {
+    return this._indexes;
   }
 
   // metric - computed: false, optional: true, required: false
@@ -2234,31 +2463,31 @@ export interface SecurityMonitoringRuleReferenceTables {
   /**
   * Whether to include or exclude logs that match the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#check_presence SecurityMonitoringRule#check_presence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#check_presence SecurityMonitoringRule#check_presence}
   */
   readonly checkPresence: boolean | cdktf.IResolvable;
   /**
   * The name of the column in the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#column_name SecurityMonitoringRule#column_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#column_name SecurityMonitoringRule#column_name}
   */
   readonly columnName: string;
   /**
   * The field in the log that should be matched against the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#log_field_path SecurityMonitoringRule#log_field_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#log_field_path SecurityMonitoringRule#log_field_path}
   */
   readonly logFieldPath: string;
   /**
   * The name of the query to filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#rule_query_name SecurityMonitoringRule#rule_query_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#rule_query_name SecurityMonitoringRule#rule_query_name}
   */
   readonly ruleQueryName: string;
   /**
   * The name of the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#table_name SecurityMonitoringRule#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#table_name SecurityMonitoringRule#table_name}
   */
   readonly tableName: string;
 }
@@ -2473,41 +2702,188 @@ export class SecurityMonitoringRuleReferenceTablesList extends cdktf.ComplexList
     return new SecurityMonitoringRuleReferenceTablesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface SecurityMonitoringRuleSchedulingOptions {
+  /**
+  * Schedule for the rule queries, written in RRULE syntax. See [RFC](https://icalendar.org/iCalendar-RFC-5545/3-8-5-3-recurrence-rule.html) for syntax reference.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#rrule SecurityMonitoringRule#rrule}
+  */
+  readonly rrule: string;
+  /**
+  * Start date for the schedule, in ISO 8601 format without timezone.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#start SecurityMonitoringRule#start}
+  */
+  readonly start: string;
+  /**
+  * Time zone of the start date, in the [tz database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#timezone SecurityMonitoringRule#timezone}
+  */
+  readonly timezone: string;
+}
+
+export function securityMonitoringRuleSchedulingOptionsToTerraform(struct?: SecurityMonitoringRuleSchedulingOptionsOutputReference | SecurityMonitoringRuleSchedulingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rrule: cdktf.stringToTerraform(struct!.rrule),
+    start: cdktf.stringToTerraform(struct!.start),
+    timezone: cdktf.stringToTerraform(struct!.timezone),
+  }
+}
+
+
+export function securityMonitoringRuleSchedulingOptionsToHclTerraform(struct?: SecurityMonitoringRuleSchedulingOptionsOutputReference | SecurityMonitoringRuleSchedulingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rrule: {
+      value: cdktf.stringToHclTerraform(struct!.rrule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timezone: {
+      value: cdktf.stringToHclTerraform(struct!.timezone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SecurityMonitoringRuleSchedulingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SecurityMonitoringRuleSchedulingOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rrule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rrule = this._rrule;
+    }
+    if (this._start !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.start = this._start;
+    }
+    if (this._timezone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timezone = this._timezone;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SecurityMonitoringRuleSchedulingOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._rrule = undefined;
+      this._start = undefined;
+      this._timezone = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._rrule = value.rrule;
+      this._start = value.start;
+      this._timezone = value.timezone;
+    }
+  }
+
+  // rrule - computed: false, optional: false, required: true
+  private _rrule?: string; 
+  public get rrule() {
+    return this.getStringAttribute('rrule');
+  }
+  public set rrule(value: string) {
+    this._rrule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rruleInput() {
+    return this._rrule;
+  }
+
+  // start - computed: false, optional: false, required: true
+  private _start?: string; 
+  public get start() {
+    return this.getStringAttribute('start');
+  }
+  public set start(value: string) {
+    this._start = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startInput() {
+    return this._start;
+  }
+
+  // timezone - computed: false, optional: false, required: true
+  private _timezone?: string; 
+  public get timezone() {
+    return this.getStringAttribute('timezone');
+  }
+  public set timezone(value: string) {
+    this._timezone = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timezoneInput() {
+    return this._timezone;
+  }
+}
 export interface SecurityMonitoringRuleSignalQuery {
   /**
   * The aggregation type. For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`. Defaults to `"event_count"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
   */
   readonly aggregation?: string;
   /**
   * Fields to correlate by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#correlated_by_fields SecurityMonitoringRule#correlated_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#correlated_by_fields SecurityMonitoringRule#correlated_by_fields}
   */
   readonly correlatedByFields?: string[];
   /**
   * Index of the rule query used to retrieve the correlated field. An empty string applies correlation on the non-projected per query attributes of the rule. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#correlated_query_index SecurityMonitoringRule#correlated_query_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#correlated_query_index SecurityMonitoringRule#correlated_query_index}
   */
   readonly correlatedQueryIndex?: string;
   /**
   * Default Rule ID of the signal to correlate. This value is READ-ONLY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#default_rule_id SecurityMonitoringRule#default_rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#default_rule_id SecurityMonitoringRule#default_rule_id}
   */
   readonly defaultRuleId?: string;
   /**
   * Name of the query. Not compatible with `new_value` aggregations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
   */
   readonly name?: string;
   /**
   * Rule ID of the signal to correlate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#rule_id SecurityMonitoringRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#rule_id SecurityMonitoringRule#rule_id}
   */
   readonly ruleId: string;
 }
@@ -2767,25 +3143,25 @@ export interface SecurityMonitoringRuleThirdPartyCase {
   /**
   * Name of the case.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
   */
   readonly name?: string;
   /**
   * Notification targets for each rule case.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#notifications SecurityMonitoringRule#notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#notifications SecurityMonitoringRule#notifications}
   */
   readonly notifications?: string[];
   /**
   * A query to associate a third-party event to this case.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
   readonly query?: string;
   /**
   * Severity of the Security Signal. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#status SecurityMonitoringRule#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#status SecurityMonitoringRule#status}
   */
   readonly status: string;
 }
@@ -2985,7 +3361,7 @@ export class SecurityMonitoringRuleThirdPartyCaseList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}
 */
 export class SecurityMonitoringRule extends cdktf.TerraformResource {
 
@@ -3001,7 +3377,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecurityMonitoringRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityMonitoringRule to import
-  * @param importFromId The id of the existing SecurityMonitoringRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityMonitoringRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityMonitoringRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3013,7 +3389,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3024,7 +3400,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.73.0',
+        providerVersion: '3.74.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -3044,11 +3420,13 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._type = config.type;
     this._validate = config.validate;
+    this._calculatedField.internalValue = config.calculatedField;
     this._case.internalValue = config.case;
     this._filter.internalValue = config.filter;
     this._options.internalValue = config.options;
     this._query.internalValue = config.query;
     this._referenceTables.internalValue = config.referenceTables;
+    this._schedulingOptions.internalValue = config.schedulingOptions;
     this._signalQuery.internalValue = config.signalQuery;
     this._thirdPartyCase.internalValue = config.thirdPartyCase;
   }
@@ -3195,6 +3573,22 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
     return this._validate;
   }
 
+  // calculated_field - computed: false, optional: true, required: false
+  private _calculatedField = new SecurityMonitoringRuleCalculatedFieldList(this, "calculated_field", false);
+  public get calculatedField() {
+    return this._calculatedField;
+  }
+  public putCalculatedField(value: SecurityMonitoringRuleCalculatedField[] | cdktf.IResolvable) {
+    this._calculatedField.internalValue = value;
+  }
+  public resetCalculatedField() {
+    this._calculatedField.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get calculatedFieldInput() {
+    return this._calculatedField.internalValue;
+  }
+
   // case - computed: false, optional: true, required: false
   private _case = new SecurityMonitoringRuleCaseList(this, "case", false);
   public get case() {
@@ -3275,6 +3669,22 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
     return this._referenceTables.internalValue;
   }
 
+  // scheduling_options - computed: false, optional: true, required: false
+  private _schedulingOptions = new SecurityMonitoringRuleSchedulingOptionsOutputReference(this, "scheduling_options");
+  public get schedulingOptions() {
+    return this._schedulingOptions;
+  }
+  public putSchedulingOptions(value: SecurityMonitoringRuleSchedulingOptions) {
+    this._schedulingOptions.internalValue = value;
+  }
+  public resetSchedulingOptions() {
+    this._schedulingOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulingOptionsInput() {
+    return this._schedulingOptions.internalValue;
+  }
+
   // signal_query - computed: false, optional: true, required: false
   private _signalQuery = new SecurityMonitoringRuleSignalQueryList(this, "signal_query", false);
   public get signalQuery() {
@@ -3322,11 +3732,13 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       type: cdktf.stringToTerraform(this._type),
       validate: cdktf.booleanToTerraform(this._validate),
+      calculated_field: cdktf.listMapper(securityMonitoringRuleCalculatedFieldToTerraform, true)(this._calculatedField.internalValue),
       case: cdktf.listMapper(securityMonitoringRuleCaseToTerraform, true)(this._case.internalValue),
       filter: cdktf.listMapper(securityMonitoringRuleFilterToTerraform, true)(this._filter.internalValue),
       options: securityMonitoringRuleOptionsToTerraform(this._options.internalValue),
       query: cdktf.listMapper(securityMonitoringRuleQueryToTerraform, true)(this._query.internalValue),
       reference_tables: cdktf.listMapper(securityMonitoringRuleReferenceTablesToTerraform, true)(this._referenceTables.internalValue),
+      scheduling_options: securityMonitoringRuleSchedulingOptionsToTerraform(this._schedulingOptions.internalValue),
       signal_query: cdktf.listMapper(securityMonitoringRuleSignalQueryToTerraform, true)(this._signalQuery.internalValue),
       third_party_case: cdktf.listMapper(securityMonitoringRuleThirdPartyCaseToTerraform, true)(this._thirdPartyCase.internalValue),
     };
@@ -3388,6 +3800,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      calculated_field: {
+        value: cdktf.listMapperHcl(securityMonitoringRuleCalculatedFieldToHclTerraform, true)(this._calculatedField.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringRuleCalculatedFieldList",
+      },
       case: {
         value: cdktf.listMapperHcl(securityMonitoringRuleCaseToHclTerraform, true)(this._case.internalValue),
         isBlock: true,
@@ -3417,6 +3835,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "SecurityMonitoringRuleReferenceTablesList",
+      },
+      scheduling_options: {
+        value: securityMonitoringRuleSchedulingOptionsToHclTerraform(this._schedulingOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityMonitoringRuleSchedulingOptionsList",
       },
       signal_query: {
         value: cdktf.listMapperHcl(securityMonitoringRuleSignalQueryToHclTerraform, true)(this._signalQuery.internalValue),

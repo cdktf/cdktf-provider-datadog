@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/csm_threats_policies
+// https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/csm_threats_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -116,7 +116,7 @@ export class DataDatadogCsmThreatsPoliciesPoliciesList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies}
 */
 export class DataDatadogCsmThreatsPolicies extends cdktf.TerraformDataSource {
 
@@ -132,7 +132,7 @@ export class DataDatadogCsmThreatsPolicies extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogCsmThreatsPolicies resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCsmThreatsPolicies to import
-  * @param importFromId The id of the existing DataDatadogCsmThreatsPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/csm_threats_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCsmThreatsPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/csm_threats_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCsmThreatsPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -144,7 +144,7 @@ export class DataDatadogCsmThreatsPolicies extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class DataDatadogCsmThreatsPolicies extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_csm_threats_policies',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.73.0',
+        providerVersion: '3.74.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

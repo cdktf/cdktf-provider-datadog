@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/security_monitoring_rules
+// https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/security_monitoring_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataDatadogSecurityMonitoringRulesConfig extends cdktf.Terrafor
   /**
   * Limit the search to default rules
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/security_monitoring_rules#default_only_filter DataDatadogSecurityMonitoringRules#default_only_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/security_monitoring_rules#default_only_filter DataDatadogSecurityMonitoringRules#default_only_filter}
   */
   readonly defaultOnlyFilter?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/security_monitoring_rules#id DataDatadogSecurityMonitoringRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/security_monitoring_rules#id DataDatadogSecurityMonitoringRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,21 +28,101 @@ export interface DataDatadogSecurityMonitoringRulesConfig extends cdktf.Terrafor
   /**
   * A rule name to limit the search
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/security_monitoring_rules#name_filter DataDatadogSecurityMonitoringRules#name_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/security_monitoring_rules#name_filter DataDatadogSecurityMonitoringRules#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * A list of tags to limit the search
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/security_monitoring_rules#tags_filter DataDatadogSecurityMonitoringRules#tags_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/security_monitoring_rules#tags_filter DataDatadogSecurityMonitoringRules#tags_filter}
   */
   readonly tagsFilter?: string[];
   /**
   * Limit the search to user rules
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/security_monitoring_rules#user_only_filter DataDatadogSecurityMonitoringRules#user_only_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/security_monitoring_rules#user_only_filter DataDatadogSecurityMonitoringRules#user_only_filter}
   */
   readonly userOnlyFilter?: boolean | cdktf.IResolvable;
+}
+export interface DataDatadogSecurityMonitoringRulesRulesCalculatedField {
+}
+
+export function dataDatadogSecurityMonitoringRulesRulesCalculatedFieldToTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesCalculatedField): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogSecurityMonitoringRulesRulesCalculatedFieldToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesCalculatedField): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogSecurityMonitoringRulesRulesCalculatedFieldOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogSecurityMonitoringRulesRulesCalculatedField | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogSecurityMonitoringRulesRulesCalculatedField | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // expression - computed: true, optional: false, required: false
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataDatadogSecurityMonitoringRulesRulesCalculatedFieldList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogSecurityMonitoringRulesRulesCalculatedFieldOutputReference {
+    return new DataDatadogSecurityMonitoringRulesRulesCalculatedFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataDatadogSecurityMonitoringRulesRulesCaseActionOptions {
 }
@@ -982,6 +1062,16 @@ export class DataDatadogSecurityMonitoringRulesRulesQueryOutputReference extends
     return this.getListAttribute('group_by_fields');
   }
 
+  // has_optional_group_by_fields - computed: true, optional: false, required: false
+  public get hasOptionalGroupByFields() {
+    return this.getBooleanAttribute('has_optional_group_by_fields');
+  }
+
+  // indexes - computed: true, optional: false, required: false
+  public get indexes() {
+    return this.getListAttribute('indexes');
+  }
+
   // metric - computed: true, optional: false, required: false
   public get metric() {
     return this.getStringAttribute('metric');
@@ -1114,6 +1204,91 @@ export class DataDatadogSecurityMonitoringRulesRulesReferenceTablesList extends 
   */
   public get(index: number): DataDatadogSecurityMonitoringRulesRulesReferenceTablesOutputReference {
     return new DataDatadogSecurityMonitoringRulesRulesReferenceTablesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDatadogSecurityMonitoringRulesRulesSchedulingOptions {
+}
+
+export function dataDatadogSecurityMonitoringRulesRulesSchedulingOptionsToTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesSchedulingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogSecurityMonitoringRulesRulesSchedulingOptionsToHclTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesSchedulingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogSecurityMonitoringRulesRulesSchedulingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogSecurityMonitoringRulesRulesSchedulingOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogSecurityMonitoringRulesRulesSchedulingOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // rrule - computed: true, optional: false, required: false
+  public get rrule() {
+    return this.getStringAttribute('rrule');
+  }
+
+  // start - computed: true, optional: false, required: false
+  public get start() {
+    return this.getStringAttribute('start');
+  }
+
+  // timezone - computed: true, optional: false, required: false
+  public get timezone() {
+    return this.getStringAttribute('timezone');
+  }
+}
+
+export class DataDatadogSecurityMonitoringRulesRulesSchedulingOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogSecurityMonitoringRulesRulesSchedulingOptionsOutputReference {
+    return new DataDatadogSecurityMonitoringRulesRulesSchedulingOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataDatadogSecurityMonitoringRulesRulesSignalQuery {
@@ -1357,6 +1532,12 @@ export class DataDatadogSecurityMonitoringRulesRulesOutputReference extends cdkt
     }
   }
 
+  // calculated_field - computed: true, optional: false, required: false
+  private _calculatedField = new DataDatadogSecurityMonitoringRulesRulesCalculatedFieldList(this, "calculated_field", false);
+  public get calculatedField() {
+    return this._calculatedField;
+  }
+
   // case - computed: true, optional: false, required: false
   private _case = new DataDatadogSecurityMonitoringRulesRulesCaseList(this, "case", false);
   public get case() {
@@ -1412,6 +1593,12 @@ export class DataDatadogSecurityMonitoringRulesRulesOutputReference extends cdkt
     return this._referenceTables;
   }
 
+  // scheduling_options - computed: true, optional: false, required: false
+  private _schedulingOptions = new DataDatadogSecurityMonitoringRulesRulesSchedulingOptionsList(this, "scheduling_options", false);
+  public get schedulingOptions() {
+    return this._schedulingOptions;
+  }
+
   // signal_query - computed: true, optional: false, required: false
   private _signalQuery = new DataDatadogSecurityMonitoringRulesRulesSignalQueryList(this, "signal_query", false);
   public get signalQuery() {
@@ -1455,7 +1642,7 @@ export class DataDatadogSecurityMonitoringRulesRulesList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules}
 */
 export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSource {
 
@@ -1471,7 +1658,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataDatadogSecurityMonitoringRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogSecurityMonitoringRules to import
-  * @param importFromId The id of the existing DataDatadogSecurityMonitoringRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/security_monitoring_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogSecurityMonitoringRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/security_monitoring_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogSecurityMonitoringRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1483,7 +1670,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/data-sources/security_monitoring_rules datadog_security_monitoring_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1494,7 +1681,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
       terraformResourceType: 'datadog_security_monitoring_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.73.0',
+        providerVersion: '3.74.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

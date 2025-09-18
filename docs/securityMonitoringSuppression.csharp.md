@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringSuppression <a name="SecurityMonitoringSuppression" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.resetExpirationDate">ResetExpirationDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.resetStartDate">ResetStartDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.resetSuppressionQuery">ResetSuppressionQuery</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.resetValidate">ResetValidate</a></code> | *No description.* |
 
 ---
 
@@ -399,6 +400,12 @@ private void ResetStartDate()
 private void ResetSuppressionQuery()
 ```
 
+##### `ResetValidate` <a name="ResetValidate" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.resetValidate"></a>
+
+```csharp
+private void ResetValidate()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -502,7 +509,7 @@ The construct id used in the generated config for the SecurityMonitoringSuppress
 
 The id of the existing SecurityMonitoringSuppression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -541,6 +548,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.ruleQueryInput">RuleQueryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.startDateInput">StartDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.suppressionQueryInput">SuppressionQueryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.validateInput">ValidateInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.dataExclusionQuery">DataExclusionQuery</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
@@ -549,6 +557,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.73
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.ruleQuery">RuleQuery</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.startDate">StartDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.suppressionQuery">SuppressionQuery</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.validate">Validate</a></code> | <code>object</code> | *No description.* |
 
 ---
 
@@ -784,6 +793,16 @@ public string SuppressionQueryInput { get; }
 
 ---
 
+##### `ValidateInput`<sup>Optional</sup> <a name="ValidateInput" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.validateInput"></a>
+
+```csharp
+public object ValidateInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `DataExclusionQuery`<sup>Required</sup> <a name="DataExclusionQuery" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.dataExclusionQuery"></a>
 
 ```csharp
@@ -864,6 +883,16 @@ public string SuppressionQuery { get; }
 
 ---
 
+##### `Validate`<sup>Required</sup> <a name="Validate" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.property.validate"></a>
+
+```csharp
+public object Validate { get; }
+```
+
+- *Type:* object
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -906,7 +935,8 @@ new SecurityMonitoringSuppressionConfig {
     string Description = null,
     string ExpirationDate = null,
     string StartDate = null,
-    string SuppressionQuery = null
+    string SuppressionQuery = null,
+    object Validate = null
 };
 ```
 
@@ -929,6 +959,7 @@ new SecurityMonitoringSuppressionConfig {
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppressionConfig.property.expirationDate">ExpirationDate</a></code> | <code>string</code> | A RFC3339 timestamp giving an expiration date for the suppression rule. After this date, it won't suppress signals anymore. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppressionConfig.property.startDate">StartDate</a></code> | <code>string</code> | A RFC3339 timestamp giving a start date for the suppression rule. Before this date, it doesn't suppress signals. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppressionConfig.property.suppressionQuery">SuppressionQuery</a></code> | <code>string</code> | The suppression query of the suppression rule. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppressionConfig.property.validate">Validate</a></code> | <code>object</code> | Whether to validate the suppression rule during `terraform plan`. |
 
 ---
 
@@ -1012,7 +1043,7 @@ public object Enabled { get; set; }
 
 Whether the suppression rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#enabled SecurityMonitoringSuppression#enabled}
 
 ---
 
@@ -1026,7 +1057,7 @@ public string Name { get; set; }
 
 The name of the suppression rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#name SecurityMonitoringSuppression#name}
 
 ---
 
@@ -1040,7 +1071,7 @@ public string RuleQuery { get; set; }
 
 The rule query of the suppression rule, with the same syntax as the search bar for detection rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#rule_query SecurityMonitoringSuppression#rule_query}
 
 ---
 
@@ -1056,7 +1087,7 @@ An exclusion query on the input data of the security rules, which could be logs,
 
 Events matching this query are ignored by any detection rules referenced in the suppression rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression#data_exclusion_query SecurityMonitoringSuppression#data_exclusion_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#data_exclusion_query SecurityMonitoringSuppression#data_exclusion_query}
 
 ---
 
@@ -1070,7 +1101,7 @@ public string Description { get; set; }
 
 A description for the suppression rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#description SecurityMonitoringSuppression#description}
 
 ---
 
@@ -1084,7 +1115,7 @@ public string ExpirationDate { get; set; }
 
 A RFC3339 timestamp giving an expiration date for the suppression rule. After this date, it won't suppress signals anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#expiration_date SecurityMonitoringSuppression#expiration_date}
 
 ---
 
@@ -1098,7 +1129,7 @@ public string StartDate { get; set; }
 
 A RFC3339 timestamp giving a start date for the suppression rule. Before this date, it doesn't suppress signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression#start_date SecurityMonitoringSuppression#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#start_date SecurityMonitoringSuppression#start_date}
 
 ---
 
@@ -1114,7 +1145,23 @@ The suppression query of the suppression rule.
 
 If a signal matches this query, it is suppressed and is not triggered. It uses the same syntax as the queries to search signals in the Signals Explorer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.73.0/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#suppression_query SecurityMonitoringSuppression#suppression_query}
+
+---
+
+##### `Validate`<sup>Optional</sup> <a name="Validate" id="@cdktf/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppressionConfig.property.validate"></a>
+
+```csharp
+public object Validate { get; set; }
+```
+
+- *Type:* object
+
+Whether to validate the suppression rule during `terraform plan`.
+
+When set to `true`, the rule is validated against Datadog's suppression validation endpoint. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/security_monitoring_suppression#validate SecurityMonitoringSuppression#validate}
 
 ---
 
