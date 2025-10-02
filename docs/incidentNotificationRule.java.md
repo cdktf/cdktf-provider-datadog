@@ -4,7 +4,7 @@
 
 ### IncidentNotificationRule <a name="IncidentNotificationRule" id="@cdktf/provider-datadog.incidentNotificationRule.IncidentNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.incidentNotificationRule.IncidentNotificationRule.Initializer"></a>
 
@@ -134,7 +134,7 @@ Examples:
 
 The ID of the incident type this notification rule is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The trigger event for this notification rule. Valid values are: incident_created_trigger, incident_saved_trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether the notification rule is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID of the notification template to use for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
 
 ---
 
@@ -186,7 +186,7 @@ List of incident fields that trigger re-notification when changed.
 
 Valid values are: status, severity, customer_impact, title, description, detected, root_cause, services, state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The visibility of the notification rule. Valid values are: all, organization, private. Defaults to organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the IncidentNotificationRule t
 
 The id of the existing IncidentNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1107,7 +1107,7 @@ public java.lang.String getField();
 
 The incident field to evaluate. Common values include: state, severity, services, teams. Custom fields are also supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
 
 ---
 
@@ -1121,7 +1121,7 @@ public java.util.List<java.lang.String> getValues();
 
 The value(s) to compare against. Multiple values are ORed together.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
 
 ---
 
@@ -1273,7 +1273,7 @@ public java.lang.String getIncidentType();
 
 The ID of the incident type this notification rule is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
 
 ---
 
@@ -1287,7 +1287,7 @@ public java.lang.String getTrigger();
 
 The trigger event for this notification rule. Valid values are: incident_created_trigger, incident_saved_trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
 
 ---
 
@@ -1301,7 +1301,7 @@ public java.lang.Object getConditions();
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
 
 ---
 
@@ -1315,7 +1315,7 @@ public java.lang.Object getEnabled();
 
 Whether the notification rule is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
 
 ---
 
@@ -1329,7 +1329,7 @@ public java.lang.String getNotificationTemplate();
 
 The ID of the notification template to use for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
 
 ---
 
@@ -1345,7 +1345,7 @@ List of incident fields that trigger re-notification when changed.
 
 Valid values are: status, severity, customer_impact, title, description, detected, root_cause, services, state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
 
 ---
 
@@ -1359,7 +1359,7 @@ public java.lang.String getVisibility();
 
 The visibility of the notification rule. Valid values are: all, organization, private. Defaults to organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
 
 ---
 

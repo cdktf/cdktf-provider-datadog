@@ -15,6 +15,7 @@ Object.defineProperty(exports, 'applicationKey', { get: function () { return req
 Object.defineProperty(exports, 'appsecWafCustomRule', { get: function () { return require('./appsec-waf-custom-rule'); } });
 Object.defineProperty(exports, 'appsecWafExclusionFilter', { get: function () { return require('./appsec-waf-exclusion-filter'); } });
 Object.defineProperty(exports, 'authnMapping', { get: function () { return require('./authn-mapping'); } });
+Object.defineProperty(exports, 'awsCurConfig', { get: function () { return require('./aws-cur-config'); } });
 Object.defineProperty(exports, 'childOrganization', { get: function () { return require('./child-organization'); } });
 Object.defineProperty(exports, 'cloudConfigurationRule', { get: function () { return require('./cloud-configuration-rule'); } });
 Object.defineProperty(exports, 'cloudWorkloadSecurityAgentRule', { get: function () { return require('./cloud-workload-security-agent-rule'); } });
@@ -75,6 +76,7 @@ Object.defineProperty(exports, 'onCallEscalationPolicy', { get: function () { re
 Object.defineProperty(exports, 'onCallSchedule', { get: function () { return require('./on-call-schedule'); } });
 Object.defineProperty(exports, 'onCallTeamRoutingRules', { get: function () { return require('./on-call-team-routing-rules'); } });
 Object.defineProperty(exports, 'openapiApi', { get: function () { return require('./openapi-api'); } });
+Object.defineProperty(exports, 'orgConnection', { get: function () { return require('./org-connection'); } });
 Object.defineProperty(exports, 'organizationSettings', { get: function () { return require('./organization-settings'); } });
 Object.defineProperty(exports, 'powerpack', { get: function () { return require('./powerpack'); } });
 Object.defineProperty(exports, 'restrictionPolicy', { get: function () { return require('./restriction-policy'); } });
@@ -117,6 +119,7 @@ Object.defineProperty(exports, 'dataDatadogApiKey', { get: function () { return 
 Object.defineProperty(exports, 'dataDatadogApmRetentionFiltersOrder', { get: function () { return require('./data-datadog-apm-retention-filters-order'); } });
 Object.defineProperty(exports, 'dataDatadogAppBuilderApp', { get: function () { return require('./data-datadog-app-builder-app'); } });
 Object.defineProperty(exports, 'dataDatadogApplicationKey', { get: function () { return require('./data-datadog-application-key'); } });
+Object.defineProperty(exports, 'dataDatadogAwsCurConfig', { get: function () { return require('./data-datadog-aws-cur-config'); } });
 Object.defineProperty(exports, 'dataDatadogCloudWorkloadSecurityAgentRules', { get: function () { return require('./data-datadog-cloud-workload-security-agent-rules'); } });
 Object.defineProperty(exports, 'dataDatadogCostBudget', { get: function () { return require('./data-datadog-cost-budget'); } });
 Object.defineProperty(exports, 'dataDatadogCsmThreatsAgentRules', { get: function () { return require('./data-datadog-csm-threats-agent-rules'); } });
@@ -129,6 +132,7 @@ Object.defineProperty(exports, 'dataDatadogIncidentNotificationTemplate', { get:
 Object.defineProperty(exports, 'dataDatadogIncidentType', { get: function () { return require('./data-datadog-incident-type'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableLogsServices', { get: function () { return require('./data-datadog-integration-aws-available-logs-services'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableNamespaces', { get: function () { return require('./data-datadog-integration-aws-available-namespaces'); } });
+Object.defineProperty(exports, 'dataDatadogIntegrationAwsExternalId', { get: function () { return require('./data-datadog-integration-aws-external-id'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsIamPermissions', { get: function () { return require('./data-datadog-integration-aws-iam-permissions'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsLogsServices', { get: function () { return require('./data-datadog-integration-aws-logs-services'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsNamespaceRules', { get: function () { return require('./data-datadog-integration-aws-namespace-rules'); } });
