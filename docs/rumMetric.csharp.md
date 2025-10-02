@@ -4,7 +4,7 @@
 
 ### RumMetric <a name="RumMetric" id="@cdktf/provider-datadog.rumMetric.RumMetric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric datadog_rum_metric}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric datadog_rum_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.rumMetric.RumMetric.Initializer"></a>
 
@@ -547,7 +547,7 @@ The construct id used in the generated config for the RumMetric to import.
 
 The id of the existing RumMetric that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,7 +919,7 @@ public string AggregationType { get; set; }
 
 The type of aggregation to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#aggregation_type RumMetric#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#aggregation_type RumMetric#aggregation_type}
 
 ---
 
@@ -933,7 +933,7 @@ public object IncludePercentiles { get; set; }
 
 Toggle to include or exclude percentile aggregations for distribution metrics. Only present when `aggregation_type` is `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#include_percentiles RumMetric#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#include_percentiles RumMetric#include_percentiles}
 
 ---
 
@@ -947,7 +947,7 @@ public string Path { get; set; }
 
 The path to the value the RUM-based metric will aggregate on. Only present when `aggregation_type` is `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#path RumMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#path RumMetric#path}
 
 ---
 
@@ -1075,7 +1075,7 @@ public string EventType { get; set; }
 
 The type of RUM events to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#event_type RumMetric#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#event_type RumMetric#event_type}
 
 ---
 
@@ -1089,7 +1089,7 @@ public string Name { get; set; }
 
 The name of the RUM-based metric. This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#name RumMetric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#name RumMetric#name}
 
 ---
 
@@ -1103,7 +1103,7 @@ public RumMetricCompute Compute { get; set; }
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#compute RumMetric#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#compute RumMetric#compute}
 
 ---
 
@@ -1117,7 +1117,7 @@ public RumMetricFilter Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#filter RumMetric#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#filter RumMetric#filter}
 
 ---
 
@@ -1131,7 +1131,7 @@ public object GroupBy { get; set; }
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#group_by RumMetric#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#group_by RumMetric#group_by}
 
 ---
 
@@ -1145,7 +1145,7 @@ public RumMetricUniqueness Uniqueness { get; set; }
 
 uniqueness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
 
 ---
 
@@ -1179,7 +1179,7 @@ public string Query { get; set; }
 
 The search query. Follows RUM search syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#query RumMetric#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#query RumMetric#query}
 
 ---
 
@@ -1215,7 +1215,7 @@ public string Path { get; set; }
 
 The path to the value the RUM-based metric will be aggregated over.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#path RumMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#path RumMetric#path}
 
 ---
 
@@ -1229,7 +1229,7 @@ public string TagName { get; set; }
 
 Name of the tag that gets created. By default, `path` is used as the tag name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#tag_name RumMetric#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#tag_name RumMetric#tag_name}
 
 ---
 
@@ -1263,7 +1263,7 @@ public string When { get; set; }
 
 When to count updatable events. `match` when the event is first seen, or `end` when the event is complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.74.0/docs/resources/rum_metric#when RumMetric#when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/rum_metric#when RumMetric#when}
 
 ---
 
