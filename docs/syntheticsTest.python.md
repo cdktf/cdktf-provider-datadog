@@ -14,34 +14,34 @@ from cdktf_cdktf_provider_datadog import synthetics_test
 syntheticsTest.SyntheticsTest(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   locations: typing.List[str],
   name: str,
   status: str,
   type: str,
-  api_step: typing.Union[IResolvable, typing.List[SyntheticsTestApiStep]] = None,
-  assertion: typing.Union[IResolvable, typing.List[SyntheticsTestAssertion]] = None,
-  browser_step: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserStep]] = None,
-  browser_variable: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserVariable]] = None,
+  api_step: IResolvable | typing.List[SyntheticsTestApiStep] = None,
+  assertion: IResolvable | typing.List[SyntheticsTestAssertion] = None,
+  browser_step: IResolvable | typing.List[SyntheticsTestBrowserStep] = None,
+  browser_variable: IResolvable | typing.List[SyntheticsTestBrowserVariable] = None,
   config_initial_application_arguments: typing.Mapping[str] = None,
-  config_variable: typing.Union[IResolvable, typing.List[SyntheticsTestConfigVariable]] = None,
+  config_variable: IResolvable | typing.List[SyntheticsTestConfigVariable] = None,
   device_ids: typing.List[str] = None,
-  force_delete_dependencies: typing.Union[bool, IResolvable] = None,
+  force_delete_dependencies: bool | IResolvable = None,
   id: str = None,
   message: str = None,
   mobile_options_list: SyntheticsTestMobileOptionsListStruct = None,
-  mobile_step: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStep]] = None,
+  mobile_step: IResolvable | typing.List[SyntheticsTestMobileStep] = None,
   options_list: SyntheticsTestOptionsListStruct = None,
   request_basicauth: SyntheticsTestRequestBasicauth = None,
   request_client_certificate: SyntheticsTestRequestClientCertificate = None,
   request_definition: SyntheticsTestRequestDefinition = None,
-  request_file: typing.Union[IResolvable, typing.List[SyntheticsTestRequestFile]] = None,
+  request_file: IResolvable | typing.List[SyntheticsTestRequestFile] = None,
   request_headers: typing.Mapping[str] = None,
   request_metadata: typing.Mapping[str] = None,
   request_proxy: SyntheticsTestRequestProxy = None,
@@ -57,34 +57,34 @@ syntheticsTest.SyntheticsTest(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.locations">locations</a></code> | <code>typing.List[str]</code> | Array of locations used to run the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of Datadog synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.status">status</a></code> | <code>str</code> | Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.type">type</a></code> | <code>str</code> | Synthetics test type. Valid values are `api`, `browser`, `mobile`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.apiStep">api_step</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]]</code> | api_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.assertion">assertion</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]]</code> | assertion block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserStep">browser_step</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]]</code> | browser_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserVariable">browser_variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]]</code> | browser_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.apiStep">api_step</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]</code> | api_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.assertion">assertion</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]</code> | assertion block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserStep">browser_step</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]</code> | browser_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserVariable">browser_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]</code> | browser_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configInitialApplicationArguments">config_initial_application_arguments</a></code> | <code>typing.Mapping[str]</code> | Initial application arguments for the mobile test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configVariable">config_variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]]</code> | config_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configVariable">config_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]</code> | config_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.deviceIds">device_ids</a></code> | <code>typing.List[str]</code> | Required if `type = "browser"`. Array with the different device IDs used to run the test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.forceDeleteDependencies">force_delete_dependencies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.forceDeleteDependencies">force_delete_dependencies</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.message">message</a></code> | <code>str</code> | A message to include with notifications for this synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileOptionsList">mobile_options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | mobile_options_list block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileStep">mobile_step</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]]</code> | mobile_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileStep">mobile_step</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]</code> | mobile_step block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.optionsList">options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestBasicauth">request_basicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestClientCertificate">request_client_certificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestDefinition">request_definition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | request_definition block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestFile">request_file</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]]</code> | request_file block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestFile">request_file</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]</code> | request_file block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestHeaders">request_headers</a></code> | <code>typing.Mapping[str]</code> | Header name and value map. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestMetadata">request_metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata to include when performing the gRPC request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestProxy">request_proxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy">SyntheticsTestRequestProxy</a></code> | request_proxy block. |
@@ -116,13 +116,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -152,7 +152,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `api_step`<sup>Optional</sup> <a name="api_step" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.apiStep"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]
 
 api_step block.
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `assertion`<sup>Optional</sup> <a name="assertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.assertion"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]
 
 assertion block.
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `browser_step`<sup>Optional</sup> <a name="browser_step" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserStep"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]
 
 browser_step block.
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `browser_variable`<sup>Optional</sup> <a name="browser_variable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserVariable"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]
 
 browser_variable block.
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `config_variable`<sup>Optional</sup> <a name="config_variable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configVariable"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]
 
 config_variable block.
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `force_delete_dependencies`<sup>Optional</sup> <a name="force_delete_dependencies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.forceDeleteDependencies"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
 
@@ -313,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `mobile_step`<sup>Optional</sup> <a name="mobile_step" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileStep"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]
 
 mobile_step block.
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `request_file`<sup>Optional</sup> <a name="request_file" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestFile"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]
 
 request_file block.
 
@@ -745,7 +745,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.importFrom"></a>
@@ -808,7 +808,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -824,7 +824,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -852,13 +852,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_api_step(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStep]]
+  value: IResolvable | typing.List[SyntheticsTestApiStep]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putApiStep.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]
 
 ---
 
@@ -866,13 +866,13 @@ def put_api_step(
 
 ```python
 def put_assertion(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestAssertion]]
+  value: IResolvable | typing.List[SyntheticsTestAssertion]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putAssertion.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]
 
 ---
 
@@ -880,13 +880,13 @@ def put_assertion(
 
 ```python
 def put_browser_step(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserStep]]
+  value: IResolvable | typing.List[SyntheticsTestBrowserStep]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserStep.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]
 
 ---
 
@@ -894,13 +894,13 @@ def put_browser_step(
 
 ```python
 def put_browser_variable(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserVariable]]
+  value: IResolvable | typing.List[SyntheticsTestBrowserVariable]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserVariable.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]
 
 ---
 
@@ -908,13 +908,13 @@ def put_browser_variable(
 
 ```python
 def put_config_variable(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestConfigVariable]]
+  value: IResolvable | typing.List[SyntheticsTestConfigVariable]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putConfigVariable.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]
 
 ---
 
@@ -925,16 +925,16 @@ def put_mobile_options_list(
   device_ids: typing.List[str],
   mobile_application: SyntheticsTestMobileOptionsListMobileApplication,
   tick_every: typing.Union[int, float],
-  allow_application_crash: typing.Union[bool, IResolvable] = None,
-  bindings: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListBindings]] = None,
+  allow_application_crash: bool | IResolvable = None,
+  bindings: IResolvable | typing.List[SyntheticsTestMobileOptionsListBindings] = None,
   ci: SyntheticsTestMobileOptionsListCi = None,
   default_step_timeout: typing.Union[int, float] = None,
-  disable_auto_accept_alert: typing.Union[bool, IResolvable] = None,
+  disable_auto_accept_alert: bool | IResolvable = None,
   min_failure_duration: typing.Union[int, float] = None,
   monitor_name: str = None,
   monitor_options: SyntheticsTestMobileOptionsListMonitorOptions = None,
   monitor_priority: typing.Union[int, float] = None,
-  no_screenshot: typing.Union[bool, IResolvable] = None,
+  no_screenshot: bool | IResolvable = None,
   restricted_roles: typing.List[str] = None,
   retry: SyntheticsTestMobileOptionsListRetry = None,
   scheduling: SyntheticsTestMobileOptionsListScheduling = None,
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `allow_application_crash`<sup>Optional</sup> <a name="allow_application_crash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileOptionsList.parameter.allowApplicationCrash"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}.
 
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `bindings`<sup>Optional</sup> <a name="bindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileOptionsList.parameter.bindings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]
 
 bindings block.
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `disable_auto_accept_alert`<sup>Optional</sup> <a name="disable_auto_accept_alert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileOptionsList.parameter.disableAutoAcceptAlert"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}.
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `no_screenshot`<sup>Optional</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileOptionsList.parameter.noScreenshot"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevents saving screenshots of the steps.
 
@@ -1106,13 +1106,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_mobile_step(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStep]]
+  value: IResolvable | typing.List[SyntheticsTestMobileStep]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileStep.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]
 
 ---
 
@@ -1121,23 +1121,23 @@ def put_mobile_step(
 ```python
 def put_options_list(
   tick_every: typing.Union[int, float],
-  accept_self_signed: typing.Union[bool, IResolvable] = None,
-  allow_insecure: typing.Union[bool, IResolvable] = None,
-  check_certificate_revocation: typing.Union[bool, IResolvable] = None,
+  accept_self_signed: bool | IResolvable = None,
+  allow_insecure: bool | IResolvable = None,
+  check_certificate_revocation: bool | IResolvable = None,
   ci: SyntheticsTestOptionsListCi = None,
-  disable_aia_intermediate_fetching: typing.Union[bool, IResolvable] = None,
-  disable_cors: typing.Union[bool, IResolvable] = None,
-  disable_csp: typing.Union[bool, IResolvable] = None,
-  follow_redirects: typing.Union[bool, IResolvable] = None,
+  disable_aia_intermediate_fetching: bool | IResolvable = None,
+  disable_cors: bool | IResolvable = None,
+  disable_csp: bool | IResolvable = None,
+  follow_redirects: bool | IResolvable = None,
   http_version: str = None,
-  ignore_server_certificate_error: typing.Union[bool, IResolvable] = None,
+  ignore_server_certificate_error: bool | IResolvable = None,
   initial_navigation_timeout: typing.Union[int, float] = None,
   min_failure_duration: typing.Union[int, float] = None,
   min_location_failed: typing.Union[int, float] = None,
   monitor_name: str = None,
   monitor_options: SyntheticsTestOptionsListMonitorOptions = None,
   monitor_priority: typing.Union[int, float] = None,
-  no_screenshot: typing.Union[bool, IResolvable] = None,
+  no_screenshot: bool | IResolvable = None,
   restricted_roles: typing.List[str] = None,
   retry: SyntheticsTestOptionsListRetry = None,
   rum_settings: SyntheticsTestOptionsListRumSettings = None,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `accept_self_signed`<sup>Optional</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.acceptSelfSigned"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `allow_insecure`<sup>Optional</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.allowInsecure"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `check_certificate_revocation`<sup>Optional</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.checkCertificateRevocation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `disable_aia_intermediate_fetching`<sup>Optional</sup> <a name="disable_aia_intermediate_fetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.disableAiaIntermediateFetching"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `disable_cors`<sup>Optional</sup> <a name="disable_cors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.disableCors"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable Cross-Origin Resource Sharing for browser tests.
 
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `disable_csp`<sup>Optional</sup> <a name="disable_csp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.disableCsp"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable Content Security Policy for browser tests.
 
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `follow_redirects`<sup>Optional</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.followRedirects"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not the API HTTP test should follow redirects.
 
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `ignore_server_certificate_error`<sup>Optional</sup> <a name="ignore_server_certificate_error" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.ignoreServerCertificateError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Ignore server certificate error for browser tests.
 
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `no_screenshot`<sup>Optional</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.noScreenshot"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevents saving screenshots of the steps.
 
@@ -1605,18 +1605,18 @@ def put_request_definition(
   form: typing.Mapping[str] = None,
   host: str = None,
   http_version: str = None,
-  is_message_base64_encoded: typing.Union[bool, IResolvable] = None,
+  is_message_base64_encoded: bool | IResolvable = None,
   message: str = None,
   method: str = None,
-  no_saving_response_body: typing.Union[bool, IResolvable] = None,
+  no_saving_response_body: bool | IResolvable = None,
   number_of_packets: typing.Union[int, float] = None,
-  persist_cookies: typing.Union[bool, IResolvable] = None,
+  persist_cookies: bool | IResolvable = None,
   plain_proto_file: str = None,
   port: str = None,
   proto_json_descriptor: str = None,
   servername: str = None,
   service: str = None,
-  should_track_hops: typing.Union[bool, IResolvable] = None,
+  should_track_hops: bool | IResolvable = None,
   timeout: typing.Union[int, float] = None,
   url: str = None
 ) -> None
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `is_message_base64_encoded`<sup>Optional</sup> <a name="is_message_base64_encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestDefinition.parameter.isMessageBase64Encoded"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the message is base64-encoded.
 
@@ -1750,7 +1750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `no_saving_response_body`<sup>Optional</sup> <a name="no_saving_response_body" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestDefinition.parameter.noSavingResponseBody"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to save the response body.
 
@@ -1770,7 +1770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `persist_cookies`<sup>Optional</sup> <a name="persist_cookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestDefinition.parameter.persistCookies"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Persist cookies across redirects.
 
@@ -1830,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `should_track_hops`<sup>Optional</sup> <a name="should_track_hops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestDefinition.parameter.shouldTrackHops"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This will turn on a traceroute probe to discover all gateways along the path to the host destination.
 
@@ -1864,13 +1864,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_request_file(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestRequestFile]]
+  value: IResolvable | typing.List[SyntheticsTestRequestFile]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestFile.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]
 
 ---
 
@@ -2190,13 +2190,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStep">api_step</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList">SyntheticsTestApiStepList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertion">assertion</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList">SyntheticsTestAssertionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStep">browser_step</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList">SyntheticsTestBrowserStepList</a></code> | *No description.* |
@@ -2211,25 +2211,25 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinition">request_definition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference">SyntheticsTestRequestDefinitionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFile">request_file</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList">SyntheticsTestRequestFileList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestProxy">request_proxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxyOutputReference">SyntheticsTestRequestProxyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStepInput">api_step_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput">assertion_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput">browser_step_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput">browser_variable_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStepInput">api_step_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput">assertion_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput">browser_step_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput">browser_variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArgumentsInput">config_initial_application_arguments_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput">config_variable_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput">config_variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.deviceIdsInput">device_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput">force_delete_dependencies_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput">force_delete_dependencies_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.locationsInput">locations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileOptionsListInput">mobile_options_list_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput">mobile_step_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput">mobile_step_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput">options_list_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestBasicauthInput">request_basicauth_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestClientCertificateInput">request_client_certificate_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinitionInput">request_definition_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFileInput">request_file_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFileInput">request_file_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestHeadersInput">request_headers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestMetadataInput">request_metadata_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestProxyInput">request_proxy_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy">SyntheticsTestRequestProxy</a></code> | *No description.* |
@@ -2242,7 +2242,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.variablesFromScriptInput">variables_from_script_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArguments">config_initial_application_arguments</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.deviceIds">device_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies">force_delete_dependencies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies">force_delete_dependencies</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.locations">locations</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.message">message</a></code> | <code>str</code> | *No description.* |
@@ -2334,20 +2334,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2394,10 +2394,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2544,40 +2544,40 @@ request_proxy: SyntheticsTestRequestProxyOutputReference
 ##### `api_step_input`<sup>Optional</sup> <a name="api_step_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStepInput"></a>
 
 ```python
-api_step_input: typing.Union[IResolvable, typing.List[SyntheticsTestApiStep]]
+api_step_input: IResolvable | typing.List[SyntheticsTestApiStep]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]
 
 ---
 
 ##### `assertion_input`<sup>Optional</sup> <a name="assertion_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput"></a>
 
 ```python
-assertion_input: typing.Union[IResolvable, typing.List[SyntheticsTestAssertion]]
+assertion_input: IResolvable | typing.List[SyntheticsTestAssertion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]
 
 ---
 
 ##### `browser_step_input`<sup>Optional</sup> <a name="browser_step_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput"></a>
 
 ```python
-browser_step_input: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserStep]]
+browser_step_input: IResolvable | typing.List[SyntheticsTestBrowserStep]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]
 
 ---
 
 ##### `browser_variable_input`<sup>Optional</sup> <a name="browser_variable_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput"></a>
 
 ```python
-browser_variable_input: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserVariable]]
+browser_variable_input: IResolvable | typing.List[SyntheticsTestBrowserVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]
 
 ---
 
@@ -2594,10 +2594,10 @@ config_initial_application_arguments_input: typing.Mapping[str]
 ##### `config_variable_input`<sup>Optional</sup> <a name="config_variable_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput"></a>
 
 ```python
-config_variable_input: typing.Union[IResolvable, typing.List[SyntheticsTestConfigVariable]]
+config_variable_input: IResolvable | typing.List[SyntheticsTestConfigVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]
 
 ---
 
@@ -2614,10 +2614,10 @@ device_ids_input: typing.List[str]
 ##### `force_delete_dependencies_input`<sup>Optional</sup> <a name="force_delete_dependencies_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput"></a>
 
 ```python
-force_delete_dependencies_input: typing.Union[bool, IResolvable]
+force_delete_dependencies_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2664,10 +2664,10 @@ mobile_options_list_input: SyntheticsTestMobileOptionsListStruct
 ##### `mobile_step_input`<sup>Optional</sup> <a name="mobile_step_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput"></a>
 
 ```python
-mobile_step_input: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStep]]
+mobile_step_input: IResolvable | typing.List[SyntheticsTestMobileStep]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]
 
 ---
 
@@ -2724,10 +2724,10 @@ request_definition_input: SyntheticsTestRequestDefinition
 ##### `request_file_input`<sup>Optional</sup> <a name="request_file_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFileInput"></a>
 
 ```python
-request_file_input: typing.Union[IResolvable, typing.List[SyntheticsTestRequestFile]]
+request_file_input: IResolvable | typing.List[SyntheticsTestRequestFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]
 
 ---
 
@@ -2854,10 +2854,10 @@ device_ids: typing.List[str]
 ##### `force_delete_dependencies`<sup>Required</sup> <a name="force_delete_dependencies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies"></a>
 
 ```python
-force_delete_dependencies: typing.Union[bool, IResolvable]
+force_delete_dependencies: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3020,16 +3020,16 @@ from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestApiStep(
   name: str,
-  allow_failure: typing.Union[bool, IResolvable] = None,
-  assertion: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepAssertion]] = None,
-  exit_if_succeed: typing.Union[bool, IResolvable] = None,
-  extracted_value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepExtractedValue]] = None,
+  allow_failure: bool | IResolvable = None,
+  assertion: IResolvable | typing.List[SyntheticsTestApiStepAssertion] = None,
+  exit_if_succeed: bool | IResolvable = None,
+  extracted_value: IResolvable | typing.List[SyntheticsTestApiStepExtractedValue] = None,
   extracted_values_from_script: str = None,
-  is_critical: typing.Union[bool, IResolvable] = None,
+  is_critical: bool | IResolvable = None,
   request_basicauth: SyntheticsTestApiStepRequestBasicauth = None,
   request_client_certificate: SyntheticsTestApiStepRequestClientCertificate = None,
   request_definition: SyntheticsTestApiStepRequestDefinition = None,
-  request_file: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepRequestFile]] = None,
+  request_file: IResolvable | typing.List[SyntheticsTestApiStepRequestFile] = None,
   request_headers: typing.Mapping[str] = None,
   request_metadata: typing.Mapping[str] = None,
   request_proxy: SyntheticsTestApiStepRequestProxy = None,
@@ -3045,16 +3045,16 @@ syntheticsTest.SyntheticsTestApiStep(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.name">name</a></code> | <code>str</code> | The name of the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure">allow_failure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not to continue with test if this step fails. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion">assertion</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]]</code> | assertion block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed">exit_if_succeed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not to exit the test if the step succeeds. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue">extracted_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]]</code> | extracted_value block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not to continue with test if this step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion">assertion</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]</code> | assertion block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed">exit_if_succeed</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not to exit the test if the step succeeds. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue">extracted_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]</code> | extracted_value block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValuesFromScript">extracted_values_from_script</a></code> | <code>str</code> | Generate variables using JavaScript. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical">is_critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not to consider the entire test as failed if this step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical">is_critical</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not to consider the entire test as failed if this step fails. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestBasicauth">request_basicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth">SyntheticsTestApiStepRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestClientCertificate">request_client_certificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate">SyntheticsTestApiStepRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestDefinition">request_definition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition">SyntheticsTestApiStepRequestDefinition</a></code> | request_definition block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestFile">request_file</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]]</code> | request_file block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestFile">request_file</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]</code> | request_file block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestHeaders">request_headers</a></code> | <code>typing.Mapping[str]</code> | Header name and value map. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestMetadata">request_metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata to include when performing the gRPC request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestProxy">request_proxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy">SyntheticsTestApiStepRequestProxy</a></code> | request_proxy block. |
@@ -3082,10 +3082,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allow_failure`<sup>Optional</sup> <a name="allow_failure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure"></a>
 
 ```python
-allow_failure: typing.Union[bool, IResolvable]
+allow_failure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to continue with test if this step fails.
 
@@ -3096,10 +3096,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `assertion`<sup>Optional</sup> <a name="assertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion"></a>
 
 ```python
-assertion: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepAssertion]]
+assertion: IResolvable | typing.List[SyntheticsTestApiStepAssertion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]
 
 assertion block.
 
@@ -3110,10 +3110,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `exit_if_succeed`<sup>Optional</sup> <a name="exit_if_succeed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed"></a>
 
 ```python
-exit_if_succeed: typing.Union[bool, IResolvable]
+exit_if_succeed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to exit the test if the step succeeds.
 
@@ -3124,10 +3124,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `extracted_value`<sup>Optional</sup> <a name="extracted_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue"></a>
 
 ```python
-extracted_value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepExtractedValue]]
+extracted_value: IResolvable | typing.List[SyntheticsTestApiStepExtractedValue]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]
 
 extracted_value block.
 
@@ -3152,10 +3152,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `is_critical`<sup>Optional</sup> <a name="is_critical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical"></a>
 
 ```python
-is_critical: typing.Union[bool, IResolvable]
+is_critical: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to consider the entire test as failed if this step fails.
 
@@ -3210,10 +3210,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `request_file`<sup>Optional</sup> <a name="request_file" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestFile"></a>
 
 ```python
-request_file: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepRequestFile]]
+request_file: IResolvable | typing.List[SyntheticsTestApiStepRequestFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]
 
 request_file block.
 
@@ -3699,7 +3699,7 @@ syntheticsTest.SyntheticsTestApiStepExtractedValue(
   parser: SyntheticsTestApiStepExtractedValueParser,
   type: str,
   field: str = None,
-  secure: typing.Union[bool, IResolvable] = None
+  secure: bool | IResolvable = None
 )
 ```
 
@@ -3711,7 +3711,7 @@ syntheticsTest.SyntheticsTestApiStepExtractedValue(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.parser">parser</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser">SyntheticsTestApiStepExtractedValueParser</a></code> | parser block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.type">type</a></code> | <code>str</code> | Property of the Synthetics Test Response to use for the variable. Valid values are `grpc_message`, `grpc_metadata`, `http_body`, `http_header`, `http_status_code`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.field">field</a></code> | <code>str</code> | When type is `http_header` or `grpc_metadata`, name of the header or metadatum to extract. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not the extracted value will be obfuscated. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.secure">secure</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not the extracted value will be obfuscated. |
 
 ---
 
@@ -3772,10 +3772,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `secure`<sup>Optional</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.secure"></a>
 
 ```python
-secure: typing.Union[bool, IResolvable]
+secure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not the extracted value will be obfuscated.
 
@@ -4281,32 +4281,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestApiStepRequestDefinition(
-  accept_self_signed: typing.Union[bool, IResolvable] = None,
-  allow_insecure: typing.Union[bool, IResolvable] = None,
+  accept_self_signed: bool | IResolvable = None,
+  allow_insecure: bool | IResolvable = None,
   body: str = None,
   body_type: str = None,
   call_type: str = None,
   certificate_domains: typing.List[str] = None,
-  check_certificate_revocation: typing.Union[bool, IResolvable] = None,
-  disable_aia_intermediate_fetching: typing.Union[bool, IResolvable] = None,
+  check_certificate_revocation: bool | IResolvable = None,
+  disable_aia_intermediate_fetching: bool | IResolvable = None,
   dns_server: str = None,
   dns_server_port: str = None,
-  follow_redirects: typing.Union[bool, IResolvable] = None,
+  follow_redirects: bool | IResolvable = None,
   form: typing.Mapping[str] = None,
   host: str = None,
   http_version: str = None,
-  is_message_base64_encoded: typing.Union[bool, IResolvable] = None,
+  is_message_base64_encoded: bool | IResolvable = None,
   message: str = None,
   method: str = None,
-  no_saving_response_body: typing.Union[bool, IResolvable] = None,
+  no_saving_response_body: bool | IResolvable = None,
   number_of_packets: typing.Union[int, float] = None,
-  persist_cookies: typing.Union[bool, IResolvable] = None,
+  persist_cookies: bool | IResolvable = None,
   plain_proto_file: str = None,
   port: str = None,
   proto_json_descriptor: str = None,
   servername: str = None,
   service: str = None,
-  should_track_hops: typing.Union[bool, IResolvable] = None,
+  should_track_hops: bool | IResolvable = None,
   timeout: typing.Union[int, float] = None,
   url: str = None
 )
@@ -4316,32 +4316,32 @@ syntheticsTest.SyntheticsTestApiStepRequestDefinition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.acceptSelfSigned">accept_self_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL tests, whether or not the test should allow self signed certificates. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.allowInsecure">allow_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.acceptSelfSigned">accept_self_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | For SSL tests, whether or not the test should allow self signed certificates. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.allowInsecure">allow_insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.body">body</a></code> | <code>str</code> | The request body. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.bodyType">body_type</a></code> | <code>str</code> | Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.callType">call_type</a></code> | <code>str</code> | The type of gRPC call to perform. Valid values are `healthcheck`, `unary`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.certificateDomains">certificate_domains</a></code> | <code>typing.List[str]</code> | By default, the client certificate is applied on the domain of the starting URL for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.disableAiaIntermediateFetching">disable_aia_intermediate_fetching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>bool \| cdktf.IResolvable</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.disableAiaIntermediateFetching">disable_aia_intermediate_fetching</a></code> | <code>bool \| cdktf.IResolvable</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.dnsServer">dns_server</a></code> | <code>str</code> | DNS server to use for DNS tests (`subtype = "dns"`). |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.dnsServerPort">dns_server_port</a></code> | <code>str</code> | DNS server port to use for DNS tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.followRedirects">follow_redirects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not the API HTTP test should follow redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.followRedirects">follow_redirects</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not the API HTTP test should follow redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.form">form</a></code> | <code>typing.Mapping[str]</code> | Form data to be sent when `body_type` is `multipart/form-data`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.host">host</a></code> | <code>str</code> | Host name to perform the test with. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.httpVersion">http_version</a></code> | <code>str</code> | HTTP version to use for an HTTP request in an API test or step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.isMessageBase64Encoded">is_message_base64_encoded</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the message is base64-encoded. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.isMessageBase64Encoded">is_message_base64_encoded</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the message is base64-encoded. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.message">message</a></code> | <code>str</code> | For gRPC, UDP and websocket tests, message to send with the request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.method">method</a></code> | <code>str</code> | Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.noSavingResponseBody">no_saving_response_body</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not to save the response body. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.noSavingResponseBody">no_saving_response_body</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not to save the response body. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.numberOfPackets">number_of_packets</a></code> | <code>typing.Union[int, float]</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.persistCookies">persist_cookies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Persist cookies across redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.persistCookies">persist_cookies</a></code> | <code>bool \| cdktf.IResolvable</code> | Persist cookies across redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.plainProtoFile">plain_proto_file</a></code> | <code>str</code> | The content of a proto file as a string. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.port">port</a></code> | <code>str</code> | Port to use when performing the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.protoJsonDescriptor">proto_json_descriptor</a></code> | <code>str</code> | A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.servername">servername</a></code> | <code>str</code> | For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.service">service</a></code> | <code>str</code> | The gRPC service on which you want to perform the gRPC call. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.shouldTrackHops">should_track_hops</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.shouldTrackHops">should_track_hops</a></code> | <code>bool \| cdktf.IResolvable</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout in seconds for the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.url">url</a></code> | <code>str</code> | The URL to send the request to. |
 
@@ -4350,10 +4350,10 @@ syntheticsTest.SyntheticsTestApiStepRequestDefinition(
 ##### `accept_self_signed`<sup>Optional</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.acceptSelfSigned"></a>
 
 ```python
-accept_self_signed: typing.Union[bool, IResolvable]
+accept_self_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
@@ -4364,10 +4364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allow_insecure`<sup>Optional</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.allowInsecure"></a>
 
 ```python
-allow_insecure: typing.Union[bool, IResolvable]
+allow_insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
@@ -4436,10 +4436,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `check_certificate_revocation`<sup>Optional</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.checkCertificateRevocation"></a>
 
 ```python
-check_certificate_revocation: typing.Union[bool, IResolvable]
+check_certificate_revocation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
@@ -4450,10 +4450,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disable_aia_intermediate_fetching`<sup>Optional</sup> <a name="disable_aia_intermediate_fetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.disableAiaIntermediateFetching"></a>
 
 ```python
-disable_aia_intermediate_fetching: typing.Union[bool, IResolvable]
+disable_aia_intermediate_fetching: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
@@ -4492,10 +4492,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `follow_redirects`<sup>Optional</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.followRedirects"></a>
 
 ```python
-follow_redirects: typing.Union[bool, IResolvable]
+follow_redirects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not the API HTTP test should follow redirects.
 
@@ -4550,10 +4550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `is_message_base64_encoded`<sup>Optional</sup> <a name="is_message_base64_encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.isMessageBase64Encoded"></a>
 
 ```python
-is_message_base64_encoded: typing.Union[bool, IResolvable]
+is_message_base64_encoded: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the message is base64-encoded.
 
@@ -4594,10 +4594,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `no_saving_response_body`<sup>Optional</sup> <a name="no_saving_response_body" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.noSavingResponseBody"></a>
 
 ```python
-no_saving_response_body: typing.Union[bool, IResolvable]
+no_saving_response_body: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to save the response body.
 
@@ -4622,10 +4622,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `persist_cookies`<sup>Optional</sup> <a name="persist_cookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.persistCookies"></a>
 
 ```python
-persist_cookies: typing.Union[bool, IResolvable]
+persist_cookies: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Persist cookies across redirects.
 
@@ -4706,10 +4706,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `should_track_hops`<sup>Optional</sup> <a name="should_track_hops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.shouldTrackHops"></a>
 
 ```python
-should_track_hops: typing.Union[bool, IResolvable]
+should_track_hops: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This will turn on a traceroute probe to discover all gateways along the path to the host destination.
 
@@ -5324,13 +5324,13 @@ syntheticsTest.SyntheticsTestBrowserStep(
   name: str,
   params: SyntheticsTestBrowserStepParams,
   type: str,
-  allow_failure: typing.Union[bool, IResolvable] = None,
-  always_execute: typing.Union[bool, IResolvable] = None,
-  exit_if_succeed: typing.Union[bool, IResolvable] = None,
-  force_element_update: typing.Union[bool, IResolvable] = None,
-  is_critical: typing.Union[bool, IResolvable] = None,
+  allow_failure: bool | IResolvable = None,
+  always_execute: bool | IResolvable = None,
+  exit_if_succeed: bool | IResolvable = None,
+  force_element_update: bool | IResolvable = None,
+  is_critical: bool | IResolvable = None,
   local_key: str = None,
-  no_screenshot: typing.Union[bool, IResolvable] = None,
+  no_screenshot: bool | IResolvable = None,
   timeout: typing.Union[int, float] = None
 )
 ```
@@ -5342,13 +5342,13 @@ syntheticsTest.SyntheticsTestBrowserStep(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.name">name</a></code> | <code>str</code> | Name of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams">SyntheticsTestBrowserStepParams</a></code> | params block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.type">type</a></code> | <code>str</code> | Type of the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.allowFailure">allow_failure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines if the step should be allowed to fail. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.alwaysExecute">always_execute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not to always execute this step even if the previous step failed or was skipped. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.exitIfSucceed">exit_if_succeed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not to exit the test if the step succeeds. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.forceElementUpdate">force_element_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Force update of the "element" parameter for the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.isCritical">is_critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not to consider the entire test as failed if this step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines if the step should be allowed to fail. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.alwaysExecute">always_execute</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not to always execute this step even if the previous step failed or was skipped. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.exitIfSucceed">exit_if_succeed</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not to exit the test if the step succeeds. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.forceElementUpdate">force_element_update</a></code> | <code>bool \| cdktf.IResolvable</code> | Force update of the "element" parameter for the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.isCritical">is_critical</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not to consider the entire test as failed if this step fails. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.localKey">local_key</a></code> | <code>str</code> | A unique identifier used to track steps after reordering. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevents saving screenshots of the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.noScreenshot">no_screenshot</a></code> | <code>bool \| cdktf.IResolvable</code> | Prevents saving screenshots of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | Used to override the default timeout of a step. |
 
 ---
@@ -5400,10 +5400,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allow_failure`<sup>Optional</sup> <a name="allow_failure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.allowFailure"></a>
 
 ```python
-allow_failure: typing.Union[bool, IResolvable]
+allow_failure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines if the step should be allowed to fail.
 
@@ -5414,10 +5414,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `always_execute`<sup>Optional</sup> <a name="always_execute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.alwaysExecute"></a>
 
 ```python
-always_execute: typing.Union[bool, IResolvable]
+always_execute: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to always execute this step even if the previous step failed or was skipped.
 
@@ -5428,10 +5428,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `exit_if_succeed`<sup>Optional</sup> <a name="exit_if_succeed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.exitIfSucceed"></a>
 
 ```python
-exit_if_succeed: typing.Union[bool, IResolvable]
+exit_if_succeed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to exit the test if the step succeeds.
 
@@ -5442,10 +5442,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `force_element_update`<sup>Optional</sup> <a name="force_element_update" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.forceElementUpdate"></a>
 
 ```python
-force_element_update: typing.Union[bool, IResolvable]
+force_element_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Force update of the "element" parameter for the step.
 
@@ -5456,10 +5456,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `is_critical`<sup>Optional</sup> <a name="is_critical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.isCritical"></a>
 
 ```python
-is_critical: typing.Union[bool, IResolvable]
+is_critical: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to consider the entire test as failed if this step fails.
 
@@ -5486,10 +5486,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `no_screenshot`<sup>Optional</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.noScreenshot"></a>
 
 ```python
-no_screenshot: typing.Union[bool, IResolvable]
+no_screenshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevents saving screenshots of the step.
 
@@ -5519,11 +5519,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestBrowserStepParams(
-  append_to_content: typing.Union[bool, IResolvable] = None,
+  append_to_content: bool | IResolvable = None,
   attribute: str = None,
   check: str = None,
   click_type: str = None,
-  click_with_javascript: typing.Union[bool, IResolvable] = None,
+  click_with_javascript: bool | IResolvable = None,
   code: str = None,
   delay: typing.Union[int, float] = None,
   element: str = None,
@@ -5539,7 +5539,7 @@ syntheticsTest.SyntheticsTestBrowserStepParams(
   subtest_public_id: str = None,
   value: str = None,
   variable: SyntheticsTestBrowserStepParamsVariable = None,
-  with_click: typing.Union[bool, IResolvable] = None,
+  with_click: bool | IResolvable = None,
   x: typing.Union[int, float] = None,
   y: typing.Union[int, float] = None
 )
@@ -5549,11 +5549,11 @@ syntheticsTest.SyntheticsTestBrowserStepParams(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.appendToContent">append_to_content</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to append the `value` to existing text input content for a "typeText" step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.appendToContent">append_to_content</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to append the `value` to existing text input content for a "typeText" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.attribute">attribute</a></code> | <code>str</code> | Name of the attribute to use for an "assert attribute" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.check">check</a></code> | <code>str</code> | Check type to use for an assertion step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickType">click_type</a></code> | <code>str</code> | Type of click to use for a "click" step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript">click_with_javascript</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript">click_with_javascript</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.code">code</a></code> | <code>str</code> | Javascript code to use for the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.delay">delay</a></code> | <code>typing.Union[int, float]</code> | Delay between each key stroke for a "type test" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.element">element</a></code> | <code>str</code> | Element to use for the step, JSON encoded string. |
@@ -5569,7 +5569,7 @@ syntheticsTest.SyntheticsTestBrowserStepParams(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.subtestPublicId">subtest_public_id</a></code> | <code>str</code> | ID of the Synthetics test to use as subtest. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.value">value</a></code> | <code>str</code> | Value of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable">SyntheticsTestBrowserStepParamsVariable</a></code> | variable block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.withClick">with_click</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For "file upload" steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.withClick">with_click</a></code> | <code>bool \| cdktf.IResolvable</code> | For "file upload" steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.x">x</a></code> | <code>typing.Union[int, float]</code> | X coordinates for a "scroll step". |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.y">y</a></code> | <code>typing.Union[int, float]</code> | Y coordinates for a "scroll step". |
 
@@ -5578,10 +5578,10 @@ syntheticsTest.SyntheticsTestBrowserStepParams(
 ##### `append_to_content`<sup>Optional</sup> <a name="append_to_content" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.appendToContent"></a>
 
 ```python
-append_to_content: typing.Union[bool, IResolvable]
+append_to_content: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to append the `value` to existing text input content for a "typeText" step.
 
@@ -5638,10 +5638,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `click_with_javascript`<sup>Optional</sup> <a name="click_with_javascript" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript"></a>
 
 ```python
-click_with_javascript: typing.Union[bool, IResolvable]
+click_with_javascript: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction.
 
@@ -5870,10 +5870,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `with_click`<sup>Optional</sup> <a name="with_click" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.withClick"></a>
 
 ```python
-with_click: typing.Union[bool, IResolvable]
+with_click: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For "file upload" steps.
 
@@ -5918,7 +5918,7 @@ from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator(
   value: SyntheticsTestBrowserStepParamsElementUserLocatorValue,
-  fail_test_on_cannot_locate: typing.Union[bool, IResolvable] = None
+  fail_test_on_cannot_locate: bool | IResolvable = None
 )
 ```
 
@@ -5927,7 +5927,7 @@ syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.value">value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue">SyntheticsTestBrowserStepParamsElementUserLocatorValue</a></code> | value block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.failTestOnCannotLocate">fail_test_on_cannot_locate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.failTestOnCannotLocate">fail_test_on_cannot_locate</a></code> | <code>bool \| cdktf.IResolvable</code> | Defaults to `false`. |
 
 ---
 
@@ -5948,10 +5948,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `fail_test_on_cannot_locate`<sup>Optional</sup> <a name="fail_test_on_cannot_locate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.failTestOnCannotLocate"></a>
 
 ```python
-fail_test_on_cannot_locate: typing.Union[bool, IResolvable]
+fail_test_on_cannot_locate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Defaults to `false`.
 
@@ -6067,7 +6067,7 @@ from cdktf_cdktf_provider_datadog import synthetics_test
 syntheticsTest.SyntheticsTestBrowserStepParamsVariable(
   example: str = None,
   name: str = None,
-  secure: typing.Union[bool, IResolvable] = None
+  secure: bool | IResolvable = None
 )
 ```
 
@@ -6077,7 +6077,7 @@ syntheticsTest.SyntheticsTestBrowserStepParamsVariable(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.example">example</a></code> | <code>str</code> | Example of the extracted variable. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.name">name</a></code> | <code>str</code> | Name of the extracted variable. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.secure">secure</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
 
 ---
 
@@ -6112,10 +6112,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `secure`<sup>Optional</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.secure"></a>
 
 ```python
-secure: typing.Union[bool, IResolvable]
+secure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
@@ -6136,7 +6136,7 @@ syntheticsTest.SyntheticsTestBrowserVariable(
   example: str = None,
   id: str = None,
   pattern: str = None,
-  secure: typing.Union[bool, IResolvable] = None
+  secure: bool | IResolvable = None
 )
 ```
 
@@ -6149,7 +6149,7 @@ syntheticsTest.SyntheticsTestBrowserVariable(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.example">example</a></code> | <code>str</code> | Example for the variable. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.id">id</a></code> | <code>str</code> | ID of the global variable to use. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.pattern">pattern</a></code> | <code>str</code> | Pattern of the variable. Defaults to `""`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not the browser test variable is obfuscated. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.secure">secure</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not the browser test variable is obfuscated. |
 
 ---
 
@@ -6231,10 +6231,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `secure`<sup>Optional</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.secure"></a>
 
 ```python
-secure: typing.Union[bool, IResolvable]
+secure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not the browser test variable is obfuscated.
 
@@ -6252,34 +6252,34 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   locations: typing.List[str],
   name: str,
   status: str,
   type: str,
-  api_step: typing.Union[IResolvable, typing.List[SyntheticsTestApiStep]] = None,
-  assertion: typing.Union[IResolvable, typing.List[SyntheticsTestAssertion]] = None,
-  browser_step: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserStep]] = None,
-  browser_variable: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserVariable]] = None,
+  api_step: IResolvable | typing.List[SyntheticsTestApiStep] = None,
+  assertion: IResolvable | typing.List[SyntheticsTestAssertion] = None,
+  browser_step: IResolvable | typing.List[SyntheticsTestBrowserStep] = None,
+  browser_variable: IResolvable | typing.List[SyntheticsTestBrowserVariable] = None,
   config_initial_application_arguments: typing.Mapping[str] = None,
-  config_variable: typing.Union[IResolvable, typing.List[SyntheticsTestConfigVariable]] = None,
+  config_variable: IResolvable | typing.List[SyntheticsTestConfigVariable] = None,
   device_ids: typing.List[str] = None,
-  force_delete_dependencies: typing.Union[bool, IResolvable] = None,
+  force_delete_dependencies: bool | IResolvable = None,
   id: str = None,
   message: str = None,
   mobile_options_list: SyntheticsTestMobileOptionsListStruct = None,
-  mobile_step: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStep]] = None,
+  mobile_step: IResolvable | typing.List[SyntheticsTestMobileStep] = None,
   options_list: SyntheticsTestOptionsListStruct = None,
   request_basicauth: SyntheticsTestRequestBasicauth = None,
   request_client_certificate: SyntheticsTestRequestClientCertificate = None,
   request_definition: SyntheticsTestRequestDefinition = None,
-  request_file: typing.Union[IResolvable, typing.List[SyntheticsTestRequestFile]] = None,
+  request_file: IResolvable | typing.List[SyntheticsTestRequestFile] = None,
   request_headers: typing.Mapping[str] = None,
   request_metadata: typing.Mapping[str] = None,
   request_proxy: SyntheticsTestRequestProxy = None,
@@ -6295,34 +6295,34 @@ syntheticsTest.SyntheticsTestConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.locations">locations</a></code> | <code>typing.List[str]</code> | Array of locations used to run the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.name">name</a></code> | <code>str</code> | Name of Datadog synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.status">status</a></code> | <code>str</code> | Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.type">type</a></code> | <code>str</code> | Synthetics test type. Valid values are `api`, `browser`, `mobile`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.apiStep">api_step</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]]</code> | api_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion">assertion</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]]</code> | assertion block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep">browser_step</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]]</code> | browser_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable">browser_variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]]</code> | browser_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.apiStep">api_step</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]</code> | api_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion">assertion</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]</code> | assertion block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep">browser_step</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]</code> | browser_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable">browser_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]</code> | browser_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configInitialApplicationArguments">config_initial_application_arguments</a></code> | <code>typing.Mapping[str]</code> | Initial application arguments for the mobile test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable">config_variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]]</code> | config_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable">config_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]</code> | config_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.deviceIds">device_ids</a></code> | <code>typing.List[str]</code> | Required if `type = "browser"`. Array with the different device IDs used to run the test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies">force_delete_dependencies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies">force_delete_dependencies</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.message">message</a></code> | <code>str</code> | A message to include with notifications for this synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileOptionsList">mobile_options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | mobile_options_list block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep">mobile_step</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]]</code> | mobile_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep">mobile_step</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]</code> | mobile_step block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList">options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestBasicauth">request_basicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestClientCertificate">request_client_certificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestDefinition">request_definition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | request_definition block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestFile">request_file</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]]</code> | request_file block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestFile">request_file</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]</code> | request_file block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestHeaders">request_headers</a></code> | <code>typing.Mapping[str]</code> | Header name and value map. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestMetadata">request_metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata to include when performing the gRPC request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestProxy">request_proxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy">SyntheticsTestRequestProxy</a></code> | request_proxy block. |
@@ -6337,20 +6337,20 @@ syntheticsTest.SyntheticsTestConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -6397,10 +6397,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -6465,10 +6465,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `api_step`<sup>Optional</sup> <a name="api_step" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.apiStep"></a>
 
 ```python
-api_step: typing.Union[IResolvable, typing.List[SyntheticsTestApiStep]]
+api_step: IResolvable | typing.List[SyntheticsTestApiStep]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]
 
 api_step block.
 
@@ -6479,10 +6479,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `assertion`<sup>Optional</sup> <a name="assertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion"></a>
 
 ```python
-assertion: typing.Union[IResolvable, typing.List[SyntheticsTestAssertion]]
+assertion: IResolvable | typing.List[SyntheticsTestAssertion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]
 
 assertion block.
 
@@ -6493,10 +6493,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `browser_step`<sup>Optional</sup> <a name="browser_step" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep"></a>
 
 ```python
-browser_step: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserStep]]
+browser_step: IResolvable | typing.List[SyntheticsTestBrowserStep]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]
 
 browser_step block.
 
@@ -6507,10 +6507,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `browser_variable`<sup>Optional</sup> <a name="browser_variable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable"></a>
 
 ```python
-browser_variable: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserVariable]]
+browser_variable: IResolvable | typing.List[SyntheticsTestBrowserVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]
 
 browser_variable block.
 
@@ -6535,10 +6535,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `config_variable`<sup>Optional</sup> <a name="config_variable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable"></a>
 
 ```python
-config_variable: typing.Union[IResolvable, typing.List[SyntheticsTestConfigVariable]]
+config_variable: IResolvable | typing.List[SyntheticsTestConfigVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]
 
 config_variable block.
 
@@ -6563,10 +6563,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `force_delete_dependencies`<sup>Optional</sup> <a name="force_delete_dependencies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies"></a>
 
 ```python
-force_delete_dependencies: typing.Union[bool, IResolvable]
+force_delete_dependencies: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
 
@@ -6622,10 +6622,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `mobile_step`<sup>Optional</sup> <a name="mobile_step" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep"></a>
 
 ```python
-mobile_step: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStep]]
+mobile_step: IResolvable | typing.List[SyntheticsTestMobileStep]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]
 
 mobile_step block.
 
@@ -6692,10 +6692,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `request_file`<sup>Optional</sup> <a name="request_file" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestFile"></a>
 
 ```python
-request_file: typing.Union[IResolvable, typing.List[SyntheticsTestRequestFile]]
+request_file: IResolvable | typing.List[SyntheticsTestRequestFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]
 
 request_file block.
 
@@ -6832,7 +6832,7 @@ syntheticsTest.SyntheticsTestConfigVariable(
   example: str = None,
   id: str = None,
   pattern: str = None,
-  secure: typing.Union[bool, IResolvable] = None
+  secure: bool | IResolvable = None
 )
 ```
 
@@ -6845,7 +6845,7 @@ syntheticsTest.SyntheticsTestConfigVariable(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.example">example</a></code> | <code>str</code> | Example for the variable. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.id">id</a></code> | <code>str</code> | When type = `global`, ID of the global variable to use. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.pattern">pattern</a></code> | <code>str</code> | Pattern of the variable. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.secure">secure</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
 
 ---
 
@@ -6929,10 +6929,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `secure`<sup>Optional</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.secure"></a>
 
 ```python
-secure: typing.Union[bool, IResolvable]
+secure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
@@ -7228,7 +7228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestMobileOptionsListScheduling(
-  timeframes: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]],
+  timeframes: IResolvable | typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes],
   timezone: str
 )
 ```
@@ -7237,7 +7237,7 @@ syntheticsTest.SyntheticsTestMobileOptionsListScheduling(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes">timeframes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]]</code> | timeframes block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes">timeframes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]</code> | timeframes block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timezone">timezone</a></code> | <code>str</code> | Timezone in which the timeframe is based. |
 
 ---
@@ -7245,10 +7245,10 @@ syntheticsTest.SyntheticsTestMobileOptionsListScheduling(
 ##### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes"></a>
 
 ```python
-timeframes: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]]
+timeframes: IResolvable | typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]
 
 timeframes block.
 
@@ -7347,16 +7347,16 @@ syntheticsTest.SyntheticsTestMobileOptionsListStruct(
   device_ids: typing.List[str],
   mobile_application: SyntheticsTestMobileOptionsListMobileApplication,
   tick_every: typing.Union[int, float],
-  allow_application_crash: typing.Union[bool, IResolvable] = None,
-  bindings: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListBindings]] = None,
+  allow_application_crash: bool | IResolvable = None,
+  bindings: IResolvable | typing.List[SyntheticsTestMobileOptionsListBindings] = None,
   ci: SyntheticsTestMobileOptionsListCi = None,
   default_step_timeout: typing.Union[int, float] = None,
-  disable_auto_accept_alert: typing.Union[bool, IResolvable] = None,
+  disable_auto_accept_alert: bool | IResolvable = None,
   min_failure_duration: typing.Union[int, float] = None,
   monitor_name: str = None,
   monitor_options: SyntheticsTestMobileOptionsListMonitorOptions = None,
   monitor_priority: typing.Union[int, float] = None,
-  no_screenshot: typing.Union[bool, IResolvable] = None,
+  no_screenshot: bool | IResolvable = None,
   restricted_roles: typing.List[str] = None,
   retry: SyntheticsTestMobileOptionsListRetry = None,
   scheduling: SyntheticsTestMobileOptionsListScheduling = None,
@@ -7371,16 +7371,16 @@ syntheticsTest.SyntheticsTestMobileOptionsListStruct(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.deviceIds">device_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.mobileApplication">mobile_application</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | mobile_application block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.tickEvery">tick_every</a></code> | <code>typing.Union[int, float]</code> | How often the test should run (in seconds). Valid range is `300-604800` for mobile tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash">allow_application_crash</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings">bindings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]]</code> | bindings block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash">allow_application_crash</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings">bindings</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]</code> | bindings block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | ci block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.defaultStepTimeout">default_step_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert">disable_auto_accept_alert</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert">disable_auto_accept_alert</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorName">monitor_name</a></code> | <code>str</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | monitor_options block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorPriority">monitor_priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevents saving screenshots of the steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot">no_screenshot</a></code> | <code>bool \| cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | retry block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | scheduling block. |
@@ -7431,10 +7431,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allow_application_crash`<sup>Optional</sup> <a name="allow_application_crash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash"></a>
 
 ```python
-allow_application_crash: typing.Union[bool, IResolvable]
+allow_application_crash: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}.
 
@@ -7443,10 +7443,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `bindings`<sup>Optional</sup> <a name="bindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings"></a>
 
 ```python
-bindings: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListBindings]]
+bindings: IResolvable | typing.List[SyntheticsTestMobileOptionsListBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]
 
 bindings block.
 
@@ -7483,10 +7483,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disable_auto_accept_alert`<sup>Optional</sup> <a name="disable_auto_accept_alert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert"></a>
 
 ```python
-disable_auto_accept_alert: typing.Union[bool, IResolvable]
+disable_auto_accept_alert: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}.
 
@@ -7549,10 +7549,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `no_screenshot`<sup>Optional</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot"></a>
 
 ```python
-no_screenshot: typing.Union[bool, IResolvable]
+no_screenshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevents saving screenshots of the steps.
 
@@ -7627,10 +7627,10 @@ syntheticsTest.SyntheticsTestMobileStep(
   name: str,
   params: SyntheticsTestMobileStepParams,
   type: str,
-  allow_failure: typing.Union[bool, IResolvable] = None,
-  has_new_step_element: typing.Union[bool, IResolvable] = None,
-  is_critical: typing.Union[bool, IResolvable] = None,
-  no_screenshot: typing.Union[bool, IResolvable] = None,
+  allow_failure: bool | IResolvable = None,
+  has_new_step_element: bool | IResolvable = None,
+  is_critical: bool | IResolvable = None,
+  no_screenshot: bool | IResolvable = None,
   public_id: str = None,
   timeout: typing.Union[int, float] = None
 )
@@ -7643,10 +7643,10 @@ syntheticsTest.SyntheticsTestMobileStep(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.name">name</a></code> | <code>str</code> | The name of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | params block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.type">type</a></code> | <code>str</code> | The type of the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure">allow_failure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean set to allow this step to fail. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement">has_new_step_element</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean set to determine if the step has a new step element. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical">is_critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean set to not take a screenshot for the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean set to allow this step to fail. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement">has_new_step_element</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean set to determine if the step has a new step element. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical">is_critical</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot">no_screenshot</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean set to not take a screenshot for the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.publicId">public_id</a></code> | <code>str</code> | The public ID of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | The time before declaring a step failed. |
 
@@ -7699,10 +7699,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allow_failure`<sup>Optional</sup> <a name="allow_failure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure"></a>
 
 ```python
-allow_failure: typing.Union[bool, IResolvable]
+allow_failure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean set to allow this step to fail.
 
@@ -7713,10 +7713,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `has_new_step_element`<sup>Optional</sup> <a name="has_new_step_element" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement"></a>
 
 ```python
-has_new_step_element: typing.Union[bool, IResolvable]
+has_new_step_element: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean set to determine if the step has a new step element.
 
@@ -7727,10 +7727,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `is_critical`<sup>Optional</sup> <a name="is_critical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical"></a>
 
 ```python
-is_critical: typing.Union[bool, IResolvable]
+is_critical: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails.
 
@@ -7741,10 +7741,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `no_screenshot`<sup>Optional</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot"></a>
 
 ```python
-no_screenshot: typing.Union[bool, IResolvable]
+no_screenshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean set to not take a screenshot for the step.
 
@@ -7792,13 +7792,13 @@ syntheticsTest.SyntheticsTestMobileStepParams(
   delay: typing.Union[int, float] = None,
   direction: str = None,
   element: SyntheticsTestMobileStepParamsElement = None,
-  enable: typing.Union[bool, IResolvable] = None,
+  enable: bool | IResolvable = None,
   max_scrolls: typing.Union[int, float] = None,
-  positions: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsPositions]] = None,
+  positions: IResolvable | typing.List[SyntheticsTestMobileStepParamsPositions] = None,
   subtest_public_id: str = None,
   value: str = None,
   variable: SyntheticsTestMobileStepParamsVariable = None,
-  with_enter: typing.Union[bool, IResolvable] = None,
+  with_enter: bool | IResolvable = None,
   x: typing.Union[int, float] = None,
   y: typing.Union[int, float] = None
 )
@@ -7812,13 +7812,13 @@ syntheticsTest.SyntheticsTestMobileStepParams(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.delay">delay</a></code> | <code>typing.Union[int, float]</code> | Delay between each key stroke for a "type test" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.direction">direction</a></code> | <code>str</code> | Valid values are `up`, `down`, `left`, `right`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.element">element</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | element block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable">enable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.maxScrolls">max_scrolls</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions">positions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]]</code> | positions block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions">positions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]</code> | positions block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.subtestPublicId">subtest_public_id</a></code> | <code>str</code> | ID of the Synthetics test to use as subtest. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.value">value</a></code> | <code>str</code> | Value of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | variable block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter">with_enter</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter">with_enter</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.x">x</a></code> | <code>typing.Union[int, float]</code> | X coordinates for a "scroll step". |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.y">y</a></code> | <code>typing.Union[int, float]</code> | Y coordinates for a "scroll step". |
 
@@ -7885,10 +7885,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `enable`<sup>Optional</sup> <a name="enable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable"></a>
 
 ```python
-enable: typing.Union[bool, IResolvable]
+enable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}.
 
@@ -7909,10 +7909,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `positions`<sup>Optional</sup> <a name="positions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions"></a>
 
 ```python
-positions: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsPositions]]
+positions: IResolvable | typing.List[SyntheticsTestMobileStepParamsPositions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]
 
 positions block.
 
@@ -7965,10 +7965,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `with_enter`<sup>Optional</sup> <a name="with_enter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter"></a>
 
 ```python
-with_enter: typing.Union[bool, IResolvable]
+with_enter: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}.
 
@@ -8192,8 +8192,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator(
-  fail_test_on_cannot_locate: typing.Union[bool, IResolvable] = None,
-  values: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]] = None
+  fail_test_on_cannot_locate: bool | IResolvable = None,
+  values: IResolvable | typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues] = None
 )
 ```
 
@@ -8201,18 +8201,18 @@ syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate">fail_test_on_cannot_locate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values">values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]]</code> | values block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate">fail_test_on_cannot_locate</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values">values</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]</code> | values block. |
 
 ---
 
 ##### `fail_test_on_cannot_locate`<sup>Optional</sup> <a name="fail_test_on_cannot_locate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate"></a>
 
 ```python
-fail_test_on_cannot_locate: typing.Union[bool, IResolvable]
+fail_test_on_cannot_locate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}.
 
@@ -8221,10 +8221,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values"></a>
 
 ```python
-values: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]]
+values: IResolvable | typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]
 
 values block.
 
@@ -8554,7 +8554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestOptionsListRumSettings(
-  is_enabled: typing.Union[bool, IResolvable],
+  is_enabled: bool | IResolvable,
   application_id: str = None,
   client_token_id: typing.Union[int, float] = None
 )
@@ -8564,7 +8564,7 @@ syntheticsTest.SyntheticsTestOptionsListRumSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.isEnabled">is_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether RUM data is collected during test runs. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether RUM data is collected during test runs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.applicationId">application_id</a></code> | <code>str</code> | RUM application ID used to collect RUM data for the browser test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.clientTokenId">client_token_id</a></code> | <code>typing.Union[int, float]</code> | RUM application API key ID used to collect RUM data for the browser test. |
 
@@ -8573,10 +8573,10 @@ syntheticsTest.SyntheticsTestOptionsListRumSettings(
 ##### `is_enabled`<sup>Required</sup> <a name="is_enabled" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.isEnabled"></a>
 
 ```python
-is_enabled: typing.Union[bool, IResolvable]
+is_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether RUM data is collected during test runs.
 
@@ -8620,7 +8620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestOptionsListScheduling(
-  timeframes: typing.Union[IResolvable, typing.List[SyntheticsTestOptionsListSchedulingTimeframes]],
+  timeframes: IResolvable | typing.List[SyntheticsTestOptionsListSchedulingTimeframes],
   timezone: str
 )
 ```
@@ -8629,7 +8629,7 @@ syntheticsTest.SyntheticsTestOptionsListScheduling(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes">timeframes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]</code> | timeframes block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes">timeframes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]</code> | timeframes block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timezone">timezone</a></code> | <code>str</code> | Timezone in which the timeframe is based. |
 
 ---
@@ -8637,10 +8637,10 @@ syntheticsTest.SyntheticsTestOptionsListScheduling(
 ##### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes"></a>
 
 ```python
-timeframes: typing.Union[IResolvable, typing.List[SyntheticsTestOptionsListSchedulingTimeframes]]
+timeframes: IResolvable | typing.List[SyntheticsTestOptionsListSchedulingTimeframes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]
 
 timeframes block.
 
@@ -8737,23 +8737,23 @@ from cdktf_cdktf_provider_datadog import synthetics_test
 
 syntheticsTest.SyntheticsTestOptionsListStruct(
   tick_every: typing.Union[int, float],
-  accept_self_signed: typing.Union[bool, IResolvable] = None,
-  allow_insecure: typing.Union[bool, IResolvable] = None,
-  check_certificate_revocation: typing.Union[bool, IResolvable] = None,
+  accept_self_signed: bool | IResolvable = None,
+  allow_insecure: bool | IResolvable = None,
+  check_certificate_revocation: bool | IResolvable = None,
   ci: SyntheticsTestOptionsListCi = None,
-  disable_aia_intermediate_fetching: typing.Union[bool, IResolvable] = None,
-  disable_cors: typing.Union[bool, IResolvable] = None,
-  disable_csp: typing.Union[bool, IResolvable] = None,
-  follow_redirects: typing.Union[bool, IResolvable] = None,
+  disable_aia_intermediate_fetching: bool | IResolvable = None,
+  disable_cors: bool | IResolvable = None,
+  disable_csp: bool | IResolvable = None,
+  follow_redirects: bool | IResolvable = None,
   http_version: str = None,
-  ignore_server_certificate_error: typing.Union[bool, IResolvable] = None,
+  ignore_server_certificate_error: bool | IResolvable = None,
   initial_navigation_timeout: typing.Union[int, float] = None,
   min_failure_duration: typing.Union[int, float] = None,
   min_location_failed: typing.Union[int, float] = None,
   monitor_name: str = None,
   monitor_options: SyntheticsTestOptionsListMonitorOptions = None,
   monitor_priority: typing.Union[int, float] = None,
-  no_screenshot: typing.Union[bool, IResolvable] = None,
+  no_screenshot: bool | IResolvable = None,
   restricted_roles: typing.List[str] = None,
   retry: SyntheticsTestOptionsListRetry = None,
   rum_settings: SyntheticsTestOptionsListRumSettings = None,
@@ -8766,23 +8766,23 @@ syntheticsTest.SyntheticsTestOptionsListStruct(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.tickEvery">tick_every</a></code> | <code>typing.Union[int, float]</code> | How often the test should run (in seconds). |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned">accept_self_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL tests, whether or not the test should allow self signed certificates. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure">allow_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned">accept_self_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | For SSL tests, whether or not the test should allow self signed certificates. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure">allow_insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>bool \| cdktf.IResolvable</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | ci block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableAiaIntermediateFetching">disable_aia_intermediate_fetching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors">disable_cors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable Cross-Origin Resource Sharing for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp">disable_csp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable Content Security Policy for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects">follow_redirects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not the API HTTP test should follow redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableAiaIntermediateFetching">disable_aia_intermediate_fetching</a></code> | <code>bool \| cdktf.IResolvable</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors">disable_cors</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable Cross-Origin Resource Sharing for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp">disable_csp</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable Content Security Policy for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects">follow_redirects</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not the API HTTP test should follow redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.httpVersion">http_version</a></code> | <code>str</code> | HTTP version to use for an HTTP request in an API test or step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError">ignore_server_certificate_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore server certificate error for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError">ignore_server_certificate_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Ignore server certificate error for browser tests. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.initialNavigationTimeout">initial_navigation_timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minLocationFailed">min_location_failed</a></code> | <code>typing.Union[int, float]</code> | Minimum number of locations in failure required to trigger an alert. Defaults to `1`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorName">monitor_name</a></code> | <code>str</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority">monitor_priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevents saving screenshots of the steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">no_screenshot</a></code> | <code>bool \| cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.rumSettings">rum_settings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | rum_settings block. |
@@ -8809,10 +8809,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `accept_self_signed`<sup>Optional</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned"></a>
 
 ```python
-accept_self_signed: typing.Union[bool, IResolvable]
+accept_self_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
@@ -8823,10 +8823,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allow_insecure`<sup>Optional</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure"></a>
 
 ```python
-allow_insecure: typing.Union[bool, IResolvable]
+allow_insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
@@ -8837,10 +8837,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `check_certificate_revocation`<sup>Optional</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation"></a>
 
 ```python
-check_certificate_revocation: typing.Union[bool, IResolvable]
+check_certificate_revocation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
@@ -8865,10 +8865,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disable_aia_intermediate_fetching`<sup>Optional</sup> <a name="disable_aia_intermediate_fetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableAiaIntermediateFetching"></a>
 
 ```python
-disable_aia_intermediate_fetching: typing.Union[bool, IResolvable]
+disable_aia_intermediate_fetching: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
@@ -8879,10 +8879,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disable_cors`<sup>Optional</sup> <a name="disable_cors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors"></a>
 
 ```python
-disable_cors: typing.Union[bool, IResolvable]
+disable_cors: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable Cross-Origin Resource Sharing for browser tests.
 
@@ -8893,10 +8893,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disable_csp`<sup>Optional</sup> <a name="disable_csp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp"></a>
 
 ```python
-disable_csp: typing.Union[bool, IResolvable]
+disable_csp: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable Content Security Policy for browser tests.
 
@@ -8907,10 +8907,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `follow_redirects`<sup>Optional</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects"></a>
 
 ```python
-follow_redirects: typing.Union[bool, IResolvable]
+follow_redirects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not the API HTTP test should follow redirects.
 
@@ -8937,10 +8937,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ignore_server_certificate_error`<sup>Optional</sup> <a name="ignore_server_certificate_error" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError"></a>
 
 ```python
-ignore_server_certificate_error: typing.Union[bool, IResolvable]
+ignore_server_certificate_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Ignore server certificate error for browser tests.
 
@@ -9033,10 +9033,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `no_screenshot`<sup>Optional</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot"></a>
 
 ```python
-no_screenshot: typing.Union[bool, IResolvable]
+no_screenshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevents saving screenshots of the steps.
 
@@ -9559,18 +9559,18 @@ syntheticsTest.SyntheticsTestRequestDefinition(
   form: typing.Mapping[str] = None,
   host: str = None,
   http_version: str = None,
-  is_message_base64_encoded: typing.Union[bool, IResolvable] = None,
+  is_message_base64_encoded: bool | IResolvable = None,
   message: str = None,
   method: str = None,
-  no_saving_response_body: typing.Union[bool, IResolvable] = None,
+  no_saving_response_body: bool | IResolvable = None,
   number_of_packets: typing.Union[int, float] = None,
-  persist_cookies: typing.Union[bool, IResolvable] = None,
+  persist_cookies: bool | IResolvable = None,
   plain_proto_file: str = None,
   port: str = None,
   proto_json_descriptor: str = None,
   servername: str = None,
   service: str = None,
-  should_track_hops: typing.Union[bool, IResolvable] = None,
+  should_track_hops: bool | IResolvable = None,
   timeout: typing.Union[int, float] = None,
   url: str = None
 )
@@ -9589,18 +9589,18 @@ syntheticsTest.SyntheticsTestRequestDefinition(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.form">form</a></code> | <code>typing.Mapping[str]</code> | Form data to be sent when `body_type` is `multipart/form-data`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.host">host</a></code> | <code>str</code> | Host name to perform the test with. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.httpVersion">http_version</a></code> | <code>str</code> | HTTP version to use for an HTTP request in an API test or step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.isMessageBase64Encoded">is_message_base64_encoded</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the message is base64-encoded. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.isMessageBase64Encoded">is_message_base64_encoded</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the message is base64-encoded. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.message">message</a></code> | <code>str</code> | For gRPC, UDP and websocket tests, message to send with the request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.method">method</a></code> | <code>str</code> | Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.noSavingResponseBody">no_saving_response_body</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not to save the response body. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.noSavingResponseBody">no_saving_response_body</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether or not to save the response body. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.numberOfPackets">number_of_packets</a></code> | <code>typing.Union[int, float]</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.persistCookies">persist_cookies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Persist cookies across redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.persistCookies">persist_cookies</a></code> | <code>bool \| cdktf.IResolvable</code> | Persist cookies across redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.plainProtoFile">plain_proto_file</a></code> | <code>str</code> | The content of a proto file as a string. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.port">port</a></code> | <code>str</code> | Port to use when performing the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.protoJsonDescriptor">proto_json_descriptor</a></code> | <code>str</code> | A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.servername">servername</a></code> | <code>str</code> | For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.service">service</a></code> | <code>str</code> | The gRPC service on which you want to perform the gRPC call. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.shouldTrackHops">should_track_hops</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.shouldTrackHops">should_track_hops</a></code> | <code>bool \| cdktf.IResolvable</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout in seconds for the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.url">url</a></code> | <code>str</code> | The URL to send the request to. |
 
@@ -9739,10 +9739,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `is_message_base64_encoded`<sup>Optional</sup> <a name="is_message_base64_encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.isMessageBase64Encoded"></a>
 
 ```python
-is_message_base64_encoded: typing.Union[bool, IResolvable]
+is_message_base64_encoded: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the message is base64-encoded.
 
@@ -9783,10 +9783,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `no_saving_response_body`<sup>Optional</sup> <a name="no_saving_response_body" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.noSavingResponseBody"></a>
 
 ```python
-no_saving_response_body: typing.Union[bool, IResolvable]
+no_saving_response_body: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to save the response body.
 
@@ -9811,10 +9811,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `persist_cookies`<sup>Optional</sup> <a name="persist_cookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.persistCookies"></a>
 
 ```python
-persist_cookies: typing.Union[bool, IResolvable]
+persist_cookies: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Persist cookies across redirects.
 
@@ -9895,10 +9895,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `should_track_hops`<sup>Optional</sup> <a name="should_track_hops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.shouldTrackHops"></a>
 
 ```python
-should_track_hops: typing.Union[bool, IResolvable]
+should_track_hops: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This will turn on a traceroute probe to discover all gateways along the path to the host destination.
 
@@ -10217,7 +10217,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]</code> | *No description.* |
 
 ---
 
@@ -10248,10 +10248,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepAssertion]]
+internal_value: IResolvable | typing.List[SyntheticsTestApiStepAssertion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]
 
 ---
 
@@ -10710,7 +10710,7 @@ def reset_timings_scope() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.timingsScope">timings_scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a></code> | *No description.* |
 
 ---
 
@@ -10921,10 +10921,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestApiStepAssertion]
+internal_value: IResolvable | SyntheticsTestApiStepAssertion
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>
 
 ---
 
@@ -12108,7 +12108,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]</code> | *No description.* |
 
 ---
 
@@ -12139,10 +12139,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepExtractedValue]]
+internal_value: IResolvable | typing.List[SyntheticsTestApiStepExtractedValue]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]
 
 ---
 
@@ -12450,13 +12450,13 @@ def reset_secure() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.fieldInput">field_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.parserInput">parser_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser">SyntheticsTestApiStepExtractedValueParser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secureInput">secure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secureInput">secure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.field">field</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure">secure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a></code> | *No description.* |
 
 ---
 
@@ -12527,10 +12527,10 @@ parser_input: SyntheticsTestApiStepExtractedValueParser
 ##### `secure_input`<sup>Optional</sup> <a name="secure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secureInput"></a>
 
 ```python
-secure_input: typing.Union[bool, IResolvable]
+secure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12567,10 +12567,10 @@ name: str
 ##### `secure`<sup>Required</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure"></a>
 
 ```python
-secure: typing.Union[bool, IResolvable]
+secure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12587,10 +12587,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestApiStepExtractedValue]
+internal_value: IResolvable | SyntheticsTestApiStepExtractedValue
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>
 
 ---
 
@@ -13051,7 +13051,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]</code> | *No description.* |
 
 ---
 
@@ -13082,10 +13082,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStep]]
+internal_value: IResolvable | typing.List[SyntheticsTestApiStep]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]
 
 ---
 
@@ -13367,13 +13367,13 @@ Returns a reversible string representation.
 
 ```python
 def put_assertion(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepAssertion]]
+  value: IResolvable | typing.List[SyntheticsTestApiStepAssertion]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putAssertion.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]
 
 ---
 
@@ -13381,13 +13381,13 @@ def put_assertion(
 
 ```python
 def put_extracted_value(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepExtractedValue]]
+  value: IResolvable | typing.List[SyntheticsTestApiStepExtractedValue]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putExtractedValue.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]
 
 ---
 
@@ -13618,32 +13618,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_request_definition(
-  accept_self_signed: typing.Union[bool, IResolvable] = None,
-  allow_insecure: typing.Union[bool, IResolvable] = None,
+  accept_self_signed: bool | IResolvable = None,
+  allow_insecure: bool | IResolvable = None,
   body: str = None,
   body_type: str = None,
   call_type: str = None,
   certificate_domains: typing.List[str] = None,
-  check_certificate_revocation: typing.Union[bool, IResolvable] = None,
-  disable_aia_intermediate_fetching: typing.Union[bool, IResolvable] = None,
+  check_certificate_revocation: bool | IResolvable = None,
+  disable_aia_intermediate_fetching: bool | IResolvable = None,
   dns_server: str = None,
   dns_server_port: str = None,
-  follow_redirects: typing.Union[bool, IResolvable] = None,
+  follow_redirects: bool | IResolvable = None,
   form: typing.Mapping[str] = None,
   host: str = None,
   http_version: str = None,
-  is_message_base64_encoded: typing.Union[bool, IResolvable] = None,
+  is_message_base64_encoded: bool | IResolvable = None,
   message: str = None,
   method: str = None,
-  no_saving_response_body: typing.Union[bool, IResolvable] = None,
+  no_saving_response_body: bool | IResolvable = None,
   number_of_packets: typing.Union[int, float] = None,
-  persist_cookies: typing.Union[bool, IResolvable] = None,
+  persist_cookies: bool | IResolvable = None,
   plain_proto_file: str = None,
   port: str = None,
   proto_json_descriptor: str = None,
   servername: str = None,
   service: str = None,
-  should_track_hops: typing.Union[bool, IResolvable] = None,
+  should_track_hops: bool | IResolvable = None,
   timeout: typing.Union[int, float] = None,
   url: str = None
 ) -> None
@@ -13651,7 +13651,7 @@ def put_request_definition(
 
 ###### `accept_self_signed`<sup>Optional</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestDefinition.parameter.acceptSelfSigned"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
@@ -13661,7 +13661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `allow_insecure`<sup>Optional</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestDefinition.parameter.allowInsecure"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
@@ -13713,7 +13713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `check_certificate_revocation`<sup>Optional</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestDefinition.parameter.checkCertificateRevocation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
@@ -13723,7 +13723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `disable_aia_intermediate_fetching`<sup>Optional</sup> <a name="disable_aia_intermediate_fetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestDefinition.parameter.disableAiaIntermediateFetching"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
@@ -13753,7 +13753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `follow_redirects`<sup>Optional</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestDefinition.parameter.followRedirects"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not the API HTTP test should follow redirects.
 
@@ -13795,7 +13795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `is_message_base64_encoded`<sup>Optional</sup> <a name="is_message_base64_encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestDefinition.parameter.isMessageBase64Encoded"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the message is base64-encoded.
 
@@ -13827,7 +13827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `no_saving_response_body`<sup>Optional</sup> <a name="no_saving_response_body" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestDefinition.parameter.noSavingResponseBody"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether or not to save the response body.
 
@@ -13847,7 +13847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `persist_cookies`<sup>Optional</sup> <a name="persist_cookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestDefinition.parameter.persistCookies"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Persist cookies across redirects.
 
@@ -13907,7 +13907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `should_track_hops`<sup>Optional</sup> <a name="should_track_hops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestDefinition.parameter.shouldTrackHops"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This will turn on a traceroute probe to discover all gateways along the path to the host destination.
 
@@ -13941,13 +13941,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_request_file(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepRequestFile]]
+  value: IResolvable | typing.List[SyntheticsTestApiStepRequestFile]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestFile.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]
 
 ---
 
@@ -14129,17 +14129,17 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFile">request_file</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList">SyntheticsTestApiStepRequestFileList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestProxy">request_proxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxyOutputReference">SyntheticsTestApiStepRequestProxyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetryOutputReference">SyntheticsTestApiStepRetryOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput">allow_failure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput">assertion_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput">exit_if_succeed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput">extracted_value_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput">allow_failure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput">assertion_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput">exit_if_succeed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput">extracted_value_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValuesFromScriptInput">extracted_values_from_script_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput">is_critical_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput">is_critical_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestBasicauthInput">request_basicauth_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth">SyntheticsTestApiStepRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestClientCertificateInput">request_client_certificate_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate">SyntheticsTestApiStepRequestClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestDefinitionInput">request_definition_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition">SyntheticsTestApiStepRequestDefinition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFileInput">request_file_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFileInput">request_file_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestHeadersInput">request_headers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestMetadataInput">request_metadata_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestProxyInput">request_proxy_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy">SyntheticsTestApiStepRequestProxy</a></code> | *No description.* |
@@ -14147,17 +14147,17 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.retryInput">retry_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry">SyntheticsTestApiStepRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.subtypeInput">subtype_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure">allow_failure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed">exit_if_succeed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed">exit_if_succeed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValuesFromScript">extracted_values_from_script</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical">is_critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical">is_critical</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestHeaders">request_headers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestMetadata">request_metadata</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestQuery">request_query</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.subtype">subtype</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a></code> | *No description.* |
 
 ---
 
@@ -14278,40 +14278,40 @@ retry: SyntheticsTestApiStepRetryOutputReference
 ##### `allow_failure_input`<sup>Optional</sup> <a name="allow_failure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput"></a>
 
 ```python
-allow_failure_input: typing.Union[bool, IResolvable]
+allow_failure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `assertion_input`<sup>Optional</sup> <a name="assertion_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput"></a>
 
 ```python
-assertion_input: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepAssertion]]
+assertion_input: IResolvable | typing.List[SyntheticsTestApiStepAssertion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]
 
 ---
 
 ##### `exit_if_succeed_input`<sup>Optional</sup> <a name="exit_if_succeed_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput"></a>
 
 ```python
-exit_if_succeed_input: typing.Union[bool, IResolvable]
+exit_if_succeed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `extracted_value_input`<sup>Optional</sup> <a name="extracted_value_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput"></a>
 
 ```python
-extracted_value_input: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepExtractedValue]]
+extracted_value_input: IResolvable | typing.List[SyntheticsTestApiStepExtractedValue]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]
 
 ---
 
@@ -14328,10 +14328,10 @@ extracted_values_from_script_input: str
 ##### `is_critical_input`<sup>Optional</sup> <a name="is_critical_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput"></a>
 
 ```python
-is_critical_input: typing.Union[bool, IResolvable]
+is_critical_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -14378,10 +14378,10 @@ request_definition_input: SyntheticsTestApiStepRequestDefinition
 ##### `request_file_input`<sup>Optional</sup> <a name="request_file_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFileInput"></a>
 
 ```python
-request_file_input: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepRequestFile]]
+request_file_input: IResolvable | typing.List[SyntheticsTestApiStepRequestFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]
 
 ---
 
@@ -14458,20 +14458,20 @@ value_input: typing.Union[int, float]
 ##### `allow_failure`<sup>Required</sup> <a name="allow_failure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure"></a>
 
 ```python
-allow_failure: typing.Union[bool, IResolvable]
+allow_failure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `exit_if_succeed`<sup>Required</sup> <a name="exit_if_succeed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed"></a>
 
 ```python
-exit_if_succeed: typing.Union[bool, IResolvable]
+exit_if_succeed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -14488,10 +14488,10 @@ extracted_values_from_script: str
 ##### `is_critical`<sup>Required</sup> <a name="is_critical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical"></a>
 
 ```python
-is_critical: typing.Union[bool, IResolvable]
+is_critical: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -14558,10 +14558,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestApiStep]
+internal_value: IResolvable | SyntheticsTestApiStep
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>
 
 ---
 
@@ -16806,60 +16806,60 @@ def reset_url() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSignedInput">accept_self_signed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecureInput">allow_insecure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSignedInput">accept_self_signed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecureInput">allow_insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.bodyTypeInput">body_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.callTypeInput">call_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.certificateDomainsInput">certificate_domains_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocationInput">check_certificate_revocation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetchingInput">disable_aia_intermediate_fetching_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocationInput">check_certificate_revocation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetchingInput">disable_aia_intermediate_fetching_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServerInput">dns_server_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServerPortInput">dns_server_port_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirectsInput">follow_redirects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirectsInput">follow_redirects_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.formInput">form_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.httpVersionInput">http_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">is_message_base64_encoded_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">is_message_base64_encoded_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.methodInput">method_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBodyInput">no_saving_response_body_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBodyInput">no_saving_response_body_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.numberOfPacketsInput">number_of_packets_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookiesInput">persist_cookies_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookiesInput">persist_cookies_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.plainProtoFileInput">plain_proto_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.portInput">port_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.protoJsonDescriptorInput">proto_json_descriptor_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.servernameInput">servername_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.serviceInput">service_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHopsInput">should_track_hops_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHopsInput">should_track_hops_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.timeoutInput">timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSigned">accept_self_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecure">allow_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSigned">accept_self_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecure">allow_insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.body">body</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.bodyType">body_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.callType">call_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.certificateDomains">certificate_domains</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetching">disable_aia_intermediate_fetching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetching">disable_aia_intermediate_fetching</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServer">dns_server</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServerPort">dns_server_port</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirects">follow_redirects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirects">follow_redirects</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.form">form</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.httpVersion">http_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64Encoded">is_message_base64_encoded</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64Encoded">is_message_base64_encoded</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.message">message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.method">method</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBody">no_saving_response_body</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBody">no_saving_response_body</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.numberOfPackets">number_of_packets</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookies">persist_cookies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookies">persist_cookies</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.plainProtoFile">plain_proto_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.port">port</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.protoJsonDescriptor">proto_json_descriptor</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.servername">servername</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.service">service</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHops">should_track_hops</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHops">should_track_hops</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition">SyntheticsTestApiStepRequestDefinition</a></code> | *No description.* |
@@ -16893,20 +16893,20 @@ fqn: str
 ##### `accept_self_signed_input`<sup>Optional</sup> <a name="accept_self_signed_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSignedInput"></a>
 
 ```python
-accept_self_signed_input: typing.Union[bool, IResolvable]
+accept_self_signed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_insecure_input`<sup>Optional</sup> <a name="allow_insecure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecureInput"></a>
 
 ```python
-allow_insecure_input: typing.Union[bool, IResolvable]
+allow_insecure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -16953,20 +16953,20 @@ certificate_domains_input: typing.List[str]
 ##### `check_certificate_revocation_input`<sup>Optional</sup> <a name="check_certificate_revocation_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocationInput"></a>
 
 ```python
-check_certificate_revocation_input: typing.Union[bool, IResolvable]
+check_certificate_revocation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_aia_intermediate_fetching_input`<sup>Optional</sup> <a name="disable_aia_intermediate_fetching_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetchingInput"></a>
 
 ```python
-disable_aia_intermediate_fetching_input: typing.Union[bool, IResolvable]
+disable_aia_intermediate_fetching_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -16993,10 +16993,10 @@ dns_server_port_input: str
 ##### `follow_redirects_input`<sup>Optional</sup> <a name="follow_redirects_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirectsInput"></a>
 
 ```python
-follow_redirects_input: typing.Union[bool, IResolvable]
+follow_redirects_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17033,10 +17033,10 @@ http_version_input: str
 ##### `is_message_base64_encoded_input`<sup>Optional</sup> <a name="is_message_base64_encoded_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64EncodedInput"></a>
 
 ```python
-is_message_base64_encoded_input: typing.Union[bool, IResolvable]
+is_message_base64_encoded_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17063,10 +17063,10 @@ method_input: str
 ##### `no_saving_response_body_input`<sup>Optional</sup> <a name="no_saving_response_body_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBodyInput"></a>
 
 ```python
-no_saving_response_body_input: typing.Union[bool, IResolvable]
+no_saving_response_body_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17083,10 +17083,10 @@ number_of_packets_input: typing.Union[int, float]
 ##### `persist_cookies_input`<sup>Optional</sup> <a name="persist_cookies_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookiesInput"></a>
 
 ```python
-persist_cookies_input: typing.Union[bool, IResolvable]
+persist_cookies_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17143,10 +17143,10 @@ service_input: str
 ##### `should_track_hops_input`<sup>Optional</sup> <a name="should_track_hops_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHopsInput"></a>
 
 ```python
-should_track_hops_input: typing.Union[bool, IResolvable]
+should_track_hops_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17173,20 +17173,20 @@ url_input: str
 ##### `accept_self_signed`<sup>Required</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSigned"></a>
 
 ```python
-accept_self_signed: typing.Union[bool, IResolvable]
+accept_self_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_insecure`<sup>Required</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecure"></a>
 
 ```python
-allow_insecure: typing.Union[bool, IResolvable]
+allow_insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17233,20 +17233,20 @@ certificate_domains: typing.List[str]
 ##### `check_certificate_revocation`<sup>Required</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocation"></a>
 
 ```python
-check_certificate_revocation: typing.Union[bool, IResolvable]
+check_certificate_revocation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_aia_intermediate_fetching`<sup>Required</sup> <a name="disable_aia_intermediate_fetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetching"></a>
 
 ```python
-disable_aia_intermediate_fetching: typing.Union[bool, IResolvable]
+disable_aia_intermediate_fetching: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17273,10 +17273,10 @@ dns_server_port: str
 ##### `follow_redirects`<sup>Required</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirects"></a>
 
 ```python
-follow_redirects: typing.Union[bool, IResolvable]
+follow_redirects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17313,10 +17313,10 @@ http_version: str
 ##### `is_message_base64_encoded`<sup>Required</sup> <a name="is_message_base64_encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64Encoded"></a>
 
 ```python
-is_message_base64_encoded: typing.Union[bool, IResolvable]
+is_message_base64_encoded: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17343,10 +17343,10 @@ method: str
 ##### `no_saving_response_body`<sup>Required</sup> <a name="no_saving_response_body" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBody"></a>
 
 ```python
-no_saving_response_body: typing.Union[bool, IResolvable]
+no_saving_response_body: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17363,10 +17363,10 @@ number_of_packets: typing.Union[int, float]
 ##### `persist_cookies`<sup>Required</sup> <a name="persist_cookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookies"></a>
 
 ```python
-persist_cookies: typing.Union[bool, IResolvable]
+persist_cookies: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17423,10 +17423,10 @@ service: str
 ##### `should_track_hops`<sup>Required</sup> <a name="should_track_hops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHops"></a>
 
 ```python
-should_track_hops: typing.Union[bool, IResolvable]
+should_track_hops: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17592,7 +17592,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]</code> | *No description.* |
 
 ---
 
@@ -17623,10 +17623,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestApiStepRequestFile]]
+internal_value: IResolvable | typing.List[SyntheticsTestApiStepRequestFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]
 
 ---
 
@@ -17911,7 +17911,7 @@ def reset_original_file_name() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.originalFileName">original_file_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a></code> | *No description.* |
 
 ---
 
@@ -18052,10 +18052,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestApiStepRequestFile]
+internal_value: IResolvable | SyntheticsTestApiStepRequestFile
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>
 
 ---
 
@@ -18848,7 +18848,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]</code> | *No description.* |
 
 ---
 
@@ -18879,10 +18879,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestAssertion]]
+internal_value: IResolvable | typing.List[SyntheticsTestAssertion]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]
 
 ---
 
@@ -19341,7 +19341,7 @@ def reset_timings_scope() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.timingsScope">timings_scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a></code> | *No description.* |
 
 ---
 
@@ -19552,10 +19552,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestAssertion]
+internal_value: IResolvable | SyntheticsTestAssertion
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>
 
 ---
 
@@ -20739,7 +20739,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]</code> | *No description.* |
 
 ---
 
@@ -20770,10 +20770,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserStep]]
+internal_value: IResolvable | typing.List[SyntheticsTestBrowserStep]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]
 
 ---
 
@@ -21039,11 +21039,11 @@ Returns a reversible string representation.
 
 ```python
 def put_params(
-  append_to_content: typing.Union[bool, IResolvable] = None,
+  append_to_content: bool | IResolvable = None,
   attribute: str = None,
   check: str = None,
   click_type: str = None,
-  click_with_javascript: typing.Union[bool, IResolvable] = None,
+  click_with_javascript: bool | IResolvable = None,
   code: str = None,
   delay: typing.Union[int, float] = None,
   element: str = None,
@@ -21059,7 +21059,7 @@ def put_params(
   subtest_public_id: str = None,
   value: str = None,
   variable: SyntheticsTestBrowserStepParamsVariable = None,
-  with_click: typing.Union[bool, IResolvable] = None,
+  with_click: bool | IResolvable = None,
   x: typing.Union[int, float] = None,
   y: typing.Union[int, float] = None
 ) -> None
@@ -21067,7 +21067,7 @@ def put_params(
 
 ###### `append_to_content`<sup>Optional</sup> <a name="append_to_content" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.putParams.parameter.appendToContent"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to append the `value` to existing text input content for a "typeText" step.
 
@@ -21111,7 +21111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `click_with_javascript`<sup>Optional</sup> <a name="click_with_javascript" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.putParams.parameter.clickWithJavascript"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction.
 
@@ -21279,7 +21279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `with_click`<sup>Optional</sup> <a name="with_click" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.putParams.parameter.withClick"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For "file upload" steps.
 
@@ -21364,28 +21364,28 @@ def reset_timeout() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference">SyntheticsTestBrowserStepParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.publicId">public_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailureInput">allow_failure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecuteInput">always_execute_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceedInput">exit_if_succeed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdateInput">force_element_update_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCriticalInput">is_critical_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailureInput">allow_failure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecuteInput">always_execute_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceedInput">exit_if_succeed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdateInput">force_element_update_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCriticalInput">is_critical_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.localKeyInput">local_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.paramsInput">params_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams">SyntheticsTestBrowserStepParams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.timeoutInput">timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailure">allow_failure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecute">always_execute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceed">exit_if_succeed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdate">force_element_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCritical">is_critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecute">always_execute</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceed">exit_if_succeed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdate">force_element_update</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCritical">is_critical</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.localKey">local_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a></code> | *No description.* |
 
 ---
 
@@ -21436,50 +21436,50 @@ public_id: str
 ##### `allow_failure_input`<sup>Optional</sup> <a name="allow_failure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailureInput"></a>
 
 ```python
-allow_failure_input: typing.Union[bool, IResolvable]
+allow_failure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `always_execute_input`<sup>Optional</sup> <a name="always_execute_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecuteInput"></a>
 
 ```python
-always_execute_input: typing.Union[bool, IResolvable]
+always_execute_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `exit_if_succeed_input`<sup>Optional</sup> <a name="exit_if_succeed_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceedInput"></a>
 
 ```python
-exit_if_succeed_input: typing.Union[bool, IResolvable]
+exit_if_succeed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `force_element_update_input`<sup>Optional</sup> <a name="force_element_update_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdateInput"></a>
 
 ```python
-force_element_update_input: typing.Union[bool, IResolvable]
+force_element_update_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_critical_input`<sup>Optional</sup> <a name="is_critical_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCriticalInput"></a>
 
 ```python
-is_critical_input: typing.Union[bool, IResolvable]
+is_critical_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -21506,10 +21506,10 @@ name_input: str
 ##### `no_screenshot_input`<sup>Optional</sup> <a name="no_screenshot_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshotInput"></a>
 
 ```python
-no_screenshot_input: typing.Union[bool, IResolvable]
+no_screenshot_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -21546,50 +21546,50 @@ type_input: str
 ##### `allow_failure`<sup>Required</sup> <a name="allow_failure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailure"></a>
 
 ```python
-allow_failure: typing.Union[bool, IResolvable]
+allow_failure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `always_execute`<sup>Required</sup> <a name="always_execute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecute"></a>
 
 ```python
-always_execute: typing.Union[bool, IResolvable]
+always_execute: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `exit_if_succeed`<sup>Required</sup> <a name="exit_if_succeed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceed"></a>
 
 ```python
-exit_if_succeed: typing.Union[bool, IResolvable]
+exit_if_succeed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `force_element_update`<sup>Required</sup> <a name="force_element_update" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdate"></a>
 
 ```python
-force_element_update: typing.Union[bool, IResolvable]
+force_element_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_critical`<sup>Required</sup> <a name="is_critical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCritical"></a>
 
 ```python
-is_critical: typing.Union[bool, IResolvable]
+is_critical: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -21616,10 +21616,10 @@ name: str
 ##### `no_screenshot`<sup>Required</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot"></a>
 
 ```python
-no_screenshot: typing.Union[bool, IResolvable]
+no_screenshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -21646,10 +21646,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestBrowserStep]
+internal_value: IResolvable | SyntheticsTestBrowserStep
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>
 
 ---
 
@@ -21925,9 +21925,9 @@ def reset_fail_test_on_cannot_locate() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.value">value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference">SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">fail_test_on_cannot_locate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">fail_test_on_cannot_locate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.valueInput">value_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue">SyntheticsTestBrowserStepParamsElementUserLocatorValue</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">fail_test_on_cannot_locate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">fail_test_on_cannot_locate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator">SyntheticsTestBrowserStepParamsElementUserLocator</a></code> | *No description.* |
 
 ---
@@ -21969,10 +21969,10 @@ value: SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference
 ##### `fail_test_on_cannot_locate_input`<sup>Optional</sup> <a name="fail_test_on_cannot_locate_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput"></a>
 
 ```python
-fail_test_on_cannot_locate_input: typing.Union[bool, IResolvable]
+fail_test_on_cannot_locate_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -21989,10 +21989,10 @@ value_input: SyntheticsTestBrowserStepParamsElementUserLocatorValue
 ##### `fail_test_on_cannot_locate`<sup>Required</sup> <a name="fail_test_on_cannot_locate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate"></a>
 
 ```python
-fail_test_on_cannot_locate: typing.Union[bool, IResolvable]
+fail_test_on_cannot_locate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -22591,7 +22591,7 @@ Returns a reversible string representation.
 ```python
 def put_element_user_locator(
   value: SyntheticsTestBrowserStepParamsElementUserLocatorValue,
-  fail_test_on_cannot_locate: typing.Union[bool, IResolvable] = None
+  fail_test_on_cannot_locate: bool | IResolvable = None
 ) -> None
 ```
 
@@ -22607,7 +22607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `fail_test_on_cannot_locate`<sup>Optional</sup> <a name="fail_test_on_cannot_locate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.putElementUserLocator.parameter.failTestOnCannotLocate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Defaults to `false`.
 
@@ -22650,7 +22650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 def put_variable(
   example: str = None,
   name: str = None,
-  secure: typing.Union[bool, IResolvable] = None
+  secure: bool | IResolvable = None
 ) -> None
 ```
 
@@ -22676,7 +22676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `secure`<sup>Optional</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.putVariable.parameter.secure"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
@@ -22832,11 +22832,11 @@ def reset_y() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.elementUserLocator">element_user_locator</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference">SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.pattern">pattern</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsPatternOutputReference">SyntheticsTestBrowserStepParamsPatternOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference">SyntheticsTestBrowserStepParamsVariableOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContentInput">append_to_content_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContentInput">append_to_content_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.attributeInput">attribute_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.checkInput">check_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickTypeInput">click_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput">click_with_javascript_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput">click_with_javascript_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.codeInput">code_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.delayInput">delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.elementInput">element_input</a></code> | <code>str</code> | *No description.* |
@@ -22852,14 +22852,14 @@ def reset_y() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.subtestPublicIdInput">subtest_public_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.variableInput">variable_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable">SyntheticsTestBrowserStepParamsVariable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClickInput">with_click_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClickInput">with_click_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.xInput">x_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.yInput">y_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContent">append_to_content</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContent">append_to_content</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.attribute">attribute</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.check">check</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickType">click_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascript">click_with_javascript</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascript">click_with_javascript</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.code">code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.delay">delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.element">element</a></code> | <code>str</code> | *No description.* |
@@ -22872,7 +22872,7 @@ def reset_y() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.requests">requests</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.subtestPublicId">subtest_public_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClick">with_click</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClick">with_click</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.x">x</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.y">y</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams">SyntheticsTestBrowserStepParams</a></code> | *No description.* |
@@ -22936,10 +22936,10 @@ variable: SyntheticsTestBrowserStepParamsVariableOutputReference
 ##### `append_to_content_input`<sup>Optional</sup> <a name="append_to_content_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContentInput"></a>
 
 ```python
-append_to_content_input: typing.Union[bool, IResolvable]
+append_to_content_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -22976,10 +22976,10 @@ click_type_input: str
 ##### `click_with_javascript_input`<sup>Optional</sup> <a name="click_with_javascript_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput"></a>
 
 ```python
-click_with_javascript_input: typing.Union[bool, IResolvable]
+click_with_javascript_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -23136,10 +23136,10 @@ variable_input: SyntheticsTestBrowserStepParamsVariable
 ##### `with_click_input`<sup>Optional</sup> <a name="with_click_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClickInput"></a>
 
 ```python
-with_click_input: typing.Union[bool, IResolvable]
+with_click_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -23166,10 +23166,10 @@ y_input: typing.Union[int, float]
 ##### `append_to_content`<sup>Required</sup> <a name="append_to_content" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContent"></a>
 
 ```python
-append_to_content: typing.Union[bool, IResolvable]
+append_to_content: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -23206,10 +23206,10 @@ click_type: str
 ##### `click_with_javascript`<sup>Required</sup> <a name="click_with_javascript" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascript"></a>
 
 ```python
-click_with_javascript: typing.Union[bool, IResolvable]
+click_with_javascript: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -23336,10 +23336,10 @@ value: str
 ##### `with_click`<sup>Required</sup> <a name="with_click" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClick"></a>
 
 ```python
-with_click: typing.Union[bool, IResolvable]
+with_click: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -23964,10 +23964,10 @@ def reset_secure() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.exampleInput">example_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secureInput">secure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secureInput">secure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.example">example</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secure">secure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable">SyntheticsTestBrowserStepParamsVariable</a></code> | *No description.* |
 
 ---
@@ -24019,10 +24019,10 @@ name_input: str
 ##### `secure_input`<sup>Optional</sup> <a name="secure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secureInput"></a>
 
 ```python
-secure_input: typing.Union[bool, IResolvable]
+secure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -24049,10 +24049,10 @@ name: str
 ##### `secure`<sup>Required</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secure"></a>
 
 ```python
-secure: typing.Union[bool, IResolvable]
+secure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -24198,7 +24198,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -24229,10 +24229,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestBrowserVariable]]
+internal_value: IResolvable | typing.List[SyntheticsTestBrowserVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]
 
 ---
 
@@ -24524,15 +24524,15 @@ def reset_secure() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.patternInput">pattern_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secureInput">secure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secureInput">secure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.example">example</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure">secure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a></code> | *No description.* |
 
 ---
 
@@ -24603,10 +24603,10 @@ pattern_input: str
 ##### `secure_input`<sup>Optional</sup> <a name="secure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secureInput"></a>
 
 ```python
-secure_input: typing.Union[bool, IResolvable]
+secure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -24663,10 +24663,10 @@ pattern: str
 ##### `secure`<sup>Required</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure"></a>
 
 ```python
-secure: typing.Union[bool, IResolvable]
+secure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -24683,10 +24683,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestBrowserVariable]
+internal_value: IResolvable | SyntheticsTestBrowserVariable
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>
 
 ---
 
@@ -24822,7 +24822,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -24853,10 +24853,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestConfigVariable]]
+internal_value: IResolvable | typing.List[SyntheticsTestConfigVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]
 
 ---
 
@@ -25148,15 +25148,15 @@ def reset_secure() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.patternInput">pattern_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secureInput">secure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secureInput">secure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.example">example</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure">secure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a></code> | *No description.* |
 
 ---
 
@@ -25227,10 +25227,10 @@ pattern_input: str
 ##### `secure_input`<sup>Optional</sup> <a name="secure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secureInput"></a>
 
 ```python
-secure_input: typing.Union[bool, IResolvable]
+secure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -25287,10 +25287,10 @@ pattern: str
 ##### `secure`<sup>Required</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure"></a>
 
 ```python
-secure: typing.Union[bool, IResolvable]
+secure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -25307,10 +25307,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestConfigVariable]
+internal_value: IResolvable | SyntheticsTestConfigVariable
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>
 
 ---
 
@@ -25446,7 +25446,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]</code> | *No description.* |
 
 ---
 
@@ -25477,10 +25477,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListBindings]]
+internal_value: IResolvable | typing.List[SyntheticsTestMobileOptionsListBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]
 
 ---
 
@@ -25758,7 +25758,7 @@ def reset_relation() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relationInput">relation_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.principals">principals</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relation">relation</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a></code> | *No description.* |
 
 ---
 
@@ -25829,10 +25829,10 @@ relation: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestMobileOptionsListBindings]
+internal_value: IResolvable | SyntheticsTestMobileOptionsListBindings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>
 
 ---
 
@@ -27428,13 +27428,13 @@ Returns a reversible string representation.
 
 ```python
 def put_timeframes(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]]
+  value: IResolvable | typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.putTimeframes.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]
 
 ---
 
@@ -27446,7 +27446,7 @@ def put_timeframes(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframes">timeframes</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList">SyntheticsTestMobileOptionsListSchedulingTimeframesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput">timeframes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput">timeframes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezoneInput">timezone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | *No description.* |
@@ -27490,10 +27490,10 @@ timeframes: SyntheticsTestMobileOptionsListSchedulingTimeframesList
 ##### `timeframes_input`<sup>Optional</sup> <a name="timeframes_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput"></a>
 
 ```python
-timeframes_input: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]]
+timeframes_input: IResolvable | typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]
 
 ---
 
@@ -27659,7 +27659,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]</code> | *No description.* |
 
 ---
 
@@ -27690,10 +27690,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]]
+internal_value: IResolvable | typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]
 
 ---
 
@@ -27959,7 +27959,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.day">day</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.from">from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.to">to</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a></code> | *No description.* |
 
 ---
 
@@ -28050,10 +28050,10 @@ to: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestMobileOptionsListSchedulingTimeframes]
+internal_value: IResolvable | SyntheticsTestMobileOptionsListSchedulingTimeframes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>
 
 ---
 
@@ -28310,13 +28310,13 @@ Returns a reversible string representation.
 
 ```python
 def put_bindings(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListBindings]]
+  value: IResolvable | typing.List[SyntheticsTestMobileOptionsListBindings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putBindings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]
 
 ---
 
@@ -28462,14 +28462,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_scheduling(
-  timeframes: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes]],
+  timeframes: IResolvable | typing.List[SyntheticsTestMobileOptionsListSchedulingTimeframes],
   timezone: str
 ) -> None
 ```
 
 ###### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putScheduling.parameter.timeframes"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>]
 
 timeframes block.
 
@@ -28584,31 +28584,31 @@ def reset_verbosity() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference">SyntheticsTestMobileOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference">SyntheticsTestMobileOptionsListRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference">SyntheticsTestMobileOptionsListSchedulingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput">allow_application_crash_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput">bindings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput">allow_application_crash_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput">bindings_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.ciInput">ci_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeoutInput">default_step_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIdsInput">device_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput">disable_auto_accept_alert_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput">disable_auto_accept_alert_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDurationInput">min_failure_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.mobileApplicationInput">mobile_application_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorNameInput">monitor_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptionsInput">monitor_options_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriorityInput">monitor_priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRolesInput">restricted_roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retryInput">retry_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.schedulingInput">scheduling_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEveryInput">tick_every_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosityInput">verbosity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash">allow_application_crash</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash">allow_application_crash</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeout">default_step_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIds">device_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert">disable_auto_accept_alert</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert">disable_auto_accept_alert</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorName">monitor_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriority">monitor_priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEvery">tick_every</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosity">verbosity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -28703,20 +28703,20 @@ scheduling: SyntheticsTestMobileOptionsListSchedulingOutputReference
 ##### `allow_application_crash_input`<sup>Optional</sup> <a name="allow_application_crash_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput"></a>
 
 ```python
-allow_application_crash_input: typing.Union[bool, IResolvable]
+allow_application_crash_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `bindings_input`<sup>Optional</sup> <a name="bindings_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput"></a>
 
 ```python
-bindings_input: typing.Union[IResolvable, typing.List[SyntheticsTestMobileOptionsListBindings]]
+bindings_input: IResolvable | typing.List[SyntheticsTestMobileOptionsListBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>]
 
 ---
 
@@ -28753,10 +28753,10 @@ device_ids_input: typing.List[str]
 ##### `disable_auto_accept_alert_input`<sup>Optional</sup> <a name="disable_auto_accept_alert_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput"></a>
 
 ```python
-disable_auto_accept_alert_input: typing.Union[bool, IResolvable]
+disable_auto_accept_alert_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -28813,10 +28813,10 @@ monitor_priority_input: typing.Union[int, float]
 ##### `no_screenshot_input`<sup>Optional</sup> <a name="no_screenshot_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput"></a>
 
 ```python
-no_screenshot_input: typing.Union[bool, IResolvable]
+no_screenshot_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -28873,10 +28873,10 @@ verbosity_input: typing.Union[int, float]
 ##### `allow_application_crash`<sup>Required</sup> <a name="allow_application_crash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash"></a>
 
 ```python
-allow_application_crash: typing.Union[bool, IResolvable]
+allow_application_crash: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -28903,10 +28903,10 @@ device_ids: typing.List[str]
 ##### `disable_auto_accept_alert`<sup>Required</sup> <a name="disable_auto_accept_alert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert"></a>
 
 ```python
-disable_auto_accept_alert: typing.Union[bool, IResolvable]
+disable_auto_accept_alert: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -28943,10 +28943,10 @@ monitor_priority: typing.Union[int, float]
 ##### `no_screenshot`<sup>Required</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot"></a>
 
 ```python
-no_screenshot: typing.Union[bool, IResolvable]
+no_screenshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29122,7 +29122,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]</code> | *No description.* |
 
 ---
 
@@ -29153,10 +29153,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStep]]
+internal_value: IResolvable | typing.List[SyntheticsTestMobileStep]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]
 
 ---
 
@@ -29424,13 +29424,13 @@ def put_params(
   delay: typing.Union[int, float] = None,
   direction: str = None,
   element: SyntheticsTestMobileStepParamsElement = None,
-  enable: typing.Union[bool, IResolvable] = None,
+  enable: bool | IResolvable = None,
   max_scrolls: typing.Union[int, float] = None,
-  positions: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsPositions]] = None,
+  positions: IResolvable | typing.List[SyntheticsTestMobileStepParamsPositions] = None,
   subtest_public_id: str = None,
   value: str = None,
   variable: SyntheticsTestMobileStepParamsVariable = None,
-  with_enter: typing.Union[bool, IResolvable] = None,
+  with_enter: bool | IResolvable = None,
   x: typing.Union[int, float] = None,
   y: typing.Union[int, float] = None
 ) -> None
@@ -29480,7 +29480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `enable`<sup>Optional</sup> <a name="enable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.putParams.parameter.enable"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}.
 
@@ -29496,7 +29496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `positions`<sup>Optional</sup> <a name="positions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.putParams.parameter.positions"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]
 
 positions block.
 
@@ -29536,7 +29536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `with_enter`<sup>Optional</sup> <a name="with_enter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.putParams.parameter.withEnter"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}.
 
@@ -29606,24 +29606,24 @@ def reset_timeout() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference">SyntheticsTestMobileStepParamsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput">allow_failure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput">has_new_step_element_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput">is_critical_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput">allow_failure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput">has_new_step_element_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput">is_critical_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.paramsInput">params_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicIdInput">public_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeoutInput">timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure">allow_failure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement">has_new_step_element</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical">is_critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement">has_new_step_element</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical">is_critical</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicId">public_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a></code> | *No description.* |
 
 ---
 
@@ -29664,30 +29664,30 @@ params: SyntheticsTestMobileStepParamsOutputReference
 ##### `allow_failure_input`<sup>Optional</sup> <a name="allow_failure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput"></a>
 
 ```python
-allow_failure_input: typing.Union[bool, IResolvable]
+allow_failure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `has_new_step_element_input`<sup>Optional</sup> <a name="has_new_step_element_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput"></a>
 
 ```python
-has_new_step_element_input: typing.Union[bool, IResolvable]
+has_new_step_element_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_critical_input`<sup>Optional</sup> <a name="is_critical_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput"></a>
 
 ```python
-is_critical_input: typing.Union[bool, IResolvable]
+is_critical_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29704,10 +29704,10 @@ name_input: str
 ##### `no_screenshot_input`<sup>Optional</sup> <a name="no_screenshot_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput"></a>
 
 ```python
-no_screenshot_input: typing.Union[bool, IResolvable]
+no_screenshot_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29754,30 +29754,30 @@ type_input: str
 ##### `allow_failure`<sup>Required</sup> <a name="allow_failure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure"></a>
 
 ```python
-allow_failure: typing.Union[bool, IResolvable]
+allow_failure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `has_new_step_element`<sup>Required</sup> <a name="has_new_step_element" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement"></a>
 
 ```python
-has_new_step_element: typing.Union[bool, IResolvable]
+has_new_step_element: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_critical`<sup>Required</sup> <a name="is_critical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical"></a>
 
 ```python
-is_critical: typing.Union[bool, IResolvable]
+is_critical: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29794,10 +29794,10 @@ name: str
 ##### `no_screenshot`<sup>Required</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot"></a>
 
 ```python
-no_screenshot: typing.Union[bool, IResolvable]
+no_screenshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29834,10 +29834,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestMobileStep]
+internal_value: IResolvable | SyntheticsTestMobileStep
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>
 
 ---
 
@@ -30109,14 +30109,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_user_locator(
-  fail_test_on_cannot_locate: typing.Union[bool, IResolvable] = None,
-  values: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]] = None
+  fail_test_on_cannot_locate: bool | IResolvable = None,
+  values: IResolvable | typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues] = None
 ) -> None
 ```
 
 ###### `fail_test_on_cannot_locate`<sup>Optional</sup> <a name="fail_test_on_cannot_locate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.putUserLocator.parameter.failTestOnCannotLocate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}.
 
@@ -30124,7 +30124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.putUserLocator.parameter.values"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]
 
 values block.
 
@@ -30969,13 +30969,13 @@ Returns a reversible string representation.
 
 ```python
 def put_values(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]]
+  value: IResolvable | typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.putValues.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]
 
 ---
 
@@ -30999,9 +30999,9 @@ def reset_values() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.values">values</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList">SyntheticsTestMobileStepParamsElementUserLocatorValuesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">fail_test_on_cannot_locate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput">values_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">fail_test_on_cannot_locate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">fail_test_on_cannot_locate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput">values_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">fail_test_on_cannot_locate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a></code> | *No description.* |
 
 ---
@@ -31043,30 +31043,30 @@ values: SyntheticsTestMobileStepParamsElementUserLocatorValuesList
 ##### `fail_test_on_cannot_locate_input`<sup>Optional</sup> <a name="fail_test_on_cannot_locate_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput"></a>
 
 ```python
-fail_test_on_cannot_locate_input: typing.Union[bool, IResolvable]
+fail_test_on_cannot_locate_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput"></a>
 
 ```python
-values_input: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]]
+values_input: IResolvable | typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]
 
 ---
 
 ##### `fail_test_on_cannot_locate`<sup>Required</sup> <a name="fail_test_on_cannot_locate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate"></a>
 
 ```python
-fail_test_on_cannot_locate: typing.Union[bool, IResolvable]
+fail_test_on_cannot_locate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -31212,7 +31212,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]</code> | *No description.* |
 
 ---
 
@@ -31243,10 +31243,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]]
+internal_value: IResolvable | typing.List[SyntheticsTestMobileStepParamsElementUserLocatorValues]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]
 
 ---
 
@@ -31524,7 +31524,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a></code> | *No description.* |
 
 ---
 
@@ -31595,10 +31595,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestMobileStepParamsElementUserLocatorValues]
+internal_value: IResolvable | SyntheticsTestMobileStepParamsElementUserLocatorValues
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>
 
 ---
 
@@ -31936,13 +31936,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_positions(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsPositions]]
+  value: IResolvable | typing.List[SyntheticsTestMobileStepParamsPositions]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putPositions.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]
 
 ---
 
@@ -32067,23 +32067,23 @@ def reset_y() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delayInput">delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.directionInput">direction_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.elementInput">element_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput">enable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput">enable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrollsInput">max_scrolls_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput">positions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput">positions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicIdInput">subtest_public_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.variableInput">variable_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput">with_enter_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput">with_enter_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.xInput">x_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.yInput">y_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.check">check</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delay">delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.direction">direction</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable">enable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrolls">max_scrolls</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicId">subtest_public_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter">with_enter</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter">with_enter</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.x">x</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.y">y</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | *No description.* |
@@ -32187,10 +32187,10 @@ element_input: SyntheticsTestMobileStepParamsElement
 ##### `enable_input`<sup>Optional</sup> <a name="enable_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput"></a>
 
 ```python
-enable_input: typing.Union[bool, IResolvable]
+enable_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -32207,10 +32207,10 @@ max_scrolls_input: typing.Union[int, float]
 ##### `positions_input`<sup>Optional</sup> <a name="positions_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput"></a>
 
 ```python
-positions_input: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsPositions]]
+positions_input: IResolvable | typing.List[SyntheticsTestMobileStepParamsPositions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]
 
 ---
 
@@ -32247,10 +32247,10 @@ variable_input: SyntheticsTestMobileStepParamsVariable
 ##### `with_enter_input`<sup>Optional</sup> <a name="with_enter_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput"></a>
 
 ```python
-with_enter_input: typing.Union[bool, IResolvable]
+with_enter_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -32307,10 +32307,10 @@ direction: str
 ##### `enable`<sup>Required</sup> <a name="enable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable"></a>
 
 ```python
-enable: typing.Union[bool, IResolvable]
+enable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -32347,10 +32347,10 @@ value: str
 ##### `with_enter`<sup>Required</sup> <a name="with_enter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter"></a>
 
 ```python
-with_enter: typing.Union[bool, IResolvable]
+with_enter: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -32516,7 +32516,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]</code> | *No description.* |
 
 ---
 
@@ -32547,10 +32547,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestMobileStepParamsPositions]]
+internal_value: IResolvable | typing.List[SyntheticsTestMobileStepParamsPositions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]
 
 ---
 
@@ -32828,7 +32828,7 @@ def reset_y() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.yInput">y_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.x">x</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.y">y</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a></code> | *No description.* |
 
 ---
 
@@ -32899,10 +32899,10 @@ y: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestMobileStepParamsPositions]
+internal_value: IResolvable | SyntheticsTestMobileStepParamsPositions
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>
 
 ---
 
@@ -34508,10 +34508,10 @@ def reset_client_token_id() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.applicationIdInput">application_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.clientTokenIdInput">client_token_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabledInput">is_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabledInput">is_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.applicationId">application_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.clientTokenId">client_token_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabled">is_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
 
 ---
@@ -34563,10 +34563,10 @@ client_token_id_input: typing.Union[int, float]
 ##### `is_enabled_input`<sup>Optional</sup> <a name="is_enabled_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabledInput"></a>
 
 ```python
-is_enabled_input: typing.Union[bool, IResolvable]
+is_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -34593,10 +34593,10 @@ client_token_id: typing.Union[int, float]
 ##### `is_enabled`<sup>Required</sup> <a name="is_enabled" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabled"></a>
 
 ```python
-is_enabled: typing.Union[bool, IResolvable]
+is_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -34844,13 +34844,13 @@ Returns a reversible string representation.
 
 ```python
 def put_timeframes(
-  value: typing.Union[IResolvable, typing.List[SyntheticsTestOptionsListSchedulingTimeframes]]
+  value: IResolvable | typing.List[SyntheticsTestOptionsListSchedulingTimeframes]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]
 
 ---
 
@@ -34862,7 +34862,7 @@ def put_timeframes(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframes">timeframes</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList">SyntheticsTestOptionsListSchedulingTimeframesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput">timeframes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput">timeframes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezoneInput">timezone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
@@ -34906,10 +34906,10 @@ timeframes: SyntheticsTestOptionsListSchedulingTimeframesList
 ##### `timeframes_input`<sup>Optional</sup> <a name="timeframes_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput"></a>
 
 ```python
-timeframes_input: typing.Union[IResolvable, typing.List[SyntheticsTestOptionsListSchedulingTimeframes]]
+timeframes_input: IResolvable | typing.List[SyntheticsTestOptionsListSchedulingTimeframes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]
 
 ---
 
@@ -35075,7 +35075,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]</code> | *No description.* |
 
 ---
 
@@ -35106,10 +35106,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestOptionsListSchedulingTimeframes]]
+internal_value: IResolvable | typing.List[SyntheticsTestOptionsListSchedulingTimeframes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]
 
 ---
 
@@ -35375,7 +35375,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.day">day</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.from">from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.to">to</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a></code> | *No description.* |
 
 ---
 
@@ -35466,10 +35466,10 @@ to: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestOptionsListSchedulingTimeframes]
+internal_value: IResolvable | SyntheticsTestOptionsListSchedulingTimeframes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>
 
 ---
 
@@ -35834,7 +35834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_rum_settings(
-  is_enabled: typing.Union[bool, IResolvable],
+  is_enabled: bool | IResolvable,
   application_id: str = None,
   client_token_id: typing.Union[int, float] = None
 ) -> None
@@ -35842,7 +35842,7 @@ def put_rum_settings(
 
 ###### `is_enabled`<sup>Required</sup> <a name="is_enabled" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRumSettings.parameter.isEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether RUM data is collected during test runs.
 
@@ -35874,14 +35874,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_scheduling(
-  timeframes: typing.Union[IResolvable, typing.List[SyntheticsTestOptionsListSchedulingTimeframes]],
+  timeframes: IResolvable | typing.List[SyntheticsTestOptionsListSchedulingTimeframes],
   timezone: str
 ) -> None
 ```
 
 ###### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putScheduling.parameter.timeframes"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]
 
 timeframes block.
 
@@ -36037,43 +36037,43 @@ def reset_scheduling() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettings">rum_settings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput">accept_self_signed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput">allow_insecure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput">check_certificate_revocation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput">accept_self_signed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput">allow_insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput">check_certificate_revocation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ciInput">ci_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetchingInput">disable_aia_intermediate_fetching_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput">disable_cors_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput">disable_csp_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput">follow_redirects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetchingInput">disable_aia_intermediate_fetching_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput">disable_cors_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput">disable_csp_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput">follow_redirects_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersionInput">http_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput">ignore_server_certificate_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput">ignore_server_certificate_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeoutInput">initial_navigation_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDurationInput">min_failure_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailedInput">min_location_failed_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorNameInput">monitor_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptionsInput">monitor_options_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriorityInput">monitor_priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRolesInput">restricted_roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retryInput">retry_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettingsInput">rum_settings_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.schedulingInput">scheduling_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEveryInput">tick_every_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned">accept_self_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure">allow_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetching">disable_aia_intermediate_fetching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors">disable_cors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp">disable_csp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects">follow_redirects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned">accept_self_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure">allow_insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetching">disable_aia_intermediate_fetching</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors">disable_cors</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp">disable_csp</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects">follow_redirects</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersion">http_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError">ignore_server_certificate_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError">ignore_server_certificate_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeout">initial_navigation_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailed">min_location_failed</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorName">monitor_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriority">monitor_priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEvery">tick_every</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
@@ -36157,30 +36157,30 @@ scheduling: SyntheticsTestOptionsListSchedulingOutputReference
 ##### `accept_self_signed_input`<sup>Optional</sup> <a name="accept_self_signed_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput"></a>
 
 ```python
-accept_self_signed_input: typing.Union[bool, IResolvable]
+accept_self_signed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_insecure_input`<sup>Optional</sup> <a name="allow_insecure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput"></a>
 
 ```python
-allow_insecure_input: typing.Union[bool, IResolvable]
+allow_insecure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `check_certificate_revocation_input`<sup>Optional</sup> <a name="check_certificate_revocation_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput"></a>
 
 ```python
-check_certificate_revocation_input: typing.Union[bool, IResolvable]
+check_certificate_revocation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -36197,40 +36197,40 @@ ci_input: SyntheticsTestOptionsListCi
 ##### `disable_aia_intermediate_fetching_input`<sup>Optional</sup> <a name="disable_aia_intermediate_fetching_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetchingInput"></a>
 
 ```python
-disable_aia_intermediate_fetching_input: typing.Union[bool, IResolvable]
+disable_aia_intermediate_fetching_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_cors_input`<sup>Optional</sup> <a name="disable_cors_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput"></a>
 
 ```python
-disable_cors_input: typing.Union[bool, IResolvable]
+disable_cors_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_csp_input`<sup>Optional</sup> <a name="disable_csp_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput"></a>
 
 ```python
-disable_csp_input: typing.Union[bool, IResolvable]
+disable_csp_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `follow_redirects_input`<sup>Optional</sup> <a name="follow_redirects_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput"></a>
 
 ```python
-follow_redirects_input: typing.Union[bool, IResolvable]
+follow_redirects_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -36247,10 +36247,10 @@ http_version_input: str
 ##### `ignore_server_certificate_error_input`<sup>Optional</sup> <a name="ignore_server_certificate_error_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput"></a>
 
 ```python
-ignore_server_certificate_error_input: typing.Union[bool, IResolvable]
+ignore_server_certificate_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -36317,10 +36317,10 @@ monitor_priority_input: typing.Union[int, float]
 ##### `no_screenshot_input`<sup>Optional</sup> <a name="no_screenshot_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput"></a>
 
 ```python
-no_screenshot_input: typing.Union[bool, IResolvable]
+no_screenshot_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -36377,70 +36377,70 @@ tick_every_input: typing.Union[int, float]
 ##### `accept_self_signed`<sup>Required</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned"></a>
 
 ```python
-accept_self_signed: typing.Union[bool, IResolvable]
+accept_self_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_insecure`<sup>Required</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure"></a>
 
 ```python
-allow_insecure: typing.Union[bool, IResolvable]
+allow_insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `check_certificate_revocation`<sup>Required</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation"></a>
 
 ```python
-check_certificate_revocation: typing.Union[bool, IResolvable]
+check_certificate_revocation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_aia_intermediate_fetching`<sup>Required</sup> <a name="disable_aia_intermediate_fetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetching"></a>
 
 ```python
-disable_aia_intermediate_fetching: typing.Union[bool, IResolvable]
+disable_aia_intermediate_fetching: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_cors`<sup>Required</sup> <a name="disable_cors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors"></a>
 
 ```python
-disable_cors: typing.Union[bool, IResolvable]
+disable_cors: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_csp`<sup>Required</sup> <a name="disable_csp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp"></a>
 
 ```python
-disable_csp: typing.Union[bool, IResolvable]
+disable_csp: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `follow_redirects`<sup>Required</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects"></a>
 
 ```python
-follow_redirects: typing.Union[bool, IResolvable]
+follow_redirects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -36457,10 +36457,10 @@ http_version: str
 ##### `ignore_server_certificate_error`<sup>Required</sup> <a name="ignore_server_certificate_error" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError"></a>
 
 ```python
-ignore_server_certificate_error: typing.Union[bool, IResolvable]
+ignore_server_certificate_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -36517,10 +36517,10 @@ monitor_priority: typing.Union[int, float]
 ##### `no_screenshot`<sup>Required</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot"></a>
 
 ```python
-no_screenshot: typing.Union[bool, IResolvable]
+no_screenshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -38769,18 +38769,18 @@ def reset_url() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.formInput">form_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.httpVersionInput">http_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">is_message_base64_encoded_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">is_message_base64_encoded_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.methodInput">method_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBodyInput">no_saving_response_body_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBodyInput">no_saving_response_body_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.numberOfPacketsInput">number_of_packets_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookiesInput">persist_cookies_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookiesInput">persist_cookies_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.plainProtoFileInput">plain_proto_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.portInput">port_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.protoJsonDescriptorInput">proto_json_descriptor_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.servernameInput">servername_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.serviceInput">service_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHopsInput">should_track_hops_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHopsInput">should_track_hops_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.timeoutInput">timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.body">body</a></code> | <code>str</code> | *No description.* |
@@ -38792,18 +38792,18 @@ def reset_url() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.form">form</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.httpVersion">http_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64Encoded">is_message_base64_encoded</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64Encoded">is_message_base64_encoded</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.message">message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.method">method</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBody">no_saving_response_body</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBody">no_saving_response_body</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.numberOfPackets">number_of_packets</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookies">persist_cookies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookies">persist_cookies</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.plainProtoFile">plain_proto_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.port">port</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.protoJsonDescriptor">proto_json_descriptor</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.servername">servername</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.service">service</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHops">should_track_hops</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHops">should_track_hops</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | *No description.* |
@@ -38927,10 +38927,10 @@ http_version_input: str
 ##### `is_message_base64_encoded_input`<sup>Optional</sup> <a name="is_message_base64_encoded_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64EncodedInput"></a>
 
 ```python
-is_message_base64_encoded_input: typing.Union[bool, IResolvable]
+is_message_base64_encoded_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -38957,10 +38957,10 @@ method_input: str
 ##### `no_saving_response_body_input`<sup>Optional</sup> <a name="no_saving_response_body_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBodyInput"></a>
 
 ```python
-no_saving_response_body_input: typing.Union[bool, IResolvable]
+no_saving_response_body_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -38977,10 +38977,10 @@ number_of_packets_input: typing.Union[int, float]
 ##### `persist_cookies_input`<sup>Optional</sup> <a name="persist_cookies_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookiesInput"></a>
 
 ```python
-persist_cookies_input: typing.Union[bool, IResolvable]
+persist_cookies_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -39037,10 +39037,10 @@ service_input: str
 ##### `should_track_hops_input`<sup>Optional</sup> <a name="should_track_hops_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHopsInput"></a>
 
 ```python
-should_track_hops_input: typing.Union[bool, IResolvable]
+should_track_hops_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -39157,10 +39157,10 @@ http_version: str
 ##### `is_message_base64_encoded`<sup>Required</sup> <a name="is_message_base64_encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64Encoded"></a>
 
 ```python
-is_message_base64_encoded: typing.Union[bool, IResolvable]
+is_message_base64_encoded: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -39187,10 +39187,10 @@ method: str
 ##### `no_saving_response_body`<sup>Required</sup> <a name="no_saving_response_body" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBody"></a>
 
 ```python
-no_saving_response_body: typing.Union[bool, IResolvable]
+no_saving_response_body: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -39207,10 +39207,10 @@ number_of_packets: typing.Union[int, float]
 ##### `persist_cookies`<sup>Required</sup> <a name="persist_cookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookies"></a>
 
 ```python
-persist_cookies: typing.Union[bool, IResolvable]
+persist_cookies: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -39267,10 +39267,10 @@ service: str
 ##### `should_track_hops`<sup>Required</sup> <a name="should_track_hops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHops"></a>
 
 ```python
-should_track_hops: typing.Union[bool, IResolvable]
+should_track_hops: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -39436,7 +39436,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]</code> | *No description.* |
 
 ---
 
@@ -39467,10 +39467,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsTestRequestFile]]
+internal_value: IResolvable | typing.List[SyntheticsTestRequestFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]
 
 ---
 
@@ -39755,7 +39755,7 @@ def reset_original_file_name() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.originalFileName">original_file_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a></code> | *No description.* |
 
 ---
 
@@ -39896,10 +39896,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsTestRequestFile]
+internal_value: IResolvable | SyntheticsTestRequestFile
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>
 
 ---
 

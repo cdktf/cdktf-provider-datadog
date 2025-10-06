@@ -14,47 +14,47 @@ from cdktf_cdktf_provider_datadog import monitor
 monitor.Monitor(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   message: str,
   name: str,
   query: str,
   type: str,
-  enable_logs_sample: typing.Union[bool, IResolvable] = None,
-  enable_samples: typing.Union[bool, IResolvable] = None,
+  enable_logs_sample: bool | IResolvable = None,
+  enable_samples: bool | IResolvable = None,
   escalation_message: str = None,
   evaluation_delay: typing.Union[int, float] = None,
-  force_delete: typing.Union[bool, IResolvable] = None,
-  groupby_simple_monitor: typing.Union[bool, IResolvable] = None,
+  force_delete: bool | IResolvable = None,
+  groupby_simple_monitor: bool | IResolvable = None,
   group_retention_duration: str = None,
   id: str = None,
-  include_tags: typing.Union[bool, IResolvable] = None,
-  locked: typing.Union[bool, IResolvable] = None,
+  include_tags: bool | IResolvable = None,
+  locked: bool | IResolvable = None,
   monitor_thresholds: MonitorMonitorThresholds = None,
   monitor_threshold_windows: MonitorMonitorThresholdWindows = None,
   new_group_delay: typing.Union[int, float] = None,
   new_host_delay: typing.Union[int, float] = None,
   no_data_timeframe: typing.Union[int, float] = None,
   notification_preset_name: str = None,
-  notify_audit: typing.Union[bool, IResolvable] = None,
+  notify_audit: bool | IResolvable = None,
   notify_by: typing.List[str] = None,
-  notify_no_data: typing.Union[bool, IResolvable] = None,
+  notify_no_data: bool | IResolvable = None,
   on_missing_data: str = None,
   priority: str = None,
   renotify_interval: typing.Union[int, float] = None,
   renotify_occurrences: typing.Union[int, float] = None,
   renotify_statuses: typing.List[str] = None,
-  require_full_window: typing.Union[bool, IResolvable] = None,
+  require_full_window: bool | IResolvable = None,
   restricted_roles: typing.List[str] = None,
   scheduling_options: MonitorSchedulingOptions = None,
   tags: typing.List[str] = None,
   timeout_h: typing.Union[int, float] = None,
-  validate: typing.Union[bool, IResolvable] = None,
+  validate: bool | IResolvable = None,
   variables: MonitorVariables = None
 )
 ```
@@ -63,47 +63,47 @@ monitor.Monitor(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.message">message</a></code> | <code>str</code> | A message to include with notifications for this monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of Datadog monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.query">query</a></code> | <code>str</code> | The monitor query to notify on. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample">enable_logs_sample</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples">enable_samples</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not a list of samples which triggered the alert is included. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample">enable_logs_sample</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples">enable_samples</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.escalationMessage">escalation_message</a></code> | <code>str</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to trigger one alert if any source breaches a threshold. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupRetentionDuration">group_retention_duration</a></code> | <code>str</code> | The time span after which groups with missing data are dropped from the monitor state. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/monitor#id Monitor#id}. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags">include_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.locked">locked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags">include_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.locked">locked</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholds">monitor_thresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholdWindows">monitor_threshold_windows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | monitor_threshold_windows block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.newGroupDelay">new_group_delay</a></code> | <code>typing.Union[int, float]</code> | The time (in seconds) to skip evaluations for new groups. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.newHostDelay">new_host_delay</a></code> | <code>typing.Union[int, float]</code> | **Deprecated**. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.noDataTimeframe">no_data_timeframe</a></code> | <code>typing.Union[int, float]</code> | The number of minutes before a monitor will notify when data stops reporting. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notificationPresetName">notification_preset_name</a></code> | <code>str</code> | Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit">notify_audit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit">notify_audit</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyBy">notify_by</a></code> | <code>typing.List[str]</code> | Controls what granularity a monitor alerts on. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData">notify_no_data</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData">notify_no_data</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.onMissingData">on_missing_data</a></code> | <code>str</code> | Controls how groups or monitors are treated if an evaluation does not return any data points. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.priority">priority</a></code> | <code>str</code> | Integer from 1 (high) to 5 (low) indicating alert severity. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyInterval">renotify_interval</a></code> | <code>typing.Union[int, float]</code> | The number of minutes after the last notification before a monitor will re-notify on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyOccurrences">renotify_occurrences</a></code> | <code>typing.Union[int, float]</code> | The number of re-notification messages that should be sent on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyStatuses">renotify_statuses</a></code> | <code>typing.List[str]</code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow">require_full_window</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow">require_full_window</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of unique role identifiers to define which roles are allowed to edit the monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.schedulingOptions">scheduling_options</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | scheduling_options block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.timeoutH">timeout_h</a></code> | <code>typing.Union[int, float]</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.validate">validate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `false`, skip the validation call done during plan. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.validate">validate</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.variables">variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | variables block. |
 
 ---
@@ -128,13 +128,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -164,7 +164,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `enable_logs_sample`<sup>Optional</sup> <a name="enable_logs_sample" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether or not to include a list of log values which triggered the alert.
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `enable_samples`<sup>Optional</sup> <a name="enable_samples" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not a list of samples which triggered the alert is included.
 
@@ -264,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
@@ -274,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `groupby_simple_monitor`<sup>Optional</sup> <a name="groupby_simple_monitor" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to trigger one alert if any source breaches a threshold.
 
@@ -309,7 +309,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `include_tags`<sup>Optional</sup> <a name="include_tags" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.locked"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether changes to this monitor should be restricted to the creator or admins.
 
@@ -397,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `notify_audit`<sup>Optional</sup> <a name="notify_audit" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
@@ -419,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `notify_no_data`<sup>Optional</sup> <a name="notify_no_data" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
@@ -483,7 +483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `require_full_window`<sup>Optional</sup> <a name="require_full_window" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether this monitor needs a full window of data before it's evaluated.
 
@@ -543,7 +543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.validate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to `false`, skip the validation call done during plan.
 
@@ -848,7 +848,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-datadog.monitor.Monitor.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-datadog.monitor.Monitor.importFrom"></a>
@@ -911,7 +911,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -927,7 +927,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-datadog.monitor.Monitor.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1086,14 +1086,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_variables(
-  cloud_cost_query: typing.Union[IResolvable, typing.List[MonitorVariablesCloudCostQuery]] = None,
-  event_query: typing.Union[IResolvable, typing.List[MonitorVariablesEventQuery]] = None
+  cloud_cost_query: IResolvable | typing.List[MonitorVariablesCloudCostQuery] = None,
+  event_query: IResolvable | typing.List[MonitorVariablesEventQuery] = None
 ) -> None
 ```
 
 ###### `cloud_cost_query`<sup>Optional</sup> <a name="cloud_cost_query" id="@cdktf/provider-datadog.monitor.Monitor.putVariables.parameter.cloudCostQuery"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 cloud_cost_query block.
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ###### `event_query`<sup>Optional</sup> <a name="event_query" id="@cdktf/provider-datadog.monitor.Monitor.putVariables.parameter.eventQuery"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 event_query block.
 
@@ -1434,27 +1434,27 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholds">monitor_thresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference">MonitorMonitorThresholdsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindows">monitor_threshold_windows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference">MonitorMonitorThresholdWindowsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptions">scheduling_options</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference">MonitorSchedulingOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.variables">variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference">MonitorVariablesOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput">enable_logs_sample_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput">enable_samples_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput">enable_logs_sample_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput">enable_samples_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.escalationMessageInput">escalation_message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelayInput">evaluation_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput">force_delete_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput">groupby_simple_monitor_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput">force_delete_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput">groupby_simple_monitor_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDurationInput">group_retention_duration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput">include_tags_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lockedInput">locked_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput">include_tags_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lockedInput">locked_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdsInput">monitor_thresholds_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindowsInput">monitor_threshold_windows_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | *No description.* |
@@ -1463,54 +1463,54 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newHostDelayInput">new_host_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframeInput">no_data_timeframe_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetNameInput">notification_preset_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput">notify_audit_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput">notify_audit_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyByInput">notify_by_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput">notify_no_data_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput">notify_no_data_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.onMissingDataInput">on_missing_data_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.priorityInput">priority_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyIntervalInput">renotify_interval_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrencesInput">renotify_occurrences_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatusesInput">renotify_statuses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput">require_full_window_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput">require_full_window_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.restrictedRolesInput">restricted_roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptionsInput">scheduling_options_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.timeoutHInput">timeout_h_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validateInput">validate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validateInput">validate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.variablesInput">variables_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample">enable_logs_sample</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamples">enable_samples</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample">enable_logs_sample</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamples">enable_samples</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.escalationMessage">escalation_message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDuration">group_retention_duration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTags">include_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.locked">locked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTags">include_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.locked">locked</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.message">message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newGroupDelay">new_group_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newHostDelay">new_host_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframe">no_data_timeframe</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetName">notification_preset_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit">notify_audit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit">notify_audit</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyBy">notify_by</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData">notify_no_data</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData">notify_no_data</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.onMissingData">on_missing_data</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.priority">priority</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.query">query</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyInterval">renotify_interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrences">renotify_occurrences</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatuses">renotify_statuses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow">require_full_window</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow">require_full_window</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.timeoutH">timeout_h</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validate">validate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validate">validate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1589,20 +1589,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.monitor.Monitor.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitor.Monitor.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1649,10 +1649,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.monitor.Monitor.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1699,20 +1699,20 @@ variables: MonitorVariablesOutputReference
 ##### `enable_logs_sample_input`<sup>Optional</sup> <a name="enable_logs_sample_input" id="@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput"></a>
 
 ```python
-enable_logs_sample_input: typing.Union[bool, IResolvable]
+enable_logs_sample_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_samples_input`<sup>Optional</sup> <a name="enable_samples_input" id="@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput"></a>
 
 ```python
-enable_samples_input: typing.Union[bool, IResolvable]
+enable_samples_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1739,20 +1739,20 @@ evaluation_delay_input: typing.Union[int, float]
 ##### `force_delete_input`<sup>Optional</sup> <a name="force_delete_input" id="@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput"></a>
 
 ```python
-force_delete_input: typing.Union[bool, IResolvable]
+force_delete_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `groupby_simple_monitor_input`<sup>Optional</sup> <a name="groupby_simple_monitor_input" id="@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput"></a>
 
 ```python
-groupby_simple_monitor_input: typing.Union[bool, IResolvable]
+groupby_simple_monitor_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1779,20 +1779,20 @@ id_input: str
 ##### `include_tags_input`<sup>Optional</sup> <a name="include_tags_input" id="@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput"></a>
 
 ```python
-include_tags_input: typing.Union[bool, IResolvable]
+include_tags_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `locked_input`<sup>Optional</sup> <a name="locked_input" id="@cdktf/provider-datadog.monitor.Monitor.property.lockedInput"></a>
 
 ```python
-locked_input: typing.Union[bool, IResolvable]
+locked_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1879,10 +1879,10 @@ notification_preset_name_input: str
 ##### `notify_audit_input`<sup>Optional</sup> <a name="notify_audit_input" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput"></a>
 
 ```python
-notify_audit_input: typing.Union[bool, IResolvable]
+notify_audit_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1899,10 +1899,10 @@ notify_by_input: typing.List[str]
 ##### `notify_no_data_input`<sup>Optional</sup> <a name="notify_no_data_input" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput"></a>
 
 ```python
-notify_no_data_input: typing.Union[bool, IResolvable]
+notify_no_data_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1969,10 +1969,10 @@ renotify_statuses_input: typing.List[str]
 ##### `require_full_window_input`<sup>Optional</sup> <a name="require_full_window_input" id="@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput"></a>
 
 ```python
-require_full_window_input: typing.Union[bool, IResolvable]
+require_full_window_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2029,10 +2029,10 @@ type_input: str
 ##### `validate_input`<sup>Optional</sup> <a name="validate_input" id="@cdktf/provider-datadog.monitor.Monitor.property.validateInput"></a>
 
 ```python
-validate_input: typing.Union[bool, IResolvable]
+validate_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2049,20 +2049,20 @@ variables_input: MonitorVariables
 ##### `enable_logs_sample`<sup>Required</sup> <a name="enable_logs_sample" id="@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample"></a>
 
 ```python
-enable_logs_sample: typing.Union[bool, IResolvable]
+enable_logs_sample: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_samples`<sup>Required</sup> <a name="enable_samples" id="@cdktf/provider-datadog.monitor.Monitor.property.enableSamples"></a>
 
 ```python
-enable_samples: typing.Union[bool, IResolvable]
+enable_samples: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2089,20 +2089,20 @@ evaluation_delay: typing.Union[int, float]
 ##### `force_delete`<sup>Required</sup> <a name="force_delete" id="@cdktf/provider-datadog.monitor.Monitor.property.forceDelete"></a>
 
 ```python
-force_delete: typing.Union[bool, IResolvable]
+force_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `groupby_simple_monitor`<sup>Required</sup> <a name="groupby_simple_monitor" id="@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor"></a>
 
 ```python
-groupby_simple_monitor: typing.Union[bool, IResolvable]
+groupby_simple_monitor: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2129,20 +2129,20 @@ id: str
 ##### `include_tags`<sup>Required</sup> <a name="include_tags" id="@cdktf/provider-datadog.monitor.Monitor.property.includeTags"></a>
 
 ```python
-include_tags: typing.Union[bool, IResolvable]
+include_tags: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `locked`<sup>Required</sup> <a name="locked" id="@cdktf/provider-datadog.monitor.Monitor.property.locked"></a>
 
 ```python
-locked: typing.Union[bool, IResolvable]
+locked: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2209,10 +2209,10 @@ notification_preset_name: str
 ##### `notify_audit`<sup>Required</sup> <a name="notify_audit" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit"></a>
 
 ```python
-notify_audit: typing.Union[bool, IResolvable]
+notify_audit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2229,10 +2229,10 @@ notify_by: typing.List[str]
 ##### `notify_no_data`<sup>Required</sup> <a name="notify_no_data" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData"></a>
 
 ```python
-notify_no_data: typing.Union[bool, IResolvable]
+notify_no_data: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2299,10 +2299,10 @@ renotify_statuses: typing.List[str]
 ##### `require_full_window`<sup>Required</sup> <a name="require_full_window" id="@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow"></a>
 
 ```python
-require_full_window: typing.Union[bool, IResolvable]
+require_full_window: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2349,10 +2349,10 @@ type: str
 ##### `validate`<sup>Required</sup> <a name="validate" id="@cdktf/provider-datadog.monitor.Monitor.property.validate"></a>
 
 ```python
-validate: typing.Union[bool, IResolvable]
+validate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2384,47 +2384,47 @@ tfResourceType: str
 from cdktf_cdktf_provider_datadog import monitor
 
 monitor.MonitorConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   message: str,
   name: str,
   query: str,
   type: str,
-  enable_logs_sample: typing.Union[bool, IResolvable] = None,
-  enable_samples: typing.Union[bool, IResolvable] = None,
+  enable_logs_sample: bool | IResolvable = None,
+  enable_samples: bool | IResolvable = None,
   escalation_message: str = None,
   evaluation_delay: typing.Union[int, float] = None,
-  force_delete: typing.Union[bool, IResolvable] = None,
-  groupby_simple_monitor: typing.Union[bool, IResolvable] = None,
+  force_delete: bool | IResolvable = None,
+  groupby_simple_monitor: bool | IResolvable = None,
   group_retention_duration: str = None,
   id: str = None,
-  include_tags: typing.Union[bool, IResolvable] = None,
-  locked: typing.Union[bool, IResolvable] = None,
+  include_tags: bool | IResolvable = None,
+  locked: bool | IResolvable = None,
   monitor_thresholds: MonitorMonitorThresholds = None,
   monitor_threshold_windows: MonitorMonitorThresholdWindows = None,
   new_group_delay: typing.Union[int, float] = None,
   new_host_delay: typing.Union[int, float] = None,
   no_data_timeframe: typing.Union[int, float] = None,
   notification_preset_name: str = None,
-  notify_audit: typing.Union[bool, IResolvable] = None,
+  notify_audit: bool | IResolvable = None,
   notify_by: typing.List[str] = None,
-  notify_no_data: typing.Union[bool, IResolvable] = None,
+  notify_no_data: bool | IResolvable = None,
   on_missing_data: str = None,
   priority: str = None,
   renotify_interval: typing.Union[int, float] = None,
   renotify_occurrences: typing.Union[int, float] = None,
   renotify_statuses: typing.List[str] = None,
-  require_full_window: typing.Union[bool, IResolvable] = None,
+  require_full_window: bool | IResolvable = None,
   restricted_roles: typing.List[str] = None,
   scheduling_options: MonitorSchedulingOptions = None,
   tags: typing.List[str] = None,
   timeout_h: typing.Union[int, float] = None,
-  validate: typing.Union[bool, IResolvable] = None,
+  validate: bool | IResolvable = None,
   variables: MonitorVariables = None
 )
 ```
@@ -2433,47 +2433,47 @@ monitor.MonitorConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.message">message</a></code> | <code>str</code> | A message to include with notifications for this monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.name">name</a></code> | <code>str</code> | Name of Datadog monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.query">query</a></code> | <code>str</code> | The monitor query to notify on. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.type">type</a></code> | <code>str</code> | The type of the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample">enable_logs_sample</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples">enable_samples</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not a list of samples which triggered the alert is included. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample">enable_logs_sample</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples">enable_samples</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.escalationMessage">escalation_message</a></code> | <code>str</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to trigger one alert if any source breaches a threshold. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration">group_retention_duration</a></code> | <code>str</code> | The time span after which groups with missing data are dropped from the monitor state. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/monitor#id Monitor#id}. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags">include_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.locked">locked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags">include_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.locked">locked</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholds">monitor_thresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholdWindows">monitor_threshold_windows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | monitor_threshold_windows block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.newGroupDelay">new_group_delay</a></code> | <code>typing.Union[int, float]</code> | The time (in seconds) to skip evaluations for new groups. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.newHostDelay">new_host_delay</a></code> | <code>typing.Union[int, float]</code> | **Deprecated**. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.noDataTimeframe">no_data_timeframe</a></code> | <code>typing.Union[int, float]</code> | The number of minutes before a monitor will notify when data stops reporting. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notificationPresetName">notification_preset_name</a></code> | <code>str</code> | Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit">notify_audit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit">notify_audit</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyBy">notify_by</a></code> | <code>typing.List[str]</code> | Controls what granularity a monitor alerts on. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData">notify_no_data</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData">notify_no_data</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.onMissingData">on_missing_data</a></code> | <code>str</code> | Controls how groups or monitors are treated if an evaluation does not return any data points. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.priority">priority</a></code> | <code>str</code> | Integer from 1 (high) to 5 (low) indicating alert severity. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyInterval">renotify_interval</a></code> | <code>typing.Union[int, float]</code> | The number of minutes after the last notification before a monitor will re-notify on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyOccurrences">renotify_occurrences</a></code> | <code>typing.Union[int, float]</code> | The number of re-notification messages that should be sent on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyStatuses">renotify_statuses</a></code> | <code>typing.List[str]</code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow">require_full_window</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow">require_full_window</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of unique role identifiers to define which roles are allowed to edit the monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.schedulingOptions">scheduling_options</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | scheduling_options block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.timeoutH">timeout_h</a></code> | <code>typing.Union[int, float]</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.validate">validate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `false`, skip the validation call done during plan. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.validate">validate</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.variables">variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | variables block. |
 
 ---
@@ -2481,20 +2481,20 @@ monitor.MonitorConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2541,10 +2541,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2615,10 +2615,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `enable_logs_sample`<sup>Optional</sup> <a name="enable_logs_sample" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample"></a>
 
 ```python
-enable_logs_sample: typing.Union[bool, IResolvable]
+enable_logs_sample: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether or not to include a list of log values which triggered the alert.
 
@@ -2631,10 +2631,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `enable_samples`<sup>Optional</sup> <a name="enable_samples" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples"></a>
 
 ```python
-enable_samples: typing.Union[bool, IResolvable]
+enable_samples: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not a list of samples which triggered the alert is included.
 
@@ -2677,10 +2677,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete"></a>
 
 ```python
-force_delete: typing.Union[bool, IResolvable]
+force_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
@@ -2691,10 +2691,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `groupby_simple_monitor`<sup>Optional</sup> <a name="groupby_simple_monitor" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor"></a>
 
 ```python
-groupby_simple_monitor: typing.Union[bool, IResolvable]
+groupby_simple_monitor: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to trigger one alert if any source breaches a threshold.
 
@@ -2738,10 +2738,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `include_tags`<sup>Optional</sup> <a name="include_tags" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags"></a>
 
 ```python
-include_tags: typing.Union[bool, IResolvable]
+include_tags: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
@@ -2752,10 +2752,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.locked"></a>
 
 ```python
-locked: typing.Union[bool, IResolvable]
+locked: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether changes to this monitor should be restricted to the creator or admins.
 
@@ -2858,10 +2858,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `notify_audit`<sup>Optional</sup> <a name="notify_audit" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit"></a>
 
 ```python
-notify_audit: typing.Union[bool, IResolvable]
+notify_audit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
@@ -2888,10 +2888,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `notify_no_data`<sup>Optional</sup> <a name="notify_no_data" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData"></a>
 
 ```python
-notify_no_data: typing.Union[bool, IResolvable]
+notify_no_data: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
@@ -2976,10 +2976,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `require_full_window`<sup>Optional</sup> <a name="require_full_window" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow"></a>
 
 ```python
-require_full_window: typing.Union[bool, IResolvable]
+require_full_window: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean indicating whether this monitor needs a full window of data before it's evaluated.
 
@@ -3056,10 +3056,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.validate"></a>
 
 ```python
-validate: typing.Union[bool, IResolvable]
+validate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to `false`, skip the validation call done during plan.
 
@@ -3475,8 +3475,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import monitor
 
 monitor.MonitorVariables(
-  cloud_cost_query: typing.Union[IResolvable, typing.List[MonitorVariablesCloudCostQuery]] = None,
-  event_query: typing.Union[IResolvable, typing.List[MonitorVariablesEventQuery]] = None
+  cloud_cost_query: IResolvable | typing.List[MonitorVariablesCloudCostQuery] = None,
+  event_query: IResolvable | typing.List[MonitorVariablesEventQuery] = None
 )
 ```
 
@@ -3484,18 +3484,18 @@ monitor.MonitorVariables(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery">cloud_cost_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]]</code> | cloud_cost_query block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery">event_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]]</code> | event_query block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery">cloud_cost_query</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | cloud_cost_query block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery">event_query</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | event_query block. |
 
 ---
 
 ##### `cloud_cost_query`<sup>Optional</sup> <a name="cloud_cost_query" id="@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery"></a>
 
 ```python
-cloud_cost_query: typing.Union[IResolvable, typing.List[MonitorVariablesCloudCostQuery]]
+cloud_cost_query: IResolvable | typing.List[MonitorVariablesCloudCostQuery]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 cloud_cost_query block.
 
@@ -3506,10 +3506,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `event_query`<sup>Optional</sup> <a name="event_query" id="@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery"></a>
 
 ```python
-event_query: typing.Union[IResolvable, typing.List[MonitorVariablesEventQuery]]
+event_query: IResolvable | typing.List[MonitorVariablesEventQuery]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 event_query block.
 
@@ -3609,11 +3609,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktf_cdktf_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQuery(
-  compute: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryCompute]],
+  compute: IResolvable | typing.List[MonitorVariablesEventQueryCompute],
   data_source: str,
   name: str,
   search: MonitorVariablesEventQuerySearch,
-  group_by: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryGroupBy]] = None,
+  group_by: IResolvable | typing.List[MonitorVariablesEventQueryGroupBy] = None,
   indexes: typing.List[str] = None
 )
 ```
@@ -3622,11 +3622,11 @@ monitor.MonitorVariablesEventQuery(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">compute</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]]</code> | compute block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">compute</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | compute block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource">data_source</a></code> | <code>str</code> | The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.name">name</a></code> | <code>str</code> | The name of query for use in formulas. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">group_by</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]]</code> | group_by block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">group_by</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | group_by block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes">indexes</a></code> | <code>typing.List[str]</code> | An array of index names to query in the stream. |
 
 ---
@@ -3634,10 +3634,10 @@ monitor.MonitorVariablesEventQuery(
 ##### `compute`<sup>Required</sup> <a name="compute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute"></a>
 
 ```python
-compute: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryCompute]]
+compute: IResolvable | typing.List[MonitorVariablesEventQueryCompute]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
 
 compute block.
 
@@ -3690,10 +3690,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `group_by`<sup>Optional</sup> <a name="group_by" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy"></a>
 
 ```python
-group_by: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryGroupBy]]
+group_by: IResolvable | typing.List[MonitorVariablesEventQueryGroupBy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
 
 group_by block.
 
@@ -6307,7 +6307,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -6338,10 +6338,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[MonitorVariablesCloudCostQuery]]
+internal_value: IResolvable | typing.List[MonitorVariablesCloudCostQuery]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 ---
 
@@ -6616,7 +6616,7 @@ def reset_aggregator() -> None
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSource">data_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a></code> | *No description.* |
 
 ---
 
@@ -6727,10 +6727,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, MonitorVariablesCloudCostQuery]
+internal_value: IResolvable | MonitorVariablesCloudCostQuery
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>
 
 ---
 
@@ -6866,7 +6866,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | *No description.* |
 
 ---
 
@@ -6897,10 +6897,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryCompute]]
+internal_value: IResolvable | typing.List[MonitorVariablesEventQueryCompute]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
 
 ---
 
@@ -7180,7 +7180,7 @@ def reset_metric() -> None
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregation">aggregation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.interval">interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metric">metric</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a></code> | *No description.* |
 
 ---
 
@@ -7271,10 +7271,10 @@ metric: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, MonitorVariablesEventQueryCompute]
+internal_value: IResolvable | MonitorVariablesEventQueryCompute
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>
 
 ---
 
@@ -7410,7 +7410,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | *No description.* |
 
 ---
 
@@ -7441,10 +7441,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryGroupBy]]
+internal_value: IResolvable | typing.List[MonitorVariablesEventQueryGroupBy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
 
 ---
 
@@ -7767,7 +7767,7 @@ def reset_sort() -> None
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sortInput">sort_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facet">facet</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a></code> | *No description.* |
 
 ---
 
@@ -7858,10 +7858,10 @@ limit: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, MonitorVariablesEventQueryGroupBy]
+internal_value: IResolvable | MonitorVariablesEventQueryGroupBy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>
 
 ---
 
@@ -8351,7 +8351,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -8382,10 +8382,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[MonitorVariablesEventQuery]]
+internal_value: IResolvable | typing.List[MonitorVariablesEventQuery]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 ---
 
@@ -8647,13 +8647,13 @@ Returns a reversible string representation.
 
 ```python
 def put_compute(
-  value: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryCompute]]
+  value: IResolvable | typing.List[MonitorVariablesEventQueryCompute]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
 
 ---
 
@@ -8661,13 +8661,13 @@ def put_compute(
 
 ```python
 def put_group_by(
-  value: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryGroupBy]]
+  value: IResolvable | typing.List[MonitorVariablesEventQueryGroupBy]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
 
 ---
 
@@ -8711,16 +8711,16 @@ def reset_indexes() -> None
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.compute">compute</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList">MonitorVariablesEventQueryComputeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupBy">group_by</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList">MonitorVariablesEventQueryGroupByList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference">MonitorVariablesEventQuerySearchOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput">compute_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput">compute_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSourceInput">data_source_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput">group_by_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput">group_by_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexesInput">indexes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.searchInput">search_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSource">data_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexes">indexes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a></code> | *No description.* |
 
 ---
 
@@ -8781,10 +8781,10 @@ search: MonitorVariablesEventQuerySearchOutputReference
 ##### `compute_input`<sup>Optional</sup> <a name="compute_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput"></a>
 
 ```python
-compute_input: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryCompute]]
+compute_input: IResolvable | typing.List[MonitorVariablesEventQueryCompute]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
 
 ---
 
@@ -8801,10 +8801,10 @@ data_source_input: str
 ##### `group_by_input`<sup>Optional</sup> <a name="group_by_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput"></a>
 
 ```python
-group_by_input: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryGroupBy]]
+group_by_input: IResolvable | typing.List[MonitorVariablesEventQueryGroupBy]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
 
 ---
 
@@ -8871,10 +8871,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, MonitorVariablesEventQuery]
+internal_value: IResolvable | MonitorVariablesEventQuery
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>
 
 ---
 
@@ -9411,13 +9411,13 @@ Returns a reversible string representation.
 
 ```python
 def put_cloud_cost_query(
-  value: typing.Union[IResolvable, typing.List[MonitorVariablesCloudCostQuery]]
+  value: IResolvable | typing.List[MonitorVariablesCloudCostQuery]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 ---
 
@@ -9425,13 +9425,13 @@ def put_cloud_cost_query(
 
 ```python
 def put_event_query(
-  value: typing.Union[IResolvable, typing.List[MonitorVariablesEventQuery]]
+  value: IResolvable | typing.List[MonitorVariablesEventQuery]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 ---
 
@@ -9456,8 +9456,8 @@ def reset_event_query() -> None
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQuery">cloud_cost_query</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList">MonitorVariablesCloudCostQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQuery">event_query</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList">MonitorVariablesEventQueryList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput">cloud_cost_query_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput">event_query_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput">cloud_cost_query_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput">event_query_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
 
 ---
@@ -9509,20 +9509,20 @@ event_query: MonitorVariablesEventQueryList
 ##### `cloud_cost_query_input`<sup>Optional</sup> <a name="cloud_cost_query_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput"></a>
 
 ```python
-cloud_cost_query_input: typing.Union[IResolvable, typing.List[MonitorVariablesCloudCostQuery]]
+cloud_cost_query_input: IResolvable | typing.List[MonitorVariablesCloudCostQuery]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 ---
 
 ##### `event_query_input`<sup>Optional</sup> <a name="event_query_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput"></a>
 
 ```python
-event_query_input: typing.Union[IResolvable, typing.List[MonitorVariablesEventQuery]]
+event_query_input: IResolvable | typing.List[MonitorVariablesEventQuery]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 ---
 

@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_datadog import downtime
 downtime.Downtime(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   scope: typing.List[str],
   end: typing.Union[int, float] = None,
   end_date: str = None,
@@ -28,7 +28,7 @@ downtime.Downtime(
   message: str = None,
   monitor_id: typing.Union[int, float] = None,
   monitor_tags: typing.List[str] = None,
-  mute_first_recovery_notification: typing.Union[bool, IResolvable] = None,
+  mute_first_recovery_notification: bool | IResolvable = None,
   recurrence: DowntimeRecurrence = None,
   start: typing.Union[int, float] = None,
   start_date: str = None,
@@ -40,13 +40,13 @@ downtime.Downtime(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.scope">scope</a></code> | <code>typing.List[str]</code> | specify the group scope to which this downtime applies. For everything use '*'. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.end">end</a></code> | <code>typing.Union[int, float]</code> | Optionally specify an end date when this downtime should expire. Accepts a Unix timestamp in UTC. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.endDate">end_date</a></code> | <code>str</code> | String representing date and time to end the downtime in RFC3339 format. |
@@ -54,7 +54,7 @@ downtime.Downtime(
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.message">message</a></code> | <code>str</code> | An optional message to provide when creating the downtime, can include notification handles. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.monitorId">monitor_id</a></code> | <code>typing.Union[int, float]</code> | When specified, this downtime will only apply to this monitor. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.monitorTags">monitor_tags</a></code> | <code>typing.List[str]</code> | A list of monitor tags (up to 32) to base the scheduled downtime on. |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.muteFirstRecoveryNotification">mute_first_recovery_notification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true the first recovery notification during the downtime will be muted Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.muteFirstRecoveryNotification">mute_first_recovery_notification</a></code> | <code>bool \| cdktf.IResolvable</code> | When true the first recovery notification during the downtime will be muted Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.recurrence">recurrence</a></code> | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeRecurrence">DowntimeRecurrence</a></code> | recurrence block. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.start">start</a></code> | <code>typing.Union[int, float]</code> | Specify when this downtime should start. Accepts a Unix timestamp in UTC. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.startDate">start_date</a></code> | <code>str</code> | String representing date and time to start the downtime in RFC3339 format. |
@@ -82,13 +82,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `mute_first_recovery_notification`<sup>Optional</sup> <a name="mute_first_recovery_notification" id="@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.muteFirstRecoveryNotification"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true the first recovery notification during the downtime will be muted Defaults to `false`.
 
@@ -509,7 +509,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-datadog.downtime.Downtime.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-datadog.downtime.Downtime.importFrom"></a>
@@ -572,7 +572,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -588,7 +588,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-datadog.downtime.Downtime.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -894,13 +894,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.active">active</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.activeChildId">active_child_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -911,7 +911,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.monitorIdInput">monitor_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.monitorTagsInput">monitor_tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.muteFirstRecoveryNotificationInput">mute_first_recovery_notification_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.muteFirstRecoveryNotificationInput">mute_first_recovery_notification_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.recurrenceInput">recurrence_input</a></code> | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeRecurrence">DowntimeRecurrence</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.scopeInput">scope_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.startDateInput">start_date_input</a></code> | <code>str</code> | *No description.* |
@@ -923,7 +923,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.message">message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.monitorId">monitor_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.monitorTags">monitor_tags</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.muteFirstRecoveryNotification">mute_first_recovery_notification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.muteFirstRecoveryNotification">mute_first_recovery_notification</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.scope">scope</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.start">start</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.property.startDate">start_date</a></code> | <code>str</code> | *No description.* |
@@ -1006,20 +1006,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.downtime.Downtime.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.downtime.Downtime.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1066,10 +1066,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.downtime.Downtime.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1176,10 +1176,10 @@ monitor_tags_input: typing.List[str]
 ##### `mute_first_recovery_notification_input`<sup>Optional</sup> <a name="mute_first_recovery_notification_input" id="@cdktf/provider-datadog.downtime.Downtime.property.muteFirstRecoveryNotificationInput"></a>
 
 ```python
-mute_first_recovery_notification_input: typing.Union[bool, IResolvable]
+mute_first_recovery_notification_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1296,10 +1296,10 @@ monitor_tags: typing.List[str]
 ##### `mute_first_recovery_notification`<sup>Required</sup> <a name="mute_first_recovery_notification" id="@cdktf/provider-datadog.downtime.Downtime.property.muteFirstRecoveryNotification"></a>
 
 ```python
-mute_first_recovery_notification: typing.Union[bool, IResolvable]
+mute_first_recovery_notification: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1371,13 +1371,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_datadog import downtime
 
 downtime.DowntimeConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   scope: typing.List[str],
   end: typing.Union[int, float] = None,
   end_date: str = None,
@@ -1385,7 +1385,7 @@ downtime.DowntimeConfig(
   message: str = None,
   monitor_id: typing.Union[int, float] = None,
   monitor_tags: typing.List[str] = None,
-  mute_first_recovery_notification: typing.Union[bool, IResolvable] = None,
+  mute_first_recovery_notification: bool | IResolvable = None,
   recurrence: DowntimeRecurrence = None,
   start: typing.Union[int, float] = None,
   start_date: str = None,
@@ -1397,13 +1397,13 @@ downtime.DowntimeConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.scope">scope</a></code> | <code>typing.List[str]</code> | specify the group scope to which this downtime applies. For everything use '*'. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.end">end</a></code> | <code>typing.Union[int, float]</code> | Optionally specify an end date when this downtime should expire. Accepts a Unix timestamp in UTC. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.endDate">end_date</a></code> | <code>str</code> | String representing date and time to end the downtime in RFC3339 format. |
@@ -1411,7 +1411,7 @@ downtime.DowntimeConfig(
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.message">message</a></code> | <code>str</code> | An optional message to provide when creating the downtime, can include notification handles. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.monitorId">monitor_id</a></code> | <code>typing.Union[int, float]</code> | When specified, this downtime will only apply to this monitor. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.monitorTags">monitor_tags</a></code> | <code>typing.List[str]</code> | A list of monitor tags (up to 32) to base the scheduled downtime on. |
-| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.muteFirstRecoveryNotification">mute_first_recovery_notification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true the first recovery notification during the downtime will be muted Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.muteFirstRecoveryNotification">mute_first_recovery_notification</a></code> | <code>bool \| cdktf.IResolvable</code> | When true the first recovery notification during the downtime will be muted Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.recurrence">recurrence</a></code> | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeRecurrence">DowntimeRecurrence</a></code> | recurrence block. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.start">start</a></code> | <code>typing.Union[int, float]</code> | Specify when this downtime should start. Accepts a Unix timestamp in UTC. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.startDate">start_date</a></code> | <code>str</code> | String representing date and time to start the downtime in RFC3339 format. |
@@ -1422,20 +1422,20 @@ downtime.DowntimeConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.downtime.DowntimeConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.downtime.DowntimeConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1482,10 +1482,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.downtime.DowntimeConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1593,10 +1593,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `mute_first_recovery_notification`<sup>Optional</sup> <a name="mute_first_recovery_notification" id="@cdktf/provider-datadog.downtime.DowntimeConfig.property.muteFirstRecoveryNotification"></a>
 
 ```python
-mute_first_recovery_notification: typing.Union[bool, IResolvable]
+mute_first_recovery_notification: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true the first recovery notification during the downtime will be muted Defaults to `false`.
 

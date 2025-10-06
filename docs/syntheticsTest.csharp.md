@@ -311,7 +311,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.importFrom"></a>
@@ -365,7 +365,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -380,7 +380,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -405,60 +405,60 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutApiStep` <a name="PutApiStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putApiStep"></a>
 
 ```csharp
-private void PutApiStep(object Value)
+private void PutApiStep(IResolvable|SyntheticsTestApiStep[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putApiStep.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>[]
 
 ---
 
 ##### `PutAssertion` <a name="PutAssertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putAssertion"></a>
 
 ```csharp
-private void PutAssertion(object Value)
+private void PutAssertion(IResolvable|SyntheticsTestAssertion[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putAssertion.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>[]
 
 ---
 
 ##### `PutBrowserStep` <a name="PutBrowserStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserStep"></a>
 
 ```csharp
-private void PutBrowserStep(object Value)
+private void PutBrowserStep(IResolvable|SyntheticsTestBrowserStep[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserStep.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>[]
 
 ---
 
 ##### `PutBrowserVariable` <a name="PutBrowserVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserVariable"></a>
 
 ```csharp
-private void PutBrowserVariable(object Value)
+private void PutBrowserVariable(IResolvable|SyntheticsTestBrowserVariable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserVariable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>[]
 
 ---
 
 ##### `PutConfigVariable` <a name="PutConfigVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putConfigVariable"></a>
 
 ```csharp
-private void PutConfigVariable(object Value)
+private void PutConfigVariable(IResolvable|SyntheticsTestConfigVariable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putConfigVariable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>[]
 
 ---
 
@@ -477,12 +477,12 @@ private void PutMobileOptionsList(SyntheticsTestMobileOptionsListStruct Value)
 ##### `PutMobileStep` <a name="PutMobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileStep"></a>
 
 ```csharp
-private void PutMobileStep(object Value)
+private void PutMobileStep(IResolvable|SyntheticsTestMobileStep[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileStep.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>[]
 
 ---
 
@@ -537,12 +537,12 @@ private void PutRequestDefinition(SyntheticsTestRequestDefinition Value)
 ##### `PutRequestFile` <a name="PutRequestFile" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestFile"></a>
 
 ```csharp
-private void PutRequestFile(object Value)
+private void PutRequestFile(IResolvable|SyntheticsTestRequestFile[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestFile.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>[]
 
 ---
 
@@ -834,13 +834,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStep">ApiStep</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList">SyntheticsTestApiStepList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertion">Assertion</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList">SyntheticsTestAssertionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStep">BrowserStep</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList">SyntheticsTestBrowserStepList</a></code> | *No description.* |
@@ -855,25 +855,25 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinition">RequestDefinition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference">SyntheticsTestRequestDefinitionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFile">RequestFile</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList">SyntheticsTestRequestFileList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestProxy">RequestProxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxyOutputReference">SyntheticsTestRequestProxyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStepInput">ApiStepInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput">AssertionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput">BrowserStepInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput">BrowserVariableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStepInput">ApiStepInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput">AssertionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput">BrowserStepInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput">BrowserVariableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArgumentsInput">ConfigInitialApplicationArgumentsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput">ConfigVariableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput">ConfigVariableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.deviceIdsInput">DeviceIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput">ForceDeleteDependenciesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput">ForceDeleteDependenciesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.locationsInput">LocationsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.messageInput">MessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileOptionsListInput">MobileOptionsListInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput">MobileStepInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput">MobileStepInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput">OptionsListInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestBasicauthInput">RequestBasicauthInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestClientCertificateInput">RequestClientCertificateInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinitionInput">RequestDefinitionInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFileInput">RequestFileInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFileInput">RequestFileInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestHeadersInput">RequestHeadersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestMetadataInput">RequestMetadataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestProxyInput">RequestProxyInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy">SyntheticsTestRequestProxy</a></code> | *No description.* |
@@ -886,7 +886,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.variablesFromScriptInput">VariablesFromScriptInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArguments">ConfigInitialApplicationArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.deviceIds">DeviceIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies">ForceDeleteDependencies</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies">ForceDeleteDependencies</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.locations">Locations</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.message">Message</a></code> | <code>string</code> | *No description.* |
@@ -978,20 +978,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1038,10 +1038,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1188,40 +1188,40 @@ public SyntheticsTestRequestProxyOutputReference RequestProxy { get; }
 ##### `ApiStepInput`<sup>Optional</sup> <a name="ApiStepInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStepInput"></a>
 
 ```csharp
-public object ApiStepInput { get; }
+public IResolvable|SyntheticsTestApiStep[] ApiStepInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>[]
 
 ---
 
 ##### `AssertionInput`<sup>Optional</sup> <a name="AssertionInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput"></a>
 
 ```csharp
-public object AssertionInput { get; }
+public IResolvable|SyntheticsTestAssertion[] AssertionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>[]
 
 ---
 
 ##### `BrowserStepInput`<sup>Optional</sup> <a name="BrowserStepInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput"></a>
 
 ```csharp
-public object BrowserStepInput { get; }
+public IResolvable|SyntheticsTestBrowserStep[] BrowserStepInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>[]
 
 ---
 
 ##### `BrowserVariableInput`<sup>Optional</sup> <a name="BrowserVariableInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput"></a>
 
 ```csharp
-public object BrowserVariableInput { get; }
+public IResolvable|SyntheticsTestBrowserVariable[] BrowserVariableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>[]
 
 ---
 
@@ -1238,10 +1238,10 @@ public System.Collections.Generic.IDictionary<string, string> ConfigInitialAppli
 ##### `ConfigVariableInput`<sup>Optional</sup> <a name="ConfigVariableInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput"></a>
 
 ```csharp
-public object ConfigVariableInput { get; }
+public IResolvable|SyntheticsTestConfigVariable[] ConfigVariableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>[]
 
 ---
 
@@ -1258,10 +1258,10 @@ public string[] DeviceIdsInput { get; }
 ##### `ForceDeleteDependenciesInput`<sup>Optional</sup> <a name="ForceDeleteDependenciesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput"></a>
 
 ```csharp
-public object ForceDeleteDependenciesInput { get; }
+public bool|IResolvable ForceDeleteDependenciesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1308,10 +1308,10 @@ public SyntheticsTestMobileOptionsListStruct MobileOptionsListInput { get; }
 ##### `MobileStepInput`<sup>Optional</sup> <a name="MobileStepInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput"></a>
 
 ```csharp
-public object MobileStepInput { get; }
+public IResolvable|SyntheticsTestMobileStep[] MobileStepInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>[]
 
 ---
 
@@ -1368,10 +1368,10 @@ public SyntheticsTestRequestDefinition RequestDefinitionInput { get; }
 ##### `RequestFileInput`<sup>Optional</sup> <a name="RequestFileInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFileInput"></a>
 
 ```csharp
-public object RequestFileInput { get; }
+public IResolvable|SyntheticsTestRequestFile[] RequestFileInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>[]
 
 ---
 
@@ -1498,10 +1498,10 @@ public string[] DeviceIds { get; }
 ##### `ForceDeleteDependencies`<sup>Required</sup> <a name="ForceDeleteDependencies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies"></a>
 
 ```csharp
-public object ForceDeleteDependencies { get; }
+public bool|IResolvable ForceDeleteDependencies { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1664,16 +1664,16 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestApiStep {
     string Name,
-    object AllowFailure = null,
-    object Assertion = null,
-    object ExitIfSucceed = null,
-    object ExtractedValue = null,
+    bool|IResolvable AllowFailure = null,
+    IResolvable|SyntheticsTestApiStepAssertion[] Assertion = null,
+    bool|IResolvable ExitIfSucceed = null,
+    IResolvable|SyntheticsTestApiStepExtractedValue[] ExtractedValue = null,
     string ExtractedValuesFromScript = null,
-    object IsCritical = null,
+    bool|IResolvable IsCritical = null,
     SyntheticsTestApiStepRequestBasicauth RequestBasicauth = null,
     SyntheticsTestApiStepRequestClientCertificate RequestClientCertificate = null,
     SyntheticsTestApiStepRequestDefinition RequestDefinition = null,
-    object RequestFile = null,
+    IResolvable|SyntheticsTestApiStepRequestFile[] RequestFile = null,
     System.Collections.Generic.IDictionary<string, string> RequestHeaders = null,
     System.Collections.Generic.IDictionary<string, string> RequestMetadata = null,
     SyntheticsTestApiStepRequestProxy RequestProxy = null,
@@ -1689,16 +1689,16 @@ new SyntheticsTestApiStep {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.name">Name</a></code> | <code>string</code> | The name of the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure">AllowFailure</a></code> | <code>object</code> | Determines whether or not to continue with test if this step fails. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion">Assertion</a></code> | <code>object</code> | assertion block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed">ExitIfSucceed</a></code> | <code>object</code> | Determines whether or not to exit the test if the step succeeds. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue">ExtractedValue</a></code> | <code>object</code> | extracted_value block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure">AllowFailure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not to continue with test if this step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion">Assertion</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>[]</code> | assertion block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed">ExitIfSucceed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not to exit the test if the step succeeds. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue">ExtractedValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>[]</code> | extracted_value block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValuesFromScript">ExtractedValuesFromScript</a></code> | <code>string</code> | Generate variables using JavaScript. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical">IsCritical</a></code> | <code>object</code> | Determines whether or not to consider the entire test as failed if this step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical">IsCritical</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not to consider the entire test as failed if this step fails. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestBasicauth">RequestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth">SyntheticsTestApiStepRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestClientCertificate">RequestClientCertificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate">SyntheticsTestApiStepRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestDefinition">RequestDefinition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition">SyntheticsTestApiStepRequestDefinition</a></code> | request_definition block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestFile">RequestFile</a></code> | <code>object</code> | request_file block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestFile">RequestFile</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>[]</code> | request_file block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestHeaders">RequestHeaders</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Header name and value map. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestMetadata">RequestMetadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Metadata to include when performing the gRPC request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestProxy">RequestProxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy">SyntheticsTestApiStepRequestProxy</a></code> | request_proxy block. |
@@ -1726,10 +1726,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AllowFailure`<sup>Optional</sup> <a name="AllowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure"></a>
 
 ```csharp
-public object AllowFailure { get; set; }
+public bool|IResolvable AllowFailure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not to continue with test if this step fails.
 
@@ -1740,10 +1740,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Assertion`<sup>Optional</sup> <a name="Assertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion"></a>
 
 ```csharp
-public object Assertion { get; set; }
+public IResolvable|SyntheticsTestApiStepAssertion[] Assertion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>[]
 
 assertion block.
 
@@ -1754,10 +1754,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ExitIfSucceed`<sup>Optional</sup> <a name="ExitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed"></a>
 
 ```csharp
-public object ExitIfSucceed { get; set; }
+public bool|IResolvable ExitIfSucceed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not to exit the test if the step succeeds.
 
@@ -1768,10 +1768,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ExtractedValue`<sup>Optional</sup> <a name="ExtractedValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue"></a>
 
 ```csharp
-public object ExtractedValue { get; set; }
+public IResolvable|SyntheticsTestApiStepExtractedValue[] ExtractedValue { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>[]
 
 extracted_value block.
 
@@ -1796,10 +1796,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `IsCritical`<sup>Optional</sup> <a name="IsCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical"></a>
 
 ```csharp
-public object IsCritical { get; set; }
+public bool|IResolvable IsCritical { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not to consider the entire test as failed if this step fails.
 
@@ -1854,10 +1854,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `RequestFile`<sup>Optional</sup> <a name="RequestFile" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestFile"></a>
 
 ```csharp
-public object RequestFile { get; set; }
+public IResolvable|SyntheticsTestApiStepRequestFile[] RequestFile { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>[]
 
 request_file block.
 
@@ -2343,7 +2343,7 @@ new SyntheticsTestApiStepExtractedValue {
     SyntheticsTestApiStepExtractedValueParser Parser,
     string Type,
     string Field = null,
-    object Secure = null
+    bool|IResolvable Secure = null
 };
 ```
 
@@ -2355,7 +2355,7 @@ new SyntheticsTestApiStepExtractedValue {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.parser">Parser</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser">SyntheticsTestApiStepExtractedValueParser</a></code> | parser block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.type">Type</a></code> | <code>string</code> | Property of the Synthetics Test Response to use for the variable. Valid values are `grpc_message`, `grpc_metadata`, `http_body`, `http_header`, `http_status_code`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.field">Field</a></code> | <code>string</code> | When type is `http_header` or `grpc_metadata`, name of the header or metadatum to extract. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.secure">Secure</a></code> | <code>object</code> | Determines whether or not the extracted value will be obfuscated. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.secure">Secure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not the extracted value will be obfuscated. |
 
 ---
 
@@ -2416,10 +2416,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Secure`<sup>Optional</sup> <a name="Secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.secure"></a>
 
 ```csharp
-public object Secure { get; set; }
+public bool|IResolvable Secure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not the extracted value will be obfuscated.
 
@@ -2925,32 +2925,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestApiStepRequestDefinition {
-    object AcceptSelfSigned = null,
-    object AllowInsecure = null,
+    bool|IResolvable AcceptSelfSigned = null,
+    bool|IResolvable AllowInsecure = null,
     string Body = null,
     string BodyType = null,
     string CallType = null,
     string[] CertificateDomains = null,
-    object CheckCertificateRevocation = null,
-    object DisableAiaIntermediateFetching = null,
+    bool|IResolvable CheckCertificateRevocation = null,
+    bool|IResolvable DisableAiaIntermediateFetching = null,
     string DnsServer = null,
     string DnsServerPort = null,
-    object FollowRedirects = null,
+    bool|IResolvable FollowRedirects = null,
     System.Collections.Generic.IDictionary<string, string> Form = null,
     string Host = null,
     string HttpVersion = null,
-    object IsMessageBase64Encoded = null,
+    bool|IResolvable IsMessageBase64Encoded = null,
     string Message = null,
     string Method = null,
-    object NoSavingResponseBody = null,
+    bool|IResolvable NoSavingResponseBody = null,
     double NumberOfPackets = null,
-    object PersistCookies = null,
+    bool|IResolvable PersistCookies = null,
     string PlainProtoFile = null,
     string Port = null,
     string ProtoJsonDescriptor = null,
     string Servername = null,
     string Service = null,
-    object ShouldTrackHops = null,
+    bool|IResolvable ShouldTrackHops = null,
     double Timeout = null,
     string Url = null
 };
@@ -2960,32 +2960,32 @@ new SyntheticsTestApiStepRequestDefinition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>object</code> | For SSL tests, whether or not the test should allow self signed certificates. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.allowInsecure">AllowInsecure</a></code> | <code>object</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | For SSL tests, whether or not the test should allow self signed certificates. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.allowInsecure">AllowInsecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.body">Body</a></code> | <code>string</code> | The request body. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.bodyType">BodyType</a></code> | <code>string</code> | Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.callType">CallType</a></code> | <code>string</code> | The type of gRPC call to perform. Valid values are `healthcheck`, `unary`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.certificateDomains">CertificateDomains</a></code> | <code>string[]</code> | By default, the client certificate is applied on the domain of the starting URL for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>object</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.disableAiaIntermediateFetching">DisableAiaIntermediateFetching</a></code> | <code>object</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.disableAiaIntermediateFetching">DisableAiaIntermediateFetching</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.dnsServer">DnsServer</a></code> | <code>string</code> | DNS server to use for DNS tests (`subtype = "dns"`). |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.dnsServerPort">DnsServerPort</a></code> | <code>string</code> | DNS server port to use for DNS tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.followRedirects">FollowRedirects</a></code> | <code>object</code> | Determines whether or not the API HTTP test should follow redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.followRedirects">FollowRedirects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not the API HTTP test should follow redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.form">Form</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Form data to be sent when `body_type` is `multipart/form-data`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.host">Host</a></code> | <code>string</code> | Host name to perform the test with. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.httpVersion">HttpVersion</a></code> | <code>string</code> | HTTP version to use for an HTTP request in an API test or step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.isMessageBase64Encoded">IsMessageBase64Encoded</a></code> | <code>object</code> | Whether the message is base64-encoded. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.isMessageBase64Encoded">IsMessageBase64Encoded</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the message is base64-encoded. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.message">Message</a></code> | <code>string</code> | For gRPC, UDP and websocket tests, message to send with the request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.method">Method</a></code> | <code>string</code> | Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.noSavingResponseBody">NoSavingResponseBody</a></code> | <code>object</code> | Determines whether or not to save the response body. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.noSavingResponseBody">NoSavingResponseBody</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not to save the response body. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.numberOfPackets">NumberOfPackets</a></code> | <code>double</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.persistCookies">PersistCookies</a></code> | <code>object</code> | Persist cookies across redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.persistCookies">PersistCookies</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Persist cookies across redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.plainProtoFile">PlainProtoFile</a></code> | <code>string</code> | The content of a proto file as a string. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.port">Port</a></code> | <code>string</code> | Port to use when performing the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.protoJsonDescriptor">ProtoJsonDescriptor</a></code> | <code>string</code> | A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.servername">Servername</a></code> | <code>string</code> | For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.service">Service</a></code> | <code>string</code> | The gRPC service on which you want to perform the gRPC call. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.shouldTrackHops">ShouldTrackHops</a></code> | <code>object</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.shouldTrackHops">ShouldTrackHops</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.timeout">Timeout</a></code> | <code>double</code> | Timeout in seconds for the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.url">Url</a></code> | <code>string</code> | The URL to send the request to. |
 
@@ -2994,10 +2994,10 @@ new SyntheticsTestApiStepRequestDefinition {
 ##### `AcceptSelfSigned`<sup>Optional</sup> <a name="AcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.acceptSelfSigned"></a>
 
 ```csharp
-public object AcceptSelfSigned { get; set; }
+public bool|IResolvable AcceptSelfSigned { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
@@ -3008,10 +3008,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AllowInsecure`<sup>Optional</sup> <a name="AllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.allowInsecure"></a>
 
 ```csharp
-public object AllowInsecure { get; set; }
+public bool|IResolvable AllowInsecure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
@@ -3080,10 +3080,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `CheckCertificateRevocation`<sup>Optional</sup> <a name="CheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.checkCertificateRevocation"></a>
 
 ```csharp
-public object CheckCertificateRevocation { get; set; }
+public bool|IResolvable CheckCertificateRevocation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
@@ -3094,10 +3094,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `DisableAiaIntermediateFetching`<sup>Optional</sup> <a name="DisableAiaIntermediateFetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.disableAiaIntermediateFetching"></a>
 
 ```csharp
-public object DisableAiaIntermediateFetching { get; set; }
+public bool|IResolvable DisableAiaIntermediateFetching { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
@@ -3136,10 +3136,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `FollowRedirects`<sup>Optional</sup> <a name="FollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.followRedirects"></a>
 
 ```csharp
-public object FollowRedirects { get; set; }
+public bool|IResolvable FollowRedirects { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not the API HTTP test should follow redirects.
 
@@ -3194,10 +3194,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `IsMessageBase64Encoded`<sup>Optional</sup> <a name="IsMessageBase64Encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.isMessageBase64Encoded"></a>
 
 ```csharp
-public object IsMessageBase64Encoded { get; set; }
+public bool|IResolvable IsMessageBase64Encoded { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the message is base64-encoded.
 
@@ -3238,10 +3238,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `NoSavingResponseBody`<sup>Optional</sup> <a name="NoSavingResponseBody" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.noSavingResponseBody"></a>
 
 ```csharp
-public object NoSavingResponseBody { get; set; }
+public bool|IResolvable NoSavingResponseBody { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not to save the response body.
 
@@ -3266,10 +3266,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `PersistCookies`<sup>Optional</sup> <a name="PersistCookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.persistCookies"></a>
 
 ```csharp
-public object PersistCookies { get; set; }
+public bool|IResolvable PersistCookies { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Persist cookies across redirects.
 
@@ -3350,10 +3350,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ShouldTrackHops`<sup>Optional</sup> <a name="ShouldTrackHops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.shouldTrackHops"></a>
 
 ```csharp
-public object ShouldTrackHops { get; set; }
+public bool|IResolvable ShouldTrackHops { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 This will turn on a traceroute probe to discover all gateways along the path to the host destination.
 
@@ -3968,13 +3968,13 @@ new SyntheticsTestBrowserStep {
     string Name,
     SyntheticsTestBrowserStepParams Params,
     string Type,
-    object AllowFailure = null,
-    object AlwaysExecute = null,
-    object ExitIfSucceed = null,
-    object ForceElementUpdate = null,
-    object IsCritical = null,
+    bool|IResolvable AllowFailure = null,
+    bool|IResolvable AlwaysExecute = null,
+    bool|IResolvable ExitIfSucceed = null,
+    bool|IResolvable ForceElementUpdate = null,
+    bool|IResolvable IsCritical = null,
     string LocalKey = null,
-    object NoScreenshot = null,
+    bool|IResolvable NoScreenshot = null,
     double Timeout = null
 };
 ```
@@ -3986,13 +3986,13 @@ new SyntheticsTestBrowserStep {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.name">Name</a></code> | <code>string</code> | Name of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.params">Params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams">SyntheticsTestBrowserStepParams</a></code> | params block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.type">Type</a></code> | <code>string</code> | Type of the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.allowFailure">AllowFailure</a></code> | <code>object</code> | Determines if the step should be allowed to fail. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.alwaysExecute">AlwaysExecute</a></code> | <code>object</code> | Determines whether or not to always execute this step even if the previous step failed or was skipped. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.exitIfSucceed">ExitIfSucceed</a></code> | <code>object</code> | Determines whether or not to exit the test if the step succeeds. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.forceElementUpdate">ForceElementUpdate</a></code> | <code>object</code> | Force update of the "element" parameter for the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.isCritical">IsCritical</a></code> | <code>object</code> | Determines whether or not to consider the entire test as failed if this step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.allowFailure">AllowFailure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines if the step should be allowed to fail. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.alwaysExecute">AlwaysExecute</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not to always execute this step even if the previous step failed or was skipped. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.exitIfSucceed">ExitIfSucceed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not to exit the test if the step succeeds. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.forceElementUpdate">ForceElementUpdate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Force update of the "element" parameter for the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.isCritical">IsCritical</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not to consider the entire test as failed if this step fails. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.localKey">LocalKey</a></code> | <code>string</code> | A unique identifier used to track steps after reordering. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | Prevents saving screenshots of the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.noScreenshot">NoScreenshot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Prevents saving screenshots of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.timeout">Timeout</a></code> | <code>double</code> | Used to override the default timeout of a step. |
 
 ---
@@ -4044,10 +4044,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AllowFailure`<sup>Optional</sup> <a name="AllowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.allowFailure"></a>
 
 ```csharp
-public object AllowFailure { get; set; }
+public bool|IResolvable AllowFailure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines if the step should be allowed to fail.
 
@@ -4058,10 +4058,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AlwaysExecute`<sup>Optional</sup> <a name="AlwaysExecute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.alwaysExecute"></a>
 
 ```csharp
-public object AlwaysExecute { get; set; }
+public bool|IResolvable AlwaysExecute { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not to always execute this step even if the previous step failed or was skipped.
 
@@ -4072,10 +4072,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ExitIfSucceed`<sup>Optional</sup> <a name="ExitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.exitIfSucceed"></a>
 
 ```csharp
-public object ExitIfSucceed { get; set; }
+public bool|IResolvable ExitIfSucceed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not to exit the test if the step succeeds.
 
@@ -4086,10 +4086,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ForceElementUpdate`<sup>Optional</sup> <a name="ForceElementUpdate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.forceElementUpdate"></a>
 
 ```csharp
-public object ForceElementUpdate { get; set; }
+public bool|IResolvable ForceElementUpdate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Force update of the "element" parameter for the step.
 
@@ -4100,10 +4100,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `IsCritical`<sup>Optional</sup> <a name="IsCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.isCritical"></a>
 
 ```csharp
-public object IsCritical { get; set; }
+public bool|IResolvable IsCritical { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not to consider the entire test as failed if this step fails.
 
@@ -4130,10 +4130,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `NoScreenshot`<sup>Optional</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.noScreenshot"></a>
 
 ```csharp
-public object NoScreenshot { get; set; }
+public bool|IResolvable NoScreenshot { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Prevents saving screenshots of the step.
 
@@ -4163,11 +4163,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestBrowserStepParams {
-    object AppendToContent = null,
+    bool|IResolvable AppendToContent = null,
     string Attribute = null,
     string Check = null,
     string ClickType = null,
-    object ClickWithJavascript = null,
+    bool|IResolvable ClickWithJavascript = null,
     string Code = null,
     double Delay = null,
     string Element = null,
@@ -4183,7 +4183,7 @@ new SyntheticsTestBrowserStepParams {
     string SubtestPublicId = null,
     string Value = null,
     SyntheticsTestBrowserStepParamsVariable Variable = null,
-    object WithClick = null,
+    bool|IResolvable WithClick = null,
     double X = null,
     double Y = null
 };
@@ -4193,11 +4193,11 @@ new SyntheticsTestBrowserStepParams {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.appendToContent">AppendToContent</a></code> | <code>object</code> | Whether to append the `value` to existing text input content for a "typeText" step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.appendToContent">AppendToContent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to append the `value` to existing text input content for a "typeText" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.attribute">Attribute</a></code> | <code>string</code> | Name of the attribute to use for an "assert attribute" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.check">Check</a></code> | <code>string</code> | Check type to use for an assertion step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickType">ClickType</a></code> | <code>string</code> | Type of click to use for a "click" step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript">ClickWithJavascript</a></code> | <code>object</code> | Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript">ClickWithJavascript</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.code">Code</a></code> | <code>string</code> | Javascript code to use for the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.delay">Delay</a></code> | <code>double</code> | Delay between each key stroke for a "type test" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.element">Element</a></code> | <code>string</code> | Element to use for the step, JSON encoded string. |
@@ -4213,7 +4213,7 @@ new SyntheticsTestBrowserStepParams {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.subtestPublicId">SubtestPublicId</a></code> | <code>string</code> | ID of the Synthetics test to use as subtest. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.value">Value</a></code> | <code>string</code> | Value of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.variable">Variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable">SyntheticsTestBrowserStepParamsVariable</a></code> | variable block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.withClick">WithClick</a></code> | <code>object</code> | For "file upload" steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.withClick">WithClick</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | For "file upload" steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.x">X</a></code> | <code>double</code> | X coordinates for a "scroll step". |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.y">Y</a></code> | <code>double</code> | Y coordinates for a "scroll step". |
 
@@ -4222,10 +4222,10 @@ new SyntheticsTestBrowserStepParams {
 ##### `AppendToContent`<sup>Optional</sup> <a name="AppendToContent" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.appendToContent"></a>
 
 ```csharp
-public object AppendToContent { get; set; }
+public bool|IResolvable AppendToContent { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to append the `value` to existing text input content for a "typeText" step.
 
@@ -4282,10 +4282,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ClickWithJavascript`<sup>Optional</sup> <a name="ClickWithJavascript" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript"></a>
 
 ```csharp
-public object ClickWithJavascript { get; set; }
+public bool|IResolvable ClickWithJavascript { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction.
 
@@ -4514,10 +4514,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `WithClick`<sup>Optional</sup> <a name="WithClick" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.withClick"></a>
 
 ```csharp
-public object WithClick { get; set; }
+public bool|IResolvable WithClick { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 For "file upload" steps.
 
@@ -4562,7 +4562,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestBrowserStepParamsElementUserLocator {
     SyntheticsTestBrowserStepParamsElementUserLocatorValue Value,
-    object FailTestOnCannotLocate = null
+    bool|IResolvable FailTestOnCannotLocate = null
 };
 ```
 
@@ -4571,7 +4571,7 @@ new SyntheticsTestBrowserStepParamsElementUserLocator {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.value">Value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue">SyntheticsTestBrowserStepParamsElementUserLocatorValue</a></code> | value block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>object</code> | Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Defaults to `false`. |
 
 ---
 
@@ -4592,10 +4592,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `FailTestOnCannotLocate`<sup>Optional</sup> <a name="FailTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.failTestOnCannotLocate"></a>
 
 ```csharp
-public object FailTestOnCannotLocate { get; set; }
+public bool|IResolvable FailTestOnCannotLocate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Defaults to `false`.
 
@@ -4711,7 +4711,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 new SyntheticsTestBrowserStepParamsVariable {
     string Example = null,
     string Name = null,
-    object Secure = null
+    bool|IResolvable Secure = null
 };
 ```
 
@@ -4721,7 +4721,7 @@ new SyntheticsTestBrowserStepParamsVariable {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.example">Example</a></code> | <code>string</code> | Example of the extracted variable. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.name">Name</a></code> | <code>string</code> | Name of the extracted variable. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.secure">Secure</a></code> | <code>object</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.secure">Secure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
 
 ---
 
@@ -4756,10 +4756,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Secure`<sup>Optional</sup> <a name="Secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.secure"></a>
 
 ```csharp
-public object Secure { get; set; }
+public bool|IResolvable Secure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
@@ -4780,7 +4780,7 @@ new SyntheticsTestBrowserVariable {
     string Example = null,
     string Id = null,
     string Pattern = null,
-    object Secure = null
+    bool|IResolvable Secure = null
 };
 ```
 
@@ -4793,7 +4793,7 @@ new SyntheticsTestBrowserVariable {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.example">Example</a></code> | <code>string</code> | Example for the variable. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.id">Id</a></code> | <code>string</code> | ID of the global variable to use. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.pattern">Pattern</a></code> | <code>string</code> | Pattern of the variable. Defaults to `""`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.secure">Secure</a></code> | <code>object</code> | Determines whether or not the browser test variable is obfuscated. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.secure">Secure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not the browser test variable is obfuscated. |
 
 ---
 
@@ -4875,10 +4875,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Secure`<sup>Optional</sup> <a name="Secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.secure"></a>
 
 ```csharp
-public object Secure { get; set; }
+public bool|IResolvable Secure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not the browser test variable is obfuscated.
 
@@ -4896,34 +4896,34 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string[] Locations,
     string Name,
     string Status,
     string Type,
-    object ApiStep = null,
-    object Assertion = null,
-    object BrowserStep = null,
-    object BrowserVariable = null,
+    IResolvable|SyntheticsTestApiStep[] ApiStep = null,
+    IResolvable|SyntheticsTestAssertion[] Assertion = null,
+    IResolvable|SyntheticsTestBrowserStep[] BrowserStep = null,
+    IResolvable|SyntheticsTestBrowserVariable[] BrowserVariable = null,
     System.Collections.Generic.IDictionary<string, string> ConfigInitialApplicationArguments = null,
-    object ConfigVariable = null,
+    IResolvable|SyntheticsTestConfigVariable[] ConfigVariable = null,
     string[] DeviceIds = null,
-    object ForceDeleteDependencies = null,
+    bool|IResolvable ForceDeleteDependencies = null,
     string Id = null,
     string Message = null,
     SyntheticsTestMobileOptionsListStruct MobileOptionsList = null,
-    object MobileStep = null,
+    IResolvable|SyntheticsTestMobileStep[] MobileStep = null,
     SyntheticsTestOptionsListStruct OptionsList = null,
     SyntheticsTestRequestBasicauth RequestBasicauth = null,
     SyntheticsTestRequestClientCertificate RequestClientCertificate = null,
     SyntheticsTestRequestDefinition RequestDefinition = null,
-    object RequestFile = null,
+    IResolvable|SyntheticsTestRequestFile[] RequestFile = null,
     System.Collections.Generic.IDictionary<string, string> RequestHeaders = null,
     System.Collections.Generic.IDictionary<string, string> RequestMetadata = null,
     SyntheticsTestRequestProxy RequestProxy = null,
@@ -4939,34 +4939,34 @@ new SyntheticsTestConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.locations">Locations</a></code> | <code>string[]</code> | Array of locations used to run the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.name">Name</a></code> | <code>string</code> | Name of Datadog synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.status">Status</a></code> | <code>string</code> | Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.type">Type</a></code> | <code>string</code> | Synthetics test type. Valid values are `api`, `browser`, `mobile`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.apiStep">ApiStep</a></code> | <code>object</code> | api_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion">Assertion</a></code> | <code>object</code> | assertion block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep">BrowserStep</a></code> | <code>object</code> | browser_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable">BrowserVariable</a></code> | <code>object</code> | browser_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.apiStep">ApiStep</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>[]</code> | api_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion">Assertion</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>[]</code> | assertion block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep">BrowserStep</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>[]</code> | browser_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable">BrowserVariable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>[]</code> | browser_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configInitialApplicationArguments">ConfigInitialApplicationArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Initial application arguments for the mobile test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable">ConfigVariable</a></code> | <code>object</code> | config_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable">ConfigVariable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>[]</code> | config_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.deviceIds">DeviceIds</a></code> | <code>string[]</code> | Required if `type = "browser"`. Array with the different device IDs used to run the test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies">ForceDeleteDependencies</a></code> | <code>object</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies">ForceDeleteDependencies</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.message">Message</a></code> | <code>string</code> | A message to include with notifications for this synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileOptionsList">MobileOptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | mobile_options_list block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep">MobileStep</a></code> | <code>object</code> | mobile_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep">MobileStep</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>[]</code> | mobile_step block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList">OptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestBasicauth">RequestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestClientCertificate">RequestClientCertificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestDefinition">RequestDefinition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | request_definition block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestFile">RequestFile</a></code> | <code>object</code> | request_file block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestFile">RequestFile</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>[]</code> | request_file block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestHeaders">RequestHeaders</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Header name and value map. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestMetadata">RequestMetadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Metadata to include when performing the gRPC request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestProxy">RequestProxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy">SyntheticsTestRequestProxy</a></code> | request_proxy block. |
@@ -4981,20 +4981,20 @@ new SyntheticsTestConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -5041,10 +5041,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -5109,10 +5109,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ApiStep`<sup>Optional</sup> <a name="ApiStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.apiStep"></a>
 
 ```csharp
-public object ApiStep { get; set; }
+public IResolvable|SyntheticsTestApiStep[] ApiStep { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>[]
 
 api_step block.
 
@@ -5123,10 +5123,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Assertion`<sup>Optional</sup> <a name="Assertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion"></a>
 
 ```csharp
-public object Assertion { get; set; }
+public IResolvable|SyntheticsTestAssertion[] Assertion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>[]
 
 assertion block.
 
@@ -5137,10 +5137,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `BrowserStep`<sup>Optional</sup> <a name="BrowserStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep"></a>
 
 ```csharp
-public object BrowserStep { get; set; }
+public IResolvable|SyntheticsTestBrowserStep[] BrowserStep { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>[]
 
 browser_step block.
 
@@ -5151,10 +5151,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `BrowserVariable`<sup>Optional</sup> <a name="BrowserVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable"></a>
 
 ```csharp
-public object BrowserVariable { get; set; }
+public IResolvable|SyntheticsTestBrowserVariable[] BrowserVariable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>[]
 
 browser_variable block.
 
@@ -5179,10 +5179,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ConfigVariable`<sup>Optional</sup> <a name="ConfigVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable"></a>
 
 ```csharp
-public object ConfigVariable { get; set; }
+public IResolvable|SyntheticsTestConfigVariable[] ConfigVariable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>[]
 
 config_variable block.
 
@@ -5207,10 +5207,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ForceDeleteDependencies`<sup>Optional</sup> <a name="ForceDeleteDependencies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies"></a>
 
 ```csharp
-public object ForceDeleteDependencies { get; set; }
+public bool|IResolvable ForceDeleteDependencies { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
 
@@ -5266,10 +5266,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `MobileStep`<sup>Optional</sup> <a name="MobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep"></a>
 
 ```csharp
-public object MobileStep { get; set; }
+public IResolvable|SyntheticsTestMobileStep[] MobileStep { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>[]
 
 mobile_step block.
 
@@ -5336,10 +5336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `RequestFile`<sup>Optional</sup> <a name="RequestFile" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestFile"></a>
 
 ```csharp
-public object RequestFile { get; set; }
+public IResolvable|SyntheticsTestRequestFile[] RequestFile { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>[]
 
 request_file block.
 
@@ -5476,7 +5476,7 @@ new SyntheticsTestConfigVariable {
     string Example = null,
     string Id = null,
     string Pattern = null,
-    object Secure = null
+    bool|IResolvable Secure = null
 };
 ```
 
@@ -5489,7 +5489,7 @@ new SyntheticsTestConfigVariable {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.example">Example</a></code> | <code>string</code> | Example for the variable. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.id">Id</a></code> | <code>string</code> | When type = `global`, ID of the global variable to use. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.pattern">Pattern</a></code> | <code>string</code> | Pattern of the variable. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.secure">Secure</a></code> | <code>object</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.secure">Secure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
 
 ---
 
@@ -5573,10 +5573,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Secure`<sup>Optional</sup> <a name="Secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.secure"></a>
 
 ```csharp
-public object Secure { get; set; }
+public bool|IResolvable Secure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
@@ -5872,7 +5872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestMobileOptionsListScheduling {
-    object Timeframes,
+    IResolvable|SyntheticsTestMobileOptionsListSchedulingTimeframes[] Timeframes,
     string Timezone
 };
 ```
@@ -5881,7 +5881,7 @@ new SyntheticsTestMobileOptionsListScheduling {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes">Timeframes</a></code> | <code>object</code> | timeframes block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes">Timeframes</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>[]</code> | timeframes block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timezone">Timezone</a></code> | <code>string</code> | Timezone in which the timeframe is based. |
 
 ---
@@ -5889,10 +5889,10 @@ new SyntheticsTestMobileOptionsListScheduling {
 ##### `Timeframes`<sup>Required</sup> <a name="Timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes"></a>
 
 ```csharp
-public object Timeframes { get; set; }
+public IResolvable|SyntheticsTestMobileOptionsListSchedulingTimeframes[] Timeframes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>[]
 
 timeframes block.
 
@@ -5991,16 +5991,16 @@ new SyntheticsTestMobileOptionsListStruct {
     string[] DeviceIds,
     SyntheticsTestMobileOptionsListMobileApplication MobileApplication,
     double TickEvery,
-    object AllowApplicationCrash = null,
-    object Bindings = null,
+    bool|IResolvable AllowApplicationCrash = null,
+    IResolvable|SyntheticsTestMobileOptionsListBindings[] Bindings = null,
     SyntheticsTestMobileOptionsListCi Ci = null,
     double DefaultStepTimeout = null,
-    object DisableAutoAcceptAlert = null,
+    bool|IResolvable DisableAutoAcceptAlert = null,
     double MinFailureDuration = null,
     string MonitorName = null,
     SyntheticsTestMobileOptionsListMonitorOptions MonitorOptions = null,
     double MonitorPriority = null,
-    object NoScreenshot = null,
+    bool|IResolvable NoScreenshot = null,
     string[] RestrictedRoles = null,
     SyntheticsTestMobileOptionsListRetry Retry = null,
     SyntheticsTestMobileOptionsListScheduling Scheduling = null,
@@ -6015,16 +6015,16 @@ new SyntheticsTestMobileOptionsListStruct {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.deviceIds">DeviceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.mobileApplication">MobileApplication</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | mobile_application block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.tickEvery">TickEvery</a></code> | <code>double</code> | How often the test should run (in seconds). Valid range is `300-604800` for mobile tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash">AllowApplicationCrash</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings">Bindings</a></code> | <code>object</code> | bindings block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash">AllowApplicationCrash</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings">Bindings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>[]</code> | bindings block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.ci">Ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | ci block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.defaultStepTimeout">DefaultStepTimeout</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert">DisableAutoAcceptAlert</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert">DisableAutoAcceptAlert</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorName">MonitorName</a></code> | <code>string</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | monitor_options block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorPriority">MonitorPriority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | Prevents saving screenshots of the steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot">NoScreenshot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | retry block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | scheduling block. |
@@ -6075,10 +6075,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AllowApplicationCrash`<sup>Optional</sup> <a name="AllowApplicationCrash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash"></a>
 
 ```csharp
-public object AllowApplicationCrash { get; set; }
+public bool|IResolvable AllowApplicationCrash { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}.
 
@@ -6087,10 +6087,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Bindings`<sup>Optional</sup> <a name="Bindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings"></a>
 
 ```csharp
-public object Bindings { get; set; }
+public IResolvable|SyntheticsTestMobileOptionsListBindings[] Bindings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>[]
 
 bindings block.
 
@@ -6127,10 +6127,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `DisableAutoAcceptAlert`<sup>Optional</sup> <a name="DisableAutoAcceptAlert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert"></a>
 
 ```csharp
-public object DisableAutoAcceptAlert { get; set; }
+public bool|IResolvable DisableAutoAcceptAlert { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}.
 
@@ -6193,10 +6193,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `NoScreenshot`<sup>Optional</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot"></a>
 
 ```csharp
-public object NoScreenshot { get; set; }
+public bool|IResolvable NoScreenshot { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Prevents saving screenshots of the steps.
 
@@ -6271,10 +6271,10 @@ new SyntheticsTestMobileStep {
     string Name,
     SyntheticsTestMobileStepParams Params,
     string Type,
-    object AllowFailure = null,
-    object HasNewStepElement = null,
-    object IsCritical = null,
-    object NoScreenshot = null,
+    bool|IResolvable AllowFailure = null,
+    bool|IResolvable HasNewStepElement = null,
+    bool|IResolvable IsCritical = null,
+    bool|IResolvable NoScreenshot = null,
     string PublicId = null,
     double Timeout = null
 };
@@ -6287,10 +6287,10 @@ new SyntheticsTestMobileStep {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.name">Name</a></code> | <code>string</code> | The name of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.params">Params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | params block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.type">Type</a></code> | <code>string</code> | The type of the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure">AllowFailure</a></code> | <code>object</code> | A boolean set to allow this step to fail. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement">HasNewStepElement</a></code> | <code>object</code> | A boolean set to determine if the step has a new step element. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical">IsCritical</a></code> | <code>object</code> | A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | A boolean set to not take a screenshot for the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure">AllowFailure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean set to allow this step to fail. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement">HasNewStepElement</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean set to determine if the step has a new step element. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical">IsCritical</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot">NoScreenshot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean set to not take a screenshot for the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.publicId">PublicId</a></code> | <code>string</code> | The public ID of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.timeout">Timeout</a></code> | <code>double</code> | The time before declaring a step failed. |
 
@@ -6343,10 +6343,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AllowFailure`<sup>Optional</sup> <a name="AllowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure"></a>
 
 ```csharp
-public object AllowFailure { get; set; }
+public bool|IResolvable AllowFailure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean set to allow this step to fail.
 
@@ -6357,10 +6357,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `HasNewStepElement`<sup>Optional</sup> <a name="HasNewStepElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement"></a>
 
 ```csharp
-public object HasNewStepElement { get; set; }
+public bool|IResolvable HasNewStepElement { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean set to determine if the step has a new step element.
 
@@ -6371,10 +6371,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `IsCritical`<sup>Optional</sup> <a name="IsCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical"></a>
 
 ```csharp
-public object IsCritical { get; set; }
+public bool|IResolvable IsCritical { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails.
 
@@ -6385,10 +6385,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `NoScreenshot`<sup>Optional</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot"></a>
 
 ```csharp
-public object NoScreenshot { get; set; }
+public bool|IResolvable NoScreenshot { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean set to not take a screenshot for the step.
 
@@ -6436,13 +6436,13 @@ new SyntheticsTestMobileStepParams {
     double Delay = null,
     string Direction = null,
     SyntheticsTestMobileStepParamsElement Element = null,
-    object Enable = null,
+    bool|IResolvable Enable = null,
     double MaxScrolls = null,
-    object Positions = null,
+    IResolvable|SyntheticsTestMobileStepParamsPositions[] Positions = null,
     string SubtestPublicId = null,
     string Value = null,
     SyntheticsTestMobileStepParamsVariable Variable = null,
-    object WithEnter = null,
+    bool|IResolvable WithEnter = null,
     double X = null,
     double Y = null
 };
@@ -6456,13 +6456,13 @@ new SyntheticsTestMobileStepParams {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.delay">Delay</a></code> | <code>double</code> | Delay between each key stroke for a "type test" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.direction">Direction</a></code> | <code>string</code> | Valid values are `up`, `down`, `left`, `right`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.element">Element</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | element block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable">Enable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable">Enable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.maxScrolls">MaxScrolls</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions">Positions</a></code> | <code>object</code> | positions block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions">Positions</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>[]</code> | positions block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.subtestPublicId">SubtestPublicId</a></code> | <code>string</code> | ID of the Synthetics test to use as subtest. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.value">Value</a></code> | <code>string</code> | Value of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.variable">Variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | variable block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter">WithEnter</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter">WithEnter</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.x">X</a></code> | <code>double</code> | X coordinates for a "scroll step". |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.y">Y</a></code> | <code>double</code> | Y coordinates for a "scroll step". |
 
@@ -6529,10 +6529,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Enable`<sup>Optional</sup> <a name="Enable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable"></a>
 
 ```csharp
-public object Enable { get; set; }
+public bool|IResolvable Enable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}.
 
@@ -6553,10 +6553,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Positions`<sup>Optional</sup> <a name="Positions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions"></a>
 
 ```csharp
-public object Positions { get; set; }
+public IResolvable|SyntheticsTestMobileStepParamsPositions[] Positions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>[]
 
 positions block.
 
@@ -6609,10 +6609,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `WithEnter`<sup>Optional</sup> <a name="WithEnter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter"></a>
 
 ```csharp
-public object WithEnter { get; set; }
+public bool|IResolvable WithEnter { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}.
 
@@ -6836,8 +6836,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestMobileStepParamsElementUserLocator {
-    object FailTestOnCannotLocate = null,
-    object Values = null
+    bool|IResolvable FailTestOnCannotLocate = null,
+    IResolvable|SyntheticsTestMobileStepParamsElementUserLocatorValues[] Values = null
 };
 ```
 
@@ -6845,18 +6845,18 @@ new SyntheticsTestMobileStepParamsElementUserLocator {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values">Values</a></code> | <code>object</code> | values block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values">Values</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>[]</code> | values block. |
 
 ---
 
 ##### `FailTestOnCannotLocate`<sup>Optional</sup> <a name="FailTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate"></a>
 
 ```csharp
-public object FailTestOnCannotLocate { get; set; }
+public bool|IResolvable FailTestOnCannotLocate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}.
 
@@ -6865,10 +6865,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Values`<sup>Optional</sup> <a name="Values" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values"></a>
 
 ```csharp
-public object Values { get; set; }
+public IResolvable|SyntheticsTestMobileStepParamsElementUserLocatorValues[] Values { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>[]
 
 values block.
 
@@ -7198,7 +7198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestOptionsListRumSettings {
-    object IsEnabled,
+    bool|IResolvable IsEnabled,
     string ApplicationId = null,
     double ClientTokenId = null
 };
@@ -7208,7 +7208,7 @@ new SyntheticsTestOptionsListRumSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.isEnabled">IsEnabled</a></code> | <code>object</code> | Determines whether RUM data is collected during test runs. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.isEnabled">IsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether RUM data is collected during test runs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.applicationId">ApplicationId</a></code> | <code>string</code> | RUM application ID used to collect RUM data for the browser test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.clientTokenId">ClientTokenId</a></code> | <code>double</code> | RUM application API key ID used to collect RUM data for the browser test. |
 
@@ -7217,10 +7217,10 @@ new SyntheticsTestOptionsListRumSettings {
 ##### `IsEnabled`<sup>Required</sup> <a name="IsEnabled" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.isEnabled"></a>
 
 ```csharp
-public object IsEnabled { get; set; }
+public bool|IResolvable IsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether RUM data is collected during test runs.
 
@@ -7264,7 +7264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestOptionsListScheduling {
-    object Timeframes,
+    IResolvable|SyntheticsTestOptionsListSchedulingTimeframes[] Timeframes,
     string Timezone
 };
 ```
@@ -7273,7 +7273,7 @@ new SyntheticsTestOptionsListScheduling {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes">Timeframes</a></code> | <code>object</code> | timeframes block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes">Timeframes</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>[]</code> | timeframes block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timezone">Timezone</a></code> | <code>string</code> | Timezone in which the timeframe is based. |
 
 ---
@@ -7281,10 +7281,10 @@ new SyntheticsTestOptionsListScheduling {
 ##### `Timeframes`<sup>Required</sup> <a name="Timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes"></a>
 
 ```csharp
-public object Timeframes { get; set; }
+public IResolvable|SyntheticsTestOptionsListSchedulingTimeframes[] Timeframes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>[]
 
 timeframes block.
 
@@ -7381,23 +7381,23 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new SyntheticsTestOptionsListStruct {
     double TickEvery,
-    object AcceptSelfSigned = null,
-    object AllowInsecure = null,
-    object CheckCertificateRevocation = null,
+    bool|IResolvable AcceptSelfSigned = null,
+    bool|IResolvable AllowInsecure = null,
+    bool|IResolvable CheckCertificateRevocation = null,
     SyntheticsTestOptionsListCi Ci = null,
-    object DisableAiaIntermediateFetching = null,
-    object DisableCors = null,
-    object DisableCsp = null,
-    object FollowRedirects = null,
+    bool|IResolvable DisableAiaIntermediateFetching = null,
+    bool|IResolvable DisableCors = null,
+    bool|IResolvable DisableCsp = null,
+    bool|IResolvable FollowRedirects = null,
     string HttpVersion = null,
-    object IgnoreServerCertificateError = null,
+    bool|IResolvable IgnoreServerCertificateError = null,
     double InitialNavigationTimeout = null,
     double MinFailureDuration = null,
     double MinLocationFailed = null,
     string MonitorName = null,
     SyntheticsTestOptionsListMonitorOptions MonitorOptions = null,
     double MonitorPriority = null,
-    object NoScreenshot = null,
+    bool|IResolvable NoScreenshot = null,
     string[] RestrictedRoles = null,
     SyntheticsTestOptionsListRetry Retry = null,
     SyntheticsTestOptionsListRumSettings RumSettings = null,
@@ -7410,23 +7410,23 @@ new SyntheticsTestOptionsListStruct {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.tickEvery">TickEvery</a></code> | <code>double</code> | How often the test should run (in seconds). |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>object</code> | For SSL tests, whether or not the test should allow self signed certificates. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure">AllowInsecure</a></code> | <code>object</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>object</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | For SSL tests, whether or not the test should allow self signed certificates. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure">AllowInsecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ci">Ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | ci block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableAiaIntermediateFetching">DisableAiaIntermediateFetching</a></code> | <code>object</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors">DisableCors</a></code> | <code>object</code> | Disable Cross-Origin Resource Sharing for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp">DisableCsp</a></code> | <code>object</code> | Disable Content Security Policy for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects">FollowRedirects</a></code> | <code>object</code> | Determines whether or not the API HTTP test should follow redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableAiaIntermediateFetching">DisableAiaIntermediateFetching</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors">DisableCors</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable Cross-Origin Resource Sharing for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp">DisableCsp</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable Content Security Policy for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects">FollowRedirects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not the API HTTP test should follow redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.httpVersion">HttpVersion</a></code> | <code>string</code> | HTTP version to use for an HTTP request in an API test or step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError">IgnoreServerCertificateError</a></code> | <code>object</code> | Ignore server certificate error for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError">IgnoreServerCertificateError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Ignore server certificate error for browser tests. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.initialNavigationTimeout">InitialNavigationTimeout</a></code> | <code>double</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minLocationFailed">MinLocationFailed</a></code> | <code>double</code> | Minimum number of locations in failure required to trigger an alert. Defaults to `1`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorName">MonitorName</a></code> | <code>string</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority">MonitorPriority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | Prevents saving screenshots of the steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">NoScreenshot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | rum_settings block. |
@@ -7453,10 +7453,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AcceptSelfSigned`<sup>Optional</sup> <a name="AcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned"></a>
 
 ```csharp
-public object AcceptSelfSigned { get; set; }
+public bool|IResolvable AcceptSelfSigned { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
@@ -7467,10 +7467,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AllowInsecure`<sup>Optional</sup> <a name="AllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure"></a>
 
 ```csharp
-public object AllowInsecure { get; set; }
+public bool|IResolvable AllowInsecure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
@@ -7481,10 +7481,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `CheckCertificateRevocation`<sup>Optional</sup> <a name="CheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation"></a>
 
 ```csharp
-public object CheckCertificateRevocation { get; set; }
+public bool|IResolvable CheckCertificateRevocation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
@@ -7509,10 +7509,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `DisableAiaIntermediateFetching`<sup>Optional</sup> <a name="DisableAiaIntermediateFetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableAiaIntermediateFetching"></a>
 
 ```csharp
-public object DisableAiaIntermediateFetching { get; set; }
+public bool|IResolvable DisableAiaIntermediateFetching { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
@@ -7523,10 +7523,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `DisableCors`<sup>Optional</sup> <a name="DisableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors"></a>
 
 ```csharp
-public object DisableCors { get; set; }
+public bool|IResolvable DisableCors { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable Cross-Origin Resource Sharing for browser tests.
 
@@ -7537,10 +7537,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `DisableCsp`<sup>Optional</sup> <a name="DisableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp"></a>
 
 ```csharp
-public object DisableCsp { get; set; }
+public bool|IResolvable DisableCsp { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable Content Security Policy for browser tests.
 
@@ -7551,10 +7551,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `FollowRedirects`<sup>Optional</sup> <a name="FollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects"></a>
 
 ```csharp
-public object FollowRedirects { get; set; }
+public bool|IResolvable FollowRedirects { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not the API HTTP test should follow redirects.
 
@@ -7581,10 +7581,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `IgnoreServerCertificateError`<sup>Optional</sup> <a name="IgnoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError"></a>
 
 ```csharp
-public object IgnoreServerCertificateError { get; set; }
+public bool|IResolvable IgnoreServerCertificateError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Ignore server certificate error for browser tests.
 
@@ -7677,10 +7677,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `NoScreenshot`<sup>Optional</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot"></a>
 
 ```csharp
-public object NoScreenshot { get; set; }
+public bool|IResolvable NoScreenshot { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Prevents saving screenshots of the steps.
 
@@ -8203,18 +8203,18 @@ new SyntheticsTestRequestDefinition {
     System.Collections.Generic.IDictionary<string, string> Form = null,
     string Host = null,
     string HttpVersion = null,
-    object IsMessageBase64Encoded = null,
+    bool|IResolvable IsMessageBase64Encoded = null,
     string Message = null,
     string Method = null,
-    object NoSavingResponseBody = null,
+    bool|IResolvable NoSavingResponseBody = null,
     double NumberOfPackets = null,
-    object PersistCookies = null,
+    bool|IResolvable PersistCookies = null,
     string PlainProtoFile = null,
     string Port = null,
     string ProtoJsonDescriptor = null,
     string Servername = null,
     string Service = null,
-    object ShouldTrackHops = null,
+    bool|IResolvable ShouldTrackHops = null,
     double Timeout = null,
     string Url = null
 };
@@ -8233,18 +8233,18 @@ new SyntheticsTestRequestDefinition {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.form">Form</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Form data to be sent when `body_type` is `multipart/form-data`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.host">Host</a></code> | <code>string</code> | Host name to perform the test with. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.httpVersion">HttpVersion</a></code> | <code>string</code> | HTTP version to use for an HTTP request in an API test or step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.isMessageBase64Encoded">IsMessageBase64Encoded</a></code> | <code>object</code> | Whether the message is base64-encoded. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.isMessageBase64Encoded">IsMessageBase64Encoded</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the message is base64-encoded. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.message">Message</a></code> | <code>string</code> | For gRPC, UDP and websocket tests, message to send with the request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.method">Method</a></code> | <code>string</code> | Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.noSavingResponseBody">NoSavingResponseBody</a></code> | <code>object</code> | Determines whether or not to save the response body. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.noSavingResponseBody">NoSavingResponseBody</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines whether or not to save the response body. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.numberOfPackets">NumberOfPackets</a></code> | <code>double</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.persistCookies">PersistCookies</a></code> | <code>object</code> | Persist cookies across redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.persistCookies">PersistCookies</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Persist cookies across redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.plainProtoFile">PlainProtoFile</a></code> | <code>string</code> | The content of a proto file as a string. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.port">Port</a></code> | <code>string</code> | Port to use when performing the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.protoJsonDescriptor">ProtoJsonDescriptor</a></code> | <code>string</code> | A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.servername">Servername</a></code> | <code>string</code> | For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.service">Service</a></code> | <code>string</code> | The gRPC service on which you want to perform the gRPC call. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.shouldTrackHops">ShouldTrackHops</a></code> | <code>object</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.shouldTrackHops">ShouldTrackHops</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.timeout">Timeout</a></code> | <code>double</code> | Timeout in seconds for the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.url">Url</a></code> | <code>string</code> | The URL to send the request to. |
 
@@ -8383,10 +8383,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `IsMessageBase64Encoded`<sup>Optional</sup> <a name="IsMessageBase64Encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.isMessageBase64Encoded"></a>
 
 ```csharp
-public object IsMessageBase64Encoded { get; set; }
+public bool|IResolvable IsMessageBase64Encoded { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the message is base64-encoded.
 
@@ -8427,10 +8427,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `NoSavingResponseBody`<sup>Optional</sup> <a name="NoSavingResponseBody" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.noSavingResponseBody"></a>
 
 ```csharp
-public object NoSavingResponseBody { get; set; }
+public bool|IResolvable NoSavingResponseBody { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines whether or not to save the response body.
 
@@ -8455,10 +8455,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `PersistCookies`<sup>Optional</sup> <a name="PersistCookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.persistCookies"></a>
 
 ```csharp
-public object PersistCookies { get; set; }
+public bool|IResolvable PersistCookies { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Persist cookies across redirects.
 
@@ -8539,10 +8539,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ShouldTrackHops`<sup>Optional</sup> <a name="ShouldTrackHops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.shouldTrackHops"></a>
 
 ```csharp
-public object ShouldTrackHops { get; set; }
+public bool|IResolvable ShouldTrackHops { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 This will turn on a traceroute probe to discover all gateways along the path to the host destination.
 
@@ -8851,7 +8851,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>[]</code> | *No description.* |
 
 ---
 
@@ -8882,10 +8882,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestApiStepAssertion[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>[]
 
 ---
 
@@ -9231,7 +9231,7 @@ private void ResetTimingsScope()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.target">Target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.timingsScope">TimingsScope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a></code> | *No description.* |
 
 ---
 
@@ -9442,10 +9442,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestApiStepAssertion InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>
 
 ---
 
@@ -10544,7 +10544,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>[]</code> | *No description.* |
 
 ---
 
@@ -10575,10 +10575,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestApiStepExtractedValue[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>[]
 
 ---
 
@@ -10842,13 +10842,13 @@ private void ResetSecure()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.fieldInput">FieldInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.parserInput">ParserInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser">SyntheticsTestApiStepExtractedValueParser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secureInput">SecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secureInput">SecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.field">Field</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure">Secure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure">Secure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a></code> | *No description.* |
 
 ---
 
@@ -10919,10 +10919,10 @@ public SyntheticsTestApiStepExtractedValueParser ParserInput { get; }
 ##### `SecureInput`<sup>Optional</sup> <a name="SecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secureInput"></a>
 
 ```csharp
-public object SecureInput { get; }
+public bool|IResolvable SecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10959,10 +10959,10 @@ public string Name { get; }
 ##### `Secure`<sup>Required</sup> <a name="Secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure"></a>
 
 ```csharp
-public object Secure { get; }
+public bool|IResolvable Secure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10979,10 +10979,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestApiStepExtractedValue InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>
 
 ---
 
@@ -11408,7 +11408,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>[]</code> | *No description.* |
 
 ---
 
@@ -11439,10 +11439,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestApiStep[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>[]
 
 ---
 
@@ -11696,24 +11696,24 @@ Returns a reversible string representation.
 ##### `PutAssertion` <a name="PutAssertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putAssertion"></a>
 
 ```csharp
-private void PutAssertion(object Value)
+private void PutAssertion(IResolvable|SyntheticsTestApiStepAssertion[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putAssertion.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>[]
 
 ---
 
 ##### `PutExtractedValue` <a name="PutExtractedValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putExtractedValue"></a>
 
 ```csharp
-private void PutExtractedValue(object Value)
+private void PutExtractedValue(IResolvable|SyntheticsTestApiStepExtractedValue[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putExtractedValue.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>[]
 
 ---
 
@@ -11756,12 +11756,12 @@ private void PutRequestDefinition(SyntheticsTestApiStepRequestDefinition Value)
 ##### `PutRequestFile` <a name="PutRequestFile" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestFile"></a>
 
 ```csharp
-private void PutRequestFile(object Value)
+private void PutRequestFile(IResolvable|SyntheticsTestApiStepRequestFile[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestFile.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>[]
 
 ---
 
@@ -11907,17 +11907,17 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFile">RequestFile</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList">SyntheticsTestApiStepRequestFileList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestProxy">RequestProxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxyOutputReference">SyntheticsTestApiStepRequestProxyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetryOutputReference">SyntheticsTestApiStepRetryOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput">AllowFailureInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput">AssertionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput">ExitIfSucceedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput">ExtractedValueInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput">AllowFailureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput">AssertionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput">ExitIfSucceedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput">ExtractedValueInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValuesFromScriptInput">ExtractedValuesFromScriptInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput">IsCriticalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput">IsCriticalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestBasicauthInput">RequestBasicauthInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth">SyntheticsTestApiStepRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestClientCertificateInput">RequestClientCertificateInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate">SyntheticsTestApiStepRequestClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestDefinitionInput">RequestDefinitionInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition">SyntheticsTestApiStepRequestDefinition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFileInput">RequestFileInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFileInput">RequestFileInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestHeadersInput">RequestHeadersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestMetadataInput">RequestMetadataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestProxyInput">RequestProxyInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy">SyntheticsTestApiStepRequestProxy</a></code> | *No description.* |
@@ -11925,17 +11925,17 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.retryInput">RetryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry">SyntheticsTestApiStepRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.subtypeInput">SubtypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.valueInput">ValueInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure">AllowFailure</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed">ExitIfSucceed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure">AllowFailure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed">ExitIfSucceed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValuesFromScript">ExtractedValuesFromScript</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical">IsCritical</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical">IsCritical</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestHeaders">RequestHeaders</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestMetadata">RequestMetadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestQuery">RequestQuery</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.subtype">Subtype</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.value">Value</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a></code> | *No description.* |
 
 ---
 
@@ -12056,40 +12056,40 @@ public SyntheticsTestApiStepRetryOutputReference Retry { get; }
 ##### `AllowFailureInput`<sup>Optional</sup> <a name="AllowFailureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput"></a>
 
 ```csharp
-public object AllowFailureInput { get; }
+public bool|IResolvable AllowFailureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AssertionInput`<sup>Optional</sup> <a name="AssertionInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput"></a>
 
 ```csharp
-public object AssertionInput { get; }
+public IResolvable|SyntheticsTestApiStepAssertion[] AssertionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>[]
 
 ---
 
 ##### `ExitIfSucceedInput`<sup>Optional</sup> <a name="ExitIfSucceedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput"></a>
 
 ```csharp
-public object ExitIfSucceedInput { get; }
+public bool|IResolvable ExitIfSucceedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ExtractedValueInput`<sup>Optional</sup> <a name="ExtractedValueInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput"></a>
 
 ```csharp
-public object ExtractedValueInput { get; }
+public IResolvable|SyntheticsTestApiStepExtractedValue[] ExtractedValueInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>[]
 
 ---
 
@@ -12106,10 +12106,10 @@ public string ExtractedValuesFromScriptInput { get; }
 ##### `IsCriticalInput`<sup>Optional</sup> <a name="IsCriticalInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput"></a>
 
 ```csharp
-public object IsCriticalInput { get; }
+public bool|IResolvable IsCriticalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12156,10 +12156,10 @@ public SyntheticsTestApiStepRequestDefinition RequestDefinitionInput { get; }
 ##### `RequestFileInput`<sup>Optional</sup> <a name="RequestFileInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFileInput"></a>
 
 ```csharp
-public object RequestFileInput { get; }
+public IResolvable|SyntheticsTestApiStepRequestFile[] RequestFileInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>[]
 
 ---
 
@@ -12236,20 +12236,20 @@ public double ValueInput { get; }
 ##### `AllowFailure`<sup>Required</sup> <a name="AllowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure"></a>
 
 ```csharp
-public object AllowFailure { get; }
+public bool|IResolvable AllowFailure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ExitIfSucceed`<sup>Required</sup> <a name="ExitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed"></a>
 
 ```csharp
-public object ExitIfSucceed { get; }
+public bool|IResolvable ExitIfSucceed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12266,10 +12266,10 @@ public string ExtractedValuesFromScript { get; }
 ##### `IsCritical`<sup>Required</sup> <a name="IsCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical"></a>
 
 ```csharp
-public object IsCritical { get; }
+public bool|IResolvable IsCritical { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12336,10 +12336,10 @@ public double Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestApiStep InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>
 
 ---
 
@@ -14425,60 +14425,60 @@ private void ResetUrl()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSignedInput">AcceptSelfSignedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecureInput">AllowInsecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSignedInput">AcceptSelfSignedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecureInput">AllowInsecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.bodyInput">BodyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.bodyTypeInput">BodyTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.callTypeInput">CallTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.certificateDomainsInput">CertificateDomainsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocationInput">CheckCertificateRevocationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetchingInput">DisableAiaIntermediateFetchingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocationInput">CheckCertificateRevocationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetchingInput">DisableAiaIntermediateFetchingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServerInput">DnsServerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServerPortInput">DnsServerPortInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirectsInput">FollowRedirectsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirectsInput">FollowRedirectsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.formInput">FormInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.hostInput">HostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.httpVersionInput">HttpVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">IsMessageBase64EncodedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">IsMessageBase64EncodedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.messageInput">MessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.methodInput">MethodInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBodyInput">NoSavingResponseBodyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBodyInput">NoSavingResponseBodyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.numberOfPacketsInput">NumberOfPacketsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookiesInput">PersistCookiesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookiesInput">PersistCookiesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.plainProtoFileInput">PlainProtoFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.portInput">PortInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.protoJsonDescriptorInput">ProtoJsonDescriptorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.servernameInput">ServernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.serviceInput">ServiceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHopsInput">ShouldTrackHopsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHopsInput">ShouldTrackHopsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecure">AllowInsecure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecure">AllowInsecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.body">Body</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.bodyType">BodyType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.callType">CallType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.certificateDomains">CertificateDomains</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetching">DisableAiaIntermediateFetching</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetching">DisableAiaIntermediateFetching</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServer">DnsServer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServerPort">DnsServerPort</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirects">FollowRedirects</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirects">FollowRedirects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.form">Form</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.host">Host</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.httpVersion">HttpVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64Encoded">IsMessageBase64Encoded</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64Encoded">IsMessageBase64Encoded</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.message">Message</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.method">Method</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBody">NoSavingResponseBody</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBody">NoSavingResponseBody</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.numberOfPackets">NumberOfPackets</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookies">PersistCookies</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookies">PersistCookies</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.plainProtoFile">PlainProtoFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.port">Port</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.protoJsonDescriptor">ProtoJsonDescriptor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.servername">Servername</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHops">ShouldTrackHops</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHops">ShouldTrackHops</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.timeout">Timeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition">SyntheticsTestApiStepRequestDefinition</a></code> | *No description.* |
@@ -14512,20 +14512,20 @@ public string Fqn { get; }
 ##### `AcceptSelfSignedInput`<sup>Optional</sup> <a name="AcceptSelfSignedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSignedInput"></a>
 
 ```csharp
-public object AcceptSelfSignedInput { get; }
+public bool|IResolvable AcceptSelfSignedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowInsecureInput`<sup>Optional</sup> <a name="AllowInsecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecureInput"></a>
 
 ```csharp
-public object AllowInsecureInput { get; }
+public bool|IResolvable AllowInsecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14572,20 +14572,20 @@ public string[] CertificateDomainsInput { get; }
 ##### `CheckCertificateRevocationInput`<sup>Optional</sup> <a name="CheckCertificateRevocationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocationInput"></a>
 
 ```csharp
-public object CheckCertificateRevocationInput { get; }
+public bool|IResolvable CheckCertificateRevocationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableAiaIntermediateFetchingInput`<sup>Optional</sup> <a name="DisableAiaIntermediateFetchingInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetchingInput"></a>
 
 ```csharp
-public object DisableAiaIntermediateFetchingInput { get; }
+public bool|IResolvable DisableAiaIntermediateFetchingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14612,10 +14612,10 @@ public string DnsServerPortInput { get; }
 ##### `FollowRedirectsInput`<sup>Optional</sup> <a name="FollowRedirectsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirectsInput"></a>
 
 ```csharp
-public object FollowRedirectsInput { get; }
+public bool|IResolvable FollowRedirectsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14652,10 +14652,10 @@ public string HttpVersionInput { get; }
 ##### `IsMessageBase64EncodedInput`<sup>Optional</sup> <a name="IsMessageBase64EncodedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64EncodedInput"></a>
 
 ```csharp
-public object IsMessageBase64EncodedInput { get; }
+public bool|IResolvable IsMessageBase64EncodedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14682,10 +14682,10 @@ public string MethodInput { get; }
 ##### `NoSavingResponseBodyInput`<sup>Optional</sup> <a name="NoSavingResponseBodyInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBodyInput"></a>
 
 ```csharp
-public object NoSavingResponseBodyInput { get; }
+public bool|IResolvable NoSavingResponseBodyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14702,10 +14702,10 @@ public double NumberOfPacketsInput { get; }
 ##### `PersistCookiesInput`<sup>Optional</sup> <a name="PersistCookiesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookiesInput"></a>
 
 ```csharp
-public object PersistCookiesInput { get; }
+public bool|IResolvable PersistCookiesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14762,10 +14762,10 @@ public string ServiceInput { get; }
 ##### `ShouldTrackHopsInput`<sup>Optional</sup> <a name="ShouldTrackHopsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHopsInput"></a>
 
 ```csharp
-public object ShouldTrackHopsInput { get; }
+public bool|IResolvable ShouldTrackHopsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14792,20 +14792,20 @@ public string UrlInput { get; }
 ##### `AcceptSelfSigned`<sup>Required</sup> <a name="AcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSigned"></a>
 
 ```csharp
-public object AcceptSelfSigned { get; }
+public bool|IResolvable AcceptSelfSigned { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowInsecure`<sup>Required</sup> <a name="AllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecure"></a>
 
 ```csharp
-public object AllowInsecure { get; }
+public bool|IResolvable AllowInsecure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14852,20 +14852,20 @@ public string[] CertificateDomains { get; }
 ##### `CheckCertificateRevocation`<sup>Required</sup> <a name="CheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocation"></a>
 
 ```csharp
-public object CheckCertificateRevocation { get; }
+public bool|IResolvable CheckCertificateRevocation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableAiaIntermediateFetching`<sup>Required</sup> <a name="DisableAiaIntermediateFetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetching"></a>
 
 ```csharp
-public object DisableAiaIntermediateFetching { get; }
+public bool|IResolvable DisableAiaIntermediateFetching { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14892,10 +14892,10 @@ public string DnsServerPort { get; }
 ##### `FollowRedirects`<sup>Required</sup> <a name="FollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirects"></a>
 
 ```csharp
-public object FollowRedirects { get; }
+public bool|IResolvable FollowRedirects { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14932,10 +14932,10 @@ public string HttpVersion { get; }
 ##### `IsMessageBase64Encoded`<sup>Required</sup> <a name="IsMessageBase64Encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64Encoded"></a>
 
 ```csharp
-public object IsMessageBase64Encoded { get; }
+public bool|IResolvable IsMessageBase64Encoded { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14962,10 +14962,10 @@ public string Method { get; }
 ##### `NoSavingResponseBody`<sup>Required</sup> <a name="NoSavingResponseBody" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBody"></a>
 
 ```csharp
-public object NoSavingResponseBody { get; }
+public bool|IResolvable NoSavingResponseBody { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14982,10 +14982,10 @@ public double NumberOfPackets { get; }
 ##### `PersistCookies`<sup>Required</sup> <a name="PersistCookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookies"></a>
 
 ```csharp
-public object PersistCookies { get; }
+public bool|IResolvable PersistCookies { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15042,10 +15042,10 @@ public string Service { get; }
 ##### `ShouldTrackHops`<sup>Required</sup> <a name="ShouldTrackHops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHops"></a>
 
 ```csharp
-public object ShouldTrackHops { get; }
+public bool|IResolvable ShouldTrackHops { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15201,7 +15201,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>[]</code> | *No description.* |
 
 ---
 
@@ -15232,10 +15232,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestApiStepRequestFile[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>[]
 
 ---
 
@@ -15493,7 +15493,7 @@ private void ResetOriginalFileName()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.originalFileName">OriginalFileName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.size">Size</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a></code> | *No description.* |
 
 ---
 
@@ -15634,10 +15634,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestApiStepRequestFile InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>
 
 ---
 
@@ -16370,7 +16370,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>[]</code> | *No description.* |
 
 ---
 
@@ -16401,10 +16401,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestAssertion[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>[]
 
 ---
 
@@ -16750,7 +16750,7 @@ private void ResetTimingsScope()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.target">Target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.timingsScope">TimingsScope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a></code> | *No description.* |
 
 ---
 
@@ -16961,10 +16961,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestAssertion InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>
 
 ---
 
@@ -18063,7 +18063,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>[]</code> | *No description.* |
 
 ---
 
@@ -18094,10 +18094,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestBrowserStep[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>[]
 
 ---
 
@@ -18401,28 +18401,28 @@ private void ResetTimeout()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.params">Params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference">SyntheticsTestBrowserStepParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.publicId">PublicId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailureInput">AllowFailureInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecuteInput">AlwaysExecuteInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceedInput">ExitIfSucceedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdateInput">ForceElementUpdateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCriticalInput">IsCriticalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailureInput">AllowFailureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecuteInput">AlwaysExecuteInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceedInput">ExitIfSucceedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdateInput">ForceElementUpdateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCriticalInput">IsCriticalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.localKeyInput">LocalKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.paramsInput">ParamsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams">SyntheticsTestBrowserStepParams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailure">AllowFailure</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecute">AlwaysExecute</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceed">ExitIfSucceed</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdate">ForceElementUpdate</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCritical">IsCritical</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailure">AllowFailure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecute">AlwaysExecute</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceed">ExitIfSucceed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdate">ForceElementUpdate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCritical">IsCritical</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.localKey">LocalKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.timeout">Timeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a></code> | *No description.* |
 
 ---
 
@@ -18473,50 +18473,50 @@ public string PublicId { get; }
 ##### `AllowFailureInput`<sup>Optional</sup> <a name="AllowFailureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailureInput"></a>
 
 ```csharp
-public object AllowFailureInput { get; }
+public bool|IResolvable AllowFailureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AlwaysExecuteInput`<sup>Optional</sup> <a name="AlwaysExecuteInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecuteInput"></a>
 
 ```csharp
-public object AlwaysExecuteInput { get; }
+public bool|IResolvable AlwaysExecuteInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ExitIfSucceedInput`<sup>Optional</sup> <a name="ExitIfSucceedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceedInput"></a>
 
 ```csharp
-public object ExitIfSucceedInput { get; }
+public bool|IResolvable ExitIfSucceedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ForceElementUpdateInput`<sup>Optional</sup> <a name="ForceElementUpdateInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdateInput"></a>
 
 ```csharp
-public object ForceElementUpdateInput { get; }
+public bool|IResolvable ForceElementUpdateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsCriticalInput`<sup>Optional</sup> <a name="IsCriticalInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCriticalInput"></a>
 
 ```csharp
-public object IsCriticalInput { get; }
+public bool|IResolvable IsCriticalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18543,10 +18543,10 @@ public string NameInput { get; }
 ##### `NoScreenshotInput`<sup>Optional</sup> <a name="NoScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshotInput"></a>
 
 ```csharp
-public object NoScreenshotInput { get; }
+public bool|IResolvable NoScreenshotInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18583,50 +18583,50 @@ public string TypeInput { get; }
 ##### `AllowFailure`<sup>Required</sup> <a name="AllowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailure"></a>
 
 ```csharp
-public object AllowFailure { get; }
+public bool|IResolvable AllowFailure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AlwaysExecute`<sup>Required</sup> <a name="AlwaysExecute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecute"></a>
 
 ```csharp
-public object AlwaysExecute { get; }
+public bool|IResolvable AlwaysExecute { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ExitIfSucceed`<sup>Required</sup> <a name="ExitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceed"></a>
 
 ```csharp
-public object ExitIfSucceed { get; }
+public bool|IResolvable ExitIfSucceed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ForceElementUpdate`<sup>Required</sup> <a name="ForceElementUpdate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdate"></a>
 
 ```csharp
-public object ForceElementUpdate { get; }
+public bool|IResolvable ForceElementUpdate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsCritical`<sup>Required</sup> <a name="IsCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCritical"></a>
 
 ```csharp
-public object IsCritical { get; }
+public bool|IResolvable IsCritical { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18653,10 +18653,10 @@ public string Name { get; }
 ##### `NoScreenshot`<sup>Required</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot"></a>
 
 ```csharp
-public object NoScreenshot { get; }
+public bool|IResolvable NoScreenshot { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18683,10 +18683,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestBrowserStep InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>
 
 ---
 
@@ -18922,9 +18922,9 @@ private void ResetFailTestOnCannotLocate()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.value">Value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference">SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">FailTestOnCannotLocateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">FailTestOnCannotLocateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.valueInput">ValueInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue">SyntheticsTestBrowserStepParamsElementUserLocatorValue</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator">SyntheticsTestBrowserStepParamsElementUserLocator</a></code> | *No description.* |
 
 ---
@@ -18966,10 +18966,10 @@ public SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference Val
 ##### `FailTestOnCannotLocateInput`<sup>Optional</sup> <a name="FailTestOnCannotLocateInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput"></a>
 
 ```csharp
-public object FailTestOnCannotLocateInput { get; }
+public bool|IResolvable FailTestOnCannotLocateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18986,10 +18986,10 @@ public SyntheticsTestBrowserStepParamsElementUserLocatorValue ValueInput { get; 
 ##### `FailTestOnCannotLocate`<sup>Required</sup> <a name="FailTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate"></a>
 
 ```csharp
-public object FailTestOnCannotLocate { get; }
+public bool|IResolvable FailTestOnCannotLocate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19717,11 +19717,11 @@ private void ResetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.elementUserLocator">ElementUserLocator</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference">SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.pattern">Pattern</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsPatternOutputReference">SyntheticsTestBrowserStepParamsPatternOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.variable">Variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference">SyntheticsTestBrowserStepParamsVariableOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContentInput">AppendToContentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContentInput">AppendToContentInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.attributeInput">AttributeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.checkInput">CheckInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickTypeInput">ClickTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput">ClickWithJavascriptInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput">ClickWithJavascriptInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.codeInput">CodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.delayInput">DelayInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.elementInput">ElementInput</a></code> | <code>string</code> | *No description.* |
@@ -19737,14 +19737,14 @@ private void ResetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.subtestPublicIdInput">SubtestPublicIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.variableInput">VariableInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable">SyntheticsTestBrowserStepParamsVariable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClickInput">WithClickInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClickInput">WithClickInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.xInput">XInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.yInput">YInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContent">AppendToContent</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContent">AppendToContent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.attribute">Attribute</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.check">Check</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickType">ClickType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascript">ClickWithJavascript</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascript">ClickWithJavascript</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.code">Code</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.delay">Delay</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.element">Element</a></code> | <code>string</code> | *No description.* |
@@ -19757,7 +19757,7 @@ private void ResetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.requests">Requests</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.subtestPublicId">SubtestPublicId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClick">WithClick</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClick">WithClick</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.x">X</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.y">Y</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams">SyntheticsTestBrowserStepParams</a></code> | *No description.* |
@@ -19821,10 +19821,10 @@ public SyntheticsTestBrowserStepParamsVariableOutputReference Variable { get; }
 ##### `AppendToContentInput`<sup>Optional</sup> <a name="AppendToContentInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContentInput"></a>
 
 ```csharp
-public object AppendToContentInput { get; }
+public bool|IResolvable AppendToContentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19861,10 +19861,10 @@ public string ClickTypeInput { get; }
 ##### `ClickWithJavascriptInput`<sup>Optional</sup> <a name="ClickWithJavascriptInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput"></a>
 
 ```csharp
-public object ClickWithJavascriptInput { get; }
+public bool|IResolvable ClickWithJavascriptInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20021,10 +20021,10 @@ public SyntheticsTestBrowserStepParamsVariable VariableInput { get; }
 ##### `WithClickInput`<sup>Optional</sup> <a name="WithClickInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClickInput"></a>
 
 ```csharp
-public object WithClickInput { get; }
+public bool|IResolvable WithClickInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20051,10 +20051,10 @@ public double YInput { get; }
 ##### `AppendToContent`<sup>Required</sup> <a name="AppendToContent" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContent"></a>
 
 ```csharp
-public object AppendToContent { get; }
+public bool|IResolvable AppendToContent { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20091,10 +20091,10 @@ public string ClickType { get; }
 ##### `ClickWithJavascript`<sup>Required</sup> <a name="ClickWithJavascript" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascript"></a>
 
 ```csharp
-public object ClickWithJavascript { get; }
+public bool|IResolvable ClickWithJavascript { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20221,10 +20221,10 @@ public string Value { get; }
 ##### `WithClick`<sup>Required</sup> <a name="WithClick" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClick"></a>
 
 ```csharp
-public object WithClick { get; }
+public bool|IResolvable WithClick { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20799,10 +20799,10 @@ private void ResetSecure()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.exampleInput">ExampleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secureInput">SecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secureInput">SecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.example">Example</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secure">Secure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secure">Secure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable">SyntheticsTestBrowserStepParamsVariable</a></code> | *No description.* |
 
 ---
@@ -20854,10 +20854,10 @@ public string NameInput { get; }
 ##### `SecureInput`<sup>Optional</sup> <a name="SecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secureInput"></a>
 
 ```csharp
-public object SecureInput { get; }
+public bool|IResolvable SecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20884,10 +20884,10 @@ public string Name { get; }
 ##### `Secure`<sup>Required</sup> <a name="Secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secure"></a>
 
 ```csharp
-public object Secure { get; }
+public bool|IResolvable Secure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21023,7 +21023,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>[]</code> | *No description.* |
 
 ---
 
@@ -21054,10 +21054,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestBrowserVariable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>[]
 
 ---
 
@@ -21322,15 +21322,15 @@ private void ResetSecure()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.patternInput">PatternInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secureInput">SecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secureInput">SecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.example">Example</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.pattern">Pattern</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure">Secure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure">Secure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a></code> | *No description.* |
 
 ---
 
@@ -21401,10 +21401,10 @@ public string PatternInput { get; }
 ##### `SecureInput`<sup>Optional</sup> <a name="SecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secureInput"></a>
 
 ```csharp
-public object SecureInput { get; }
+public bool|IResolvable SecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21461,10 +21461,10 @@ public string Pattern { get; }
 ##### `Secure`<sup>Required</sup> <a name="Secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure"></a>
 
 ```csharp
-public object Secure { get; }
+public bool|IResolvable Secure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21481,10 +21481,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestBrowserVariable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>
 
 ---
 
@@ -21610,7 +21610,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>[]</code> | *No description.* |
 
 ---
 
@@ -21641,10 +21641,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestConfigVariable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>[]
 
 ---
 
@@ -21909,15 +21909,15 @@ private void ResetSecure()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.patternInput">PatternInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secureInput">SecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secureInput">SecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.example">Example</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.pattern">Pattern</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure">Secure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure">Secure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a></code> | *No description.* |
 
 ---
 
@@ -21988,10 +21988,10 @@ public string PatternInput { get; }
 ##### `SecureInput`<sup>Optional</sup> <a name="SecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secureInput"></a>
 
 ```csharp
-public object SecureInput { get; }
+public bool|IResolvable SecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22048,10 +22048,10 @@ public string Pattern { get; }
 ##### `Secure`<sup>Required</sup> <a name="Secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure"></a>
 
 ```csharp
-public object Secure { get; }
+public bool|IResolvable Secure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22068,10 +22068,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestConfigVariable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>
 
 ---
 
@@ -22197,7 +22197,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>[]</code> | *No description.* |
 
 ---
 
@@ -22228,10 +22228,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileOptionsListBindings[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>[]
 
 ---
 
@@ -22482,7 +22482,7 @@ private void ResetRelation()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relationInput">RelationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.principals">Principals</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relation">Relation</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a></code> | *No description.* |
 
 ---
 
@@ -22553,10 +22553,10 @@ public string Relation { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileOptionsListBindings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>
 
 ---
 
@@ -24026,12 +24026,12 @@ Returns a reversible string representation.
 ##### `PutTimeframes` <a name="PutTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.putTimeframes"></a>
 
 ```csharp
-private void PutTimeframes(object Value)
+private void PutTimeframes(IResolvable|SyntheticsTestMobileOptionsListSchedulingTimeframes[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.putTimeframes.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>[]
 
 ---
 
@@ -24043,7 +24043,7 @@ private void PutTimeframes(object Value)
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframes">Timeframes</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList">SyntheticsTestMobileOptionsListSchedulingTimeframesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput">TimeframesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput">TimeframesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezoneInput">TimezoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezone">Timezone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | *No description.* |
@@ -24087,10 +24087,10 @@ public SyntheticsTestMobileOptionsListSchedulingTimeframesList Timeframes { get;
 ##### `TimeframesInput`<sup>Optional</sup> <a name="TimeframesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput"></a>
 
 ```csharp
-public object TimeframesInput { get; }
+public IResolvable|SyntheticsTestMobileOptionsListSchedulingTimeframes[] TimeframesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>[]
 
 ---
 
@@ -24246,7 +24246,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>[]</code> | *No description.* |
 
 ---
 
@@ -24277,10 +24277,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileOptionsListSchedulingTimeframes[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>[]
 
 ---
 
@@ -24519,7 +24519,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.day">Day</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.from">From</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.to">To</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a></code> | *No description.* |
 
 ---
 
@@ -24610,10 +24610,10 @@ public string To { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileOptionsListSchedulingTimeframes InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>
 
 ---
 
@@ -24844,12 +24844,12 @@ Returns a reversible string representation.
 ##### `PutBindings` <a name="PutBindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putBindings"></a>
 
 ```csharp
-private void PutBindings(object Value)
+private void PutBindings(IResolvable|SyntheticsTestMobileOptionsListBindings[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putBindings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>[]
 
 ---
 
@@ -25010,31 +25010,31 @@ private void ResetVerbosity()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference">SyntheticsTestMobileOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference">SyntheticsTestMobileOptionsListRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference">SyntheticsTestMobileOptionsListSchedulingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput">AllowApplicationCrashInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput">BindingsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput">AllowApplicationCrashInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput">BindingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.ciInput">CiInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeoutInput">DefaultStepTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIdsInput">DeviceIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput">DisableAutoAcceptAlertInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput">DisableAutoAcceptAlertInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDurationInput">MinFailureDurationInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.mobileApplicationInput">MobileApplicationInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorNameInput">MonitorNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptionsInput">MonitorOptionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriorityInput">MonitorPriorityInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRolesInput">RestrictedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retryInput">RetryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.schedulingInput">SchedulingInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEveryInput">TickEveryInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosityInput">VerbosityInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash">AllowApplicationCrash</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash">AllowApplicationCrash</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeout">DefaultStepTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIds">DeviceIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert">DisableAutoAcceptAlert</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert">DisableAutoAcceptAlert</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorName">MonitorName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriority">MonitorPriority</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEvery">TickEvery</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosity">Verbosity</a></code> | <code>double</code> | *No description.* |
@@ -25129,20 +25129,20 @@ public SyntheticsTestMobileOptionsListSchedulingOutputReference Scheduling { get
 ##### `AllowApplicationCrashInput`<sup>Optional</sup> <a name="AllowApplicationCrashInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput"></a>
 
 ```csharp
-public object AllowApplicationCrashInput { get; }
+public bool|IResolvable AllowApplicationCrashInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `BindingsInput`<sup>Optional</sup> <a name="BindingsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput"></a>
 
 ```csharp
-public object BindingsInput { get; }
+public IResolvable|SyntheticsTestMobileOptionsListBindings[] BindingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>[]
 
 ---
 
@@ -25179,10 +25179,10 @@ public string[] DeviceIdsInput { get; }
 ##### `DisableAutoAcceptAlertInput`<sup>Optional</sup> <a name="DisableAutoAcceptAlertInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput"></a>
 
 ```csharp
-public object DisableAutoAcceptAlertInput { get; }
+public bool|IResolvable DisableAutoAcceptAlertInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25239,10 +25239,10 @@ public double MonitorPriorityInput { get; }
 ##### `NoScreenshotInput`<sup>Optional</sup> <a name="NoScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput"></a>
 
 ```csharp
-public object NoScreenshotInput { get; }
+public bool|IResolvable NoScreenshotInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25299,10 +25299,10 @@ public double VerbosityInput { get; }
 ##### `AllowApplicationCrash`<sup>Required</sup> <a name="AllowApplicationCrash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash"></a>
 
 ```csharp
-public object AllowApplicationCrash { get; }
+public bool|IResolvable AllowApplicationCrash { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25329,10 +25329,10 @@ public string[] DeviceIds { get; }
 ##### `DisableAutoAcceptAlert`<sup>Required</sup> <a name="DisableAutoAcceptAlert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert"></a>
 
 ```csharp
-public object DisableAutoAcceptAlert { get; }
+public bool|IResolvable DisableAutoAcceptAlert { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25369,10 +25369,10 @@ public double MonitorPriority { get; }
 ##### `NoScreenshot`<sup>Required</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot"></a>
 
 ```csharp
-public object NoScreenshot { get; }
+public bool|IResolvable NoScreenshot { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25538,7 +25538,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>[]</code> | *No description.* |
 
 ---
 
@@ -25569,10 +25569,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileStep[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>[]
 
 ---
 
@@ -25861,24 +25861,24 @@ private void ResetTimeout()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.params">Params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference">SyntheticsTestMobileStepParamsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput">AllowFailureInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput">HasNewStepElementInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput">IsCriticalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput">AllowFailureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput">HasNewStepElementInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput">IsCriticalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.paramsInput">ParamsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicIdInput">PublicIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure">AllowFailure</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement">HasNewStepElement</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical">IsCritical</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure">AllowFailure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement">HasNewStepElement</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical">IsCritical</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicId">PublicId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeout">Timeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a></code> | *No description.* |
 
 ---
 
@@ -25919,30 +25919,30 @@ public SyntheticsTestMobileStepParamsOutputReference Params { get; }
 ##### `AllowFailureInput`<sup>Optional</sup> <a name="AllowFailureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput"></a>
 
 ```csharp
-public object AllowFailureInput { get; }
+public bool|IResolvable AllowFailureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasNewStepElementInput`<sup>Optional</sup> <a name="HasNewStepElementInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput"></a>
 
 ```csharp
-public object HasNewStepElementInput { get; }
+public bool|IResolvable HasNewStepElementInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsCriticalInput`<sup>Optional</sup> <a name="IsCriticalInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput"></a>
 
 ```csharp
-public object IsCriticalInput { get; }
+public bool|IResolvable IsCriticalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25959,10 +25959,10 @@ public string NameInput { get; }
 ##### `NoScreenshotInput`<sup>Optional</sup> <a name="NoScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput"></a>
 
 ```csharp
-public object NoScreenshotInput { get; }
+public bool|IResolvable NoScreenshotInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26009,30 +26009,30 @@ public string TypeInput { get; }
 ##### `AllowFailure`<sup>Required</sup> <a name="AllowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure"></a>
 
 ```csharp
-public object AllowFailure { get; }
+public bool|IResolvable AllowFailure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasNewStepElement`<sup>Required</sup> <a name="HasNewStepElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement"></a>
 
 ```csharp
-public object HasNewStepElement { get; }
+public bool|IResolvable HasNewStepElement { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsCritical`<sup>Required</sup> <a name="IsCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical"></a>
 
 ```csharp
-public object IsCritical { get; }
+public bool|IResolvable IsCritical { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26049,10 +26049,10 @@ public string Name { get; }
 ##### `NoScreenshot`<sup>Required</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot"></a>
 
 ```csharp
-public object NoScreenshot { get; }
+public bool|IResolvable NoScreenshot { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26089,10 +26089,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileStep InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>
 
 ---
 
@@ -27120,12 +27120,12 @@ Returns a reversible string representation.
 ##### `PutValues` <a name="PutValues" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.putValues"></a>
 
 ```csharp
-private void PutValues(object Value)
+private void PutValues(IResolvable|SyntheticsTestMobileStepParamsElementUserLocatorValues[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.putValues.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>[]
 
 ---
 
@@ -27149,9 +27149,9 @@ private void ResetValues()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.values">Values</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList">SyntheticsTestMobileStepParamsElementUserLocatorValuesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">FailTestOnCannotLocateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput">ValuesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">FailTestOnCannotLocateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput">ValuesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a></code> | *No description.* |
 
 ---
@@ -27193,30 +27193,30 @@ public SyntheticsTestMobileStepParamsElementUserLocatorValuesList Values { get; 
 ##### `FailTestOnCannotLocateInput`<sup>Optional</sup> <a name="FailTestOnCannotLocateInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput"></a>
 
 ```csharp
-public object FailTestOnCannotLocateInput { get; }
+public bool|IResolvable FailTestOnCannotLocateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ValuesInput`<sup>Optional</sup> <a name="ValuesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput"></a>
 
 ```csharp
-public object ValuesInput { get; }
+public IResolvable|SyntheticsTestMobileStepParamsElementUserLocatorValues[] ValuesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>[]
 
 ---
 
 ##### `FailTestOnCannotLocate`<sup>Required</sup> <a name="FailTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate"></a>
 
 ```csharp
-public object FailTestOnCannotLocate { get; }
+public bool|IResolvable FailTestOnCannotLocate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -27352,7 +27352,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>[]</code> | *No description.* |
 
 ---
 
@@ -27383,10 +27383,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileStepParamsElementUserLocatorValues[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>[]
 
 ---
 
@@ -27637,7 +27637,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a></code> | *No description.* |
 
 ---
 
@@ -27708,10 +27708,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileStepParamsElementUserLocatorValues InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>
 
 ---
 
@@ -27950,12 +27950,12 @@ private void PutElement(SyntheticsTestMobileStepParamsElement Value)
 ##### `PutPositions` <a name="PutPositions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putPositions"></a>
 
 ```csharp
-private void PutPositions(object Value)
+private void PutPositions(IResolvable|SyntheticsTestMobileStepParamsPositions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putPositions.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>[]
 
 ---
 
@@ -28063,23 +28063,23 @@ private void ResetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delayInput">DelayInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.directionInput">DirectionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.elementInput">ElementInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput">EnableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput">EnableInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrollsInput">MaxScrollsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput">PositionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput">PositionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicIdInput">SubtestPublicIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.variableInput">VariableInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput">WithEnterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput">WithEnterInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.xInput">XInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.yInput">YInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.check">Check</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delay">Delay</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.direction">Direction</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable">Enable</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable">Enable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrolls">MaxScrolls</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicId">SubtestPublicId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter">WithEnter</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter">WithEnter</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.x">X</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.y">Y</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | *No description.* |
@@ -28183,10 +28183,10 @@ public SyntheticsTestMobileStepParamsElement ElementInput { get; }
 ##### `EnableInput`<sup>Optional</sup> <a name="EnableInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput"></a>
 
 ```csharp
-public object EnableInput { get; }
+public bool|IResolvable EnableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -28203,10 +28203,10 @@ public double MaxScrollsInput { get; }
 ##### `PositionsInput`<sup>Optional</sup> <a name="PositionsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput"></a>
 
 ```csharp
-public object PositionsInput { get; }
+public IResolvable|SyntheticsTestMobileStepParamsPositions[] PositionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>[]
 
 ---
 
@@ -28243,10 +28243,10 @@ public SyntheticsTestMobileStepParamsVariable VariableInput { get; }
 ##### `WithEnterInput`<sup>Optional</sup> <a name="WithEnterInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput"></a>
 
 ```csharp
-public object WithEnterInput { get; }
+public bool|IResolvable WithEnterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -28303,10 +28303,10 @@ public string Direction { get; }
 ##### `Enable`<sup>Required</sup> <a name="Enable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable"></a>
 
 ```csharp
-public object Enable { get; }
+public bool|IResolvable Enable { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -28343,10 +28343,10 @@ public string Value { get; }
 ##### `WithEnter`<sup>Required</sup> <a name="WithEnter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter"></a>
 
 ```csharp
-public object WithEnter { get; }
+public bool|IResolvable WithEnter { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -28502,7 +28502,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>[]</code> | *No description.* |
 
 ---
 
@@ -28533,10 +28533,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileStepParamsPositions[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>[]
 
 ---
 
@@ -28787,7 +28787,7 @@ private void ResetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.yInput">YInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.x">X</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.y">Y</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a></code> | *No description.* |
 
 ---
 
@@ -28858,10 +28858,10 @@ public double Y { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestMobileStepParamsPositions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>
 
 ---
 
@@ -30342,10 +30342,10 @@ private void ResetClientTokenId()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.applicationIdInput">ApplicationIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.clientTokenIdInput">ClientTokenIdInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabledInput">IsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabledInput">IsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.applicationId">ApplicationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.clientTokenId">ClientTokenId</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabled">IsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabled">IsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
 
 ---
@@ -30397,10 +30397,10 @@ public double ClientTokenIdInput { get; }
 ##### `IsEnabledInput`<sup>Optional</sup> <a name="IsEnabledInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabledInput"></a>
 
 ```csharp
-public object IsEnabledInput { get; }
+public bool|IResolvable IsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -30427,10 +30427,10 @@ public double ClientTokenId { get; }
 ##### `IsEnabled`<sup>Required</sup> <a name="IsEnabled" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabled"></a>
 
 ```csharp
-public object IsEnabled { get; }
+public bool|IResolvable IsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -30652,12 +30652,12 @@ Returns a reversible string representation.
 ##### `PutTimeframes` <a name="PutTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes"></a>
 
 ```csharp
-private void PutTimeframes(object Value)
+private void PutTimeframes(IResolvable|SyntheticsTestOptionsListSchedulingTimeframes[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>[]
 
 ---
 
@@ -30669,7 +30669,7 @@ private void PutTimeframes(object Value)
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframes">Timeframes</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList">SyntheticsTestOptionsListSchedulingTimeframesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput">TimeframesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput">TimeframesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezoneInput">TimezoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezone">Timezone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
@@ -30713,10 +30713,10 @@ public SyntheticsTestOptionsListSchedulingTimeframesList Timeframes { get; }
 ##### `TimeframesInput`<sup>Optional</sup> <a name="TimeframesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput"></a>
 
 ```csharp
-public object TimeframesInput { get; }
+public IResolvable|SyntheticsTestOptionsListSchedulingTimeframes[] TimeframesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>[]
 
 ---
 
@@ -30872,7 +30872,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>[]</code> | *No description.* |
 
 ---
 
@@ -30903,10 +30903,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestOptionsListSchedulingTimeframes[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>[]
 
 ---
 
@@ -31145,7 +31145,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.day">Day</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.from">From</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.to">To</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a></code> | *No description.* |
 
 ---
 
@@ -31236,10 +31236,10 @@ public string To { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestOptionsListSchedulingTimeframes InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>
 
 ---
 
@@ -31671,43 +31671,43 @@ private void ResetScheduling()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput">AcceptSelfSignedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput">AllowInsecureInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput">CheckCertificateRevocationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput">AcceptSelfSignedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput">AllowInsecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput">CheckCertificateRevocationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ciInput">CiInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetchingInput">DisableAiaIntermediateFetchingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput">DisableCorsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput">DisableCspInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput">FollowRedirectsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetchingInput">DisableAiaIntermediateFetchingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput">DisableCorsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput">DisableCspInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput">FollowRedirectsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersionInput">HttpVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput">IgnoreServerCertificateErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput">IgnoreServerCertificateErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeoutInput">InitialNavigationTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDurationInput">MinFailureDurationInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailedInput">MinLocationFailedInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorNameInput">MonitorNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptionsInput">MonitorOptionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriorityInput">MonitorPriorityInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRolesInput">RestrictedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retryInput">RetryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettingsInput">RumSettingsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.schedulingInput">SchedulingInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEveryInput">TickEveryInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure">AllowInsecure</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetching">DisableAiaIntermediateFetching</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors">DisableCors</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp">DisableCsp</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects">FollowRedirects</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure">AllowInsecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetching">DisableAiaIntermediateFetching</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors">DisableCors</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp">DisableCsp</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects">FollowRedirects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersion">HttpVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError">IgnoreServerCertificateError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError">IgnoreServerCertificateError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeout">InitialNavigationTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailed">MinLocationFailed</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorName">MonitorName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriority">MonitorPriority</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEvery">TickEvery</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
@@ -31791,30 +31791,30 @@ public SyntheticsTestOptionsListSchedulingOutputReference Scheduling { get; }
 ##### `AcceptSelfSignedInput`<sup>Optional</sup> <a name="AcceptSelfSignedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput"></a>
 
 ```csharp
-public object AcceptSelfSignedInput { get; }
+public bool|IResolvable AcceptSelfSignedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowInsecureInput`<sup>Optional</sup> <a name="AllowInsecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput"></a>
 
 ```csharp
-public object AllowInsecureInput { get; }
+public bool|IResolvable AllowInsecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CheckCertificateRevocationInput`<sup>Optional</sup> <a name="CheckCertificateRevocationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput"></a>
 
 ```csharp
-public object CheckCertificateRevocationInput { get; }
+public bool|IResolvable CheckCertificateRevocationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -31831,40 +31831,40 @@ public SyntheticsTestOptionsListCi CiInput { get; }
 ##### `DisableAiaIntermediateFetchingInput`<sup>Optional</sup> <a name="DisableAiaIntermediateFetchingInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetchingInput"></a>
 
 ```csharp
-public object DisableAiaIntermediateFetchingInput { get; }
+public bool|IResolvable DisableAiaIntermediateFetchingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableCorsInput`<sup>Optional</sup> <a name="DisableCorsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput"></a>
 
 ```csharp
-public object DisableCorsInput { get; }
+public bool|IResolvable DisableCorsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableCspInput`<sup>Optional</sup> <a name="DisableCspInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput"></a>
 
 ```csharp
-public object DisableCspInput { get; }
+public bool|IResolvable DisableCspInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FollowRedirectsInput`<sup>Optional</sup> <a name="FollowRedirectsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput"></a>
 
 ```csharp
-public object FollowRedirectsInput { get; }
+public bool|IResolvable FollowRedirectsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -31881,10 +31881,10 @@ public string HttpVersionInput { get; }
 ##### `IgnoreServerCertificateErrorInput`<sup>Optional</sup> <a name="IgnoreServerCertificateErrorInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput"></a>
 
 ```csharp
-public object IgnoreServerCertificateErrorInput { get; }
+public bool|IResolvable IgnoreServerCertificateErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -31951,10 +31951,10 @@ public double MonitorPriorityInput { get; }
 ##### `NoScreenshotInput`<sup>Optional</sup> <a name="NoScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput"></a>
 
 ```csharp
-public object NoScreenshotInput { get; }
+public bool|IResolvable NoScreenshotInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -32011,70 +32011,70 @@ public double TickEveryInput { get; }
 ##### `AcceptSelfSigned`<sup>Required</sup> <a name="AcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned"></a>
 
 ```csharp
-public object AcceptSelfSigned { get; }
+public bool|IResolvable AcceptSelfSigned { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowInsecure`<sup>Required</sup> <a name="AllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure"></a>
 
 ```csharp
-public object AllowInsecure { get; }
+public bool|IResolvable AllowInsecure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CheckCertificateRevocation`<sup>Required</sup> <a name="CheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation"></a>
 
 ```csharp
-public object CheckCertificateRevocation { get; }
+public bool|IResolvable CheckCertificateRevocation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableAiaIntermediateFetching`<sup>Required</sup> <a name="DisableAiaIntermediateFetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetching"></a>
 
 ```csharp
-public object DisableAiaIntermediateFetching { get; }
+public bool|IResolvable DisableAiaIntermediateFetching { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableCors`<sup>Required</sup> <a name="DisableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors"></a>
 
 ```csharp
-public object DisableCors { get; }
+public bool|IResolvable DisableCors { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableCsp`<sup>Required</sup> <a name="DisableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp"></a>
 
 ```csharp
-public object DisableCsp { get; }
+public bool|IResolvable DisableCsp { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FollowRedirects`<sup>Required</sup> <a name="FollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects"></a>
 
 ```csharp
-public object FollowRedirects { get; }
+public bool|IResolvable FollowRedirects { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -32091,10 +32091,10 @@ public string HttpVersion { get; }
 ##### `IgnoreServerCertificateError`<sup>Required</sup> <a name="IgnoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError"></a>
 
 ```csharp
-public object IgnoreServerCertificateError { get; }
+public bool|IResolvable IgnoreServerCertificateError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -32151,10 +32151,10 @@ public double MonitorPriority { get; }
 ##### `NoScreenshot`<sup>Required</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot"></a>
 
 ```csharp
-public object NoScreenshot { get; }
+public bool|IResolvable NoScreenshot { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34244,18 +34244,18 @@ private void ResetUrl()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.formInput">FormInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.hostInput">HostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.httpVersionInput">HttpVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">IsMessageBase64EncodedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">IsMessageBase64EncodedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.messageInput">MessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.methodInput">MethodInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBodyInput">NoSavingResponseBodyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBodyInput">NoSavingResponseBodyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.numberOfPacketsInput">NumberOfPacketsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookiesInput">PersistCookiesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookiesInput">PersistCookiesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.plainProtoFileInput">PlainProtoFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.portInput">PortInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.protoJsonDescriptorInput">ProtoJsonDescriptorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.servernameInput">ServernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.serviceInput">ServiceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHopsInput">ShouldTrackHopsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHopsInput">ShouldTrackHopsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.body">Body</a></code> | <code>string</code> | *No description.* |
@@ -34267,18 +34267,18 @@ private void ResetUrl()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.form">Form</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.host">Host</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.httpVersion">HttpVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64Encoded">IsMessageBase64Encoded</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64Encoded">IsMessageBase64Encoded</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.message">Message</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.method">Method</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBody">NoSavingResponseBody</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBody">NoSavingResponseBody</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.numberOfPackets">NumberOfPackets</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookies">PersistCookies</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookies">PersistCookies</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.plainProtoFile">PlainProtoFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.port">Port</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.protoJsonDescriptor">ProtoJsonDescriptor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.servername">Servername</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHops">ShouldTrackHops</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHops">ShouldTrackHops</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.timeout">Timeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | *No description.* |
@@ -34402,10 +34402,10 @@ public string HttpVersionInput { get; }
 ##### `IsMessageBase64EncodedInput`<sup>Optional</sup> <a name="IsMessageBase64EncodedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64EncodedInput"></a>
 
 ```csharp
-public object IsMessageBase64EncodedInput { get; }
+public bool|IResolvable IsMessageBase64EncodedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34432,10 +34432,10 @@ public string MethodInput { get; }
 ##### `NoSavingResponseBodyInput`<sup>Optional</sup> <a name="NoSavingResponseBodyInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBodyInput"></a>
 
 ```csharp
-public object NoSavingResponseBodyInput { get; }
+public bool|IResolvable NoSavingResponseBodyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34452,10 +34452,10 @@ public double NumberOfPacketsInput { get; }
 ##### `PersistCookiesInput`<sup>Optional</sup> <a name="PersistCookiesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookiesInput"></a>
 
 ```csharp
-public object PersistCookiesInput { get; }
+public bool|IResolvable PersistCookiesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34512,10 +34512,10 @@ public string ServiceInput { get; }
 ##### `ShouldTrackHopsInput`<sup>Optional</sup> <a name="ShouldTrackHopsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHopsInput"></a>
 
 ```csharp
-public object ShouldTrackHopsInput { get; }
+public bool|IResolvable ShouldTrackHopsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34632,10 +34632,10 @@ public string HttpVersion { get; }
 ##### `IsMessageBase64Encoded`<sup>Required</sup> <a name="IsMessageBase64Encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64Encoded"></a>
 
 ```csharp
-public object IsMessageBase64Encoded { get; }
+public bool|IResolvable IsMessageBase64Encoded { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34662,10 +34662,10 @@ public string Method { get; }
 ##### `NoSavingResponseBody`<sup>Required</sup> <a name="NoSavingResponseBody" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBody"></a>
 
 ```csharp
-public object NoSavingResponseBody { get; }
+public bool|IResolvable NoSavingResponseBody { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34682,10 +34682,10 @@ public double NumberOfPackets { get; }
 ##### `PersistCookies`<sup>Required</sup> <a name="PersistCookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookies"></a>
 
 ```csharp
-public object PersistCookies { get; }
+public bool|IResolvable PersistCookies { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34742,10 +34742,10 @@ public string Service { get; }
 ##### `ShouldTrackHops`<sup>Required</sup> <a name="ShouldTrackHops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHops"></a>
 
 ```csharp
-public object ShouldTrackHops { get; }
+public bool|IResolvable ShouldTrackHops { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -34901,7 +34901,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>[]</code> | *No description.* |
 
 ---
 
@@ -34932,10 +34932,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestRequestFile[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>[]
 
 ---
 
@@ -35193,7 +35193,7 @@ private void ResetOriginalFileName()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.originalFileName">OriginalFileName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.size">Size</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a></code> | *No description.* |
 
 ---
 
@@ -35334,10 +35334,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SyntheticsTestRequestFile InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>
 
 ---
 
