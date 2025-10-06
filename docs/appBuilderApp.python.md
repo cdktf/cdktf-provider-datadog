@@ -14,18 +14,18 @@ from cdktf_cdktf_provider_datadog import app_builder_app
 appBuilderApp.AppBuilderApp(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   app_json: str,
   action_query_names_to_connection_ids: typing.Mapping[str] = None,
   description: str = None,
   name: str = None,
-  published: typing.Union[bool, IResolvable] = None,
+  published: bool | IResolvable = None,
   root_instance_name: str = None
 )
 ```
@@ -34,18 +34,18 @@ appBuilderApp.AppBuilderApp(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.appJson">app_json</a></code> | <code>str</code> | The JSON representation of the App. String length must be at least 1. |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.actionQueryNamesToConnectionIds">action_query_names_to_connection_ids</a></code> | <code>typing.Mapping[str]</code> | If specified, this will override the Action Connection IDs for the specified Action Query Names in the App JSON. |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.description">description</a></code> | <code>str</code> | If specified, this will override the human-readable description of the App in the App JSON. |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.name">name</a></code> | <code>str</code> | If specified, this will override the name of the App in the App JSON. |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.published">published</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set the app to published or unpublished. |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.published">published</a></code> | <code>bool \| cdktf.IResolvable</code> | Set the app to published or unpublished. |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.rootInstanceName">root_instance_name</a></code> | <code>str</code> | The name of the root component of the app. |
 
 ---
@@ -70,13 +70,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `published`<sup>Optional</sup> <a name="published" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.Initializer.parameter.published"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set the app to published or unpublished.
 
@@ -437,7 +437,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.importFrom"></a>
@@ -500,7 +500,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -516,7 +516,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -707,25 +707,25 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.actionQueryNamesToConnectionIdsInput">action_query_names_to_connection_ids_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.appJsonInput">app_json_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.publishedInput">published_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.publishedInput">published_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.rootInstanceNameInput">root_instance_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.actionQueryNamesToConnectionIds">action_query_names_to_connection_ids</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.appJson">app_json</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.published">published</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.published">published</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.rootInstanceName">root_instance_name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -805,20 +805,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -865,10 +865,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -925,10 +925,10 @@ name_input: str
 ##### `published_input`<sup>Optional</sup> <a name="published_input" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.publishedInput"></a>
 
 ```python
-published_input: typing.Union[bool, IResolvable]
+published_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -985,10 +985,10 @@ name: str
 ##### `published`<sup>Required</sup> <a name="published" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderApp.property.published"></a>
 
 ```python
-published: typing.Union[bool, IResolvable]
+published: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1030,18 +1030,18 @@ tfResourceType: str
 from cdktf_cdktf_provider_datadog import app_builder_app
 
 appBuilderApp.AppBuilderAppConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   app_json: str,
   action_query_names_to_connection_ids: typing.Mapping[str] = None,
   description: str = None,
   name: str = None,
-  published: typing.Union[bool, IResolvable] = None,
+  published: bool | IResolvable = None,
   root_instance_name: str = None
 )
 ```
@@ -1050,18 +1050,18 @@ appBuilderApp.AppBuilderAppConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.appJson">app_json</a></code> | <code>str</code> | The JSON representation of the App. String length must be at least 1. |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.actionQueryNamesToConnectionIds">action_query_names_to_connection_ids</a></code> | <code>typing.Mapping[str]</code> | If specified, this will override the Action Connection IDs for the specified Action Query Names in the App JSON. |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.description">description</a></code> | <code>str</code> | If specified, this will override the human-readable description of the App in the App JSON. |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.name">name</a></code> | <code>str</code> | If specified, this will override the name of the App in the App JSON. |
-| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.published">published</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set the app to published or unpublished. |
+| <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.published">published</a></code> | <code>bool \| cdktf.IResolvable</code> | Set the app to published or unpublished. |
 | <code><a href="#@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.rootInstanceName">root_instance_name</a></code> | <code>str</code> | The name of the root component of the app. |
 
 ---
@@ -1069,20 +1069,20 @@ appBuilderApp.AppBuilderAppConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1129,10 +1129,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1201,10 +1201,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `published`<sup>Optional</sup> <a name="published" id="@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig.property.published"></a>
 
 ```python
-published: typing.Union[bool, IResolvable]
+published: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set the app to published or unpublished.
 

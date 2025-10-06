@@ -275,7 +275,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.importFrom"></a>
@@ -329,7 +329,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -344,7 +344,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -510,16 +510,16 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.config">Config</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference">ObservabilityPipelineConfigAOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.configInput">ConfigInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.configInput">ConfigInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigA">ObservabilityPipelineConfigA</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.name">Name</a></code> | <code>string</code> | *No description.* |
 
@@ -600,20 +600,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -660,10 +660,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -690,10 +690,10 @@ public string Id { get; }
 ##### `ConfigInput`<sup>Optional</sup> <a name="ConfigInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.property.configInput"></a>
 
 ```csharp
-public object ConfigInput { get; }
+public IResolvable|ObservabilityPipelineConfigA ConfigInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigA">ObservabilityPipelineConfigA</a>
 
 ---
 
@@ -745,13 +745,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     ObservabilityPipelineConfigA Config = null
 };
@@ -761,13 +761,13 @@ new ObservabilityPipelineConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.name">Name</a></code> | <code>string</code> | The pipeline name. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.config">Config</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigA">ObservabilityPipelineConfigA</a></code> | config block. |
 
@@ -776,20 +776,20 @@ new ObservabilityPipelineConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -836,10 +836,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -945,25 +945,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigDestinations {
-    object AmazonOpensearch = null,
-    object AmazonS3 = null,
-    object AmazonSecurityLake = null,
-    object AzureStorage = null,
-    object CrowdstrikeNextGenSiem = null,
-    object DatadogLogs = null,
-    object Elasticsearch = null,
-    object GoogleChronicle = null,
-    object GoogleCloudStorage = null,
-    object GooglePubsub = null,
-    object MicrosoftSentinel = null,
-    object NewRelic = null,
-    object Opensearch = null,
-    object Rsyslog = null,
-    object SentinelOne = null,
-    object Socket = null,
-    object SplunkHec = null,
-    object SumoLogic = null,
-    object SyslogNg = null
+    IResolvable|ObservabilityPipelineConfigDestinationsAmazonOpensearch[] AmazonOpensearch = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsAmazonS3[] AmazonS3 = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLake[] AmazonSecurityLake = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsAzureStorage[] AzureStorage = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem[] CrowdstrikeNextGenSiem = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsDatadogLogs[] DatadogLogs = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsElasticsearch[] Elasticsearch = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsGoogleChronicle[] GoogleChronicle = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorage[] GoogleCloudStorage = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsub[] GooglePubsub = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsMicrosoftSentinel[] MicrosoftSentinel = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsNewRelic[] NewRelic = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsOpensearch[] Opensearch = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsRsyslog[] Rsyslog = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsSentinelOne[] SentinelOne = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsSocket[] Socket = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsSplunkHec[] SplunkHec = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsSumoLogic[] SumoLogic = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsSyslogNg[] SyslogNg = null
 };
 ```
 
@@ -971,35 +971,35 @@ new ObservabilityPipelineConfigDestinations {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonOpensearch">AmazonOpensearch</a></code> | <code>object</code> | amazon_opensearch block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonS3">AmazonS3</a></code> | <code>object</code> | amazon_s3 block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonSecurityLake">AmazonSecurityLake</a></code> | <code>object</code> | amazon_security_lake block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.azureStorage">AzureStorage</a></code> | <code>object</code> | azure_storage block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.crowdstrikeNextGenSiem">CrowdstrikeNextGenSiem</a></code> | <code>object</code> | crowdstrike_next_gen_siem block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.datadogLogs">DatadogLogs</a></code> | <code>object</code> | datadog_logs block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.elasticsearch">Elasticsearch</a></code> | <code>object</code> | elasticsearch block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googleChronicle">GoogleChronicle</a></code> | <code>object</code> | google_chronicle block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googleCloudStorage">GoogleCloudStorage</a></code> | <code>object</code> | google_cloud_storage block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googlePubsub">GooglePubsub</a></code> | <code>object</code> | google_pubsub block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.microsoftSentinel">MicrosoftSentinel</a></code> | <code>object</code> | microsoft_sentinel block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.newRelic">NewRelic</a></code> | <code>object</code> | new_relic block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.opensearch">Opensearch</a></code> | <code>object</code> | opensearch block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.rsyslog">Rsyslog</a></code> | <code>object</code> | rsyslog block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.sentinelOne">SentinelOne</a></code> | <code>object</code> | sentinel_one block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.socket">Socket</a></code> | <code>object</code> | socket block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.splunkHec">SplunkHec</a></code> | <code>object</code> | splunk_hec block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.sumoLogic">SumoLogic</a></code> | <code>object</code> | sumo_logic block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.syslogNg">SyslogNg</a></code> | <code>object</code> | syslog_ng block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonOpensearch">AmazonOpensearch</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearch">ObservabilityPipelineConfigDestinationsAmazonOpensearch</a>[]</code> | amazon_opensearch block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonS3">AmazonS3</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3">ObservabilityPipelineConfigDestinationsAmazonS3</a>[]</code> | amazon_s3 block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonSecurityLake">AmazonSecurityLake</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake">ObservabilityPipelineConfigDestinationsAmazonSecurityLake</a>[]</code> | amazon_security_lake block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.azureStorage">AzureStorage</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorage">ObservabilityPipelineConfigDestinationsAzureStorage</a>[]</code> | azure_storage block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.crowdstrikeNextGenSiem">CrowdstrikeNextGenSiem</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem</a>[]</code> | crowdstrike_next_gen_siem block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.datadogLogs">DatadogLogs</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogs">ObservabilityPipelineConfigDestinationsDatadogLogs</a>[]</code> | datadog_logs block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.elasticsearch">Elasticsearch</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearch">ObservabilityPipelineConfigDestinationsElasticsearch</a>[]</code> | elasticsearch block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googleChronicle">GoogleChronicle</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicle">ObservabilityPipelineConfigDestinationsGoogleChronicle</a>[]</code> | google_chronicle block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googleCloudStorage">GoogleCloudStorage</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage">ObservabilityPipelineConfigDestinationsGoogleCloudStorage</a>[]</code> | google_cloud_storage block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googlePubsub">GooglePubsub</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsub">ObservabilityPipelineConfigDestinationsGooglePubsub</a>[]</code> | google_pubsub block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.microsoftSentinel">MicrosoftSentinel</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinel">ObservabilityPipelineConfigDestinationsMicrosoftSentinel</a>[]</code> | microsoft_sentinel block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.newRelic">NewRelic</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelic">ObservabilityPipelineConfigDestinationsNewRelic</a>[]</code> | new_relic block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.opensearch">Opensearch</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearch">ObservabilityPipelineConfigDestinationsOpensearch</a>[]</code> | opensearch block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.rsyslog">Rsyslog</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslog">ObservabilityPipelineConfigDestinationsRsyslog</a>[]</code> | rsyslog block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.sentinelOne">SentinelOne</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOne">ObservabilityPipelineConfigDestinationsSentinelOne</a>[]</code> | sentinel_one block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.socket">Socket</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket">ObservabilityPipelineConfigDestinationsSocket</a>[]</code> | socket block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.splunkHec">SplunkHec</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec">ObservabilityPipelineConfigDestinationsSplunkHec</a>[]</code> | splunk_hec block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.sumoLogic">SumoLogic</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic">ObservabilityPipelineConfigDestinationsSumoLogic</a>[]</code> | sumo_logic block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.syslogNg">SyslogNg</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNg">ObservabilityPipelineConfigDestinationsSyslogNg</a>[]</code> | syslog_ng block. |
 
 ---
 
 ##### `AmazonOpensearch`<sup>Optional</sup> <a name="AmazonOpensearch" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonOpensearch"></a>
 
 ```csharp
-public object AmazonOpensearch { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonOpensearch[] AmazonOpensearch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearch">ObservabilityPipelineConfigDestinationsAmazonOpensearch</a>[]
 
 amazon_opensearch block.
 
@@ -1010,10 +1010,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AmazonS3`<sup>Optional</sup> <a name="AmazonS3" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonS3"></a>
 
 ```csharp
-public object AmazonS3 { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonS3[] AmazonS3 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3">ObservabilityPipelineConfigDestinationsAmazonS3</a>[]
 
 amazon_s3 block.
 
@@ -1024,10 +1024,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AmazonSecurityLake`<sup>Optional</sup> <a name="AmazonSecurityLake" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.amazonSecurityLake"></a>
 
 ```csharp
-public object AmazonSecurityLake { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLake[] AmazonSecurityLake { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake">ObservabilityPipelineConfigDestinationsAmazonSecurityLake</a>[]
 
 amazon_security_lake block.
 
@@ -1038,10 +1038,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AzureStorage`<sup>Optional</sup> <a name="AzureStorage" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.azureStorage"></a>
 
 ```csharp
-public object AzureStorage { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAzureStorage[] AzureStorage { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorage">ObservabilityPipelineConfigDestinationsAzureStorage</a>[]
 
 azure_storage block.
 
@@ -1052,10 +1052,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `CrowdstrikeNextGenSiem`<sup>Optional</sup> <a name="CrowdstrikeNextGenSiem" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.crowdstrikeNextGenSiem"></a>
 
 ```csharp
-public object CrowdstrikeNextGenSiem { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem[] CrowdstrikeNextGenSiem { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem</a>[]
 
 crowdstrike_next_gen_siem block.
 
@@ -1066,10 +1066,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `DatadogLogs`<sup>Optional</sup> <a name="DatadogLogs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.datadogLogs"></a>
 
 ```csharp
-public object DatadogLogs { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsDatadogLogs[] DatadogLogs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogs">ObservabilityPipelineConfigDestinationsDatadogLogs</a>[]
 
 datadog_logs block.
 
@@ -1080,10 +1080,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Elasticsearch`<sup>Optional</sup> <a name="Elasticsearch" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.elasticsearch"></a>
 
 ```csharp
-public object Elasticsearch { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsElasticsearch[] Elasticsearch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearch">ObservabilityPipelineConfigDestinationsElasticsearch</a>[]
 
 elasticsearch block.
 
@@ -1094,10 +1094,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `GoogleChronicle`<sup>Optional</sup> <a name="GoogleChronicle" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googleChronicle"></a>
 
 ```csharp
-public object GoogleChronicle { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleChronicle[] GoogleChronicle { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicle">ObservabilityPipelineConfigDestinationsGoogleChronicle</a>[]
 
 google_chronicle block.
 
@@ -1108,10 +1108,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `GoogleCloudStorage`<sup>Optional</sup> <a name="GoogleCloudStorage" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googleCloudStorage"></a>
 
 ```csharp
-public object GoogleCloudStorage { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorage[] GoogleCloudStorage { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage">ObservabilityPipelineConfigDestinationsGoogleCloudStorage</a>[]
 
 google_cloud_storage block.
 
@@ -1122,10 +1122,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `GooglePubsub`<sup>Optional</sup> <a name="GooglePubsub" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.googlePubsub"></a>
 
 ```csharp
-public object GooglePubsub { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsub[] GooglePubsub { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsub">ObservabilityPipelineConfigDestinationsGooglePubsub</a>[]
 
 google_pubsub block.
 
@@ -1136,10 +1136,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `MicrosoftSentinel`<sup>Optional</sup> <a name="MicrosoftSentinel" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.microsoftSentinel"></a>
 
 ```csharp
-public object MicrosoftSentinel { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsMicrosoftSentinel[] MicrosoftSentinel { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinel">ObservabilityPipelineConfigDestinationsMicrosoftSentinel</a>[]
 
 microsoft_sentinel block.
 
@@ -1150,10 +1150,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `NewRelic`<sup>Optional</sup> <a name="NewRelic" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.newRelic"></a>
 
 ```csharp
-public object NewRelic { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsNewRelic[] NewRelic { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelic">ObservabilityPipelineConfigDestinationsNewRelic</a>[]
 
 new_relic block.
 
@@ -1164,10 +1164,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Opensearch`<sup>Optional</sup> <a name="Opensearch" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.opensearch"></a>
 
 ```csharp
-public object Opensearch { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsOpensearch[] Opensearch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearch">ObservabilityPipelineConfigDestinationsOpensearch</a>[]
 
 opensearch block.
 
@@ -1178,10 +1178,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Rsyslog`<sup>Optional</sup> <a name="Rsyslog" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.rsyslog"></a>
 
 ```csharp
-public object Rsyslog { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsRsyslog[] Rsyslog { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslog">ObservabilityPipelineConfigDestinationsRsyslog</a>[]
 
 rsyslog block.
 
@@ -1192,10 +1192,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SentinelOne`<sup>Optional</sup> <a name="SentinelOne" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.sentinelOne"></a>
 
 ```csharp
-public object SentinelOne { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSentinelOne[] SentinelOne { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOne">ObservabilityPipelineConfigDestinationsSentinelOne</a>[]
 
 sentinel_one block.
 
@@ -1206,10 +1206,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Socket`<sup>Optional</sup> <a name="Socket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.socket"></a>
 
 ```csharp
-public object Socket { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocket[] Socket { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket">ObservabilityPipelineConfigDestinationsSocket</a>[]
 
 socket block.
 
@@ -1220,10 +1220,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SplunkHec`<sup>Optional</sup> <a name="SplunkHec" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.splunkHec"></a>
 
 ```csharp
-public object SplunkHec { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSplunkHec[] SplunkHec { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec">ObservabilityPipelineConfigDestinationsSplunkHec</a>[]
 
 splunk_hec block.
 
@@ -1234,10 +1234,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SumoLogic`<sup>Optional</sup> <a name="SumoLogic" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.sumoLogic"></a>
 
 ```csharp
-public object SumoLogic { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSumoLogic[] SumoLogic { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic">ObservabilityPipelineConfigDestinationsSumoLogic</a>[]
 
 sumo_logic block.
 
@@ -1248,10 +1248,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SyslogNg`<sup>Optional</sup> <a name="SyslogNg" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations.property.syslogNg"></a>
 
 ```csharp
-public object SyslogNg { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSyslogNg[] SyslogNg { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNg">ObservabilityPipelineConfigDestinationsSyslogNg</a>[]
 
 syslog_ng block.
 
@@ -2512,7 +2512,7 @@ new ObservabilityPipelineConfigDestinationsGoogleCloudStorage {
     string[] Inputs,
     string StorageClass,
     string KeyPrefix = null,
-    object Metadata = null
+    IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata[] Metadata = null
 };
 ```
 
@@ -2527,7 +2527,7 @@ new ObservabilityPipelineConfigDestinationsGoogleCloudStorage {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this component. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage.property.storageClass">StorageClass</a></code> | <code>string</code> | Storage class used for objects stored in GCS. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage.property.keyPrefix">KeyPrefix</a></code> | <code>string</code> | Optional prefix for object keys within the GCS bucket. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage.property.metadata">Metadata</a></code> | <code>object</code> | metadata block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage.property.metadata">Metadata</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata</a>[]</code> | metadata block. |
 
 ---
 
@@ -2635,10 +2635,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Metadata`<sup>Optional</sup> <a name="Metadata" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage.property.metadata"></a>
 
 ```csharp
-public object Metadata { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata[] Metadata { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata</a>[]
 
 metadata block.
 
@@ -3715,7 +3715,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 new ObservabilityPipelineConfigDestinationsSplunkHec {
     string Id,
     string[] Inputs,
-    object AutoExtractTimestamp = null,
+    bool|IResolvable AutoExtractTimestamp = null,
     string Encoding = null,
     string Index = null,
     string Sourcetype = null
@@ -3728,7 +3728,7 @@ new ObservabilityPipelineConfigDestinationsSplunkHec {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec.property.id">Id</a></code> | <code>string</code> | The unique identifier for this component. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this component. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec.property.autoExtractTimestamp">AutoExtractTimestamp</a></code> | <code>object</code> | If `true`, Splunk tries to extract timestamps from incoming log events. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec.property.autoExtractTimestamp">AutoExtractTimestamp</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If `true`, Splunk tries to extract timestamps from incoming log events. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec.property.encoding">Encoding</a></code> | <code>string</code> | Encoding format for log events. Valid values: `json`, `raw_message`. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec.property.index">Index</a></code> | <code>string</code> | Optional name of the Splunk index where logs are written. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec.property.sourcetype">Sourcetype</a></code> | <code>string</code> | The Splunk sourcetype to assign to log events. |
@@ -3771,10 +3771,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AutoExtractTimestamp`<sup>Optional</sup> <a name="AutoExtractTimestamp" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec.property.autoExtractTimestamp"></a>
 
 ```csharp
-public object AutoExtractTimestamp { get; set; }
+public bool|IResolvable AutoExtractTimestamp { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If `true`, Splunk tries to extract timestamps from incoming log events.
 
@@ -3835,7 +3835,7 @@ new ObservabilityPipelineConfigDestinationsSumoLogic {
     string Id,
     string[] Inputs,
     string Encoding = null,
-    object HeaderCustomFields = null,
+    IResolvable|ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields[] HeaderCustomFields = null,
     string HeaderHostName = null,
     string HeaderSourceCategory = null,
     string HeaderSourceName = null
@@ -3849,7 +3849,7 @@ new ObservabilityPipelineConfigDestinationsSumoLogic {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic.property.id">Id</a></code> | <code>string</code> | The unique identifier for this component. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this component. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic.property.encoding">Encoding</a></code> | <code>string</code> | The output encoding format. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic.property.headerCustomFields">HeaderCustomFields</a></code> | <code>object</code> | header_custom_fields block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic.property.headerCustomFields">HeaderCustomFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields</a>[]</code> | header_custom_fields block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic.property.headerHostName">HeaderHostName</a></code> | <code>string</code> | Optional override for the host name header. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic.property.headerSourceCategory">HeaderSourceCategory</a></code> | <code>string</code> | Optional override for the source category header. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic.property.headerSourceName">HeaderSourceName</a></code> | <code>string</code> | Optional override for the source name header. |
@@ -3904,10 +3904,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `HeaderCustomFields`<sup>Optional</sup> <a name="HeaderCustomFields" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic.property.headerCustomFields"></a>
 
 ```csharp
-public object HeaderCustomFields { get; set; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields[] HeaderCustomFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields</a>[]
 
 header_custom_fields block.
 
@@ -4166,24 +4166,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessors {
-    object AddEnvVars = null,
-    object AddFields = null,
-    object CustomProcessor = null,
-    object DatadogTags = null,
-    object Dedupe = null,
-    object EnrichmentTable = null,
-    object Filter = null,
-    object GenerateDatadogMetrics = null,
-    object OcsfMapper = null,
-    object ParseGrok = null,
-    object ParseJson = null,
-    object Quota = null,
-    object Reduce = null,
-    object RemoveFields = null,
-    object RenameFields = null,
-    object Sample = null,
-    object SensitiveDataScanner = null,
-    object Throttle = null
+    IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVars[] AddEnvVars = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsAddFields[] AddFields = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessor[] CustomProcessor = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsDatadogTags[] DatadogTags = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsDedupe[] Dedupe = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTable[] EnrichmentTable = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsFilter[] Filter = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics[] GenerateDatadogMetrics = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapper[] OcsfMapper = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsParseGrok[] ParseGrok = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsParseJson[] ParseJson = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsQuota[] Quota = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsReduce[] Reduce = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsRemoveFields[] RemoveFields = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsRenameFields[] RenameFields = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsSample[] Sample = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScanner[] SensitiveDataScanner = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsThrottle[] Throttle = null
 };
 ```
 
@@ -4191,34 +4191,34 @@ new ObservabilityPipelineConfigProcessors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.addEnvVars">AddEnvVars</a></code> | <code>object</code> | add_env_vars block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.addFields">AddFields</a></code> | <code>object</code> | add_fields block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.customProcessor">CustomProcessor</a></code> | <code>object</code> | custom_processor block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.datadogTags">DatadogTags</a></code> | <code>object</code> | datadog_tags block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.dedupe">Dedupe</a></code> | <code>object</code> | dedupe block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.enrichmentTable">EnrichmentTable</a></code> | <code>object</code> | enrichment_table block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.filter">Filter</a></code> | <code>object</code> | filter block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.generateDatadogMetrics">GenerateDatadogMetrics</a></code> | <code>object</code> | generate_datadog_metrics block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.ocsfMapper">OcsfMapper</a></code> | <code>object</code> | ocsf_mapper block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.parseGrok">ParseGrok</a></code> | <code>object</code> | parse_grok block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.parseJson">ParseJson</a></code> | <code>object</code> | parse_json block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.quota">Quota</a></code> | <code>object</code> | quota block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.reduce">Reduce</a></code> | <code>object</code> | reduce block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.removeFields">RemoveFields</a></code> | <code>object</code> | remove_fields block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.renameFields">RenameFields</a></code> | <code>object</code> | rename_fields block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.sample">Sample</a></code> | <code>object</code> | sample block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.sensitiveDataScanner">SensitiveDataScanner</a></code> | <code>object</code> | sensitive_data_scanner block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.throttle">Throttle</a></code> | <code>object</code> | throttle block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.addEnvVars">AddEnvVars</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars">ObservabilityPipelineConfigProcessorsAddEnvVars</a>[]</code> | add_env_vars block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.addFields">AddFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields">ObservabilityPipelineConfigProcessorsAddFields</a>[]</code> | add_fields block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.customProcessor">CustomProcessor</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor">ObservabilityPipelineConfigProcessorsCustomProcessor</a>[]</code> | custom_processor block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.datadogTags">DatadogTags</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags">ObservabilityPipelineConfigProcessorsDatadogTags</a>[]</code> | datadog_tags block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.dedupe">Dedupe</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupe">ObservabilityPipelineConfigProcessorsDedupe</a>[]</code> | dedupe block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.enrichmentTable">EnrichmentTable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTable">ObservabilityPipelineConfigProcessorsEnrichmentTable</a>[]</code> | enrichment_table block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.filter">Filter</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilter">ObservabilityPipelineConfigProcessorsFilter</a>[]</code> | filter block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.generateDatadogMetrics">GenerateDatadogMetrics</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics</a>[]</code> | generate_datadog_metrics block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.ocsfMapper">OcsfMapper</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper">ObservabilityPipelineConfigProcessorsOcsfMapper</a>[]</code> | ocsf_mapper block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.parseGrok">ParseGrok</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok">ObservabilityPipelineConfigProcessorsParseGrok</a>[]</code> | parse_grok block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.parseJson">ParseJson</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJson">ObservabilityPipelineConfigProcessorsParseJson</a>[]</code> | parse_json block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.quota">Quota</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota">ObservabilityPipelineConfigProcessorsQuota</a>[]</code> | quota block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.reduce">Reduce</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce">ObservabilityPipelineConfigProcessorsReduce</a>[]</code> | reduce block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.removeFields">RemoveFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFields">ObservabilityPipelineConfigProcessorsRemoveFields</a>[]</code> | remove_fields block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.renameFields">RenameFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields">ObservabilityPipelineConfigProcessorsRenameFields</a>[]</code> | rename_fields block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.sample">Sample</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSample">ObservabilityPipelineConfigProcessorsSample</a>[]</code> | sample block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.sensitiveDataScanner">SensitiveDataScanner</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner">ObservabilityPipelineConfigProcessorsSensitiveDataScanner</a>[]</code> | sensitive_data_scanner block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.throttle">Throttle</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottle">ObservabilityPipelineConfigProcessorsThrottle</a>[]</code> | throttle block. |
 
 ---
 
 ##### `AddEnvVars`<sup>Optional</sup> <a name="AddEnvVars" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.addEnvVars"></a>
 
 ```csharp
-public object AddEnvVars { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVars[] AddEnvVars { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars">ObservabilityPipelineConfigProcessorsAddEnvVars</a>[]
 
 add_env_vars block.
 
@@ -4229,10 +4229,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AddFields`<sup>Optional</sup> <a name="AddFields" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.addFields"></a>
 
 ```csharp
-public object AddFields { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddFields[] AddFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields">ObservabilityPipelineConfigProcessorsAddFields</a>[]
 
 add_fields block.
 
@@ -4243,10 +4243,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `CustomProcessor`<sup>Optional</sup> <a name="CustomProcessor" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.customProcessor"></a>
 
 ```csharp
-public object CustomProcessor { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessor[] CustomProcessor { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor">ObservabilityPipelineConfigProcessorsCustomProcessor</a>[]
 
 custom_processor block.
 
@@ -4257,10 +4257,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `DatadogTags`<sup>Optional</sup> <a name="DatadogTags" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.datadogTags"></a>
 
 ```csharp
-public object DatadogTags { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsDatadogTags[] DatadogTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags">ObservabilityPipelineConfigProcessorsDatadogTags</a>[]
 
 datadog_tags block.
 
@@ -4271,10 +4271,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Dedupe`<sup>Optional</sup> <a name="Dedupe" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.dedupe"></a>
 
 ```csharp
-public object Dedupe { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsDedupe[] Dedupe { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupe">ObservabilityPipelineConfigProcessorsDedupe</a>[]
 
 dedupe block.
 
@@ -4285,10 +4285,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `EnrichmentTable`<sup>Optional</sup> <a name="EnrichmentTable" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.enrichmentTable"></a>
 
 ```csharp
-public object EnrichmentTable { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTable[] EnrichmentTable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTable">ObservabilityPipelineConfigProcessorsEnrichmentTable</a>[]
 
 enrichment_table block.
 
@@ -4299,10 +4299,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Filter`<sup>Optional</sup> <a name="Filter" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.filter"></a>
 
 ```csharp
-public object Filter { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsFilter[] Filter { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilter">ObservabilityPipelineConfigProcessorsFilter</a>[]
 
 filter block.
 
@@ -4313,10 +4313,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `GenerateDatadogMetrics`<sup>Optional</sup> <a name="GenerateDatadogMetrics" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.generateDatadogMetrics"></a>
 
 ```csharp
-public object GenerateDatadogMetrics { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics[] GenerateDatadogMetrics { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics</a>[]
 
 generate_datadog_metrics block.
 
@@ -4327,10 +4327,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `OcsfMapper`<sup>Optional</sup> <a name="OcsfMapper" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.ocsfMapper"></a>
 
 ```csharp
-public object OcsfMapper { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapper[] OcsfMapper { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper">ObservabilityPipelineConfigProcessorsOcsfMapper</a>[]
 
 ocsf_mapper block.
 
@@ -4341,10 +4341,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ParseGrok`<sup>Optional</sup> <a name="ParseGrok" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.parseGrok"></a>
 
 ```csharp
-public object ParseGrok { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrok[] ParseGrok { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok">ObservabilityPipelineConfigProcessorsParseGrok</a>[]
 
 parse_grok block.
 
@@ -4355,10 +4355,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ParseJson`<sup>Optional</sup> <a name="ParseJson" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.parseJson"></a>
 
 ```csharp
-public object ParseJson { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseJson[] ParseJson { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJson">ObservabilityPipelineConfigProcessorsParseJson</a>[]
 
 parse_json block.
 
@@ -4369,10 +4369,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Quota`<sup>Optional</sup> <a name="Quota" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.quota"></a>
 
 ```csharp
-public object Quota { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuota[] Quota { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota">ObservabilityPipelineConfigProcessorsQuota</a>[]
 
 quota block.
 
@@ -4383,10 +4383,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Reduce`<sup>Optional</sup> <a name="Reduce" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.reduce"></a>
 
 ```csharp
-public object Reduce { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsReduce[] Reduce { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce">ObservabilityPipelineConfigProcessorsReduce</a>[]
 
 reduce block.
 
@@ -4397,10 +4397,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `RemoveFields`<sup>Optional</sup> <a name="RemoveFields" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.removeFields"></a>
 
 ```csharp
-public object RemoveFields { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRemoveFields[] RemoveFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFields">ObservabilityPipelineConfigProcessorsRemoveFields</a>[]
 
 remove_fields block.
 
@@ -4411,10 +4411,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `RenameFields`<sup>Optional</sup> <a name="RenameFields" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.renameFields"></a>
 
 ```csharp
-public object RenameFields { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRenameFields[] RenameFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields">ObservabilityPipelineConfigProcessorsRenameFields</a>[]
 
 rename_fields block.
 
@@ -4425,10 +4425,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Sample`<sup>Optional</sup> <a name="Sample" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.sample"></a>
 
 ```csharp
-public object Sample { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSample[] Sample { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSample">ObservabilityPipelineConfigProcessorsSample</a>[]
 
 sample block.
 
@@ -4439,10 +4439,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SensitiveDataScanner`<sup>Optional</sup> <a name="SensitiveDataScanner" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.sensitiveDataScanner"></a>
 
 ```csharp
-public object SensitiveDataScanner { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScanner[] SensitiveDataScanner { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner">ObservabilityPipelineConfigProcessorsSensitiveDataScanner</a>[]
 
 sensitive_data_scanner block.
 
@@ -4453,10 +4453,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Throttle`<sup>Optional</sup> <a name="Throttle" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors.property.throttle"></a>
 
 ```csharp
-public object Throttle { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsThrottle[] Throttle { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottle">ObservabilityPipelineConfigProcessorsThrottle</a>[]
 
 throttle block.
 
@@ -4475,7 +4475,7 @@ new ObservabilityPipelineConfigProcessorsAddEnvVars {
     string Id,
     string Include,
     string[] Inputs,
-    object Variables = null
+    IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVarsVariables[] Variables = null
 };
 ```
 
@@ -4486,7 +4486,7 @@ new ObservabilityPipelineConfigProcessorsAddEnvVars {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars.property.id">Id</a></code> | <code>string</code> | The unique identifier for this component. Used to reference this processor in the pipeline. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to determine which logs this processor targets. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the input for this processor. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars.property.variables">Variables</a></code> | <code>object</code> | variables block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars.property.variables">Variables</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariables">ObservabilityPipelineConfigProcessorsAddEnvVarsVariables</a>[]</code> | variables block. |
 
 ---
 
@@ -4538,10 +4538,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Variables`<sup>Optional</sup> <a name="Variables" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars.property.variables"></a>
 
 ```csharp
-public object Variables { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVarsVariables[] Variables { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariables">ObservabilityPipelineConfigProcessorsAddEnvVarsVariables</a>[]
 
 variables block.
 
@@ -4610,7 +4610,7 @@ new ObservabilityPipelineConfigProcessorsAddFields {
     string Id,
     string Include,
     string[] Inputs,
-    object Field = null
+    IResolvable|ObservabilityPipelineConfigProcessorsAddFieldsField[] Field = null
 };
 ```
 
@@ -4621,7 +4621,7 @@ new ObservabilityPipelineConfigProcessorsAddFields {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields.property.id">Id</a></code> | <code>string</code> | The unique ID of the processor. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to determine which logs this processor targets. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields.property.inputs">Inputs</a></code> | <code>string[]</code> | The inputs for the processor. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields.property.field">Field</a></code> | <code>object</code> | field block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields.property.field">Field</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsField">ObservabilityPipelineConfigProcessorsAddFieldsField</a>[]</code> | field block. |
 
 ---
 
@@ -4673,10 +4673,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Field`<sup>Optional</sup> <a name="Field" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields.property.field"></a>
 
 ```csharp
-public object Field { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddFieldsField[] Field { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsField">ObservabilityPipelineConfigProcessorsAddFieldsField</a>[]
 
 field block.
 
@@ -4744,7 +4744,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 new ObservabilityPipelineConfigProcessorsCustomProcessor {
     string Id,
     string[] Inputs,
-    object Remaps = null
+    IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessorRemaps[] Remaps = null
 };
 ```
 
@@ -4754,7 +4754,7 @@ new ObservabilityPipelineConfigProcessorsCustomProcessor {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.id">Id</a></code> | <code>string</code> | The unique identifier for this processor. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the input for this processor. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.remaps">Remaps</a></code> | <code>object</code> | remaps block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.remaps">Remaps</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps">ObservabilityPipelineConfigProcessorsCustomProcessorRemaps</a>[]</code> | remaps block. |
 
 ---
 
@@ -4792,10 +4792,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Remaps`<sup>Optional</sup> <a name="Remaps" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor.property.remaps"></a>
 
 ```csharp
-public object Remaps { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessorRemaps[] Remaps { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps">ObservabilityPipelineConfigProcessorsCustomProcessorRemaps</a>[]
 
 remaps block.
 
@@ -4811,8 +4811,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorsCustomProcessorRemaps {
-    object DropOnError,
-    object Enabled,
+    bool|IResolvable DropOnError,
+    bool|IResolvable Enabled,
     string Include,
     string Name,
     string Source
@@ -4823,8 +4823,8 @@ new ObservabilityPipelineConfigProcessorsCustomProcessorRemaps {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.dropOnError">DropOnError</a></code> | <code>object</code> | Whether to drop events that cause errors during transformation. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.enabled">Enabled</a></code> | <code>object</code> | Whether this remap rule is enabled. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.dropOnError">DropOnError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to drop events that cause errors during transformation. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether this remap rule is enabled. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to filter events for this specific remap rule. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.name">Name</a></code> | <code>string</code> | A descriptive name for this remap rule. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.source">Source</a></code> | <code>string</code> | The VRL script source code that defines the transformation logic. |
@@ -4834,10 +4834,10 @@ new ObservabilityPipelineConfigProcessorsCustomProcessorRemaps {
 ##### `DropOnError`<sup>Required</sup> <a name="DropOnError" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.dropOnError"></a>
 
 ```csharp
-public object DropOnError { get; set; }
+public bool|IResolvable DropOnError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to drop events that cause errors during transformation.
 
@@ -4848,10 +4848,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether this remap rule is enabled.
 
@@ -5237,9 +5237,9 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorsEnrichmentTableFile {
     ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding Encoding = null,
-    object Key = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey[] Key = null,
     string Path = null,
-    object Schema = null
+    IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema[] Schema = null
 };
 ```
 
@@ -5248,9 +5248,9 @@ new ObservabilityPipelineConfigProcessorsEnrichmentTableFile {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile.property.encoding">Encoding</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding">ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding</a></code> | encoding block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile.property.key">Key</a></code> | <code>object</code> | key block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile.property.key">Key</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey</a>[]</code> | key block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile.property.path">Path</a></code> | <code>string</code> | Path to the CSV file. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile.property.schema">Schema</a></code> | <code>object</code> | schema block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile.property.schema">Schema</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema</a>[]</code> | schema block. |
 
 ---
 
@@ -5271,10 +5271,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Key`<sup>Optional</sup> <a name="Key" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile.property.key"></a>
 
 ```csharp
-public object Key { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey[] Key { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey</a>[]
 
 key block.
 
@@ -5299,10 +5299,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Schema`<sup>Optional</sup> <a name="Schema" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile.property.schema"></a>
 
 ```csharp
-public object Schema { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema[] Schema { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema</a>[]
 
 schema block.
 
@@ -5319,7 +5319,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding {
     string Delimiter = null,
-    object IncludesHeaders = null,
+    bool|IResolvable IncludesHeaders = null,
     string Type = null
 };
 ```
@@ -5329,7 +5329,7 @@ new ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding.property.delimiter">Delimiter</a></code> | <code>string</code> | The `encoding` `delimiter`. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding.property.includesHeaders">IncludesHeaders</a></code> | <code>object</code> | The `encoding` `includes_headers`. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding.property.includesHeaders">IncludesHeaders</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | The `encoding` `includes_headers`. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding.property.type">Type</a></code> | <code>string</code> | File encoding format. |
 
 ---
@@ -5351,10 +5351,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `IncludesHeaders`<sup>Optional</sup> <a name="IncludesHeaders" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding.property.includesHeaders"></a>
 
 ```csharp
-public object IncludesHeaders { get; set; }
+public bool|IResolvable IncludesHeaders { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 The `encoding` `includes_headers`.
 
@@ -5640,7 +5640,7 @@ new ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics {
     string Id,
     string Include,
     string[] Inputs,
-    object Metrics = null
+    IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics[] Metrics = null
 };
 ```
 
@@ -5651,7 +5651,7 @@ new ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics.property.id">Id</a></code> | <code>string</code> | The unique identifier for this component. Used to reference this component in other parts of the pipeline. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to determine which logs this processor targets. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this processor. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics.property.metrics">Metrics</a></code> | <code>object</code> | metrics block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics.property.metrics">Metrics</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics</a>[]</code> | metrics block. |
 
 ---
 
@@ -5703,10 +5703,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Metrics`<sup>Optional</sup> <a name="Metrics" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics.property.metrics"></a>
 
 ```csharp
-public object Metrics { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics[] Metrics { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics</a>[]
 
 metrics block.
 
@@ -5873,7 +5873,7 @@ new ObservabilityPipelineConfigProcessorsOcsfMapper {
     string Id,
     string Include,
     string[] Inputs,
-    object Mapping = null
+    IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapperMapping[] Mapping = null
 };
 ```
 
@@ -5884,7 +5884,7 @@ new ObservabilityPipelineConfigProcessorsOcsfMapper {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper.property.id">Id</a></code> | <code>string</code> | The unique identifier for this component. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper.property.include">Include</a></code> | <code>string</code> | Search query to select logs. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper.property.inputs">Inputs</a></code> | <code>string[]</code> | List of component IDs whose output is used as input. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper.property.mapping">Mapping</a></code> | <code>object</code> | mapping block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper.property.mapping">Mapping</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMapping">ObservabilityPipelineConfigProcessorsOcsfMapperMapping</a>[]</code> | mapping block. |
 
 ---
 
@@ -5936,10 +5936,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Mapping`<sup>Optional</sup> <a name="Mapping" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper.property.mapping"></a>
 
 ```csharp
-public object Mapping { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapperMapping[] Mapping { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMapping">ObservabilityPipelineConfigProcessorsOcsfMapperMapping</a>[]
 
 mapping block.
 
@@ -6008,8 +6008,8 @@ new ObservabilityPipelineConfigProcessorsParseGrok {
     string Id,
     string Include,
     string[] Inputs,
-    object DisableLibraryRules = null,
-    object Rules = null
+    bool|IResolvable DisableLibraryRules = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRules[] Rules = null
 };
 ```
 
@@ -6020,8 +6020,8 @@ new ObservabilityPipelineConfigProcessorsParseGrok {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok.property.id">Id</a></code> | <code>string</code> | A unique identifier for this processor. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to determine which logs this processor targets. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this component. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok.property.disableLibraryRules">DisableLibraryRules</a></code> | <code>object</code> | If set to `true`, disables the default Grok rules provided by Datadog. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok.property.rules">Rules</a></code> | <code>object</code> | rules block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok.property.disableLibraryRules">DisableLibraryRules</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to `true`, disables the default Grok rules provided by Datadog. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok.property.rules">Rules</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules">ObservabilityPipelineConfigProcessorsParseGrokRules</a>[]</code> | rules block. |
 
 ---
 
@@ -6073,10 +6073,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `DisableLibraryRules`<sup>Optional</sup> <a name="DisableLibraryRules" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok.property.disableLibraryRules"></a>
 
 ```csharp
-public object DisableLibraryRules { get; set; }
+public bool|IResolvable DisableLibraryRules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to `true`, disables the default Grok rules provided by Datadog.
 
@@ -6087,10 +6087,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Rules`<sup>Optional</sup> <a name="Rules" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok.property.rules"></a>
 
 ```csharp
-public object Rules { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRules[] Rules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules">ObservabilityPipelineConfigProcessorsParseGrokRules</a>[]
 
 rules block.
 
@@ -6107,8 +6107,8 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorsParseGrokRules {
     string Source,
-    object MatchRule = null,
-    object SupportRule = null
+    IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule[] MatchRule = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule[] SupportRule = null
 };
 ```
 
@@ -6117,8 +6117,8 @@ new ObservabilityPipelineConfigProcessorsParseGrokRules {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules.property.source">Source</a></code> | <code>string</code> | The name of the field in the log event to apply the Grok rules to. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules.property.matchRule">MatchRule</a></code> | <code>object</code> | match_rule block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules.property.supportRule">SupportRule</a></code> | <code>object</code> | support_rule block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules.property.matchRule">MatchRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule</a>[]</code> | match_rule block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules.property.supportRule">SupportRule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule</a>[]</code> | support_rule block. |
 
 ---
 
@@ -6139,10 +6139,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `MatchRule`<sup>Optional</sup> <a name="MatchRule" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules.property.matchRule"></a>
 
 ```csharp
-public object MatchRule { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule[] MatchRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule</a>[]
 
 match_rule block.
 
@@ -6153,10 +6153,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SupportRule`<sup>Optional</sup> <a name="SupportRule" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules.property.supportRule"></a>
 
 ```csharp
-public object SupportRule { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule[] SupportRule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule</a>[]
 
 support_rule block.
 
@@ -6357,15 +6357,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorsQuota {
-    object DropEvents,
+    bool|IResolvable DropEvents,
     string Id,
     string Include,
     string[] Inputs,
     ObservabilityPipelineConfigProcessorsQuotaLimit Limit,
     string Name,
-    object IgnoreWhenMissingPartitions = null,
+    bool|IResolvable IgnoreWhenMissingPartitions = null,
     string OverflowAction = null,
-    object Overrides = null,
+    IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverrides[] Overrides = null,
     string[] PartitionFields = null
 };
 ```
@@ -6374,15 +6374,15 @@ new ObservabilityPipelineConfigProcessorsQuota {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.dropEvents">DropEvents</a></code> | <code>object</code> | Whether to drop events exceeding the limit. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.dropEvents">DropEvents</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to drop events exceeding the limit. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.id">Id</a></code> | <code>string</code> | The unique ID of the processor. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to determine which logs this processor targets. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.inputs">Inputs</a></code> | <code>string[]</code> | The inputs for the processor. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.limit">Limit</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimit">ObservabilityPipelineConfigProcessorsQuotaLimit</a></code> | limit block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.name">Name</a></code> | <code>string</code> | The name of the quota. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.ignoreWhenMissingPartitions">IgnoreWhenMissingPartitions</a></code> | <code>object</code> | Whether to ignore when partition fields are missing. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.ignoreWhenMissingPartitions">IgnoreWhenMissingPartitions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to ignore when partition fields are missing. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.overflowAction">OverflowAction</a></code> | <code>string</code> | The action to take when the quota is exceeded: `drop`, `no_action`, or `overflow_routing`. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.overrides">Overrides</a></code> | <code>object</code> | overrides block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.overrides">Overrides</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides">ObservabilityPipelineConfigProcessorsQuotaOverrides</a>[]</code> | overrides block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.partitionFields">PartitionFields</a></code> | <code>string[]</code> | List of partition fields. |
 
 ---
@@ -6390,10 +6390,10 @@ new ObservabilityPipelineConfigProcessorsQuota {
 ##### `DropEvents`<sup>Required</sup> <a name="DropEvents" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.dropEvents"></a>
 
 ```csharp
-public object DropEvents { get; set; }
+public bool|IResolvable DropEvents { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to drop events exceeding the limit.
 
@@ -6477,10 +6477,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `IgnoreWhenMissingPartitions`<sup>Optional</sup> <a name="IgnoreWhenMissingPartitions" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.ignoreWhenMissingPartitions"></a>
 
 ```csharp
-public object IgnoreWhenMissingPartitions { get; set; }
+public bool|IResolvable IgnoreWhenMissingPartitions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to ignore when partition fields are missing.
 
@@ -6505,10 +6505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Overrides`<sup>Optional</sup> <a name="Overrides" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota.property.overrides"></a>
 
 ```csharp
-public object Overrides { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverrides[] Overrides { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides">ObservabilityPipelineConfigProcessorsQuotaOverrides</a>[]
 
 overrides block.
 
@@ -6589,7 +6589,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorsQuotaOverrides {
     ObservabilityPipelineConfigProcessorsQuotaOverridesLimit Limit,
-    object Field = null
+    IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverridesField[] Field = null
 };
 ```
 
@@ -6598,7 +6598,7 @@ new ObservabilityPipelineConfigProcessorsQuotaOverrides {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides.property.limit">Limit</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimit">ObservabilityPipelineConfigProcessorsQuotaOverridesLimit</a></code> | limit block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides.property.field">Field</a></code> | <code>object</code> | field block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides.property.field">Field</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesField">ObservabilityPipelineConfigProcessorsQuotaOverridesField</a>[]</code> | field block. |
 
 ---
 
@@ -6619,10 +6619,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Field`<sup>Optional</sup> <a name="Field" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides.property.field"></a>
 
 ```csharp
-public object Field { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverridesField[] Field { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesField">ObservabilityPipelineConfigProcessorsQuotaOverridesField</a>[]
 
 field block.
 
@@ -6742,7 +6742,7 @@ new ObservabilityPipelineConfigProcessorsReduce {
     string Id,
     string Include,
     string[] Inputs,
-    object MergeStrategies = null
+    IResolvable|ObservabilityPipelineConfigProcessorsReduceMergeStrategies[] MergeStrategies = null
 };
 ```
 
@@ -6754,7 +6754,7 @@ new ObservabilityPipelineConfigProcessorsReduce {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce.property.id">Id</a></code> | <code>string</code> | The unique identifier for this processor. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to determine which logs this processor targets. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the input for this processor. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce.property.mergeStrategies">MergeStrategies</a></code> | <code>object</code> | merge_strategies block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce.property.mergeStrategies">MergeStrategies</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategies">ObservabilityPipelineConfigProcessorsReduceMergeStrategies</a>[]</code> | merge_strategies block. |
 
 ---
 
@@ -6820,10 +6820,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `MergeStrategies`<sup>Optional</sup> <a name="MergeStrategies" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce.property.mergeStrategies"></a>
 
 ```csharp
-public object MergeStrategies { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsReduceMergeStrategies[] MergeStrategies { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategies">ObservabilityPipelineConfigProcessorsReduceMergeStrategies</a>[]
 
 merge_strategies block.
 
@@ -6977,7 +6977,7 @@ new ObservabilityPipelineConfigProcessorsRenameFields {
     string Id,
     string Include,
     string[] Inputs,
-    object Field = null
+    IResolvable|ObservabilityPipelineConfigProcessorsRenameFieldsField[] Field = null
 };
 ```
 
@@ -6988,7 +6988,7 @@ new ObservabilityPipelineConfigProcessorsRenameFields {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields.property.id">Id</a></code> | <code>string</code> | The unique ID of the processor. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to determine which logs this processor targets. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields.property.inputs">Inputs</a></code> | <code>string[]</code> | The inputs for the processor. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields.property.field">Field</a></code> | <code>object</code> | field block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields.property.field">Field</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField">ObservabilityPipelineConfigProcessorsRenameFieldsField</a>[]</code> | field block. |
 
 ---
 
@@ -7040,10 +7040,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Field`<sup>Optional</sup> <a name="Field" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields.property.field"></a>
 
 ```csharp
-public object Field { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRenameFieldsField[] Field { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField">ObservabilityPipelineConfigProcessorsRenameFieldsField</a>[]
 
 field block.
 
@@ -7060,7 +7060,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorsRenameFieldsField {
     string Destination,
-    object PreserveSource,
+    bool|IResolvable PreserveSource,
     string Source
 };
 ```
@@ -7070,7 +7070,7 @@ new ObservabilityPipelineConfigProcessorsRenameFieldsField {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField.property.destination">Destination</a></code> | <code>string</code> | Destination field name. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField.property.preserveSource">PreserveSource</a></code> | <code>object</code> | Whether to keep the original field. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField.property.preserveSource">PreserveSource</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to keep the original field. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField.property.source">Source</a></code> | <code>string</code> | Source field to rename. |
 
 ---
@@ -7092,10 +7092,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `PreserveSource`<sup>Required</sup> <a name="PreserveSource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField.property.preserveSource"></a>
 
 ```csharp
-public object PreserveSource { get; set; }
+public bool|IResolvable PreserveSource { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to keep the original field.
 
@@ -7231,7 +7231,7 @@ new ObservabilityPipelineConfigProcessorsSensitiveDataScanner {
     string Id,
     string Include,
     string[] Inputs,
-    object Rules = null
+    IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules[] Rules = null
 };
 ```
 
@@ -7242,7 +7242,7 @@ new ObservabilityPipelineConfigProcessorsSensitiveDataScanner {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner.property.id">Id</a></code> | <code>string</code> | The unique identifier for this component. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner.property.include">Include</a></code> | <code>string</code> | A Datadog search query used to determine which logs this processor targets. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this component. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner.property.rules">Rules</a></code> | <code>object</code> | rules block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner.property.rules">Rules</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules</a>[]</code> | rules block. |
 
 ---
 
@@ -7296,10 +7296,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Rules`<sup>Optional</sup> <a name="Rules" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner.property.rules"></a>
 
 ```csharp
-public object Rules { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules[] Rules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules</a>[]
 
 rules block.
 
@@ -7727,7 +7727,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary {
     string Id = null,
-    object UseRecommendedKeywords = null
+    bool|IResolvable UseRecommendedKeywords = null
 };
 ```
 
@@ -7736,7 +7736,7 @@ new ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary.property.id">Id</a></code> | <code>string</code> | Identifier for a predefined pattern from the sensitive data scanner pattern library. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary.property.useRecommendedKeywords">UseRecommendedKeywords</a></code> | <code>object</code> | Whether to augment the pattern with recommended keywords (optional). |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary.property.useRecommendedKeywords">UseRecommendedKeywords</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to augment the pattern with recommended keywords (optional). |
 
 ---
 
@@ -7760,10 +7760,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `UseRecommendedKeywords`<sup>Optional</sup> <a name="UseRecommendedKeywords" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary.property.useRecommendedKeywords"></a>
 
 ```csharp
-public object UseRecommendedKeywords { get; set; }
+public bool|IResolvable UseRecommendedKeywords { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to augment the pattern with recommended keywords (optional).
 
@@ -7779,7 +7779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope {
-    object All = null,
+    bool|IResolvable All = null,
     ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude Exclude = null,
     ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude Include = null
 };
@@ -7789,7 +7789,7 @@ new ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope.property.all">All</a></code> | <code>object</code> | Scan all fields. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Scan all fields. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope.property.exclude">Exclude</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude</a></code> | exclude block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope.property.include">Include</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude</a></code> | include block. |
 
@@ -7798,10 +7798,10 @@ new ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope {
 ##### `All`<sup>Optional</sup> <a name="All" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope.property.all"></a>
 
 ```csharp
-public object All { get; set; }
+public bool|IResolvable All { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Scan all fields.
 
@@ -8030,22 +8030,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new ObservabilityPipelineConfigSources {
-    object AmazonDataFirehose = null,
-    object AmazonS3 = null,
-    object DatadogAgent = null,
-    object FluentBit = null,
-    object Fluentd = null,
-    object GooglePubsub = null,
-    object HttpClient = null,
-    object HttpServer = null,
-    object Kafka = null,
-    object Logstash = null,
-    object Rsyslog = null,
-    object Socket = null,
-    object SplunkHec = null,
-    object SplunkTcp = null,
-    object SumoLogic = null,
-    object SyslogNg = null
+    IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehose[] AmazonDataFirehose = null,
+    IResolvable|ObservabilityPipelineConfigSourcesAmazonS3[] AmazonS3 = null,
+    IResolvable|ObservabilityPipelineConfigSourcesDatadogAgent[] DatadogAgent = null,
+    IResolvable|ObservabilityPipelineConfigSourcesFluentBit[] FluentBit = null,
+    IResolvable|ObservabilityPipelineConfigSourcesFluentd[] Fluentd = null,
+    IResolvable|ObservabilityPipelineConfigSourcesGooglePubsub[] GooglePubsub = null,
+    IResolvable|ObservabilityPipelineConfigSourcesHttpClient[] HttpClient = null,
+    IResolvable|ObservabilityPipelineConfigSourcesHttpServer[] HttpServer = null,
+    IResolvable|ObservabilityPipelineConfigSourcesKafka[] Kafka = null,
+    IResolvable|ObservabilityPipelineConfigSourcesLogstash[] Logstash = null,
+    IResolvable|ObservabilityPipelineConfigSourcesRsyslog[] Rsyslog = null,
+    IResolvable|ObservabilityPipelineConfigSourcesSocket[] Socket = null,
+    IResolvable|ObservabilityPipelineConfigSourcesSplunkHec[] SplunkHec = null,
+    IResolvable|ObservabilityPipelineConfigSourcesSplunkTcp[] SplunkTcp = null,
+    IResolvable|ObservabilityPipelineConfigSourcesSumoLogic[] SumoLogic = null,
+    IResolvable|ObservabilityPipelineConfigSourcesSyslogNg[] SyslogNg = null
 };
 ```
 
@@ -8053,32 +8053,32 @@ new ObservabilityPipelineConfigSources {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.amazonDataFirehose">AmazonDataFirehose</a></code> | <code>object</code> | amazon_data_firehose block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.amazonS3">AmazonS3</a></code> | <code>object</code> | amazon_s3 block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.datadogAgent">DatadogAgent</a></code> | <code>object</code> | datadog_agent block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.fluentBit">FluentBit</a></code> | <code>object</code> | fluent_bit block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.fluentd">Fluentd</a></code> | <code>object</code> | fluentd block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.googlePubsub">GooglePubsub</a></code> | <code>object</code> | google_pubsub block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.httpClient">HttpClient</a></code> | <code>object</code> | http_client block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.httpServer">HttpServer</a></code> | <code>object</code> | http_server block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.kafka">Kafka</a></code> | <code>object</code> | kafka block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.logstash">Logstash</a></code> | <code>object</code> | logstash block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.rsyslog">Rsyslog</a></code> | <code>object</code> | rsyslog block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.socket">Socket</a></code> | <code>object</code> | socket block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.splunkHec">SplunkHec</a></code> | <code>object</code> | splunk_hec block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.splunkTcp">SplunkTcp</a></code> | <code>object</code> | splunk_tcp block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.sumoLogic">SumoLogic</a></code> | <code>object</code> | sumo_logic block. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.syslogNg">SyslogNg</a></code> | <code>object</code> | syslog_ng block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.amazonDataFirehose">AmazonDataFirehose</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehose">ObservabilityPipelineConfigSourcesAmazonDataFirehose</a>[]</code> | amazon_data_firehose block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.amazonS3">AmazonS3</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3">ObservabilityPipelineConfigSourcesAmazonS3</a>[]</code> | amazon_s3 block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.datadogAgent">DatadogAgent</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgent">ObservabilityPipelineConfigSourcesDatadogAgent</a>[]</code> | datadog_agent block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.fluentBit">FluentBit</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBit">ObservabilityPipelineConfigSourcesFluentBit</a>[]</code> | fluent_bit block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.fluentd">Fluentd</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentd">ObservabilityPipelineConfigSourcesFluentd</a>[]</code> | fluentd block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.googlePubsub">GooglePubsub</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsub">ObservabilityPipelineConfigSourcesGooglePubsub</a>[]</code> | google_pubsub block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.httpClient">HttpClient</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClient">ObservabilityPipelineConfigSourcesHttpClient</a>[]</code> | http_client block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.httpServer">HttpServer</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServer">ObservabilityPipelineConfigSourcesHttpServer</a>[]</code> | http_server block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.kafka">Kafka</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka">ObservabilityPipelineConfigSourcesKafka</a>[]</code> | kafka block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.logstash">Logstash</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstash">ObservabilityPipelineConfigSourcesLogstash</a>[]</code> | logstash block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.rsyslog">Rsyslog</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslog">ObservabilityPipelineConfigSourcesRsyslog</a>[]</code> | rsyslog block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.socket">Socket</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket">ObservabilityPipelineConfigSourcesSocket</a>[]</code> | socket block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.splunkHec">SplunkHec</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHec">ObservabilityPipelineConfigSourcesSplunkHec</a>[]</code> | splunk_hec block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.splunkTcp">SplunkTcp</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcp">ObservabilityPipelineConfigSourcesSplunkTcp</a>[]</code> | splunk_tcp block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.sumoLogic">SumoLogic</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogic">ObservabilityPipelineConfigSourcesSumoLogic</a>[]</code> | sumo_logic block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.syslogNg">SyslogNg</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNg">ObservabilityPipelineConfigSourcesSyslogNg</a>[]</code> | syslog_ng block. |
 
 ---
 
 ##### `AmazonDataFirehose`<sup>Optional</sup> <a name="AmazonDataFirehose" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.amazonDataFirehose"></a>
 
 ```csharp
-public object AmazonDataFirehose { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehose[] AmazonDataFirehose { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehose">ObservabilityPipelineConfigSourcesAmazonDataFirehose</a>[]
 
 amazon_data_firehose block.
 
@@ -8089,10 +8089,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `AmazonS3`<sup>Optional</sup> <a name="AmazonS3" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.amazonS3"></a>
 
 ```csharp
-public object AmazonS3 { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonS3[] AmazonS3 { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3">ObservabilityPipelineConfigSourcesAmazonS3</a>[]
 
 amazon_s3 block.
 
@@ -8103,10 +8103,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `DatadogAgent`<sup>Optional</sup> <a name="DatadogAgent" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.datadogAgent"></a>
 
 ```csharp
-public object DatadogAgent { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesDatadogAgent[] DatadogAgent { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgent">ObservabilityPipelineConfigSourcesDatadogAgent</a>[]
 
 datadog_agent block.
 
@@ -8117,10 +8117,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `FluentBit`<sup>Optional</sup> <a name="FluentBit" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.fluentBit"></a>
 
 ```csharp
-public object FluentBit { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentBit[] FluentBit { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBit">ObservabilityPipelineConfigSourcesFluentBit</a>[]
 
 fluent_bit block.
 
@@ -8131,10 +8131,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Fluentd`<sup>Optional</sup> <a name="Fluentd" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.fluentd"></a>
 
 ```csharp
-public object Fluentd { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentd[] Fluentd { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentd">ObservabilityPipelineConfigSourcesFluentd</a>[]
 
 fluentd block.
 
@@ -8145,10 +8145,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `GooglePubsub`<sup>Optional</sup> <a name="GooglePubsub" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.googlePubsub"></a>
 
 ```csharp
-public object GooglePubsub { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesGooglePubsub[] GooglePubsub { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsub">ObservabilityPipelineConfigSourcesGooglePubsub</a>[]
 
 google_pubsub block.
 
@@ -8159,10 +8159,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `HttpClient`<sup>Optional</sup> <a name="HttpClient" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.httpClient"></a>
 
 ```csharp
-public object HttpClient { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpClient[] HttpClient { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClient">ObservabilityPipelineConfigSourcesHttpClient</a>[]
 
 http_client block.
 
@@ -8173,10 +8173,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `HttpServer`<sup>Optional</sup> <a name="HttpServer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.httpServer"></a>
 
 ```csharp
-public object HttpServer { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpServer[] HttpServer { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServer">ObservabilityPipelineConfigSourcesHttpServer</a>[]
 
 http_server block.
 
@@ -8187,10 +8187,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Kafka`<sup>Optional</sup> <a name="Kafka" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.kafka"></a>
 
 ```csharp
-public object Kafka { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafka[] Kafka { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka">ObservabilityPipelineConfigSourcesKafka</a>[]
 
 kafka block.
 
@@ -8201,10 +8201,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Logstash`<sup>Optional</sup> <a name="Logstash" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.logstash"></a>
 
 ```csharp
-public object Logstash { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesLogstash[] Logstash { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstash">ObservabilityPipelineConfigSourcesLogstash</a>[]
 
 logstash block.
 
@@ -8215,10 +8215,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Rsyslog`<sup>Optional</sup> <a name="Rsyslog" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.rsyslog"></a>
 
 ```csharp
-public object Rsyslog { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesRsyslog[] Rsyslog { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslog">ObservabilityPipelineConfigSourcesRsyslog</a>[]
 
 rsyslog block.
 
@@ -8229,10 +8229,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Socket`<sup>Optional</sup> <a name="Socket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.socket"></a>
 
 ```csharp
-public object Socket { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocket[] Socket { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket">ObservabilityPipelineConfigSourcesSocket</a>[]
 
 socket block.
 
@@ -8243,10 +8243,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SplunkHec`<sup>Optional</sup> <a name="SplunkHec" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.splunkHec"></a>
 
 ```csharp
-public object SplunkHec { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkHec[] SplunkHec { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHec">ObservabilityPipelineConfigSourcesSplunkHec</a>[]
 
 splunk_hec block.
 
@@ -8257,10 +8257,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SplunkTcp`<sup>Optional</sup> <a name="SplunkTcp" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.splunkTcp"></a>
 
 ```csharp
-public object SplunkTcp { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkTcp[] SplunkTcp { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcp">ObservabilityPipelineConfigSourcesSplunkTcp</a>[]
 
 splunk_tcp block.
 
@@ -8271,10 +8271,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SumoLogic`<sup>Optional</sup> <a name="SumoLogic" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.sumoLogic"></a>
 
 ```csharp
-public object SumoLogic { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesSumoLogic[] SumoLogic { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogic">ObservabilityPipelineConfigSourcesSumoLogic</a>[]
 
 sumo_logic block.
 
@@ -8285,10 +8285,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `SyslogNg`<sup>Optional</sup> <a name="SyslogNg" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources.property.syslogNg"></a>
 
 ```csharp
-public object SyslogNg { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesSyslogNg[] SyslogNg { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNg">ObservabilityPipelineConfigSourcesSyslogNg</a>[]
 
 syslog_ng block.
 
@@ -9645,7 +9645,7 @@ new ObservabilityPipelineConfigSourcesKafka {
     string GroupId,
     string Id,
     string[] Topics,
-    object LibrdkafkaOption = null,
+    IResolvable|ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption[] LibrdkafkaOption = null,
     ObservabilityPipelineConfigSourcesKafkaSasl Sasl = null,
     ObservabilityPipelineConfigSourcesKafkaTls Tls = null
 };
@@ -9658,7 +9658,7 @@ new ObservabilityPipelineConfigSourcesKafka {
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka.property.groupId">GroupId</a></code> | <code>string</code> | The Kafka consumer group ID. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka.property.id">Id</a></code> | <code>string</code> | The unique ID of the source. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka.property.topics">Topics</a></code> | <code>string[]</code> | A list of Kafka topic names to subscribe to. The source ingests messages from each topic specified. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka.property.librdkafkaOption">LibrdkafkaOption</a></code> | <code>object</code> | librdkafka_option block. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka.property.librdkafkaOption">LibrdkafkaOption</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption">ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption</a>[]</code> | librdkafka_option block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka.property.sasl">Sasl</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSasl">ObservabilityPipelineConfigSourcesKafkaSasl</a></code> | sasl block. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTls">ObservabilityPipelineConfigSourcesKafkaTls</a></code> | tls block. |
 
@@ -9712,10 +9712,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `LibrdkafkaOption`<sup>Optional</sup> <a name="LibrdkafkaOption" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka.property.librdkafkaOption"></a>
 
 ```csharp
-public object LibrdkafkaOption { get; set; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption[] LibrdkafkaOption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption">ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption</a>[]
 
 librdkafka_option block.
 
@@ -11087,10 +11087,10 @@ private void ResetSources()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.destinations">Destinations</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference">ObservabilityPipelineConfigDestinationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.processors">Processors</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference">ObservabilityPipelineConfigProcessorsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.sources">Sources</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference">ObservabilityPipelineConfigSourcesOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.destinationsInput">DestinationsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.processorsInput">ProcessorsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.sourcesInput">SourcesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.destinationsInput">DestinationsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations">ObservabilityPipelineConfigDestinations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.processorsInput">ProcessorsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors">ObservabilityPipelineConfigProcessors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.sourcesInput">SourcesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources">ObservabilityPipelineConfigSources</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigA">ObservabilityPipelineConfigA</a></code> | *No description.* |
 
 ---
 
@@ -11151,40 +11151,40 @@ public ObservabilityPipelineConfigSourcesOutputReference Sources { get; }
 ##### `DestinationsInput`<sup>Optional</sup> <a name="DestinationsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.destinationsInput"></a>
 
 ```csharp
-public object DestinationsInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinations DestinationsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations">ObservabilityPipelineConfigDestinations</a>
 
 ---
 
 ##### `ProcessorsInput`<sup>Optional</sup> <a name="ProcessorsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.processorsInput"></a>
 
 ```csharp
-public object ProcessorsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessors ProcessorsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors">ObservabilityPipelineConfigProcessors</a>
 
 ---
 
 ##### `SourcesInput`<sup>Optional</sup> <a name="SourcesInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.sourcesInput"></a>
 
 ```csharp
-public object SourcesInput { get; }
+public IResolvable|ObservabilityPipelineConfigSources SourcesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources">ObservabilityPipelineConfigSources</a>
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigA InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigA">ObservabilityPipelineConfigA</a>
 
 ---
 
@@ -11437,7 +11437,7 @@ private void ResetSessionName()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuthOutputReference.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuthOutputReference.property.sessionName">SessionName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuthOutputReference.property.strategy">Strategy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth">ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth</a></code> | *No description.* |
 
 ---
 
@@ -11568,10 +11568,10 @@ public string Strategy { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuthOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth">ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth</a>
 
 ---
 
@@ -11697,7 +11697,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearch">ObservabilityPipelineConfigDestinationsAmazonOpensearch</a>[]</code> | *No description.* |
 
 ---
 
@@ -11728,10 +11728,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonOpensearch[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearch">ObservabilityPipelineConfigDestinationsAmazonOpensearch</a>[]
 
 ---
 
@@ -11992,14 +11992,14 @@ private void ResetBulkIndex()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuthOutputReference">ObservabilityPipelineConfigDestinationsAmazonOpensearchAuthOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.authInput">AuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth">ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.bulkIndexInput">BulkIndexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.bulkIndex">BulkIndex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearch">ObservabilityPipelineConfigDestinationsAmazonOpensearch</a></code> | *No description.* |
 
 ---
 
@@ -12040,10 +12040,10 @@ public ObservabilityPipelineConfigDestinationsAmazonOpensearchAuthOutputReferenc
 ##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.authInput"></a>
 
 ```csharp
-public object AuthInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth AuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth">ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth</a>
 
 ---
 
@@ -12110,10 +12110,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearchOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonOpensearch InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearch">ObservabilityPipelineConfigDestinationsAmazonOpensearch</a>
 
 ---
 
@@ -12355,7 +12355,7 @@ private void ResetSessionName()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.assumeRole">AssumeRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.sessionName">SessionName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth">ObservabilityPipelineConfigDestinationsAmazonS3Auth</a></code> | *No description.* |
 
 ---
 
@@ -12446,10 +12446,10 @@ public string SessionName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonS3Auth InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth">ObservabilityPipelineConfigDestinationsAmazonS3Auth</a>
 
 ---
 
@@ -12575,7 +12575,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3">ObservabilityPipelineConfigDestinationsAmazonS3</a>[]</code> | *No description.* |
 
 ---
 
@@ -12606,10 +12606,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonS3[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3">ObservabilityPipelineConfigDestinationsAmazonS3</a>[]
 
 ---
 
@@ -12863,7 +12863,7 @@ private void ResetAuth()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference">ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.authInput">AuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth">ObservabilityPipelineConfigDestinationsAmazonS3Auth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
@@ -12876,7 +12876,7 @@ private void ResetAuth()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.keyPrefix">KeyPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.storageClass">StorageClass</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3">ObservabilityPipelineConfigDestinationsAmazonS3</a></code> | *No description.* |
 
 ---
 
@@ -12917,10 +12917,10 @@ public ObservabilityPipelineConfigDestinationsAmazonS3AuthOutputReference Auth {
 ##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.authInput"></a>
 
 ```csharp
-public object AuthInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonS3Auth AuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3Auth">ObservabilityPipelineConfigDestinationsAmazonS3Auth</a>
 
 ---
 
@@ -13047,10 +13047,10 @@ public string StorageClass { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonS3 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3">ObservabilityPipelineConfigDestinationsAmazonS3</a>
 
 ---
 
@@ -13292,7 +13292,7 @@ private void ResetSessionName()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.assumeRole">AssumeRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.sessionName">SessionName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth</a></code> | *No description.* |
 
 ---
 
@@ -13383,10 +13383,10 @@ public string SessionName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth</a>
 
 ---
 
@@ -13512,7 +13512,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake">ObservabilityPipelineConfigDestinationsAmazonSecurityLake</a>[]</code> | *No description.* |
 
 ---
 
@@ -13543,10 +13543,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLake[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake">ObservabilityPipelineConfigDestinationsAmazonSecurityLake</a>[]
 
 ---
 
@@ -13821,19 +13821,19 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.authInput">AuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.customSourceNameInput">CustomSourceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.customSourceName">CustomSourceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake">ObservabilityPipelineConfigDestinationsAmazonSecurityLake</a></code> | *No description.* |
 
 ---
 
@@ -13884,10 +13884,10 @@ public ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReferen
 ##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.authInput"></a>
 
 ```csharp
-public object AuthInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth AuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth</a>
 
 ---
 
@@ -13944,10 +13944,10 @@ public string RegionInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls</a>
 
 ---
 
@@ -14004,10 +14004,10 @@ public string Region { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLake InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake">ObservabilityPipelineConfigDestinationsAmazonSecurityLake</a>
 
 ---
 
@@ -14249,7 +14249,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls</a></code> | *No description.* |
 
 ---
 
@@ -14340,10 +14340,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls">ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls</a>
 
 ---
 
@@ -14469,7 +14469,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorage">ObservabilityPipelineConfigDestinationsAzureStorage</a>[]</code> | *No description.* |
 
 ---
 
@@ -14500,10 +14500,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAzureStorage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorage">ObservabilityPipelineConfigDestinationsAzureStorage</a>[]
 
 ---
 
@@ -14751,7 +14751,7 @@ private void ResetBlobPrefix()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageOutputReference.property.containerName">ContainerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorage">ObservabilityPipelineConfigDestinationsAzureStorage</a></code> | *No description.* |
 
 ---
 
@@ -14862,10 +14862,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAzureStorage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorage">ObservabilityPipelineConfigDestinationsAzureStorage</a>
 
 ---
 
@@ -15098,7 +15098,7 @@ private void ResetLevel()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.levelInput">LevelInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.algorithm">Algorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.level">Level</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression</a></code> | *No description.* |
 
 ---
 
@@ -15169,10 +15169,10 @@ public double Level { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression</a>
 
 ---
 
@@ -15298,7 +15298,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem</a>[]</code> | *No description.* |
 
 ---
 
@@ -15329,10 +15329,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem</a>[]
 
 ---
 
@@ -15607,15 +15607,15 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.compression">Compression</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompressionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.compressionInput">CompressionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.compressionInput">CompressionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.encoding">Encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem</a></code> | *No description.* |
 
 ---
 
@@ -15666,10 +15666,10 @@ public ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputRef
 ##### `CompressionInput`<sup>Optional</sup> <a name="CompressionInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.compressionInput"></a>
 
 ```csharp
-public object CompressionInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression CompressionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompression</a>
 
 ---
 
@@ -15706,10 +15706,10 @@ public string[] InputsInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls</a>
 
 ---
 
@@ -15746,10 +15746,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem</a>
 
 ---
 
@@ -15991,7 +15991,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls</a></code> | *No description.* |
 
 ---
 
@@ -16082,10 +16082,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls</a>
 
 ---
 
@@ -16211,7 +16211,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogs">ObservabilityPipelineConfigDestinationsDatadogLogs</a>[]</code> | *No description.* |
 
 ---
 
@@ -16242,10 +16242,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsDatadogLogs[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogs">ObservabilityPipelineConfigDestinationsDatadogLogs</a>[]
 
 ---
 
@@ -16482,7 +16482,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogs">ObservabilityPipelineConfigDestinationsDatadogLogs</a></code> | *No description.* |
 
 ---
 
@@ -16553,10 +16553,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsDatadogLogs InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogs">ObservabilityPipelineConfigDestinationsDatadogLogs</a>
 
 ---
 
@@ -16682,7 +16682,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearch">ObservabilityPipelineConfigDestinationsElasticsearch</a>[]</code> | *No description.* |
 
 ---
 
@@ -16713,10 +16713,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsElasticsearch[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearch">ObservabilityPipelineConfigDestinationsElasticsearch</a>[]
 
 ---
 
@@ -16971,7 +16971,7 @@ private void ResetBulkIndex()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchOutputReference.property.bulkIndex">BulkIndex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearch">ObservabilityPipelineConfigDestinationsElasticsearch</a></code> | *No description.* |
 
 ---
 
@@ -17082,10 +17082,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearchOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsElasticsearch InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearch">ObservabilityPipelineConfigDestinationsElasticsearch</a>
 
 ---
 
@@ -17309,7 +17309,7 @@ private void ResetCredentialsFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuthOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuthOutputReference.property.credentialsFileInput">CredentialsFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuthOutputReference.property.credentialsFile">CredentialsFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuth">ObservabilityPipelineConfigDestinationsGoogleChronicleAuth</a></code> | *No description.* |
 
 ---
 
@@ -17360,10 +17360,10 @@ public string CredentialsFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuthOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleChronicleAuth InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuth">ObservabilityPipelineConfigDestinationsGoogleChronicleAuth</a>
 
 ---
 
@@ -17489,7 +17489,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicle">ObservabilityPipelineConfigDestinationsGoogleChronicle</a>[]</code> | *No description.* |
 
 ---
 
@@ -17520,10 +17520,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleChronicle[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicle">ObservabilityPipelineConfigDestinationsGoogleChronicle</a>[]
 
 ---
 
@@ -17798,7 +17798,7 @@ private void ResetLogType()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuthOutputReference">ObservabilityPipelineConfigDestinationsGoogleChronicleAuthOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.authInput">AuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuth">ObservabilityPipelineConfigDestinationsGoogleChronicleAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.customerIdInput">CustomerIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -17809,7 +17809,7 @@ private void ResetLogType()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.logType">LogType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicle">ObservabilityPipelineConfigDestinationsGoogleChronicle</a></code> | *No description.* |
 
 ---
 
@@ -17850,10 +17850,10 @@ public ObservabilityPipelineConfigDestinationsGoogleChronicleAuthOutputReference
 ##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.authInput"></a>
 
 ```csharp
-public object AuthInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleChronicleAuth AuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleAuth">ObservabilityPipelineConfigDestinationsGoogleChronicleAuth</a>
 
 ---
 
@@ -17960,10 +17960,10 @@ public string LogType { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleChronicle InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicle">ObservabilityPipelineConfigDestinationsGoogleChronicle</a>
 
 ---
 
@@ -18180,7 +18180,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference.property.credentialsFileInput">CredentialsFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference.property.credentialsFile">CredentialsFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth">ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth</a></code> | *No description.* |
 
 ---
 
@@ -18231,10 +18231,10 @@ public string CredentialsFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth">ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth</a>
 
 ---
 
@@ -18360,7 +18360,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage">ObservabilityPipelineConfigDestinationsGoogleCloudStorage</a>[]</code> | *No description.* |
 
 ---
 
@@ -18391,10 +18391,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorage[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage">ObservabilityPipelineConfigDestinationsGoogleCloudStorage</a>[]
 
 ---
 
@@ -18520,7 +18520,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata</a>[]</code> | *No description.* |
 
 ---
 
@@ -18551,10 +18551,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata</a>[]
 
 ---
 
@@ -18791,7 +18791,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata</a></code> | *No description.* |
 
 ---
 
@@ -18862,10 +18862,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata</a>
 
 ---
 
@@ -19110,12 +19110,12 @@ private void PutAuth(ObservabilityPipelineConfigDestinationsGoogleCloudStorageAu
 ##### `PutMetadata` <a name="PutMetadata" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.putMetadata"></a>
 
 ```csharp
-private void PutMetadata(object Value)
+private void PutMetadata(IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.putMetadata.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata</a>[]
 
 ---
 
@@ -19141,12 +19141,12 @@ private void ResetMetadata()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference">ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.metadata">Metadata</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataList">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadataList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.aclInput">AclInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.authInput">AuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth">ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.keyPrefixInput">KeyPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.metadataInput">MetadataInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.metadataInput">MetadataInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.storageClassInput">StorageClassInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.acl">Acl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
@@ -19154,7 +19154,7 @@ private void ResetMetadata()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.keyPrefix">KeyPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.storageClass">StorageClass</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage">ObservabilityPipelineConfigDestinationsGoogleCloudStorage</a></code> | *No description.* |
 
 ---
 
@@ -19215,10 +19215,10 @@ public string AclInput { get; }
 ##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.authInput"></a>
 
 ```csharp
-public object AuthInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth AuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth">ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth</a>
 
 ---
 
@@ -19265,10 +19265,10 @@ public string KeyPrefixInput { get; }
 ##### `MetadataInput`<sup>Optional</sup> <a name="MetadataInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.metadataInput"></a>
 
 ```csharp
-public object MetadataInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata[] MetadataInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata">ObservabilityPipelineConfigDestinationsGoogleCloudStorageMetadata</a>[]
 
 ---
 
@@ -19345,10 +19345,10 @@ public string StorageClass { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorageOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorage InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage">ObservabilityPipelineConfigDestinationsGoogleCloudStorage</a>
 
 ---
 
@@ -19572,7 +19572,7 @@ private void ResetCredentialsFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference.property.credentialsFileInput">CredentialsFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference.property.credentialsFile">CredentialsFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuth">ObservabilityPipelineConfigDestinationsGooglePubsubAuth</a></code> | *No description.* |
 
 ---
 
@@ -19623,10 +19623,10 @@ public string CredentialsFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsubAuth InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuth">ObservabilityPipelineConfigDestinationsGooglePubsubAuth</a>
 
 ---
 
@@ -19752,7 +19752,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsub">ObservabilityPipelineConfigDestinationsGooglePubsub</a>[]</code> | *No description.* |
 
 ---
 
@@ -19783,10 +19783,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsub[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsub">ObservabilityPipelineConfigDestinationsGooglePubsub</a>[]
 
 ---
 
@@ -20068,19 +20068,19 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference">ObservabilityPipelineConfigDestinationsGooglePubsubAuthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTlsOutputReference">ObservabilityPipelineConfigDestinationsGooglePubsubTlsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.authInput">AuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuth">ObservabilityPipelineConfigDestinationsGooglePubsubAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTls">ObservabilityPipelineConfigDestinationsGooglePubsubTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.topicInput">TopicInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.encoding">Encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.project">Project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.topic">Topic</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsub">ObservabilityPipelineConfigDestinationsGooglePubsub</a></code> | *No description.* |
 
 ---
 
@@ -20131,10 +20131,10 @@ public ObservabilityPipelineConfigDestinationsGooglePubsubTlsOutputReference Tls
 ##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.authInput"></a>
 
 ```csharp
-public object AuthInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsubAuth AuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubAuth">ObservabilityPipelineConfigDestinationsGooglePubsubAuth</a>
 
 ---
 
@@ -20181,10 +20181,10 @@ public string ProjectInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsubTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTls">ObservabilityPipelineConfigDestinationsGooglePubsubTls</a>
 
 ---
 
@@ -20251,10 +20251,10 @@ public string Topic { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsub InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsub">ObservabilityPipelineConfigDestinationsGooglePubsub</a>
 
 ---
 
@@ -20496,7 +20496,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTls">ObservabilityPipelineConfigDestinationsGooglePubsubTls</a></code> | *No description.* |
 
 ---
 
@@ -20587,10 +20587,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsubTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsubTls">ObservabilityPipelineConfigDestinationsGooglePubsubTls</a>
 
 ---
 
@@ -20716,7 +20716,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinel">ObservabilityPipelineConfigDestinationsMicrosoftSentinel</a>[]</code> | *No description.* |
 
 ---
 
@@ -20747,10 +20747,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsMicrosoftSentinel[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinel">ObservabilityPipelineConfigDestinationsMicrosoftSentinel</a>[]
 
 ---
 
@@ -20995,7 +20995,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelOutputReference.property.table">Table</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelOutputReference.property.tenantId">TenantId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinel">ObservabilityPipelineConfigDestinationsMicrosoftSentinel</a></code> | *No description.* |
 
 ---
 
@@ -21146,10 +21146,10 @@ public string TenantId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinelOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsMicrosoftSentinel InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinel">ObservabilityPipelineConfigDestinationsMicrosoftSentinel</a>
 
 ---
 
@@ -21275,7 +21275,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelic">ObservabilityPipelineConfigDestinationsNewRelic</a>[]</code> | *No description.* |
 
 ---
 
@@ -21306,10 +21306,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsNewRelic[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelic">ObservabilityPipelineConfigDestinationsNewRelic</a>[]
 
 ---
 
@@ -21548,7 +21548,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelic">ObservabilityPipelineConfigDestinationsNewRelic</a></code> | *No description.* |
 
 ---
 
@@ -21639,10 +21639,10 @@ public string Region { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelicOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsNewRelic InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelic">ObservabilityPipelineConfigDestinationsNewRelic</a>
 
 ---
 
@@ -21768,7 +21768,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearch">ObservabilityPipelineConfigDestinationsOpensearch</a>[]</code> | *No description.* |
 
 ---
 
@@ -21799,10 +21799,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsOpensearch[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearch">ObservabilityPipelineConfigDestinationsOpensearch</a>[]
 
 ---
 
@@ -22048,7 +22048,7 @@ private void ResetBulkIndex()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchOutputReference.property.bulkIndex">BulkIndex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearch">ObservabilityPipelineConfigDestinationsOpensearch</a></code> | *No description.* |
 
 ---
 
@@ -22139,10 +22139,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearchOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsOpensearch InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearch">ObservabilityPipelineConfigDestinationsOpensearch</a>
 
 ---
 
@@ -22391,228 +22391,228 @@ Returns a reversible string representation.
 ##### `PutAmazonOpensearch` <a name="PutAmazonOpensearch" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonOpensearch"></a>
 
 ```csharp
-private void PutAmazonOpensearch(object Value)
+private void PutAmazonOpensearch(IResolvable|ObservabilityPipelineConfigDestinationsAmazonOpensearch[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonOpensearch.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearch">ObservabilityPipelineConfigDestinationsAmazonOpensearch</a>[]
 
 ---
 
 ##### `PutAmazonS3` <a name="PutAmazonS3" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonS3"></a>
 
 ```csharp
-private void PutAmazonS3(object Value)
+private void PutAmazonS3(IResolvable|ObservabilityPipelineConfigDestinationsAmazonS3[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonS3.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3">ObservabilityPipelineConfigDestinationsAmazonS3</a>[]
 
 ---
 
 ##### `PutAmazonSecurityLake` <a name="PutAmazonSecurityLake" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonSecurityLake"></a>
 
 ```csharp
-private void PutAmazonSecurityLake(object Value)
+private void PutAmazonSecurityLake(IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLake[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAmazonSecurityLake.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake">ObservabilityPipelineConfigDestinationsAmazonSecurityLake</a>[]
 
 ---
 
 ##### `PutAzureStorage` <a name="PutAzureStorage" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAzureStorage"></a>
 
 ```csharp
-private void PutAzureStorage(object Value)
+private void PutAzureStorage(IResolvable|ObservabilityPipelineConfigDestinationsAzureStorage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putAzureStorage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorage">ObservabilityPipelineConfigDestinationsAzureStorage</a>[]
 
 ---
 
 ##### `PutCrowdstrikeNextGenSiem` <a name="PutCrowdstrikeNextGenSiem" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putCrowdstrikeNextGenSiem"></a>
 
 ```csharp
-private void PutCrowdstrikeNextGenSiem(object Value)
+private void PutCrowdstrikeNextGenSiem(IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putCrowdstrikeNextGenSiem.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem</a>[]
 
 ---
 
 ##### `PutDatadogLogs` <a name="PutDatadogLogs" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putDatadogLogs"></a>
 
 ```csharp
-private void PutDatadogLogs(object Value)
+private void PutDatadogLogs(IResolvable|ObservabilityPipelineConfigDestinationsDatadogLogs[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putDatadogLogs.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogs">ObservabilityPipelineConfigDestinationsDatadogLogs</a>[]
 
 ---
 
 ##### `PutElasticsearch` <a name="PutElasticsearch" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putElasticsearch"></a>
 
 ```csharp
-private void PutElasticsearch(object Value)
+private void PutElasticsearch(IResolvable|ObservabilityPipelineConfigDestinationsElasticsearch[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putElasticsearch.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearch">ObservabilityPipelineConfigDestinationsElasticsearch</a>[]
 
 ---
 
 ##### `PutGoogleChronicle` <a name="PutGoogleChronicle" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putGoogleChronicle"></a>
 
 ```csharp
-private void PutGoogleChronicle(object Value)
+private void PutGoogleChronicle(IResolvable|ObservabilityPipelineConfigDestinationsGoogleChronicle[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putGoogleChronicle.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicle">ObservabilityPipelineConfigDestinationsGoogleChronicle</a>[]
 
 ---
 
 ##### `PutGoogleCloudStorage` <a name="PutGoogleCloudStorage" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putGoogleCloudStorage"></a>
 
 ```csharp
-private void PutGoogleCloudStorage(object Value)
+private void PutGoogleCloudStorage(IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorage[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putGoogleCloudStorage.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage">ObservabilityPipelineConfigDestinationsGoogleCloudStorage</a>[]
 
 ---
 
 ##### `PutGooglePubsub` <a name="PutGooglePubsub" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putGooglePubsub"></a>
 
 ```csharp
-private void PutGooglePubsub(object Value)
+private void PutGooglePubsub(IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsub[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putGooglePubsub.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsub">ObservabilityPipelineConfigDestinationsGooglePubsub</a>[]
 
 ---
 
 ##### `PutMicrosoftSentinel` <a name="PutMicrosoftSentinel" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putMicrosoftSentinel"></a>
 
 ```csharp
-private void PutMicrosoftSentinel(object Value)
+private void PutMicrosoftSentinel(IResolvable|ObservabilityPipelineConfigDestinationsMicrosoftSentinel[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putMicrosoftSentinel.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinel">ObservabilityPipelineConfigDestinationsMicrosoftSentinel</a>[]
 
 ---
 
 ##### `PutNewRelic` <a name="PutNewRelic" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putNewRelic"></a>
 
 ```csharp
-private void PutNewRelic(object Value)
+private void PutNewRelic(IResolvable|ObservabilityPipelineConfigDestinationsNewRelic[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putNewRelic.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelic">ObservabilityPipelineConfigDestinationsNewRelic</a>[]
 
 ---
 
 ##### `PutOpensearch` <a name="PutOpensearch" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putOpensearch"></a>
 
 ```csharp
-private void PutOpensearch(object Value)
+private void PutOpensearch(IResolvable|ObservabilityPipelineConfigDestinationsOpensearch[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putOpensearch.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearch">ObservabilityPipelineConfigDestinationsOpensearch</a>[]
 
 ---
 
 ##### `PutRsyslog` <a name="PutRsyslog" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putRsyslog"></a>
 
 ```csharp
-private void PutRsyslog(object Value)
+private void PutRsyslog(IResolvable|ObservabilityPipelineConfigDestinationsRsyslog[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putRsyslog.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslog">ObservabilityPipelineConfigDestinationsRsyslog</a>[]
 
 ---
 
 ##### `PutSentinelOne` <a name="PutSentinelOne" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSentinelOne"></a>
 
 ```csharp
-private void PutSentinelOne(object Value)
+private void PutSentinelOne(IResolvable|ObservabilityPipelineConfigDestinationsSentinelOne[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSentinelOne.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOne">ObservabilityPipelineConfigDestinationsSentinelOne</a>[]
 
 ---
 
 ##### `PutSocket` <a name="PutSocket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSocket"></a>
 
 ```csharp
-private void PutSocket(object Value)
+private void PutSocket(IResolvable|ObservabilityPipelineConfigDestinationsSocket[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSocket.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket">ObservabilityPipelineConfigDestinationsSocket</a>[]
 
 ---
 
 ##### `PutSplunkHec` <a name="PutSplunkHec" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSplunkHec"></a>
 
 ```csharp
-private void PutSplunkHec(object Value)
+private void PutSplunkHec(IResolvable|ObservabilityPipelineConfigDestinationsSplunkHec[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSplunkHec.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec">ObservabilityPipelineConfigDestinationsSplunkHec</a>[]
 
 ---
 
 ##### `PutSumoLogic` <a name="PutSumoLogic" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSumoLogic"></a>
 
 ```csharp
-private void PutSumoLogic(object Value)
+private void PutSumoLogic(IResolvable|ObservabilityPipelineConfigDestinationsSumoLogic[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSumoLogic.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic">ObservabilityPipelineConfigDestinationsSumoLogic</a>[]
 
 ---
 
 ##### `PutSyslogNg` <a name="PutSyslogNg" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSyslogNg"></a>
 
 ```csharp
-private void PutSyslogNg(object Value)
+private void PutSyslogNg(IResolvable|ObservabilityPipelineConfigDestinationsSyslogNg[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.putSyslogNg.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNg">ObservabilityPipelineConfigDestinationsSyslogNg</a>[]
 
 ---
 
@@ -22756,26 +22756,26 @@ private void ResetSyslogNg()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.splunkHec">SplunkHec</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecList">ObservabilityPipelineConfigDestinationsSplunkHecList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sumoLogic">SumoLogic</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicList">ObservabilityPipelineConfigDestinationsSumoLogicList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.syslogNg">SyslogNg</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgList">ObservabilityPipelineConfigDestinationsSyslogNgList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonOpensearchInput">AmazonOpensearchInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonS3Input">AmazonS3Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonSecurityLakeInput">AmazonSecurityLakeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.azureStorageInput">AzureStorageInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.crowdstrikeNextGenSiemInput">CrowdstrikeNextGenSiemInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.datadogLogsInput">DatadogLogsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.elasticsearchInput">ElasticsearchInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googleChronicleInput">GoogleChronicleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googleCloudStorageInput">GoogleCloudStorageInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googlePubsubInput">GooglePubsubInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.microsoftSentinelInput">MicrosoftSentinelInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.newRelicInput">NewRelicInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.opensearchInput">OpensearchInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.rsyslogInput">RsyslogInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sentinelOneInput">SentinelOneInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.socketInput">SocketInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.splunkHecInput">SplunkHecInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sumoLogicInput">SumoLogicInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.syslogNgInput">SyslogNgInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonOpensearchInput">AmazonOpensearchInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearch">ObservabilityPipelineConfigDestinationsAmazonOpensearch</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonS3Input">AmazonS3Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3">ObservabilityPipelineConfigDestinationsAmazonS3</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonSecurityLakeInput">AmazonSecurityLakeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake">ObservabilityPipelineConfigDestinationsAmazonSecurityLake</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.azureStorageInput">AzureStorageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorage">ObservabilityPipelineConfigDestinationsAzureStorage</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.crowdstrikeNextGenSiemInput">CrowdstrikeNextGenSiemInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.datadogLogsInput">DatadogLogsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogs">ObservabilityPipelineConfigDestinationsDatadogLogs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.elasticsearchInput">ElasticsearchInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearch">ObservabilityPipelineConfigDestinationsElasticsearch</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googleChronicleInput">GoogleChronicleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicle">ObservabilityPipelineConfigDestinationsGoogleChronicle</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googleCloudStorageInput">GoogleCloudStorageInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage">ObservabilityPipelineConfigDestinationsGoogleCloudStorage</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googlePubsubInput">GooglePubsubInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsub">ObservabilityPipelineConfigDestinationsGooglePubsub</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.microsoftSentinelInput">MicrosoftSentinelInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinel">ObservabilityPipelineConfigDestinationsMicrosoftSentinel</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.newRelicInput">NewRelicInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelic">ObservabilityPipelineConfigDestinationsNewRelic</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.opensearchInput">OpensearchInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearch">ObservabilityPipelineConfigDestinationsOpensearch</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.rsyslogInput">RsyslogInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslog">ObservabilityPipelineConfigDestinationsRsyslog</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sentinelOneInput">SentinelOneInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOne">ObservabilityPipelineConfigDestinationsSentinelOne</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.socketInput">SocketInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket">ObservabilityPipelineConfigDestinationsSocket</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.splunkHecInput">SplunkHecInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec">ObservabilityPipelineConfigDestinationsSplunkHec</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sumoLogicInput">SumoLogicInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic">ObservabilityPipelineConfigDestinationsSumoLogic</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.syslogNgInput">SyslogNgInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNg">ObservabilityPipelineConfigDestinationsSyslogNg</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations">ObservabilityPipelineConfigDestinations</a></code> | *No description.* |
 
 ---
 
@@ -22996,200 +22996,200 @@ public ObservabilityPipelineConfigDestinationsSyslogNgList SyslogNg { get; }
 ##### `AmazonOpensearchInput`<sup>Optional</sup> <a name="AmazonOpensearchInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonOpensearchInput"></a>
 
 ```csharp
-public object AmazonOpensearchInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonOpensearch[] AmazonOpensearchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonOpensearch">ObservabilityPipelineConfigDestinationsAmazonOpensearch</a>[]
 
 ---
 
 ##### `AmazonS3Input`<sup>Optional</sup> <a name="AmazonS3Input" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonS3Input"></a>
 
 ```csharp
-public object AmazonS3Input { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonS3[] AmazonS3Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonS3">ObservabilityPipelineConfigDestinationsAmazonS3</a>[]
 
 ---
 
 ##### `AmazonSecurityLakeInput`<sup>Optional</sup> <a name="AmazonSecurityLakeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.amazonSecurityLakeInput"></a>
 
 ```csharp
-public object AmazonSecurityLakeInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAmazonSecurityLake[] AmazonSecurityLakeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAmazonSecurityLake">ObservabilityPipelineConfigDestinationsAmazonSecurityLake</a>[]
 
 ---
 
 ##### `AzureStorageInput`<sup>Optional</sup> <a name="AzureStorageInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.azureStorageInput"></a>
 
 ```csharp
-public object AzureStorageInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsAzureStorage[] AzureStorageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsAzureStorage">ObservabilityPipelineConfigDestinationsAzureStorage</a>[]
 
 ---
 
 ##### `CrowdstrikeNextGenSiemInput`<sup>Optional</sup> <a name="CrowdstrikeNextGenSiemInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.crowdstrikeNextGenSiemInput"></a>
 
 ```csharp
-public object CrowdstrikeNextGenSiemInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem[] CrowdstrikeNextGenSiemInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiem</a>[]
 
 ---
 
 ##### `DatadogLogsInput`<sup>Optional</sup> <a name="DatadogLogsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.datadogLogsInput"></a>
 
 ```csharp
-public object DatadogLogsInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsDatadogLogs[] DatadogLogsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsDatadogLogs">ObservabilityPipelineConfigDestinationsDatadogLogs</a>[]
 
 ---
 
 ##### `ElasticsearchInput`<sup>Optional</sup> <a name="ElasticsearchInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.elasticsearchInput"></a>
 
 ```csharp
-public object ElasticsearchInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsElasticsearch[] ElasticsearchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsElasticsearch">ObservabilityPipelineConfigDestinationsElasticsearch</a>[]
 
 ---
 
 ##### `GoogleChronicleInput`<sup>Optional</sup> <a name="GoogleChronicleInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googleChronicleInput"></a>
 
 ```csharp
-public object GoogleChronicleInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleChronicle[] GoogleChronicleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleChronicle">ObservabilityPipelineConfigDestinationsGoogleChronicle</a>[]
 
 ---
 
 ##### `GoogleCloudStorageInput`<sup>Optional</sup> <a name="GoogleCloudStorageInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googleCloudStorageInput"></a>
 
 ```csharp
-public object GoogleCloudStorageInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGoogleCloudStorage[] GoogleCloudStorageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGoogleCloudStorage">ObservabilityPipelineConfigDestinationsGoogleCloudStorage</a>[]
 
 ---
 
 ##### `GooglePubsubInput`<sup>Optional</sup> <a name="GooglePubsubInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.googlePubsubInput"></a>
 
 ```csharp
-public object GooglePubsubInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsGooglePubsub[] GooglePubsubInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsGooglePubsub">ObservabilityPipelineConfigDestinationsGooglePubsub</a>[]
 
 ---
 
 ##### `MicrosoftSentinelInput`<sup>Optional</sup> <a name="MicrosoftSentinelInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.microsoftSentinelInput"></a>
 
 ```csharp
-public object MicrosoftSentinelInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsMicrosoftSentinel[] MicrosoftSentinelInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsMicrosoftSentinel">ObservabilityPipelineConfigDestinationsMicrosoftSentinel</a>[]
 
 ---
 
 ##### `NewRelicInput`<sup>Optional</sup> <a name="NewRelicInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.newRelicInput"></a>
 
 ```csharp
-public object NewRelicInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsNewRelic[] NewRelicInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsNewRelic">ObservabilityPipelineConfigDestinationsNewRelic</a>[]
 
 ---
 
 ##### `OpensearchInput`<sup>Optional</sup> <a name="OpensearchInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.opensearchInput"></a>
 
 ```csharp
-public object OpensearchInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsOpensearch[] OpensearchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOpensearch">ObservabilityPipelineConfigDestinationsOpensearch</a>[]
 
 ---
 
 ##### `RsyslogInput`<sup>Optional</sup> <a name="RsyslogInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.rsyslogInput"></a>
 
 ```csharp
-public object RsyslogInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsRsyslog[] RsyslogInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslog">ObservabilityPipelineConfigDestinationsRsyslog</a>[]
 
 ---
 
 ##### `SentinelOneInput`<sup>Optional</sup> <a name="SentinelOneInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sentinelOneInput"></a>
 
 ```csharp
-public object SentinelOneInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSentinelOne[] SentinelOneInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOne">ObservabilityPipelineConfigDestinationsSentinelOne</a>[]
 
 ---
 
 ##### `SocketInput`<sup>Optional</sup> <a name="SocketInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.socketInput"></a>
 
 ```csharp
-public object SocketInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocket[] SocketInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket">ObservabilityPipelineConfigDestinationsSocket</a>[]
 
 ---
 
 ##### `SplunkHecInput`<sup>Optional</sup> <a name="SplunkHecInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.splunkHecInput"></a>
 
 ```csharp
-public object SplunkHecInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSplunkHec[] SplunkHecInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec">ObservabilityPipelineConfigDestinationsSplunkHec</a>[]
 
 ---
 
 ##### `SumoLogicInput`<sup>Optional</sup> <a name="SumoLogicInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.sumoLogicInput"></a>
 
 ```csharp
-public object SumoLogicInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSumoLogic[] SumoLogicInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic">ObservabilityPipelineConfigDestinationsSumoLogic</a>[]
 
 ---
 
 ##### `SyslogNgInput`<sup>Optional</sup> <a name="SyslogNgInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.syslogNgInput"></a>
 
 ```csharp
-public object SyslogNgInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSyslogNg[] SyslogNgInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNg">ObservabilityPipelineConfigDestinationsSyslogNg</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinations InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinations">ObservabilityPipelineConfigDestinations</a>
 
 ---
 
@@ -23315,7 +23315,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslog">ObservabilityPipelineConfigDestinationsRsyslog</a>[]</code> | *No description.* |
 
 ---
 
@@ -23346,10 +23346,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsRsyslog[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslog">ObservabilityPipelineConfigDestinationsRsyslog</a>[]
 
 ---
 
@@ -23613,11 +23613,11 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.keepaliveInput">KeepaliveInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTls">ObservabilityPipelineConfigDestinationsRsyslogTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.keepalive">Keepalive</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslog">ObservabilityPipelineConfigDestinationsRsyslog</a></code> | *No description.* |
 
 ---
 
@@ -23688,10 +23688,10 @@ public double KeepaliveInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsRsyslogTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTls">ObservabilityPipelineConfigDestinationsRsyslogTls</a>
 
 ---
 
@@ -23728,10 +23728,10 @@ public double Keepalive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsRsyslog InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslog">ObservabilityPipelineConfigDestinationsRsyslog</a>
 
 ---
 
@@ -23973,7 +23973,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTls">ObservabilityPipelineConfigDestinationsRsyslogTls</a></code> | *No description.* |
 
 ---
 
@@ -24064,10 +24064,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsRsyslogTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsRsyslogTls">ObservabilityPipelineConfigDestinationsRsyslogTls</a>
 
 ---
 
@@ -24193,7 +24193,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOne">ObservabilityPipelineConfigDestinationsSentinelOne</a>[]</code> | *No description.* |
 
 ---
 
@@ -24224,10 +24224,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSentinelOne[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOne">ObservabilityPipelineConfigDestinationsSentinelOne</a>[]
 
 ---
 
@@ -24466,7 +24466,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOne">ObservabilityPipelineConfigDestinationsSentinelOne</a></code> | *No description.* |
 
 ---
 
@@ -24557,10 +24557,10 @@ public string Region { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOneOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSentinelOne InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSentinelOne">ObservabilityPipelineConfigDestinationsSentinelOne</a>
 
 ---
 
@@ -24784,7 +24784,7 @@ private void ResetDelimiter()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.delimiterInput">DelimiterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.delimiter">Delimiter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited</a></code> | *No description.* |
 
 ---
 
@@ -24835,10 +24835,10 @@ public string Delimiter { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited</a>
 
 ---
 
@@ -25074,10 +25074,10 @@ private void ResetCharacterDelimited()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.characterDelimited">CharacterDelimited</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.characterDelimitedInput">CharacterDelimitedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.characterDelimitedInput">CharacterDelimitedInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.methodInput">MethodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.method">Method</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming">ObservabilityPipelineConfigDestinationsSocketFraming</a></code> | *No description.* |
 
 ---
 
@@ -25118,10 +25118,10 @@ public ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimitedOut
 ##### `CharacterDelimitedInput`<sup>Optional</sup> <a name="CharacterDelimitedInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.characterDelimitedInput"></a>
 
 ```csharp
-public object CharacterDelimitedInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited CharacterDelimitedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited">ObservabilityPipelineConfigDestinationsSocketFramingCharacterDelimited</a>
 
 ---
 
@@ -25148,10 +25148,10 @@ public string Method { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocketFraming InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming">ObservabilityPipelineConfigDestinationsSocketFraming</a>
 
 ---
 
@@ -25277,7 +25277,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket">ObservabilityPipelineConfigDestinationsSocket</a>[]</code> | *No description.* |
 
 ---
 
@@ -25308,10 +25308,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocket[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket">ObservabilityPipelineConfigDestinationsSocket</a>[]
 
 ---
 
@@ -25587,16 +25587,16 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.framing">Framing</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFramingOutputReference">ObservabilityPipelineConfigDestinationsSocketFramingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference">ObservabilityPipelineConfigDestinationsSocketTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.framingInput">FramingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.framingInput">FramingInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming">ObservabilityPipelineConfigDestinationsSocketFraming</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls">ObservabilityPipelineConfigDestinationsSocketTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.encoding">Encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket">ObservabilityPipelineConfigDestinationsSocket</a></code> | *No description.* |
 
 ---
 
@@ -25657,10 +25657,10 @@ public string EncodingInput { get; }
 ##### `FramingInput`<sup>Optional</sup> <a name="FramingInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.framingInput"></a>
 
 ```csharp
-public object FramingInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocketFraming FramingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketFraming">ObservabilityPipelineConfigDestinationsSocketFraming</a>
 
 ---
 
@@ -25697,10 +25697,10 @@ public string ModeInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocketTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls">ObservabilityPipelineConfigDestinationsSocketTls</a>
 
 ---
 
@@ -25747,10 +25747,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocket InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocket">ObservabilityPipelineConfigDestinationsSocket</a>
 
 ---
 
@@ -25992,7 +25992,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls">ObservabilityPipelineConfigDestinationsSocketTls</a></code> | *No description.* |
 
 ---
 
@@ -26083,10 +26083,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSocketTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSocketTls">ObservabilityPipelineConfigDestinationsSocketTls</a>
 
 ---
 
@@ -26212,7 +26212,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec">ObservabilityPipelineConfigDestinationsSplunkHec</a>[]</code> | *No description.* |
 
 ---
 
@@ -26243,10 +26243,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSplunkHec[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec">ObservabilityPipelineConfigDestinationsSplunkHec</a>[]
 
 ---
 
@@ -26507,19 +26507,19 @@ private void ResetSourcetype()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.autoExtractTimestampInput">AutoExtractTimestampInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.autoExtractTimestampInput">AutoExtractTimestampInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.indexInput">IndexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.sourcetypeInput">SourcetypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.autoExtractTimestamp">AutoExtractTimestamp</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.autoExtractTimestamp">AutoExtractTimestamp</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.encoding">Encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.index">Index</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.sourcetype">Sourcetype</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec">ObservabilityPipelineConfigDestinationsSplunkHec</a></code> | *No description.* |
 
 ---
 
@@ -26550,10 +26550,10 @@ public string Fqn { get; }
 ##### `AutoExtractTimestampInput`<sup>Optional</sup> <a name="AutoExtractTimestampInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.autoExtractTimestampInput"></a>
 
 ```csharp
-public object AutoExtractTimestampInput { get; }
+public bool|IResolvable AutoExtractTimestampInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26610,10 +26610,10 @@ public string SourcetypeInput { get; }
 ##### `AutoExtractTimestamp`<sup>Required</sup> <a name="AutoExtractTimestamp" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.autoExtractTimestamp"></a>
 
 ```csharp
-public object AutoExtractTimestamp { get; }
+public bool|IResolvable AutoExtractTimestamp { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26670,10 +26670,10 @@ public string Sourcetype { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHecOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSplunkHec InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSplunkHec">ObservabilityPipelineConfigDestinationsSplunkHec</a>
 
 ---
 
@@ -26799,7 +26799,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -26830,10 +26830,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields</a>[]
 
 ---
 
@@ -27084,7 +27084,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields</a></code> | *No description.* |
 
 ---
 
@@ -27155,10 +27155,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields</a>
 
 ---
 
@@ -27284,7 +27284,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic">ObservabilityPipelineConfigDestinationsSumoLogic</a>[]</code> | *No description.* |
 
 ---
 
@@ -27315,10 +27315,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSumoLogic[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic">ObservabilityPipelineConfigDestinationsSumoLogic</a>[]
 
 ---
 
@@ -27553,12 +27553,12 @@ Returns a reversible string representation.
 ##### `PutHeaderCustomFields` <a name="PutHeaderCustomFields" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.putHeaderCustomFields"></a>
 
 ```csharp
-private void PutHeaderCustomFields(object Value)
+private void PutHeaderCustomFields(IResolvable|ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.putHeaderCustomFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields</a>[]
 
 ---
 
@@ -27601,7 +27601,7 @@ private void ResetHeaderSourceName()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.headerCustomFields">HeaderCustomFields</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsList">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.headerCustomFieldsInput">HeaderCustomFieldsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.headerCustomFieldsInput">HeaderCustomFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.headerHostNameInput">HeaderHostNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.headerSourceCategoryInput">HeaderSourceCategoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.headerSourceNameInput">HeaderSourceNameInput</a></code> | <code>string</code> | *No description.* |
@@ -27613,7 +27613,7 @@ private void ResetHeaderSourceName()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.headerSourceName">HeaderSourceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic">ObservabilityPipelineConfigDestinationsSumoLogic</a></code> | *No description.* |
 
 ---
 
@@ -27664,10 +27664,10 @@ public string EncodingInput { get; }
 ##### `HeaderCustomFieldsInput`<sup>Optional</sup> <a name="HeaderCustomFieldsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.headerCustomFieldsInput"></a>
 
 ```csharp
-public object HeaderCustomFieldsInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields[] HeaderCustomFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields">ObservabilityPipelineConfigDestinationsSumoLogicHeaderCustomFields</a>[]
 
 ---
 
@@ -27784,10 +27784,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogicOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSumoLogic InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSumoLogic">ObservabilityPipelineConfigDestinationsSumoLogic</a>
 
 ---
 
@@ -27913,7 +27913,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNg">ObservabilityPipelineConfigDestinationsSyslogNg</a>[]</code> | *No description.* |
 
 ---
 
@@ -27944,10 +27944,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSyslogNg[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNg">ObservabilityPipelineConfigDestinationsSyslogNg</a>[]
 
 ---
 
@@ -28211,11 +28211,11 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.keepaliveInput">KeepaliveInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTls">ObservabilityPipelineConfigDestinationsSyslogNgTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.keepalive">Keepalive</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNg">ObservabilityPipelineConfigDestinationsSyslogNg</a></code> | *No description.* |
 
 ---
 
@@ -28286,10 +28286,10 @@ public double KeepaliveInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSyslogNgTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTls">ObservabilityPipelineConfigDestinationsSyslogNgTls</a>
 
 ---
 
@@ -28326,10 +28326,10 @@ public double Keepalive { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSyslogNg InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNg">ObservabilityPipelineConfigDestinationsSyslogNg</a>
 
 ---
 
@@ -28571,7 +28571,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTls">ObservabilityPipelineConfigDestinationsSyslogNgTls</a></code> | *No description.* |
 
 ---
 
@@ -28662,10 +28662,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigDestinationsSyslogNgTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationsSyslogNgTls">ObservabilityPipelineConfigDestinationsSyslogNgTls</a>
 
 ---
 
@@ -28791,7 +28791,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars">ObservabilityPipelineConfigProcessorsAddEnvVars</a>[]</code> | *No description.* |
 
 ---
 
@@ -28822,10 +28822,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVars[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars">ObservabilityPipelineConfigProcessorsAddEnvVars</a>[]
 
 ---
 
@@ -29056,12 +29056,12 @@ Returns a reversible string representation.
 ##### `PutVariables` <a name="PutVariables" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.putVariables"></a>
 
 ```csharp
-private void PutVariables(object Value)
+private void PutVariables(IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVarsVariables[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.putVariables.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariables">ObservabilityPipelineConfigProcessorsAddEnvVarsVariables</a>[]
 
 ---
 
@@ -29082,11 +29082,11 @@ private void ResetVariables()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.variablesInput">VariablesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.variablesInput">VariablesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariables">ObservabilityPipelineConfigProcessorsAddEnvVarsVariables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars">ObservabilityPipelineConfigProcessorsAddEnvVars</a></code> | *No description.* |
 
 ---
 
@@ -29157,10 +29157,10 @@ public string[] InputsInput { get; }
 ##### `VariablesInput`<sup>Optional</sup> <a name="VariablesInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.variablesInput"></a>
 
 ```csharp
-public object VariablesInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVarsVariables[] VariablesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariables">ObservabilityPipelineConfigProcessorsAddEnvVarsVariables</a>[]
 
 ---
 
@@ -29197,10 +29197,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVars InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars">ObservabilityPipelineConfigProcessorsAddEnvVars</a>
 
 ---
 
@@ -29326,7 +29326,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariables">ObservabilityPipelineConfigProcessorsAddEnvVarsVariables</a>[]</code> | *No description.* |
 
 ---
 
@@ -29357,10 +29357,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVarsVariables[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariables">ObservabilityPipelineConfigProcessorsAddEnvVarsVariables</a>[]
 
 ---
 
@@ -29597,7 +29597,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesOutputReference.property.field">Field</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariables">ObservabilityPipelineConfigProcessorsAddEnvVarsVariables</a></code> | *No description.* |
 
 ---
 
@@ -29668,10 +29668,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariablesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVarsVariables InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVarsVariables">ObservabilityPipelineConfigProcessorsAddEnvVarsVariables</a>
 
 ---
 
@@ -29797,7 +29797,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsField">ObservabilityPipelineConfigProcessorsAddFieldsField</a>[]</code> | *No description.* |
 
 ---
 
@@ -29828,10 +29828,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddFieldsField[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsField">ObservabilityPipelineConfigProcessorsAddFieldsField</a>[]
 
 ---
 
@@ -30068,7 +30068,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsField">ObservabilityPipelineConfigProcessorsAddFieldsField</a></code> | *No description.* |
 
 ---
 
@@ -30139,10 +30139,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddFieldsField InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsField">ObservabilityPipelineConfigProcessorsAddFieldsField</a>
 
 ---
 
@@ -30268,7 +30268,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields">ObservabilityPipelineConfigProcessorsAddFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -30299,10 +30299,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields">ObservabilityPipelineConfigProcessorsAddFields</a>[]
 
 ---
 
@@ -30533,12 +30533,12 @@ Returns a reversible string representation.
 ##### `PutField` <a name="PutField" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.putField"></a>
 
 ```csharp
-private void PutField(object Value)
+private void PutField(IResolvable|ObservabilityPipelineConfigProcessorsAddFieldsField[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.putField.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsField">ObservabilityPipelineConfigProcessorsAddFieldsField</a>[]
 
 ---
 
@@ -30556,14 +30556,14 @@ private void ResetField()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.field">Field</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsFieldList">ObservabilityPipelineConfigProcessorsAddFieldsFieldList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.fieldInput">FieldInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.fieldInput">FieldInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsField">ObservabilityPipelineConfigProcessorsAddFieldsField</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields">ObservabilityPipelineConfigProcessorsAddFields</a></code> | *No description.* |
 
 ---
 
@@ -30604,10 +30604,10 @@ public ObservabilityPipelineConfigProcessorsAddFieldsFieldList Field { get; }
 ##### `FieldInput`<sup>Optional</sup> <a name="FieldInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.fieldInput"></a>
 
 ```csharp
-public object FieldInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddFieldsField[] FieldInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsField">ObservabilityPipelineConfigProcessorsAddFieldsField</a>[]
 
 ---
 
@@ -30674,10 +30674,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields">ObservabilityPipelineConfigProcessorsAddFields</a>
 
 ---
 
@@ -30803,7 +30803,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor">ObservabilityPipelineConfigProcessorsCustomProcessor</a>[]</code> | *No description.* |
 
 ---
 
@@ -30834,10 +30834,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessor[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor">ObservabilityPipelineConfigProcessorsCustomProcessor</a>[]
 
 ---
 
@@ -31068,12 +31068,12 @@ Returns a reversible string representation.
 ##### `PutRemaps` <a name="PutRemaps" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.putRemaps"></a>
 
 ```csharp
-private void PutRemaps(object Value)
+private void PutRemaps(IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessorRemaps[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.putRemaps.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps">ObservabilityPipelineConfigProcessorsCustomProcessorRemaps</a>[]
 
 ---
 
@@ -31093,10 +31093,10 @@ private void ResetRemaps()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.remaps">Remaps</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList">ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.remapsInput">RemapsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.remapsInput">RemapsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps">ObservabilityPipelineConfigProcessorsCustomProcessorRemaps</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor">ObservabilityPipelineConfigProcessorsCustomProcessor</a></code> | *No description.* |
 
 ---
 
@@ -31157,10 +31157,10 @@ public string[] InputsInput { get; }
 ##### `RemapsInput`<sup>Optional</sup> <a name="RemapsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.remapsInput"></a>
 
 ```csharp
-public object RemapsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessorRemaps[] RemapsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps">ObservabilityPipelineConfigProcessorsCustomProcessorRemaps</a>[]
 
 ---
 
@@ -31187,10 +31187,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessor InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor">ObservabilityPipelineConfigProcessorsCustomProcessor</a>
 
 ---
 
@@ -31316,7 +31316,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps">ObservabilityPipelineConfigProcessorsCustomProcessorRemaps</a>[]</code> | *No description.* |
 
 ---
 
@@ -31347,10 +31347,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessorRemaps[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps">ObservabilityPipelineConfigProcessorsCustomProcessorRemaps</a>[]
 
 ---
 
@@ -31583,17 +31583,17 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnErrorInput">DropOnErrorInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnErrorInput">DropOnErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.sourceInput">SourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnError">DropOnError</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnError">DropOnError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.source">Source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps">ObservabilityPipelineConfigProcessorsCustomProcessorRemaps</a></code> | *No description.* |
 
 ---
 
@@ -31624,20 +31624,20 @@ public string Fqn { get; }
 ##### `DropOnErrorInput`<sup>Optional</sup> <a name="DropOnErrorInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnErrorInput"></a>
 
 ```csharp
-public object DropOnErrorInput { get; }
+public bool|IResolvable DropOnErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -31674,20 +31674,20 @@ public string SourceInput { get; }
 ##### `DropOnError`<sup>Required</sup> <a name="DropOnError" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.dropOnError"></a>
 
 ```csharp
-public object DropOnError { get; }
+public bool|IResolvable DropOnError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -31724,10 +31724,10 @@ public string Source { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemapsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessorRemaps InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessorRemaps">ObservabilityPipelineConfigProcessorsCustomProcessorRemaps</a>
 
 ---
 
@@ -31853,7 +31853,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags">ObservabilityPipelineConfigProcessorsDatadogTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -31884,10 +31884,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsDatadogTags[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags">ObservabilityPipelineConfigProcessorsDatadogTags</a>[]
 
 ---
 
@@ -32132,7 +32132,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.keys">Keys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags">ObservabilityPipelineConfigProcessorsDatadogTags</a></code> | *No description.* |
 
 ---
 
@@ -32283,10 +32283,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTagsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsDatadogTags InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags">ObservabilityPipelineConfigProcessorsDatadogTags</a>
 
 ---
 
@@ -32412,7 +32412,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupe">ObservabilityPipelineConfigProcessorsDedupe</a>[]</code> | *No description.* |
 
 ---
 
@@ -32443,10 +32443,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsDedupe[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupe">ObservabilityPipelineConfigProcessorsDedupe</a>[]
 
 ---
 
@@ -32689,7 +32689,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupe">ObservabilityPipelineConfigProcessorsDedupe</a></code> | *No description.* |
 
 ---
 
@@ -32820,10 +32820,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsDedupe InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupe">ObservabilityPipelineConfigProcessorsDedupe</a>
 
 ---
 
@@ -33060,12 +33060,12 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.delimiterInput">DelimiterInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.includesHeadersInput">IncludesHeadersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.includesHeadersInput">IncludesHeadersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.delimiter">Delimiter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.includesHeaders">IncludesHeaders</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.includesHeaders">IncludesHeaders</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding">ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding</a></code> | *No description.* |
 
 ---
 
@@ -33106,10 +33106,10 @@ public string DelimiterInput { get; }
 ##### `IncludesHeadersInput`<sup>Optional</sup> <a name="IncludesHeadersInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.includesHeadersInput"></a>
 
 ```csharp
-public object IncludesHeadersInput { get; }
+public bool|IResolvable IncludesHeadersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -33136,10 +33136,10 @@ public string Delimiter { get; }
 ##### `IncludesHeaders`<sup>Required</sup> <a name="IncludesHeaders" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.includesHeaders"></a>
 
 ```csharp
-public object IncludesHeaders { get; }
+public bool|IResolvable IncludesHeaders { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -33156,10 +33156,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding">ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding</a>
 
 ---
 
@@ -33285,7 +33285,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey</a>[]</code> | *No description.* |
 
 ---
 
@@ -33316,10 +33316,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey</a>[]
 
 ---
 
@@ -33579,7 +33579,7 @@ private void ResetField()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyOutputReference.property.column">Column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyOutputReference.property.field">Field</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey</a></code> | *No description.* |
 
 ---
 
@@ -33670,10 +33670,10 @@ public string Field { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey</a>
 
 ---
 
@@ -33903,24 +33903,24 @@ private void PutEncoding(ObservabilityPipelineConfigProcessorsEnrichmentTableFil
 ##### `PutKey` <a name="PutKey" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.putKey"></a>
 
 ```csharp
-private void PutKey(object Value)
+private void PutKey(IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.putKey.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey</a>[]
 
 ---
 
 ##### `PutSchema` <a name="PutSchema" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.putSchema"></a>
 
 ```csharp
-private void PutSchema(object Value)
+private void PutSchema(IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.putSchema.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema</a>[]
 
 ---
 
@@ -33958,12 +33958,12 @@ private void ResetSchema()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.encoding">Encoding</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference">ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncodingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.key">Key</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyList">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKeyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.schema">Schema</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.encodingInput">EncodingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.keyInput">KeyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.encodingInput">EncodingInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding">ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.keyInput">KeyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.schemaInput">SchemaInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.schemaInput">SchemaInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile">ObservabilityPipelineConfigProcessorsEnrichmentTableFile</a></code> | *No description.* |
 
 ---
 
@@ -34024,20 +34024,20 @@ public ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList Schema
 ##### `EncodingInput`<sup>Optional</sup> <a name="EncodingInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.encodingInput"></a>
 
 ```csharp
-public object EncodingInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding EncodingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding">ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding</a>
 
 ---
 
 ##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.keyInput"></a>
 
 ```csharp
-public object KeyInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey[] KeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorsEnrichmentTableFileKey</a>[]
 
 ---
 
@@ -34054,10 +34054,10 @@ public string PathInput { get; }
 ##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.schemaInput"></a>
 
 ```csharp
-public object SchemaInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema[] SchemaInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema</a>[]
 
 ---
 
@@ -34074,10 +34074,10 @@ public string Path { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFile InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile">ObservabilityPipelineConfigProcessorsEnrichmentTableFile</a>
 
 ---
 
@@ -34203,7 +34203,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema</a>[]</code> | *No description.* |
 
 ---
 
@@ -34234,10 +34234,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema</a>[]
 
 ---
 
@@ -34488,7 +34488,7 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaOutputReference.property.column">Column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema</a></code> | *No description.* |
 
 ---
 
@@ -34559,10 +34559,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchemaOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema">ObservabilityPipelineConfigProcessorsEnrichmentTableFileSchema</a>
 
 ---
 
@@ -34804,7 +34804,7 @@ private void ResetPath()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference.property.keyField">KeyField</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference.property.locale">Locale</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip">ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip</a></code> | *No description.* |
 
 ---
 
@@ -34895,10 +34895,10 @@ public string Path { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip">ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip</a>
 
 ---
 
@@ -35024,7 +35024,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTable">ObservabilityPipelineConfigProcessorsEnrichmentTable</a>[]</code> | *No description.* |
 
 ---
 
@@ -35055,10 +35055,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTable">ObservabilityPipelineConfigProcessorsEnrichmentTable</a>[]
 
 ---
 
@@ -35333,8 +35333,8 @@ private void ResetGeoip()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.file">File</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference">ObservabilityPipelineConfigProcessorsEnrichmentTableFileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.geoip">Geoip</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference">ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.fileInput">FileInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.geoipInput">GeoipInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.fileInput">FileInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile">ObservabilityPipelineConfigProcessorsEnrichmentTableFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.geoipInput">GeoipInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip">ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
@@ -35343,7 +35343,7 @@ private void ResetGeoip()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.target">Target</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTable">ObservabilityPipelineConfigProcessorsEnrichmentTable</a></code> | *No description.* |
 
 ---
 
@@ -35394,20 +35394,20 @@ public ObservabilityPipelineConfigProcessorsEnrichmentTableGeoipOutputReference 
 ##### `FileInput`<sup>Optional</sup> <a name="FileInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.fileInput"></a>
 
 ```csharp
-public object FileInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableFile FileInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableFile">ObservabilityPipelineConfigProcessorsEnrichmentTableFile</a>
 
 ---
 
 ##### `GeoipInput`<sup>Optional</sup> <a name="GeoipInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.geoipInput"></a>
 
 ```csharp
-public object GeoipInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip GeoipInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip">ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip</a>
 
 ---
 
@@ -35494,10 +35494,10 @@ public string Target { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTable">ObservabilityPipelineConfigProcessorsEnrichmentTable</a>
 
 ---
 
@@ -35623,7 +35623,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilter">ObservabilityPipelineConfigProcessorsFilter</a>[]</code> | *No description.* |
 
 ---
 
@@ -35654,10 +35654,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsFilter[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilter">ObservabilityPipelineConfigProcessorsFilter</a>[]
 
 ---
 
@@ -35896,7 +35896,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilter">ObservabilityPipelineConfigProcessorsFilter</a></code> | *No description.* |
 
 ---
 
@@ -35987,10 +35987,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilterOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsFilter InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilter">ObservabilityPipelineConfigProcessorsFilter</a>
 
 ---
 
@@ -36116,7 +36116,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics</a>[]</code> | *No description.* |
 
 ---
 
@@ -36147,10 +36147,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics</a>[]
 
 ---
 
@@ -36276,7 +36276,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics</a>[]</code> | *No description.* |
 
 ---
 
@@ -36307,10 +36307,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics</a>[]
 
 ---
 
@@ -36575,12 +36575,12 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.metricTypeInput">MetricTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.valueInput">ValueInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.valueInput">ValueInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.groupBy">GroupBy</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.metricType">MetricType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics</a></code> | *No description.* |
 
 ---
 
@@ -36661,10 +36661,10 @@ public string NameInput { get; }
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.valueInput"></a>
 
 ```csharp
-public object ValueInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue ValueInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue</a>
 
 ---
 
@@ -36711,10 +36711,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics</a>
 
 ---
 
@@ -36940,7 +36940,7 @@ private void ResetField()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValueOutputReference.property.strategyInput">StrategyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValueOutputReference.property.field">Field</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValueOutputReference.property.strategy">Strategy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValueOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValueOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue</a></code> | *No description.* |
 
 ---
 
@@ -37011,10 +37011,10 @@ public string Strategy { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValueOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue</a>
 
 ---
 
@@ -37245,12 +37245,12 @@ Returns a reversible string representation.
 ##### `PutMetrics` <a name="PutMetrics" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.putMetrics"></a>
 
 ```csharp
-private void PutMetrics(object Value)
+private void PutMetrics(IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.putMetrics.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics</a>[]
 
 ---
 
@@ -37271,11 +37271,11 @@ private void ResetMetrics()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.metricsInput">MetricsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.metricsInput">MetricsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics</a></code> | *No description.* |
 
 ---
 
@@ -37346,10 +37346,10 @@ public string[] InputsInput { get; }
 ##### `MetricsInput`<sup>Optional</sup> <a name="MetricsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.metricsInput"></a>
 
 ```csharp
-public object MetricsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics[] MetricsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetrics</a>[]
 
 ---
 
@@ -37386,10 +37386,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics</a>
 
 ---
 
@@ -37515,7 +37515,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper">ObservabilityPipelineConfigProcessorsOcsfMapper</a>[]</code> | *No description.* |
 
 ---
 
@@ -37546,10 +37546,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapper[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper">ObservabilityPipelineConfigProcessorsOcsfMapper</a>[]
 
 ---
 
@@ -37675,7 +37675,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMapping">ObservabilityPipelineConfigProcessorsOcsfMapperMapping</a>[]</code> | *No description.* |
 
 ---
 
@@ -37706,10 +37706,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapperMapping[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMapping">ObservabilityPipelineConfigProcessorsOcsfMapperMapping</a>[]
 
 ---
 
@@ -37946,7 +37946,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingOutputReference.property.libraryMappingInput">LibraryMappingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingOutputReference.property.libraryMapping">LibraryMapping</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMapping">ObservabilityPipelineConfigProcessorsOcsfMapperMapping</a></code> | *No description.* |
 
 ---
 
@@ -38017,10 +38017,10 @@ public string LibraryMapping { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMappingOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapperMapping InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMapping">ObservabilityPipelineConfigProcessorsOcsfMapperMapping</a>
 
 ---
 
@@ -38251,12 +38251,12 @@ Returns a reversible string representation.
 ##### `PutMapping` <a name="PutMapping" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.putMapping"></a>
 
 ```csharp
-private void PutMapping(object Value)
+private void PutMapping(IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapperMapping[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.putMapping.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMapping">ObservabilityPipelineConfigProcessorsOcsfMapperMapping</a>[]
 
 ---
 
@@ -38277,11 +38277,11 @@ private void ResetMapping()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.mappingInput">MappingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.mappingInput">MappingInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMapping">ObservabilityPipelineConfigProcessorsOcsfMapperMapping</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper">ObservabilityPipelineConfigProcessorsOcsfMapper</a></code> | *No description.* |
 
 ---
 
@@ -38352,10 +38352,10 @@ public string[] InputsInput { get; }
 ##### `MappingInput`<sup>Optional</sup> <a name="MappingInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.mappingInput"></a>
 
 ```csharp
-public object MappingInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapperMapping[] MappingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperMapping">ObservabilityPipelineConfigProcessorsOcsfMapperMapping</a>[]
 
 ---
 
@@ -38392,10 +38392,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapperOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapper InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper">ObservabilityPipelineConfigProcessorsOcsfMapper</a>
 
 ---
 
@@ -38642,216 +38642,216 @@ Returns a reversible string representation.
 ##### `PutAddEnvVars` <a name="PutAddEnvVars" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putAddEnvVars"></a>
 
 ```csharp
-private void PutAddEnvVars(object Value)
+private void PutAddEnvVars(IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVars[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putAddEnvVars.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars">ObservabilityPipelineConfigProcessorsAddEnvVars</a>[]
 
 ---
 
 ##### `PutAddFields` <a name="PutAddFields" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putAddFields"></a>
 
 ```csharp
-private void PutAddFields(object Value)
+private void PutAddFields(IResolvable|ObservabilityPipelineConfigProcessorsAddFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putAddFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields">ObservabilityPipelineConfigProcessorsAddFields</a>[]
 
 ---
 
 ##### `PutCustomProcessor` <a name="PutCustomProcessor" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putCustomProcessor"></a>
 
 ```csharp
-private void PutCustomProcessor(object Value)
+private void PutCustomProcessor(IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessor[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putCustomProcessor.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor">ObservabilityPipelineConfigProcessorsCustomProcessor</a>[]
 
 ---
 
 ##### `PutDatadogTags` <a name="PutDatadogTags" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putDatadogTags"></a>
 
 ```csharp
-private void PutDatadogTags(object Value)
+private void PutDatadogTags(IResolvable|ObservabilityPipelineConfigProcessorsDatadogTags[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putDatadogTags.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags">ObservabilityPipelineConfigProcessorsDatadogTags</a>[]
 
 ---
 
 ##### `PutDedupe` <a name="PutDedupe" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putDedupe"></a>
 
 ```csharp
-private void PutDedupe(object Value)
+private void PutDedupe(IResolvable|ObservabilityPipelineConfigProcessorsDedupe[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putDedupe.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupe">ObservabilityPipelineConfigProcessorsDedupe</a>[]
 
 ---
 
 ##### `PutEnrichmentTable` <a name="PutEnrichmentTable" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putEnrichmentTable"></a>
 
 ```csharp
-private void PutEnrichmentTable(object Value)
+private void PutEnrichmentTable(IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putEnrichmentTable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTable">ObservabilityPipelineConfigProcessorsEnrichmentTable</a>[]
 
 ---
 
 ##### `PutFilter` <a name="PutFilter" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putFilter"></a>
 
 ```csharp
-private void PutFilter(object Value)
+private void PutFilter(IResolvable|ObservabilityPipelineConfigProcessorsFilter[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putFilter.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilter">ObservabilityPipelineConfigProcessorsFilter</a>[]
 
 ---
 
 ##### `PutGenerateDatadogMetrics` <a name="PutGenerateDatadogMetrics" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putGenerateDatadogMetrics"></a>
 
 ```csharp
-private void PutGenerateDatadogMetrics(object Value)
+private void PutGenerateDatadogMetrics(IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putGenerateDatadogMetrics.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics</a>[]
 
 ---
 
 ##### `PutOcsfMapper` <a name="PutOcsfMapper" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putOcsfMapper"></a>
 
 ```csharp
-private void PutOcsfMapper(object Value)
+private void PutOcsfMapper(IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapper[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putOcsfMapper.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper">ObservabilityPipelineConfigProcessorsOcsfMapper</a>[]
 
 ---
 
 ##### `PutParseGrok` <a name="PutParseGrok" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putParseGrok"></a>
 
 ```csharp
-private void PutParseGrok(object Value)
+private void PutParseGrok(IResolvable|ObservabilityPipelineConfigProcessorsParseGrok[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putParseGrok.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok">ObservabilityPipelineConfigProcessorsParseGrok</a>[]
 
 ---
 
 ##### `PutParseJson` <a name="PutParseJson" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putParseJson"></a>
 
 ```csharp
-private void PutParseJson(object Value)
+private void PutParseJson(IResolvable|ObservabilityPipelineConfigProcessorsParseJson[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putParseJson.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJson">ObservabilityPipelineConfigProcessorsParseJson</a>[]
 
 ---
 
 ##### `PutQuota` <a name="PutQuota" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putQuota"></a>
 
 ```csharp
-private void PutQuota(object Value)
+private void PutQuota(IResolvable|ObservabilityPipelineConfigProcessorsQuota[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putQuota.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota">ObservabilityPipelineConfigProcessorsQuota</a>[]
 
 ---
 
 ##### `PutReduce` <a name="PutReduce" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putReduce"></a>
 
 ```csharp
-private void PutReduce(object Value)
+private void PutReduce(IResolvable|ObservabilityPipelineConfigProcessorsReduce[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putReduce.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce">ObservabilityPipelineConfigProcessorsReduce</a>[]
 
 ---
 
 ##### `PutRemoveFields` <a name="PutRemoveFields" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putRemoveFields"></a>
 
 ```csharp
-private void PutRemoveFields(object Value)
+private void PutRemoveFields(IResolvable|ObservabilityPipelineConfigProcessorsRemoveFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putRemoveFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFields">ObservabilityPipelineConfigProcessorsRemoveFields</a>[]
 
 ---
 
 ##### `PutRenameFields` <a name="PutRenameFields" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putRenameFields"></a>
 
 ```csharp
-private void PutRenameFields(object Value)
+private void PutRenameFields(IResolvable|ObservabilityPipelineConfigProcessorsRenameFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putRenameFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields">ObservabilityPipelineConfigProcessorsRenameFields</a>[]
 
 ---
 
 ##### `PutSample` <a name="PutSample" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putSample"></a>
 
 ```csharp
-private void PutSample(object Value)
+private void PutSample(IResolvable|ObservabilityPipelineConfigProcessorsSample[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putSample.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSample">ObservabilityPipelineConfigProcessorsSample</a>[]
 
 ---
 
 ##### `PutSensitiveDataScanner` <a name="PutSensitiveDataScanner" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putSensitiveDataScanner"></a>
 
 ```csharp
-private void PutSensitiveDataScanner(object Value)
+private void PutSensitiveDataScanner(IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScanner[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putSensitiveDataScanner.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner">ObservabilityPipelineConfigProcessorsSensitiveDataScanner</a>[]
 
 ---
 
 ##### `PutThrottle` <a name="PutThrottle" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putThrottle"></a>
 
 ```csharp
-private void PutThrottle(object Value)
+private void PutThrottle(IResolvable|ObservabilityPipelineConfigProcessorsThrottle[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.putThrottle.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottle">ObservabilityPipelineConfigProcessorsThrottle</a>[]
 
 ---
 
@@ -38988,25 +38988,25 @@ private void ResetThrottle()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.sample">Sample</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleList">ObservabilityPipelineConfigProcessorsSampleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.sensitiveDataScanner">SensitiveDataScanner</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerList">ObservabilityPipelineConfigProcessorsSensitiveDataScannerList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.throttle">Throttle</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleList">ObservabilityPipelineConfigProcessorsThrottleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addEnvVarsInput">AddEnvVarsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addFieldsInput">AddFieldsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.customProcessorInput">CustomProcessorInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.datadogTagsInput">DatadogTagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.dedupeInput">DedupeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.enrichmentTableInput">EnrichmentTableInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.filterInput">FilterInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.generateDatadogMetricsInput">GenerateDatadogMetricsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.ocsfMapperInput">OcsfMapperInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.parseGrokInput">ParseGrokInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.parseJsonInput">ParseJsonInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.quotaInput">QuotaInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.reduceInput">ReduceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.removeFieldsInput">RemoveFieldsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.renameFieldsInput">RenameFieldsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.sampleInput">SampleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.sensitiveDataScannerInput">SensitiveDataScannerInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.throttleInput">ThrottleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addEnvVarsInput">AddEnvVarsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars">ObservabilityPipelineConfigProcessorsAddEnvVars</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addFieldsInput">AddFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields">ObservabilityPipelineConfigProcessorsAddFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.customProcessorInput">CustomProcessorInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor">ObservabilityPipelineConfigProcessorsCustomProcessor</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.datadogTagsInput">DatadogTagsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags">ObservabilityPipelineConfigProcessorsDatadogTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.dedupeInput">DedupeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupe">ObservabilityPipelineConfigProcessorsDedupe</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.enrichmentTableInput">EnrichmentTableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTable">ObservabilityPipelineConfigProcessorsEnrichmentTable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.filterInput">FilterInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilter">ObservabilityPipelineConfigProcessorsFilter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.generateDatadogMetricsInput">GenerateDatadogMetricsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.ocsfMapperInput">OcsfMapperInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper">ObservabilityPipelineConfigProcessorsOcsfMapper</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.parseGrokInput">ParseGrokInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok">ObservabilityPipelineConfigProcessorsParseGrok</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.parseJsonInput">ParseJsonInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJson">ObservabilityPipelineConfigProcessorsParseJson</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.quotaInput">QuotaInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota">ObservabilityPipelineConfigProcessorsQuota</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.reduceInput">ReduceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce">ObservabilityPipelineConfigProcessorsReduce</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.removeFieldsInput">RemoveFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFields">ObservabilityPipelineConfigProcessorsRemoveFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.renameFieldsInput">RenameFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields">ObservabilityPipelineConfigProcessorsRenameFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.sampleInput">SampleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSample">ObservabilityPipelineConfigProcessorsSample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.sensitiveDataScannerInput">SensitiveDataScannerInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner">ObservabilityPipelineConfigProcessorsSensitiveDataScanner</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.throttleInput">ThrottleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottle">ObservabilityPipelineConfigProcessorsThrottle</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors">ObservabilityPipelineConfigProcessors</a></code> | *No description.* |
 
 ---
 
@@ -39217,190 +39217,190 @@ public ObservabilityPipelineConfigProcessorsThrottleList Throttle { get; }
 ##### `AddEnvVarsInput`<sup>Optional</sup> <a name="AddEnvVarsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addEnvVarsInput"></a>
 
 ```csharp
-public object AddEnvVarsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddEnvVars[] AddEnvVarsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddEnvVars">ObservabilityPipelineConfigProcessorsAddEnvVars</a>[]
 
 ---
 
 ##### `AddFieldsInput`<sup>Optional</sup> <a name="AddFieldsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.addFieldsInput"></a>
 
 ```csharp
-public object AddFieldsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsAddFields[] AddFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsAddFields">ObservabilityPipelineConfigProcessorsAddFields</a>[]
 
 ---
 
 ##### `CustomProcessorInput`<sup>Optional</sup> <a name="CustomProcessorInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.customProcessorInput"></a>
 
 ```csharp
-public object CustomProcessorInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsCustomProcessor[] CustomProcessorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsCustomProcessor">ObservabilityPipelineConfigProcessorsCustomProcessor</a>[]
 
 ---
 
 ##### `DatadogTagsInput`<sup>Optional</sup> <a name="DatadogTagsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.datadogTagsInput"></a>
 
 ```csharp
-public object DatadogTagsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsDatadogTags[] DatadogTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags">ObservabilityPipelineConfigProcessorsDatadogTags</a>[]
 
 ---
 
 ##### `DedupeInput`<sup>Optional</sup> <a name="DedupeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.dedupeInput"></a>
 
 ```csharp
-public object DedupeInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsDedupe[] DedupeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDedupe">ObservabilityPipelineConfigProcessorsDedupe</a>[]
 
 ---
 
 ##### `EnrichmentTableInput`<sup>Optional</sup> <a name="EnrichmentTableInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.enrichmentTableInput"></a>
 
 ```csharp
-public object EnrichmentTableInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsEnrichmentTable[] EnrichmentTableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsEnrichmentTable">ObservabilityPipelineConfigProcessorsEnrichmentTable</a>[]
 
 ---
 
 ##### `FilterInput`<sup>Optional</sup> <a name="FilterInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.filterInput"></a>
 
 ```csharp
-public object FilterInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsFilter[] FilterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsFilter">ObservabilityPipelineConfigProcessorsFilter</a>[]
 
 ---
 
 ##### `GenerateDatadogMetricsInput`<sup>Optional</sup> <a name="GenerateDatadogMetricsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.generateDatadogMetricsInput"></a>
 
 ```csharp
-public object GenerateDatadogMetricsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics[] GenerateDatadogMetricsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics">ObservabilityPipelineConfigProcessorsGenerateDatadogMetrics</a>[]
 
 ---
 
 ##### `OcsfMapperInput`<sup>Optional</sup> <a name="OcsfMapperInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.ocsfMapperInput"></a>
 
 ```csharp
-public object OcsfMapperInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsOcsfMapper[] OcsfMapperInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOcsfMapper">ObservabilityPipelineConfigProcessorsOcsfMapper</a>[]
 
 ---
 
 ##### `ParseGrokInput`<sup>Optional</sup> <a name="ParseGrokInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.parseGrokInput"></a>
 
 ```csharp
-public object ParseGrokInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrok[] ParseGrokInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok">ObservabilityPipelineConfigProcessorsParseGrok</a>[]
 
 ---
 
 ##### `ParseJsonInput`<sup>Optional</sup> <a name="ParseJsonInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.parseJsonInput"></a>
 
 ```csharp
-public object ParseJsonInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseJson[] ParseJsonInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJson">ObservabilityPipelineConfigProcessorsParseJson</a>[]
 
 ---
 
 ##### `QuotaInput`<sup>Optional</sup> <a name="QuotaInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.quotaInput"></a>
 
 ```csharp
-public object QuotaInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuota[] QuotaInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota">ObservabilityPipelineConfigProcessorsQuota</a>[]
 
 ---
 
 ##### `ReduceInput`<sup>Optional</sup> <a name="ReduceInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.reduceInput"></a>
 
 ```csharp
-public object ReduceInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsReduce[] ReduceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce">ObservabilityPipelineConfigProcessorsReduce</a>[]
 
 ---
 
 ##### `RemoveFieldsInput`<sup>Optional</sup> <a name="RemoveFieldsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.removeFieldsInput"></a>
 
 ```csharp
-public object RemoveFieldsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRemoveFields[] RemoveFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFields">ObservabilityPipelineConfigProcessorsRemoveFields</a>[]
 
 ---
 
 ##### `RenameFieldsInput`<sup>Optional</sup> <a name="RenameFieldsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.renameFieldsInput"></a>
 
 ```csharp
-public object RenameFieldsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRenameFields[] RenameFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields">ObservabilityPipelineConfigProcessorsRenameFields</a>[]
 
 ---
 
 ##### `SampleInput`<sup>Optional</sup> <a name="SampleInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.sampleInput"></a>
 
 ```csharp
-public object SampleInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSample[] SampleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSample">ObservabilityPipelineConfigProcessorsSample</a>[]
 
 ---
 
 ##### `SensitiveDataScannerInput`<sup>Optional</sup> <a name="SensitiveDataScannerInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.sensitiveDataScannerInput"></a>
 
 ```csharp
-public object SensitiveDataScannerInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScanner[] SensitiveDataScannerInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner">ObservabilityPipelineConfigProcessorsSensitiveDataScanner</a>[]
 
 ---
 
 ##### `ThrottleInput`<sup>Optional</sup> <a name="ThrottleInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.throttleInput"></a>
 
 ```csharp
-public object ThrottleInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsThrottle[] ThrottleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottle">ObservabilityPipelineConfigProcessorsThrottle</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessors InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessors">ObservabilityPipelineConfigProcessors</a>
 
 ---
 
@@ -39526,7 +39526,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok">ObservabilityPipelineConfigProcessorsParseGrok</a>[]</code> | *No description.* |
 
 ---
 
@@ -39557,10 +39557,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrok[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok">ObservabilityPipelineConfigProcessorsParseGrok</a>[]
 
 ---
 
@@ -39792,12 +39792,12 @@ Returns a reversible string representation.
 ##### `PutRules` <a name="PutRules" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.putRules"></a>
 
 ```csharp
-private void PutRules(object Value)
+private void PutRules(IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRules[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.putRules.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules">ObservabilityPipelineConfigProcessorsParseGrokRules</a>[]
 
 ---
 
@@ -39821,16 +39821,16 @@ private void ResetRules()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.rules">Rules</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesList">ObservabilityPipelineConfigProcessorsParseGrokRulesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.disableLibraryRulesInput">DisableLibraryRulesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.disableLibraryRulesInput">DisableLibraryRulesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.rulesInput">RulesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.disableLibraryRules">DisableLibraryRules</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.rulesInput">RulesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules">ObservabilityPipelineConfigProcessorsParseGrokRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.disableLibraryRules">DisableLibraryRules</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok">ObservabilityPipelineConfigProcessorsParseGrok</a></code> | *No description.* |
 
 ---
 
@@ -39871,10 +39871,10 @@ public ObservabilityPipelineConfigProcessorsParseGrokRulesList Rules { get; }
 ##### `DisableLibraryRulesInput`<sup>Optional</sup> <a name="DisableLibraryRulesInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.disableLibraryRulesInput"></a>
 
 ```csharp
-public object DisableLibraryRulesInput { get; }
+public bool|IResolvable DisableLibraryRulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -39911,20 +39911,20 @@ public string[] InputsInput { get; }
 ##### `RulesInput`<sup>Optional</sup> <a name="RulesInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.rulesInput"></a>
 
 ```csharp
-public object RulesInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRules[] RulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules">ObservabilityPipelineConfigProcessorsParseGrokRules</a>[]
 
 ---
 
 ##### `DisableLibraryRules`<sup>Required</sup> <a name="DisableLibraryRules" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.disableLibraryRules"></a>
 
 ```csharp
-public object DisableLibraryRules { get; }
+public bool|IResolvable DisableLibraryRules { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -39961,10 +39961,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrok InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrok">ObservabilityPipelineConfigProcessorsParseGrok</a>
 
 ---
 
@@ -40090,7 +40090,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules">ObservabilityPipelineConfigProcessorsParseGrokRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -40121,10 +40121,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRules[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules">ObservabilityPipelineConfigProcessorsParseGrokRules</a>[]
 
 ---
 
@@ -40250,7 +40250,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -40281,10 +40281,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule</a>[]
 
 ---
 
@@ -40521,7 +40521,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleOutputReference.property.ruleInput">RuleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleOutputReference.property.rule">Rule</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule</a></code> | *No description.* |
 
 ---
 
@@ -40592,10 +40592,10 @@ public string Rule { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule</a>
 
 ---
 
@@ -40828,24 +40828,24 @@ Returns a reversible string representation.
 ##### `PutMatchRule` <a name="PutMatchRule" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.putMatchRule"></a>
 
 ```csharp
-private void PutMatchRule(object Value)
+private void PutMatchRule(IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.putMatchRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule</a>[]
 
 ---
 
 ##### `PutSupportRule` <a name="PutSupportRule" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.putSupportRule"></a>
 
 ```csharp
-private void PutSupportRule(object Value)
+private void PutSupportRule(IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.putSupportRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule</a>[]
 
 ---
 
@@ -40870,11 +40870,11 @@ private void ResetSupportRule()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.matchRule">MatchRule</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleList">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.supportRule">SupportRule</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleList">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.matchRuleInput">MatchRuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.matchRuleInput">MatchRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.sourceInput">SourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.supportRuleInput">SupportRuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.supportRuleInput">SupportRuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.source">Source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules">ObservabilityPipelineConfigProcessorsParseGrokRules</a></code> | *No description.* |
 
 ---
 
@@ -40925,10 +40925,10 @@ public ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleList Suppor
 ##### `MatchRuleInput`<sup>Optional</sup> <a name="MatchRuleInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.matchRuleInput"></a>
 
 ```csharp
-public object MatchRuleInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule[] MatchRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule">ObservabilityPipelineConfigProcessorsParseGrokRulesMatchRule</a>[]
 
 ---
 
@@ -40945,10 +40945,10 @@ public string SourceInput { get; }
 ##### `SupportRuleInput`<sup>Optional</sup> <a name="SupportRuleInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.supportRuleInput"></a>
 
 ```csharp
-public object SupportRuleInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule[] SupportRuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule</a>[]
 
 ---
 
@@ -40965,10 +40965,10 @@ public string Source { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRules InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRules">ObservabilityPipelineConfigProcessorsParseGrokRules</a>
 
 ---
 
@@ -41094,7 +41094,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -41125,10 +41125,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule</a>[]
 
 ---
 
@@ -41365,7 +41365,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference.property.ruleInput">RuleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference.property.rule">Rule</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule</a></code> | *No description.* |
 
 ---
 
@@ -41436,10 +41436,10 @@ public string Rule { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule">ObservabilityPipelineConfigProcessorsParseGrokRulesSupportRule</a>
 
 ---
 
@@ -41565,7 +41565,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJson">ObservabilityPipelineConfigProcessorsParseJson</a>[]</code> | *No description.* |
 
 ---
 
@@ -41596,10 +41596,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseJson[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJson">ObservabilityPipelineConfigProcessorsParseJson</a>[]
 
 ---
 
@@ -41840,7 +41840,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJson">ObservabilityPipelineConfigProcessorsParseJson</a></code> | *No description.* |
 
 ---
 
@@ -41951,10 +41951,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJsonOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsParseJson InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsParseJson">ObservabilityPipelineConfigProcessorsParseJson</a>
 
 ---
 
@@ -42173,7 +42173,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference.property.limitInput">LimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference.property.enforce">Enforce</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference.property.limit">Limit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimit">ObservabilityPipelineConfigProcessorsQuotaLimit</a></code> | *No description.* |
 
 ---
 
@@ -42244,10 +42244,10 @@ public double Limit { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaLimit InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimit">ObservabilityPipelineConfigProcessorsQuotaLimit</a>
 
 ---
 
@@ -42373,7 +42373,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota">ObservabilityPipelineConfigProcessorsQuota</a>[]</code> | *No description.* |
 
 ---
 
@@ -42404,10 +42404,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuota[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota">ObservabilityPipelineConfigProcessorsQuota</a>[]
 
 ---
 
@@ -42654,12 +42654,12 @@ private void PutLimit(ObservabilityPipelineConfigProcessorsQuotaLimit Value)
 ##### `PutOverrides` <a name="PutOverrides" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.putOverrides"></a>
 
 ```csharp
-private void PutOverrides(object Value)
+private void PutOverrides(IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverrides[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.putOverrides.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides">ObservabilityPipelineConfigProcessorsQuotaOverrides</a>[]
 
 ---
 
@@ -42696,25 +42696,25 @@ private void ResetPartitionFields()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.limit">Limit</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference">ObservabilityPipelineConfigProcessorsQuotaLimitOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.overrides">Overrides</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesList">ObservabilityPipelineConfigProcessorsQuotaOverridesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.dropEventsInput">DropEventsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.dropEventsInput">DropEventsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.ignoreWhenMissingPartitionsInput">IgnoreWhenMissingPartitionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.ignoreWhenMissingPartitionsInput">IgnoreWhenMissingPartitionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.limitInput">LimitInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.limitInput">LimitInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimit">ObservabilityPipelineConfigProcessorsQuotaLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.overflowActionInput">OverflowActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.overridesInput">OverridesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.overridesInput">OverridesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides">ObservabilityPipelineConfigProcessorsQuotaOverrides</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.partitionFieldsInput">PartitionFieldsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.dropEvents">DropEvents</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.dropEvents">DropEvents</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.ignoreWhenMissingPartitions">IgnoreWhenMissingPartitions</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.ignoreWhenMissingPartitions">IgnoreWhenMissingPartitions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.overflowAction">OverflowAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.partitionFields">PartitionFields</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota">ObservabilityPipelineConfigProcessorsQuota</a></code> | *No description.* |
 
 ---
 
@@ -42765,10 +42765,10 @@ public ObservabilityPipelineConfigProcessorsQuotaOverridesList Overrides { get; 
 ##### `DropEventsInput`<sup>Optional</sup> <a name="DropEventsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.dropEventsInput"></a>
 
 ```csharp
-public object DropEventsInput { get; }
+public bool|IResolvable DropEventsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -42785,10 +42785,10 @@ public string IdInput { get; }
 ##### `IgnoreWhenMissingPartitionsInput`<sup>Optional</sup> <a name="IgnoreWhenMissingPartitionsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.ignoreWhenMissingPartitionsInput"></a>
 
 ```csharp
-public object IgnoreWhenMissingPartitionsInput { get; }
+public bool|IResolvable IgnoreWhenMissingPartitionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -42815,10 +42815,10 @@ public string[] InputsInput { get; }
 ##### `LimitInput`<sup>Optional</sup> <a name="LimitInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.limitInput"></a>
 
 ```csharp
-public object LimitInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaLimit LimitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaLimit">ObservabilityPipelineConfigProcessorsQuotaLimit</a>
 
 ---
 
@@ -42845,10 +42845,10 @@ public string OverflowActionInput { get; }
 ##### `OverridesInput`<sup>Optional</sup> <a name="OverridesInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.overridesInput"></a>
 
 ```csharp
-public object OverridesInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverrides[] OverridesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides">ObservabilityPipelineConfigProcessorsQuotaOverrides</a>[]
 
 ---
 
@@ -42865,10 +42865,10 @@ public string[] PartitionFieldsInput { get; }
 ##### `DropEvents`<sup>Required</sup> <a name="DropEvents" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.dropEvents"></a>
 
 ```csharp
-public object DropEvents { get; }
+public bool|IResolvable DropEvents { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -42885,10 +42885,10 @@ public string Id { get; }
 ##### `IgnoreWhenMissingPartitions`<sup>Required</sup> <a name="IgnoreWhenMissingPartitions" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.ignoreWhenMissingPartitions"></a>
 
 ```csharp
-public object IgnoreWhenMissingPartitions { get; }
+public bool|IResolvable IgnoreWhenMissingPartitions { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -42945,10 +42945,10 @@ public string[] PartitionFields { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuota InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuota">ObservabilityPipelineConfigProcessorsQuota</a>
 
 ---
 
@@ -43074,7 +43074,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesField">ObservabilityPipelineConfigProcessorsQuotaOverridesField</a>[]</code> | *No description.* |
 
 ---
 
@@ -43105,10 +43105,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverridesField[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesField">ObservabilityPipelineConfigProcessorsQuotaOverridesField</a>[]
 
 ---
 
@@ -43345,7 +43345,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesField">ObservabilityPipelineConfigProcessorsQuotaOverridesField</a></code> | *No description.* |
 
 ---
 
@@ -43416,10 +43416,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverridesField InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesField">ObservabilityPipelineConfigProcessorsQuotaOverridesField</a>
 
 ---
 
@@ -43638,7 +43638,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimitOutputReference.property.limitInput">LimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimitOutputReference.property.enforce">Enforce</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimitOutputReference.property.limit">Limit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimitOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimitOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimit">ObservabilityPipelineConfigProcessorsQuotaOverridesLimit</a></code> | *No description.* |
 
 ---
 
@@ -43709,10 +43709,10 @@ public double Limit { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimitOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverridesLimit InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimit">ObservabilityPipelineConfigProcessorsQuotaOverridesLimit</a>
 
 ---
 
@@ -43838,7 +43838,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides">ObservabilityPipelineConfigProcessorsQuotaOverrides</a>[]</code> | *No description.* |
 
 ---
 
@@ -43869,10 +43869,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverrides[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides">ObservabilityPipelineConfigProcessorsQuotaOverrides</a>[]
 
 ---
 
@@ -44104,12 +44104,12 @@ Returns a reversible string representation.
 ##### `PutField` <a name="PutField" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.putField"></a>
 
 ```csharp
-private void PutField(object Value)
+private void PutField(IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverridesField[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.putField.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesField">ObservabilityPipelineConfigProcessorsQuotaOverridesField</a>[]
 
 ---
 
@@ -44140,9 +44140,9 @@ private void ResetField()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.field">Field</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesFieldList">ObservabilityPipelineConfigProcessorsQuotaOverridesFieldList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.limit">Limit</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimitOutputReference">ObservabilityPipelineConfigProcessorsQuotaOverridesLimitOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.fieldInput">FieldInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.limitInput">LimitInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.fieldInput">FieldInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesField">ObservabilityPipelineConfigProcessorsQuotaOverridesField</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.limitInput">LimitInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimit">ObservabilityPipelineConfigProcessorsQuotaOverridesLimit</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides">ObservabilityPipelineConfigProcessorsQuotaOverrides</a></code> | *No description.* |
 
 ---
 
@@ -44193,30 +44193,30 @@ public ObservabilityPipelineConfigProcessorsQuotaOverridesLimitOutputReference L
 ##### `FieldInput`<sup>Optional</sup> <a name="FieldInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.fieldInput"></a>
 
 ```csharp
-public object FieldInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverridesField[] FieldInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesField">ObservabilityPipelineConfigProcessorsQuotaOverridesField</a>[]
 
 ---
 
 ##### `LimitInput`<sup>Optional</sup> <a name="LimitInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.limitInput"></a>
 
 ```csharp
-public object LimitInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverridesLimit LimitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesLimit">ObservabilityPipelineConfigProcessorsQuotaOverridesLimit</a>
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverridesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsQuotaOverrides InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsQuotaOverrides">ObservabilityPipelineConfigProcessorsQuotaOverrides</a>
 
 ---
 
@@ -44342,7 +44342,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce">ObservabilityPipelineConfigProcessorsReduce</a>[]</code> | *No description.* |
 
 ---
 
@@ -44373,10 +44373,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsReduce[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce">ObservabilityPipelineConfigProcessorsReduce</a>[]
 
 ---
 
@@ -44502,7 +44502,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategies">ObservabilityPipelineConfigProcessorsReduceMergeStrategies</a>[]</code> | *No description.* |
 
 ---
 
@@ -44533,10 +44533,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsReduceMergeStrategies[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategies">ObservabilityPipelineConfigProcessorsReduceMergeStrategies</a>[]
 
 ---
 
@@ -44773,7 +44773,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference.property.strategyInput">StrategyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference.property.strategy">Strategy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategies">ObservabilityPipelineConfigProcessorsReduceMergeStrategies</a></code> | *No description.* |
 
 ---
 
@@ -44844,10 +44844,10 @@ public string Strategy { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategiesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsReduceMergeStrategies InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategies">ObservabilityPipelineConfigProcessorsReduceMergeStrategies</a>
 
 ---
 
@@ -45078,12 +45078,12 @@ Returns a reversible string representation.
 ##### `PutMergeStrategies` <a name="PutMergeStrategies" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.putMergeStrategies"></a>
 
 ```csharp
-private void PutMergeStrategies(object Value)
+private void PutMergeStrategies(IResolvable|ObservabilityPipelineConfigProcessorsReduceMergeStrategies[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.putMergeStrategies.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategies">ObservabilityPipelineConfigProcessorsReduceMergeStrategies</a>[]
 
 ---
 
@@ -45105,12 +45105,12 @@ private void ResetMergeStrategies()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.mergeStrategiesInput">MergeStrategiesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.mergeStrategiesInput">MergeStrategiesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategies">ObservabilityPipelineConfigProcessorsReduceMergeStrategies</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.groupBy">GroupBy</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce">ObservabilityPipelineConfigProcessorsReduce</a></code> | *No description.* |
 
 ---
 
@@ -45191,10 +45191,10 @@ public string[] InputsInput { get; }
 ##### `MergeStrategiesInput`<sup>Optional</sup> <a name="MergeStrategiesInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.mergeStrategiesInput"></a>
 
 ```csharp
-public object MergeStrategiesInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsReduceMergeStrategies[] MergeStrategiesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceMergeStrategies">ObservabilityPipelineConfigProcessorsReduceMergeStrategies</a>[]
 
 ---
 
@@ -45241,10 +45241,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsReduce InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsReduce">ObservabilityPipelineConfigProcessorsReduce</a>
 
 ---
 
@@ -45370,7 +45370,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFields">ObservabilityPipelineConfigProcessorsRemoveFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -45401,10 +45401,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRemoveFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFields">ObservabilityPipelineConfigProcessorsRemoveFields</a>[]
 
 ---
 
@@ -45645,7 +45645,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFields">ObservabilityPipelineConfigProcessorsRemoveFields</a></code> | *No description.* |
 
 ---
 
@@ -45756,10 +45756,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRemoveFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRemoveFields">ObservabilityPipelineConfigProcessorsRemoveFields</a>
 
 ---
 
@@ -45885,7 +45885,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField">ObservabilityPipelineConfigProcessorsRenameFieldsField</a>[]</code> | *No description.* |
 
 ---
 
@@ -45916,10 +45916,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRenameFieldsField[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField">ObservabilityPipelineConfigProcessorsRenameFieldsField</a>[]
 
 ---
 
@@ -46153,12 +46153,12 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.destinationInput">DestinationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.preserveSourceInput">PreserveSourceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.preserveSourceInput">PreserveSourceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.sourceInput">SourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.destination">Destination</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.preserveSource">PreserveSource</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.preserveSource">PreserveSource</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.source">Source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField">ObservabilityPipelineConfigProcessorsRenameFieldsField</a></code> | *No description.* |
 
 ---
 
@@ -46199,10 +46199,10 @@ public string DestinationInput { get; }
 ##### `PreserveSourceInput`<sup>Optional</sup> <a name="PreserveSourceInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.preserveSourceInput"></a>
 
 ```csharp
-public object PreserveSourceInput { get; }
+public bool|IResolvable PreserveSourceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -46229,10 +46229,10 @@ public string Destination { get; }
 ##### `PreserveSource`<sup>Required</sup> <a name="PreserveSource" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.preserveSource"></a>
 
 ```csharp
-public object PreserveSource { get; }
+public bool|IResolvable PreserveSource { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -46249,10 +46249,10 @@ public string Source { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRenameFieldsField InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField">ObservabilityPipelineConfigProcessorsRenameFieldsField</a>
 
 ---
 
@@ -46378,7 +46378,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields">ObservabilityPipelineConfigProcessorsRenameFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -46409,10 +46409,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRenameFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields">ObservabilityPipelineConfigProcessorsRenameFields</a>[]
 
 ---
 
@@ -46643,12 +46643,12 @@ Returns a reversible string representation.
 ##### `PutField` <a name="PutField" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.putField"></a>
 
 ```csharp
-private void PutField(object Value)
+private void PutField(IResolvable|ObservabilityPipelineConfigProcessorsRenameFieldsField[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.putField.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField">ObservabilityPipelineConfigProcessorsRenameFieldsField</a>[]
 
 ---
 
@@ -46666,14 +46666,14 @@ private void ResetField()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.field">Field</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsFieldList">ObservabilityPipelineConfigProcessorsRenameFieldsFieldList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.fieldInput">FieldInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.fieldInput">FieldInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField">ObservabilityPipelineConfigProcessorsRenameFieldsField</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields">ObservabilityPipelineConfigProcessorsRenameFields</a></code> | *No description.* |
 
 ---
 
@@ -46714,10 +46714,10 @@ public ObservabilityPipelineConfigProcessorsRenameFieldsFieldList Field { get; }
 ##### `FieldInput`<sup>Optional</sup> <a name="FieldInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.fieldInput"></a>
 
 ```csharp
-public object FieldInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRenameFieldsField[] FieldInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsField">ObservabilityPipelineConfigProcessorsRenameFieldsField</a>[]
 
 ---
 
@@ -46784,10 +46784,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsRenameFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsRenameFields">ObservabilityPipelineConfigProcessorsRenameFields</a>
 
 ---
 
@@ -46913,7 +46913,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSample">ObservabilityPipelineConfigProcessorsSample</a>[]</code> | *No description.* |
 
 ---
 
@@ -46944,10 +46944,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSample[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSample">ObservabilityPipelineConfigProcessorsSample</a>[]
 
 ---
 
@@ -47204,7 +47204,7 @@ private void ResetRate()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleOutputReference.property.percentage">Percentage</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleOutputReference.property.rate">Rate</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSample">ObservabilityPipelineConfigProcessorsSample</a></code> | *No description.* |
 
 ---
 
@@ -47335,10 +47335,10 @@ public double Rate { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSampleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSample InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSample">ObservabilityPipelineConfigProcessorsSample</a>
 
 ---
 
@@ -47464,7 +47464,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner">ObservabilityPipelineConfigProcessorsSensitiveDataScanner</a>[]</code> | *No description.* |
 
 ---
 
@@ -47495,10 +47495,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScanner[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner">ObservabilityPipelineConfigProcessorsSensitiveDataScanner</a>[]
 
 ---
 
@@ -47729,12 +47729,12 @@ Returns a reversible string representation.
 ##### `PutRules` <a name="PutRules" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.putRules"></a>
 
 ```csharp
-private void PutRules(object Value)
+private void PutRules(IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.putRules.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules</a>[]
 
 ---
 
@@ -47755,11 +47755,11 @@ private void ResetRules()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.includeInput">IncludeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.inputsInput">InputsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.rulesInput">RulesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.rulesInput">RulesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.include">Include</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner">ObservabilityPipelineConfigProcessorsSensitiveDataScanner</a></code> | *No description.* |
 
 ---
 
@@ -47830,10 +47830,10 @@ public string[] InputsInput { get; }
 ##### `RulesInput`<sup>Optional</sup> <a name="RulesInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.rulesInput"></a>
 
 ```csharp
-public object RulesInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules[] RulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules</a>[]
 
 ---
 
@@ -47870,10 +47870,10 @@ public string[] Inputs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScanner InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScanner">ObservabilityPipelineConfigProcessorsSensitiveDataScanner</a>
 
 ---
 
@@ -48106,7 +48106,7 @@ private void ResetProximity()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptionsOutputReference.property.proximityInput">ProximityInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptionsOutputReference.property.keywords">Keywords</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptionsOutputReference.property.proximity">Proximity</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions</a></code> | *No description.* |
 
 ---
 
@@ -48177,10 +48177,10 @@ public double Proximity { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions</a>
 
 ---
 
@@ -48306,7 +48306,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -48337,10 +48337,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules</a>[]
 
 ---
 
@@ -48555,7 +48555,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHashOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHashOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHashOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHashOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash</a></code> | *No description.* |
 
 ---
 
@@ -48586,10 +48586,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHashOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash</a>
 
 ---
 
@@ -48860,10 +48860,10 @@ private void ResetRedact()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.hash">Hash</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHashOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHashOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.partialRedact">PartialRedact</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedactOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedactOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.redact">Redact</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedactOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedactOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.hashInput">HashInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.partialRedactInput">PartialRedactInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.redactInput">RedactInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.hashInput">HashInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.partialRedactInput">PartialRedactInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.redactInput">RedactInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch</a></code> | *No description.* |
 
 ---
 
@@ -48924,40 +48924,40 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchReda
 ##### `HashInput`<sup>Optional</sup> <a name="HashInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.hashInput"></a>
 
 ```csharp
-public object HashInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash HashInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash</a>
 
 ---
 
 ##### `PartialRedactInput`<sup>Optional</sup> <a name="PartialRedactInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.partialRedactInput"></a>
 
 ```csharp
-public object PartialRedactInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact PartialRedactInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact</a>
 
 ---
 
 ##### `RedactInput`<sup>Optional</sup> <a name="RedactInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.redactInput"></a>
 
 ```csharp
-public object RedactInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact RedactInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact</a>
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch</a>
 
 ---
 
@@ -49190,7 +49190,7 @@ private void ResetDirection()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedactOutputReference.property.directionInput">DirectionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedactOutputReference.property.characters">Characters</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedactOutputReference.property.direction">Direction</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedactOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedactOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact</a></code> | *No description.* |
 
 ---
 
@@ -49261,10 +49261,10 @@ public string Direction { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedactOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchPartialRedact</a>
 
 ---
 
@@ -49488,7 +49488,7 @@ private void ResetReplace()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedactOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedactOutputReference.property.replaceInput">ReplaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedactOutputReference.property.replace">Replace</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedactOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedactOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact</a></code> | *No description.* |
 
 ---
 
@@ -49539,10 +49539,10 @@ public string Replace { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedactOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRedact</a>
 
 ---
 
@@ -49873,15 +49873,15 @@ private void ResetTags()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.onMatch">OnMatch</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.pattern">Pattern</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.keywordOptionsInput">KeywordOptionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.keywordOptionsInput">KeywordOptionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.onMatchInput">OnMatchInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.patternInput">PatternInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.scopeInput">ScopeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.onMatchInput">OnMatchInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.patternInput">PatternInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.scopeInput">ScopeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules</a></code> | *No description.* |
 
 ---
 
@@ -49952,10 +49952,10 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutput
 ##### `KeywordOptionsInput`<sup>Optional</sup> <a name="KeywordOptionsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.keywordOptionsInput"></a>
 
 ```csharp
-public object KeywordOptionsInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions KeywordOptionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesKeywordOptions</a>
 
 ---
 
@@ -49972,30 +49972,30 @@ public string NameInput { get; }
 ##### `OnMatchInput`<sup>Optional</sup> <a name="OnMatchInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.onMatchInput"></a>
 
 ```csharp
-public object OnMatchInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch OnMatchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch</a>
 
 ---
 
 ##### `PatternInput`<sup>Optional</sup> <a name="PatternInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.patternInput"></a>
 
 ```csharp
-public object PatternInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern PatternInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern</a>
 
 ---
 
 ##### `ScopeInput`<sup>Optional</sup> <a name="ScopeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.scopeInput"></a>
 
 ```csharp
-public object ScopeInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope ScopeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope</a>
 
 ---
 
@@ -50032,10 +50032,10 @@ public string[] Tags { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRules</a>
 
 ---
 
@@ -50259,7 +50259,7 @@ private void ResetRule()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustomOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustomOutputReference.property.ruleInput">RuleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustomOutputReference.property.rule">Rule</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustomOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustomOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom</a></code> | *No description.* |
 
 ---
 
@@ -50310,10 +50310,10 @@ public string Rule { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustomOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom</a>
 
 ---
 
@@ -50543,10 +50543,10 @@ private void ResetUseRecommendedKeywords()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.useRecommendedKeywordsInput">UseRecommendedKeywordsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.useRecommendedKeywordsInput">UseRecommendedKeywordsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.useRecommendedKeywords">UseRecommendedKeywords</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.useRecommendedKeywords">UseRecommendedKeywords</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary</a></code> | *No description.* |
 
 ---
 
@@ -50587,10 +50587,10 @@ public string IdInput { get; }
 ##### `UseRecommendedKeywordsInput`<sup>Optional</sup> <a name="UseRecommendedKeywordsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.useRecommendedKeywordsInput"></a>
 
 ```csharp
-public object UseRecommendedKeywordsInput { get; }
+public bool|IResolvable UseRecommendedKeywordsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -50607,20 +50607,20 @@ public string Id { get; }
 ##### `UseRecommendedKeywords`<sup>Required</sup> <a name="UseRecommendedKeywords" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.useRecommendedKeywords"></a>
 
 ```csharp
-public object UseRecommendedKeywords { get; }
+public bool|IResolvable UseRecommendedKeywords { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary</a>
 
 ---
 
@@ -50877,9 +50877,9 @@ private void ResetLibrary()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.custom">Custom</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustomOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustomOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.library">Library</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibraryOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.customInput">CustomInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.libraryInput">LibraryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.customInput">CustomInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.libraryInput">LibraryInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern</a></code> | *No description.* |
 
 ---
 
@@ -50930,30 +50930,30 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibr
 ##### `CustomInput`<sup>Optional</sup> <a name="CustomInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.customInput"></a>
 
 ```csharp
-public object CustomInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom CustomInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCustom</a>
 
 ---
 
 ##### `LibraryInput`<sup>Optional</sup> <a name="LibraryInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.libraryInput"></a>
 
 ```csharp
-public object LibraryInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary LibraryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLibrary</a>
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern</a>
 
 ---
 
@@ -51177,7 +51177,7 @@ private void ResetFields()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExcludeOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExcludeOutputReference.property.fieldsInput">FieldsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExcludeOutputReference.property.fields">Fields</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExcludeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExcludeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude</a></code> | *No description.* |
 
 ---
 
@@ -51228,10 +51228,10 @@ public string[] Fields { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExcludeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude</a>
 
 ---
 
@@ -51455,7 +51455,7 @@ private void ResetFields()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeIncludeOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeIncludeOutputReference.property.fieldsInput">FieldsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeIncludeOutputReference.property.fields">Fields</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeIncludeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeIncludeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude</a></code> | *No description.* |
 
 ---
 
@@ -51506,10 +51506,10 @@ public string[] Fields { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeIncludeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude</a>
 
 ---
 
@@ -51773,11 +51773,11 @@ private void ResetInclude()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.exclude">Exclude</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExcludeOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExcludeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.include">Include</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeIncludeOutputReference">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeIncludeOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.allInput">AllInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.excludeInput">ExcludeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.includeInput">IncludeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.all">All</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.allInput">AllInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.excludeInput">ExcludeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.includeInput">IncludeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope</a></code> | *No description.* |
 
 ---
 
@@ -51828,50 +51828,50 @@ public ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclud
 ##### `AllInput`<sup>Optional</sup> <a name="AllInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.allInput"></a>
 
 ```csharp
-public object AllInput { get; }
+public bool|IResolvable AllInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ExcludeInput`<sup>Optional</sup> <a name="ExcludeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.excludeInput"></a>
 
 ```csharp
-public object ExcludeInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude ExcludeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExclude</a>
 
 ---
 
 ##### `IncludeInput`<sup>Optional</sup> <a name="IncludeInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.includeInput"></a>
 
 ```csharp
-public object IncludeInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude IncludeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeInclude</a>
 
 ---
 
 ##### `All`<sup>Required</sup> <a name="All" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.all"></a>
 
 ```csharp
-public object All { get; }
+public bool|IResolvable All { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope">ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope</a>
 
 ---
 
@@ -51997,7 +51997,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottle">ObservabilityPipelineConfigProcessorsThrottle</a>[]</code> | *No description.* |
 
 ---
 
@@ -52028,10 +52028,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsThrottle[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottle">ObservabilityPipelineConfigProcessorsThrottle</a>[]
 
 ---
 
@@ -52283,7 +52283,7 @@ private void ResetGroupBy()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleOutputReference.property.inputs">Inputs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleOutputReference.property.threshold">Threshold</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleOutputReference.property.window">Window</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottle">ObservabilityPipelineConfigProcessorsThrottle</a></code> | *No description.* |
 
 ---
 
@@ -52434,10 +52434,10 @@ public double Window { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorsThrottle InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsThrottle">ObservabilityPipelineConfigProcessorsThrottle</a>
 
 ---
 
@@ -52679,7 +52679,7 @@ private void ResetSessionName()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuthOutputReference.property.assumeRole">AssumeRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuthOutputReference.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuthOutputReference.property.sessionName">SessionName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth">ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth</a></code> | *No description.* |
 
 ---
 
@@ -52770,10 +52770,10 @@ public string SessionName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuthOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth">ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth</a>
 
 ---
 
@@ -52899,7 +52899,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehose">ObservabilityPipelineConfigSourcesAmazonDataFirehose</a>[]</code> | *No description.* |
 
 ---
 
@@ -52930,10 +52930,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehose[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehose">ObservabilityPipelineConfigSourcesAmazonDataFirehose</a>[]
 
 ---
 
@@ -53208,11 +53208,11 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuthOutputReference">ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference">ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.authInput">AuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth">ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls">ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehose">ObservabilityPipelineConfigSourcesAmazonDataFirehose</a></code> | *No description.* |
 
 ---
 
@@ -53263,10 +53263,10 @@ public ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference Tl
 ##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.authInput"></a>
 
 ```csharp
-public object AuthInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth AuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth">ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth</a>
 
 ---
 
@@ -53283,10 +53283,10 @@ public string IdInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls">ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls</a>
 
 ---
 
@@ -53303,10 +53303,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehose InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehose">ObservabilityPipelineConfigSourcesAmazonDataFirehose</a>
 
 ---
 
@@ -53548,7 +53548,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls">ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls</a></code> | *No description.* |
 
 ---
 
@@ -53639,10 +53639,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls">ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls</a>
 
 ---
 
@@ -53884,7 +53884,7 @@ private void ResetSessionName()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference.property.assumeRole">AssumeRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference.property.sessionName">SessionName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Auth">ObservabilityPipelineConfigSourcesAmazonS3Auth</a></code> | *No description.* |
 
 ---
 
@@ -53975,10 +53975,10 @@ public string SessionName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonS3Auth InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Auth">ObservabilityPipelineConfigSourcesAmazonS3Auth</a>
 
 ---
 
@@ -54104,7 +54104,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3List.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3List.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3List.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3List.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3">ObservabilityPipelineConfigSourcesAmazonS3</a>[]</code> | *No description.* |
 
 ---
 
@@ -54135,10 +54135,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3List.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonS3[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3">ObservabilityPipelineConfigSourcesAmazonS3</a>[]
 
 ---
 
@@ -54413,13 +54413,13 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference">ObservabilityPipelineConfigSourcesAmazonS3AuthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3TlsOutputReference">ObservabilityPipelineConfigSourcesAmazonS3TlsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.authInput">AuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Auth">ObservabilityPipelineConfigSourcesAmazonS3Auth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Tls">ObservabilityPipelineConfigSourcesAmazonS3Tls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3">ObservabilityPipelineConfigSourcesAmazonS3</a></code> | *No description.* |
 
 ---
 
@@ -54470,10 +54470,10 @@ public ObservabilityPipelineConfigSourcesAmazonS3TlsOutputReference Tls { get; }
 ##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.authInput"></a>
 
 ```csharp
-public object AuthInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonS3Auth AuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Auth">ObservabilityPipelineConfigSourcesAmazonS3Auth</a>
 
 ---
 
@@ -54500,10 +54500,10 @@ public string RegionInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonS3Tls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Tls">ObservabilityPipelineConfigSourcesAmazonS3Tls</a>
 
 ---
 
@@ -54530,10 +54530,10 @@ public string Region { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3OutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonS3 InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3">ObservabilityPipelineConfigSourcesAmazonS3</a>
 
 ---
 
@@ -54775,7 +54775,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3TlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3TlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3TlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3TlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3TlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Tls">ObservabilityPipelineConfigSourcesAmazonS3Tls</a></code> | *No description.* |
 
 ---
 
@@ -54866,10 +54866,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3TlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonS3Tls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3Tls">ObservabilityPipelineConfigSourcesAmazonS3Tls</a>
 
 ---
 
@@ -54995,7 +54995,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgent">ObservabilityPipelineConfigSourcesDatadogAgent</a>[]</code> | *No description.* |
 
 ---
 
@@ -55026,10 +55026,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesDatadogAgent[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgent">ObservabilityPipelineConfigSourcesDatadogAgent</a>[]
 
 ---
 
@@ -55284,9 +55284,9 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference">ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTls">ObservabilityPipelineConfigSourcesDatadogAgentTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgent">ObservabilityPipelineConfigSourcesDatadogAgent</a></code> | *No description.* |
 
 ---
 
@@ -55337,10 +55337,10 @@ public string IdInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesDatadogAgentTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTls">ObservabilityPipelineConfigSourcesDatadogAgentTls</a>
 
 ---
 
@@ -55357,10 +55357,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesDatadogAgent InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgent">ObservabilityPipelineConfigSourcesDatadogAgent</a>
 
 ---
 
@@ -55602,7 +55602,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTls">ObservabilityPipelineConfigSourcesDatadogAgentTls</a></code> | *No description.* |
 
 ---
 
@@ -55693,10 +55693,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesDatadogAgentTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgentTls">ObservabilityPipelineConfigSourcesDatadogAgentTls</a>
 
 ---
 
@@ -55822,7 +55822,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBit">ObservabilityPipelineConfigSourcesFluentBit</a>[]</code> | *No description.* |
 
 ---
 
@@ -55853,10 +55853,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentBit[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBit">ObservabilityPipelineConfigSourcesFluentBit</a>[]
 
 ---
 
@@ -56111,9 +56111,9 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTlsOutputReference">ObservabilityPipelineConfigSourcesFluentBitTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTls">ObservabilityPipelineConfigSourcesFluentBitTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBit">ObservabilityPipelineConfigSourcesFluentBit</a></code> | *No description.* |
 
 ---
 
@@ -56164,10 +56164,10 @@ public string IdInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentBitTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTls">ObservabilityPipelineConfigSourcesFluentBitTls</a>
 
 ---
 
@@ -56184,10 +56184,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentBit InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBit">ObservabilityPipelineConfigSourcesFluentBit</a>
 
 ---
 
@@ -56429,7 +56429,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTls">ObservabilityPipelineConfigSourcesFluentBitTls</a></code> | *No description.* |
 
 ---
 
@@ -56520,10 +56520,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentBitTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBitTls">ObservabilityPipelineConfigSourcesFluentBitTls</a>
 
 ---
 
@@ -56649,7 +56649,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentd">ObservabilityPipelineConfigSourcesFluentd</a>[]</code> | *No description.* |
 
 ---
 
@@ -56680,10 +56680,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentd[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentd">ObservabilityPipelineConfigSourcesFluentd</a>[]
 
 ---
 
@@ -56938,9 +56938,9 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTlsOutputReference">ObservabilityPipelineConfigSourcesFluentdTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTls">ObservabilityPipelineConfigSourcesFluentdTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentd">ObservabilityPipelineConfigSourcesFluentd</a></code> | *No description.* |
 
 ---
 
@@ -56991,10 +56991,10 @@ public string IdInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentdTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTls">ObservabilityPipelineConfigSourcesFluentdTls</a>
 
 ---
 
@@ -57011,10 +57011,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentd InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentd">ObservabilityPipelineConfigSourcesFluentd</a>
 
 ---
 
@@ -57256,7 +57256,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTls">ObservabilityPipelineConfigSourcesFluentdTls</a></code> | *No description.* |
 
 ---
 
@@ -57347,10 +57347,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentdTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentdTls">ObservabilityPipelineConfigSourcesFluentdTls</a>
 
 ---
 
@@ -57567,7 +57567,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuthOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuthOutputReference.property.credentialsFileInput">CredentialsFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuthOutputReference.property.credentialsFile">CredentialsFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuth">ObservabilityPipelineConfigSourcesGooglePubsubAuth</a></code> | *No description.* |
 
 ---
 
@@ -57618,10 +57618,10 @@ public string CredentialsFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuthOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesGooglePubsubAuth InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuth">ObservabilityPipelineConfigSourcesGooglePubsubAuth</a>
 
 ---
 
@@ -57747,7 +57747,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsub">ObservabilityPipelineConfigSourcesGooglePubsub</a>[]</code> | *No description.* |
 
 ---
 
@@ -57778,10 +57778,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesGooglePubsub[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsub">ObservabilityPipelineConfigSourcesGooglePubsub</a>[]
 
 ---
 
@@ -58049,17 +58049,17 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuthOutputReference">ObservabilityPipelineConfigSourcesGooglePubsubAuthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTlsOutputReference">ObservabilityPipelineConfigSourcesGooglePubsubTlsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.authInput">AuthInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.authInput">AuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuth">ObservabilityPipelineConfigSourcesGooglePubsubAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.decodingInput">DecodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.subscriptionInput">SubscriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTls">ObservabilityPipelineConfigSourcesGooglePubsubTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.decoding">Decoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.project">Project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.subscription">Subscription</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsub">ObservabilityPipelineConfigSourcesGooglePubsub</a></code> | *No description.* |
 
 ---
 
@@ -58110,10 +58110,10 @@ public ObservabilityPipelineConfigSourcesGooglePubsubTlsOutputReference Tls { ge
 ##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.authInput"></a>
 
 ```csharp
-public object AuthInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesGooglePubsubAuth AuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubAuth">ObservabilityPipelineConfigSourcesGooglePubsubAuth</a>
 
 ---
 
@@ -58160,10 +58160,10 @@ public string SubscriptionInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesGooglePubsubTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTls">ObservabilityPipelineConfigSourcesGooglePubsubTls</a>
 
 ---
 
@@ -58210,10 +58210,10 @@ public string Subscription { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesGooglePubsub InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsub">ObservabilityPipelineConfigSourcesGooglePubsub</a>
 
 ---
 
@@ -58455,7 +58455,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTls">ObservabilityPipelineConfigSourcesGooglePubsubTls</a></code> | *No description.* |
 
 ---
 
@@ -58546,10 +58546,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesGooglePubsubTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsubTls">ObservabilityPipelineConfigSourcesGooglePubsubTls</a>
 
 ---
 
@@ -58675,7 +58675,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClient">ObservabilityPipelineConfigSourcesHttpClient</a>[]</code> | *No description.* |
 
 ---
 
@@ -58706,10 +58706,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpClient[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClient">ObservabilityPipelineConfigSourcesHttpClient</a>[]
 
 ---
 
@@ -58989,13 +58989,13 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.scrapeIntervalSecsInput">ScrapeIntervalSecsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.scrapeTimeoutSecsInput">ScrapeTimeoutSecsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTls">ObservabilityPipelineConfigSourcesHttpClientTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.authStrategy">AuthStrategy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.decoding">Decoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.scrapeIntervalSecs">ScrapeIntervalSecs</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.scrapeTimeoutSecs">ScrapeTimeoutSecs</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClient">ObservabilityPipelineConfigSourcesHttpClient</a></code> | *No description.* |
 
 ---
 
@@ -59086,10 +59086,10 @@ public double ScrapeTimeoutSecsInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpClientTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTls">ObservabilityPipelineConfigSourcesHttpClientTls</a>
 
 ---
 
@@ -59146,10 +59146,10 @@ public double ScrapeTimeoutSecs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpClient InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClient">ObservabilityPipelineConfigSourcesHttpClient</a>
 
 ---
 
@@ -59391,7 +59391,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTls">ObservabilityPipelineConfigSourcesHttpClientTls</a></code> | *No description.* |
 
 ---
 
@@ -59482,10 +59482,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpClientTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClientTls">ObservabilityPipelineConfigSourcesHttpClientTls</a>
 
 ---
 
@@ -59611,7 +59611,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServer">ObservabilityPipelineConfigSourcesHttpServer</a>[]</code> | *No description.* |
 
 ---
 
@@ -59642,10 +59642,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpServer[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServer">ObservabilityPipelineConfigSourcesHttpServer</a>[]
 
 ---
 
@@ -59902,11 +59902,11 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.authStrategyInput">AuthStrategyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.decodingInput">DecodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTls">ObservabilityPipelineConfigSourcesHttpServerTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.authStrategy">AuthStrategy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.decoding">Decoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServer">ObservabilityPipelineConfigSourcesHttpServer</a></code> | *No description.* |
 
 ---
 
@@ -59977,10 +59977,10 @@ public string IdInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpServerTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTls">ObservabilityPipelineConfigSourcesHttpServerTls</a>
 
 ---
 
@@ -60017,10 +60017,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpServer InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServer">ObservabilityPipelineConfigSourcesHttpServer</a>
 
 ---
 
@@ -60262,7 +60262,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTls">ObservabilityPipelineConfigSourcesHttpServerTls</a></code> | *No description.* |
 
 ---
 
@@ -60353,10 +60353,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpServerTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServerTls">ObservabilityPipelineConfigSourcesHttpServerTls</a>
 
 ---
 
@@ -60482,7 +60482,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption">ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption</a>[]</code> | *No description.* |
 
 ---
 
@@ -60513,10 +60513,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption">ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption</a>[]
 
 ---
 
@@ -60753,7 +60753,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption">ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption</a></code> | *No description.* |
 
 ---
 
@@ -60824,10 +60824,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOptionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption">ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption</a>
 
 ---
 
@@ -60953,7 +60953,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka">ObservabilityPipelineConfigSourcesKafka</a>[]</code> | *No description.* |
 
 ---
 
@@ -60984,10 +60984,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafka[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka">ObservabilityPipelineConfigSourcesKafka</a>[]
 
 ---
 
@@ -61222,12 +61222,12 @@ Returns a reversible string representation.
 ##### `PutLibrdkafkaOption` <a name="PutLibrdkafkaOption" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.putLibrdkafkaOption"></a>
 
 ```csharp
-private void PutLibrdkafkaOption(object Value)
+private void PutLibrdkafkaOption(IResolvable|ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.putLibrdkafkaOption.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption">ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption</a>[]
 
 ---
 
@@ -61285,14 +61285,14 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTlsOutputReference">ObservabilityPipelineConfigSourcesKafkaTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.groupIdInput">GroupIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.librdkafkaOptionInput">LibrdkafkaOptionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.saslInput">SaslInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.librdkafkaOptionInput">LibrdkafkaOptionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption">ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.saslInput">SaslInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSasl">ObservabilityPipelineConfigSourcesKafkaSasl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTls">ObservabilityPipelineConfigSourcesKafkaTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.topicsInput">TopicsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.groupId">GroupId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.topics">Topics</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka">ObservabilityPipelineConfigSourcesKafka</a></code> | *No description.* |
 
 ---
 
@@ -61373,30 +61373,30 @@ public string IdInput { get; }
 ##### `LibrdkafkaOptionInput`<sup>Optional</sup> <a name="LibrdkafkaOptionInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.librdkafkaOptionInput"></a>
 
 ```csharp
-public object LibrdkafkaOptionInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption[] LibrdkafkaOptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption">ObservabilityPipelineConfigSourcesKafkaLibrdkafkaOption</a>[]
 
 ---
 
 ##### `SaslInput`<sup>Optional</sup> <a name="SaslInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.saslInput"></a>
 
 ```csharp
-public object SaslInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafkaSasl SaslInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSasl">ObservabilityPipelineConfigSourcesKafkaSasl</a>
 
 ---
 
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafkaTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTls">ObservabilityPipelineConfigSourcesKafkaTls</a>
 
 ---
 
@@ -61443,10 +61443,10 @@ public string[] Topics { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafka InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka">ObservabilityPipelineConfigSourcesKafka</a>
 
 ---
 
@@ -61670,7 +61670,7 @@ private void ResetMechanism()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSaslOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSaslOutputReference.property.mechanismInput">MechanismInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSaslOutputReference.property.mechanism">Mechanism</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSaslOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSaslOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSasl">ObservabilityPipelineConfigSourcesKafkaSasl</a></code> | *No description.* |
 
 ---
 
@@ -61721,10 +61721,10 @@ public string Mechanism { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSaslOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafkaSasl InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaSasl">ObservabilityPipelineConfigSourcesKafkaSasl</a>
 
 ---
 
@@ -61966,7 +61966,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTls">ObservabilityPipelineConfigSourcesKafkaTls</a></code> | *No description.* |
 
 ---
 
@@ -62057,10 +62057,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafkaTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafkaTls">ObservabilityPipelineConfigSourcesKafkaTls</a>
 
 ---
 
@@ -62186,7 +62186,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstash">ObservabilityPipelineConfigSourcesLogstash</a>[]</code> | *No description.* |
 
 ---
 
@@ -62217,10 +62217,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesLogstash[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstash">ObservabilityPipelineConfigSourcesLogstash</a>[]
 
 ---
 
@@ -62475,9 +62475,9 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTlsOutputReference">ObservabilityPipelineConfigSourcesLogstashTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTls">ObservabilityPipelineConfigSourcesLogstashTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstash">ObservabilityPipelineConfigSourcesLogstash</a></code> | *No description.* |
 
 ---
 
@@ -62528,10 +62528,10 @@ public string IdInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesLogstashTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTls">ObservabilityPipelineConfigSourcesLogstashTls</a>
 
 ---
 
@@ -62548,10 +62548,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesLogstash InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstash">ObservabilityPipelineConfigSourcesLogstash</a>
 
 ---
 
@@ -62793,7 +62793,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTls">ObservabilityPipelineConfigSourcesLogstashTls</a></code> | *No description.* |
 
 ---
 
@@ -62884,10 +62884,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesLogstashTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstashTls">ObservabilityPipelineConfigSourcesLogstashTls</a>
 
 ---
 
@@ -63130,192 +63130,192 @@ Returns a reversible string representation.
 ##### `PutAmazonDataFirehose` <a name="PutAmazonDataFirehose" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putAmazonDataFirehose"></a>
 
 ```csharp
-private void PutAmazonDataFirehose(object Value)
+private void PutAmazonDataFirehose(IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehose[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putAmazonDataFirehose.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehose">ObservabilityPipelineConfigSourcesAmazonDataFirehose</a>[]
 
 ---
 
 ##### `PutAmazonS3` <a name="PutAmazonS3" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putAmazonS3"></a>
 
 ```csharp
-private void PutAmazonS3(object Value)
+private void PutAmazonS3(IResolvable|ObservabilityPipelineConfigSourcesAmazonS3[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putAmazonS3.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3">ObservabilityPipelineConfigSourcesAmazonS3</a>[]
 
 ---
 
 ##### `PutDatadogAgent` <a name="PutDatadogAgent" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putDatadogAgent"></a>
 
 ```csharp
-private void PutDatadogAgent(object Value)
+private void PutDatadogAgent(IResolvable|ObservabilityPipelineConfigSourcesDatadogAgent[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putDatadogAgent.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgent">ObservabilityPipelineConfigSourcesDatadogAgent</a>[]
 
 ---
 
 ##### `PutFluentBit` <a name="PutFluentBit" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putFluentBit"></a>
 
 ```csharp
-private void PutFluentBit(object Value)
+private void PutFluentBit(IResolvable|ObservabilityPipelineConfigSourcesFluentBit[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putFluentBit.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBit">ObservabilityPipelineConfigSourcesFluentBit</a>[]
 
 ---
 
 ##### `PutFluentd` <a name="PutFluentd" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putFluentd"></a>
 
 ```csharp
-private void PutFluentd(object Value)
+private void PutFluentd(IResolvable|ObservabilityPipelineConfigSourcesFluentd[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putFluentd.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentd">ObservabilityPipelineConfigSourcesFluentd</a>[]
 
 ---
 
 ##### `PutGooglePubsub` <a name="PutGooglePubsub" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putGooglePubsub"></a>
 
 ```csharp
-private void PutGooglePubsub(object Value)
+private void PutGooglePubsub(IResolvable|ObservabilityPipelineConfigSourcesGooglePubsub[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putGooglePubsub.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsub">ObservabilityPipelineConfigSourcesGooglePubsub</a>[]
 
 ---
 
 ##### `PutHttpClient` <a name="PutHttpClient" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putHttpClient"></a>
 
 ```csharp
-private void PutHttpClient(object Value)
+private void PutHttpClient(IResolvable|ObservabilityPipelineConfigSourcesHttpClient[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putHttpClient.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClient">ObservabilityPipelineConfigSourcesHttpClient</a>[]
 
 ---
 
 ##### `PutHttpServer` <a name="PutHttpServer" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putHttpServer"></a>
 
 ```csharp
-private void PutHttpServer(object Value)
+private void PutHttpServer(IResolvable|ObservabilityPipelineConfigSourcesHttpServer[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putHttpServer.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServer">ObservabilityPipelineConfigSourcesHttpServer</a>[]
 
 ---
 
 ##### `PutKafka` <a name="PutKafka" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putKafka"></a>
 
 ```csharp
-private void PutKafka(object Value)
+private void PutKafka(IResolvable|ObservabilityPipelineConfigSourcesKafka[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putKafka.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka">ObservabilityPipelineConfigSourcesKafka</a>[]
 
 ---
 
 ##### `PutLogstash` <a name="PutLogstash" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putLogstash"></a>
 
 ```csharp
-private void PutLogstash(object Value)
+private void PutLogstash(IResolvable|ObservabilityPipelineConfigSourcesLogstash[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putLogstash.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstash">ObservabilityPipelineConfigSourcesLogstash</a>[]
 
 ---
 
 ##### `PutRsyslog` <a name="PutRsyslog" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putRsyslog"></a>
 
 ```csharp
-private void PutRsyslog(object Value)
+private void PutRsyslog(IResolvable|ObservabilityPipelineConfigSourcesRsyslog[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putRsyslog.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslog">ObservabilityPipelineConfigSourcesRsyslog</a>[]
 
 ---
 
 ##### `PutSocket` <a name="PutSocket" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSocket"></a>
 
 ```csharp
-private void PutSocket(object Value)
+private void PutSocket(IResolvable|ObservabilityPipelineConfigSourcesSocket[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSocket.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket">ObservabilityPipelineConfigSourcesSocket</a>[]
 
 ---
 
 ##### `PutSplunkHec` <a name="PutSplunkHec" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSplunkHec"></a>
 
 ```csharp
-private void PutSplunkHec(object Value)
+private void PutSplunkHec(IResolvable|ObservabilityPipelineConfigSourcesSplunkHec[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSplunkHec.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHec">ObservabilityPipelineConfigSourcesSplunkHec</a>[]
 
 ---
 
 ##### `PutSplunkTcp` <a name="PutSplunkTcp" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSplunkTcp"></a>
 
 ```csharp
-private void PutSplunkTcp(object Value)
+private void PutSplunkTcp(IResolvable|ObservabilityPipelineConfigSourcesSplunkTcp[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSplunkTcp.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcp">ObservabilityPipelineConfigSourcesSplunkTcp</a>[]
 
 ---
 
 ##### `PutSumoLogic` <a name="PutSumoLogic" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSumoLogic"></a>
 
 ```csharp
-private void PutSumoLogic(object Value)
+private void PutSumoLogic(IResolvable|ObservabilityPipelineConfigSourcesSumoLogic[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSumoLogic.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogic">ObservabilityPipelineConfigSourcesSumoLogic</a>[]
 
 ---
 
 ##### `PutSyslogNg` <a name="PutSyslogNg" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSyslogNg"></a>
 
 ```csharp
-private void PutSyslogNg(object Value)
+private void PutSyslogNg(IResolvable|ObservabilityPipelineConfigSourcesSyslogNg[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.putSyslogNg.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNg">ObservabilityPipelineConfigSourcesSyslogNg</a>[]
 
 ---
 
@@ -63438,23 +63438,23 @@ private void ResetSyslogNg()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkTcp">SplunkTcp</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpList">ObservabilityPipelineConfigSourcesSplunkTcpList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.sumoLogic">SumoLogic</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicList">ObservabilityPipelineConfigSourcesSumoLogicList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.syslogNg">SyslogNg</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgList">ObservabilityPipelineConfigSourcesSyslogNgList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.amazonDataFirehoseInput">AmazonDataFirehoseInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.amazonS3Input">AmazonS3Input</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.datadogAgentInput">DatadogAgentInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.fluentBitInput">FluentBitInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.fluentdInput">FluentdInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.googlePubsubInput">GooglePubsubInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.httpClientInput">HttpClientInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.httpServerInput">HttpServerInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.kafkaInput">KafkaInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.logstashInput">LogstashInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.rsyslogInput">RsyslogInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.socketInput">SocketInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkHecInput">SplunkHecInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkTcpInput">SplunkTcpInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.sumoLogicInput">SumoLogicInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.syslogNgInput">SyslogNgInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.amazonDataFirehoseInput">AmazonDataFirehoseInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehose">ObservabilityPipelineConfigSourcesAmazonDataFirehose</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.amazonS3Input">AmazonS3Input</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3">ObservabilityPipelineConfigSourcesAmazonS3</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.datadogAgentInput">DatadogAgentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgent">ObservabilityPipelineConfigSourcesDatadogAgent</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.fluentBitInput">FluentBitInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBit">ObservabilityPipelineConfigSourcesFluentBit</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.fluentdInput">FluentdInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentd">ObservabilityPipelineConfigSourcesFluentd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.googlePubsubInput">GooglePubsubInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsub">ObservabilityPipelineConfigSourcesGooglePubsub</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.httpClientInput">HttpClientInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClient">ObservabilityPipelineConfigSourcesHttpClient</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.httpServerInput">HttpServerInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServer">ObservabilityPipelineConfigSourcesHttpServer</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.kafkaInput">KafkaInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka">ObservabilityPipelineConfigSourcesKafka</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.logstashInput">LogstashInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstash">ObservabilityPipelineConfigSourcesLogstash</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.rsyslogInput">RsyslogInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslog">ObservabilityPipelineConfigSourcesRsyslog</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.socketInput">SocketInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket">ObservabilityPipelineConfigSourcesSocket</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkHecInput">SplunkHecInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHec">ObservabilityPipelineConfigSourcesSplunkHec</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkTcpInput">SplunkTcpInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcp">ObservabilityPipelineConfigSourcesSplunkTcp</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.sumoLogicInput">SumoLogicInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogic">ObservabilityPipelineConfigSourcesSumoLogic</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.syslogNgInput">SyslogNgInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNg">ObservabilityPipelineConfigSourcesSyslogNg</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources">ObservabilityPipelineConfigSources</a></code> | *No description.* |
 
 ---
 
@@ -63645,170 +63645,170 @@ public ObservabilityPipelineConfigSourcesSyslogNgList SyslogNg { get; }
 ##### `AmazonDataFirehoseInput`<sup>Optional</sup> <a name="AmazonDataFirehoseInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.amazonDataFirehoseInput"></a>
 
 ```csharp
-public object AmazonDataFirehoseInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonDataFirehose[] AmazonDataFirehoseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonDataFirehose">ObservabilityPipelineConfigSourcesAmazonDataFirehose</a>[]
 
 ---
 
 ##### `AmazonS3Input`<sup>Optional</sup> <a name="AmazonS3Input" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.amazonS3Input"></a>
 
 ```csharp
-public object AmazonS3Input { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesAmazonS3[] AmazonS3Input { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesAmazonS3">ObservabilityPipelineConfigSourcesAmazonS3</a>[]
 
 ---
 
 ##### `DatadogAgentInput`<sup>Optional</sup> <a name="DatadogAgentInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.datadogAgentInput"></a>
 
 ```csharp
-public object DatadogAgentInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesDatadogAgent[] DatadogAgentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesDatadogAgent">ObservabilityPipelineConfigSourcesDatadogAgent</a>[]
 
 ---
 
 ##### `FluentBitInput`<sup>Optional</sup> <a name="FluentBitInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.fluentBitInput"></a>
 
 ```csharp
-public object FluentBitInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentBit[] FluentBitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentBit">ObservabilityPipelineConfigSourcesFluentBit</a>[]
 
 ---
 
 ##### `FluentdInput`<sup>Optional</sup> <a name="FluentdInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.fluentdInput"></a>
 
 ```csharp
-public object FluentdInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesFluentd[] FluentdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesFluentd">ObservabilityPipelineConfigSourcesFluentd</a>[]
 
 ---
 
 ##### `GooglePubsubInput`<sup>Optional</sup> <a name="GooglePubsubInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.googlePubsubInput"></a>
 
 ```csharp
-public object GooglePubsubInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesGooglePubsub[] GooglePubsubInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesGooglePubsub">ObservabilityPipelineConfigSourcesGooglePubsub</a>[]
 
 ---
 
 ##### `HttpClientInput`<sup>Optional</sup> <a name="HttpClientInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.httpClientInput"></a>
 
 ```csharp
-public object HttpClientInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpClient[] HttpClientInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpClient">ObservabilityPipelineConfigSourcesHttpClient</a>[]
 
 ---
 
 ##### `HttpServerInput`<sup>Optional</sup> <a name="HttpServerInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.httpServerInput"></a>
 
 ```csharp
-public object HttpServerInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesHttpServer[] HttpServerInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesHttpServer">ObservabilityPipelineConfigSourcesHttpServer</a>[]
 
 ---
 
 ##### `KafkaInput`<sup>Optional</sup> <a name="KafkaInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.kafkaInput"></a>
 
 ```csharp
-public object KafkaInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesKafka[] KafkaInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesKafka">ObservabilityPipelineConfigSourcesKafka</a>[]
 
 ---
 
 ##### `LogstashInput`<sup>Optional</sup> <a name="LogstashInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.logstashInput"></a>
 
 ```csharp
-public object LogstashInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesLogstash[] LogstashInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesLogstash">ObservabilityPipelineConfigSourcesLogstash</a>[]
 
 ---
 
 ##### `RsyslogInput`<sup>Optional</sup> <a name="RsyslogInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.rsyslogInput"></a>
 
 ```csharp
-public object RsyslogInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesRsyslog[] RsyslogInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslog">ObservabilityPipelineConfigSourcesRsyslog</a>[]
 
 ---
 
 ##### `SocketInput`<sup>Optional</sup> <a name="SocketInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.socketInput"></a>
 
 ```csharp
-public object SocketInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocket[] SocketInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket">ObservabilityPipelineConfigSourcesSocket</a>[]
 
 ---
 
 ##### `SplunkHecInput`<sup>Optional</sup> <a name="SplunkHecInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkHecInput"></a>
 
 ```csharp
-public object SplunkHecInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkHec[] SplunkHecInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHec">ObservabilityPipelineConfigSourcesSplunkHec</a>[]
 
 ---
 
 ##### `SplunkTcpInput`<sup>Optional</sup> <a name="SplunkTcpInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.splunkTcpInput"></a>
 
 ```csharp
-public object SplunkTcpInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkTcp[] SplunkTcpInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcp">ObservabilityPipelineConfigSourcesSplunkTcp</a>[]
 
 ---
 
 ##### `SumoLogicInput`<sup>Optional</sup> <a name="SumoLogicInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.sumoLogicInput"></a>
 
 ```csharp
-public object SumoLogicInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSumoLogic[] SumoLogicInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogic">ObservabilityPipelineConfigSourcesSumoLogic</a>[]
 
 ---
 
 ##### `SyslogNgInput`<sup>Optional</sup> <a name="SyslogNgInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.syslogNgInput"></a>
 
 ```csharp
-public object SyslogNgInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSyslogNg[] SyslogNgInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNg">ObservabilityPipelineConfigSourcesSyslogNg</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSources InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSources">ObservabilityPipelineConfigSources</a>
 
 ---
 
@@ -63934,7 +63934,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslog">ObservabilityPipelineConfigSourcesRsyslog</a>[]</code> | *No description.* |
 
 ---
 
@@ -63965,10 +63965,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesRsyslog[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslog">ObservabilityPipelineConfigSourcesRsyslog</a>[]
 
 ---
 
@@ -64231,10 +64231,10 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTlsOutputReference">ObservabilityPipelineConfigSourcesRsyslogTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTls">ObservabilityPipelineConfigSourcesRsyslogTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslog">ObservabilityPipelineConfigSourcesRsyslog</a></code> | *No description.* |
 
 ---
 
@@ -64295,10 +64295,10 @@ public string ModeInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesRsyslogTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTls">ObservabilityPipelineConfigSourcesRsyslogTls</a>
 
 ---
 
@@ -64325,10 +64325,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesRsyslog InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslog">ObservabilityPipelineConfigSourcesRsyslog</a>
 
 ---
 
@@ -64570,7 +64570,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTls">ObservabilityPipelineConfigSourcesRsyslogTls</a></code> | *No description.* |
 
 ---
 
@@ -64661,10 +64661,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesRsyslogTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesRsyslogTls">ObservabilityPipelineConfigSourcesRsyslogTls</a>
 
 ---
 
@@ -64888,7 +64888,7 @@ private void ResetDelimiter()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.delimiterInput">DelimiterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.delimiter">Delimiter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited</a></code> | *No description.* |
 
 ---
 
@@ -64939,10 +64939,10 @@ public string Delimiter { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited</a>
 
 ---
 
@@ -65185,10 +65185,10 @@ private void ResetMethod()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.characterDelimited">CharacterDelimited</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.characterDelimitedInput">CharacterDelimitedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.characterDelimitedInput">CharacterDelimitedInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.methodInput">MethodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.method">Method</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming">ObservabilityPipelineConfigSourcesSocketFraming</a></code> | *No description.* |
 
 ---
 
@@ -65229,10 +65229,10 @@ public ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimitedOutputRe
 ##### `CharacterDelimitedInput`<sup>Optional</sup> <a name="CharacterDelimitedInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.characterDelimitedInput"></a>
 
 ```csharp
-public object CharacterDelimitedInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited CharacterDelimitedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited">ObservabilityPipelineConfigSourcesSocketFramingCharacterDelimited</a>
 
 ---
 
@@ -65259,10 +65259,10 @@ public string Method { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocketFraming InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming">ObservabilityPipelineConfigSourcesSocketFraming</a>
 
 ---
 
@@ -65388,7 +65388,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket">ObservabilityPipelineConfigSourcesSocket</a>[]</code> | *No description.* |
 
 ---
 
@@ -65419,10 +65419,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocket[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket">ObservabilityPipelineConfigSourcesSocket</a>[]
 
 ---
 
@@ -65697,13 +65697,13 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.framing">Framing</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFramingOutputReference">ObservabilityPipelineConfigSourcesSocketFramingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference">ObservabilityPipelineConfigSourcesSocketTlsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.framingInput">FramingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.framingInput">FramingInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming">ObservabilityPipelineConfigSourcesSocketFraming</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls">ObservabilityPipelineConfigSourcesSocketTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket">ObservabilityPipelineConfigSourcesSocket</a></code> | *No description.* |
 
 ---
 
@@ -65754,10 +65754,10 @@ public ObservabilityPipelineConfigSourcesSocketTlsOutputReference Tls { get; }
 ##### `FramingInput`<sup>Optional</sup> <a name="FramingInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.framingInput"></a>
 
 ```csharp
-public object FramingInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocketFraming FramingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketFraming">ObservabilityPipelineConfigSourcesSocketFraming</a>
 
 ---
 
@@ -65784,10 +65784,10 @@ public string ModeInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocketTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls">ObservabilityPipelineConfigSourcesSocketTls</a>
 
 ---
 
@@ -65814,10 +65814,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocket InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocket">ObservabilityPipelineConfigSourcesSocket</a>
 
 ---
 
@@ -66059,7 +66059,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls">ObservabilityPipelineConfigSourcesSocketTls</a></code> | *No description.* |
 
 ---
 
@@ -66150,10 +66150,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSocketTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSocketTls">ObservabilityPipelineConfigSourcesSocketTls</a>
 
 ---
 
@@ -66279,7 +66279,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHec">ObservabilityPipelineConfigSourcesSplunkHec</a>[]</code> | *No description.* |
 
 ---
 
@@ -66310,10 +66310,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkHec[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHec">ObservabilityPipelineConfigSourcesSplunkHec</a>[]
 
 ---
 
@@ -66568,9 +66568,9 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTlsOutputReference">ObservabilityPipelineConfigSourcesSplunkHecTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTls">ObservabilityPipelineConfigSourcesSplunkHecTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHec">ObservabilityPipelineConfigSourcesSplunkHec</a></code> | *No description.* |
 
 ---
 
@@ -66621,10 +66621,10 @@ public string IdInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkHecTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTls">ObservabilityPipelineConfigSourcesSplunkHecTls</a>
 
 ---
 
@@ -66641,10 +66641,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkHec InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHec">ObservabilityPipelineConfigSourcesSplunkHec</a>
 
 ---
 
@@ -66886,7 +66886,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTls">ObservabilityPipelineConfigSourcesSplunkHecTls</a></code> | *No description.* |
 
 ---
 
@@ -66977,10 +66977,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkHecTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkHecTls">ObservabilityPipelineConfigSourcesSplunkHecTls</a>
 
 ---
 
@@ -67106,7 +67106,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcp">ObservabilityPipelineConfigSourcesSplunkTcp</a>[]</code> | *No description.* |
 
 ---
 
@@ -67137,10 +67137,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkTcp[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcp">ObservabilityPipelineConfigSourcesSplunkTcp</a>[]
 
 ---
 
@@ -67395,9 +67395,9 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTlsOutputReference">ObservabilityPipelineConfigSourcesSplunkTcpTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTls">ObservabilityPipelineConfigSourcesSplunkTcpTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcp">ObservabilityPipelineConfigSourcesSplunkTcp</a></code> | *No description.* |
 
 ---
 
@@ -67448,10 +67448,10 @@ public string IdInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkTcpTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTls">ObservabilityPipelineConfigSourcesSplunkTcpTls</a>
 
 ---
 
@@ -67468,10 +67468,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkTcp InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcp">ObservabilityPipelineConfigSourcesSplunkTcp</a>
 
 ---
 
@@ -67713,7 +67713,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTls">ObservabilityPipelineConfigSourcesSplunkTcpTls</a></code> | *No description.* |
 
 ---
 
@@ -67804,10 +67804,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSplunkTcpTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSplunkTcpTls">ObservabilityPipelineConfigSourcesSplunkTcpTls</a>
 
 ---
 
@@ -67933,7 +67933,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogic">ObservabilityPipelineConfigSourcesSumoLogic</a>[]</code> | *No description.* |
 
 ---
 
@@ -67964,10 +67964,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSumoLogic[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogic">ObservabilityPipelineConfigSourcesSumoLogic</a>[]
 
 ---
 
@@ -68202,7 +68202,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogic">ObservabilityPipelineConfigSourcesSumoLogic</a></code> | *No description.* |
 
 ---
 
@@ -68253,10 +68253,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogicOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSumoLogic InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSumoLogic">ObservabilityPipelineConfigSourcesSumoLogic</a>
 
 ---
 
@@ -68382,7 +68382,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNg">ObservabilityPipelineConfigSourcesSyslogNg</a>[]</code> | *No description.* |
 
 ---
 
@@ -68413,10 +68413,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSyslogNg[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNg">ObservabilityPipelineConfigSourcesSyslogNg</a>[]
 
 ---
 
@@ -68679,10 +68679,10 @@ private void ResetTls()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTlsOutputReference">ObservabilityPipelineConfigSourcesSyslogNgTlsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.tlsInput">TlsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTls">ObservabilityPipelineConfigSourcesSyslogNgTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNg">ObservabilityPipelineConfigSourcesSyslogNg</a></code> | *No description.* |
 
 ---
 
@@ -68743,10 +68743,10 @@ public string ModeInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSyslogNgTls TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTls">ObservabilityPipelineConfigSourcesSyslogNgTls</a>
 
 ---
 
@@ -68773,10 +68773,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSyslogNg InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNg">ObservabilityPipelineConfigSourcesSyslogNg</a>
 
 ---
 
@@ -69018,7 +69018,7 @@ private void ResetKeyFile()
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTls">ObservabilityPipelineConfigSourcesSyslogNgTls</a></code> | *No description.* |
 
 ---
 
@@ -69109,10 +69109,10 @@ public string KeyFile { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTlsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ObservabilityPipelineConfigSourcesSyslogNgTls InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourcesSyslogNgTls">ObservabilityPipelineConfigSourcesSyslogNgTls</a>
 
 ---
 

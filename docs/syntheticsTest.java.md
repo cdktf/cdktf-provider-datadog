@@ -12,46 +12,34 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTest;
 
 SyntheticsTest.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .locations(java.util.List<java.lang.String>)
     .name(java.lang.String)
     .status(java.lang.String)
     .type(java.lang.String)
-//  .apiStep(IResolvable)
-//  .apiStep(java.util.List<SyntheticsTestApiStep>)
-//  .assertion(IResolvable)
-//  .assertion(java.util.List<SyntheticsTestAssertion>)
-//  .browserStep(IResolvable)
-//  .browserStep(java.util.List<SyntheticsTestBrowserStep>)
-//  .browserVariable(IResolvable)
-//  .browserVariable(java.util.List<SyntheticsTestBrowserVariable>)
+//  .apiStep(IResolvable|java.util.List<SyntheticsTestApiStep>)
+//  .assertion(IResolvable|java.util.List<SyntheticsTestAssertion>)
+//  .browserStep(IResolvable|java.util.List<SyntheticsTestBrowserStep>)
+//  .browserVariable(IResolvable|java.util.List<SyntheticsTestBrowserVariable>)
 //  .configInitialApplicationArguments(java.util.Map<java.lang.String, java.lang.String>)
-//  .configVariable(IResolvable)
-//  .configVariable(java.util.List<SyntheticsTestConfigVariable>)
+//  .configVariable(IResolvable|java.util.List<SyntheticsTestConfigVariable>)
 //  .deviceIds(java.util.List<java.lang.String>)
-//  .forceDeleteDependencies(java.lang.Boolean)
-//  .forceDeleteDependencies(IResolvable)
+//  .forceDeleteDependencies(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .message(java.lang.String)
 //  .mobileOptionsList(SyntheticsTestMobileOptionsListStruct)
-//  .mobileStep(IResolvable)
-//  .mobileStep(java.util.List<SyntheticsTestMobileStep>)
+//  .mobileStep(IResolvable|java.util.List<SyntheticsTestMobileStep>)
 //  .optionsList(SyntheticsTestOptionsListStruct)
 //  .requestBasicauth(SyntheticsTestRequestBasicauth)
 //  .requestClientCertificate(SyntheticsTestRequestClientCertificate)
 //  .requestDefinition(SyntheticsTestRequestDefinition)
-//  .requestFile(IResolvable)
-//  .requestFile(java.util.List<SyntheticsTestRequestFile>)
+//  .requestFile(IResolvable|java.util.List<SyntheticsTestRequestFile>)
 //  .requestHeaders(java.util.Map<java.lang.String, java.lang.String>)
 //  .requestMetadata(java.util.Map<java.lang.String, java.lang.String>)
 //  .requestProxy(SyntheticsTestRequestProxy)
@@ -67,34 +55,34 @@ SyntheticsTest.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.locations">locations</a></code> | <code>java.util.List<java.lang.String></code> | Array of locations used to run the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of Datadog synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Synthetics test type. Valid values are `api`, `browser`, `mobile`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.apiStep">apiStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>></code> | api_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.assertion">assertion</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | assertion block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserStep">browserStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | browser_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserVariable">browserVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | browser_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.apiStep">apiStep</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>></code> | api_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.assertion">assertion</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | assertion block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserStep">browserStep</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | browser_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserVariable">browserVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | browser_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configInitialApplicationArguments">configInitialApplicationArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Initial application arguments for the mobile test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configVariable">configVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | config_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configVariable">configVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | config_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | Required if `type = "browser"`. Array with the different device IDs used to run the test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.forceDeleteDependencies">forceDeleteDependencies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.forceDeleteDependencies">forceDeleteDependencies</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.message">message</a></code> | <code>java.lang.String</code> | A message to include with notifications for this synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileOptionsList">mobileOptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | mobile_options_list block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileStep">mobileStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | mobile_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileStep">mobileStep</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | mobile_step block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.optionsList">optionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestBasicauth">requestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestClientCertificate">requestClientCertificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestDefinition">requestDefinition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | request_definition block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestFile">requestFile</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>></code> | request_file block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestFile">requestFile</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>></code> | request_file block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestHeaders">requestHeaders</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Header name and value map. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestMetadata">requestMetadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Metadata to include when performing the gRPC request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestProxy">requestProxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy">SyntheticsTestRequestProxy</a></code> | request_proxy block. |
@@ -126,13 +114,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -162,7 +150,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -210,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `apiStep`<sup>Optional</sup> <a name="apiStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.apiStep"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
 
 api_step block.
 
@@ -220,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `assertion`<sup>Optional</sup> <a name="assertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.assertion"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
 
 assertion block.
 
@@ -230,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `browserStep`<sup>Optional</sup> <a name="browserStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserStep"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
 
 browser_step block.
 
@@ -240,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `browserVariable`<sup>Optional</sup> <a name="browserVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.browserVariable"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
 
 browser_variable block.
 
@@ -260,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `configVariable`<sup>Optional</sup> <a name="configVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.configVariable"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
 
 config_variable block.
 
@@ -280,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `forceDeleteDependencies`<sup>Optional</sup> <a name="forceDeleteDependencies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.forceDeleteDependencies"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
 
@@ -323,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `mobileStep`<sup>Optional</sup> <a name="mobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.mobileStep"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
 
 mobile_step block.
 
@@ -373,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `requestFile`<sup>Optional</sup> <a name="requestFile" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestFile"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
 
 request_file block.
 
@@ -730,7 +718,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.importFrom"></a>
@@ -786,7 +774,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -801,7 +789,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -826,60 +814,60 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putApiStep` <a name="putApiStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putApiStep"></a>
 
 ```java
-public void putApiStep(IResolvable OR java.util.List<SyntheticsTestApiStep> value)
+public void putApiStep(IResolvable|java.util.List<SyntheticsTestApiStep> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putApiStep.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
 
 ---
 
 ##### `putAssertion` <a name="putAssertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putAssertion"></a>
 
 ```java
-public void putAssertion(IResolvable OR java.util.List<SyntheticsTestAssertion> value)
+public void putAssertion(IResolvable|java.util.List<SyntheticsTestAssertion> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putAssertion.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
 
 ---
 
 ##### `putBrowserStep` <a name="putBrowserStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserStep"></a>
 
 ```java
-public void putBrowserStep(IResolvable OR java.util.List<SyntheticsTestBrowserStep> value)
+public void putBrowserStep(IResolvable|java.util.List<SyntheticsTestBrowserStep> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserStep.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
 
 ---
 
 ##### `putBrowserVariable` <a name="putBrowserVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserVariable"></a>
 
 ```java
-public void putBrowserVariable(IResolvable OR java.util.List<SyntheticsTestBrowserVariable> value)
+public void putBrowserVariable(IResolvable|java.util.List<SyntheticsTestBrowserVariable> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putBrowserVariable.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
 
 ---
 
 ##### `putConfigVariable` <a name="putConfigVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putConfigVariable"></a>
 
 ```java
-public void putConfigVariable(IResolvable OR java.util.List<SyntheticsTestConfigVariable> value)
+public void putConfigVariable(IResolvable|java.util.List<SyntheticsTestConfigVariable> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putConfigVariable.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
 
 ---
 
@@ -898,12 +886,12 @@ public void putMobileOptionsList(SyntheticsTestMobileOptionsListStruct value)
 ##### `putMobileStep` <a name="putMobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileStep"></a>
 
 ```java
-public void putMobileStep(IResolvable OR java.util.List<SyntheticsTestMobileStep> value)
+public void putMobileStep(IResolvable|java.util.List<SyntheticsTestMobileStep> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putMobileStep.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
 
 ---
 
@@ -958,12 +946,12 @@ public void putRequestDefinition(SyntheticsTestRequestDefinition value)
 ##### `putRequestFile` <a name="putRequestFile" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestFile"></a>
 
 ```java
-public void putRequestFile(IResolvable OR java.util.List<SyntheticsTestRequestFile> value)
+public void putRequestFile(IResolvable|java.util.List<SyntheticsTestRequestFile> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putRequestFile.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
 
 ---
 
@@ -1255,13 +1243,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStep">apiStep</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList">SyntheticsTestApiStepList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertion">assertion</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList">SyntheticsTestAssertionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStep">browserStep</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList">SyntheticsTestBrowserStepList</a></code> | *No description.* |
@@ -1276,25 +1264,25 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinition">requestDefinition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference">SyntheticsTestRequestDefinitionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFile">requestFile</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList">SyntheticsTestRequestFileList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestProxy">requestProxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxyOutputReference">SyntheticsTestRequestProxyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStepInput">apiStepInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput">assertionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput">browserStepInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput">browserVariableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStepInput">apiStepInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput">assertionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput">browserStepInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput">browserVariableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArgumentsInput">configInitialApplicationArgumentsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput">configVariableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput">configVariableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.deviceIdsInput">deviceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput">forceDeleteDependenciesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput">forceDeleteDependenciesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.locationsInput">locationsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.messageInput">messageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileOptionsListInput">mobileOptionsListInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput">mobileStepInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput">mobileStepInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput">optionsListInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestBasicauthInput">requestBasicauthInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestClientCertificateInput">requestClientCertificateInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinitionInput">requestDefinitionInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFileInput">requestFileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFileInput">requestFileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestHeadersInput">requestHeadersInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestMetadataInput">requestMetadataInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestProxyInput">requestProxyInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy">SyntheticsTestRequestProxy</a></code> | *No description.* |
@@ -1307,7 +1295,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.variablesFromScriptInput">variablesFromScriptInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configInitialApplicationArguments">configInitialApplicationArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies">forceDeleteDependencies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies">forceDeleteDependencies</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.locations">locations</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.message">message</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1399,20 +1387,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1459,10 +1447,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1609,40 +1597,40 @@ public SyntheticsTestRequestProxyOutputReference getRequestProxy();
 ##### `apiStepInput`<sup>Optional</sup> <a name="apiStepInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.apiStepInput"></a>
 
 ```java
-public java.lang.Object getApiStepInput();
+public IResolvable|java.util.List<SyntheticsTestApiStep> getApiStepInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
 
 ---
 
 ##### `assertionInput`<sup>Optional</sup> <a name="assertionInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.assertionInput"></a>
 
 ```java
-public java.lang.Object getAssertionInput();
+public IResolvable|java.util.List<SyntheticsTestAssertion> getAssertionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
 
 ---
 
 ##### `browserStepInput`<sup>Optional</sup> <a name="browserStepInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserStepInput"></a>
 
 ```java
-public java.lang.Object getBrowserStepInput();
+public IResolvable|java.util.List<SyntheticsTestBrowserStep> getBrowserStepInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
 
 ---
 
 ##### `browserVariableInput`<sup>Optional</sup> <a name="browserVariableInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariableInput"></a>
 
 ```java
-public java.lang.Object getBrowserVariableInput();
+public IResolvable|java.util.List<SyntheticsTestBrowserVariable> getBrowserVariableInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
 
 ---
 
@@ -1659,10 +1647,10 @@ public java.util.Map<java.lang.String, java.lang.String> getConfigInitialApplica
 ##### `configVariableInput`<sup>Optional</sup> <a name="configVariableInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariableInput"></a>
 
 ```java
-public java.lang.Object getConfigVariableInput();
+public IResolvable|java.util.List<SyntheticsTestConfigVariable> getConfigVariableInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
 
 ---
 
@@ -1679,10 +1667,10 @@ public java.util.List<java.lang.String> getDeviceIdsInput();
 ##### `forceDeleteDependenciesInput`<sup>Optional</sup> <a name="forceDeleteDependenciesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependenciesInput"></a>
 
 ```java
-public java.lang.Object getForceDeleteDependenciesInput();
+public java.lang.Boolean|IResolvable getForceDeleteDependenciesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1729,10 +1717,10 @@ public SyntheticsTestMobileOptionsListStruct getMobileOptionsListInput();
 ##### `mobileStepInput`<sup>Optional</sup> <a name="mobileStepInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.mobileStepInput"></a>
 
 ```java
-public java.lang.Object getMobileStepInput();
+public IResolvable|java.util.List<SyntheticsTestMobileStep> getMobileStepInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
 
 ---
 
@@ -1789,10 +1777,10 @@ public SyntheticsTestRequestDefinition getRequestDefinitionInput();
 ##### `requestFileInput`<sup>Optional</sup> <a name="requestFileInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestFileInput"></a>
 
 ```java
-public java.lang.Object getRequestFileInput();
+public IResolvable|java.util.List<SyntheticsTestRequestFile> getRequestFileInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
 
 ---
 
@@ -1919,10 +1907,10 @@ public java.util.List<java.lang.String> getDeviceIds();
 ##### `forceDeleteDependencies`<sup>Required</sup> <a name="forceDeleteDependencies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.forceDeleteDependencies"></a>
 
 ```java
-public java.lang.Object getForceDeleteDependencies();
+public java.lang.Boolean|IResolvable getForceDeleteDependencies();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2085,22 +2073,16 @@ import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestApiSt
 
 SyntheticsTestApiStep.builder()
     .name(java.lang.String)
-//  .allowFailure(java.lang.Boolean)
-//  .allowFailure(IResolvable)
-//  .assertion(IResolvable)
-//  .assertion(java.util.List<SyntheticsTestApiStepAssertion>)
-//  .exitIfSucceed(java.lang.Boolean)
-//  .exitIfSucceed(IResolvable)
-//  .extractedValue(IResolvable)
-//  .extractedValue(java.util.List<SyntheticsTestApiStepExtractedValue>)
+//  .allowFailure(java.lang.Boolean|IResolvable)
+//  .assertion(IResolvable|java.util.List<SyntheticsTestApiStepAssertion>)
+//  .exitIfSucceed(java.lang.Boolean|IResolvable)
+//  .extractedValue(IResolvable|java.util.List<SyntheticsTestApiStepExtractedValue>)
 //  .extractedValuesFromScript(java.lang.String)
-//  .isCritical(java.lang.Boolean)
-//  .isCritical(IResolvable)
+//  .isCritical(java.lang.Boolean|IResolvable)
 //  .requestBasicauth(SyntheticsTestApiStepRequestBasicauth)
 //  .requestClientCertificate(SyntheticsTestApiStepRequestClientCertificate)
 //  .requestDefinition(SyntheticsTestApiStepRequestDefinition)
-//  .requestFile(IResolvable)
-//  .requestFile(java.util.List<SyntheticsTestApiStepRequestFile>)
+//  .requestFile(IResolvable|java.util.List<SyntheticsTestApiStepRequestFile>)
 //  .requestHeaders(java.util.Map<java.lang.String, java.lang.String>)
 //  .requestMetadata(java.util.Map<java.lang.String, java.lang.String>)
 //  .requestProxy(SyntheticsTestApiStepRequestProxy)
@@ -2116,16 +2098,16 @@ SyntheticsTestApiStep.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.name">name</a></code> | <code>java.lang.String</code> | The name of the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to continue with test if this step fails. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion">assertion</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>></code> | assertion block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to exit the test if the step succeeds. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue">extractedValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>></code> | extracted_value block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to continue with test if this step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion">assertion</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>></code> | assertion block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to exit the test if the step succeeds. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue">extractedValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>></code> | extracted_value block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValuesFromScript">extractedValuesFromScript</a></code> | <code>java.lang.String</code> | Generate variables using JavaScript. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to consider the entire test as failed if this step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to consider the entire test as failed if this step fails. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestBasicauth">requestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth">SyntheticsTestApiStepRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestClientCertificate">requestClientCertificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate">SyntheticsTestApiStepRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestDefinition">requestDefinition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition">SyntheticsTestApiStepRequestDefinition</a></code> | request_definition block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestFile">requestFile</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>></code> | request_file block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestFile">requestFile</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>></code> | request_file block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestHeaders">requestHeaders</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Header name and value map. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestMetadata">requestMetadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Metadata to include when performing the gRPC request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestProxy">requestProxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy">SyntheticsTestApiStepRequestProxy</a></code> | request_proxy block. |
@@ -2153,10 +2135,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allowFailure`<sup>Optional</sup> <a name="allowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.allowFailure"></a>
 
 ```java
-public java.lang.Object getAllowFailure();
+public java.lang.Boolean|IResolvable getAllowFailure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not to continue with test if this step fails.
 
@@ -2167,10 +2149,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `assertion`<sup>Optional</sup> <a name="assertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.assertion"></a>
 
 ```java
-public java.lang.Object getAssertion();
+public IResolvable|java.util.List<SyntheticsTestApiStepAssertion> getAssertion();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>>
 
 assertion block.
 
@@ -2181,10 +2163,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `exitIfSucceed`<sup>Optional</sup> <a name="exitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.exitIfSucceed"></a>
 
 ```java
-public java.lang.Object getExitIfSucceed();
+public java.lang.Boolean|IResolvable getExitIfSucceed();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not to exit the test if the step succeeds.
 
@@ -2195,10 +2177,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `extractedValue`<sup>Optional</sup> <a name="extractedValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.extractedValue"></a>
 
 ```java
-public java.lang.Object getExtractedValue();
+public IResolvable|java.util.List<SyntheticsTestApiStepExtractedValue> getExtractedValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>>
 
 extracted_value block.
 
@@ -2223,10 +2205,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `isCritical`<sup>Optional</sup> <a name="isCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.isCritical"></a>
 
 ```java
-public java.lang.Object getIsCritical();
+public java.lang.Boolean|IResolvable getIsCritical();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not to consider the entire test as failed if this step fails.
 
@@ -2281,10 +2263,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `requestFile`<sup>Optional</sup> <a name="requestFile" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.property.requestFile"></a>
 
 ```java
-public java.lang.Object getRequestFile();
+public IResolvable|java.util.List<SyntheticsTestApiStepRequestFile> getRequestFile();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>>
 
 request_file block.
 
@@ -2770,8 +2752,7 @@ SyntheticsTestApiStepExtractedValue.builder()
     .parser(SyntheticsTestApiStepExtractedValueParser)
     .type(java.lang.String)
 //  .field(java.lang.String)
-//  .secure(java.lang.Boolean)
-//  .secure(IResolvable)
+//  .secure(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2783,7 +2764,7 @@ SyntheticsTestApiStepExtractedValue.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.parser">parser</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser">SyntheticsTestApiStepExtractedValueParser</a></code> | parser block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.type">type</a></code> | <code>java.lang.String</code> | Property of the Synthetics Test Response to use for the variable. Valid values are `grpc_message`, `grpc_metadata`, `http_body`, `http_header`, `http_status_code`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.field">field</a></code> | <code>java.lang.String</code> | When type is `http_header` or `grpc_metadata`, name of the header or metadatum to extract. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.secure">secure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the extracted value will be obfuscated. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.secure">secure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the extracted value will be obfuscated. |
 
 ---
 
@@ -2844,10 +2825,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `secure`<sup>Optional</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.secure"></a>
 
 ```java
-public java.lang.Object getSecure();
+public java.lang.Boolean|IResolvable getSecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not the extracted value will be obfuscated.
 
@@ -3353,41 +3334,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestApiStepRequestDefinition;
 
 SyntheticsTestApiStepRequestDefinition.builder()
-//  .acceptSelfSigned(java.lang.Boolean)
-//  .acceptSelfSigned(IResolvable)
-//  .allowInsecure(java.lang.Boolean)
-//  .allowInsecure(IResolvable)
+//  .acceptSelfSigned(java.lang.Boolean|IResolvable)
+//  .allowInsecure(java.lang.Boolean|IResolvable)
 //  .body(java.lang.String)
 //  .bodyType(java.lang.String)
 //  .callType(java.lang.String)
 //  .certificateDomains(java.util.List<java.lang.String>)
-//  .checkCertificateRevocation(java.lang.Boolean)
-//  .checkCertificateRevocation(IResolvable)
-//  .disableAiaIntermediateFetching(java.lang.Boolean)
-//  .disableAiaIntermediateFetching(IResolvable)
+//  .checkCertificateRevocation(java.lang.Boolean|IResolvable)
+//  .disableAiaIntermediateFetching(java.lang.Boolean|IResolvable)
 //  .dnsServer(java.lang.String)
 //  .dnsServerPort(java.lang.String)
-//  .followRedirects(java.lang.Boolean)
-//  .followRedirects(IResolvable)
+//  .followRedirects(java.lang.Boolean|IResolvable)
 //  .form(java.util.Map<java.lang.String, java.lang.String>)
 //  .host(java.lang.String)
 //  .httpVersion(java.lang.String)
-//  .isMessageBase64Encoded(java.lang.Boolean)
-//  .isMessageBase64Encoded(IResolvable)
+//  .isMessageBase64Encoded(java.lang.Boolean|IResolvable)
 //  .message(java.lang.String)
 //  .method(java.lang.String)
-//  .noSavingResponseBody(java.lang.Boolean)
-//  .noSavingResponseBody(IResolvable)
+//  .noSavingResponseBody(java.lang.Boolean|IResolvable)
 //  .numberOfPackets(java.lang.Number)
-//  .persistCookies(java.lang.Boolean)
-//  .persistCookies(IResolvable)
+//  .persistCookies(java.lang.Boolean|IResolvable)
 //  .plainProtoFile(java.lang.String)
 //  .port(java.lang.String)
 //  .protoJsonDescriptor(java.lang.String)
 //  .servername(java.lang.String)
 //  .service(java.lang.String)
-//  .shouldTrackHops(java.lang.Boolean)
-//  .shouldTrackHops(IResolvable)
+//  .shouldTrackHops(java.lang.Boolean|IResolvable)
 //  .timeout(java.lang.Number)
 //  .url(java.lang.String)
     .build();
@@ -3397,32 +3369,32 @@ SyntheticsTestApiStepRequestDefinition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.acceptSelfSigned">acceptSelfSigned</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should allow self signed certificates. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.allowInsecure">allowInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.acceptSelfSigned">acceptSelfSigned</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should allow self signed certificates. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.allowInsecure">allowInsecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.body">body</a></code> | <code>java.lang.String</code> | The request body. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.bodyType">bodyType</a></code> | <code>java.lang.String</code> | Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.callType">callType</a></code> | <code>java.lang.String</code> | The type of gRPC call to perform. Valid values are `healthcheck`, `unary`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.certificateDomains">certificateDomains</a></code> | <code>java.util.List<java.lang.String></code> | By default, the client certificate is applied on the domain of the starting URL for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.checkCertificateRevocation">checkCertificateRevocation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.disableAiaIntermediateFetching">disableAiaIntermediateFetching</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.checkCertificateRevocation">checkCertificateRevocation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.disableAiaIntermediateFetching">disableAiaIntermediateFetching</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.dnsServer">dnsServer</a></code> | <code>java.lang.String</code> | DNS server to use for DNS tests (`subtype = "dns"`). |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.dnsServerPort">dnsServerPort</a></code> | <code>java.lang.String</code> | DNS server port to use for DNS tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the API HTTP test should follow redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the API HTTP test should follow redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.form">form</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Form data to be sent when `body_type` is `multipart/form-data`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.host">host</a></code> | <code>java.lang.String</code> | Host name to perform the test with. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.httpVersion">httpVersion</a></code> | <code>java.lang.String</code> | HTTP version to use for an HTTP request in an API test or step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.isMessageBase64Encoded">isMessageBase64Encoded</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the message is base64-encoded. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.isMessageBase64Encoded">isMessageBase64Encoded</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether the message is base64-encoded. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.message">message</a></code> | <code>java.lang.String</code> | For gRPC, UDP and websocket tests, message to send with the request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.method">method</a></code> | <code>java.lang.String</code> | Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.noSavingResponseBody">noSavingResponseBody</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to save the response body. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.noSavingResponseBody">noSavingResponseBody</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to save the response body. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.numberOfPackets">numberOfPackets</a></code> | <code>java.lang.Number</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.persistCookies">persistCookies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Persist cookies across redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.persistCookies">persistCookies</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Persist cookies across redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.plainProtoFile">plainProtoFile</a></code> | <code>java.lang.String</code> | The content of a proto file as a string. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.port">port</a></code> | <code>java.lang.String</code> | Port to use when performing the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.protoJsonDescriptor">protoJsonDescriptor</a></code> | <code>java.lang.String</code> | A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.servername">servername</a></code> | <code>java.lang.String</code> | For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.service">service</a></code> | <code>java.lang.String</code> | The gRPC service on which you want to perform the gRPC call. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.shouldTrackHops">shouldTrackHops</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.shouldTrackHops">shouldTrackHops</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | Timeout in seconds for the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.url">url</a></code> | <code>java.lang.String</code> | The URL to send the request to. |
 
@@ -3431,10 +3403,10 @@ SyntheticsTestApiStepRequestDefinition.builder()
 ##### `acceptSelfSigned`<sup>Optional</sup> <a name="acceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.acceptSelfSigned"></a>
 
 ```java
-public java.lang.Object getAcceptSelfSigned();
+public java.lang.Boolean|IResolvable getAcceptSelfSigned();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
@@ -3445,10 +3417,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allowInsecure`<sup>Optional</sup> <a name="allowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.allowInsecure"></a>
 
 ```java
-public java.lang.Object getAllowInsecure();
+public java.lang.Boolean|IResolvable getAllowInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
@@ -3517,10 +3489,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `checkCertificateRevocation`<sup>Optional</sup> <a name="checkCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.checkCertificateRevocation"></a>
 
 ```java
-public java.lang.Object getCheckCertificateRevocation();
+public java.lang.Boolean|IResolvable getCheckCertificateRevocation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
@@ -3531,10 +3503,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disableAiaIntermediateFetching`<sup>Optional</sup> <a name="disableAiaIntermediateFetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.disableAiaIntermediateFetching"></a>
 
 ```java
-public java.lang.Object getDisableAiaIntermediateFetching();
+public java.lang.Boolean|IResolvable getDisableAiaIntermediateFetching();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
@@ -3573,10 +3545,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `followRedirects`<sup>Optional</sup> <a name="followRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.followRedirects"></a>
 
 ```java
-public java.lang.Object getFollowRedirects();
+public java.lang.Boolean|IResolvable getFollowRedirects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not the API HTTP test should follow redirects.
 
@@ -3631,10 +3603,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `isMessageBase64Encoded`<sup>Optional</sup> <a name="isMessageBase64Encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.isMessageBase64Encoded"></a>
 
 ```java
-public java.lang.Object getIsMessageBase64Encoded();
+public java.lang.Boolean|IResolvable getIsMessageBase64Encoded();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether the message is base64-encoded.
 
@@ -3675,10 +3647,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `noSavingResponseBody`<sup>Optional</sup> <a name="noSavingResponseBody" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.noSavingResponseBody"></a>
 
 ```java
-public java.lang.Object getNoSavingResponseBody();
+public java.lang.Boolean|IResolvable getNoSavingResponseBody();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not to save the response body.
 
@@ -3703,10 +3675,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `persistCookies`<sup>Optional</sup> <a name="persistCookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.persistCookies"></a>
 
 ```java
-public java.lang.Object getPersistCookies();
+public java.lang.Boolean|IResolvable getPersistCookies();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Persist cookies across redirects.
 
@@ -3787,10 +3759,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `shouldTrackHops`<sup>Optional</sup> <a name="shouldTrackHops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.property.shouldTrackHops"></a>
 
 ```java
-public java.lang.Object getShouldTrackHops();
+public java.lang.Boolean|IResolvable getShouldTrackHops();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 This will turn on a traceroute probe to discover all gateways along the path to the host destination.
 
@@ -4405,19 +4377,13 @@ SyntheticsTestBrowserStep.builder()
     .name(java.lang.String)
     .params(SyntheticsTestBrowserStepParams)
     .type(java.lang.String)
-//  .allowFailure(java.lang.Boolean)
-//  .allowFailure(IResolvable)
-//  .alwaysExecute(java.lang.Boolean)
-//  .alwaysExecute(IResolvable)
-//  .exitIfSucceed(java.lang.Boolean)
-//  .exitIfSucceed(IResolvable)
-//  .forceElementUpdate(java.lang.Boolean)
-//  .forceElementUpdate(IResolvable)
-//  .isCritical(java.lang.Boolean)
-//  .isCritical(IResolvable)
+//  .allowFailure(java.lang.Boolean|IResolvable)
+//  .alwaysExecute(java.lang.Boolean|IResolvable)
+//  .exitIfSucceed(java.lang.Boolean|IResolvable)
+//  .forceElementUpdate(java.lang.Boolean|IResolvable)
+//  .isCritical(java.lang.Boolean|IResolvable)
 //  .localKey(java.lang.String)
-//  .noScreenshot(java.lang.Boolean)
-//  .noScreenshot(IResolvable)
+//  .noScreenshot(java.lang.Boolean|IResolvable)
 //  .timeout(java.lang.Number)
     .build();
 ```
@@ -4429,13 +4395,13 @@ SyntheticsTestBrowserStep.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.name">name</a></code> | <code>java.lang.String</code> | Name of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams">SyntheticsTestBrowserStepParams</a></code> | params block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.type">type</a></code> | <code>java.lang.String</code> | Type of the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if the step should be allowed to fail. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.alwaysExecute">alwaysExecute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to always execute this step even if the previous step failed or was skipped. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to exit the test if the step succeeds. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.forceElementUpdate">forceElementUpdate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Force update of the "element" parameter for the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to consider the entire test as failed if this step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines if the step should be allowed to fail. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.alwaysExecute">alwaysExecute</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to always execute this step even if the previous step failed or was skipped. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to exit the test if the step succeeds. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.forceElementUpdate">forceElementUpdate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Force update of the "element" parameter for the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to consider the entire test as failed if this step fails. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.localKey">localKey</a></code> | <code>java.lang.String</code> | A unique identifier used to track steps after reordering. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Prevents saving screenshots of the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Prevents saving screenshots of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | Used to override the default timeout of a step. |
 
 ---
@@ -4487,10 +4453,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allowFailure`<sup>Optional</sup> <a name="allowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.allowFailure"></a>
 
 ```java
-public java.lang.Object getAllowFailure();
+public java.lang.Boolean|IResolvable getAllowFailure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines if the step should be allowed to fail.
 
@@ -4501,10 +4467,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `alwaysExecute`<sup>Optional</sup> <a name="alwaysExecute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.alwaysExecute"></a>
 
 ```java
-public java.lang.Object getAlwaysExecute();
+public java.lang.Boolean|IResolvable getAlwaysExecute();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not to always execute this step even if the previous step failed or was skipped.
 
@@ -4515,10 +4481,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `exitIfSucceed`<sup>Optional</sup> <a name="exitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.exitIfSucceed"></a>
 
 ```java
-public java.lang.Object getExitIfSucceed();
+public java.lang.Boolean|IResolvable getExitIfSucceed();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not to exit the test if the step succeeds.
 
@@ -4529,10 +4495,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `forceElementUpdate`<sup>Optional</sup> <a name="forceElementUpdate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.forceElementUpdate"></a>
 
 ```java
-public java.lang.Object getForceElementUpdate();
+public java.lang.Boolean|IResolvable getForceElementUpdate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Force update of the "element" parameter for the step.
 
@@ -4543,10 +4509,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `isCritical`<sup>Optional</sup> <a name="isCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.isCritical"></a>
 
 ```java
-public java.lang.Object getIsCritical();
+public java.lang.Boolean|IResolvable getIsCritical();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not to consider the entire test as failed if this step fails.
 
@@ -4573,10 +4539,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `noScreenshot`<sup>Optional</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.property.noScreenshot"></a>
 
 ```java
-public java.lang.Object getNoScreenshot();
+public java.lang.Boolean|IResolvable getNoScreenshot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Prevents saving screenshots of the step.
 
@@ -4606,13 +4572,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestBrowserStepParams;
 
 SyntheticsTestBrowserStepParams.builder()
-//  .appendToContent(java.lang.Boolean)
-//  .appendToContent(IResolvable)
+//  .appendToContent(java.lang.Boolean|IResolvable)
 //  .attribute(java.lang.String)
 //  .check(java.lang.String)
 //  .clickType(java.lang.String)
-//  .clickWithJavascript(java.lang.Boolean)
-//  .clickWithJavascript(IResolvable)
+//  .clickWithJavascript(java.lang.Boolean|IResolvable)
 //  .code(java.lang.String)
 //  .delay(java.lang.Number)
 //  .element(java.lang.String)
@@ -4628,8 +4592,7 @@ SyntheticsTestBrowserStepParams.builder()
 //  .subtestPublicId(java.lang.String)
 //  .value(java.lang.String)
 //  .variable(SyntheticsTestBrowserStepParamsVariable)
-//  .withClick(java.lang.Boolean)
-//  .withClick(IResolvable)
+//  .withClick(java.lang.Boolean|IResolvable)
 //  .x(java.lang.Number)
 //  .y(java.lang.Number)
     .build();
@@ -4639,11 +4602,11 @@ SyntheticsTestBrowserStepParams.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.appendToContent">appendToContent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to append the `value` to existing text input content for a "typeText" step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.appendToContent">appendToContent</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to append the `value` to existing text input content for a "typeText" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.attribute">attribute</a></code> | <code>java.lang.String</code> | Name of the attribute to use for an "assert attribute" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.check">check</a></code> | <code>java.lang.String</code> | Check type to use for an assertion step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickType">clickType</a></code> | <code>java.lang.String</code> | Type of click to use for a "click" step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript">clickWithJavascript</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript">clickWithJavascript</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.code">code</a></code> | <code>java.lang.String</code> | Javascript code to use for the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.delay">delay</a></code> | <code>java.lang.Number</code> | Delay between each key stroke for a "type test" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.element">element</a></code> | <code>java.lang.String</code> | Element to use for the step, JSON encoded string. |
@@ -4659,7 +4622,7 @@ SyntheticsTestBrowserStepParams.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.subtestPublicId">subtestPublicId</a></code> | <code>java.lang.String</code> | ID of the Synthetics test to use as subtest. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.value">value</a></code> | <code>java.lang.String</code> | Value of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable">SyntheticsTestBrowserStepParamsVariable</a></code> | variable block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.withClick">withClick</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | For "file upload" steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.withClick">withClick</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | For "file upload" steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.x">x</a></code> | <code>java.lang.Number</code> | X coordinates for a "scroll step". |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.y">y</a></code> | <code>java.lang.Number</code> | Y coordinates for a "scroll step". |
 
@@ -4668,10 +4631,10 @@ SyntheticsTestBrowserStepParams.builder()
 ##### `appendToContent`<sup>Optional</sup> <a name="appendToContent" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.appendToContent"></a>
 
 ```java
-public java.lang.Object getAppendToContent();
+public java.lang.Boolean|IResolvable getAppendToContent();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to append the `value` to existing text input content for a "typeText" step.
 
@@ -4728,10 +4691,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `clickWithJavascript`<sup>Optional</sup> <a name="clickWithJavascript" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript"></a>
 
 ```java
-public java.lang.Object getClickWithJavascript();
+public java.lang.Boolean|IResolvable getClickWithJavascript();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction.
 
@@ -4960,10 +4923,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `withClick`<sup>Optional</sup> <a name="withClick" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.withClick"></a>
 
 ```java
-public java.lang.Object getWithClick();
+public java.lang.Boolean|IResolvable getWithClick();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 For "file upload" steps.
 
@@ -5008,8 +4971,7 @@ import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestBrows
 
 SyntheticsTestBrowserStepParamsElementUserLocator.builder()
     .value(SyntheticsTestBrowserStepParamsElementUserLocatorValue)
-//  .failTestOnCannotLocate(java.lang.Boolean)
-//  .failTestOnCannotLocate(IResolvable)
+//  .failTestOnCannotLocate(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -5018,7 +4980,7 @@ SyntheticsTestBrowserStepParamsElementUserLocator.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.value">value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue">SyntheticsTestBrowserStepParamsElementUserLocatorValue</a></code> | value block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Defaults to `false`. |
 
 ---
 
@@ -5039,10 +5001,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `failTestOnCannotLocate`<sup>Optional</sup> <a name="failTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.property.failTestOnCannotLocate"></a>
 
 ```java
-public java.lang.Object getFailTestOnCannotLocate();
+public java.lang.Boolean|IResolvable getFailTestOnCannotLocate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Defaults to `false`.
 
@@ -5158,8 +5120,7 @@ import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestBrows
 SyntheticsTestBrowserStepParamsVariable.builder()
 //  .example(java.lang.String)
 //  .name(java.lang.String)
-//  .secure(java.lang.Boolean)
-//  .secure(IResolvable)
+//  .secure(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -5169,7 +5130,7 @@ SyntheticsTestBrowserStepParamsVariable.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.example">example</a></code> | <code>java.lang.String</code> | Example of the extracted variable. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.name">name</a></code> | <code>java.lang.String</code> | Name of the extracted variable. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.secure">secure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.secure">secure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
 
 ---
 
@@ -5204,10 +5165,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `secure`<sup>Optional</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.property.secure"></a>
 
 ```java
-public java.lang.Object getSecure();
+public java.lang.Boolean|IResolvable getSecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
@@ -5228,8 +5189,7 @@ SyntheticsTestBrowserVariable.builder()
 //  .example(java.lang.String)
 //  .id(java.lang.String)
 //  .pattern(java.lang.String)
-//  .secure(java.lang.Boolean)
-//  .secure(IResolvable)
+//  .secure(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -5242,7 +5202,7 @@ SyntheticsTestBrowserVariable.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.example">example</a></code> | <code>java.lang.String</code> | Example for the variable. Defaults to `""`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.id">id</a></code> | <code>java.lang.String</code> | ID of the global variable to use. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.pattern">pattern</a></code> | <code>java.lang.String</code> | Pattern of the variable. Defaults to `""`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.secure">secure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the browser test variable is obfuscated. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.secure">secure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the browser test variable is obfuscated. |
 
 ---
 
@@ -5324,10 +5284,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `secure`<sup>Optional</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.property.secure"></a>
 
 ```java
-public java.lang.Object getSecure();
+public java.lang.Boolean|IResolvable getSecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not the browser test variable is obfuscated.
 
@@ -5345,46 +5305,34 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestConfig;
 
 SyntheticsTestConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .locations(java.util.List<java.lang.String>)
     .name(java.lang.String)
     .status(java.lang.String)
     .type(java.lang.String)
-//  .apiStep(IResolvable)
-//  .apiStep(java.util.List<SyntheticsTestApiStep>)
-//  .assertion(IResolvable)
-//  .assertion(java.util.List<SyntheticsTestAssertion>)
-//  .browserStep(IResolvable)
-//  .browserStep(java.util.List<SyntheticsTestBrowserStep>)
-//  .browserVariable(IResolvable)
-//  .browserVariable(java.util.List<SyntheticsTestBrowserVariable>)
+//  .apiStep(IResolvable|java.util.List<SyntheticsTestApiStep>)
+//  .assertion(IResolvable|java.util.List<SyntheticsTestAssertion>)
+//  .browserStep(IResolvable|java.util.List<SyntheticsTestBrowserStep>)
+//  .browserVariable(IResolvable|java.util.List<SyntheticsTestBrowserVariable>)
 //  .configInitialApplicationArguments(java.util.Map<java.lang.String, java.lang.String>)
-//  .configVariable(IResolvable)
-//  .configVariable(java.util.List<SyntheticsTestConfigVariable>)
+//  .configVariable(IResolvable|java.util.List<SyntheticsTestConfigVariable>)
 //  .deviceIds(java.util.List<java.lang.String>)
-//  .forceDeleteDependencies(java.lang.Boolean)
-//  .forceDeleteDependencies(IResolvable)
+//  .forceDeleteDependencies(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .message(java.lang.String)
 //  .mobileOptionsList(SyntheticsTestMobileOptionsListStruct)
-//  .mobileStep(IResolvable)
-//  .mobileStep(java.util.List<SyntheticsTestMobileStep>)
+//  .mobileStep(IResolvable|java.util.List<SyntheticsTestMobileStep>)
 //  .optionsList(SyntheticsTestOptionsListStruct)
 //  .requestBasicauth(SyntheticsTestRequestBasicauth)
 //  .requestClientCertificate(SyntheticsTestRequestClientCertificate)
 //  .requestDefinition(SyntheticsTestRequestDefinition)
-//  .requestFile(IResolvable)
-//  .requestFile(java.util.List<SyntheticsTestRequestFile>)
+//  .requestFile(IResolvable|java.util.List<SyntheticsTestRequestFile>)
 //  .requestHeaders(java.util.Map<java.lang.String, java.lang.String>)
 //  .requestMetadata(java.util.Map<java.lang.String, java.lang.String>)
 //  .requestProxy(SyntheticsTestRequestProxy)
@@ -5400,34 +5348,34 @@ SyntheticsTestConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.locations">locations</a></code> | <code>java.util.List<java.lang.String></code> | Array of locations used to run the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of Datadog synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.status">status</a></code> | <code>java.lang.String</code> | Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.type">type</a></code> | <code>java.lang.String</code> | Synthetics test type. Valid values are `api`, `browser`, `mobile`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.apiStep">apiStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>></code> | api_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion">assertion</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | assertion block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep">browserStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | browser_step block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable">browserVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | browser_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.apiStep">apiStep</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>></code> | api_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion">assertion</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | assertion block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep">browserStep</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | browser_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable">browserVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | browser_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configInitialApplicationArguments">configInitialApplicationArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Initial application arguments for the mobile test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable">configVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | config_variable block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable">configVariable</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | config_variable block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | Required if `type = "browser"`. Array with the different device IDs used to run the test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies">forceDeleteDependencies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies">forceDeleteDependencies</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.message">message</a></code> | <code>java.lang.String</code> | A message to include with notifications for this synthetics test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileOptionsList">mobileOptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | mobile_options_list block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep">mobileStep</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | mobile_step block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep">mobileStep</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | mobile_step block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList">optionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestBasicauth">requestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestClientCertificate">requestClientCertificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestDefinition">requestDefinition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | request_definition block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestFile">requestFile</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>></code> | request_file block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestFile">requestFile</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>></code> | request_file block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestHeaders">requestHeaders</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Header name and value map. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestMetadata">requestMetadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Metadata to include when performing the gRPC request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestProxy">requestProxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy">SyntheticsTestRequestProxy</a></code> | request_proxy block. |
@@ -5442,20 +5390,20 @@ SyntheticsTestConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -5502,10 +5450,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -5570,10 +5518,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `apiStep`<sup>Optional</sup> <a name="apiStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.apiStep"></a>
 
 ```java
-public java.lang.Object getApiStep();
+public IResolvable|java.util.List<SyntheticsTestApiStep> getApiStep();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
 
 api_step block.
 
@@ -5584,10 +5532,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `assertion`<sup>Optional</sup> <a name="assertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.assertion"></a>
 
 ```java
-public java.lang.Object getAssertion();
+public IResolvable|java.util.List<SyntheticsTestAssertion> getAssertion();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
 
 assertion block.
 
@@ -5598,10 +5546,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `browserStep`<sup>Optional</sup> <a name="browserStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserStep"></a>
 
 ```java
-public java.lang.Object getBrowserStep();
+public IResolvable|java.util.List<SyntheticsTestBrowserStep> getBrowserStep();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
 
 browser_step block.
 
@@ -5612,10 +5560,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `browserVariable`<sup>Optional</sup> <a name="browserVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.browserVariable"></a>
 
 ```java
-public java.lang.Object getBrowserVariable();
+public IResolvable|java.util.List<SyntheticsTestBrowserVariable> getBrowserVariable();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
 
 browser_variable block.
 
@@ -5640,10 +5588,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `configVariable`<sup>Optional</sup> <a name="configVariable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable"></a>
 
 ```java
-public java.lang.Object getConfigVariable();
+public IResolvable|java.util.List<SyntheticsTestConfigVariable> getConfigVariable();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
 
 config_variable block.
 
@@ -5668,10 +5616,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `forceDeleteDependencies`<sup>Optional</sup> <a name="forceDeleteDependencies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies"></a>
 
 ```java
-public java.lang.Object getForceDeleteDependencies();
+public java.lang.Boolean|IResolvable getForceDeleteDependencies();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
 
@@ -5727,10 +5675,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `mobileStep`<sup>Optional</sup> <a name="mobileStep" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep"></a>
 
 ```java
-public java.lang.Object getMobileStep();
+public IResolvable|java.util.List<SyntheticsTestMobileStep> getMobileStep();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
 
 mobile_step block.
 
@@ -5797,10 +5745,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `requestFile`<sup>Optional</sup> <a name="requestFile" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestFile"></a>
 
 ```java
-public java.lang.Object getRequestFile();
+public IResolvable|java.util.List<SyntheticsTestRequestFile> getRequestFile();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
 
 request_file block.
 
@@ -5937,8 +5885,7 @@ SyntheticsTestConfigVariable.builder()
 //  .example(java.lang.String)
 //  .id(java.lang.String)
 //  .pattern(java.lang.String)
-//  .secure(java.lang.Boolean)
-//  .secure(IResolvable)
+//  .secure(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -5951,7 +5898,7 @@ SyntheticsTestConfigVariable.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.example">example</a></code> | <code>java.lang.String</code> | Example for the variable. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.id">id</a></code> | <code>java.lang.String</code> | When type = `global`, ID of the global variable to use. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.pattern">pattern</a></code> | <code>java.lang.String</code> | Pattern of the variable. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.secure">secure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.secure">secure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether the value of this variable will be obfuscated in test results. Defaults to `false`. |
 
 ---
 
@@ -6035,10 +5982,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `secure`<sup>Optional</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.property.secure"></a>
 
 ```java
-public java.lang.Object getSecure();
+public java.lang.Boolean|IResolvable getSecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
@@ -6334,8 +6281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileOptionsListScheduling;
 
 SyntheticsTestMobileOptionsListScheduling.builder()
-    .timeframes(IResolvable)
-    .timeframes(java.util.List<SyntheticsTestMobileOptionsListSchedulingTimeframes>)
+    .timeframes(IResolvable|java.util.List<SyntheticsTestMobileOptionsListSchedulingTimeframes>)
     .timezone(java.lang.String)
     .build();
 ```
@@ -6344,7 +6290,7 @@ SyntheticsTestMobileOptionsListScheduling.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes">timeframes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>></code> | timeframes block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes">timeframes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>></code> | timeframes block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timezone">timezone</a></code> | <code>java.lang.String</code> | Timezone in which the timeframe is based. |
 
 ---
@@ -6352,10 +6298,10 @@ SyntheticsTestMobileOptionsListScheduling.builder()
 ##### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.property.timeframes"></a>
 
 ```java
-public java.lang.Object getTimeframes();
+public IResolvable|java.util.List<SyntheticsTestMobileOptionsListSchedulingTimeframes> getTimeframes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
 
 timeframes block.
 
@@ -6454,20 +6400,16 @@ SyntheticsTestMobileOptionsListStruct.builder()
     .deviceIds(java.util.List<java.lang.String>)
     .mobileApplication(SyntheticsTestMobileOptionsListMobileApplication)
     .tickEvery(java.lang.Number)
-//  .allowApplicationCrash(java.lang.Boolean)
-//  .allowApplicationCrash(IResolvable)
-//  .bindings(IResolvable)
-//  .bindings(java.util.List<SyntheticsTestMobileOptionsListBindings>)
+//  .allowApplicationCrash(java.lang.Boolean|IResolvable)
+//  .bindings(IResolvable|java.util.List<SyntheticsTestMobileOptionsListBindings>)
 //  .ci(SyntheticsTestMobileOptionsListCi)
 //  .defaultStepTimeout(java.lang.Number)
-//  .disableAutoAcceptAlert(java.lang.Boolean)
-//  .disableAutoAcceptAlert(IResolvable)
+//  .disableAutoAcceptAlert(java.lang.Boolean|IResolvable)
 //  .minFailureDuration(java.lang.Number)
 //  .monitorName(java.lang.String)
 //  .monitorOptions(SyntheticsTestMobileOptionsListMonitorOptions)
 //  .monitorPriority(java.lang.Number)
-//  .noScreenshot(java.lang.Boolean)
-//  .noScreenshot(IResolvable)
+//  .noScreenshot(java.lang.Boolean|IResolvable)
 //  .restrictedRoles(java.util.List<java.lang.String>)
 //  .retry(SyntheticsTestMobileOptionsListRetry)
 //  .scheduling(SyntheticsTestMobileOptionsListScheduling)
@@ -6482,16 +6424,16 @@ SyntheticsTestMobileOptionsListStruct.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.mobileApplication">mobileApplication</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | mobile_application block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.tickEvery">tickEvery</a></code> | <code>java.lang.Number</code> | How often the test should run (in seconds). Valid range is `300-604800` for mobile tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash">allowApplicationCrash</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings">bindings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>></code> | bindings block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash">allowApplicationCrash</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings">bindings</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>></code> | bindings block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | ci block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.defaultStepTimeout">defaultStepTimeout</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert">disableAutoAcceptAlert</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert">disableAutoAcceptAlert</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.minFailureDuration">minFailureDuration</a></code> | <code>java.lang.Number</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorName">monitorName</a></code> | <code>java.lang.String</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorOptions">monitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | monitor_options block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorPriority">monitorPriority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | retry block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | scheduling block. |
@@ -6542,10 +6484,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allowApplicationCrash`<sup>Optional</sup> <a name="allowApplicationCrash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash"></a>
 
 ```java
-public java.lang.Object getAllowApplicationCrash();
+public java.lang.Boolean|IResolvable getAllowApplicationCrash();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}.
 
@@ -6554,10 +6496,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `bindings`<sup>Optional</sup> <a name="bindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings"></a>
 
 ```java
-public java.lang.Object getBindings();
+public IResolvable|java.util.List<SyntheticsTestMobileOptionsListBindings> getBindings();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
 
 bindings block.
 
@@ -6594,10 +6536,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disableAutoAcceptAlert`<sup>Optional</sup> <a name="disableAutoAcceptAlert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert"></a>
 
 ```java
-public java.lang.Object getDisableAutoAcceptAlert();
+public java.lang.Boolean|IResolvable getDisableAutoAcceptAlert();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}.
 
@@ -6660,10 +6602,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `noScreenshot`<sup>Optional</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot"></a>
 
 ```java
-public java.lang.Object getNoScreenshot();
+public java.lang.Boolean|IResolvable getNoScreenshot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Prevents saving screenshots of the steps.
 
@@ -6738,14 +6680,10 @@ SyntheticsTestMobileStep.builder()
     .name(java.lang.String)
     .params(SyntheticsTestMobileStepParams)
     .type(java.lang.String)
-//  .allowFailure(java.lang.Boolean)
-//  .allowFailure(IResolvable)
-//  .hasNewStepElement(java.lang.Boolean)
-//  .hasNewStepElement(IResolvable)
-//  .isCritical(java.lang.Boolean)
-//  .isCritical(IResolvable)
-//  .noScreenshot(java.lang.Boolean)
-//  .noScreenshot(IResolvable)
+//  .allowFailure(java.lang.Boolean|IResolvable)
+//  .hasNewStepElement(java.lang.Boolean|IResolvable)
+//  .isCritical(java.lang.Boolean|IResolvable)
+//  .noScreenshot(java.lang.Boolean|IResolvable)
 //  .publicId(java.lang.String)
 //  .timeout(java.lang.Number)
     .build();
@@ -6758,10 +6696,10 @@ SyntheticsTestMobileStep.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.name">name</a></code> | <code>java.lang.String</code> | The name of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | params block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.type">type</a></code> | <code>java.lang.String</code> | The type of the step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean set to allow this step to fail. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement">hasNewStepElement</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean set to determine if the step has a new step element. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean set to not take a screenshot for the step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean set to allow this step to fail. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement">hasNewStepElement</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean set to determine if the step has a new step element. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean set to not take a screenshot for the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.publicId">publicId</a></code> | <code>java.lang.String</code> | The public ID of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | The time before declaring a step failed. |
 
@@ -6814,10 +6752,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allowFailure`<sup>Optional</sup> <a name="allowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.allowFailure"></a>
 
 ```java
-public java.lang.Object getAllowFailure();
+public java.lang.Boolean|IResolvable getAllowFailure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean set to allow this step to fail.
 
@@ -6828,10 +6766,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `hasNewStepElement`<sup>Optional</sup> <a name="hasNewStepElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.hasNewStepElement"></a>
 
 ```java
-public java.lang.Object getHasNewStepElement();
+public java.lang.Boolean|IResolvable getHasNewStepElement();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean set to determine if the step has a new step element.
 
@@ -6842,10 +6780,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `isCritical`<sup>Optional</sup> <a name="isCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.isCritical"></a>
 
 ```java
-public java.lang.Object getIsCritical();
+public java.lang.Boolean|IResolvable getIsCritical();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails.
 
@@ -6856,10 +6794,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `noScreenshot`<sup>Optional</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.property.noScreenshot"></a>
 
 ```java
-public java.lang.Object getNoScreenshot();
+public java.lang.Boolean|IResolvable getNoScreenshot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean set to not take a screenshot for the step.
 
@@ -6907,16 +6845,13 @@ SyntheticsTestMobileStepParams.builder()
 //  .delay(java.lang.Number)
 //  .direction(java.lang.String)
 //  .element(SyntheticsTestMobileStepParamsElement)
-//  .enable(java.lang.Boolean)
-//  .enable(IResolvable)
+//  .enable(java.lang.Boolean|IResolvable)
 //  .maxScrolls(java.lang.Number)
-//  .positions(IResolvable)
-//  .positions(java.util.List<SyntheticsTestMobileStepParamsPositions>)
+//  .positions(IResolvable|java.util.List<SyntheticsTestMobileStepParamsPositions>)
 //  .subtestPublicId(java.lang.String)
 //  .value(java.lang.String)
 //  .variable(SyntheticsTestMobileStepParamsVariable)
-//  .withEnter(java.lang.Boolean)
-//  .withEnter(IResolvable)
+//  .withEnter(java.lang.Boolean|IResolvable)
 //  .x(java.lang.Number)
 //  .y(java.lang.Number)
     .build();
@@ -6930,13 +6865,13 @@ SyntheticsTestMobileStepParams.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.delay">delay</a></code> | <code>java.lang.Number</code> | Delay between each key stroke for a "type test" step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.direction">direction</a></code> | <code>java.lang.String</code> | Valid values are `up`, `down`, `left`, `right`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.element">element</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | element block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable">enable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable">enable</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.maxScrolls">maxScrolls</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions">positions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>></code> | positions block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions">positions</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>></code> | positions block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.subtestPublicId">subtestPublicId</a></code> | <code>java.lang.String</code> | ID of the Synthetics test to use as subtest. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.value">value</a></code> | <code>java.lang.String</code> | Value of the step. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | variable block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter">withEnter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter">withEnter</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.x">x</a></code> | <code>java.lang.Number</code> | X coordinates for a "scroll step". |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.y">y</a></code> | <code>java.lang.Number</code> | Y coordinates for a "scroll step". |
 
@@ -7003,10 +6938,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `enable`<sup>Optional</sup> <a name="enable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable"></a>
 
 ```java
-public java.lang.Object getEnable();
+public java.lang.Boolean|IResolvable getEnable();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}.
 
@@ -7027,10 +6962,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `positions`<sup>Optional</sup> <a name="positions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions"></a>
 
 ```java
-public java.lang.Object getPositions();
+public IResolvable|java.util.List<SyntheticsTestMobileStepParamsPositions> getPositions();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
 
 positions block.
 
@@ -7083,10 +7018,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `withEnter`<sup>Optional</sup> <a name="withEnter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter"></a>
 
 ```java
-public java.lang.Object getWithEnter();
+public java.lang.Boolean|IResolvable getWithEnter();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}.
 
@@ -7310,10 +7245,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestMobileStepParamsElementUserLocator;
 
 SyntheticsTestMobileStepParamsElementUserLocator.builder()
-//  .failTestOnCannotLocate(java.lang.Boolean)
-//  .failTestOnCannotLocate(IResolvable)
-//  .values(IResolvable)
-//  .values(java.util.List<SyntheticsTestMobileStepParamsElementUserLocatorValues>)
+//  .failTestOnCannotLocate(java.lang.Boolean|IResolvable)
+//  .values(IResolvable|java.util.List<SyntheticsTestMobileStepParamsElementUserLocatorValues>)
     .build();
 ```
 
@@ -7321,18 +7254,18 @@ SyntheticsTestMobileStepParamsElementUserLocator.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values">values</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>></code> | values block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values">values</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>></code> | values block. |
 
 ---
 
 ##### `failTestOnCannotLocate`<sup>Optional</sup> <a name="failTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate"></a>
 
 ```java
-public java.lang.Object getFailTestOnCannotLocate();
+public java.lang.Boolean|IResolvable getFailTestOnCannotLocate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}.
 
@@ -7341,10 +7274,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values"></a>
 
 ```java
-public java.lang.Object getValues();
+public IResolvable|java.util.List<SyntheticsTestMobileStepParamsElementUserLocatorValues> getValues();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
 
 values block.
 
@@ -7674,8 +7607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestOptionsListRumSettings;
 
 SyntheticsTestOptionsListRumSettings.builder()
-    .isEnabled(java.lang.Boolean)
-    .isEnabled(IResolvable)
+    .isEnabled(java.lang.Boolean|IResolvable)
 //  .applicationId(java.lang.String)
 //  .clientTokenId(java.lang.Number)
     .build();
@@ -7685,7 +7617,7 @@ SyntheticsTestOptionsListRumSettings.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether RUM data is collected during test runs. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether RUM data is collected during test runs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | RUM application ID used to collect RUM data for the browser test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.clientTokenId">clientTokenId</a></code> | <code>java.lang.Number</code> | RUM application API key ID used to collect RUM data for the browser test. |
 
@@ -7694,10 +7626,10 @@ SyntheticsTestOptionsListRumSettings.builder()
 ##### `isEnabled`<sup>Required</sup> <a name="isEnabled" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.property.isEnabled"></a>
 
 ```java
-public java.lang.Object getIsEnabled();
+public java.lang.Boolean|IResolvable getIsEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether RUM data is collected during test runs.
 
@@ -7741,8 +7673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestOptionsListScheduling;
 
 SyntheticsTestOptionsListScheduling.builder()
-    .timeframes(IResolvable)
-    .timeframes(java.util.List<SyntheticsTestOptionsListSchedulingTimeframes>)
+    .timeframes(IResolvable|java.util.List<SyntheticsTestOptionsListSchedulingTimeframes>)
     .timezone(java.lang.String)
     .build();
 ```
@@ -7751,7 +7682,7 @@ SyntheticsTestOptionsListScheduling.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes">timeframes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>></code> | timeframes block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes">timeframes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>></code> | timeframes block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timezone">timezone</a></code> | <code>java.lang.String</code> | Timezone in which the timeframe is based. |
 
 ---
@@ -7759,10 +7690,10 @@ SyntheticsTestOptionsListScheduling.builder()
 ##### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes"></a>
 
 ```java
-public java.lang.Object getTimeframes();
+public IResolvable|java.util.List<SyntheticsTestOptionsListSchedulingTimeframes> getTimeframes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>>
 
 timeframes block.
 
@@ -7859,32 +7790,23 @@ import com.hashicorp.cdktf.providers.datadog.synthetics_test.SyntheticsTestOptio
 
 SyntheticsTestOptionsListStruct.builder()
     .tickEvery(java.lang.Number)
-//  .acceptSelfSigned(java.lang.Boolean)
-//  .acceptSelfSigned(IResolvable)
-//  .allowInsecure(java.lang.Boolean)
-//  .allowInsecure(IResolvable)
-//  .checkCertificateRevocation(java.lang.Boolean)
-//  .checkCertificateRevocation(IResolvable)
+//  .acceptSelfSigned(java.lang.Boolean|IResolvable)
+//  .allowInsecure(java.lang.Boolean|IResolvable)
+//  .checkCertificateRevocation(java.lang.Boolean|IResolvable)
 //  .ci(SyntheticsTestOptionsListCi)
-//  .disableAiaIntermediateFetching(java.lang.Boolean)
-//  .disableAiaIntermediateFetching(IResolvable)
-//  .disableCors(java.lang.Boolean)
-//  .disableCors(IResolvable)
-//  .disableCsp(java.lang.Boolean)
-//  .disableCsp(IResolvable)
-//  .followRedirects(java.lang.Boolean)
-//  .followRedirects(IResolvable)
+//  .disableAiaIntermediateFetching(java.lang.Boolean|IResolvable)
+//  .disableCors(java.lang.Boolean|IResolvable)
+//  .disableCsp(java.lang.Boolean|IResolvable)
+//  .followRedirects(java.lang.Boolean|IResolvable)
 //  .httpVersion(java.lang.String)
-//  .ignoreServerCertificateError(java.lang.Boolean)
-//  .ignoreServerCertificateError(IResolvable)
+//  .ignoreServerCertificateError(java.lang.Boolean|IResolvable)
 //  .initialNavigationTimeout(java.lang.Number)
 //  .minFailureDuration(java.lang.Number)
 //  .minLocationFailed(java.lang.Number)
 //  .monitorName(java.lang.String)
 //  .monitorOptions(SyntheticsTestOptionsListMonitorOptions)
 //  .monitorPriority(java.lang.Number)
-//  .noScreenshot(java.lang.Boolean)
-//  .noScreenshot(IResolvable)
+//  .noScreenshot(java.lang.Boolean|IResolvable)
 //  .restrictedRoles(java.util.List<java.lang.String>)
 //  .retry(SyntheticsTestOptionsListRetry)
 //  .rumSettings(SyntheticsTestOptionsListRumSettings)
@@ -7897,23 +7819,23 @@ SyntheticsTestOptionsListStruct.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.tickEvery">tickEvery</a></code> | <code>java.lang.Number</code> | How often the test should run (in seconds). |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned">acceptSelfSigned</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should allow self signed certificates. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure">allowInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation">checkCertificateRevocation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned">acceptSelfSigned</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should allow self signed certificates. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure">allowInsecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allows loading insecure content for a request in an API test or in a multistep API test step. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation">checkCertificateRevocation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | ci block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableAiaIntermediateFetching">disableAiaIntermediateFetching</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors">disableCors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable Cross-Origin Resource Sharing for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp">disableCsp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable Content Security Policy for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the API HTTP test should follow redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableAiaIntermediateFetching">disableAiaIntermediateFetching</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors">disableCors</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Disable Cross-Origin Resource Sharing for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp">disableCsp</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Disable Content Security Policy for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the API HTTP test should follow redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.httpVersion">httpVersion</a></code> | <code>java.lang.String</code> | HTTP version to use for an HTTP request in an API test or step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError">ignoreServerCertificateError</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore server certificate error for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError">ignoreServerCertificateError</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Ignore server certificate error for browser tests. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.initialNavigationTimeout">initialNavigationTimeout</a></code> | <code>java.lang.Number</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minFailureDuration">minFailureDuration</a></code> | <code>java.lang.Number</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minLocationFailed">minLocationFailed</a></code> | <code>java.lang.Number</code> | Minimum number of locations in failure required to trigger an alert. Defaults to `1`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorName">monitorName</a></code> | <code>java.lang.String</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorOptions">monitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority">monitorPriority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Prevents saving screenshots of the steps. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.rumSettings">rumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | rum_settings block. |
@@ -7940,10 +7862,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `acceptSelfSigned`<sup>Optional</sup> <a name="acceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned"></a>
 
 ```java
-public java.lang.Object getAcceptSelfSigned();
+public java.lang.Boolean|IResolvable getAcceptSelfSigned();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
@@ -7954,10 +7876,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `allowInsecure`<sup>Optional</sup> <a name="allowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure"></a>
 
 ```java
-public java.lang.Object getAllowInsecure();
+public java.lang.Boolean|IResolvable getAllowInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
@@ -7968,10 +7890,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `checkCertificateRevocation`<sup>Optional</sup> <a name="checkCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation"></a>
 
 ```java
-public java.lang.Object getCheckCertificateRevocation();
+public java.lang.Boolean|IResolvable getCheckCertificateRevocation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
@@ -7996,10 +7918,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disableAiaIntermediateFetching`<sup>Optional</sup> <a name="disableAiaIntermediateFetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableAiaIntermediateFetching"></a>
 
 ```java
-public java.lang.Object getDisableAiaIntermediateFetching();
+public java.lang.Boolean|IResolvable getDisableAiaIntermediateFetching();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
@@ -8010,10 +7932,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disableCors`<sup>Optional</sup> <a name="disableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors"></a>
 
 ```java
-public java.lang.Object getDisableCors();
+public java.lang.Boolean|IResolvable getDisableCors();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Disable Cross-Origin Resource Sharing for browser tests.
 
@@ -8024,10 +7946,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `disableCsp`<sup>Optional</sup> <a name="disableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp"></a>
 
 ```java
-public java.lang.Object getDisableCsp();
+public java.lang.Boolean|IResolvable getDisableCsp();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Disable Content Security Policy for browser tests.
 
@@ -8038,10 +7960,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `followRedirects`<sup>Optional</sup> <a name="followRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects"></a>
 
 ```java
-public java.lang.Object getFollowRedirects();
+public java.lang.Boolean|IResolvable getFollowRedirects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not the API HTTP test should follow redirects.
 
@@ -8068,10 +7990,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ignoreServerCertificateError`<sup>Optional</sup> <a name="ignoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError"></a>
 
 ```java
-public java.lang.Object getIgnoreServerCertificateError();
+public java.lang.Boolean|IResolvable getIgnoreServerCertificateError();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Ignore server certificate error for browser tests.
 
@@ -8164,10 +8086,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `noScreenshot`<sup>Optional</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot"></a>
 
 ```java
-public java.lang.Object getNoScreenshot();
+public java.lang.Boolean|IResolvable getNoScreenshot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Prevents saving screenshots of the steps.
 
@@ -8690,22 +8612,18 @@ SyntheticsTestRequestDefinition.builder()
 //  .form(java.util.Map<java.lang.String, java.lang.String>)
 //  .host(java.lang.String)
 //  .httpVersion(java.lang.String)
-//  .isMessageBase64Encoded(java.lang.Boolean)
-//  .isMessageBase64Encoded(IResolvable)
+//  .isMessageBase64Encoded(java.lang.Boolean|IResolvable)
 //  .message(java.lang.String)
 //  .method(java.lang.String)
-//  .noSavingResponseBody(java.lang.Boolean)
-//  .noSavingResponseBody(IResolvable)
+//  .noSavingResponseBody(java.lang.Boolean|IResolvable)
 //  .numberOfPackets(java.lang.Number)
-//  .persistCookies(java.lang.Boolean)
-//  .persistCookies(IResolvable)
+//  .persistCookies(java.lang.Boolean|IResolvable)
 //  .plainProtoFile(java.lang.String)
 //  .port(java.lang.String)
 //  .protoJsonDescriptor(java.lang.String)
 //  .servername(java.lang.String)
 //  .service(java.lang.String)
-//  .shouldTrackHops(java.lang.Boolean)
-//  .shouldTrackHops(IResolvable)
+//  .shouldTrackHops(java.lang.Boolean|IResolvable)
 //  .timeout(java.lang.Number)
 //  .url(java.lang.String)
     .build();
@@ -8724,18 +8642,18 @@ SyntheticsTestRequestDefinition.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.form">form</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Form data to be sent when `body_type` is `multipart/form-data`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.host">host</a></code> | <code>java.lang.String</code> | Host name to perform the test with. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.httpVersion">httpVersion</a></code> | <code>java.lang.String</code> | HTTP version to use for an HTTP request in an API test or step. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.isMessageBase64Encoded">isMessageBase64Encoded</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the message is base64-encoded. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.isMessageBase64Encoded">isMessageBase64Encoded</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether the message is base64-encoded. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.message">message</a></code> | <code>java.lang.String</code> | For gRPC, UDP and websocket tests, message to send with the request. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.method">method</a></code> | <code>java.lang.String</code> | Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.noSavingResponseBody">noSavingResponseBody</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to save the response body. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.noSavingResponseBody">noSavingResponseBody</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines whether or not to save the response body. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.numberOfPackets">numberOfPackets</a></code> | <code>java.lang.Number</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.persistCookies">persistCookies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Persist cookies across redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.persistCookies">persistCookies</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Persist cookies across redirects. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.plainProtoFile">plainProtoFile</a></code> | <code>java.lang.String</code> | The content of a proto file as a string. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.port">port</a></code> | <code>java.lang.String</code> | Port to use when performing the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.protoJsonDescriptor">protoJsonDescriptor</a></code> | <code>java.lang.String</code> | A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.servername">servername</a></code> | <code>java.lang.String</code> | For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.service">service</a></code> | <code>java.lang.String</code> | The gRPC service on which you want to perform the gRPC call. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.shouldTrackHops">shouldTrackHops</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.shouldTrackHops">shouldTrackHops</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | Timeout in seconds for the test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.url">url</a></code> | <code>java.lang.String</code> | The URL to send the request to. |
 
@@ -8874,10 +8792,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `isMessageBase64Encoded`<sup>Optional</sup> <a name="isMessageBase64Encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.isMessageBase64Encoded"></a>
 
 ```java
-public java.lang.Object getIsMessageBase64Encoded();
+public java.lang.Boolean|IResolvable getIsMessageBase64Encoded();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether the message is base64-encoded.
 
@@ -8918,10 +8836,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `noSavingResponseBody`<sup>Optional</sup> <a name="noSavingResponseBody" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.noSavingResponseBody"></a>
 
 ```java
-public java.lang.Object getNoSavingResponseBody();
+public java.lang.Boolean|IResolvable getNoSavingResponseBody();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines whether or not to save the response body.
 
@@ -8946,10 +8864,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `persistCookies`<sup>Optional</sup> <a name="persistCookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.persistCookies"></a>
 
 ```java
-public java.lang.Object getPersistCookies();
+public java.lang.Boolean|IResolvable getPersistCookies();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Persist cookies across redirects.
 
@@ -9030,10 +8948,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `shouldTrackHops`<sup>Optional</sup> <a name="shouldTrackHops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.property.shouldTrackHops"></a>
 
 ```java
-public java.lang.Object getShouldTrackHops();
+public java.lang.Boolean|IResolvable getShouldTrackHops();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 This will turn on a traceroute probe to discover all gateways along the path to the host destination.
 
@@ -9342,7 +9260,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>></code> | *No description.* |
 
 ---
 
@@ -9373,10 +9291,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestApiStepAssertion> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>>
 
 ---
 
@@ -9722,7 +9640,7 @@ public void resetTimingsScope()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.timingsScope">timingsScope</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a></code> | *No description.* |
 
 ---
 
@@ -9933,10 +9851,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestApiStepAssertion getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>
 
 ---
 
@@ -11035,7 +10953,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>></code> | *No description.* |
 
 ---
 
@@ -11066,10 +10984,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestApiStepExtractedValue> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>>
 
 ---
 
@@ -11333,13 +11251,13 @@ public void resetSecure()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.fieldInput">fieldInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.parserInput">parserInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser">SyntheticsTestApiStepExtractedValueParser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secureInput">secureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secureInput">secureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.field">field</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure">secure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure">secure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a></code> | *No description.* |
 
 ---
 
@@ -11410,10 +11328,10 @@ public SyntheticsTestApiStepExtractedValueParser getParserInput();
 ##### `secureInput`<sup>Optional</sup> <a name="secureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secureInput"></a>
 
 ```java
-public java.lang.Object getSecureInput();
+public java.lang.Boolean|IResolvable getSecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -11450,10 +11368,10 @@ public java.lang.String getName();
 ##### `secure`<sup>Required</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure"></a>
 
 ```java
-public java.lang.Object getSecure();
+public java.lang.Boolean|IResolvable getSecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -11470,10 +11388,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestApiStepExtractedValue getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>
 
 ---
 
@@ -11899,7 +11817,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>></code> | *No description.* |
 
 ---
 
@@ -11930,10 +11848,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestApiStep> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>>
 
 ---
 
@@ -12187,24 +12105,24 @@ Returns a reversible string representation.
 ##### `putAssertion` <a name="putAssertion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putAssertion"></a>
 
 ```java
-public void putAssertion(IResolvable OR java.util.List<SyntheticsTestApiStepAssertion> value)
+public void putAssertion(IResolvable|java.util.List<SyntheticsTestApiStepAssertion> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putAssertion.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>>
 
 ---
 
 ##### `putExtractedValue` <a name="putExtractedValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putExtractedValue"></a>
 
 ```java
-public void putExtractedValue(IResolvable OR java.util.List<SyntheticsTestApiStepExtractedValue> value)
+public void putExtractedValue(IResolvable|java.util.List<SyntheticsTestApiStepExtractedValue> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putExtractedValue.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>>
 
 ---
 
@@ -12247,12 +12165,12 @@ public void putRequestDefinition(SyntheticsTestApiStepRequestDefinition value)
 ##### `putRequestFile` <a name="putRequestFile" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestFile"></a>
 
 ```java
-public void putRequestFile(IResolvable OR java.util.List<SyntheticsTestApiStepRequestFile> value)
+public void putRequestFile(IResolvable|java.util.List<SyntheticsTestApiStepRequestFile> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.putRequestFile.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>>
 
 ---
 
@@ -12398,17 +12316,17 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFile">requestFile</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList">SyntheticsTestApiStepRequestFileList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestProxy">requestProxy</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxyOutputReference">SyntheticsTestApiStepRequestProxyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetryOutputReference">SyntheticsTestApiStepRetryOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput">allowFailureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput">assertionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput">exitIfSucceedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput">extractedValueInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput">allowFailureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput">assertionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput">exitIfSucceedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput">extractedValueInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValuesFromScriptInput">extractedValuesFromScriptInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput">isCriticalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput">isCriticalInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestBasicauthInput">requestBasicauthInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth">SyntheticsTestApiStepRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestClientCertificateInput">requestClientCertificateInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate">SyntheticsTestApiStepRequestClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestDefinitionInput">requestDefinitionInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition">SyntheticsTestApiStepRequestDefinition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFileInput">requestFileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFileInput">requestFileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestHeadersInput">requestHeadersInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestMetadataInput">requestMetadataInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestProxyInput">requestProxyInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy">SyntheticsTestApiStepRequestProxy</a></code> | *No description.* |
@@ -12416,17 +12334,17 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.retryInput">retryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry">SyntheticsTestApiStepRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.subtypeInput">subtypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValuesFromScript">extractedValuesFromScript</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestHeaders">requestHeaders</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestMetadata">requestMetadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestQuery">requestQuery</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.subtype">subtype</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a></code> | *No description.* |
 
 ---
 
@@ -12547,40 +12465,40 @@ public SyntheticsTestApiStepRetryOutputReference getRetry();
 ##### `allowFailureInput`<sup>Optional</sup> <a name="allowFailureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailureInput"></a>
 
 ```java
-public java.lang.Object getAllowFailureInput();
+public java.lang.Boolean|IResolvable getAllowFailureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `assertionInput`<sup>Optional</sup> <a name="assertionInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.assertionInput"></a>
 
 ```java
-public java.lang.Object getAssertionInput();
+public IResolvable|java.util.List<SyntheticsTestApiStepAssertion> getAssertionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>>
 
 ---
 
 ##### `exitIfSucceedInput`<sup>Optional</sup> <a name="exitIfSucceedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceedInput"></a>
 
 ```java
-public java.lang.Object getExitIfSucceedInput();
+public java.lang.Boolean|IResolvable getExitIfSucceedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `extractedValueInput`<sup>Optional</sup> <a name="extractedValueInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.extractedValueInput"></a>
 
 ```java
-public java.lang.Object getExtractedValueInput();
+public IResolvable|java.util.List<SyntheticsTestApiStepExtractedValue> getExtractedValueInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>>
 
 ---
 
@@ -12597,10 +12515,10 @@ public java.lang.String getExtractedValuesFromScriptInput();
 ##### `isCriticalInput`<sup>Optional</sup> <a name="isCriticalInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCriticalInput"></a>
 
 ```java
-public java.lang.Object getIsCriticalInput();
+public java.lang.Boolean|IResolvable getIsCriticalInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -12647,10 +12565,10 @@ public SyntheticsTestApiStepRequestDefinition getRequestDefinitionInput();
 ##### `requestFileInput`<sup>Optional</sup> <a name="requestFileInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestFileInput"></a>
 
 ```java
-public java.lang.Object getRequestFileInput();
+public IResolvable|java.util.List<SyntheticsTestApiStepRequestFile> getRequestFileInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>>
 
 ---
 
@@ -12727,20 +12645,20 @@ public java.lang.Number getValueInput();
 ##### `allowFailure`<sup>Required</sup> <a name="allowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.allowFailure"></a>
 
 ```java
-public java.lang.Object getAllowFailure();
+public java.lang.Boolean|IResolvable getAllowFailure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `exitIfSucceed`<sup>Required</sup> <a name="exitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.exitIfSucceed"></a>
 
 ```java
-public java.lang.Object getExitIfSucceed();
+public java.lang.Boolean|IResolvable getExitIfSucceed();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -12757,10 +12675,10 @@ public java.lang.String getExtractedValuesFromScript();
 ##### `isCritical`<sup>Required</sup> <a name="isCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.isCritical"></a>
 
 ```java
-public java.lang.Object getIsCritical();
+public java.lang.Boolean|IResolvable getIsCritical();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -12827,10 +12745,10 @@ public java.lang.Number getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestApiStep getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>
 
 ---
 
@@ -14916,60 +14834,60 @@ public void resetUrl()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSignedInput">acceptSelfSignedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecureInput">allowInsecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSignedInput">acceptSelfSignedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecureInput">allowInsecureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.bodyInput">bodyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.bodyTypeInput">bodyTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.callTypeInput">callTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.certificateDomainsInput">certificateDomainsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocationInput">checkCertificateRevocationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetchingInput">disableAiaIntermediateFetchingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocationInput">checkCertificateRevocationInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetchingInput">disableAiaIntermediateFetchingInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServerInput">dnsServerInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServerPortInput">dnsServerPortInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirectsInput">followRedirectsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirectsInput">followRedirectsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.formInput">formInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.hostInput">hostInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.httpVersionInput">httpVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">isMessageBase64EncodedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">isMessageBase64EncodedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.messageInput">messageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.methodInput">methodInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBodyInput">noSavingResponseBodyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBodyInput">noSavingResponseBodyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.numberOfPacketsInput">numberOfPacketsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookiesInput">persistCookiesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookiesInput">persistCookiesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.plainProtoFileInput">plainProtoFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.portInput">portInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.protoJsonDescriptorInput">protoJsonDescriptorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.servernameInput">servernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.serviceInput">serviceInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHopsInput">shouldTrackHopsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHopsInput">shouldTrackHopsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.timeoutInput">timeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSigned">acceptSelfSigned</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecure">allowInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSigned">acceptSelfSigned</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecure">allowInsecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.body">body</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.bodyType">bodyType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.callType">callType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.certificateDomains">certificateDomains</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocation">checkCertificateRevocation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetching">disableAiaIntermediateFetching</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocation">checkCertificateRevocation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetching">disableAiaIntermediateFetching</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServer">dnsServer</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.dnsServerPort">dnsServerPort</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.form">form</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.host">host</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.httpVersion">httpVersion</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64Encoded">isMessageBase64Encoded</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64Encoded">isMessageBase64Encoded</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.message">message</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.method">method</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBody">noSavingResponseBody</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBody">noSavingResponseBody</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.numberOfPackets">numberOfPackets</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookies">persistCookies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookies">persistCookies</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.plainProtoFile">plainProtoFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.port">port</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.protoJsonDescriptor">protoJsonDescriptor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.servername">servername</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.service">service</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHops">shouldTrackHops</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHops">shouldTrackHops</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition">SyntheticsTestApiStepRequestDefinition</a></code> | *No description.* |
@@ -15003,20 +14921,20 @@ public java.lang.String getFqn();
 ##### `acceptSelfSignedInput`<sup>Optional</sup> <a name="acceptSelfSignedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSignedInput"></a>
 
 ```java
-public java.lang.Object getAcceptSelfSignedInput();
+public java.lang.Boolean|IResolvable getAcceptSelfSignedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowInsecureInput`<sup>Optional</sup> <a name="allowInsecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecureInput"></a>
 
 ```java
-public java.lang.Object getAllowInsecureInput();
+public java.lang.Boolean|IResolvable getAllowInsecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15063,20 +14981,20 @@ public java.util.List<java.lang.String> getCertificateDomainsInput();
 ##### `checkCertificateRevocationInput`<sup>Optional</sup> <a name="checkCertificateRevocationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocationInput"></a>
 
 ```java
-public java.lang.Object getCheckCertificateRevocationInput();
+public java.lang.Boolean|IResolvable getCheckCertificateRevocationInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `disableAiaIntermediateFetchingInput`<sup>Optional</sup> <a name="disableAiaIntermediateFetchingInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetchingInput"></a>
 
 ```java
-public java.lang.Object getDisableAiaIntermediateFetchingInput();
+public java.lang.Boolean|IResolvable getDisableAiaIntermediateFetchingInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15103,10 +15021,10 @@ public java.lang.String getDnsServerPortInput();
 ##### `followRedirectsInput`<sup>Optional</sup> <a name="followRedirectsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirectsInput"></a>
 
 ```java
-public java.lang.Object getFollowRedirectsInput();
+public java.lang.Boolean|IResolvable getFollowRedirectsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15143,10 +15061,10 @@ public java.lang.String getHttpVersionInput();
 ##### `isMessageBase64EncodedInput`<sup>Optional</sup> <a name="isMessageBase64EncodedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64EncodedInput"></a>
 
 ```java
-public java.lang.Object getIsMessageBase64EncodedInput();
+public java.lang.Boolean|IResolvable getIsMessageBase64EncodedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15173,10 +15091,10 @@ public java.lang.String getMethodInput();
 ##### `noSavingResponseBodyInput`<sup>Optional</sup> <a name="noSavingResponseBodyInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBodyInput"></a>
 
 ```java
-public java.lang.Object getNoSavingResponseBodyInput();
+public java.lang.Boolean|IResolvable getNoSavingResponseBodyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15193,10 +15111,10 @@ public java.lang.Number getNumberOfPacketsInput();
 ##### `persistCookiesInput`<sup>Optional</sup> <a name="persistCookiesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookiesInput"></a>
 
 ```java
-public java.lang.Object getPersistCookiesInput();
+public java.lang.Boolean|IResolvable getPersistCookiesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15253,10 +15171,10 @@ public java.lang.String getServiceInput();
 ##### `shouldTrackHopsInput`<sup>Optional</sup> <a name="shouldTrackHopsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHopsInput"></a>
 
 ```java
-public java.lang.Object getShouldTrackHopsInput();
+public java.lang.Boolean|IResolvable getShouldTrackHopsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15283,20 +15201,20 @@ public java.lang.String getUrlInput();
 ##### `acceptSelfSigned`<sup>Required</sup> <a name="acceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.acceptSelfSigned"></a>
 
 ```java
-public java.lang.Object getAcceptSelfSigned();
+public java.lang.Boolean|IResolvable getAcceptSelfSigned();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowInsecure`<sup>Required</sup> <a name="allowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.allowInsecure"></a>
 
 ```java
-public java.lang.Object getAllowInsecure();
+public java.lang.Boolean|IResolvable getAllowInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15343,20 +15261,20 @@ public java.util.List<java.lang.String> getCertificateDomains();
 ##### `checkCertificateRevocation`<sup>Required</sup> <a name="checkCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.checkCertificateRevocation"></a>
 
 ```java
-public java.lang.Object getCheckCertificateRevocation();
+public java.lang.Boolean|IResolvable getCheckCertificateRevocation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `disableAiaIntermediateFetching`<sup>Required</sup> <a name="disableAiaIntermediateFetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.disableAiaIntermediateFetching"></a>
 
 ```java
-public java.lang.Object getDisableAiaIntermediateFetching();
+public java.lang.Boolean|IResolvable getDisableAiaIntermediateFetching();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15383,10 +15301,10 @@ public java.lang.String getDnsServerPort();
 ##### `followRedirects`<sup>Required</sup> <a name="followRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.followRedirects"></a>
 
 ```java
-public java.lang.Object getFollowRedirects();
+public java.lang.Boolean|IResolvable getFollowRedirects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15423,10 +15341,10 @@ public java.lang.String getHttpVersion();
 ##### `isMessageBase64Encoded`<sup>Required</sup> <a name="isMessageBase64Encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.isMessageBase64Encoded"></a>
 
 ```java
-public java.lang.Object getIsMessageBase64Encoded();
+public java.lang.Boolean|IResolvable getIsMessageBase64Encoded();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15453,10 +15371,10 @@ public java.lang.String getMethod();
 ##### `noSavingResponseBody`<sup>Required</sup> <a name="noSavingResponseBody" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.noSavingResponseBody"></a>
 
 ```java
-public java.lang.Object getNoSavingResponseBody();
+public java.lang.Boolean|IResolvable getNoSavingResponseBody();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15473,10 +15391,10 @@ public java.lang.Number getNumberOfPackets();
 ##### `persistCookies`<sup>Required</sup> <a name="persistCookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.persistCookies"></a>
 
 ```java
-public java.lang.Object getPersistCookies();
+public java.lang.Boolean|IResolvable getPersistCookies();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15533,10 +15451,10 @@ public java.lang.String getService();
 ##### `shouldTrackHops`<sup>Required</sup> <a name="shouldTrackHops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.property.shouldTrackHops"></a>
 
 ```java
-public java.lang.Object getShouldTrackHops();
+public java.lang.Boolean|IResolvable getShouldTrackHops();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -15692,7 +15610,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>></code> | *No description.* |
 
 ---
 
@@ -15723,10 +15641,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestApiStepRequestFile> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>>
 
 ---
 
@@ -15984,7 +15902,7 @@ public void resetOriginalFileName()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.originalFileName">originalFileName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.size">size</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a></code> | *No description.* |
 
 ---
 
@@ -16125,10 +16043,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestApiStepRequestFile getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile">SyntheticsTestApiStepRequestFile</a>
 
 ---
 
@@ -16861,7 +16779,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>></code> | *No description.* |
 
 ---
 
@@ -16892,10 +16810,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestAssertion> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>>
 
 ---
 
@@ -17241,7 +17159,7 @@ public void resetTimingsScope()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.timingsScope">timingsScope</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a></code> | *No description.* |
 
 ---
 
@@ -17452,10 +17370,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestAssertion getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>
 
 ---
 
@@ -18554,7 +18472,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>></code> | *No description.* |
 
 ---
 
@@ -18585,10 +18503,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestBrowserStep> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>>
 
 ---
 
@@ -18892,28 +18810,28 @@ public void resetTimeout()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference">SyntheticsTestBrowserStepParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.publicId">publicId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailureInput">allowFailureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecuteInput">alwaysExecuteInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceedInput">exitIfSucceedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdateInput">forceElementUpdateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCriticalInput">isCriticalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailureInput">allowFailureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecuteInput">alwaysExecuteInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceedInput">exitIfSucceedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdateInput">forceElementUpdateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCriticalInput">isCriticalInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.localKeyInput">localKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.paramsInput">paramsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams">SyntheticsTestBrowserStepParams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.timeoutInput">timeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecute">alwaysExecute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdate">forceElementUpdate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecute">alwaysExecute</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceed">exitIfSucceed</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdate">forceElementUpdate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.localKey">localKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a></code> | *No description.* |
 
 ---
 
@@ -18964,50 +18882,50 @@ public java.lang.String getPublicId();
 ##### `allowFailureInput`<sup>Optional</sup> <a name="allowFailureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailureInput"></a>
 
 ```java
-public java.lang.Object getAllowFailureInput();
+public java.lang.Boolean|IResolvable getAllowFailureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `alwaysExecuteInput`<sup>Optional</sup> <a name="alwaysExecuteInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecuteInput"></a>
 
 ```java
-public java.lang.Object getAlwaysExecuteInput();
+public java.lang.Boolean|IResolvable getAlwaysExecuteInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `exitIfSucceedInput`<sup>Optional</sup> <a name="exitIfSucceedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceedInput"></a>
 
 ```java
-public java.lang.Object getExitIfSucceedInput();
+public java.lang.Boolean|IResolvable getExitIfSucceedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `forceElementUpdateInput`<sup>Optional</sup> <a name="forceElementUpdateInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdateInput"></a>
 
 ```java
-public java.lang.Object getForceElementUpdateInput();
+public java.lang.Boolean|IResolvable getForceElementUpdateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isCriticalInput`<sup>Optional</sup> <a name="isCriticalInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCriticalInput"></a>
 
 ```java
-public java.lang.Object getIsCriticalInput();
+public java.lang.Boolean|IResolvable getIsCriticalInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19034,10 +18952,10 @@ public java.lang.String getNameInput();
 ##### `noScreenshotInput`<sup>Optional</sup> <a name="noScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshotInput"></a>
 
 ```java
-public java.lang.Object getNoScreenshotInput();
+public java.lang.Boolean|IResolvable getNoScreenshotInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19074,50 +18992,50 @@ public java.lang.String getTypeInput();
 ##### `allowFailure`<sup>Required</sup> <a name="allowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.allowFailure"></a>
 
 ```java
-public java.lang.Object getAllowFailure();
+public java.lang.Boolean|IResolvable getAllowFailure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `alwaysExecute`<sup>Required</sup> <a name="alwaysExecute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.alwaysExecute"></a>
 
 ```java
-public java.lang.Object getAlwaysExecute();
+public java.lang.Boolean|IResolvable getAlwaysExecute();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `exitIfSucceed`<sup>Required</sup> <a name="exitIfSucceed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.exitIfSucceed"></a>
 
 ```java
-public java.lang.Object getExitIfSucceed();
+public java.lang.Boolean|IResolvable getExitIfSucceed();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `forceElementUpdate`<sup>Required</sup> <a name="forceElementUpdate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.forceElementUpdate"></a>
 
 ```java
-public java.lang.Object getForceElementUpdate();
+public java.lang.Boolean|IResolvable getForceElementUpdate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isCritical`<sup>Required</sup> <a name="isCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.isCritical"></a>
 
 ```java
-public java.lang.Object getIsCritical();
+public java.lang.Boolean|IResolvable getIsCritical();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19144,10 +19062,10 @@ public java.lang.String getName();
 ##### `noScreenshot`<sup>Required</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot"></a>
 
 ```java
-public java.lang.Object getNoScreenshot();
+public java.lang.Boolean|IResolvable getNoScreenshot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19174,10 +19092,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestBrowserStep getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>
 
 ---
 
@@ -19413,9 +19331,9 @@ public void resetFailTestOnCannotLocate()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.value">value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference">SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">failTestOnCannotLocateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">failTestOnCannotLocateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.valueInput">valueInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue">SyntheticsTestBrowserStepParamsElementUserLocatorValue</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator">SyntheticsTestBrowserStepParamsElementUserLocator</a></code> | *No description.* |
 
 ---
@@ -19457,10 +19375,10 @@ public SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference get
 ##### `failTestOnCannotLocateInput`<sup>Optional</sup> <a name="failTestOnCannotLocateInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput"></a>
 
 ```java
-public java.lang.Object getFailTestOnCannotLocateInput();
+public java.lang.Boolean|IResolvable getFailTestOnCannotLocateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19477,10 +19395,10 @@ public SyntheticsTestBrowserStepParamsElementUserLocatorValue getValueInput();
 ##### `failTestOnCannotLocate`<sup>Required</sup> <a name="failTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate"></a>
 
 ```java
-public java.lang.Object getFailTestOnCannotLocate();
+public java.lang.Boolean|IResolvable getFailTestOnCannotLocate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -20208,11 +20126,11 @@ public void resetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.elementUserLocator">elementUserLocator</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference">SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.pattern">pattern</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsPatternOutputReference">SyntheticsTestBrowserStepParamsPatternOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference">SyntheticsTestBrowserStepParamsVariableOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContentInput">appendToContentInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContentInput">appendToContentInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.attributeInput">attributeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.checkInput">checkInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickTypeInput">clickTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput">clickWithJavascriptInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput">clickWithJavascriptInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.codeInput">codeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.delayInput">delayInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.elementInput">elementInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -20228,14 +20146,14 @@ public void resetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.subtestPublicIdInput">subtestPublicIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.variableInput">variableInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable">SyntheticsTestBrowserStepParamsVariable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClickInput">withClickInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClickInput">withClickInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.xInput">xInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.yInput">yInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContent">appendToContent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContent">appendToContent</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.attribute">attribute</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.check">check</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickType">clickType</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascript">clickWithJavascript</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascript">clickWithJavascript</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.code">code</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.delay">delay</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.element">element</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -20248,7 +20166,7 @@ public void resetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.requests">requests</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.subtestPublicId">subtestPublicId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClick">withClick</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClick">withClick</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.x">x</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.y">y</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams">SyntheticsTestBrowserStepParams</a></code> | *No description.* |
@@ -20312,10 +20230,10 @@ public SyntheticsTestBrowserStepParamsVariableOutputReference getVariable();
 ##### `appendToContentInput`<sup>Optional</sup> <a name="appendToContentInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContentInput"></a>
 
 ```java
-public java.lang.Object getAppendToContentInput();
+public java.lang.Boolean|IResolvable getAppendToContentInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -20352,10 +20270,10 @@ public java.lang.String getClickTypeInput();
 ##### `clickWithJavascriptInput`<sup>Optional</sup> <a name="clickWithJavascriptInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput"></a>
 
 ```java
-public java.lang.Object getClickWithJavascriptInput();
+public java.lang.Boolean|IResolvable getClickWithJavascriptInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -20512,10 +20430,10 @@ public SyntheticsTestBrowserStepParamsVariable getVariableInput();
 ##### `withClickInput`<sup>Optional</sup> <a name="withClickInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClickInput"></a>
 
 ```java
-public java.lang.Object getWithClickInput();
+public java.lang.Boolean|IResolvable getWithClickInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -20542,10 +20460,10 @@ public java.lang.Number getYInput();
 ##### `appendToContent`<sup>Required</sup> <a name="appendToContent" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.appendToContent"></a>
 
 ```java
-public java.lang.Object getAppendToContent();
+public java.lang.Boolean|IResolvable getAppendToContent();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -20582,10 +20500,10 @@ public java.lang.String getClickType();
 ##### `clickWithJavascript`<sup>Required</sup> <a name="clickWithJavascript" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascript"></a>
 
 ```java
-public java.lang.Object getClickWithJavascript();
+public java.lang.Boolean|IResolvable getClickWithJavascript();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -20712,10 +20630,10 @@ public java.lang.String getValue();
 ##### `withClick`<sup>Required</sup> <a name="withClick" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.withClick"></a>
 
 ```java
-public java.lang.Object getWithClick();
+public java.lang.Boolean|IResolvable getWithClick();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -21290,10 +21208,10 @@ public void resetSecure()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.exampleInput">exampleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secureInput">secureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secureInput">secureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.example">example</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secure">secure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secure">secure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable">SyntheticsTestBrowserStepParamsVariable</a></code> | *No description.* |
 
 ---
@@ -21345,10 +21263,10 @@ public java.lang.String getNameInput();
 ##### `secureInput`<sup>Optional</sup> <a name="secureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secureInput"></a>
 
 ```java
-public java.lang.Object getSecureInput();
+public java.lang.Boolean|IResolvable getSecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -21375,10 +21293,10 @@ public java.lang.String getName();
 ##### `secure`<sup>Required</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.property.secure"></a>
 
 ```java
-public java.lang.Object getSecure();
+public java.lang.Boolean|IResolvable getSecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -21514,7 +21432,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>></code> | *No description.* |
 
 ---
 
@@ -21545,10 +21463,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestBrowserVariable> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>>
 
 ---
 
@@ -21813,15 +21731,15 @@ public void resetSecure()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.patternInput">patternInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secureInput">secureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secureInput">secureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.example">example</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.pattern">pattern</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure">secure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure">secure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a></code> | *No description.* |
 
 ---
 
@@ -21892,10 +21810,10 @@ public java.lang.String getPatternInput();
 ##### `secureInput`<sup>Optional</sup> <a name="secureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secureInput"></a>
 
 ```java
-public java.lang.Object getSecureInput();
+public java.lang.Boolean|IResolvable getSecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -21952,10 +21870,10 @@ public java.lang.String getPattern();
 ##### `secure`<sup>Required</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure"></a>
 
 ```java
-public java.lang.Object getSecure();
+public java.lang.Boolean|IResolvable getSecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -21972,10 +21890,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestBrowserVariable getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>
 
 ---
 
@@ -22101,7 +22019,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>></code> | *No description.* |
 
 ---
 
@@ -22132,10 +22050,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestConfigVariable> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>>
 
 ---
 
@@ -22400,15 +22318,15 @@ public void resetSecure()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.patternInput">patternInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secureInput">secureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secureInput">secureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.example">example</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.pattern">pattern</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure">secure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure">secure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a></code> | *No description.* |
 
 ---
 
@@ -22479,10 +22397,10 @@ public java.lang.String getPatternInput();
 ##### `secureInput`<sup>Optional</sup> <a name="secureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secureInput"></a>
 
 ```java
-public java.lang.Object getSecureInput();
+public java.lang.Boolean|IResolvable getSecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -22539,10 +22457,10 @@ public java.lang.String getPattern();
 ##### `secure`<sup>Required</sup> <a name="secure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure"></a>
 
 ```java
-public java.lang.Object getSecure();
+public java.lang.Boolean|IResolvable getSecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -22559,10 +22477,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestConfigVariable getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>
 
 ---
 
@@ -22688,7 +22606,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>></code> | *No description.* |
 
 ---
 
@@ -22719,10 +22637,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestMobileOptionsListBindings> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
 
 ---
 
@@ -22973,7 +22891,7 @@ public void resetRelation()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relationInput">relationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.principals">principals</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.relation">relation</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a></code> | *No description.* |
 
 ---
 
@@ -23044,10 +22962,10 @@ public java.lang.String getRelation();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestMobileOptionsListBindings getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>
 
 ---
 
@@ -24517,12 +24435,12 @@ Returns a reversible string representation.
 ##### `putTimeframes` <a name="putTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.putTimeframes"></a>
 
 ```java
-public void putTimeframes(IResolvable OR java.util.List<SyntheticsTestMobileOptionsListSchedulingTimeframes> value)
+public void putTimeframes(IResolvable|java.util.List<SyntheticsTestMobileOptionsListSchedulingTimeframes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.putTimeframes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
 
 ---
 
@@ -24534,7 +24452,7 @@ public void putTimeframes(IResolvable OR java.util.List<SyntheticsTestMobileOpti
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframes">timeframes</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList">SyntheticsTestMobileOptionsListSchedulingTimeframesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput">timeframesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput">timeframesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezoneInput">timezoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timezone">timezone</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | *No description.* |
@@ -24578,10 +24496,10 @@ public SyntheticsTestMobileOptionsListSchedulingTimeframesList getTimeframes();
 ##### `timeframesInput`<sup>Optional</sup> <a name="timeframesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.property.timeframesInput"></a>
 
 ```java
-public java.lang.Object getTimeframesInput();
+public IResolvable|java.util.List<SyntheticsTestMobileOptionsListSchedulingTimeframes> getTimeframesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
 
 ---
 
@@ -24737,7 +24655,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>></code> | *No description.* |
 
 ---
 
@@ -24768,10 +24686,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestMobileOptionsListSchedulingTimeframes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>>
 
 ---
 
@@ -25010,7 +24928,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.day">day</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.from">from</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.to">to</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a></code> | *No description.* |
 
 ---
 
@@ -25101,10 +25019,10 @@ public java.lang.String getTo();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestMobileOptionsListSchedulingTimeframes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes">SyntheticsTestMobileOptionsListSchedulingTimeframes</a>
 
 ---
 
@@ -25335,12 +25253,12 @@ Returns a reversible string representation.
 ##### `putBindings` <a name="putBindings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putBindings"></a>
 
 ```java
-public void putBindings(IResolvable OR java.util.List<SyntheticsTestMobileOptionsListBindings> value)
+public void putBindings(IResolvable|java.util.List<SyntheticsTestMobileOptionsListBindings> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.putBindings.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
 
 ---
 
@@ -25501,31 +25419,31 @@ public void resetVerbosity()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptions">monitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference">SyntheticsTestMobileOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference">SyntheticsTestMobileOptionsListRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference">SyntheticsTestMobileOptionsListSchedulingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput">allowApplicationCrashInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput">bindingsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput">allowApplicationCrashInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput">bindingsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.ciInput">ciInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeoutInput">defaultStepTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIdsInput">deviceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput">disableAutoAcceptAlertInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput">disableAutoAcceptAlertInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDurationInput">minFailureDurationInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.mobileApplicationInput">mobileApplicationInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorNameInput">monitorNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorOptionsInput">monitorOptionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriorityInput">monitorPriorityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRolesInput">restrictedRolesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.retryInput">retryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.schedulingInput">schedulingInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEveryInput">tickEveryInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosityInput">verbosityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash">allowApplicationCrash</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash">allowApplicationCrash</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.defaultStepTimeout">defaultStepTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.deviceIds">deviceIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert">disableAutoAcceptAlert</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert">disableAutoAcceptAlert</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.minFailureDuration">minFailureDuration</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorName">monitorName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.monitorPriority">monitorPriority</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.tickEvery">tickEvery</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.verbosity">verbosity</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -25620,20 +25538,20 @@ public SyntheticsTestMobileOptionsListSchedulingOutputReference getScheduling();
 ##### `allowApplicationCrashInput`<sup>Optional</sup> <a name="allowApplicationCrashInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrashInput"></a>
 
 ```java
-public java.lang.Object getAllowApplicationCrashInput();
+public java.lang.Boolean|IResolvable getAllowApplicationCrashInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `bindingsInput`<sup>Optional</sup> <a name="bindingsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.bindingsInput"></a>
 
 ```java
-public java.lang.Object getBindingsInput();
+public IResolvable|java.util.List<SyntheticsTestMobileOptionsListBindings> getBindingsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings">SyntheticsTestMobileOptionsListBindings</a>>
 
 ---
 
@@ -25670,10 +25588,10 @@ public java.util.List<java.lang.String> getDeviceIdsInput();
 ##### `disableAutoAcceptAlertInput`<sup>Optional</sup> <a name="disableAutoAcceptAlertInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlertInput"></a>
 
 ```java
-public java.lang.Object getDisableAutoAcceptAlertInput();
+public java.lang.Boolean|IResolvable getDisableAutoAcceptAlertInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25730,10 +25648,10 @@ public java.lang.Number getMonitorPriorityInput();
 ##### `noScreenshotInput`<sup>Optional</sup> <a name="noScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshotInput"></a>
 
 ```java
-public java.lang.Object getNoScreenshotInput();
+public java.lang.Boolean|IResolvable getNoScreenshotInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25790,10 +25708,10 @@ public java.lang.Number getVerbosityInput();
 ##### `allowApplicationCrash`<sup>Required</sup> <a name="allowApplicationCrash" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.allowApplicationCrash"></a>
 
 ```java
-public java.lang.Object getAllowApplicationCrash();
+public java.lang.Boolean|IResolvable getAllowApplicationCrash();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25820,10 +25738,10 @@ public java.util.List<java.lang.String> getDeviceIds();
 ##### `disableAutoAcceptAlert`<sup>Required</sup> <a name="disableAutoAcceptAlert" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.disableAutoAcceptAlert"></a>
 
 ```java
-public java.lang.Object getDisableAutoAcceptAlert();
+public java.lang.Boolean|IResolvable getDisableAutoAcceptAlert();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25860,10 +25778,10 @@ public java.lang.Number getMonitorPriority();
 ##### `noScreenshot`<sup>Required</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.property.noScreenshot"></a>
 
 ```java
-public java.lang.Object getNoScreenshot();
+public java.lang.Boolean|IResolvable getNoScreenshot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -26029,7 +25947,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>></code> | *No description.* |
 
 ---
 
@@ -26060,10 +25978,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestMobileStep> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>>
 
 ---
 
@@ -26352,24 +26270,24 @@ public void resetTimeout()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.params">params</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference">SyntheticsTestMobileStepParamsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput">allowFailureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput">hasNewStepElementInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput">isCriticalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput">allowFailureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput">hasNewStepElementInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput">isCriticalInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.paramsInput">paramsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicIdInput">publicIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeoutInput">timeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement">hasNewStepElement</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure">allowFailure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement">hasNewStepElement</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical">isCritical</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.publicId">publicId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a></code> | *No description.* |
 
 ---
 
@@ -26410,30 +26328,30 @@ public SyntheticsTestMobileStepParamsOutputReference getParams();
 ##### `allowFailureInput`<sup>Optional</sup> <a name="allowFailureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailureInput"></a>
 
 ```java
-public java.lang.Object getAllowFailureInput();
+public java.lang.Boolean|IResolvable getAllowFailureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasNewStepElementInput`<sup>Optional</sup> <a name="hasNewStepElementInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElementInput"></a>
 
 ```java
-public java.lang.Object getHasNewStepElementInput();
+public java.lang.Boolean|IResolvable getHasNewStepElementInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isCriticalInput`<sup>Optional</sup> <a name="isCriticalInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCriticalInput"></a>
 
 ```java
-public java.lang.Object getIsCriticalInput();
+public java.lang.Boolean|IResolvable getIsCriticalInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -26450,10 +26368,10 @@ public java.lang.String getNameInput();
 ##### `noScreenshotInput`<sup>Optional</sup> <a name="noScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshotInput"></a>
 
 ```java
-public java.lang.Object getNoScreenshotInput();
+public java.lang.Boolean|IResolvable getNoScreenshotInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -26500,30 +26418,30 @@ public java.lang.String getTypeInput();
 ##### `allowFailure`<sup>Required</sup> <a name="allowFailure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.allowFailure"></a>
 
 ```java
-public java.lang.Object getAllowFailure();
+public java.lang.Boolean|IResolvable getAllowFailure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasNewStepElement`<sup>Required</sup> <a name="hasNewStepElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.hasNewStepElement"></a>
 
 ```java
-public java.lang.Object getHasNewStepElement();
+public java.lang.Boolean|IResolvable getHasNewStepElement();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isCritical`<sup>Required</sup> <a name="isCritical" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.isCritical"></a>
 
 ```java
-public java.lang.Object getIsCritical();
+public java.lang.Boolean|IResolvable getIsCritical();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -26540,10 +26458,10 @@ public java.lang.String getName();
 ##### `noScreenshot`<sup>Required</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.noScreenshot"></a>
 
 ```java
-public java.lang.Object getNoScreenshot();
+public java.lang.Boolean|IResolvable getNoScreenshot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -26580,10 +26498,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestMobileStep getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStep">SyntheticsTestMobileStep</a>
 
 ---
 
@@ -27611,12 +27529,12 @@ Returns a reversible string representation.
 ##### `putValues` <a name="putValues" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.putValues"></a>
 
 ```java
-public void putValues(IResolvable OR java.util.List<SyntheticsTestMobileStepParamsElementUserLocatorValues> value)
+public void putValues(IResolvable|java.util.List<SyntheticsTestMobileStepParamsElementUserLocatorValues> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.putValues.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
 
 ---
 
@@ -27640,9 +27558,9 @@ public void resetValues()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.values">values</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList">SyntheticsTestMobileStepParamsElementUserLocatorValuesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">failTestOnCannotLocateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput">valuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput">failTestOnCannotLocateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput">valuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate">failTestOnCannotLocate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a></code> | *No description.* |
 
 ---
@@ -27684,30 +27602,30 @@ public SyntheticsTestMobileStepParamsElementUserLocatorValuesList getValues();
 ##### `failTestOnCannotLocateInput`<sup>Optional</sup> <a name="failTestOnCannotLocateInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocateInput"></a>
 
 ```java
-public java.lang.Object getFailTestOnCannotLocateInput();
+public java.lang.Boolean|IResolvable getFailTestOnCannotLocateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `valuesInput`<sup>Optional</sup> <a name="valuesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.valuesInput"></a>
 
 ```java
-public java.lang.Object getValuesInput();
+public IResolvable|java.util.List<SyntheticsTestMobileStepParamsElementUserLocatorValues> getValuesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
 
 ---
 
 ##### `failTestOnCannotLocate`<sup>Required</sup> <a name="failTestOnCannotLocate" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.property.failTestOnCannotLocate"></a>
 
 ```java
-public java.lang.Object getFailTestOnCannotLocate();
+public java.lang.Boolean|IResolvable getFailTestOnCannotLocate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -27843,7 +27761,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>></code> | *No description.* |
 
 ---
 
@@ -27874,10 +27792,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestMobileStepParamsElementUserLocatorValues> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>>
 
 ---
 
@@ -28128,7 +28046,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a></code> | *No description.* |
 
 ---
 
@@ -28199,10 +28117,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestMobileStepParamsElementUserLocatorValues getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues">SyntheticsTestMobileStepParamsElementUserLocatorValues</a>
 
 ---
 
@@ -28441,12 +28359,12 @@ public void putElement(SyntheticsTestMobileStepParamsElement value)
 ##### `putPositions` <a name="putPositions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putPositions"></a>
 
 ```java
-public void putPositions(IResolvable OR java.util.List<SyntheticsTestMobileStepParamsPositions> value)
+public void putPositions(IResolvable|java.util.List<SyntheticsTestMobileStepParamsPositions> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.putPositions.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
 
 ---
 
@@ -28554,23 +28472,23 @@ public void resetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delayInput">delayInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.elementInput">elementInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput">enableInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput">enableInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrollsInput">maxScrollsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput">positionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput">positionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicIdInput">subtestPublicIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.variableInput">variableInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput">withEnterInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput">withEnterInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.xInput">xInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.yInput">yInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.check">check</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.delay">delay</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable">enable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable">enable</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.maxScrolls">maxScrolls</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.subtestPublicId">subtestPublicId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter">withEnter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter">withEnter</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.x">x</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.y">y</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams">SyntheticsTestMobileStepParams</a></code> | *No description.* |
@@ -28674,10 +28592,10 @@ public SyntheticsTestMobileStepParamsElement getElementInput();
 ##### `enableInput`<sup>Optional</sup> <a name="enableInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enableInput"></a>
 
 ```java
-public java.lang.Object getEnableInput();
+public java.lang.Boolean|IResolvable getEnableInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -28694,10 +28612,10 @@ public java.lang.Number getMaxScrollsInput();
 ##### `positionsInput`<sup>Optional</sup> <a name="positionsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.positionsInput"></a>
 
 ```java
-public java.lang.Object getPositionsInput();
+public IResolvable|java.util.List<SyntheticsTestMobileStepParamsPositions> getPositionsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
 
 ---
 
@@ -28734,10 +28652,10 @@ public SyntheticsTestMobileStepParamsVariable getVariableInput();
 ##### `withEnterInput`<sup>Optional</sup> <a name="withEnterInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnterInput"></a>
 
 ```java
-public java.lang.Object getWithEnterInput();
+public java.lang.Boolean|IResolvable getWithEnterInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -28794,10 +28712,10 @@ public java.lang.String getDirection();
 ##### `enable`<sup>Required</sup> <a name="enable" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.enable"></a>
 
 ```java
-public java.lang.Object getEnable();
+public java.lang.Boolean|IResolvable getEnable();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -28834,10 +28752,10 @@ public java.lang.String getValue();
 ##### `withEnter`<sup>Required</sup> <a name="withEnter" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.property.withEnter"></a>
 
 ```java
-public java.lang.Object getWithEnter();
+public java.lang.Boolean|IResolvable getWithEnter();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -28993,7 +28911,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>></code> | *No description.* |
 
 ---
 
@@ -29024,10 +28942,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestMobileStepParamsPositions> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>>
 
 ---
 
@@ -29278,7 +29196,7 @@ public void resetY()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.yInput">yInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.x">x</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.y">y</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a></code> | *No description.* |
 
 ---
 
@@ -29349,10 +29267,10 @@ public java.lang.Number getY();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestMobileStepParamsPositions getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions">SyntheticsTestMobileStepParamsPositions</a>
 
 ---
 
@@ -30833,10 +30751,10 @@ public void resetClientTokenId()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.applicationIdInput">applicationIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.clientTokenIdInput">clientTokenIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabledInput">isEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabledInput">isEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.clientTokenId">clientTokenId</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
 
 ---
@@ -30888,10 +30806,10 @@ public java.lang.Number getClientTokenIdInput();
 ##### `isEnabledInput`<sup>Optional</sup> <a name="isEnabledInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabledInput"></a>
 
 ```java
-public java.lang.Object getIsEnabledInput();
+public java.lang.Boolean|IResolvable getIsEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -30918,10 +30836,10 @@ public java.lang.Number getClientTokenId();
 ##### `isEnabled`<sup>Required</sup> <a name="isEnabled" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.property.isEnabled"></a>
 
 ```java
-public java.lang.Object getIsEnabled();
+public java.lang.Boolean|IResolvable getIsEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -31143,12 +31061,12 @@ Returns a reversible string representation.
 ##### `putTimeframes` <a name="putTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes"></a>
 
 ```java
-public void putTimeframes(IResolvable OR java.util.List<SyntheticsTestOptionsListSchedulingTimeframes> value)
+public void putTimeframes(IResolvable|java.util.List<SyntheticsTestOptionsListSchedulingTimeframes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>>
 
 ---
 
@@ -31160,7 +31078,7 @@ public void putTimeframes(IResolvable OR java.util.List<SyntheticsTestOptionsLis
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframes">timeframes</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList">SyntheticsTestOptionsListSchedulingTimeframesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput">timeframesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput">timeframesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezoneInput">timezoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezone">timezone</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
@@ -31204,10 +31122,10 @@ public SyntheticsTestOptionsListSchedulingTimeframesList getTimeframes();
 ##### `timeframesInput`<sup>Optional</sup> <a name="timeframesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput"></a>
 
 ```java
-public java.lang.Object getTimeframesInput();
+public IResolvable|java.util.List<SyntheticsTestOptionsListSchedulingTimeframes> getTimeframesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>>
 
 ---
 
@@ -31363,7 +31281,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>></code> | *No description.* |
 
 ---
 
@@ -31394,10 +31312,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestOptionsListSchedulingTimeframes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>>
 
 ---
 
@@ -31636,7 +31554,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.day">day</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.from">from</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.to">to</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a></code> | *No description.* |
 
 ---
 
@@ -31727,10 +31645,10 @@ public java.lang.String getTo();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestOptionsListSchedulingTimeframes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>
 
 ---
 
@@ -32162,43 +32080,43 @@ public void resetScheduling()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettings">rumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput">acceptSelfSignedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput">allowInsecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput">checkCertificateRevocationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput">acceptSelfSignedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput">allowInsecureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput">checkCertificateRevocationInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ciInput">ciInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetchingInput">disableAiaIntermediateFetchingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput">disableCorsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput">disableCspInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput">followRedirectsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetchingInput">disableAiaIntermediateFetchingInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput">disableCorsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput">disableCspInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput">followRedirectsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersionInput">httpVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput">ignoreServerCertificateErrorInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput">ignoreServerCertificateErrorInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeoutInput">initialNavigationTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDurationInput">minFailureDurationInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailedInput">minLocationFailedInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorNameInput">monitorNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptionsInput">monitorOptionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriorityInput">monitorPriorityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput">noScreenshotInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRolesInput">restrictedRolesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retryInput">retryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettingsInput">rumSettingsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.schedulingInput">schedulingInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEveryInput">tickEveryInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned">acceptSelfSigned</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure">allowInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation">checkCertificateRevocation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetching">disableAiaIntermediateFetching</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors">disableCors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp">disableCsp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned">acceptSelfSigned</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure">allowInsecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation">checkCertificateRevocation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetching">disableAiaIntermediateFetching</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors">disableCors</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp">disableCsp</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersion">httpVersion</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError">ignoreServerCertificateError</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError">ignoreServerCertificateError</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeout">initialNavigationTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDuration">minFailureDuration</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailed">minLocationFailed</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorName">monitorName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriority">monitorPriority</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot">noScreenshot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEvery">tickEvery</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
@@ -32282,30 +32200,30 @@ public SyntheticsTestOptionsListSchedulingOutputReference getScheduling();
 ##### `acceptSelfSignedInput`<sup>Optional</sup> <a name="acceptSelfSignedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput"></a>
 
 ```java
-public java.lang.Object getAcceptSelfSignedInput();
+public java.lang.Boolean|IResolvable getAcceptSelfSignedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowInsecureInput`<sup>Optional</sup> <a name="allowInsecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput"></a>
 
 ```java
-public java.lang.Object getAllowInsecureInput();
+public java.lang.Boolean|IResolvable getAllowInsecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `checkCertificateRevocationInput`<sup>Optional</sup> <a name="checkCertificateRevocationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput"></a>
 
 ```java
-public java.lang.Object getCheckCertificateRevocationInput();
+public java.lang.Boolean|IResolvable getCheckCertificateRevocationInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -32322,40 +32240,40 @@ public SyntheticsTestOptionsListCi getCiInput();
 ##### `disableAiaIntermediateFetchingInput`<sup>Optional</sup> <a name="disableAiaIntermediateFetchingInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetchingInput"></a>
 
 ```java
-public java.lang.Object getDisableAiaIntermediateFetchingInput();
+public java.lang.Boolean|IResolvable getDisableAiaIntermediateFetchingInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `disableCorsInput`<sup>Optional</sup> <a name="disableCorsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput"></a>
 
 ```java
-public java.lang.Object getDisableCorsInput();
+public java.lang.Boolean|IResolvable getDisableCorsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `disableCspInput`<sup>Optional</sup> <a name="disableCspInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput"></a>
 
 ```java
-public java.lang.Object getDisableCspInput();
+public java.lang.Boolean|IResolvable getDisableCspInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `followRedirectsInput`<sup>Optional</sup> <a name="followRedirectsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput"></a>
 
 ```java
-public java.lang.Object getFollowRedirectsInput();
+public java.lang.Boolean|IResolvable getFollowRedirectsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -32372,10 +32290,10 @@ public java.lang.String getHttpVersionInput();
 ##### `ignoreServerCertificateErrorInput`<sup>Optional</sup> <a name="ignoreServerCertificateErrorInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput"></a>
 
 ```java
-public java.lang.Object getIgnoreServerCertificateErrorInput();
+public java.lang.Boolean|IResolvable getIgnoreServerCertificateErrorInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -32442,10 +32360,10 @@ public java.lang.Number getMonitorPriorityInput();
 ##### `noScreenshotInput`<sup>Optional</sup> <a name="noScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput"></a>
 
 ```java
-public java.lang.Object getNoScreenshotInput();
+public java.lang.Boolean|IResolvable getNoScreenshotInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -32502,70 +32420,70 @@ public java.lang.Number getTickEveryInput();
 ##### `acceptSelfSigned`<sup>Required</sup> <a name="acceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned"></a>
 
 ```java
-public java.lang.Object getAcceptSelfSigned();
+public java.lang.Boolean|IResolvable getAcceptSelfSigned();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowInsecure`<sup>Required</sup> <a name="allowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure"></a>
 
 ```java
-public java.lang.Object getAllowInsecure();
+public java.lang.Boolean|IResolvable getAllowInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `checkCertificateRevocation`<sup>Required</sup> <a name="checkCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation"></a>
 
 ```java
-public java.lang.Object getCheckCertificateRevocation();
+public java.lang.Boolean|IResolvable getCheckCertificateRevocation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `disableAiaIntermediateFetching`<sup>Required</sup> <a name="disableAiaIntermediateFetching" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableAiaIntermediateFetching"></a>
 
 ```java
-public java.lang.Object getDisableAiaIntermediateFetching();
+public java.lang.Boolean|IResolvable getDisableAiaIntermediateFetching();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `disableCors`<sup>Required</sup> <a name="disableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors"></a>
 
 ```java
-public java.lang.Object getDisableCors();
+public java.lang.Boolean|IResolvable getDisableCors();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `disableCsp`<sup>Required</sup> <a name="disableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp"></a>
 
 ```java
-public java.lang.Object getDisableCsp();
+public java.lang.Boolean|IResolvable getDisableCsp();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `followRedirects`<sup>Required</sup> <a name="followRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects"></a>
 
 ```java
-public java.lang.Object getFollowRedirects();
+public java.lang.Boolean|IResolvable getFollowRedirects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -32582,10 +32500,10 @@ public java.lang.String getHttpVersion();
 ##### `ignoreServerCertificateError`<sup>Required</sup> <a name="ignoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError"></a>
 
 ```java
-public java.lang.Object getIgnoreServerCertificateError();
+public java.lang.Boolean|IResolvable getIgnoreServerCertificateError();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -32642,10 +32560,10 @@ public java.lang.Number getMonitorPriority();
 ##### `noScreenshot`<sup>Required</sup> <a name="noScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot"></a>
 
 ```java
-public java.lang.Object getNoScreenshot();
+public java.lang.Boolean|IResolvable getNoScreenshot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -34735,18 +34653,18 @@ public void resetUrl()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.formInput">formInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.hostInput">hostInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.httpVersionInput">httpVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">isMessageBase64EncodedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64EncodedInput">isMessageBase64EncodedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.messageInput">messageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.methodInput">methodInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBodyInput">noSavingResponseBodyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBodyInput">noSavingResponseBodyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.numberOfPacketsInput">numberOfPacketsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookiesInput">persistCookiesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookiesInput">persistCookiesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.plainProtoFileInput">plainProtoFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.portInput">portInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.protoJsonDescriptorInput">protoJsonDescriptorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.servernameInput">servernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.serviceInput">serviceInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHopsInput">shouldTrackHopsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHopsInput">shouldTrackHopsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.timeoutInput">timeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.body">body</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -34758,18 +34676,18 @@ public void resetUrl()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.form">form</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.host">host</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.httpVersion">httpVersion</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64Encoded">isMessageBase64Encoded</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64Encoded">isMessageBase64Encoded</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.message">message</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.method">method</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBody">noSavingResponseBody</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBody">noSavingResponseBody</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.numberOfPackets">numberOfPackets</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookies">persistCookies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookies">persistCookies</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.plainProtoFile">plainProtoFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.port">port</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.protoJsonDescriptor">protoJsonDescriptor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.servername">servername</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.service">service</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHops">shouldTrackHops</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHops">shouldTrackHops</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.timeout">timeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | *No description.* |
@@ -34893,10 +34811,10 @@ public java.lang.String getHttpVersionInput();
 ##### `isMessageBase64EncodedInput`<sup>Optional</sup> <a name="isMessageBase64EncodedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64EncodedInput"></a>
 
 ```java
-public java.lang.Object getIsMessageBase64EncodedInput();
+public java.lang.Boolean|IResolvable getIsMessageBase64EncodedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -34923,10 +34841,10 @@ public java.lang.String getMethodInput();
 ##### `noSavingResponseBodyInput`<sup>Optional</sup> <a name="noSavingResponseBodyInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBodyInput"></a>
 
 ```java
-public java.lang.Object getNoSavingResponseBodyInput();
+public java.lang.Boolean|IResolvable getNoSavingResponseBodyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -34943,10 +34861,10 @@ public java.lang.Number getNumberOfPacketsInput();
 ##### `persistCookiesInput`<sup>Optional</sup> <a name="persistCookiesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookiesInput"></a>
 
 ```java
-public java.lang.Object getPersistCookiesInput();
+public java.lang.Boolean|IResolvable getPersistCookiesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -35003,10 +34921,10 @@ public java.lang.String getServiceInput();
 ##### `shouldTrackHopsInput`<sup>Optional</sup> <a name="shouldTrackHopsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHopsInput"></a>
 
 ```java
-public java.lang.Object getShouldTrackHopsInput();
+public java.lang.Boolean|IResolvable getShouldTrackHopsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -35123,10 +35041,10 @@ public java.lang.String getHttpVersion();
 ##### `isMessageBase64Encoded`<sup>Required</sup> <a name="isMessageBase64Encoded" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.isMessageBase64Encoded"></a>
 
 ```java
-public java.lang.Object getIsMessageBase64Encoded();
+public java.lang.Boolean|IResolvable getIsMessageBase64Encoded();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -35153,10 +35071,10 @@ public java.lang.String getMethod();
 ##### `noSavingResponseBody`<sup>Required</sup> <a name="noSavingResponseBody" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.noSavingResponseBody"></a>
 
 ```java
-public java.lang.Object getNoSavingResponseBody();
+public java.lang.Boolean|IResolvable getNoSavingResponseBody();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -35173,10 +35091,10 @@ public java.lang.Number getNumberOfPackets();
 ##### `persistCookies`<sup>Required</sup> <a name="persistCookies" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.persistCookies"></a>
 
 ```java
-public java.lang.Object getPersistCookies();
+public java.lang.Boolean|IResolvable getPersistCookies();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -35233,10 +35151,10 @@ public java.lang.String getService();
 ##### `shouldTrackHops`<sup>Required</sup> <a name="shouldTrackHops" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.property.shouldTrackHops"></a>
 
 ```java
-public java.lang.Object getShouldTrackHops();
+public java.lang.Boolean|IResolvable getShouldTrackHops();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -35392,7 +35310,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>></code> | *No description.* |
 
 ---
 
@@ -35423,10 +35341,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SyntheticsTestRequestFile> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>>
 
 ---
 
@@ -35684,7 +35602,7 @@ public void resetOriginalFileName()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.originalFileName">originalFileName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.size">size</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a></code> | *No description.* |
 
 ---
 
@@ -35825,10 +35743,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SyntheticsTestRequestFile getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFile">SyntheticsTestRequestFile</a>
 
 ---
 

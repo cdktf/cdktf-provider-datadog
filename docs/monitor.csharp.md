@@ -308,7 +308,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-datadog.monitor.Monitor.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-datadog.monitor.Monitor.importFrom"></a>
@@ -362,7 +362,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-datadog.monitor.Monitor.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -377,7 +377,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-datadog.monitor.Monitor.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -759,27 +759,27 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholds">MonitorThresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference">MonitorMonitorThresholdsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindows">MonitorThresholdWindows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference">MonitorMonitorThresholdWindowsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptions">SchedulingOptions</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference">MonitorSchedulingOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.variables">Variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference">MonitorVariablesOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput">EnableLogsSampleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput">EnableSamplesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput">EnableLogsSampleInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput">EnableSamplesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.escalationMessageInput">EscalationMessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelayInput">EvaluationDelayInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput">ForceDeleteInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput">GroupbySimpleMonitorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput">ForceDeleteInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput">GroupbySimpleMonitorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDurationInput">GroupRetentionDurationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput">IncludeTagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lockedInput">LockedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput">IncludeTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lockedInput">LockedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.messageInput">MessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdsInput">MonitorThresholdsInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindowsInput">MonitorThresholdWindowsInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | *No description.* |
@@ -788,54 +788,54 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newHostDelayInput">NewHostDelayInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframeInput">NoDataTimeframeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetNameInput">NotificationPresetNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput">NotifyAuditInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput">NotifyAuditInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyByInput">NotifyByInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput">NotifyNoDataInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput">NotifyNoDataInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.onMissingDataInput">OnMissingDataInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.priorityInput">PriorityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.queryInput">QueryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyIntervalInput">RenotifyIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrencesInput">RenotifyOccurrencesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatusesInput">RenotifyStatusesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput">RequireFullWindowInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput">RequireFullWindowInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.restrictedRolesInput">RestrictedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptionsInput">SchedulingOptionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.timeoutHInput">TimeoutHInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validateInput">ValidateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validateInput">ValidateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.variablesInput">VariablesInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample">EnableLogsSample</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamples">EnableSamples</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample">EnableLogsSample</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamples">EnableSamples</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.escalationMessage">EscalationMessage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelay">EvaluationDelay</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDelete">ForceDelete</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor">GroupbySimpleMonitor</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDelete">ForceDelete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor">GroupbySimpleMonitor</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDuration">GroupRetentionDuration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTags">IncludeTags</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.locked">Locked</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTags">IncludeTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.locked">Locked</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.message">Message</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newGroupDelay">NewGroupDelay</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newHostDelay">NewHostDelay</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframe">NoDataTimeframe</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetName">NotificationPresetName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit">NotifyAudit</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit">NotifyAudit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyBy">NotifyBy</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData">NotifyNoData</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData">NotifyNoData</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.onMissingData">OnMissingData</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.priority">Priority</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.query">Query</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyInterval">RenotifyInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrences">RenotifyOccurrences</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatuses">RenotifyStatuses</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow">RequireFullWindow</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow">RequireFullWindow</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.timeoutH">TimeoutH</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validate">Validate</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validate">Validate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -914,20 +914,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.monitor.Monitor.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.monitor.Monitor.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -974,10 +974,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.monitor.Monitor.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1024,20 +1024,20 @@ public MonitorVariablesOutputReference Variables { get; }
 ##### `EnableLogsSampleInput`<sup>Optional</sup> <a name="EnableLogsSampleInput" id="@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput"></a>
 
 ```csharp
-public object EnableLogsSampleInput { get; }
+public bool|IResolvable EnableLogsSampleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableSamplesInput`<sup>Optional</sup> <a name="EnableSamplesInput" id="@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput"></a>
 
 ```csharp
-public object EnableSamplesInput { get; }
+public bool|IResolvable EnableSamplesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1064,20 +1064,20 @@ public double EvaluationDelayInput { get; }
 ##### `ForceDeleteInput`<sup>Optional</sup> <a name="ForceDeleteInput" id="@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput"></a>
 
 ```csharp
-public object ForceDeleteInput { get; }
+public bool|IResolvable ForceDeleteInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `GroupbySimpleMonitorInput`<sup>Optional</sup> <a name="GroupbySimpleMonitorInput" id="@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput"></a>
 
 ```csharp
-public object GroupbySimpleMonitorInput { get; }
+public bool|IResolvable GroupbySimpleMonitorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1104,20 +1104,20 @@ public string IdInput { get; }
 ##### `IncludeTagsInput`<sup>Optional</sup> <a name="IncludeTagsInput" id="@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput"></a>
 
 ```csharp
-public object IncludeTagsInput { get; }
+public bool|IResolvable IncludeTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `LockedInput`<sup>Optional</sup> <a name="LockedInput" id="@cdktf/provider-datadog.monitor.Monitor.property.lockedInput"></a>
 
 ```csharp
-public object LockedInput { get; }
+public bool|IResolvable LockedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1204,10 +1204,10 @@ public string NotificationPresetNameInput { get; }
 ##### `NotifyAuditInput`<sup>Optional</sup> <a name="NotifyAuditInput" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput"></a>
 
 ```csharp
-public object NotifyAuditInput { get; }
+public bool|IResolvable NotifyAuditInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1224,10 +1224,10 @@ public string[] NotifyByInput { get; }
 ##### `NotifyNoDataInput`<sup>Optional</sup> <a name="NotifyNoDataInput" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput"></a>
 
 ```csharp
-public object NotifyNoDataInput { get; }
+public bool|IResolvable NotifyNoDataInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1294,10 +1294,10 @@ public string[] RenotifyStatusesInput { get; }
 ##### `RequireFullWindowInput`<sup>Optional</sup> <a name="RequireFullWindowInput" id="@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput"></a>
 
 ```csharp
-public object RequireFullWindowInput { get; }
+public bool|IResolvable RequireFullWindowInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1354,10 +1354,10 @@ public string TypeInput { get; }
 ##### `ValidateInput`<sup>Optional</sup> <a name="ValidateInput" id="@cdktf/provider-datadog.monitor.Monitor.property.validateInput"></a>
 
 ```csharp
-public object ValidateInput { get; }
+public bool|IResolvable ValidateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1374,20 +1374,20 @@ public MonitorVariables VariablesInput { get; }
 ##### `EnableLogsSample`<sup>Required</sup> <a name="EnableLogsSample" id="@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample"></a>
 
 ```csharp
-public object EnableLogsSample { get; }
+public bool|IResolvable EnableLogsSample { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableSamples`<sup>Required</sup> <a name="EnableSamples" id="@cdktf/provider-datadog.monitor.Monitor.property.enableSamples"></a>
 
 ```csharp
-public object EnableSamples { get; }
+public bool|IResolvable EnableSamples { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1414,20 +1414,20 @@ public double EvaluationDelay { get; }
 ##### `ForceDelete`<sup>Required</sup> <a name="ForceDelete" id="@cdktf/provider-datadog.monitor.Monitor.property.forceDelete"></a>
 
 ```csharp
-public object ForceDelete { get; }
+public bool|IResolvable ForceDelete { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `GroupbySimpleMonitor`<sup>Required</sup> <a name="GroupbySimpleMonitor" id="@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor"></a>
 
 ```csharp
-public object GroupbySimpleMonitor { get; }
+public bool|IResolvable GroupbySimpleMonitor { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1454,20 +1454,20 @@ public string Id { get; }
 ##### `IncludeTags`<sup>Required</sup> <a name="IncludeTags" id="@cdktf/provider-datadog.monitor.Monitor.property.includeTags"></a>
 
 ```csharp
-public object IncludeTags { get; }
+public bool|IResolvable IncludeTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Locked`<sup>Required</sup> <a name="Locked" id="@cdktf/provider-datadog.monitor.Monitor.property.locked"></a>
 
 ```csharp
-public object Locked { get; }
+public bool|IResolvable Locked { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1534,10 +1534,10 @@ public string NotificationPresetName { get; }
 ##### `NotifyAudit`<sup>Required</sup> <a name="NotifyAudit" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit"></a>
 
 ```csharp
-public object NotifyAudit { get; }
+public bool|IResolvable NotifyAudit { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1554,10 +1554,10 @@ public string[] NotifyBy { get; }
 ##### `NotifyNoData`<sup>Required</sup> <a name="NotifyNoData" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData"></a>
 
 ```csharp
-public object NotifyNoData { get; }
+public bool|IResolvable NotifyNoData { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1624,10 +1624,10 @@ public string[] RenotifyStatuses { get; }
 ##### `RequireFullWindow`<sup>Required</sup> <a name="RequireFullWindow" id="@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow"></a>
 
 ```csharp
-public object RequireFullWindow { get; }
+public bool|IResolvable RequireFullWindow { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1674,10 +1674,10 @@ public string Type { get; }
 ##### `Validate`<sup>Required</sup> <a name="Validate" id="@cdktf/provider-datadog.monitor.Monitor.property.validate"></a>
 
 ```csharp
-public object Validate { get; }
+public bool|IResolvable Validate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1709,47 +1709,47 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new MonitorConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Message,
     string Name,
     string Query,
     string Type,
-    object EnableLogsSample = null,
-    object EnableSamples = null,
+    bool|IResolvable EnableLogsSample = null,
+    bool|IResolvable EnableSamples = null,
     string EscalationMessage = null,
     double EvaluationDelay = null,
-    object ForceDelete = null,
-    object GroupbySimpleMonitor = null,
+    bool|IResolvable ForceDelete = null,
+    bool|IResolvable GroupbySimpleMonitor = null,
     string GroupRetentionDuration = null,
     string Id = null,
-    object IncludeTags = null,
-    object Locked = null,
+    bool|IResolvable IncludeTags = null,
+    bool|IResolvable Locked = null,
     MonitorMonitorThresholds MonitorThresholds = null,
     MonitorMonitorThresholdWindows MonitorThresholdWindows = null,
     double NewGroupDelay = null,
     double NewHostDelay = null,
     double NoDataTimeframe = null,
     string NotificationPresetName = null,
-    object NotifyAudit = null,
+    bool|IResolvable NotifyAudit = null,
     string[] NotifyBy = null,
-    object NotifyNoData = null,
+    bool|IResolvable NotifyNoData = null,
     string OnMissingData = null,
     string Priority = null,
     double RenotifyInterval = null,
     double RenotifyOccurrences = null,
     string[] RenotifyStatuses = null,
-    object RequireFullWindow = null,
+    bool|IResolvable RequireFullWindow = null,
     string[] RestrictedRoles = null,
     MonitorSchedulingOptions SchedulingOptions = null,
     string[] Tags = null,
     double TimeoutH = null,
-    object Validate = null,
+    bool|IResolvable Validate = null,
     MonitorVariables Variables = null
 };
 ```
@@ -1758,47 +1758,47 @@ new MonitorConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.message">Message</a></code> | <code>string</code> | A message to include with notifications for this monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.name">Name</a></code> | <code>string</code> | Name of Datadog monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.query">Query</a></code> | <code>string</code> | The monitor query to notify on. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.type">Type</a></code> | <code>string</code> | The type of the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample">EnableLogsSample</a></code> | <code>object</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples">EnableSamples</a></code> | <code>object</code> | Whether or not a list of samples which triggered the alert is included. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample">EnableLogsSample</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples">EnableSamples</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.escalationMessage">EscalationMessage</a></code> | <code>string</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.evaluationDelay">EvaluationDelay</a></code> | <code>double</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete">ForceDelete</a></code> | <code>object</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">GroupbySimpleMonitor</a></code> | <code>object</code> | Whether or not to trigger one alert if any source breaches a threshold. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete">ForceDelete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">GroupbySimpleMonitor</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration">GroupRetentionDuration</a></code> | <code>string</code> | The time span after which groups with missing data are dropped from the monitor state. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/monitor#id Monitor#id}. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags">IncludeTags</a></code> | <code>object</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.locked">Locked</a></code> | <code>object</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags">IncludeTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.locked">Locked</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholds">MonitorThresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholdWindows">MonitorThresholdWindows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | monitor_threshold_windows block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.newGroupDelay">NewGroupDelay</a></code> | <code>double</code> | The time (in seconds) to skip evaluations for new groups. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.newHostDelay">NewHostDelay</a></code> | <code>double</code> | **Deprecated**. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.noDataTimeframe">NoDataTimeframe</a></code> | <code>double</code> | The number of minutes before a monitor will notify when data stops reporting. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notificationPresetName">NotificationPresetName</a></code> | <code>string</code> | Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit">NotifyAudit</a></code> | <code>object</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit">NotifyAudit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyBy">NotifyBy</a></code> | <code>string[]</code> | Controls what granularity a monitor alerts on. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData">NotifyNoData</a></code> | <code>object</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData">NotifyNoData</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.onMissingData">OnMissingData</a></code> | <code>string</code> | Controls how groups or monitors are treated if an evaluation does not return any data points. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.priority">Priority</a></code> | <code>string</code> | Integer from 1 (high) to 5 (low) indicating alert severity. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyInterval">RenotifyInterval</a></code> | <code>double</code> | The number of minutes after the last notification before a monitor will re-notify on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyOccurrences">RenotifyOccurrences</a></code> | <code>double</code> | The number of re-notification messages that should be sent on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyStatuses">RenotifyStatuses</a></code> | <code>string[]</code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow">RequireFullWindow</a></code> | <code>object</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow">RequireFullWindow</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | A list of unique role identifiers to define which roles are allowed to edit the monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.schedulingOptions">SchedulingOptions</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | scheduling_options block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.tags">Tags</a></code> | <code>string[]</code> | A list of tags to associate with your monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.timeoutH">TimeoutH</a></code> | <code>double</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.validate">Validate</a></code> | <code>object</code> | If set to `false`, skip the validation call done during plan. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.validate">Validate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.variables">Variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | variables block. |
 
 ---
@@ -1806,20 +1806,20 @@ new MonitorConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1866,10 +1866,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1940,10 +1940,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `EnableLogsSample`<sup>Optional</sup> <a name="EnableLogsSample" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample"></a>
 
 ```csharp
-public object EnableLogsSample { get; set; }
+public bool|IResolvable EnableLogsSample { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean indicating whether or not to include a list of log values which triggered the alert.
 
@@ -1956,10 +1956,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `EnableSamples`<sup>Optional</sup> <a name="EnableSamples" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples"></a>
 
 ```csharp
-public object EnableSamples { get; set; }
+public bool|IResolvable EnableSamples { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether or not a list of samples which triggered the alert is included.
 
@@ -2002,10 +2002,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `ForceDelete`<sup>Optional</sup> <a name="ForceDelete" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete"></a>
 
 ```csharp
-public object ForceDelete { get; set; }
+public bool|IResolvable ForceDelete { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
@@ -2016,10 +2016,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `GroupbySimpleMonitor`<sup>Optional</sup> <a name="GroupbySimpleMonitor" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor"></a>
 
 ```csharp
-public object GroupbySimpleMonitor { get; set; }
+public bool|IResolvable GroupbySimpleMonitor { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether or not to trigger one alert if any source breaches a threshold.
 
@@ -2063,10 +2063,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `IncludeTags`<sup>Optional</sup> <a name="IncludeTags" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags"></a>
 
 ```csharp
-public object IncludeTags { get; set; }
+public bool|IResolvable IncludeTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
@@ -2077,10 +2077,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Locked`<sup>Optional</sup> <a name="Locked" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.locked"></a>
 
 ```csharp
-public object Locked { get; set; }
+public bool|IResolvable Locked { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean indicating whether changes to this monitor should be restricted to the creator or admins.
 
@@ -2183,10 +2183,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `NotifyAudit`<sup>Optional</sup> <a name="NotifyAudit" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit"></a>
 
 ```csharp
-public object NotifyAudit { get; set; }
+public bool|IResolvable NotifyAudit { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
@@ -2213,10 +2213,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `NotifyNoData`<sup>Optional</sup> <a name="NotifyNoData" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData"></a>
 
 ```csharp
-public object NotifyNoData { get; set; }
+public bool|IResolvable NotifyNoData { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
@@ -2301,10 +2301,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `RequireFullWindow`<sup>Optional</sup> <a name="RequireFullWindow" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow"></a>
 
 ```csharp
-public object RequireFullWindow { get; set; }
+public bool|IResolvable RequireFullWindow { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 A boolean indicating whether this monitor needs a full window of data before it's evaluated.
 
@@ -2381,10 +2381,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `Validate`<sup>Optional</sup> <a name="Validate" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.validate"></a>
 
 ```csharp
-public object Validate { get; set; }
+public bool|IResolvable Validate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to `false`, skip the validation call done during plan.
 
@@ -2800,8 +2800,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new MonitorVariables {
-    object CloudCostQuery = null,
-    object EventQuery = null
+    IResolvable|MonitorVariablesCloudCostQuery[] CloudCostQuery = null,
+    IResolvable|MonitorVariablesEventQuery[] EventQuery = null
 };
 ```
 
@@ -2809,18 +2809,18 @@ new MonitorVariables {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery">CloudCostQuery</a></code> | <code>object</code> | cloud_cost_query block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery">EventQuery</a></code> | <code>object</code> | event_query block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery">CloudCostQuery</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>[]</code> | cloud_cost_query block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery">EventQuery</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>[]</code> | event_query block. |
 
 ---
 
 ##### `CloudCostQuery`<sup>Optional</sup> <a name="CloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery"></a>
 
 ```csharp
-public object CloudCostQuery { get; set; }
+public IResolvable|MonitorVariablesCloudCostQuery[] CloudCostQuery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>[]
 
 cloud_cost_query block.
 
@@ -2831,10 +2831,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `EventQuery`<sup>Optional</sup> <a name="EventQuery" id="@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery"></a>
 
 ```csharp
-public object EventQuery { get; set; }
+public IResolvable|MonitorVariablesEventQuery[] EventQuery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>[]
 
 event_query block.
 
@@ -2934,11 +2934,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using HashiCorp.Cdktf.Providers.Datadog;
 
 new MonitorVariablesEventQuery {
-    object Compute,
+    IResolvable|MonitorVariablesEventQueryCompute[] Compute,
     string DataSource,
     string Name,
     MonitorVariablesEventQuerySearch Search,
-    object GroupBy = null,
+    IResolvable|MonitorVariablesEventQueryGroupBy[] GroupBy = null,
     string[] Indexes = null
 };
 ```
@@ -2947,11 +2947,11 @@ new MonitorVariablesEventQuery {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">Compute</a></code> | <code>object</code> | compute block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">Compute</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>[]</code> | compute block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource">DataSource</a></code> | <code>string</code> | The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.name">Name</a></code> | <code>string</code> | The name of query for use in formulas. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">Search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">GroupBy</a></code> | <code>object</code> | group_by block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">GroupBy</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>[]</code> | group_by block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes">Indexes</a></code> | <code>string[]</code> | An array of index names to query in the stream. |
 
 ---
@@ -2959,10 +2959,10 @@ new MonitorVariablesEventQuery {
 ##### `Compute`<sup>Required</sup> <a name="Compute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute"></a>
 
 ```csharp
-public object Compute { get; set; }
+public IResolvable|MonitorVariablesEventQueryCompute[] Compute { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>[]
 
 compute block.
 
@@ -3015,10 +3015,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `GroupBy`<sup>Optional</sup> <a name="GroupBy" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy"></a>
 
 ```csharp
-public object GroupBy { get; set; }
+public IResolvable|MonitorVariablesEventQueryGroupBy[] GroupBy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>[]
 
 group_by block.
 
@@ -5404,7 +5404,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>[]</code> | *No description.* |
 
 ---
 
@@ -5435,10 +5435,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|MonitorVariablesCloudCostQuery[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>[]
 
 ---
 
@@ -5686,7 +5686,7 @@ private void ResetAggregator()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSource">DataSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.query">Query</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a></code> | *No description.* |
 
 ---
 
@@ -5797,10 +5797,10 @@ public string Query { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|MonitorVariablesCloudCostQuery InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>
 
 ---
 
@@ -5926,7 +5926,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>[]</code> | *No description.* |
 
 ---
 
@@ -5957,10 +5957,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|MonitorVariablesEventQueryCompute[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>[]
 
 ---
 
@@ -6213,7 +6213,7 @@ private void ResetMetric()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregation">Aggregation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.interval">Interval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metric">Metric</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a></code> | *No description.* |
 
 ---
 
@@ -6304,10 +6304,10 @@ public string Metric { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|MonitorVariablesEventQueryCompute InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>
 
 ---
 
@@ -6433,7 +6433,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>[]</code> | *No description.* |
 
 ---
 
@@ -6464,10 +6464,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|MonitorVariablesEventQueryGroupBy[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>[]
 
 ---
 
@@ -6733,7 +6733,7 @@ private void ResetSort()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sortInput">SortInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facet">Facet</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limit">Limit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a></code> | *No description.* |
 
 ---
 
@@ -6824,10 +6824,10 @@ public double Limit { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|MonitorVariablesEventQueryGroupBy InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>
 
 ---
 
@@ -7282,7 +7282,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>[]</code> | *No description.* |
 
 ---
 
@@ -7313,10 +7313,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|MonitorVariablesEventQuery[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>[]
 
 ---
 
@@ -7550,24 +7550,24 @@ Returns a reversible string representation.
 ##### `PutCompute` <a name="PutCompute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute"></a>
 
 ```csharp
-private void PutCompute(object Value)
+private void PutCompute(IResolvable|MonitorVariablesEventQueryCompute[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>[]
 
 ---
 
 ##### `PutGroupBy` <a name="PutGroupBy" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy"></a>
 
 ```csharp
-private void PutGroupBy(object Value)
+private void PutGroupBy(IResolvable|MonitorVariablesEventQueryGroupBy[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>[]
 
 ---
 
@@ -7605,16 +7605,16 @@ private void ResetIndexes()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.compute">Compute</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList">MonitorVariablesEventQueryComputeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupBy">GroupBy</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList">MonitorVariablesEventQueryGroupByList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.search">Search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference">MonitorVariablesEventQuerySearchOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput">ComputeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput">ComputeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSourceInput">DataSourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput">GroupByInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput">GroupByInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexesInput">IndexesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.searchInput">SearchInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSource">DataSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexes">Indexes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a></code> | *No description.* |
 
 ---
 
@@ -7675,10 +7675,10 @@ public MonitorVariablesEventQuerySearchOutputReference Search { get; }
 ##### `ComputeInput`<sup>Optional</sup> <a name="ComputeInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput"></a>
 
 ```csharp
-public object ComputeInput { get; }
+public IResolvable|MonitorVariablesEventQueryCompute[] ComputeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>[]
 
 ---
 
@@ -7695,10 +7695,10 @@ public string DataSourceInput { get; }
 ##### `GroupByInput`<sup>Optional</sup> <a name="GroupByInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput"></a>
 
 ```csharp
-public object GroupByInput { get; }
+public IResolvable|MonitorVariablesEventQueryGroupBy[] GroupByInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>[]
 
 ---
 
@@ -7765,10 +7765,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|MonitorVariablesEventQuery InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>
 
 ---
 
@@ -8254,24 +8254,24 @@ Returns a reversible string representation.
 ##### `PutCloudCostQuery` <a name="PutCloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery"></a>
 
 ```csharp
-private void PutCloudCostQuery(object Value)
+private void PutCloudCostQuery(IResolvable|MonitorVariablesCloudCostQuery[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>[]
 
 ---
 
 ##### `PutEventQuery` <a name="PutEventQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery"></a>
 
 ```csharp
-private void PutEventQuery(object Value)
+private void PutEventQuery(IResolvable|MonitorVariablesEventQuery[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>[]
 
 ---
 
@@ -8296,8 +8296,8 @@ private void ResetEventQuery()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQuery">CloudCostQuery</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList">MonitorVariablesCloudCostQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQuery">EventQuery</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList">MonitorVariablesEventQueryList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput">CloudCostQueryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput">EventQueryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput">CloudCostQueryInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput">EventQueryInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
 
 ---
@@ -8349,20 +8349,20 @@ public MonitorVariablesEventQueryList EventQuery { get; }
 ##### `CloudCostQueryInput`<sup>Optional</sup> <a name="CloudCostQueryInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput"></a>
 
 ```csharp
-public object CloudCostQueryInput { get; }
+public IResolvable|MonitorVariablesCloudCostQuery[] CloudCostQueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>[]
 
 ---
 
 ##### `EventQueryInput`<sup>Optional</sup> <a name="EventQueryInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput"></a>
 
 ```csharp
-public object EventQueryInput { get; }
+public IResolvable|MonitorVariablesEventQuery[] EventQueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>[]
 
 ---
 

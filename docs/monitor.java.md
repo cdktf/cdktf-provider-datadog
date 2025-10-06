@@ -12,61 +12,47 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 import com.hashicorp.cdktf.providers.datadog.monitor.Monitor;
 
 Monitor.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .message(java.lang.String)
     .name(java.lang.String)
     .query(java.lang.String)
     .type(java.lang.String)
-//  .enableLogsSample(java.lang.Boolean)
-//  .enableLogsSample(IResolvable)
-//  .enableSamples(java.lang.Boolean)
-//  .enableSamples(IResolvable)
+//  .enableLogsSample(java.lang.Boolean|IResolvable)
+//  .enableSamples(java.lang.Boolean|IResolvable)
 //  .escalationMessage(java.lang.String)
 //  .evaluationDelay(java.lang.Number)
-//  .forceDelete(java.lang.Boolean)
-//  .forceDelete(IResolvable)
-//  .groupbySimpleMonitor(java.lang.Boolean)
-//  .groupbySimpleMonitor(IResolvable)
+//  .forceDelete(java.lang.Boolean|IResolvable)
+//  .groupbySimpleMonitor(java.lang.Boolean|IResolvable)
 //  .groupRetentionDuration(java.lang.String)
 //  .id(java.lang.String)
-//  .includeTags(java.lang.Boolean)
-//  .includeTags(IResolvable)
-//  .locked(java.lang.Boolean)
-//  .locked(IResolvable)
+//  .includeTags(java.lang.Boolean|IResolvable)
+//  .locked(java.lang.Boolean|IResolvable)
 //  .monitorThresholds(MonitorMonitorThresholds)
 //  .monitorThresholdWindows(MonitorMonitorThresholdWindows)
 //  .newGroupDelay(java.lang.Number)
 //  .newHostDelay(java.lang.Number)
 //  .noDataTimeframe(java.lang.Number)
 //  .notificationPresetName(java.lang.String)
-//  .notifyAudit(java.lang.Boolean)
-//  .notifyAudit(IResolvable)
+//  .notifyAudit(java.lang.Boolean|IResolvable)
 //  .notifyBy(java.util.List<java.lang.String>)
-//  .notifyNoData(java.lang.Boolean)
-//  .notifyNoData(IResolvable)
+//  .notifyNoData(java.lang.Boolean|IResolvable)
 //  .onMissingData(java.lang.String)
 //  .priority(java.lang.String)
 //  .renotifyInterval(java.lang.Number)
 //  .renotifyOccurrences(java.lang.Number)
 //  .renotifyStatuses(java.util.List<java.lang.String>)
-//  .requireFullWindow(java.lang.Boolean)
-//  .requireFullWindow(IResolvable)
+//  .requireFullWindow(java.lang.Boolean|IResolvable)
 //  .restrictedRoles(java.util.List<java.lang.String>)
 //  .schedulingOptions(MonitorSchedulingOptions)
 //  .tags(java.util.List<java.lang.String>)
 //  .timeoutH(java.lang.Number)
-//  .validate(java.lang.Boolean)
-//  .validate(IResolvable)
+//  .validate(java.lang.Boolean|IResolvable)
 //  .variables(MonitorVariables)
     .build();
 ```
@@ -75,47 +61,47 @@ Monitor.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.message">message</a></code> | <code>java.lang.String</code> | A message to include with notifications for this monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of Datadog monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.query">query</a></code> | <code>java.lang.String</code> | The monitor query to notify on. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample">enableLogsSample</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples">enableSamples</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample">enableLogsSample</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples">enableSamples</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.escalationMessage">escalationMessage</a></code> | <code>java.lang.String</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.evaluationDelay">evaluationDelay</a></code> | <code>java.lang.Number</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor">groupbySimpleMonitor</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor">groupbySimpleMonitor</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupRetentionDuration">groupRetentionDuration</a></code> | <code>java.lang.String</code> | The time span after which groups with missing data are dropped from the monitor state. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/monitor#id Monitor#id}. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags">includeTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.locked">locked</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags">includeTags</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.locked">locked</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholds">monitorThresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholdWindows">monitorThresholdWindows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | monitor_threshold_windows block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.newGroupDelay">newGroupDelay</a></code> | <code>java.lang.Number</code> | The time (in seconds) to skip evaluations for new groups. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.newHostDelay">newHostDelay</a></code> | <code>java.lang.Number</code> | **Deprecated**. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.noDataTimeframe">noDataTimeframe</a></code> | <code>java.lang.Number</code> | The number of minutes before a monitor will notify when data stops reporting. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notificationPresetName">notificationPresetName</a></code> | <code>java.lang.String</code> | Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit">notifyAudit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit">notifyAudit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyBy">notifyBy</a></code> | <code>java.util.List<java.lang.String></code> | Controls what granularity a monitor alerts on. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData">notifyNoData</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData">notifyNoData</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.onMissingData">onMissingData</a></code> | <code>java.lang.String</code> | Controls how groups or monitors are treated if an evaluation does not return any data points. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.priority">priority</a></code> | <code>java.lang.String</code> | Integer from 1 (high) to 5 (low) indicating alert severity. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyInterval">renotifyInterval</a></code> | <code>java.lang.Number</code> | The number of minutes after the last notification before a monitor will re-notify on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyOccurrences">renotifyOccurrences</a></code> | <code>java.lang.Number</code> | The number of re-notification messages that should be sent on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyStatuses">renotifyStatuses</a></code> | <code>java.util.List<java.lang.String></code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow">requireFullWindow</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow">requireFullWindow</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | A list of unique role identifiers to define which roles are allowed to edit the monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.schedulingOptions">schedulingOptions</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | scheduling_options block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tags to associate with your monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.timeoutH">timeoutH</a></code> | <code>java.lang.Number</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.validate">validate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.validate">validate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.variables">variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | variables block. |
 
 ---
@@ -140,13 +126,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -176,7 +162,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -230,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `enableLogsSample`<sup>Optional</sup> <a name="enableLogsSample" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether or not to include a list of log values which triggered the alert.
 
@@ -242,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `enableSamples`<sup>Optional</sup> <a name="enableSamples" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not a list of samples which triggered the alert is included.
 
@@ -276,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `forceDelete`<sup>Optional</sup> <a name="forceDelete" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
@@ -286,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `groupbySimpleMonitor`<sup>Optional</sup> <a name="groupbySimpleMonitor" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not to trigger one alert if any source breaches a threshold.
 
@@ -321,7 +307,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `includeTags`<sup>Optional</sup> <a name="includeTags" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
@@ -331,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.locked"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether changes to this monitor should be restricted to the creator or admins.
 
@@ -409,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `notifyAudit`<sup>Optional</sup> <a name="notifyAudit" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
@@ -431,7 +417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `notifyNoData`<sup>Optional</sup> <a name="notifyNoData" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
@@ -495,7 +481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `requireFullWindow`<sup>Optional</sup> <a name="requireFullWindow" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether this monitor needs a full window of data before it's evaluated.
 
@@ -555,7 +541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.validate"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If set to `false`, skip the validation call done during plan.
 
@@ -835,7 +821,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-datadog.monitor.Monitor.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-datadog.monitor.Monitor.importFrom"></a>
@@ -891,7 +877,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -906,7 +892,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-datadog.monitor.Monitor.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1288,27 +1274,27 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholds">monitorThresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference">MonitorMonitorThresholdsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindows">monitorThresholdWindows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference">MonitorMonitorThresholdWindowsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptions">schedulingOptions</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference">MonitorSchedulingOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.variables">variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference">MonitorVariablesOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput">enableLogsSampleInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput">enableSamplesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput">enableLogsSampleInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput">enableSamplesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.escalationMessageInput">escalationMessageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelayInput">evaluationDelayInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput">forceDeleteInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput">groupbySimpleMonitorInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput">forceDeleteInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput">groupbySimpleMonitorInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDurationInput">groupRetentionDurationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput">includeTagsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lockedInput">lockedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput">includeTagsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lockedInput">lockedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.messageInput">messageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdsInput">monitorThresholdsInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindowsInput">monitorThresholdWindowsInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | *No description.* |
@@ -1317,54 +1303,54 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newHostDelayInput">newHostDelayInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframeInput">noDataTimeframeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetNameInput">notificationPresetNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput">notifyAuditInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput">notifyAuditInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyByInput">notifyByInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput">notifyNoDataInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput">notifyNoDataInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.onMissingDataInput">onMissingDataInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.priorityInput">priorityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyIntervalInput">renotifyIntervalInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrencesInput">renotifyOccurrencesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatusesInput">renotifyStatusesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput">requireFullWindowInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput">requireFullWindowInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.restrictedRolesInput">restrictedRolesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptionsInput">schedulingOptionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.timeoutHInput">timeoutHInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validateInput">validateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validateInput">validateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.variablesInput">variablesInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample">enableLogsSample</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamples">enableSamples</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample">enableLogsSample</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamples">enableSamples</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.escalationMessage">escalationMessage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelay">evaluationDelay</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor">groupbySimpleMonitor</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor">groupbySimpleMonitor</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDuration">groupRetentionDuration</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTags">includeTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.locked">locked</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTags">includeTags</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.locked">locked</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.message">message</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newGroupDelay">newGroupDelay</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newHostDelay">newHostDelay</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframe">noDataTimeframe</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetName">notificationPresetName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit">notifyAudit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit">notifyAudit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyBy">notifyBy</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData">notifyNoData</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData">notifyNoData</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.onMissingData">onMissingData</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.priority">priority</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyInterval">renotifyInterval</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrences">renotifyOccurrences</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatuses">renotifyStatuses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow">requireFullWindow</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow">requireFullWindow</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.timeoutH">timeoutH</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validate">validate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validate">validate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1443,20 +1429,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.monitor.Monitor.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitor.Monitor.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1503,10 +1489,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.monitor.Monitor.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1553,20 +1539,20 @@ public MonitorVariablesOutputReference getVariables();
 ##### `enableLogsSampleInput`<sup>Optional</sup> <a name="enableLogsSampleInput" id="@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput"></a>
 
 ```java
-public java.lang.Object getEnableLogsSampleInput();
+public java.lang.Boolean|IResolvable getEnableLogsSampleInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableSamplesInput`<sup>Optional</sup> <a name="enableSamplesInput" id="@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput"></a>
 
 ```java
-public java.lang.Object getEnableSamplesInput();
+public java.lang.Boolean|IResolvable getEnableSamplesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1593,20 +1579,20 @@ public java.lang.Number getEvaluationDelayInput();
 ##### `forceDeleteInput`<sup>Optional</sup> <a name="forceDeleteInput" id="@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput"></a>
 
 ```java
-public java.lang.Object getForceDeleteInput();
+public java.lang.Boolean|IResolvable getForceDeleteInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `groupbySimpleMonitorInput`<sup>Optional</sup> <a name="groupbySimpleMonitorInput" id="@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput"></a>
 
 ```java
-public java.lang.Object getGroupbySimpleMonitorInput();
+public java.lang.Boolean|IResolvable getGroupbySimpleMonitorInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1633,20 +1619,20 @@ public java.lang.String getIdInput();
 ##### `includeTagsInput`<sup>Optional</sup> <a name="includeTagsInput" id="@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput"></a>
 
 ```java
-public java.lang.Object getIncludeTagsInput();
+public java.lang.Boolean|IResolvable getIncludeTagsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `lockedInput`<sup>Optional</sup> <a name="lockedInput" id="@cdktf/provider-datadog.monitor.Monitor.property.lockedInput"></a>
 
 ```java
-public java.lang.Object getLockedInput();
+public java.lang.Boolean|IResolvable getLockedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1733,10 +1719,10 @@ public java.lang.String getNotificationPresetNameInput();
 ##### `notifyAuditInput`<sup>Optional</sup> <a name="notifyAuditInput" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput"></a>
 
 ```java
-public java.lang.Object getNotifyAuditInput();
+public java.lang.Boolean|IResolvable getNotifyAuditInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1753,10 +1739,10 @@ public java.util.List<java.lang.String> getNotifyByInput();
 ##### `notifyNoDataInput`<sup>Optional</sup> <a name="notifyNoDataInput" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput"></a>
 
 ```java
-public java.lang.Object getNotifyNoDataInput();
+public java.lang.Boolean|IResolvable getNotifyNoDataInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1823,10 +1809,10 @@ public java.util.List<java.lang.String> getRenotifyStatusesInput();
 ##### `requireFullWindowInput`<sup>Optional</sup> <a name="requireFullWindowInput" id="@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput"></a>
 
 ```java
-public java.lang.Object getRequireFullWindowInput();
+public java.lang.Boolean|IResolvable getRequireFullWindowInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1883,10 +1869,10 @@ public java.lang.String getTypeInput();
 ##### `validateInput`<sup>Optional</sup> <a name="validateInput" id="@cdktf/provider-datadog.monitor.Monitor.property.validateInput"></a>
 
 ```java
-public java.lang.Object getValidateInput();
+public java.lang.Boolean|IResolvable getValidateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1903,20 +1889,20 @@ public MonitorVariables getVariablesInput();
 ##### `enableLogsSample`<sup>Required</sup> <a name="enableLogsSample" id="@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample"></a>
 
 ```java
-public java.lang.Object getEnableLogsSample();
+public java.lang.Boolean|IResolvable getEnableLogsSample();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableSamples`<sup>Required</sup> <a name="enableSamples" id="@cdktf/provider-datadog.monitor.Monitor.property.enableSamples"></a>
 
 ```java
-public java.lang.Object getEnableSamples();
+public java.lang.Boolean|IResolvable getEnableSamples();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1943,20 +1929,20 @@ public java.lang.Number getEvaluationDelay();
 ##### `forceDelete`<sup>Required</sup> <a name="forceDelete" id="@cdktf/provider-datadog.monitor.Monitor.property.forceDelete"></a>
 
 ```java
-public java.lang.Object getForceDelete();
+public java.lang.Boolean|IResolvable getForceDelete();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `groupbySimpleMonitor`<sup>Required</sup> <a name="groupbySimpleMonitor" id="@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor"></a>
 
 ```java
-public java.lang.Object getGroupbySimpleMonitor();
+public java.lang.Boolean|IResolvable getGroupbySimpleMonitor();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1983,20 +1969,20 @@ public java.lang.String getId();
 ##### `includeTags`<sup>Required</sup> <a name="includeTags" id="@cdktf/provider-datadog.monitor.Monitor.property.includeTags"></a>
 
 ```java
-public java.lang.Object getIncludeTags();
+public java.lang.Boolean|IResolvable getIncludeTags();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `locked`<sup>Required</sup> <a name="locked" id="@cdktf/provider-datadog.monitor.Monitor.property.locked"></a>
 
 ```java
-public java.lang.Object getLocked();
+public java.lang.Boolean|IResolvable getLocked();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2063,10 +2049,10 @@ public java.lang.String getNotificationPresetName();
 ##### `notifyAudit`<sup>Required</sup> <a name="notifyAudit" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit"></a>
 
 ```java
-public java.lang.Object getNotifyAudit();
+public java.lang.Boolean|IResolvable getNotifyAudit();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2083,10 +2069,10 @@ public java.util.List<java.lang.String> getNotifyBy();
 ##### `notifyNoData`<sup>Required</sup> <a name="notifyNoData" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData"></a>
 
 ```java
-public java.lang.Object getNotifyNoData();
+public java.lang.Boolean|IResolvable getNotifyNoData();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2153,10 +2139,10 @@ public java.util.List<java.lang.String> getRenotifyStatuses();
 ##### `requireFullWindow`<sup>Required</sup> <a name="requireFullWindow" id="@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow"></a>
 
 ```java
-public java.lang.Object getRequireFullWindow();
+public java.lang.Boolean|IResolvable getRequireFullWindow();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2203,10 +2189,10 @@ public java.lang.String getType();
 ##### `validate`<sup>Required</sup> <a name="validate" id="@cdktf/provider-datadog.monitor.Monitor.property.validate"></a>
 
 ```java
-public java.lang.Object getValidate();
+public java.lang.Boolean|IResolvable getValidate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2238,61 +2224,47 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.datadog.monitor.MonitorConfig;
 
 MonitorConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .message(java.lang.String)
     .name(java.lang.String)
     .query(java.lang.String)
     .type(java.lang.String)
-//  .enableLogsSample(java.lang.Boolean)
-//  .enableLogsSample(IResolvable)
-//  .enableSamples(java.lang.Boolean)
-//  .enableSamples(IResolvable)
+//  .enableLogsSample(java.lang.Boolean|IResolvable)
+//  .enableSamples(java.lang.Boolean|IResolvable)
 //  .escalationMessage(java.lang.String)
 //  .evaluationDelay(java.lang.Number)
-//  .forceDelete(java.lang.Boolean)
-//  .forceDelete(IResolvable)
-//  .groupbySimpleMonitor(java.lang.Boolean)
-//  .groupbySimpleMonitor(IResolvable)
+//  .forceDelete(java.lang.Boolean|IResolvable)
+//  .groupbySimpleMonitor(java.lang.Boolean|IResolvable)
 //  .groupRetentionDuration(java.lang.String)
 //  .id(java.lang.String)
-//  .includeTags(java.lang.Boolean)
-//  .includeTags(IResolvable)
-//  .locked(java.lang.Boolean)
-//  .locked(IResolvable)
+//  .includeTags(java.lang.Boolean|IResolvable)
+//  .locked(java.lang.Boolean|IResolvable)
 //  .monitorThresholds(MonitorMonitorThresholds)
 //  .monitorThresholdWindows(MonitorMonitorThresholdWindows)
 //  .newGroupDelay(java.lang.Number)
 //  .newHostDelay(java.lang.Number)
 //  .noDataTimeframe(java.lang.Number)
 //  .notificationPresetName(java.lang.String)
-//  .notifyAudit(java.lang.Boolean)
-//  .notifyAudit(IResolvable)
+//  .notifyAudit(java.lang.Boolean|IResolvable)
 //  .notifyBy(java.util.List<java.lang.String>)
-//  .notifyNoData(java.lang.Boolean)
-//  .notifyNoData(IResolvable)
+//  .notifyNoData(java.lang.Boolean|IResolvable)
 //  .onMissingData(java.lang.String)
 //  .priority(java.lang.String)
 //  .renotifyInterval(java.lang.Number)
 //  .renotifyOccurrences(java.lang.Number)
 //  .renotifyStatuses(java.util.List<java.lang.String>)
-//  .requireFullWindow(java.lang.Boolean)
-//  .requireFullWindow(IResolvable)
+//  .requireFullWindow(java.lang.Boolean|IResolvable)
 //  .restrictedRoles(java.util.List<java.lang.String>)
 //  .schedulingOptions(MonitorSchedulingOptions)
 //  .tags(java.util.List<java.lang.String>)
 //  .timeoutH(java.lang.Number)
-//  .validate(java.lang.Boolean)
-//  .validate(IResolvable)
+//  .validate(java.lang.Boolean|IResolvable)
 //  .variables(MonitorVariables)
     .build();
 ```
@@ -2301,47 +2273,47 @@ MonitorConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.message">message</a></code> | <code>java.lang.String</code> | A message to include with notifications for this monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of Datadog monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.query">query</a></code> | <code>java.lang.String</code> | The monitor query to notify on. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample">enableLogsSample</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples">enableSamples</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample">enableLogsSample</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples">enableSamples</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.escalationMessage">escalationMessage</a></code> | <code>java.lang.String</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.evaluationDelay">evaluationDelay</a></code> | <code>java.lang.Number</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">groupbySimpleMonitor</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">groupbySimpleMonitor</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration">groupRetentionDuration</a></code> | <code>java.lang.String</code> | The time span after which groups with missing data are dropped from the monitor state. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/monitor#id Monitor#id}. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags">includeTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.locked">locked</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags">includeTags</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.locked">locked</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholds">monitorThresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholdWindows">monitorThresholdWindows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | monitor_threshold_windows block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.newGroupDelay">newGroupDelay</a></code> | <code>java.lang.Number</code> | The time (in seconds) to skip evaluations for new groups. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.newHostDelay">newHostDelay</a></code> | <code>java.lang.Number</code> | **Deprecated**. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.noDataTimeframe">noDataTimeframe</a></code> | <code>java.lang.Number</code> | The number of minutes before a monitor will notify when data stops reporting. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notificationPresetName">notificationPresetName</a></code> | <code>java.lang.String</code> | Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit">notifyAudit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit">notifyAudit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyBy">notifyBy</a></code> | <code>java.util.List<java.lang.String></code> | Controls what granularity a monitor alerts on. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData">notifyNoData</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData">notifyNoData</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.onMissingData">onMissingData</a></code> | <code>java.lang.String</code> | Controls how groups or monitors are treated if an evaluation does not return any data points. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.priority">priority</a></code> | <code>java.lang.String</code> | Integer from 1 (high) to 5 (low) indicating alert severity. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyInterval">renotifyInterval</a></code> | <code>java.lang.Number</code> | The number of minutes after the last notification before a monitor will re-notify on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyOccurrences">renotifyOccurrences</a></code> | <code>java.lang.Number</code> | The number of re-notification messages that should be sent on the current status. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyStatuses">renotifyStatuses</a></code> | <code>java.util.List<java.lang.String></code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow">requireFullWindow</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow">requireFullWindow</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.restrictedRoles">restrictedRoles</a></code> | <code>java.util.List<java.lang.String></code> | A list of unique role identifiers to define which roles are allowed to edit the monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.schedulingOptions">schedulingOptions</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | scheduling_options block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tags to associate with your monitor. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.timeoutH">timeoutH</a></code> | <code>java.lang.Number</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.validate">validate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.validate">validate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.variables">variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | variables block. |
 
 ---
@@ -2349,20 +2321,20 @@ MonitorConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -2409,10 +2381,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -2483,10 +2455,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `enableLogsSample`<sup>Optional</sup> <a name="enableLogsSample" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample"></a>
 
 ```java
-public java.lang.Object getEnableLogsSample();
+public java.lang.Boolean|IResolvable getEnableLogsSample();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether or not to include a list of log values which triggered the alert.
 
@@ -2499,10 +2471,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `enableSamples`<sup>Optional</sup> <a name="enableSamples" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples"></a>
 
 ```java
-public java.lang.Object getEnableSamples();
+public java.lang.Boolean|IResolvable getEnableSamples();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not a list of samples which triggered the alert is included.
 
@@ -2545,10 +2517,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `forceDelete`<sup>Optional</sup> <a name="forceDelete" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete"></a>
 
 ```java
-public java.lang.Object getForceDelete();
+public java.lang.Boolean|IResolvable getForceDelete();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
@@ -2559,10 +2531,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `groupbySimpleMonitor`<sup>Optional</sup> <a name="groupbySimpleMonitor" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor"></a>
 
 ```java
-public java.lang.Object getGroupbySimpleMonitor();
+public java.lang.Boolean|IResolvable getGroupbySimpleMonitor();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not to trigger one alert if any source breaches a threshold.
 
@@ -2606,10 +2578,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `includeTags`<sup>Optional</sup> <a name="includeTags" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags"></a>
 
 ```java
-public java.lang.Object getIncludeTags();
+public java.lang.Boolean|IResolvable getIncludeTags();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
@@ -2620,10 +2592,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.locked"></a>
 
 ```java
-public java.lang.Object getLocked();
+public java.lang.Boolean|IResolvable getLocked();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether changes to this monitor should be restricted to the creator or admins.
 
@@ -2726,10 +2698,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `notifyAudit`<sup>Optional</sup> <a name="notifyAudit" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit"></a>
 
 ```java
-public java.lang.Object getNotifyAudit();
+public java.lang.Boolean|IResolvable getNotifyAudit();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
@@ -2756,10 +2728,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `notifyNoData`<sup>Optional</sup> <a name="notifyNoData" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData"></a>
 
 ```java
-public java.lang.Object getNotifyNoData();
+public java.lang.Boolean|IResolvable getNotifyNoData();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
@@ -2844,10 +2816,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `requireFullWindow`<sup>Optional</sup> <a name="requireFullWindow" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow"></a>
 
 ```java
-public java.lang.Object getRequireFullWindow();
+public java.lang.Boolean|IResolvable getRequireFullWindow();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 A boolean indicating whether this monitor needs a full window of data before it's evaluated.
 
@@ -2924,10 +2896,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.validate"></a>
 
 ```java
-public java.lang.Object getValidate();
+public java.lang.Boolean|IResolvable getValidate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If set to `false`, skip the validation call done during plan.
 
@@ -3343,10 +3315,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import com.hashicorp.cdktf.providers.datadog.monitor.MonitorVariables;
 
 MonitorVariables.builder()
-//  .cloudCostQuery(IResolvable)
-//  .cloudCostQuery(java.util.List<MonitorVariablesCloudCostQuery>)
-//  .eventQuery(IResolvable)
-//  .eventQuery(java.util.List<MonitorVariablesEventQuery>)
+//  .cloudCostQuery(IResolvable|java.util.List<MonitorVariablesCloudCostQuery>)
+//  .eventQuery(IResolvable|java.util.List<MonitorVariablesEventQuery>)
     .build();
 ```
 
@@ -3354,18 +3324,18 @@ MonitorVariables.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery">cloudCostQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>></code> | cloud_cost_query block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery">eventQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>></code> | event_query block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery">cloudCostQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>></code> | cloud_cost_query block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery">eventQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>></code> | event_query block. |
 
 ---
 
 ##### `cloudCostQuery`<sup>Optional</sup> <a name="cloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery"></a>
 
 ```java
-public java.lang.Object getCloudCostQuery();
+public IResolvable|java.util.List<MonitorVariablesCloudCostQuery> getCloudCostQuery();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>>
 
 cloud_cost_query block.
 
@@ -3376,10 +3346,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `eventQuery`<sup>Optional</sup> <a name="eventQuery" id="@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery"></a>
 
 ```java
-public java.lang.Object getEventQuery();
+public IResolvable|java.util.List<MonitorVariablesEventQuery> getEventQuery();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>>
 
 event_query block.
 
@@ -3479,13 +3449,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import com.hashicorp.cdktf.providers.datadog.monitor.MonitorVariablesEventQuery;
 
 MonitorVariablesEventQuery.builder()
-    .compute(IResolvable)
-    .compute(java.util.List<MonitorVariablesEventQueryCompute>)
+    .compute(IResolvable|java.util.List<MonitorVariablesEventQueryCompute>)
     .dataSource(java.lang.String)
     .name(java.lang.String)
     .search(MonitorVariablesEventQuerySearch)
-//  .groupBy(IResolvable)
-//  .groupBy(java.util.List<MonitorVariablesEventQueryGroupBy>)
+//  .groupBy(IResolvable|java.util.List<MonitorVariablesEventQueryGroupBy>)
 //  .indexes(java.util.List<java.lang.String>)
     .build();
 ```
@@ -3494,11 +3462,11 @@ MonitorVariablesEventQuery.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">compute</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>></code> | compute block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">compute</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>></code> | compute block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource">dataSource</a></code> | <code>java.lang.String</code> | The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.name">name</a></code> | <code>java.lang.String</code> | The name of query for use in formulas. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">groupBy</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>></code> | group_by block. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">groupBy</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>></code> | group_by block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes">indexes</a></code> | <code>java.util.List<java.lang.String></code> | An array of index names to query in the stream. |
 
 ---
@@ -3506,10 +3474,10 @@ MonitorVariablesEventQuery.builder()
 ##### `compute`<sup>Required</sup> <a name="compute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute"></a>
 
 ```java
-public java.lang.Object getCompute();
+public IResolvable|java.util.List<MonitorVariablesEventQueryCompute> getCompute();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>>
 
 compute block.
 
@@ -3562,10 +3530,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `groupBy`<sup>Optional</sup> <a name="groupBy" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy"></a>
 
 ```java
-public java.lang.Object getGroupBy();
+public IResolvable|java.util.List<MonitorVariablesEventQueryGroupBy> getGroupBy();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>>
 
 group_by block.
 
@@ -5951,7 +5919,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>></code> | *No description.* |
 
 ---
 
@@ -5982,10 +5950,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<MonitorVariablesCloudCostQuery> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>>
 
 ---
 
@@ -6233,7 +6201,7 @@ public void resetAggregator()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSource">dataSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a></code> | *No description.* |
 
 ---
 
@@ -6344,10 +6312,10 @@ public java.lang.String getQuery();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|MonitorVariablesCloudCostQuery getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>
 
 ---
 
@@ -6473,7 +6441,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>></code> | *No description.* |
 
 ---
 
@@ -6504,10 +6472,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<MonitorVariablesEventQueryCompute> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>>
 
 ---
 
@@ -6760,7 +6728,7 @@ public void resetMetric()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregation">aggregation</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.interval">interval</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metric">metric</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a></code> | *No description.* |
 
 ---
 
@@ -6851,10 +6819,10 @@ public java.lang.String getMetric();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|MonitorVariablesEventQueryCompute getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>
 
 ---
 
@@ -6980,7 +6948,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>></code> | *No description.* |
 
 ---
 
@@ -7011,10 +6979,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<MonitorVariablesEventQueryGroupBy> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>>
 
 ---
 
@@ -7280,7 +7248,7 @@ public void resetSort()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sortInput">sortInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facet">facet</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limit">limit</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a></code> | *No description.* |
 
 ---
 
@@ -7371,10 +7339,10 @@ public java.lang.Number getLimit();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|MonitorVariablesEventQueryGroupBy getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>
 
 ---
 
@@ -7829,7 +7797,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>></code> | *No description.* |
 
 ---
 
@@ -7860,10 +7828,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<MonitorVariablesEventQuery> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>>
 
 ---
 
@@ -8097,24 +8065,24 @@ Returns a reversible string representation.
 ##### `putCompute` <a name="putCompute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute"></a>
 
 ```java
-public void putCompute(IResolvable OR java.util.List<MonitorVariablesEventQueryCompute> value)
+public void putCompute(IResolvable|java.util.List<MonitorVariablesEventQueryCompute> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>>
 
 ---
 
 ##### `putGroupBy` <a name="putGroupBy" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy"></a>
 
 ```java
-public void putGroupBy(IResolvable OR java.util.List<MonitorVariablesEventQueryGroupBy> value)
+public void putGroupBy(IResolvable|java.util.List<MonitorVariablesEventQueryGroupBy> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>>
 
 ---
 
@@ -8152,16 +8120,16 @@ public void resetIndexes()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.compute">compute</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList">MonitorVariablesEventQueryComputeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupBy">groupBy</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList">MonitorVariablesEventQueryGroupByList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference">MonitorVariablesEventQuerySearchOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput">computeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput">computeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSourceInput">dataSourceInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput">groupByInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput">groupByInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexesInput">indexesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.searchInput">searchInput</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSource">dataSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexes">indexes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a></code> | *No description.* |
 
 ---
 
@@ -8222,10 +8190,10 @@ public MonitorVariablesEventQuerySearchOutputReference getSearch();
 ##### `computeInput`<sup>Optional</sup> <a name="computeInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput"></a>
 
 ```java
-public java.lang.Object getComputeInput();
+public IResolvable|java.util.List<MonitorVariablesEventQueryCompute> getComputeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>>
 
 ---
 
@@ -8242,10 +8210,10 @@ public java.lang.String getDataSourceInput();
 ##### `groupByInput`<sup>Optional</sup> <a name="groupByInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput"></a>
 
 ```java
-public java.lang.Object getGroupByInput();
+public IResolvable|java.util.List<MonitorVariablesEventQueryGroupBy> getGroupByInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>>
 
 ---
 
@@ -8312,10 +8280,10 @@ public java.lang.String getName();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|MonitorVariablesEventQuery getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>
 
 ---
 
@@ -8801,24 +8769,24 @@ Returns a reversible string representation.
 ##### `putCloudCostQuery` <a name="putCloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery"></a>
 
 ```java
-public void putCloudCostQuery(IResolvable OR java.util.List<MonitorVariablesCloudCostQuery> value)
+public void putCloudCostQuery(IResolvable|java.util.List<MonitorVariablesCloudCostQuery> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>>
 
 ---
 
 ##### `putEventQuery` <a name="putEventQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery"></a>
 
 ```java
-public void putEventQuery(IResolvable OR java.util.List<MonitorVariablesEventQuery> value)
+public void putEventQuery(IResolvable|java.util.List<MonitorVariablesEventQuery> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>>
 
 ---
 
@@ -8843,8 +8811,8 @@ public void resetEventQuery()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQuery">cloudCostQuery</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList">MonitorVariablesCloudCostQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQuery">eventQuery</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList">MonitorVariablesEventQueryList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput">cloudCostQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput">eventQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput">cloudCostQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput">eventQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
 
 ---
@@ -8896,20 +8864,20 @@ public MonitorVariablesEventQueryList getEventQuery();
 ##### `cloudCostQueryInput`<sup>Optional</sup> <a name="cloudCostQueryInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput"></a>
 
 ```java
-public java.lang.Object getCloudCostQueryInput();
+public IResolvable|java.util.List<MonitorVariablesCloudCostQuery> getCloudCostQueryInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>>
 
 ---
 
 ##### `eventQueryInput`<sup>Optional</sup> <a name="eventQueryInput" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput"></a>
 
 ```java
-public java.lang.Object getEventQueryInput();
+public IResolvable|java.util.List<MonitorVariablesEventQuery> getEventQueryInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>>
 
 ---
 
