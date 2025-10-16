@@ -4,7 +4,7 @@
 
 ### AppsecWafCustomRule <a name="AppsecWafCustomRule" id="@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Indicates whether the WAF custom rule will block the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#blocking AppsecWafCustomRule#blocking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#blocking AppsecWafCustomRule#blocking}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates whether the WAF custom rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#enabled AppsecWafCustomRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#enabled AppsecWafCustomRule#enabled}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The Name of the WAF custom rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#name AppsecWafCustomRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#name AppsecWafCustomRule#name}
 
 ---
 
@@ -150,7 +150,7 @@ Tags associated with the WAF custom rule.
 
 `category` and `type` tags are required. Supported categories include `business_logic`, `attack_attempt` and `security_response`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#tags AppsecWafCustomRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#tags AppsecWafCustomRule#tags}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#condition AppsecWafCustomRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#condition AppsecWafCustomRule#condition}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The path glob for the WAF custom rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#path_glob AppsecWafCustomRule#path_glob}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#path_glob AppsecWafCustomRule#path_glob}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#scope AppsecWafCustomRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#scope AppsecWafCustomRule#scope}
 
 ---
 
@@ -684,7 +684,7 @@ The construct id used in the generated config for the AppsecWafCustomRule to imp
 
 The id of the existing AppsecWafCustomRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1098,7 +1098,7 @@ public java.lang.String getAction();
 
 Override the default action to take when the WAF custom rule would block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
 
 ---
 
@@ -1112,7 +1112,7 @@ public AppsecWafCustomRuleActionParameters getParameters();
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#parameters AppsecWafCustomRule#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#parameters AppsecWafCustomRule#parameters}
 
 ---
 
@@ -1148,7 +1148,7 @@ public java.lang.String getLocation();
 
 The location to redirect to when the WAF custom rule triggers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#location AppsecWafCustomRule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#location AppsecWafCustomRule#location}
 
 ---
 
@@ -1162,7 +1162,7 @@ public java.lang.Number getStatusCode();
 
 The status code to return when the WAF custom rule triggers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#status_code AppsecWafCustomRule#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#status_code AppsecWafCustomRule#status_code}
 
 ---
 
@@ -1198,7 +1198,7 @@ public java.lang.String getOperator();
 
 Operator to use for the WAF Condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#operator AppsecWafCustomRule#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#operator AppsecWafCustomRule#operator}
 
 ---
 
@@ -1212,7 +1212,7 @@ public AppsecWafCustomRuleConditionParameters getParameters();
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#parameters AppsecWafCustomRule#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#parameters AppsecWafCustomRule#parameters}
 
 ---
 
@@ -1256,7 +1256,7 @@ public java.lang.String getData();
 
 Identifier of a list of data from the denylist. Can only be used as substitution from the list parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#data AppsecWafCustomRule#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#data AppsecWafCustomRule#data}
 
 ---
 
@@ -1270,7 +1270,7 @@ public IResolvable|java.util.List<AppsecWafCustomRuleConditionParametersInput> g
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#input AppsecWafCustomRule#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#input AppsecWafCustomRule#input}
 
 ---
 
@@ -1284,7 +1284,7 @@ public java.util.List<java.lang.String> getList();
 
 List of value to use with the condition. Only used with the phrase_match, !phrase_match, exact_match and !exact_match operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#list AppsecWafCustomRule#list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#list AppsecWafCustomRule#list}
 
 ---
 
@@ -1298,7 +1298,7 @@ public AppsecWafCustomRuleConditionParametersOptions getOptions();
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#options AppsecWafCustomRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#options AppsecWafCustomRule#options}
 
 ---
 
@@ -1312,7 +1312,7 @@ public java.lang.String getRegex();
 
 Regex to use with the condition. Only used with match_regex and !match_regex operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#regex AppsecWafCustomRule#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#regex AppsecWafCustomRule#regex}
 
 ---
 
@@ -1326,7 +1326,7 @@ public java.lang.String getValue();
 
 Store the captured value in the specified tag name. Only used with the capture_data operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#value AppsecWafCustomRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#value AppsecWafCustomRule#value}
 
 ---
 
@@ -1362,7 +1362,7 @@ public java.lang.String getAddress();
 
 Input from the request on which the condition should apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#address AppsecWafCustomRule#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#address AppsecWafCustomRule#address}
 
 ---
 
@@ -1376,7 +1376,7 @@ public java.util.List<java.lang.String> getKeyPath();
 
 Specific path for the input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#key_path AppsecWafCustomRule#key_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#key_path AppsecWafCustomRule#key_path}
 
 ---
 
@@ -1412,7 +1412,7 @@ public java.lang.Boolean|IResolvable getCaseSensitive();
 
 Evaluate the value as case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#case_sensitive AppsecWafCustomRule#case_sensitive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#case_sensitive AppsecWafCustomRule#case_sensitive}
 
 ---
 
@@ -1426,7 +1426,7 @@ public java.lang.Number getMinLength();
 
 Only evaluate this condition if the value has a minimum amount of characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#min_length AppsecWafCustomRule#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#min_length AppsecWafCustomRule#min_length}
 
 ---
 
@@ -1558,7 +1558,7 @@ public java.lang.Boolean|IResolvable getBlocking();
 
 Indicates whether the WAF custom rule will block the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#blocking AppsecWafCustomRule#blocking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#blocking AppsecWafCustomRule#blocking}
 
 ---
 
@@ -1572,7 +1572,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Indicates whether the WAF custom rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#enabled AppsecWafCustomRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#enabled AppsecWafCustomRule#enabled}
 
 ---
 
@@ -1586,7 +1586,7 @@ public java.lang.String getName();
 
 The Name of the WAF custom rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#name AppsecWafCustomRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#name AppsecWafCustomRule#name}
 
 ---
 
@@ -1602,7 +1602,7 @@ Tags associated with the WAF custom rule.
 
 `category` and `type` tags are required. Supported categories include `business_logic`, `attack_attempt` and `security_response`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#tags AppsecWafCustomRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#tags AppsecWafCustomRule#tags}
 
 ---
 
@@ -1616,7 +1616,7 @@ public AppsecWafCustomRuleAction getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
 
 ---
 
@@ -1630,7 +1630,7 @@ public IResolvable|java.util.List<AppsecWafCustomRuleCondition> getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#condition AppsecWafCustomRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#condition AppsecWafCustomRule#condition}
 
 ---
 
@@ -1644,7 +1644,7 @@ public java.lang.String getPathGlob();
 
 The path glob for the WAF custom rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#path_glob AppsecWafCustomRule#path_glob}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#path_glob AppsecWafCustomRule#path_glob}
 
 ---
 
@@ -1658,7 +1658,7 @@ public IResolvable|java.util.List<AppsecWafCustomRuleScope> getScope();
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#scope AppsecWafCustomRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#scope AppsecWafCustomRule#scope}
 
 ---
 
@@ -1694,7 +1694,7 @@ public java.lang.String getEnv();
 
 The environment scope for the WAF custom rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#env AppsecWafCustomRule#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#env AppsecWafCustomRule#env}
 
 ---
 
@@ -1708,7 +1708,7 @@ public java.lang.String getService();
 
 The service scope for the WAF custom rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/resources/appsec_waf_custom_rule#service AppsecWafCustomRule#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/appsec_waf_custom_rule#service AppsecWafCustomRule#service}
 
 ---
 

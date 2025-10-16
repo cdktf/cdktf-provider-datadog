@@ -4,7 +4,7 @@
 
 ### DataDatadogAwsCurConfig <a name="DataDatadogAwsCurConfig" id="@cdktf/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The Datadog cloud account ID for the AWS CUR configuration you want to retrieve information about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
 
 ---
 
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataDatadogAwsCurConfig to
 
 The id of the existing DataDatadogAwsCurConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/aws_cur_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/aws_cur_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,7 +880,7 @@ public java.lang.Number getCloudAccountId();
 
 The Datadog cloud account ID for the AWS CUR configuration you want to retrieve information about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.75.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
 
 ---
 
