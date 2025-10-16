@@ -16,6 +16,7 @@ Object.defineProperty(exports, 'appsecWafCustomRule', { get: function () { retur
 Object.defineProperty(exports, 'appsecWafExclusionFilter', { get: function () { return require('./appsec-waf-exclusion-filter'); } });
 Object.defineProperty(exports, 'authnMapping', { get: function () { return require('./authn-mapping'); } });
 Object.defineProperty(exports, 'awsCurConfig', { get: function () { return require('./aws-cur-config'); } });
+Object.defineProperty(exports, 'azureUcConfig', { get: function () { return require('./azure-uc-config'); } });
 Object.defineProperty(exports, 'childOrganization', { get: function () { return require('./child-organization'); } });
 Object.defineProperty(exports, 'cloudConfigurationRule', { get: function () { return require('./cloud-configuration-rule'); } });
 Object.defineProperty(exports, 'cloudWorkloadSecurityAgentRule', { get: function () { return require('./cloud-workload-security-agent-rule'); } });
@@ -24,6 +25,8 @@ Object.defineProperty(exports, 'complianceResourceEvaluationFilter', { get: func
 Object.defineProperty(exports, 'costBudget', { get: function () { return require('./cost-budget'); } });
 Object.defineProperty(exports, 'csmThreatsAgentRule', { get: function () { return require('./csm-threats-agent-rule'); } });
 Object.defineProperty(exports, 'csmThreatsPolicy', { get: function () { return require('./csm-threats-policy'); } });
+Object.defineProperty(exports, 'customAllocationRule', { get: function () { return require('./custom-allocation-rule'); } });
+Object.defineProperty(exports, 'customAllocationRules', { get: function () { return require('./custom-allocation-rules'); } });
 Object.defineProperty(exports, 'dashboard', { get: function () { return require('./dashboard'); } });
 Object.defineProperty(exports, 'dashboardJson', { get: function () { return require('./dashboard-json'); } });
 Object.defineProperty(exports, 'dashboardList', { get: function () { return require('./dashboard-list'); } });
@@ -31,6 +34,7 @@ Object.defineProperty(exports, 'dataset', { get: function () { return require('.
 Object.defineProperty(exports, 'domainAllowlist', { get: function () { return require('./domain-allowlist'); } });
 Object.defineProperty(exports, 'downtime', { get: function () { return require('./downtime'); } });
 Object.defineProperty(exports, 'downtimeSchedule', { get: function () { return require('./downtime-schedule'); } });
+Object.defineProperty(exports, 'gcpUcConfig', { get: function () { return require('./gcp-uc-config'); } });
 Object.defineProperty(exports, 'incidentNotificationRule', { get: function () { return require('./incident-notification-rule'); } });
 Object.defineProperty(exports, 'incidentNotificationTemplate', { get: function () { return require('./incident-notification-template'); } });
 Object.defineProperty(exports, 'incidentType', { get: function () { return require('./incident-type'); } });
@@ -105,6 +109,8 @@ Object.defineProperty(exports, 'syntheticsConcurrencyCap', { get: function () { 
 Object.defineProperty(exports, 'syntheticsGlobalVariable', { get: function () { return require('./synthetics-global-variable'); } });
 Object.defineProperty(exports, 'syntheticsPrivateLocation', { get: function () { return require('./synthetics-private-location'); } });
 Object.defineProperty(exports, 'syntheticsTest', { get: function () { return require('./synthetics-test'); } });
+Object.defineProperty(exports, 'tagPipelineRuleset', { get: function () { return require('./tag-pipeline-ruleset'); } });
+Object.defineProperty(exports, 'tagPipelineRulesets', { get: function () { return require('./tag-pipeline-rulesets'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
 Object.defineProperty(exports, 'teamLink', { get: function () { return require('./team-link'); } });
 Object.defineProperty(exports, 'teamMembership', { get: function () { return require('./team-membership'); } });
@@ -120,12 +126,15 @@ Object.defineProperty(exports, 'dataDatadogApmRetentionFiltersOrder', { get: fun
 Object.defineProperty(exports, 'dataDatadogAppBuilderApp', { get: function () { return require('./data-datadog-app-builder-app'); } });
 Object.defineProperty(exports, 'dataDatadogApplicationKey', { get: function () { return require('./data-datadog-application-key'); } });
 Object.defineProperty(exports, 'dataDatadogAwsCurConfig', { get: function () { return require('./data-datadog-aws-cur-config'); } });
+Object.defineProperty(exports, 'dataDatadogAzureUcConfig', { get: function () { return require('./data-datadog-azure-uc-config'); } });
 Object.defineProperty(exports, 'dataDatadogCloudWorkloadSecurityAgentRules', { get: function () { return require('./data-datadog-cloud-workload-security-agent-rules'); } });
 Object.defineProperty(exports, 'dataDatadogCostBudget', { get: function () { return require('./data-datadog-cost-budget'); } });
 Object.defineProperty(exports, 'dataDatadogCsmThreatsAgentRules', { get: function () { return require('./data-datadog-csm-threats-agent-rules'); } });
 Object.defineProperty(exports, 'dataDatadogCsmThreatsPolicies', { get: function () { return require('./data-datadog-csm-threats-policies'); } });
+Object.defineProperty(exports, 'dataDatadogCustomAllocationRule', { get: function () { return require('./data-datadog-custom-allocation-rule'); } });
 Object.defineProperty(exports, 'dataDatadogDashboard', { get: function () { return require('./data-datadog-dashboard'); } });
 Object.defineProperty(exports, 'dataDatadogDashboardList', { get: function () { return require('./data-datadog-dashboard-list'); } });
+Object.defineProperty(exports, 'dataDatadogGcpUcConfig', { get: function () { return require('./data-datadog-gcp-uc-config'); } });
 Object.defineProperty(exports, 'dataDatadogHosts', { get: function () { return require('./data-datadog-hosts'); } });
 Object.defineProperty(exports, 'dataDatadogIncidentNotificationRule', { get: function () { return require('./data-datadog-incident-notification-rule'); } });
 Object.defineProperty(exports, 'dataDatadogIncidentNotificationTemplate', { get: function () { return require('./data-datadog-incident-notification-template'); } });
@@ -134,6 +143,7 @@ Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableLogsServices',
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsAvailableNamespaces', { get: function () { return require('./data-datadog-integration-aws-available-namespaces'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsExternalId', { get: function () { return require('./data-datadog-integration-aws-external-id'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsIamPermissions', { get: function () { return require('./data-datadog-integration-aws-iam-permissions'); } });
+Object.defineProperty(exports, 'dataDatadogIntegrationAwsIamPermissionsStandard', { get: function () { return require('./data-datadog-integration-aws-iam-permissions-standard'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsLogsServices', { get: function () { return require('./data-datadog-integration-aws-logs-services'); } });
 Object.defineProperty(exports, 'dataDatadogIntegrationAwsNamespaceRules', { get: function () { return require('./data-datadog-integration-aws-namespace-rules'); } });
 Object.defineProperty(exports, 'dataDatadogIpRanges', { get: function () { return require('./data-datadog-ip-ranges'); } });
@@ -167,6 +177,7 @@ Object.defineProperty(exports, 'dataDatadogSoftwareCatalog', { get: function () 
 Object.defineProperty(exports, 'dataDatadogSyntheticsGlobalVariable', { get: function () { return require('./data-datadog-synthetics-global-variable'); } });
 Object.defineProperty(exports, 'dataDatadogSyntheticsLocations', { get: function () { return require('./data-datadog-synthetics-locations'); } });
 Object.defineProperty(exports, 'dataDatadogSyntheticsTest', { get: function () { return require('./data-datadog-synthetics-test'); } });
+Object.defineProperty(exports, 'dataDatadogTagPipelineRuleset', { get: function () { return require('./data-datadog-tag-pipeline-ruleset'); } });
 Object.defineProperty(exports, 'dataDatadogTeam', { get: function () { return require('./data-datadog-team'); } });
 Object.defineProperty(exports, 'dataDatadogTeamMemberships', { get: function () { return require('./data-datadog-team-memberships'); } });
 Object.defineProperty(exports, 'dataDatadogTeams', { get: function () { return require('./data-datadog-teams'); } });
