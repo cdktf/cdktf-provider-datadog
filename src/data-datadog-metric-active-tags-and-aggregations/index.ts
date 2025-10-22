@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/metric_active_tags_and_aggregations
+// https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/metric_active_tags_and_aggregations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogMetricActiveTagsAndAggregationsConfig extends cdktf.
   /**
   * The metric for which to fetch tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/metric_active_tags_and_aggregations#metric DataDatadogMetricActiveTagsAndAggregations#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/metric_active_tags_and_aggregations#metric DataDatadogMetricActiveTagsAndAggregations#metric}
   */
   readonly metric: string;
   /**
   * The number of seconds to look back from now.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/metric_active_tags_and_aggregations#window DataDatadogMetricActiveTagsAndAggregations#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/metric_active_tags_and_aggregations#window DataDatadogMetricActiveTagsAndAggregations#window}
   */
   readonly window?: number;
 }
@@ -107,7 +107,7 @@ export class DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations}
 */
 export class DataDatadogMetricActiveTagsAndAggregations extends cdktf.TerraformDataSource {
 
@@ -123,7 +123,7 @@ export class DataDatadogMetricActiveTagsAndAggregations extends cdktf.TerraformD
   * Generates CDKTF code for importing a DataDatadogMetricActiveTagsAndAggregations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogMetricActiveTagsAndAggregations to import
-  * @param importFromId The id of the existing DataDatadogMetricActiveTagsAndAggregations that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/metric_active_tags_and_aggregations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogMetricActiveTagsAndAggregations that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/metric_active_tags_and_aggregations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogMetricActiveTagsAndAggregations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -135,7 +135,7 @@ export class DataDatadogMetricActiveTagsAndAggregations extends cdktf.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -146,7 +146,7 @@ export class DataDatadogMetricActiveTagsAndAggregations extends cdktf.TerraformD
       terraformResourceType: 'datadog_metric_active_tags_and_aggregations',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.76.0',
+        providerVersion: '3.77.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
