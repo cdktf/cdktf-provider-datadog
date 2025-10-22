@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config
+// https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface GcpUcConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Google Cloud account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config#billing_account_id GcpUcConfig#billing_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config#billing_account_id GcpUcConfig#billing_account_id}
   */
   readonly billingAccountId: string;
   /**
   * The Google Cloud bucket name used to store the Usage Cost export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config#bucket_name GcpUcConfig#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config#bucket_name GcpUcConfig#bucket_name}
   */
   readonly bucketName: string;
   /**
   * The export dataset name used for the Google Cloud Usage Cost report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config#export_dataset_name GcpUcConfig#export_dataset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config#export_dataset_name GcpUcConfig#export_dataset_name}
   */
   readonly exportDatasetName: string;
   /**
   * The export prefix used for the Google Cloud Usage Cost report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config#export_prefix GcpUcConfig#export_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config#export_prefix GcpUcConfig#export_prefix}
   */
   readonly exportPrefix?: string;
   /**
   * The name of the Google Cloud Usage Cost report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config#export_project_name GcpUcConfig#export_project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config#export_project_name GcpUcConfig#export_project_name}
   */
   readonly exportProjectName: string;
   /**
   * The unique Google Cloud service account email.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config#service_account GcpUcConfig#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config#service_account GcpUcConfig#service_account}
   */
   readonly serviceAccount: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}
 */
 export class GcpUcConfig extends cdktf.TerraformResource {
 
@@ -67,7 +67,7 @@ export class GcpUcConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GcpUcConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GcpUcConfig to import
-  * @param importFromId The id of the existing GcpUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GcpUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GcpUcConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +79,7 @@ export class GcpUcConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class GcpUcConfig extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_gcp_uc_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.76.0',
+        providerVersion: '3.77.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

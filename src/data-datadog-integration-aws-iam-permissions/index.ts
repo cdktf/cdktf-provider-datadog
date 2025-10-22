@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/integration_aws_iam_permissions
+// https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/integration_aws_iam_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogIntegrationAwsIamPermissionsConfig extends cdktf.Ter
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions}
 */
 export class DataDatadogIntegrationAwsIamPermissions extends cdktf.TerraformDataSource {
 
@@ -31,7 +31,7 @@ export class DataDatadogIntegrationAwsIamPermissions extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataDatadogIntegrationAwsIamPermissions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogIntegrationAwsIamPermissions to import
-  * @param importFromId The id of the existing DataDatadogIntegrationAwsIamPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/integration_aws_iam_permissions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogIntegrationAwsIamPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/integration_aws_iam_permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogIntegrationAwsIamPermissions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -43,7 +43,7 @@ export class DataDatadogIntegrationAwsIamPermissions extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataDatadogIntegrationAwsIamPermissions extends cdktf.TerraformData
       terraformResourceType: 'datadog_integration_aws_iam_permissions',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.76.0',
+        providerVersion: '3.77.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

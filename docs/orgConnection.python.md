@@ -4,7 +4,7 @@
 
 ### OrgConnection <a name="OrgConnection" id="@cdktf/provider-datadog.orgConnection.OrgConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/org_connection datadog_org_connection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/org_connection datadog_org_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.orgConnection.OrgConnection.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Set of connection types to enable for this connection (., metrics, logs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 UUID of the sink (destination) organization. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
 
 ---
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the OrgConnection to import.
 
 The id of the existing OrgConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/org_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/org_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1012,7 +1012,7 @@ connection_types: typing.List[str]
 
 Set of connection types to enable for this connection (., metrics, logs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
 
 ---
 
@@ -1026,7 +1026,7 @@ sink_org_id: str
 
 UUID of the sink (destination) organization. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
 
 ---
 

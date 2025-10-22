@@ -4,7 +4,7 @@
 
 ### SensitiveDataScannerGroupOrder <a name="SensitiveDataScannerGroupOrder" id="@cdktf/provider-datadog.sensitiveDataScannerGroupOrder.SensitiveDataScannerGroupOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.sensitiveDataScannerGroupOrder.SensitiveDataScannerGroupOrder.Initializer"></a>
 
@@ -106,7 +106,7 @@ The list of Sensitive Data Scanner group IDs, in order.
 
 Logs are tested against the query filter of each index one by one following the order of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
 
 ---
 
@@ -533,7 +533,7 @@ The construct id used in the generated config for the SensitiveDataScannerGroupO
 
 The id of the existing SensitiveDataScannerGroupOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/sensitive_data_scanner_group_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/sensitive_data_scanner_group_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ The list of Sensitive Data Scanner group IDs, in order.
 
 Logs are tested against the query filter of each index one by one following the order of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
 
 ---
 
