@@ -4,7 +4,7 @@
 
 ### ComplianceResourceEvaluationFilter <a name="ComplianceResourceEvaluationFilter" id="@cdktf/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ComplianceResourceEvaluati
 
 The id of the existing ComplianceResourceEvaluationFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/compliance_resource_evaluation_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/compliance_resource_evaluation_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ public readonly cloudProvider: string;
 
 The cloud provider of the filter's targeted resource. Only `aws`, `gcp`, or `azure` are considered valid cloud providers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/compliance_resource_evaluation_filter#cloud_provider ComplianceResourceEvaluationFilter#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/compliance_resource_evaluation_filter#cloud_provider ComplianceResourceEvaluationFilter#cloud_provider}
 
 ---
 
@@ -865,7 +865,7 @@ Different cloud providers target different resource IDs:
   - `gcp`: project ID
   - `azure`: subscription ID
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/compliance_resource_evaluation_filter#resource_id ComplianceResourceEvaluationFilter#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/compliance_resource_evaluation_filter#resource_id ComplianceResourceEvaluationFilter#resource_id}
 
 ---
 
@@ -879,7 +879,7 @@ public readonly tags: string[];
 
 List of tags to filter misconfiguration detections. Each entry should follow the format: "key":"value".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/compliance_resource_evaluation_filter#tags ComplianceResourceEvaluationFilter#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/compliance_resource_evaluation_filter#tags ComplianceResourceEvaluationFilter#tags}
 
 ---
 

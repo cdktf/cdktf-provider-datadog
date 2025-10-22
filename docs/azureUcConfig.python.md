@@ -4,7 +4,7 @@
 
 ### AzureUcConfig <a name="AzureUcConfig" id="@cdktf/provider-datadog.azureUcConfig.AzureUcConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config datadog_azure_uc_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config datadog_azure_uc_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.azureUcConfig.AzureUcConfig.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The tenant ID of the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 actual_bill_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 amortized_bill_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The client ID of the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The scope of your observed subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
 
 ---
 
@@ -532,7 +532,7 @@ def put_actual_bill_config(
 
 The name of the configured Azure Export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
 
 ---
 
@@ -542,7 +542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The path where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
 
 ---
 
@@ -552,7 +552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the storage account where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
 
 ---
 
@@ -562,7 +562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the storage container where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
 
 ---
 
@@ -583,7 +583,7 @@ def put_amortized_bill_config(
 
 The name of the configured Azure Export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
 
 ---
 
@@ -593,7 +593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The path where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
 
 ---
 
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the storage account where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
 
 ---
 
@@ -613,7 +613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the storage container where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
 
 ---
 
@@ -731,7 +731,7 @@ The construct id used in the generated config for the AzureUcConfig to import.
 
 The id of the existing AzureUcConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1138,7 +1138,7 @@ export_name: str
 
 The name of the configured Azure Export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
 
 ---
 
@@ -1152,7 +1152,7 @@ export_path: str
 
 The path where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
 
 ---
 
@@ -1166,7 +1166,7 @@ storage_account: str
 
 The name of the storage account where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
 
 ---
 
@@ -1180,7 +1180,7 @@ storage_container: str
 
 The name of the storage container where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
 
 ---
 
@@ -1220,7 +1220,7 @@ export_name: str
 
 The name of the configured Azure Export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
 
 ---
 
@@ -1234,7 +1234,7 @@ export_path: str
 
 The path where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
 
 ---
 
@@ -1248,7 +1248,7 @@ storage_account: str
 
 The name of the storage account where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
 
 ---
 
@@ -1262,7 +1262,7 @@ storage_container: str
 
 The name of the storage container where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
 
 ---
 
@@ -1388,7 +1388,7 @@ account_id: str
 
 The tenant ID of the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
 
 ---
 
@@ -1402,7 +1402,7 @@ actual_bill_config: AzureUcConfigActualBillConfig
 
 actual_bill_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
 
 ---
 
@@ -1416,7 +1416,7 @@ amortized_bill_config: AzureUcConfigAmortizedBillConfig
 
 amortized_bill_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
 
 ---
 
@@ -1430,7 +1430,7 @@ client_id: str
 
 The client ID of the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
 
 ---
 
@@ -1444,7 +1444,7 @@ scope: str
 
 The scope of your observed subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
 
 ---
 

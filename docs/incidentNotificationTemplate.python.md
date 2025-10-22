@@ -4,7 +4,7 @@
 
 ### IncidentNotificationTemplate <a name="IncidentNotificationTemplate" id="@cdktf/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template datadog_incident_notification_template}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template datadog_incident_notification_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The category of the notification template. Valid values are `alert`, `incident`, `recovery`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The content body of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID of the incident type this notification template is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The subject line of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
 
 ---
 
@@ -627,7 +627,7 @@ The construct id used in the generated config for the IncidentNotificationTempla
 
 The id of the existing IncidentNotificationTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1087,7 +1087,7 @@ category: str
 
 The category of the notification template. Valid values are `alert`, `incident`, `recovery`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
 
 ---
 
@@ -1101,7 +1101,7 @@ content: str
 
 The content body of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
 
 ---
 
@@ -1115,7 +1115,7 @@ incident_type: str
 
 The ID of the incident type this notification template is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
 
 ---
 
@@ -1129,7 +1129,7 @@ name: str
 
 The name of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
 
 ---
 
@@ -1143,7 +1143,7 @@ subject: str
 
 The subject line of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
 
 ---
 

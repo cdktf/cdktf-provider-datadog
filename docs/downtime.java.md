@@ -4,7 +4,7 @@
 
 ### Downtime <a name="Downtime" id="@cdktf/provider-datadog.downtime.Downtime"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime datadog_downtime}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime datadog_downtime}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtime.Downtime.Initializer"></a>
 
@@ -48,7 +48,7 @@ Downtime.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.scope">scope</a></code> | <code>java.util.List<java.lang.String></code> | specify the group scope to which this downtime applies. For everything use '*'. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.end">end</a></code> | <code>java.lang.Number</code> | Optionally specify an end date when this downtime should expire. Accepts a Unix timestamp in UTC. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.endDate">endDate</a></code> | <code>java.lang.String</code> | String representing date and time to end the downtime in RFC3339 format. |
-| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#id Downtime#id}. |
+| <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#id Downtime#id}. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.message">message</a></code> | <code>java.lang.String</code> | An optional message to provide when creating the downtime, can include notification handles. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.monitorId">monitorId</a></code> | <code>java.lang.Number</code> | When specified, this downtime will only apply to this monitor. |
 | <code><a href="#@cdktf/provider-datadog.downtime.Downtime.Initializer.parameter.monitorTags">monitorTags</a></code> | <code>java.util.List<java.lang.String></code> | A list of monitor tags (up to 32) to base the scheduled downtime on. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 specify the group scope to which this downtime applies. For everything use '*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#scope Downtime#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#scope Downtime#scope}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Optionally specify an end date when this downtime should expire. Accepts a Unix timestamp in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#end Downtime#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#end Downtime#end}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 String representing date and time to end the downtime in RFC3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#end_date Downtime#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#end_date Downtime#end_date}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#id Downtime#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#id Downtime#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 An optional message to provide when creating the downtime, can include notification handles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#message Downtime#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#message Downtime#message}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When specified, this downtime will only apply to this monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#monitor_id Downtime#monitor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#monitor_id Downtime#monitor_id}
 
 ---
 
@@ -189,7 +189,7 @@ A list of monitor tags (up to 32) to base the scheduled downtime on.
 
 Only monitors that have all selected tags are silenced
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#monitor_tags Downtime#monitor_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#monitor_tags Downtime#monitor_tags}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When true the first recovery notification during the downtime will be muted Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#mute_first_recovery_notification Downtime#mute_first_recovery_notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#mute_first_recovery_notification Downtime#mute_first_recovery_notification}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#recurrence Downtime#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#recurrence Downtime#recurrence}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Specify when this downtime should start. Accepts a Unix timestamp in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#start Downtime#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#start Downtime#start}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 String representing date and time to start the downtime in RFC3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#start_date Downtime#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#start_date Downtime#start_date}
 
 ---
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The timezone for the downtime. Follows IANA timezone database identifiers. Defaults to `"UTC"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#timezone Downtime#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#timezone Downtime#timezone}
 
 ---
 
@@ -756,7 +756,7 @@ The construct id used in the generated config for the Downtime to import.
 
 The id of the existing Downtime that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1292,7 +1292,7 @@ DowntimeConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.scope">scope</a></code> | <code>java.util.List<java.lang.String></code> | specify the group scope to which this downtime applies. For everything use '*'. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.end">end</a></code> | <code>java.lang.Number</code> | Optionally specify an end date when this downtime should expire. Accepts a Unix timestamp in UTC. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.endDate">endDate</a></code> | <code>java.lang.String</code> | String representing date and time to end the downtime in RFC3339 format. |
-| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#id Downtime#id}. |
+| <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#id Downtime#id}. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.message">message</a></code> | <code>java.lang.String</code> | An optional message to provide when creating the downtime, can include notification handles. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.monitorId">monitorId</a></code> | <code>java.lang.Number</code> | When specified, this downtime will only apply to this monitor. |
 | <code><a href="#@cdktf/provider-datadog.downtime.DowntimeConfig.property.monitorTags">monitorTags</a></code> | <code>java.util.List<java.lang.String></code> | A list of monitor tags (up to 32) to base the scheduled downtime on. |
@@ -1384,7 +1384,7 @@ public java.util.List<java.lang.String> getScope();
 
 specify the group scope to which this downtime applies. For everything use '*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#scope Downtime#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#scope Downtime#scope}
 
 ---
 
@@ -1398,7 +1398,7 @@ public java.lang.Number getEnd();
 
 Optionally specify an end date when this downtime should expire. Accepts a Unix timestamp in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#end Downtime#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#end Downtime#end}
 
 ---
 
@@ -1412,7 +1412,7 @@ public java.lang.String getEndDate();
 
 String representing date and time to end the downtime in RFC3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#end_date Downtime#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#end_date Downtime#end_date}
 
 ---
 
@@ -1424,7 +1424,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#id Downtime#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#id Downtime#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1441,7 +1441,7 @@ public java.lang.String getMessage();
 
 An optional message to provide when creating the downtime, can include notification handles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#message Downtime#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#message Downtime#message}
 
 ---
 
@@ -1455,7 +1455,7 @@ public java.lang.Number getMonitorId();
 
 When specified, this downtime will only apply to this monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#monitor_id Downtime#monitor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#monitor_id Downtime#monitor_id}
 
 ---
 
@@ -1471,7 +1471,7 @@ A list of monitor tags (up to 32) to base the scheduled downtime on.
 
 Only monitors that have all selected tags are silenced
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#monitor_tags Downtime#monitor_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#monitor_tags Downtime#monitor_tags}
 
 ---
 
@@ -1485,7 +1485,7 @@ public java.lang.Boolean|IResolvable getMuteFirstRecoveryNotification();
 
 When true the first recovery notification during the downtime will be muted Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#mute_first_recovery_notification Downtime#mute_first_recovery_notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#mute_first_recovery_notification Downtime#mute_first_recovery_notification}
 
 ---
 
@@ -1499,7 +1499,7 @@ public DowntimeRecurrence getRecurrence();
 
 recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#recurrence Downtime#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#recurrence Downtime#recurrence}
 
 ---
 
@@ -1513,7 +1513,7 @@ public java.lang.Number getStart();
 
 Specify when this downtime should start. Accepts a Unix timestamp in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#start Downtime#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#start Downtime#start}
 
 ---
 
@@ -1527,7 +1527,7 @@ public java.lang.String getStartDate();
 
 String representing date and time to start the downtime in RFC3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#start_date Downtime#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#start_date Downtime#start_date}
 
 ---
 
@@ -1541,7 +1541,7 @@ public java.lang.String getTimezone();
 
 The timezone for the downtime. Follows IANA timezone database identifiers. Defaults to `"UTC"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#timezone Downtime#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#timezone Downtime#timezone}
 
 ---
 
@@ -1585,7 +1585,7 @@ public java.lang.String getType();
 
 One of `days`, `weeks`, `months`, `years`, or `rrule`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#type Downtime#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#type Downtime#type}
 
 ---
 
@@ -1601,7 +1601,7 @@ How often to repeat as an integer.
 
 For example to repeat every 3 days, select a `type` of `days` and a `period` of `3`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#period Downtime#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#period Downtime#period}
 
 ---
 
@@ -1617,7 +1617,7 @@ The RRULE standard for defining recurring events.
 
 For example, to have a recurring event on the first day of each month, use `FREQ=MONTHLY;INTERVAL=1`. Most common rrule options from the iCalendar Spec are supported. Attributes specifying the duration in RRULE are not supported (for example, `DTSTART`, `DTEND`, `DURATION`). Only applicable when `type` is `rrule`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#rrule Downtime#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#rrule Downtime#rrule}
 
 ---
 
@@ -1631,7 +1631,7 @@ public java.lang.Number getUntilDate();
 
 The date at which the recurrence should end as a POSIX timestamp. `until_occurrences` and `until_date` are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#until_date Downtime#until_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#until_date Downtime#until_date}
 
 ---
 
@@ -1645,7 +1645,7 @@ public java.lang.Number getUntilOccurrences();
 
 How many times the downtime will be rescheduled. `until_occurrences` and `until_date` are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#until_occurrences Downtime#until_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#until_occurrences Downtime#until_occurrences}
 
 ---
 
@@ -1661,7 +1661,7 @@ A list of week days to repeat on.
 
 Choose from: `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat` or `Sun`. Only applicable when `type` is `weeks`. First letter must be capitalized.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.76.0/docs/resources/downtime#week_days Downtime#week_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/downtime#week_days Downtime#week_days}
 
 ---
 
