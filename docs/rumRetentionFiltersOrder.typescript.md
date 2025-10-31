@@ -4,7 +4,7 @@
 
 ### RumRetentionFiltersOrder <a name="RumRetentionFiltersOrder" id="@cdktf/provider-datadog.rumRetentionFiltersOrder.RumRetentionFiltersOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.rumRetentionFiltersOrder.RumRetentionFiltersOrder.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the RumRetentionFiltersOrder t
 
 The id of the existing RumRetentionFiltersOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filters_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filters_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -823,7 +823,7 @@ public readonly applicationId: string;
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
 
 ---
 
@@ -837,7 +837,7 @@ public readonly retentionFilterIds: string[];
 
 RUM retention filter ID list. The order of IDs in this attribute defines the order of RUM retention filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
 
 ---
 
