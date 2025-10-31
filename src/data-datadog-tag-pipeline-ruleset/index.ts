@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/tag_pipeline_ruleset
+// https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/tag_pipeline_ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogTagPipelineRulesetConfig extends cdktf.TerraformMeta
   /**
   * The ID of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/tag_pipeline_ruleset#id DataDatadogTagPipelineRuleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/tag_pipeline_ruleset#id DataDatadogTagPipelineRuleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,7 +24,7 @@ export interface DataDatadogTagPipelineRulesetConfig extends cdktf.TerraformMeta
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/tag_pipeline_ruleset#rules DataDatadogTagPipelineRuleset#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/tag_pipeline_ruleset#rules DataDatadogTagPipelineRuleset#rules}
   */
   readonly rules?: DataDatadogTagPipelineRulesetRules[] | cdktf.IResolvable;
 }
@@ -346,7 +346,7 @@ export interface DataDatadogTagPipelineRulesetRulesReferenceTable {
   /**
   * field_pairs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/tag_pipeline_ruleset#field_pairs DataDatadogTagPipelineRuleset#field_pairs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/tag_pipeline_ruleset#field_pairs DataDatadogTagPipelineRuleset#field_pairs}
   */
   readonly fieldPairs?: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs[] | cdktf.IResolvable;
 }
@@ -462,7 +462,7 @@ export interface DataDatadogTagPipelineRulesetRules {
   /**
   * reference_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/tag_pipeline_ruleset#reference_table DataDatadogTagPipelineRuleset#reference_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/tag_pipeline_ruleset#reference_table DataDatadogTagPipelineRuleset#reference_table}
   */
   readonly referenceTable?: DataDatadogTagPipelineRulesetRulesReferenceTable;
 }
@@ -606,7 +606,7 @@ export class DataDatadogTagPipelineRulesetRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}
 */
 export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
 
@@ -622,7 +622,7 @@ export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogTagPipelineRuleset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogTagPipelineRuleset to import
-  * @param importFromId The id of the existing DataDatadogTagPipelineRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogTagPipelineRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogTagPipelineRuleset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -634,7 +634,7 @@ export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -645,7 +645,7 @@ export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_tag_pipeline_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.77.0',
+        providerVersion: '3.78.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

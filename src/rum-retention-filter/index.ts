@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter
+// https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface RumRetentionFilterConfig extends cdktf.TerraformMetaArguments {
   /**
   * RUM application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter#application_id RumRetentionFilter#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter#application_id RumRetentionFilter#application_id}
   */
   readonly applicationId: string;
   /**
   * Whether the retention filter is to be enabled. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter#enabled RumRetentionFilter#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter#enabled RumRetentionFilter#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The type of RUM events to filter on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter#event_type RumRetentionFilter#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter#event_type RumRetentionFilter#event_type}
   */
   readonly eventType: string;
   /**
   * The name of a RUM retention filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter#name RumRetentionFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter#name RumRetentionFilter#name}
   */
   readonly name: string;
   /**
   * The Query string for a RUM retention filter. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter#query RumRetentionFilter#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter#query RumRetentionFilter#query}
   */
   readonly query?: string;
   /**
   * The sample rate for a RUM retention filter, between 0 and 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter#sample_rate RumRetentionFilter#sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter#sample_rate RumRetentionFilter#sample_rate}
   */
   readonly sampleRate: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter datadog_rum_retention_filter}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter datadog_rum_retention_filter}
 */
 export class RumRetentionFilter extends cdktf.TerraformResource {
 
@@ -67,7 +67,7 @@ export class RumRetentionFilter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RumRetentionFilter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumRetentionFilter to import
-  * @param importFromId The id of the existing RumRetentionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumRetentionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumRetentionFilter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +79,7 @@ export class RumRetentionFilter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/rum_retention_filter datadog_rum_retention_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/rum_retention_filter datadog_rum_retention_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class RumRetentionFilter extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_rum_retention_filter',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.77.0',
+        providerVersion: '3.78.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
