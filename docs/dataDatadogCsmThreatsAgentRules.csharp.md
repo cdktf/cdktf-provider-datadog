@@ -4,7 +4,7 @@
 
 ### DataDatadogCsmThreatsAgentRules <a name="DataDatadogCsmThreatsAgentRules" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRules.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataDatadogCsmThreatsAgent
 
 The id of the existing DataDatadogCsmThreatsAgentRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/csm_threats_agent_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/csm_threats_agent_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ public string PolicyId { get; set; }
 
 Listing only the rules in the policy with this field as the ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/csm_threats_agent_rules#policy_id DataDatadogCsmThreatsAgentRules#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/csm_threats_agent_rules#policy_id DataDatadogCsmThreatsAgentRules#policy_id}
 
 ---
 
@@ -1670,7 +1670,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.append">Append</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.defaultValue">DefaultValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.field">Field</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.inherited">Inherited</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.size">Size</a></code> | <code>double</code> | *No description.* |
@@ -1714,6 +1717,26 @@ public IResolvable Append { get; }
 
 ---
 
+##### `DefaultValue`<sup>Required</sup> <a name="DefaultValue" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.defaultValue"></a>
+
+```csharp
+public string DefaultValue { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.expression"></a>
+
+```csharp
+public string Expression { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Field`<sup>Required</sup> <a name="Field" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.field"></a>
 
 ```csharp
@@ -1721,6 +1744,16 @@ public string Field { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Inherited`<sup>Required</sup> <a name="Inherited" id="@cdktf/provider-datadog.dataDatadogCsmThreatsAgentRules.DataDatadogCsmThreatsAgentRulesAgentRulesActionsSetOutputReference.property.inherited"></a>
+
+```csharp
+public IResolvable Inherited { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
 
 ---
 

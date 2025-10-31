@@ -4,7 +4,7 @@
 
 ### AwsCurConfig <a name="AwsCurConfig" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config datadog_aws_cur_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config datadog_aws_cur_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfig.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the AwsCurConfig to import.
 
 The id of the existing AwsCurConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -923,7 +923,7 @@ List of AWS account IDs to exclude from cost analysis.
 
 Only used when `include_new_accounts` is `true`. Cannot be used together with `included_accounts`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#excluded_accounts AwsCurConfig#excluded_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#excluded_accounts AwsCurConfig#excluded_accounts}
 
 ---
 
@@ -939,7 +939,7 @@ List of AWS account IDs to include in cost analysis.
 
 Only used when `include_new_accounts` is `false`. Cannot be used together with `excluded_accounts`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#included_accounts AwsCurConfig#included_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#included_accounts AwsCurConfig#included_accounts}
 
 ---
 
@@ -955,7 +955,7 @@ Whether to automatically include new member accounts in your cost analysis.
 
 When `true`, use `excluded_accounts` to specify accounts to exclude. When `false`, use `included_accounts` to specify only the accounts to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#include_new_accounts AwsCurConfig#include_new_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#include_new_accounts AwsCurConfig#include_new_accounts}
 
 ---
 
@@ -1083,7 +1083,7 @@ AccountId *string
 
 The AWS account ID of your billing/payer account. For AWS Organizations, this is typically the management account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#account_id AwsCurConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#account_id AwsCurConfig#account_id}
 
 ---
 
@@ -1099,7 +1099,7 @@ The S3 bucket name where your AWS Cost and Usage Report files are stored.
 
 This bucket must have appropriate IAM permissions for Datadog access and should be in the same AWS account as the CUR report.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#bucket_name AwsCurConfig#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#bucket_name AwsCurConfig#bucket_name}
 
 ---
 
@@ -1115,7 +1115,7 @@ The exact name of your AWS Cost and Usage Report as configured in AWS Billing pr
 
 This must match the report name exactly as it appears in your AWS billing settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#report_name AwsCurConfig#report_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#report_name AwsCurConfig#report_name}
 
 ---
 
@@ -1129,7 +1129,7 @@ ReportPrefix *string
 
 The S3 key prefix where your Cost and Usage Report files are stored within the bucket (e.g., 'cur-reports/', 'billing/cur/').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#report_prefix AwsCurConfig#report_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#report_prefix AwsCurConfig#report_prefix}
 
 ---
 
@@ -1143,7 +1143,7 @@ AccountFilters AwsCurConfigAccountFilters
 
 account_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#account_filters AwsCurConfig#account_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#account_filters AwsCurConfig#account_filters}
 
 ---
 
@@ -1157,7 +1157,7 @@ BucketRegion *string
 
 The AWS region where the S3 bucket containing your Cost and Usage Report is located (e.g., us-east-1, eu-west-1).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/aws_cur_config#bucket_region AwsCurConfig#bucket_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/aws_cur_config#bucket_region AwsCurConfig#bucket_region}
 
 ---
 

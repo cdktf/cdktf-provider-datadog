@@ -4,7 +4,7 @@
 
 ### DataDatadogMetricMetadata <a name="DataDatadogMetricMetadata" id="@cdktf/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/metric_metadata datadog_metric_metadata}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/metric_metadata datadog_metric_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatadogMetricMetadata 
 
 The id of the existing DataDatadogMetricMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/metric_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/metric_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ public string MetricName { get; set; }
 
 The metric for which to fetch metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
 
 ---
 

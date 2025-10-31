@@ -4,7 +4,7 @@
 
 ### CsmThreatsAgentRule <a name="CsmThreatsAgentRule" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The SECL expression of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A description for the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates whether the Agent rule is enabled. Must not be used without policy_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID of the agent policy in which the rule is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The list of product tags associated with the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
 
 ---
 
@@ -701,7 +701,7 @@ The construct id used in the generated config for the CsmThreatsAgentRule to imp
 
 The id of the existing CsmThreatsAgentRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1093,7 +1093,7 @@ hash: CsmThreatsAgentRuleActionsHash
 
 hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#hash CsmThreatsAgentRule#hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#hash CsmThreatsAgentRule#hash}
 
 ---
 
@@ -1107,7 +1107,7 @@ set: CsmThreatsAgentRuleActionsSet
 
 set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#set CsmThreatsAgentRule#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#set CsmThreatsAgentRule#set}
 
 ---
 
@@ -1132,7 +1132,10 @@ from cdktf_cdktf_provider_datadog import csm_threats_agent_rule
 csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet(
   name: str,
   append: bool | IResolvable = None,
+  default_value: str = None,
+  expression: str = None,
   field: str = None,
+  inherited: bool | IResolvable = None,
   scope: str = None,
   size: typing.Union[int, float] = None,
   ttl: typing.Union[int, float] = None,
@@ -1146,7 +1149,10 @@ csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.name">name</a></code> | <code>str</code> | The name of the set action. |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.append">append</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to append to the set. |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.defaultValue">default_value</a></code> | <code>str</code> | The default value to set. |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.expression">expression</a></code> | <code>str</code> | The expression to use for the set action. |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.field">field</a></code> | <code>str</code> | The field to get the value from. |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.inherited">inherited</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the set action is inherited. |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.scope">scope</a></code> | <code>str</code> | The scope of the set action (process, container, cgroup, or empty). |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.size">size</a></code> | <code>typing.Union[int, float]</code> | The maximum size of the set. |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | The time to live for the set in nanoseconds. |
@@ -1164,7 +1170,7 @@ name: str
 
 The name of the set action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -1178,7 +1184,35 @@ append: bool | IResolvable
 
 Whether to append to the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
+
+---
+
+##### `default_value`<sup>Optional</sup> <a name="default_value" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.defaultValue"></a>
+
+```python
+default_value: str
+```
+
+- *Type:* str
+
+The default value to set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#default_value CsmThreatsAgentRule#default_value}
+
+---
+
+##### `expression`<sup>Optional</sup> <a name="expression" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+The expression to use for the set action.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -1192,7 +1226,21 @@ field: str
 
 The field to get the value from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+
+---
+
+##### `inherited`<sup>Optional</sup> <a name="inherited" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.property.inherited"></a>
+
+```python
+inherited: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+Whether the set action is inherited.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#inherited CsmThreatsAgentRule#inherited}
 
 ---
 
@@ -1206,7 +1254,7 @@ scope: str
 
 The scope of the set action (process, container, cgroup, or empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
 
 ---
 
@@ -1220,7 +1268,7 @@ size: typing.Union[int, float]
 
 The maximum size of the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
 
 ---
 
@@ -1234,7 +1282,7 @@ ttl: typing.Union[int, float]
 
 The time to live for the set in nanoseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
 
 ---
 
@@ -1248,7 +1296,7 @@ value: str
 
 The value to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
 
 ---
 
@@ -1378,7 +1426,7 @@ expression: str
 
 The SECL expression of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -1392,7 +1440,7 @@ name: str
 
 The name of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -1406,7 +1454,7 @@ actions: IResolvable | typing.List[CsmThreatsAgentRuleActions]
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
 
 ---
 
@@ -1420,7 +1468,7 @@ description: str
 
 A description for the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
 
 ---
 
@@ -1434,7 +1482,7 @@ enabled: bool | IResolvable
 
 Indicates whether the Agent rule is enabled. Must not be used without policy_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
 
 ---
 
@@ -1448,7 +1496,7 @@ policy_id: str
 
 The ID of the agent policy in which the rule is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
 
 ---
 
@@ -1462,7 +1510,7 @@ product_tags: typing.List[str]
 
 The list of product tags associated with the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
 
 ---
 
@@ -2175,7 +2223,10 @@ def put_hash() -> None
 def put_set(
   name: str,
   append: bool | IResolvable = None,
+  default_value: str = None,
+  expression: str = None,
   field: str = None,
+  inherited: bool | IResolvable = None,
   scope: str = None,
   size: typing.Union[int, float] = None,
   ttl: typing.Union[int, float] = None,
@@ -2189,7 +2240,7 @@ def put_set(
 
 The name of the set action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -2199,7 +2250,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether to append to the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
+
+---
+
+###### `default_value`<sup>Optional</sup> <a name="default_value" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsOutputReference.putSet.parameter.defaultValue"></a>
+
+- *Type:* str
+
+The default value to set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#default_value CsmThreatsAgentRule#default_value}
+
+---
+
+###### `expression`<sup>Optional</sup> <a name="expression" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsOutputReference.putSet.parameter.expression"></a>
+
+- *Type:* str
+
+The expression to use for the set action.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -2209,7 +2280,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The field to get the value from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+
+---
+
+###### `inherited`<sup>Optional</sup> <a name="inherited" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsOutputReference.putSet.parameter.inherited"></a>
+
+- *Type:* bool | cdktf.IResolvable
+
+Whether the set action is inherited.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#inherited CsmThreatsAgentRule#inherited}
 
 ---
 
@@ -2219,7 +2300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The scope of the set action (process, container, cgroup, or empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
 
 ---
 
@@ -2229,7 +2310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The maximum size of the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
 
 ---
 
@@ -2239,7 +2320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The time to live for the set in nanoseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
 
 ---
 
@@ -2249,7 +2330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The value to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
 
 ---
 
@@ -2403,7 +2484,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetAppend">reset_append</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetDefaultValue">reset_default_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetExpression">reset_expression</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetField">reset_field</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetInherited">reset_inherited</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetScope">reset_scope</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetSize">reset_size</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetTtl">reset_ttl</a></code> | *No description.* |
@@ -2589,10 +2673,28 @@ Returns a reversible string representation.
 def reset_append() -> None
 ```
 
+##### `reset_default_value` <a name="reset_default_value" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetDefaultValue"></a>
+
+```python
+def reset_default_value() -> None
+```
+
+##### `reset_expression` <a name="reset_expression" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetExpression"></a>
+
+```python
+def reset_expression() -> None
+```
+
 ##### `reset_field` <a name="reset_field" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetField"></a>
 
 ```python
 def reset_field() -> None
+```
+
+##### `reset_inherited` <a name="reset_inherited" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetInherited"></a>
+
+```python
+def reset_inherited() -> None
 ```
 
 ##### `reset_scope` <a name="reset_scope" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.resetScope"></a>
@@ -2627,14 +2729,20 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.appendInput">append_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.defaultValueInput">default_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.expressionInput">expression_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.fieldInput">field_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.inheritedInput">inherited_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.scopeInput">scope_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.sizeInput">size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.append">append</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.defaultValue">default_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.field">field</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.inherited">inherited</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2678,6 +2786,26 @@ append_input: bool | IResolvable
 
 ---
 
+##### `default_value_input`<sup>Optional</sup> <a name="default_value_input" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.defaultValueInput"></a>
+
+```python
+default_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression_input`<sup>Optional</sup> <a name="expression_input" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.expressionInput"></a>
+
+```python
+expression_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `field_input`<sup>Optional</sup> <a name="field_input" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.fieldInput"></a>
 
 ```python
@@ -2685,6 +2813,16 @@ field_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `inherited_input`<sup>Optional</sup> <a name="inherited_input" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.inheritedInput"></a>
+
+```python
+inherited_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2748,6 +2886,26 @@ append: bool | IResolvable
 
 ---
 
+##### `default_value`<sup>Required</sup> <a name="default_value" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.defaultValue"></a>
+
+```python
+default_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+---
+
 ##### `field`<sup>Required</sup> <a name="field" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.field"></a>
 
 ```python
@@ -2755,6 +2913,16 @@ field: str
 ```
 
 - *Type:* str
+
+---
+
+##### `inherited`<sup>Required</sup> <a name="inherited" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.property.inherited"></a>
+
+```python
+inherited: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
 
 ---
 

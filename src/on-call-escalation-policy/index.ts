@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy
+// https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface OnCallEscalationPolicyConfig extends cdktf.TerraformMetaArgumen
   /**
   * A human-readable name for the escalation policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
   */
   readonly name: string;
   /**
   * If true, pages will be automatically resolved if unacknowledged after the final step. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
   */
   readonly resolvePageOnPolicyEnd?: boolean | cdktf.IResolvable;
   /**
   * If set, policy will be retried this many times after the final step. Must be in the range 0-10. Value must be between 0 and 10. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
   */
   readonly retries?: number;
   /**
   * A list of team ids associated with the escalation policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
   */
   readonly teams?: string[];
   /**
   * step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
   */
   readonly step?: OnCallEscalationPolicyStep[] | cdktf.IResolvable;
 }
@@ -47,19 +47,19 @@ export interface OnCallEscalationPolicyStepTarget {
   /**
   * Targeted schedule ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#schedule OnCallEscalationPolicy#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#schedule OnCallEscalationPolicy#schedule}
   */
   readonly schedule?: string;
   /**
   * Targeted team ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#team OnCallEscalationPolicy#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#team OnCallEscalationPolicy#team}
   */
   readonly team?: string;
   /**
   * Targeted user ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#user OnCallEscalationPolicy#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#user OnCallEscalationPolicy#user}
   */
   readonly user?: string;
 }
@@ -235,19 +235,19 @@ export interface OnCallEscalationPolicyStep {
   /**
   * Specifies how this escalation step will assign targets. Can be `default` (page all targets at once) or `round-robin`. Valid values are `default`, `round-robin`. Defaults to `"default"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#assignment OnCallEscalationPolicy#assignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#assignment OnCallEscalationPolicy#assignment}
   */
   readonly assignment?: string;
   /**
   * Defines how many seconds to wait before escalating to the next step. Value must be between 60 and 36000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#escalate_after_seconds OnCallEscalationPolicy#escalate_after_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#escalate_after_seconds OnCallEscalationPolicy#escalate_after_seconds}
   */
   readonly escalateAfterSeconds: number;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#target OnCallEscalationPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#target OnCallEscalationPolicy#target}
   */
   readonly target?: OnCallEscalationPolicyStepTarget[] | cdktf.IResolvable;
 }
@@ -423,7 +423,7 @@ export class OnCallEscalationPolicyStepList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy}
 */
 export class OnCallEscalationPolicy extends cdktf.TerraformResource {
 
@@ -439,7 +439,7 @@ export class OnCallEscalationPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OnCallEscalationPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnCallEscalationPolicy to import
-  * @param importFromId The id of the existing OnCallEscalationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnCallEscalationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnCallEscalationPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -451,7 +451,7 @@ export class OnCallEscalationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -462,7 +462,7 @@ export class OnCallEscalationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_on_call_escalation_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.77.0',
+        providerVersion: '3.78.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

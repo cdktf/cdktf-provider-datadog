@@ -4,7 +4,7 @@
 
 ### ObservabilityPipeline <a name="ObservabilityPipeline" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
 
 ---
 
@@ -495,7 +495,7 @@ def put_config(
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#destinations ObservabilityPipeline#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#destinations ObservabilityPipeline#destinations}
 
 ---
 
@@ -505,7 +505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 processors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#processors ObservabilityPipeline#processors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#processors ObservabilityPipeline#processors}
 
 ---
 
@@ -515,7 +515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
 
 ---
 
@@ -639,7 +639,7 @@ The construct id used in the generated config for the ObservabilityPipeline to i
 
 The id of the existing ObservabilityPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1005,7 +1005,7 @@ name: str
 
 The pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -1019,7 +1019,7 @@ config: ObservabilityPipelineConfigA
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
 
 ---
 
@@ -1057,7 +1057,7 @@ destinations: ObservabilityPipelineConfigDestinations
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#destinations ObservabilityPipeline#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#destinations ObservabilityPipeline#destinations}
 
 ---
 
@@ -1071,7 +1071,7 @@ processors: ObservabilityPipelineConfigProcessors
 
 processors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#processors ObservabilityPipeline#processors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#processors ObservabilityPipeline#processors}
 
 ---
 
@@ -1085,7 +1085,7 @@ sources: ObservabilityPipelineConfigSources
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
 
 ---
 
@@ -1155,7 +1155,7 @@ amazon_opensearch: IResolvable | typing.List[ObservabilityPipelineConfigDestinat
 
 amazon_opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
 
 ---
 
@@ -1169,7 +1169,7 @@ amazon_s3: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsAmaz
 
 amazon_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
 
 ---
 
@@ -1183,7 +1183,7 @@ amazon_security_lake: IResolvable | typing.List[ObservabilityPipelineConfigDesti
 
 amazon_security_lake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
 
 ---
 
@@ -1197,7 +1197,7 @@ azure_storage: IResolvable | typing.List[ObservabilityPipelineConfigDestinations
 
 azure_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
 
 ---
 
@@ -1211,7 +1211,7 @@ crowdstrike_next_gen_siem: IResolvable | typing.List[ObservabilityPipelineConfig
 
 crowdstrike_next_gen_siem block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
 
 ---
 
@@ -1225,7 +1225,7 @@ datadog_logs: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsD
 
 datadog_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
 
 ---
 
@@ -1239,7 +1239,7 @@ elasticsearch: IResolvable | typing.List[ObservabilityPipelineConfigDestinations
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
 
 ---
 
@@ -1253,7 +1253,7 @@ google_chronicle: IResolvable | typing.List[ObservabilityPipelineConfigDestinati
 
 google_chronicle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#google_chronicle ObservabilityPipeline#google_chronicle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#google_chronicle ObservabilityPipeline#google_chronicle}
 
 ---
 
@@ -1267,7 +1267,7 @@ google_cloud_storage: IResolvable | typing.List[ObservabilityPipelineConfigDesti
 
 google_cloud_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
 
 ---
 
@@ -1281,7 +1281,7 @@ google_pubsub: IResolvable | typing.List[ObservabilityPipelineConfigDestinations
 
 google_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
 
 ---
 
@@ -1295,7 +1295,7 @@ microsoft_sentinel: IResolvable | typing.List[ObservabilityPipelineConfigDestina
 
 microsoft_sentinel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
 
 ---
 
@@ -1309,7 +1309,7 @@ new_relic: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsNewR
 
 new_relic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
 
 ---
 
@@ -1323,7 +1323,7 @@ opensearch: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsOpe
 
 opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
 
 ---
 
@@ -1337,7 +1337,7 @@ rsyslog: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsRsyslo
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
 
 ---
 
@@ -1351,7 +1351,7 @@ sentinel_one: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsS
 
 sentinel_one block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
 
 ---
 
@@ -1365,7 +1365,7 @@ socket: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsSocket]
 
 socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -1379,7 +1379,7 @@ splunk_hec: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsSpl
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -1393,7 +1393,7 @@ sumo_logic: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsSum
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -1407,7 +1407,7 @@ syslog_ng: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsSysl
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -1447,7 +1447,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1464,7 +1464,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the input for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1478,7 +1478,7 @@ auth: ObservabilityPipelineConfigDestinationsAmazonOpensearchAuth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1492,7 +1492,7 @@ bulk_index: str
 
 The index or datastream to write logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -1534,7 +1534,7 @@ strategy: str
 
 The authentication strategy to use (e.g. aws or basic).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -1548,7 +1548,7 @@ assume_role: str
 
 ARN of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -1562,7 +1562,7 @@ aws_region: str
 
 AWS region override (if applicable).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
 
 ---
 
@@ -1576,7 +1576,7 @@ external_id: str
 
 External ID for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -1590,7 +1590,7 @@ session_name: str
 
 Session name for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -1636,7 +1636,7 @@ bucket: str
 
 S3 bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -1650,7 +1650,7 @@ id: str
 
 Unique identifier for the destination component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1667,7 +1667,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1681,7 +1681,7 @@ key_prefix: str
 
 Prefix for object keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
 
 ---
 
@@ -1695,7 +1695,7 @@ region: str
 
 AWS region of the S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -1709,7 +1709,7 @@ storage_class: str
 
 S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
 
 ---
 
@@ -1723,7 +1723,7 @@ auth: ObservabilityPipelineConfigDestinationsAmazonS3Auth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1761,7 +1761,7 @@ assume_role: str
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -1775,7 +1775,7 @@ external_id: str
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -1789,7 +1789,7 @@ session_name: str
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -1835,7 +1835,7 @@ bucket: str
 
 Name of the Amazon S3 bucket in Security Lake (3-63 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -1849,7 +1849,7 @@ custom_source_name: str
 
 Custom source name for the logs in Security Lake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#custom_source_name ObservabilityPipeline#custom_source_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#custom_source_name ObservabilityPipeline#custom_source_name}
 
 ---
 
@@ -1863,7 +1863,7 @@ id: str
 
 Unique identifier for the destination component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1880,7 +1880,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1894,7 +1894,7 @@ region: str
 
 AWS region of the Security Lake bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -1908,7 +1908,7 @@ auth: ObservabilityPipelineConfigDestinationsAmazonSecurityLakeAuth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1922,7 +1922,7 @@ tls: ObservabilityPipelineConfigDestinationsAmazonSecurityLakeTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -1960,7 +1960,7 @@ assume_role: str
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -1974,7 +1974,7 @@ external_id: str
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -1988,7 +1988,7 @@ session_name: str
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -2026,7 +2026,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -2040,7 +2040,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -2054,7 +2054,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -2094,7 +2094,7 @@ container_name: str
 
 The name of the Azure Blob Storage container to store logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
 
 ---
 
@@ -2108,7 +2108,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2125,7 +2125,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2139,7 +2139,7 @@ blob_prefix: str
 
 Optional prefix for blobs written to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
 
 ---
 
@@ -2181,7 +2181,7 @@ encoding: str
 
 Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -2195,7 +2195,7 @@ id: str
 
 Unique identifier for the destination component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2212,7 +2212,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2226,7 +2226,7 @@ compression: ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemCompre
 
 compression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -2240,7 +2240,7 @@ tls: ObservabilityPipelineConfigDestinationsCrowdstrikeNextGenSiemTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -2276,7 +2276,7 @@ algorithm: str
 
 Compression algorithm for log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 
 ---
 
@@ -2290,7 +2290,7 @@ level: typing.Union[int, float]
 
 Compression level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
 
 ---
 
@@ -2328,7 +2328,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -2342,7 +2342,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -2356,7 +2356,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -2392,7 +2392,7 @@ id: str
 
 The unique ID of the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2409,7 +2409,7 @@ inputs: typing.List[str]
 
 The inputs for the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2449,7 +2449,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2466,7 +2466,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2480,7 +2480,7 @@ api_version: str
 
 The Elasticsearch API version to use. Set to `auto` to auto-detect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
 
 ---
 
@@ -2494,7 +2494,7 @@ bulk_index: str
 
 The index or datastream to write logs to in Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -2538,7 +2538,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2555,7 +2555,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2569,7 +2569,7 @@ auth: ObservabilityPipelineConfigDestinationsGoogleChronicleAuth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -2583,7 +2583,7 @@ customer_id: str
 
 The Google Chronicle customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
 
 ---
 
@@ -2597,7 +2597,7 @@ encoding: str
 
 The encoding format for the logs sent to Chronicle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -2611,7 +2611,7 @@ log_type: str
 
 The log type metadata associated with the Chronicle destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
 
 ---
 
@@ -2645,7 +2645,7 @@ credentials_file: str
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -2693,7 +2693,7 @@ acl: str
 
 Access control list setting for objects written to the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
 
 ---
 
@@ -2707,7 +2707,7 @@ auth: ObservabilityPipelineConfigDestinationsGoogleCloudStorageAuth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -2721,7 +2721,7 @@ bucket: str
 
 Name of the GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -2735,7 +2735,7 @@ id: str
 
 Unique identifier for the destination component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2752,7 +2752,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2766,7 +2766,7 @@ storage_class: str
 
 Storage class used for objects stored in GCS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
 
 ---
 
@@ -2780,7 +2780,7 @@ key_prefix: str
 
 Optional prefix for object keys within the GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
 
 ---
 
@@ -2794,7 +2794,7 @@ metadata: IResolvable | typing.List[ObservabilityPipelineConfigDestinationsGoogl
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
 
 ---
 
@@ -2828,7 +2828,7 @@ credentials_file: str
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -2864,7 +2864,7 @@ name: str
 
 The metadata key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -2878,7 +2878,7 @@ value: str
 
 The metadata value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -2924,7 +2924,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2941,7 +2941,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -2955,7 +2955,7 @@ project: str
 
 The GCP project ID that owns the Pub/Sub topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
 
 ---
 
@@ -2969,7 +2969,7 @@ topic: str
 
 The Pub/Sub topic name to publish logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
 
 ---
 
@@ -2983,7 +2983,7 @@ auth: ObservabilityPipelineConfigDestinationsGooglePubsubAuth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -2997,7 +2997,7 @@ encoding: str
 
 Encoding format for log events. Valid values: `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -3011,7 +3011,7 @@ tls: ObservabilityPipelineConfigDestinationsGooglePubsubTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -3045,7 +3045,7 @@ credentials_file: str
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -3083,7 +3083,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -3097,7 +3097,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -3111,7 +3111,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -3155,7 +3155,7 @@ client_id: str
 
 Azure AD client ID used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
 
 ---
 
@@ -3169,7 +3169,7 @@ dcr_immutable_id: str
 
 The immutable ID of the Data Collection Rule (DCR).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
 
 ---
 
@@ -3183,7 +3183,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3200,7 +3200,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3214,7 +3214,7 @@ table: str
 
 The name of the Log Analytics table where logs will be sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
 
 ---
 
@@ -3228,7 +3228,7 @@ tenant_id: str
 
 Azure AD tenant ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
 
 ---
 
@@ -3266,7 +3266,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3283,7 +3283,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3297,7 +3297,7 @@ region: str
 
 The New Relic region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -3335,7 +3335,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3352,7 +3352,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3366,7 +3366,7 @@ bulk_index: str
 
 The index or datastream to write logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -3406,7 +3406,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3423,7 +3423,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3437,7 +3437,7 @@ keepalive: typing.Union[int, float]
 
 Optional socket keepalive duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
 
 ---
 
@@ -3451,7 +3451,7 @@ tls: ObservabilityPipelineConfigDestinationsRsyslogTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -3489,7 +3489,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -3503,7 +3503,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -3517,7 +3517,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -3555,7 +3555,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3572,7 +3572,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3586,7 +3586,7 @@ region: str
 
 The SentinelOne region to send logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -3630,7 +3630,7 @@ encoding: str
 
 Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -3644,7 +3644,7 @@ id: str
 
 The unique identifier for this destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3661,7 +3661,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3675,7 +3675,7 @@ mode: str
 
 The protocol used to send logs. Valid values are `tcp`, `udp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -3689,7 +3689,7 @@ framing: ObservabilityPipelineConfigDestinationsSocketFraming
 
 framing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
 
 ---
 
@@ -3703,7 +3703,7 @@ tls: ObservabilityPipelineConfigDestinationsSocketTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -3739,7 +3739,7 @@ method: str
 
 The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
 
 ---
 
@@ -3753,7 +3753,7 @@ character_delimited: ObservabilityPipelineConfigDestinationsSocketFramingCharact
 
 character_delimited block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
 
 ---
 
@@ -3787,7 +3787,7 @@ delimiter: str
 
 A single ASCII character used as a delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -3825,7 +3825,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -3839,7 +3839,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -3853,7 +3853,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -3899,7 +3899,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3916,7 +3916,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -3930,7 +3930,7 @@ auto_extract_timestamp: bool | IResolvable
 
 If `true`, Splunk tries to extract timestamps from incoming log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
 
 ---
 
@@ -3944,7 +3944,7 @@ encoding: str
 
 Encoding format for log events. Valid values: `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -3958,7 +3958,7 @@ index: str
 
 Optional name of the Splunk index where logs are written.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
 
 ---
 
@@ -3972,7 +3972,7 @@ sourcetype: str
 
 The Splunk sourcetype to assign to log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
 
 ---
 
@@ -4018,7 +4018,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4035,7 +4035,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4049,7 +4049,7 @@ encoding: str
 
 The output encoding format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -4063,7 +4063,7 @@ header_custom_fields: IResolvable | typing.List[ObservabilityPipelineConfigDesti
 
 header_custom_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#header_custom_fields ObservabilityPipeline#header_custom_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#header_custom_fields ObservabilityPipeline#header_custom_fields}
 
 ---
 
@@ -4077,7 +4077,7 @@ header_host_name: str
 
 Optional override for the host name header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
 
 ---
 
@@ -4091,7 +4091,7 @@ header_source_category: str
 
 Optional override for the source category header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
 
 ---
 
@@ -4105,7 +4105,7 @@ header_source_name: str
 
 Optional override for the source name header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
 
 ---
 
@@ -4141,7 +4141,7 @@ name: str
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -4155,7 +4155,7 @@ value: str
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -4195,7 +4195,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4212,7 +4212,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4226,7 +4226,7 @@ keepalive: typing.Union[int, float]
 
 Optional socket keepalive duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
 
 ---
 
@@ -4240,7 +4240,7 @@ tls: ObservabilityPipelineConfigDestinationsSyslogNgTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -4278,7 +4278,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -4292,7 +4292,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -4306,7 +4306,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -4374,7 +4374,7 @@ add_env_vars: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsAdd
 
 add_env_vars block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
 
 ---
 
@@ -4388,7 +4388,7 @@ add_fields: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsAddFi
 
 add_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
 
 ---
 
@@ -4402,7 +4402,7 @@ custom_processor: IResolvable | typing.List[ObservabilityPipelineConfigProcessor
 
 custom_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
 
 ---
 
@@ -4416,7 +4416,7 @@ datadog_tags: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsDat
 
 datadog_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
 
 ---
 
@@ -4430,7 +4430,7 @@ dedupe: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsDedupe]
 
 dedupe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
 
 ---
 
@@ -4444,7 +4444,7 @@ enrichment_table: IResolvable | typing.List[ObservabilityPipelineConfigProcessor
 
 enrichment_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
 
 ---
 
@@ -4458,7 +4458,7 @@ filter: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsFilter]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
 
 ---
 
@@ -4472,7 +4472,7 @@ generate_datadog_metrics: IResolvable | typing.List[ObservabilityPipelineConfigP
 
 generate_datadog_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
 
 ---
 
@@ -4486,7 +4486,7 @@ ocsf_mapper: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsOcsf
 
 ocsf_mapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
 
 ---
 
@@ -4500,7 +4500,7 @@ parse_grok: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsParse
 
 parse_grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
 
 ---
 
@@ -4514,7 +4514,7 @@ parse_json: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsParse
 
 parse_json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
 
 ---
 
@@ -4528,7 +4528,7 @@ quota: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsQuota]
 
 quota block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
 
 ---
 
@@ -4542,7 +4542,7 @@ reduce: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsReduce]
 
 reduce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
 
 ---
 
@@ -4556,7 +4556,7 @@ remove_fields: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsRe
 
 remove_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
 
 ---
 
@@ -4570,7 +4570,7 @@ rename_fields: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsRe
 
 rename_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
 
 ---
 
@@ -4584,7 +4584,7 @@ sample: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsSample]
 
 sample block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
 
 ---
 
@@ -4598,7 +4598,7 @@ sensitive_data_scanner: IResolvable | typing.List[ObservabilityPipelineConfigPro
 
 sensitive_data_scanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
 
 ---
 
@@ -4612,7 +4612,7 @@ throttle: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsThrottl
 
 throttle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
 
 ---
 
@@ -4652,7 +4652,7 @@ id: str
 
 The unique identifier for this component. Used to reference this processor in the pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4669,7 +4669,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4683,7 +4683,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4697,7 +4697,7 @@ variables: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsAddEnv
 
 variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#variables ObservabilityPipeline#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#variables ObservabilityPipeline#variables}
 
 ---
 
@@ -4733,7 +4733,7 @@ field: str
 
 The target field in the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -4747,7 +4747,7 @@ name: str
 
 The name of the environment variable to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -4787,7 +4787,7 @@ id: str
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4804,7 +4804,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -4818,7 +4818,7 @@ inputs: typing.List[str]
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4832,7 +4832,7 @@ field: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsAddFieldsF
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -4868,7 +4868,7 @@ name: str
 
 The field name to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -4882,7 +4882,7 @@ value: str
 
 The value to assign to the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -4920,7 +4920,7 @@ id: str
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4937,7 +4937,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -4951,7 +4951,7 @@ remaps: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsCustomPro
 
 remaps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#remaps ObservabilityPipeline#remaps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#remaps ObservabilityPipeline#remaps}
 
 ---
 
@@ -4993,7 +4993,7 @@ drop_on_error: bool | IResolvable
 
 Whether to drop events that cause errors during transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#drop_on_error ObservabilityPipeline#drop_on_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#drop_on_error ObservabilityPipeline#drop_on_error}
 
 ---
 
@@ -5007,7 +5007,7 @@ enabled: bool | IResolvable
 
 Whether this remap rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
 
 ---
 
@@ -5021,7 +5021,7 @@ include: str
 
 A Datadog search query used to filter events for this specific remap rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5035,7 +5035,7 @@ name: str
 
 A descriptive name for this remap rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -5049,7 +5049,7 @@ source: str
 
 The VRL script source code that defines the transformation logic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -5075,10 +5075,10 @@ observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.action">action</a></code> | <code>str</code> | Valid values are `include`, `exclude`. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.include">include</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}. |
-| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.keys">keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.include">include</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}. |
+| <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.keys">keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}. |
 | <code><a href="#@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorsDatadogTags.property.mode">mode</a></code> | <code>str</code> | Valid values are `filter`. |
 
 ---
@@ -5093,7 +5093,7 @@ action: str
 
 Valid values are `include`, `exclude`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
 
 ---
 
@@ -5105,7 +5105,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5120,7 +5120,7 @@ include: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}.
 
 ---
 
@@ -5132,7 +5132,7 @@ inputs: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}.
 
 ---
 
@@ -5144,7 +5144,7 @@ keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}.
 
 ---
 
@@ -5158,7 +5158,7 @@ mode: str
 
 Valid values are `filter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -5200,7 +5200,7 @@ fields: typing.List[str]
 
 A list of log field paths to check for duplicates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -5214,7 +5214,7 @@ id: str
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5231,7 +5231,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5245,7 +5245,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -5259,7 +5259,7 @@ mode: str
 
 The deduplication mode to apply to the fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -5303,7 +5303,7 @@ id: str
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5320,7 +5320,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5334,7 +5334,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -5348,7 +5348,7 @@ target: str
 
 Path where enrichment results should be stored in the log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
 
 ---
 
@@ -5362,7 +5362,7 @@ file: ObservabilityPipelineConfigProcessorsEnrichmentTableFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
 
 ---
 
@@ -5376,7 +5376,7 @@ geoip: ObservabilityPipelineConfigProcessorsEnrichmentTableGeoip
 
 geoip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
 
 ---
 
@@ -5416,7 +5416,7 @@ encoding: ObservabilityPipelineConfigProcessorsEnrichmentTableFileEncoding
 
 encoding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -5430,7 +5430,7 @@ key: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsEnrichmentTa
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
 
 ---
 
@@ -5444,7 +5444,7 @@ path: str
 
 Path to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -5458,7 +5458,7 @@ schema: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsEnrichmen
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#schema ObservabilityPipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#schema ObservabilityPipeline#schema}
 
 ---
 
@@ -5496,7 +5496,7 @@ delimiter: str
 
 The `encoding` `delimiter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -5510,7 +5510,7 @@ includes_headers: bool | IResolvable
 
 The `encoding` `includes_headers`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
 
 ---
 
@@ -5524,7 +5524,7 @@ type: str
 
 File encoding format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
 
 ---
 
@@ -5562,7 +5562,7 @@ column: str
 
 The `items` `column`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
 
 ---
 
@@ -5576,7 +5576,7 @@ comparison: str
 
 The comparison method (e.g. equals).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
 
 ---
 
@@ -5590,7 +5590,7 @@ field: str
 
 The `items` `field`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -5626,7 +5626,7 @@ column: str
 
 The `items` `column`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
 
 ---
 
@@ -5640,7 +5640,7 @@ type: str
 
 The type of the column (e.g. string, boolean, integer, etc.).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
 
 ---
 
@@ -5678,7 +5678,7 @@ key_field: str
 
 Path to the IP field in the log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 
 ---
 
@@ -5692,7 +5692,7 @@ locale: str
 
 Locale used to resolve geographical names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
 
 ---
 
@@ -5706,7 +5706,7 @@ path: str
 
 Path to the GeoIP database file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -5744,7 +5744,7 @@ id: str
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5763,7 +5763,7 @@ A Datadog search query used to determine which logs should pass through the filt
 
 Logs that match this query continue to downstream components; others are dropped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5777,7 +5777,7 @@ inputs: typing.List[str]
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -5817,7 +5817,7 @@ id: str
 
 The unique identifier for this component. Used to reference this component in other parts of the pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5834,7 +5834,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5848,7 +5848,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -5862,7 +5862,7 @@ metrics: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsGenerate
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#metrics ObservabilityPipeline#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#metrics ObservabilityPipeline#metrics}
 
 ---
 
@@ -5904,7 +5904,7 @@ include: str
 
 Datadog filter query to match logs for metric generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5918,7 +5918,7 @@ metric_type: str
 
 Type of metric to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
 
 ---
 
@@ -5932,7 +5932,7 @@ name: str
 
 Name of the custom metric to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -5946,7 +5946,7 @@ group_by: typing.List[str]
 
 Optional fields used to group the metric series.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -5960,7 +5960,7 @@ value: ObservabilityPipelineConfigProcessorsGenerateDatadogMetricsMetricsValue
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -5996,7 +5996,7 @@ strategy: str
 
 Metric value strategy: `increment_by_one` or `increment_by_field`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -6010,7 +6010,7 @@ field: str
 
 Name of the log field containing the numeric value to increment the metric by (used only for `increment_by_field`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -6050,7 +6050,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6067,7 +6067,7 @@ include: str
 
 Search query to select logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -6081,7 +6081,7 @@ inputs: typing.List[str]
 
 List of component IDs whose output is used as input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -6095,7 +6095,7 @@ mapping: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsOcsfMapp
 
 mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
 
 ---
 
@@ -6131,7 +6131,7 @@ include: str
 
 Search query for selecting which logs the mapping applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -6145,7 +6145,7 @@ library_mapping: str
 
 Predefined library mapping for log transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
 
 ---
 
@@ -6187,7 +6187,7 @@ id: str
 
 A unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6204,7 +6204,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -6218,7 +6218,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -6232,7 +6232,7 @@ disable_library_rules: bool | IResolvable
 
 If set to `true`, disables the default Grok rules provided by Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
 
 ---
 
@@ -6246,7 +6246,7 @@ rules: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsParseGrokR
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rules ObservabilityPipeline#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rules ObservabilityPipeline#rules}
 
 ---
 
@@ -6284,7 +6284,7 @@ source: str
 
 The name of the field in the log event to apply the Grok rules to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -6298,7 +6298,7 @@ match_rule: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsParse
 
 match_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
 
 ---
 
@@ -6312,7 +6312,7 @@ support_rule: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsPar
 
 support_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
 
 ---
 
@@ -6348,7 +6348,7 @@ name: str
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -6362,7 +6362,7 @@ rule: str
 
 The definition of the Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -6398,7 +6398,7 @@ name: str
 
 The name of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -6412,7 +6412,7 @@ rule: str
 
 The definition of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -6452,7 +6452,7 @@ field: str
 
 The field to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -6466,7 +6466,7 @@ id: str
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6483,7 +6483,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -6497,7 +6497,7 @@ inputs: typing.List[str]
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -6549,7 +6549,7 @@ drop_events: bool | IResolvable
 
 Whether to drop events exceeding the limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
 
 ---
 
@@ -6563,7 +6563,7 @@ id: str
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6580,7 +6580,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -6594,7 +6594,7 @@ inputs: typing.List[str]
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -6608,7 +6608,7 @@ limit: ObservabilityPipelineConfigProcessorsQuotaLimit
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -6622,7 +6622,7 @@ name: str
 
 The name of the quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -6636,7 +6636,7 @@ ignore_when_missing_partitions: bool | IResolvable
 
 Whether to ignore when partition fields are missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
 
 ---
 
@@ -6650,7 +6650,7 @@ overflow_action: str
 
 The action to take when the quota is exceeded: `drop`, `no_action`, or `overflow_routing`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
 
 ---
 
@@ -6664,7 +6664,7 @@ overrides: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsQuotaO
 
 overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#overrides ObservabilityPipeline#overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#overrides ObservabilityPipeline#overrides}
 
 ---
 
@@ -6678,7 +6678,7 @@ partition_fields: typing.List[str]
 
 List of partition fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
 
 ---
 
@@ -6714,7 +6714,7 @@ enforce: str
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -6728,7 +6728,7 @@ limit: typing.Union[int, float]
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -6764,7 +6764,7 @@ limit: ObservabilityPipelineConfigProcessorsQuotaOverridesLimit
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -6778,7 +6778,7 @@ field: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsQuotaOverr
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -6814,7 +6814,7 @@ name: str
 
 The field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -6828,7 +6828,7 @@ value: str
 
 The field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -6864,7 +6864,7 @@ enforce: str
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -6878,7 +6878,7 @@ limit: typing.Union[int, float]
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -6920,7 +6920,7 @@ group_by: typing.List[str]
 
 A list of fields used to group log events for merging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -6934,7 +6934,7 @@ id: str
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6951,7 +6951,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -6965,7 +6965,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -6979,7 +6979,7 @@ merge_strategies: IResolvable | typing.List[ObservabilityPipelineConfigProcessor
 
 merge_strategies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#merge_strategies ObservabilityPipeline#merge_strategies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#merge_strategies ObservabilityPipeline#merge_strategies}
 
 ---
 
@@ -7015,7 +7015,7 @@ path: str
 
 The field path in the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -7029,7 +7029,7 @@ strategy: str
 
 The merge strategy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -7069,7 +7069,7 @@ fields: typing.List[str]
 
 List of fields to remove from the events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -7083,7 +7083,7 @@ id: str
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7100,7 +7100,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -7114,7 +7114,7 @@ inputs: typing.List[str]
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -7154,7 +7154,7 @@ id: str
 
 The unique ID of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7171,7 +7171,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -7185,7 +7185,7 @@ inputs: typing.List[str]
 
 The inputs for the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -7199,7 +7199,7 @@ field: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsRenameFiel
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -7237,7 +7237,7 @@ destination: str
 
 Destination field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
 
 ---
 
@@ -7251,7 +7251,7 @@ preserve_source: bool | IResolvable
 
 Whether to keep the original field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
 
 ---
 
@@ -7265,7 +7265,7 @@ source: str
 
 Source field to rename.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -7309,7 +7309,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (for example, as the `input` to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7326,7 +7326,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -7340,7 +7340,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -7354,7 +7354,7 @@ percentage: typing.Union[int, float]
 
 The percentage of logs to sample.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
 
 ---
 
@@ -7368,7 +7368,7 @@ rate: typing.Union[int, float]
 
 Number of events to sample (1 in N).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rate ObservabilityPipeline#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rate ObservabilityPipeline#rate}
 
 ---
 
@@ -7410,7 +7410,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7427,7 +7427,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -7441,7 +7441,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -7455,7 +7455,7 @@ rules: IResolvable | typing.List[ObservabilityPipelineConfigProcessorsSensitiveD
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rules ObservabilityPipeline#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rules ObservabilityPipeline#rules}
 
 ---
 
@@ -7499,7 +7499,7 @@ keyword_options: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesK
 
 keyword_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
 
 ---
 
@@ -7513,7 +7513,7 @@ name: str
 
 A name identifying the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -7527,7 +7527,7 @@ on_match: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatch
 
 on_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
 
 ---
 
@@ -7541,7 +7541,7 @@ pattern: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPattern
 
 pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
 
 ---
 
@@ -7555,7 +7555,7 @@ scope: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScope
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
 
 ---
 
@@ -7569,7 +7569,7 @@ tags: typing.List[str]
 
 Tags assigned to this rule for filtering and classification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
 
 ---
 
@@ -7605,7 +7605,7 @@ keywords: typing.List[str]
 
 A list of keywords to match near the sensitive pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
 
 ---
 
@@ -7619,7 +7619,7 @@ proximity: typing.Union[int, float]
 
 Maximum number of tokens between a keyword and a sensitive value match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
 
 ---
 
@@ -7657,7 +7657,7 @@ hash: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchHash
 
 hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
 
 ---
 
@@ -7671,7 +7671,7 @@ partial_redact: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOn
 
 partial_redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
 
 ---
 
@@ -7685,7 +7685,7 @@ redact: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesOnMatchRed
 
 redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
 
 ---
 
@@ -7732,7 +7732,7 @@ characters: typing.Union[int, float]
 
 Number of characters to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
 
 ---
 
@@ -7746,7 +7746,7 @@ direction: str
 
 Direction from which to keep characters: `first` or `last`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
 
 ---
 
@@ -7780,7 +7780,7 @@ replace: str
 
 Replacement string for redacted values (e.g., `***`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
 
 ---
 
@@ -7816,7 +7816,7 @@ custom: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternCus
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
 
 ---
 
@@ -7830,7 +7830,7 @@ library: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesPatternLi
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
 
 ---
 
@@ -7864,7 +7864,7 @@ rule: str
 
 A regular expression used to detect sensitive values. Must be a valid regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -7900,7 +7900,7 @@ id: str
 
 Identifier for a predefined pattern from the sensitive data scanner pattern library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7917,7 +7917,7 @@ use_recommended_keywords: bool | IResolvable
 
 Whether to augment the pattern with recommended keywords (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
 
 ---
 
@@ -7955,7 +7955,7 @@ all: bool | IResolvable
 
 Scan all fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
 
 ---
 
@@ -7969,7 +7969,7 @@ exclude: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeExcl
 
 exclude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
 
 ---
 
@@ -7983,7 +7983,7 @@ include: ObservabilityPipelineConfigProcessorsSensitiveDataScannerRulesScopeIncl
 
 include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -8017,7 +8017,7 @@ fields: typing.List[str]
 
 The fields to exclude from scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -8051,7 +8051,7 @@ fields: typing.List[str]
 
 The fields to include in scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -8095,7 +8095,7 @@ id: str
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8112,7 +8112,7 @@ include: str
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -8126,7 +8126,7 @@ inputs: typing.List[str]
 
 A list of component IDs whose output is used as the input for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -8140,7 +8140,7 @@ threshold: typing.Union[int, float]
 
 The number of events to allow before throttling is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
 
 ---
 
@@ -8154,7 +8154,7 @@ window: typing.Union[int, float]
 
 The time window in seconds over which the threshold applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
 
 ---
 
@@ -8168,7 +8168,7 @@ group_by: typing.List[str]
 
 Optional list of fields used to group events before applying throttling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -8232,7 +8232,7 @@ amazon_data_firehose: IResolvable | typing.List[ObservabilityPipelineConfigSourc
 
 amazon_data_firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
 
 ---
 
@@ -8246,7 +8246,7 @@ amazon_s3: IResolvable | typing.List[ObservabilityPipelineConfigSourcesAmazonS3]
 
 amazon_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
 
 ---
 
@@ -8260,7 +8260,7 @@ datadog_agent: IResolvable | typing.List[ObservabilityPipelineConfigSourcesDatad
 
 datadog_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
 
 ---
 
@@ -8274,7 +8274,7 @@ fluent_bit: IResolvable | typing.List[ObservabilityPipelineConfigSourcesFluentBi
 
 fluent_bit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
 
 ---
 
@@ -8288,7 +8288,7 @@ fluentd: IResolvable | typing.List[ObservabilityPipelineConfigSourcesFluentd]
 
 fluentd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
 
 ---
 
@@ -8302,7 +8302,7 @@ google_pubsub: IResolvable | typing.List[ObservabilityPipelineConfigSourcesGoogl
 
 google_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
 
 ---
 
@@ -8316,7 +8316,7 @@ http_client: IResolvable | typing.List[ObservabilityPipelineConfigSourcesHttpCli
 
 http_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
 
 ---
 
@@ -8330,7 +8330,7 @@ http_server: IResolvable | typing.List[ObservabilityPipelineConfigSourcesHttpSer
 
 http_server block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
 
 ---
 
@@ -8344,7 +8344,7 @@ kafka: IResolvable | typing.List[ObservabilityPipelineConfigSourcesKafka]
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
 
 ---
 
@@ -8358,7 +8358,7 @@ logstash: IResolvable | typing.List[ObservabilityPipelineConfigSourcesLogstash]
 
 logstash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
 
 ---
 
@@ -8372,7 +8372,7 @@ rsyslog: IResolvable | typing.List[ObservabilityPipelineConfigSourcesRsyslog]
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
 
 ---
 
@@ -8386,7 +8386,7 @@ socket: IResolvable | typing.List[ObservabilityPipelineConfigSourcesSocket]
 
 socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -8400,7 +8400,7 @@ splunk_hec: IResolvable | typing.List[ObservabilityPipelineConfigSourcesSplunkHe
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -8414,7 +8414,7 @@ splunk_tcp: IResolvable | typing.List[ObservabilityPipelineConfigSourcesSplunkTc
 
 splunk_tcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
 
 ---
 
@@ -8428,7 +8428,7 @@ sumo_logic: IResolvable | typing.List[ObservabilityPipelineConfigSourcesSumoLogi
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -8442,7 +8442,7 @@ syslog_ng: IResolvable | typing.List[ObservabilityPipelineConfigSourcesSyslogNg]
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -8482,7 +8482,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8499,7 +8499,7 @@ auth: ObservabilityPipelineConfigSourcesAmazonDataFirehoseAuth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -8513,7 +8513,7 @@ tls: ObservabilityPipelineConfigSourcesAmazonDataFirehoseTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8551,7 +8551,7 @@ assume_role: str
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -8565,7 +8565,7 @@ external_id: str
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -8579,7 +8579,7 @@ session_name: str
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -8617,7 +8617,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8631,7 +8631,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8645,7 +8645,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8687,7 +8687,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8704,7 +8704,7 @@ region: str
 
 AWS region where the S3 bucket resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -8718,7 +8718,7 @@ auth: ObservabilityPipelineConfigSourcesAmazonS3Auth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -8732,7 +8732,7 @@ tls: ObservabilityPipelineConfigSourcesAmazonS3Tls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8770,7 +8770,7 @@ assume_role: str
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -8784,7 +8784,7 @@ external_id: str
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -8798,7 +8798,7 @@ session_name: str
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -8836,7 +8836,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8850,7 +8850,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8864,7 +8864,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8900,7 +8900,7 @@ id: str
 
 The unique ID of the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8917,7 +8917,7 @@ tls: ObservabilityPipelineConfigSourcesDatadogAgentTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8955,7 +8955,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8969,7 +8969,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8983,7 +8983,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -9021,7 +9021,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (for example, as the `input` to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9038,7 +9038,7 @@ tls: ObservabilityPipelineConfigSourcesFluentBitTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -9076,7 +9076,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -9090,7 +9090,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -9104,7 +9104,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -9142,7 +9142,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (for example, as the `input` to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9159,7 +9159,7 @@ tls: ObservabilityPipelineConfigSourcesFluentdTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -9197,7 +9197,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -9211,7 +9211,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -9225,7 +9225,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -9269,7 +9269,7 @@ auth: ObservabilityPipelineConfigSourcesGooglePubsubAuth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -9283,7 +9283,7 @@ decoding: str
 
 The decoding format used to interpret incoming logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -9299,7 +9299,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9316,7 +9316,7 @@ project: str
 
 The GCP project ID that owns the Pub/Sub subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
 
 ---
 
@@ -9330,7 +9330,7 @@ subscription: str
 
 The Pub/Sub subscription name from which messages are consumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
 
 ---
 
@@ -9344,7 +9344,7 @@ tls: ObservabilityPipelineConfigSourcesGooglePubsubTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -9378,7 +9378,7 @@ credentials_file: str
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -9416,7 +9416,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -9430,7 +9430,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -9444,7 +9444,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -9488,7 +9488,7 @@ decoding: str
 
 The decoding format used to interpret incoming logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -9504,7 +9504,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9521,7 +9521,7 @@ auth_strategy: str
 
 Optional authentication strategy for HTTP requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -9535,7 +9535,7 @@ scrape_interval_secs: typing.Union[int, float]
 
 The interval (in seconds) between HTTP scrape requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
 
 ---
 
@@ -9549,7 +9549,7 @@ scrape_timeout_secs: typing.Union[int, float]
 
 The timeout (in seconds) for each scrape request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
 
 ---
 
@@ -9563,7 +9563,7 @@ tls: ObservabilityPipelineConfigSourcesHttpClientTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -9601,7 +9601,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -9615,7 +9615,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -9629,7 +9629,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -9669,7 +9669,7 @@ auth_strategy: str
 
 HTTP authentication method. Valid values are `none`, `plain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -9683,7 +9683,7 @@ decoding: str
 
 The decoding format used to interpret incoming logs. Valid values are `json`, `gelf`, `syslog`, `bytes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -9697,7 +9697,7 @@ id: str
 
 Unique ID for the HTTP server source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9714,7 +9714,7 @@ tls: ObservabilityPipelineConfigSourcesHttpServerTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -9752,7 +9752,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -9766,7 +9766,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -9780,7 +9780,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -9824,7 +9824,7 @@ group_id: str
 
 The Kafka consumer group ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
 
 ---
 
@@ -9838,7 +9838,7 @@ id: str
 
 The unique ID of the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9855,7 +9855,7 @@ topics: typing.List[str]
 
 A list of Kafka topic names to subscribe to. The source ingests messages from each topic specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
 
 ---
 
@@ -9869,7 +9869,7 @@ librdkafka_option: IResolvable | typing.List[ObservabilityPipelineConfigSourcesK
 
 librdkafka_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
 
 ---
 
@@ -9883,7 +9883,7 @@ sasl: ObservabilityPipelineConfigSourcesKafkaSasl
 
 sasl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
 
 ---
 
@@ -9897,7 +9897,7 @@ tls: ObservabilityPipelineConfigSourcesKafkaTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -9933,7 +9933,7 @@ name: str
 
 The name of the librdkafka option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -9947,7 +9947,7 @@ value: str
 
 The value of the librdkafka option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -9981,7 +9981,7 @@ mechanism: str
 
 SASL mechanism to use (e.g., PLAIN, SCRAM-SHA-256, SCRAM-SHA-512). Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
 
 ---
 
@@ -10019,7 +10019,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -10033,7 +10033,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -10047,7 +10047,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -10085,7 +10085,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10102,7 +10102,7 @@ tls: ObservabilityPipelineConfigSourcesLogstashTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -10140,7 +10140,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -10154,7 +10154,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -10168,7 +10168,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -10208,7 +10208,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10225,7 +10225,7 @@ mode: str
 
 Protocol used by the syslog source to receive messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -10239,7 +10239,7 @@ tls: ObservabilityPipelineConfigSourcesRsyslogTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -10277,7 +10277,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -10291,7 +10291,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -10305,7 +10305,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -10345,7 +10345,7 @@ id: str
 
 The unique identifier for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10362,7 +10362,7 @@ mode: str
 
 The protocol used to receive logs. Valid values are `tcp`, `udp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -10376,7 +10376,7 @@ framing: ObservabilityPipelineConfigSourcesSocketFraming
 
 framing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
 
 ---
 
@@ -10390,7 +10390,7 @@ tls: ObservabilityPipelineConfigSourcesSocketTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -10426,7 +10426,7 @@ character_delimited: ObservabilityPipelineConfigSourcesSocketFramingCharacterDel
 
 character_delimited block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
 
 ---
 
@@ -10440,7 +10440,7 @@ method: str
 
 The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`, `octet_counting`, `chunked_gelf`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
 
 ---
 
@@ -10474,7 +10474,7 @@ delimiter: str
 
 A single ASCII character used as a delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -10512,7 +10512,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -10526,7 +10526,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -10540,7 +10540,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -10578,7 +10578,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10595,7 +10595,7 @@ tls: ObservabilityPipelineConfigSourcesSplunkHecTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -10633,7 +10633,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -10647,7 +10647,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -10661,7 +10661,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -10699,7 +10699,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10716,7 +10716,7 @@ tls: ObservabilityPipelineConfigSourcesSplunkTcpTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -10754,7 +10754,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -10768,7 +10768,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -10782,7 +10782,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -10818,7 +10818,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10861,7 +10861,7 @@ The unique identifier for this component.
 
 Used to reference this component in other parts of the pipeline (e.g., as input to downstream components).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10878,7 +10878,7 @@ mode: str
 
 Protocol used by the syslog source to receive messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -10892,7 +10892,7 @@ tls: ObservabilityPipelineConfigSourcesSyslogNgTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -10930,7 +10930,7 @@ ca_file: str
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -10944,7 +10944,7 @@ crt_file: str
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -10958,7 +10958,7 @@ key_file: str
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -11230,7 +11230,7 @@ def put_destinations(
 
 amazon_opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
 
 ---
 
@@ -11240,7 +11240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 amazon_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
 
 ---
 
@@ -11250,7 +11250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 amazon_security_lake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
 
 ---
 
@@ -11260,7 +11260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 azure_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
 
 ---
 
@@ -11270,7 +11270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 crowdstrike_next_gen_siem block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
 
 ---
 
@@ -11280,7 +11280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 datadog_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
 
 ---
 
@@ -11290,7 +11290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
 
 ---
 
@@ -11300,7 +11300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 google_chronicle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#google_chronicle ObservabilityPipeline#google_chronicle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#google_chronicle ObservabilityPipeline#google_chronicle}
 
 ---
 
@@ -11310,7 +11310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 google_cloud_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
 
 ---
 
@@ -11320,7 +11320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 google_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
 
 ---
 
@@ -11330,7 +11330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 microsoft_sentinel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
 
 ---
 
@@ -11340,7 +11340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 new_relic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
 
 ---
 
@@ -11350,7 +11350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
 
 ---
 
@@ -11360,7 +11360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
 
 ---
 
@@ -11370,7 +11370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 sentinel_one block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
 
 ---
 
@@ -11380,7 +11380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -11390,7 +11390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -11400,7 +11400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -11410,7 +11410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -11445,7 +11445,7 @@ def put_processors(
 
 add_env_vars block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
 
 ---
 
@@ -11455,7 +11455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 add_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
 
 ---
 
@@ -11465,7 +11465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 custom_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
 
 ---
 
@@ -11475,7 +11475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 datadog_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
 
 ---
 
@@ -11485,7 +11485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 dedupe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
 
 ---
 
@@ -11495,7 +11495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 enrichment_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
 
 ---
 
@@ -11505,7 +11505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
 
 ---
 
@@ -11515,7 +11515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 generate_datadog_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
 
 ---
 
@@ -11525,7 +11525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ocsf_mapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
 
 ---
 
@@ -11535,7 +11535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 parse_grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
 
 ---
 
@@ -11545,7 +11545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 parse_json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
 
 ---
 
@@ -11555,7 +11555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 quota block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
 
 ---
 
@@ -11565,7 +11565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 reduce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
 
 ---
 
@@ -11575,7 +11575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 remove_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
 
 ---
 
@@ -11585,7 +11585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 rename_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
 
 ---
 
@@ -11595,7 +11595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 sample block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
 
 ---
 
@@ -11605,7 +11605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 sensitive_data_scanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
 
 ---
 
@@ -11615,7 +11615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 throttle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
 
 ---
 
@@ -11648,7 +11648,7 @@ def put_sources(
 
 amazon_data_firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
 
 ---
 
@@ -11658,7 +11658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 amazon_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
 
 ---
 
@@ -11668,7 +11668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 datadog_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
 
 ---
 
@@ -11678,7 +11678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 fluent_bit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
 
 ---
 
@@ -11688,7 +11688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 fluentd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
 
 ---
 
@@ -11698,7 +11698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 google_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
 
 ---
 
@@ -11708,7 +11708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 http_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
 
 ---
 
@@ -11718,7 +11718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 http_server block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
 
 ---
 
@@ -11728,7 +11728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
 
 ---
 
@@ -11738,7 +11738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 logstash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
 
 ---
 
@@ -11748,7 +11748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
 
 ---
 
@@ -11758,7 +11758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -11768,7 +11768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -11778,7 +11778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 splunk_tcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
 
 ---
 
@@ -11788,7 +11788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -11798,7 +11798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -12783,7 +12783,7 @@ def put_auth(
 
 The authentication strategy to use (e.g. aws or basic).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -12793,7 +12793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ARN of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -12803,7 +12803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 AWS region override (if applicable).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
 
 ---
 
@@ -12813,7 +12813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 External ID for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -12823,7 +12823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Session name for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -13770,7 +13770,7 @@ def put_auth(
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -13780,7 +13780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -13790,7 +13790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -14799,7 +14799,7 @@ def put_auth(
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -14809,7 +14809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -14819,7 +14819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -14839,7 +14839,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -14849,7 +14849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -14859,7 +14859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -16764,7 +16764,7 @@ def put_compression(
 
 Compression algorithm for log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 
 ---
 
@@ -16774,7 +16774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Compression level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
 
 ---
 
@@ -16794,7 +16794,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -16804,7 +16804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -16814,7 +16814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -19161,7 +19161,7 @@ def put_auth(
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -20607,7 +20607,7 @@ def put_auth(
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -21599,7 +21599,7 @@ def put_auth(
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -21619,7 +21619,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -21629,7 +21629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -21639,7 +21639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -25432,7 +25432,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -25442,7 +25442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -25452,7 +25452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -27040,7 +27040,7 @@ def put_character_delimited(
 
 A single ASCII character used as a delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -27577,7 +27577,7 @@ def put_framing(
 
 The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
 
 ---
 
@@ -27587,7 +27587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 character_delimited block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
 
 ---
 
@@ -27607,7 +27607,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -27617,7 +27617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -27627,7 +27627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -30433,7 +30433,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -30443,7 +30443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -30453,7 +30453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -36587,7 +36587,7 @@ def put_encoding(
 
 The `encoding` `delimiter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -36597,7 +36597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The `encoding` `includes_headers`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
 
 ---
 
@@ -36607,7 +36607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 File encoding format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
 
 ---
 
@@ -38119,7 +38119,7 @@ def put_file(
 
 encoding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -38129,7 +38129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
 
 ---
 
@@ -38139,7 +38139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -38149,7 +38149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#schema ObservabilityPipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#schema ObservabilityPipeline#schema}
 
 ---
 
@@ -38169,7 +38169,7 @@ def put_geoip(
 
 Path to the IP field in the log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 
 ---
 
@@ -38179,7 +38179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Locale used to resolve geographical names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
 
 ---
 
@@ -38189,7 +38189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the GeoIP database file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -39519,7 +39519,7 @@ def put_value(
 
 Metric value strategy: `increment_by_one` or `increment_by_field`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -39529,7 +39529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the log field containing the numeric value to increment the metric by (used only for `increment_by_field`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -46080,7 +46080,7 @@ def put_limit(
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -46090,7 +46090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -47674,7 +47674,7 @@ def put_limit(
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -47684,7 +47684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -52736,7 +52736,7 @@ def put_partial_redact(
 
 Number of characters to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
 
 ---
 
@@ -52746,7 +52746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Direction from which to keep characters: `first` or `last`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
 
 ---
 
@@ -52764,7 +52764,7 @@ def put_redact(
 
 Replacement string for redacted values (e.g., `***`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
 
 ---
 
@@ -53800,7 +53800,7 @@ def put_keyword_options(
 
 A list of keywords to match near the sensitive pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
 
 ---
 
@@ -53810,7 +53810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Maximum number of tokens between a keyword and a sensitive value match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
 
 ---
 
@@ -53830,7 +53830,7 @@ def put_on_match(
 
 hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
 
 ---
 
@@ -53840,7 +53840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 partial_redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
 
 ---
 
@@ -53850,7 +53850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
 
 ---
 
@@ -53869,7 +53869,7 @@ def put_pattern(
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
 
 ---
 
@@ -53879,7 +53879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
 
 ---
 
@@ -53899,7 +53899,7 @@ def put_scope(
 
 Scan all fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
 
 ---
 
@@ -53909,7 +53909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 exclude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
 
 ---
 
@@ -53919,7 +53919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -55018,7 +55018,7 @@ def put_custom(
 
 A regular expression used to detect sensitive values. Must be a valid regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -55037,7 +55037,7 @@ def put_library(
 
 Identifier for a predefined pattern from the sensitive data scanner pattern library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -55050,7 +55050,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether to augment the pattern with recommended keywords (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
 
 ---
 
@@ -56009,7 +56009,7 @@ def put_exclude(
 
 The fields to exclude from scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -56027,7 +56027,7 @@ def put_include(
 
 The fields to include in scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -57563,7 +57563,7 @@ def put_auth(
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -57573,7 +57573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -57583,7 +57583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -57603,7 +57603,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -57613,7 +57613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -57623,7 +57623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -58911,7 +58911,7 @@ def put_auth(
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -58921,7 +58921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -58931,7 +58931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -58951,7 +58951,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -58961,7 +58961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -58971,7 +58971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -59918,7 +59918,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -59928,7 +59928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -59938,7 +59938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -60835,7 +60835,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -60845,7 +60845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -60855,7 +60855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -61752,7 +61752,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -61762,7 +61762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -61772,7 +61772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -62964,7 +62964,7 @@ def put_auth(
 
 Path to the GCP service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -62984,7 +62984,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -62994,7 +62994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -63004,7 +63004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -63992,7 +63992,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -64002,7 +64002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -64012,7 +64012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -65015,7 +65015,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -65025,7 +65025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -65035,7 +65035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -66500,7 +66500,7 @@ def put_sasl(
 
 SASL mechanism to use (e.g., PLAIN, SCRAM-SHA-256, SCRAM-SHA-512). Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
 
 ---
 
@@ -66520,7 +66520,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -66530,7 +66530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -66540,7 +66540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -67840,7 +67840,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -67850,7 +67850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -67860,7 +67860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -69736,7 +69736,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -69746,7 +69746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -69756,7 +69756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -70793,7 +70793,7 @@ def put_character_delimited(
 
 A single ASCII character used as a delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -71336,7 +71336,7 @@ def put_framing(
 
 character_delimited block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
 
 ---
 
@@ -71346,7 +71346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`, `octet_counting`, `chunked_gelf`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
 
 ---
 
@@ -71366,7 +71366,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -71376,7 +71376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -71386,7 +71386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -72333,7 +72333,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -72343,7 +72343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -72353,7 +72353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -73250,7 +73250,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -73260,7 +73260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -73270,7 +73270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -74654,7 +74654,7 @@ def put_tls(
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -74664,7 +74664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -74674,7 +74674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog
+// https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface DataDatadogSoftwareCatalogConfig extends cdktf.TerraformMetaArg
   /**
   * Filter entities by excluding snapshotted entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
   */
   readonly filterExcludeSnapshot?: string;
   /**
   * Filter entities by UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
   */
   readonly filterId?: string;
   /**
   * Filter entities by kind.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
   */
   readonly filterKind?: string;
   /**
   * Filter entities by name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
   */
   readonly filterName?: string;
   /**
   * Filter entities by owner.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
   */
   readonly filterOwner?: string;
   /**
   * Filter entities by reference.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
   */
   readonly filterRef?: string;
   /**
   * Filter entities by relation type. Valid values are `RelationTypeOwns`, `RelationTypeOwnedBy`, `RelationTypeDependsOn`, `RelationTypeDependencyOf`, `RelationTypePartsOf`, `RelationTypeHasPart`, `RelationTypeOtherOwns`, `RelationTypeOtherOwnedBy`, `RelationTypeImplementedBy`, `RelationTypeImplements`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
   */
   readonly filterRelationType?: string;
 }
@@ -162,7 +162,7 @@ export class DataDatadogSoftwareCatalogEntitiesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog datadog_software_catalog}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog datadog_software_catalog}
 */
 export class DataDatadogSoftwareCatalog extends cdktf.TerraformDataSource {
 
@@ -178,7 +178,7 @@ export class DataDatadogSoftwareCatalog extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogSoftwareCatalog resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogSoftwareCatalog to import
-  * @param importFromId The id of the existing DataDatadogSoftwareCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogSoftwareCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogSoftwareCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -190,7 +190,7 @@ export class DataDatadogSoftwareCatalog extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.77.0/docs/data-sources/software_catalog datadog_software_catalog} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/software_catalog datadog_software_catalog} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -201,7 +201,7 @@ export class DataDatadogSoftwareCatalog extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_software_catalog',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.77.0',
+        providerVersion: '3.78.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
