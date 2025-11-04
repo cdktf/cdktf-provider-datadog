@@ -4,7 +4,7 @@
 
 ### CsmThreatsAgentRule <a name="CsmThreatsAgentRule" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the CsmThreatsAgentRule to imp
 
 The id of the existing CsmThreatsAgentRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -907,7 +907,7 @@ public CsmThreatsAgentRuleActionsHash Hash { get; set; }
 
 hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#hash CsmThreatsAgentRule#hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#hash CsmThreatsAgentRule#hash}
 
 ---
 
@@ -921,7 +921,7 @@ public CsmThreatsAgentRuleActionsSet Set { get; set; }
 
 set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#set CsmThreatsAgentRule#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#set CsmThreatsAgentRule#set}
 
 ---
 
@@ -986,7 +986,7 @@ public string Name { get; set; }
 
 The name of the set action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -1000,7 +1000,7 @@ public bool|IResolvable Append { get; set; }
 
 Whether to append to the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
 
 ---
 
@@ -1014,7 +1014,7 @@ public string DefaultValue { get; set; }
 
 The default value to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#default_value CsmThreatsAgentRule#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#default_value CsmThreatsAgentRule#default_value}
 
 ---
 
@@ -1028,7 +1028,7 @@ public string Expression { get; set; }
 
 The expression to use for the set action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -1042,7 +1042,7 @@ public string Field { get; set; }
 
 The field to get the value from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
 
 ---
 
@@ -1056,7 +1056,7 @@ public bool|IResolvable Inherited { get; set; }
 
 Whether the set action is inherited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#inherited CsmThreatsAgentRule#inherited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#inherited CsmThreatsAgentRule#inherited}
 
 ---
 
@@ -1070,7 +1070,7 @@ public string Scope { get; set; }
 
 The scope of the set action (process, container, cgroup, or empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
 
 ---
 
@@ -1084,7 +1084,7 @@ public double Size { get; set; }
 
 The maximum size of the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
 
 ---
 
@@ -1098,7 +1098,7 @@ public double Ttl { get; set; }
 
 The time to live for the set in nanoseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
 
 ---
 
@@ -1112,7 +1112,7 @@ public string Value { get; set; }
 
 The value to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
 
 ---
 
@@ -1242,7 +1242,7 @@ public string Expression { get; set; }
 
 The SECL expression of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -1256,7 +1256,7 @@ public string Name { get; set; }
 
 The name of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -1270,7 +1270,7 @@ public IResolvable|CsmThreatsAgentRuleActions[] Actions { get; set; }
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
 
 ---
 
@@ -1284,7 +1284,7 @@ public string Description { get; set; }
 
 A description for the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
 
 ---
 
@@ -1298,7 +1298,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Indicates whether the Agent rule is enabled. Must not be used without policy_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
 
 ---
 
@@ -1312,7 +1312,7 @@ public string PolicyId { get; set; }
 
 The ID of the agent policy in which the rule is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
 
 ---
 
@@ -1326,7 +1326,7 @@ public string[] ProductTags { get; set; }
 
 The list of product tags associated with the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDatadogServiceLevelObjectives <a name="DataDatadogServiceLevelObjectives" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectives"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectives.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatadogServiceLevelObj
 
 The id of the existing DataDatadogServiceLevelObjectives that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,7 +789,7 @@ new DataDatadogServiceLevelObjectivesConfig {
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.errorOnEmptyResult">ErrorOnEmptyResult</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Throw an error if no results are found. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives#id DataDatadogServiceLevelObjectives#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives#id DataDatadogServiceLevelObjectives#id}. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.ids">Ids</a></code> | <code>string[]</code> | An array of SLO IDs to limit the search. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.metricsQuery">MetricsQuery</a></code> | <code>string</code> | Filter results based on SLO numerator and denominator. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.nameQuery">NameQuery</a></code> | <code>string</code> | Filter results based on SLO names. |
@@ -878,7 +878,7 @@ public bool|IResolvable ErrorOnEmptyResult { get; set; }
 
 Throw an error if no results are found. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives#error_on_empty_result DataDatadogServiceLevelObjectives#error_on_empty_result}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives#error_on_empty_result DataDatadogServiceLevelObjectives#error_on_empty_result}
 
 ---
 
@@ -890,7 +890,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives#id DataDatadogServiceLevelObjectives#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives#id DataDatadogServiceLevelObjectives#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ public string[] Ids { get; set; }
 
 An array of SLO IDs to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives#ids DataDatadogServiceLevelObjectives#ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives#ids DataDatadogServiceLevelObjectives#ids}
 
 ---
 
@@ -921,7 +921,7 @@ public string MetricsQuery { get; set; }
 
 Filter results based on SLO numerator and denominator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives#metrics_query DataDatadogServiceLevelObjectives#metrics_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives#metrics_query DataDatadogServiceLevelObjectives#metrics_query}
 
 ---
 
@@ -935,7 +935,7 @@ public string NameQuery { get; set; }
 
 Filter results based on SLO names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives#name_query DataDatadogServiceLevelObjectives#name_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives#name_query DataDatadogServiceLevelObjectives#name_query}
 
 ---
 
@@ -949,7 +949,7 @@ public string Query { get; set; }
 
 The query string to filter results based on SLO names. Some examples of queries include service:<service-name> and <slo-name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives#query DataDatadogServiceLevelObjectives#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives#query DataDatadogServiceLevelObjectives#query}
 
 ---
 
@@ -963,7 +963,7 @@ public string TagsQuery { get; set; }
 
 Filter results based on a single SLO tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/service_level_objectives#tags_query DataDatadogServiceLevelObjectives#tags_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/service_level_objectives#tags_query DataDatadogServiceLevelObjectives#tags_query}
 
 ---
 
