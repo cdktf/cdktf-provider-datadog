@@ -4,7 +4,7 @@
 
 ### CustomAllocationRules <a name="CustomAllocationRules" id="@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.Initializer"></a>
 
@@ -108,7 +108,7 @@ The list of Custom Allocation Rule IDs, in order.
 
 Rules are executed in the order specified in this list. Comes from the `id` field on a `datadog_custom_allocation_rule` resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
 
 ---
 
@@ -581,7 +581,7 @@ The construct id used in the generated config for the CustomAllocationRules to i
 
 The id of the existing CustomAllocationRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/custom_allocation_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/custom_allocation_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -925,7 +925,7 @@ The list of Custom Allocation Rule IDs, in order.
 
 Rules are executed in the order specified in this list. Comes from the `id` field on a `datadog_custom_allocation_rule` resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
 
 ---
 

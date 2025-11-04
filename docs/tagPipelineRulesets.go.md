@@ -4,7 +4,7 @@
 
 ### TagPipelineRulesets <a name="TagPipelineRulesets" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the TagPipelineRulesets to imp
 
 The id of the existing TagPipelineRulesets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_rulesets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_rulesets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ RulesetIds *[]*string
 
 The list of Tag Pipeline Ruleset IDs, in order. Rulesets are executed in the order specified in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/tag_pipeline_rulesets#ruleset_ids TagPipelineRulesets#ruleset_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_rulesets#ruleset_ids TagPipelineRulesets#ruleset_ids}
 
 ---
 

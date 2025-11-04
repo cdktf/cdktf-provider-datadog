@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/azure_uc_config
+// https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/azure_uc_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogAzureUcConfigConfig extends cdktf.TerraformMetaArgum
   /**
   * The Datadog cloud account ID for the Azure Usage Cost configuration you want to retrieve information about.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/azure_uc_config#cloud_account_id DataDatadogAzureUcConfig#cloud_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/azure_uc_config#cloud_account_id DataDatadogAzureUcConfig#cloud_account_id}
   */
   readonly cloudAccountId: number;
 }
@@ -179,7 +179,7 @@ export class DataDatadogAzureUcConfigAmortizedBillConfigOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/azure_uc_config datadog_azure_uc_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/azure_uc_config datadog_azure_uc_config}
 */
 export class DataDatadogAzureUcConfig extends cdktf.TerraformDataSource {
 
@@ -195,7 +195,7 @@ export class DataDatadogAzureUcConfig extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogAzureUcConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogAzureUcConfig to import
-  * @param importFromId The id of the existing DataDatadogAzureUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/azure_uc_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogAzureUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/azure_uc_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogAzureUcConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -207,7 +207,7 @@ export class DataDatadogAzureUcConfig extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/azure_uc_config datadog_azure_uc_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/azure_uc_config datadog_azure_uc_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +218,7 @@ export class DataDatadogAzureUcConfig extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_azure_uc_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.78.0',
+        providerVersion: '3.79.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

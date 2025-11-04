@@ -4,7 +4,7 @@
 
 ### DataDatadogIntegrationAwsExternalId <a name="DataDatadogIntegrationAwsExternalId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer"></a>
 
@@ -108,7 +108,7 @@ The AWS account ID of the integration to retrieve the external ID from.
 
 Must be a valid 12 digits AWS account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/integration_aws_external_id#aws_account_id DataDatadogIntegrationAwsExternalId#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/integration_aws_external_id#aws_account_id DataDatadogIntegrationAwsExternalId#aws_account_id}
 
 ---
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the DataDatadogIntegrationAwsE
 
 The id of the existing DataDatadogIntegrationAwsExternalId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/integration_aws_external_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/integration_aws_external_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,7 +800,7 @@ The AWS account ID of the integration to retrieve the external ID from.
 
 Must be a valid 12 digits AWS account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/data-sources/integration_aws_external_id#aws_account_id DataDatadogIntegrationAwsExternalId#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/integration_aws_external_id#aws_account_id DataDatadogIntegrationAwsExternalId#aws_account_id}
 
 ---
 
