@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_resource_evaluation_filter
+// https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/compliance_resource_evaluation_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface ComplianceResourceEvaluationFilterConfig extends cdktf.Terrafor
   /**
   * The cloud provider of the filter's targeted resource. Only `aws`, `gcp`, or `azure` are considered valid cloud providers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_resource_evaluation_filter#cloud_provider ComplianceResourceEvaluationFilter#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/compliance_resource_evaluation_filter#cloud_provider ComplianceResourceEvaluationFilter#cloud_provider}
   */
   readonly cloudProvider: string;
   /**
@@ -24,19 +24,19 @@ export interface ComplianceResourceEvaluationFilterConfig extends cdktf.Terrafor
   *   - `gcp`: project ID
   *   - `azure`: subscription ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_resource_evaluation_filter#resource_id ComplianceResourceEvaluationFilter#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/compliance_resource_evaluation_filter#resource_id ComplianceResourceEvaluationFilter#resource_id}
   */
   readonly resourceId: string;
   /**
   * List of tags to filter misconfiguration detections. Each entry should follow the format: "key":"value".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_resource_evaluation_filter#tags ComplianceResourceEvaluationFilter#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/compliance_resource_evaluation_filter#tags ComplianceResourceEvaluationFilter#tags}
   */
   readonly tags: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter}
 */
 export class ComplianceResourceEvaluationFilter extends cdktf.TerraformResource {
 
@@ -52,7 +52,7 @@ export class ComplianceResourceEvaluationFilter extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a ComplianceResourceEvaluationFilter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComplianceResourceEvaluationFilter to import
-  * @param importFromId The id of the existing ComplianceResourceEvaluationFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_resource_evaluation_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComplianceResourceEvaluationFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/compliance_resource_evaluation_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComplianceResourceEvaluationFilter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -64,7 +64,7 @@ export class ComplianceResourceEvaluationFilter extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.78.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,7 @@ export class ComplianceResourceEvaluationFilter extends cdktf.TerraformResource 
       terraformResourceType: 'datadog_compliance_resource_evaluation_filter',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.78.0',
+        providerVersion: '3.79.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
