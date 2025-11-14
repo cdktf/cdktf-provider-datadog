@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template
+// https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface IncidentNotificationTemplateConfig extends cdktf.TerraformMetaA
   /**
   * The category of the notification template. Valid values are `alert`, `incident`, `recovery`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
   */
   readonly category: string;
   /**
   * The content body of the notification template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
   */
   readonly content: string;
   /**
   * The ID of the incident type this notification template is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
   */
   readonly incidentType: string;
   /**
   * The name of the notification template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
   */
   readonly name: string;
   /**
   * The subject line of the notification template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
   */
   readonly subject: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template datadog_incident_notification_template}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_template datadog_incident_notification_template}
 */
 export class IncidentNotificationTemplate extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class IncidentNotificationTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IncidentNotificationTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentNotificationTemplate to import
-  * @param importFromId The id of the existing IncidentNotificationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentNotificationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentNotificationTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class IncidentNotificationTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/incident_notification_template datadog_incident_notification_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/incident_notification_template datadog_incident_notification_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class IncidentNotificationTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_incident_notification_template',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.79.0',
+        providerVersion: '3.80.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

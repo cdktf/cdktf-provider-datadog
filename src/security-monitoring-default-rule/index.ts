@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface SecurityMonitoringDefaultRuleConfig extends cdktf.TerraformMeta
   /**
   * Custom Message (will override default message) for generated signals.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
   */
   readonly customMessage?: string;
   /**
   * The name (will override default name) of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
   */
   readonly customName?: string;
   /**
   * Custom tags for generated signals.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
   */
   readonly customTags?: string[];
   /**
   * Enable the rule. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,25 +46,25 @@ export interface SecurityMonitoringDefaultRuleConfig extends cdktf.TerraformMeta
   /**
   * case block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
   */
   readonly case?: SecurityMonitoringDefaultRuleCase[] | cdktf.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
   */
   readonly filter?: SecurityMonitoringDefaultRuleFilter[] | cdktf.IResolvable;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
   */
   readonly options?: SecurityMonitoringDefaultRuleOptions;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
   */
   readonly query?: SecurityMonitoringDefaultRuleQuery[] | cdktf.IResolvable;
 }
@@ -72,19 +72,19 @@ export interface SecurityMonitoringDefaultRuleCase {
   /**
   * Status of the rule case to override. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#custom_status SecurityMonitoringDefaultRule#custom_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#custom_status SecurityMonitoringDefaultRule#custom_status}
   */
   readonly customStatus?: string;
   /**
   * Notification targets for each rule case.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
   */
   readonly notifications?: string[];
   /**
   * Status of the rule case to match. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
   */
   readonly status: string;
 }
@@ -257,13 +257,13 @@ export interface SecurityMonitoringDefaultRuleFilter {
   /**
   * The type of filtering action. Allowed enum values: require, suppress Valid values are `require`, `suppress`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
   */
   readonly action: string;
   /**
   * Query for selecting logs to apply the filtering action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
   */
   readonly query: string;
 }
@@ -404,7 +404,7 @@ export interface SecurityMonitoringDefaultRuleOptions {
   /**
   * If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise. The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
   */
   readonly decreaseCriticalityBasedOnEnv?: boolean | cdktf.IResolvable;
 }
@@ -490,13 +490,13 @@ export interface SecurityMonitoringDefaultRuleQueryAgentRule {
   /**
   * **Deprecated**. It won't be applied anymore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#agent_rule_id SecurityMonitoringDefaultRule#agent_rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#agent_rule_id SecurityMonitoringDefaultRule#agent_rule_id}
   */
   readonly agentRuleId: string;
   /**
   * **Deprecated**. It won't be applied anymore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#expression SecurityMonitoringDefaultRule#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#expression SecurityMonitoringDefaultRule#expression}
   */
   readonly expression: string;
 }
@@ -637,67 +637,67 @@ export interface SecurityMonitoringDefaultRuleQuery {
   /**
   * The aggregation type. For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#aggregation SecurityMonitoringDefaultRule#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#aggregation SecurityMonitoringDefaultRule#aggregation}
   */
   readonly aggregation?: string;
   /**
   * Query extension to append to the logs query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#custom_query_extension SecurityMonitoringDefaultRule#custom_query_extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#custom_query_extension SecurityMonitoringDefaultRule#custom_query_extension}
   */
   readonly customQueryExtension?: string;
   /**
   * Source of events. Valid values are `logs`, `audit`, `app_sec_spans`, `spans`, `security_runtime`, `network`, `events`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#data_source SecurityMonitoringDefaultRule#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#data_source SecurityMonitoringDefaultRule#data_source}
   */
   readonly dataSource?: string;
   /**
   * Field for which the cardinality is measured. Sent as an array.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#distinct_fields SecurityMonitoringDefaultRule#distinct_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#distinct_fields SecurityMonitoringDefaultRule#distinct_fields}
   */
   readonly distinctFields?: string[];
   /**
   * Fields to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#group_by_fields SecurityMonitoringDefaultRule#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#group_by_fields SecurityMonitoringDefaultRule#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
   * When false, events without a group-by value are ignored by the rule. When true, events with missing group-by fields are processed with `N/A`, replacing the missing values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#has_optional_group_by_fields SecurityMonitoringDefaultRule#has_optional_group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#has_optional_group_by_fields SecurityMonitoringDefaultRule#has_optional_group_by_fields}
   */
   readonly hasOptionalGroupByFields?: boolean | cdktf.IResolvable;
   /**
   * The target field to aggregate over when using the `sum`, `max`, or `geo_data` aggregations. **Deprecated.** Configure `metrics` instead. This attribute will be removed in the next major version of the provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#metric SecurityMonitoringDefaultRule#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#metric SecurityMonitoringDefaultRule#metric}
   */
   readonly metric?: string;
   /**
   * Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`, or `new_value` aggregations. The `sum`, `max`, and `geo_data` aggregations only accept one value in this list, whereas the `new_value` aggregation accepts up to five values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#metrics SecurityMonitoringDefaultRule#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#metrics SecurityMonitoringDefaultRule#metrics}
   */
   readonly metrics?: string[];
   /**
   * Name of the query. Not compatible with `new_value` aggregations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#name SecurityMonitoringDefaultRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#name SecurityMonitoringDefaultRule#name}
   */
   readonly name?: string;
   /**
   * Query to run on logs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
   */
   readonly query?: string;
   /**
   * agent_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#agent_rule SecurityMonitoringDefaultRule#agent_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#agent_rule SecurityMonitoringDefaultRule#agent_rule}
   */
   readonly agentRule?: SecurityMonitoringDefaultRuleQueryAgentRule[] | cdktf.IResolvable;
 }
@@ -1103,7 +1103,7 @@ export class SecurityMonitoringDefaultRuleQueryList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}
 */
 export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
 
@@ -1119,7 +1119,7 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecurityMonitoringDefaultRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityMonitoringDefaultRule to import
-  * @param importFromId The id of the existing SecurityMonitoringDefaultRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityMonitoringDefaultRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityMonitoringDefaultRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1131,7 +1131,7 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1142,7 +1142,7 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_default_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.79.0',
+        providerVersion: '3.80.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

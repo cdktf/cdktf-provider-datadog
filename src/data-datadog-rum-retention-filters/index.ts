@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/rum_retention_filters
+// https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/rum_retention_filters
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogRumRetentionFiltersConfig extends cdktf.TerraformMet
   /**
   * RUM application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
   */
   readonly applicationId: string;
 }
@@ -121,7 +121,7 @@ export class DataDatadogRumRetentionFiltersRetentionFiltersList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}
 */
 export class DataDatadogRumRetentionFilters extends cdktf.TerraformDataSource {
 
@@ -137,7 +137,7 @@ export class DataDatadogRumRetentionFilters extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogRumRetentionFilters resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogRumRetentionFilters to import
-  * @param importFromId The id of the existing DataDatadogRumRetentionFilters that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/rum_retention_filters#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogRumRetentionFilters that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/rum_retention_filters#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogRumRetentionFilters to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -149,7 +149,7 @@ export class DataDatadogRumRetentionFilters extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -160,7 +160,7 @@ export class DataDatadogRumRetentionFilters extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_rum_retention_filters',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.79.0',
+        providerVersion: '3.80.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

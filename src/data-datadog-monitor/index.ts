@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/monitor
+// https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatadogMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/monitor#id DataDatadogMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/monitor#id DataDatadogMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataDatadogMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/monitor#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/monitor#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
   */
   readonly monitorTagsFilter?: string[];
   /**
   * A monitor name to limit the search.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/monitor#name_filter DataDatadogMonitor#name_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/monitor#name_filter DataDatadogMonitor#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * A list of tags to limit the search. This filters on the monitor scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/monitor#tags_filter DataDatadogMonitor#tags_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/monitor#tags_filter DataDatadogMonitor#tags_filter}
   */
   readonly tagsFilter?: string[];
 }
@@ -548,7 +548,7 @@ export class DataDatadogMonitorSchedulingOptionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/monitor datadog_monitor}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/monitor datadog_monitor}
 */
 export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
@@ -564,7 +564,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogMonitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogMonitor to import
-  * @param importFromId The id of the existing DataDatadogMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -576,7 +576,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/monitor datadog_monitor} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/monitor datadog_monitor} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -587,7 +587,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.79.0',
+        providerVersion: '3.80.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
