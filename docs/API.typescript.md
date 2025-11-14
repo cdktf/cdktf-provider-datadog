@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [actionConnection](./actionConnection.typescript.md)
 - [agentlessScanningAwsScanOptions](./agentlessScanningAwsScanOptions.typescript.md)
+- [agentlessScanningGcpScanOptions](./agentlessScanningGcpScanOptions.typescript.md)
 - [apiKey](./apiKey.typescript.md)
 - [apmRetentionFilter](./apmRetentionFilter.typescript.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.typescript.md)

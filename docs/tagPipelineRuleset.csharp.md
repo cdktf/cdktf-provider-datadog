@@ -4,7 +4,7 @@
 
 ### TagPipelineRuleset <a name="TagPipelineRuleset" id="@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRuleset.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the TagPipelineRuleset to impo
 
 The id of the existing TagPipelineRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ public string Name { get; set; }
 
 The name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
 
 ---
 
@@ -920,7 +920,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether the ruleset is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
 
 ---
 
@@ -934,7 +934,7 @@ public IResolvable|TagPipelineRulesetRules[] Rules { get; set; }
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#rules TagPipelineRuleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#rules TagPipelineRuleset#rules}
 
 ---
 
@@ -976,7 +976,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether the rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
 
 ---
 
@@ -990,7 +990,7 @@ public string Name { get; set; }
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
 
 ---
 
@@ -1004,7 +1004,7 @@ public TagPipelineRulesetRulesMapping Mapping { get; set; }
 
 mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#mapping TagPipelineRuleset#mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#mapping TagPipelineRuleset#mapping}
 
 ---
 
@@ -1018,7 +1018,7 @@ public TagPipelineRulesetRulesQuery Query { get; set; }
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
 
 ---
 
@@ -1032,7 +1032,7 @@ public TagPipelineRulesetRulesReferenceTable ReferenceTable { get; set; }
 
 reference_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#reference_table TagPipelineRuleset#reference_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#reference_table TagPipelineRuleset#reference_table}
 
 ---
 
@@ -1070,7 +1070,7 @@ public string DestinationKey { get; set; }
 
 The destination key for the mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#destination_key TagPipelineRuleset#destination_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#destination_key TagPipelineRuleset#destination_key}
 
 ---
 
@@ -1084,7 +1084,7 @@ public bool|IResolvable IfNotExists { get; set; }
 
 Whether to apply the mapping only if the destination key doesn't exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
 
 ---
 
@@ -1098,7 +1098,7 @@ public string[] SourceKeys { get; set; }
 
 The source keys for the mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
 
 ---
 
@@ -1138,7 +1138,7 @@ public TagPipelineRulesetRulesQueryAddition Addition { get; set; }
 
 addition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#addition TagPipelineRuleset#addition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#addition TagPipelineRuleset#addition}
 
 ---
 
@@ -1152,7 +1152,7 @@ public bool|IResolvable CaseInsensitivity { get; set; }
 
 Whether the query matching is case insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
 
 ---
 
@@ -1166,7 +1166,7 @@ public bool|IResolvable IfNotExists { get; set; }
 
 Whether to apply the query only if the key doesn't exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
 
 ---
 
@@ -1180,7 +1180,7 @@ public string Query { get; set; }
 
 The query string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
 
 ---
 
@@ -1216,7 +1216,7 @@ public string Key { get; set; }
 
 The key to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#key TagPipelineRuleset#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#key TagPipelineRuleset#key}
 
 ---
 
@@ -1230,7 +1230,7 @@ public string Value { get; set; }
 
 The value to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#value TagPipelineRuleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#value TagPipelineRuleset#value}
 
 ---
 
@@ -1272,7 +1272,7 @@ public bool|IResolvable CaseInsensitivity { get; set; }
 
 Whether the reference table lookup is case insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
 
 ---
 
@@ -1286,7 +1286,7 @@ public IResolvable|TagPipelineRulesetRulesReferenceTableFieldPairs[] FieldPairs 
 
 field_pairs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#field_pairs TagPipelineRuleset#field_pairs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#field_pairs TagPipelineRuleset#field_pairs}
 
 ---
 
@@ -1300,7 +1300,7 @@ public bool|IResolvable IfNotExists { get; set; }
 
 Whether to apply the reference table only if the key doesn't exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
 
 ---
 
@@ -1314,7 +1314,7 @@ public string[] SourceKeys { get; set; }
 
 The source keys for the reference table lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
 
 ---
 
@@ -1328,7 +1328,7 @@ public string TableName { get; set; }
 
 The name of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#table_name TagPipelineRuleset#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#table_name TagPipelineRuleset#table_name}
 
 ---
 
@@ -1364,7 +1364,7 @@ public string InputColumn { get; set; }
 
 The input column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#input_column TagPipelineRuleset#input_column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#input_column TagPipelineRuleset#input_column}
 
 ---
 
@@ -1378,7 +1378,7 @@ public string OutputKey { get; set; }
 
 The output key name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/tag_pipeline_ruleset#output_key TagPipelineRuleset#output_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_ruleset#output_key TagPipelineRuleset#output_key}
 
 ---
 

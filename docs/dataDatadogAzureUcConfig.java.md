@@ -4,7 +4,7 @@
 
 ### DataDatadogAzureUcConfig <a name="DataDatadogAzureUcConfig" id="@cdktf/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/azure_uc_config datadog_azure_uc_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/azure_uc_config datadog_azure_uc_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfig.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The Datadog cloud account ID for the Azure Usage Cost configuration you want to retrieve information about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/azure_uc_config#cloud_account_id DataDatadogAzureUcConfig#cloud_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/azure_uc_config#cloud_account_id DataDatadogAzureUcConfig#cloud_account_id}
 
 ---
 
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataDatadogAzureUcConfig t
 
 The id of the existing DataDatadogAzureUcConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/azure_uc_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/azure_uc_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -881,7 +881,7 @@ public java.lang.Number getCloudAccountId();
 
 The Datadog cloud account ID for the Azure Usage Cost configuration you want to retrieve information about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/azure_uc_config#cloud_account_id DataDatadogAzureUcConfig#cloud_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/azure_uc_config#cloud_account_id DataDatadogAzureUcConfig#cloud_account_id}
 
 ---
 

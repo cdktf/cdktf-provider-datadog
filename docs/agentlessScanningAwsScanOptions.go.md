@@ -4,7 +4,7 @@
 
 ### AgentlessScanningAwsScanOptions <a name="AgentlessScanningAwsScanOptions" id="@cdktf/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the AgentlessScanningAwsScanOp
 
 The id of the existing AgentlessScanningAwsScanOptions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/agentless_scanning_aws_scan_options#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/agentless_scanning_aws_scan_options#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -905,7 +905,7 @@ AwsAccountId *string
 
 The AWS account ID for which agentless scanning is configured. Must be a valid AWS account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/agentless_scanning_aws_scan_options#aws_account_id AgentlessScanningAwsScanOptions#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/agentless_scanning_aws_scan_options#aws_account_id AgentlessScanningAwsScanOptions#aws_account_id}
 
 ---
 
@@ -919,7 +919,7 @@ Lambda interface{}
 
 Indicates if scanning of Lambda functions is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/agentless_scanning_aws_scan_options#lambda AgentlessScanningAwsScanOptions#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/agentless_scanning_aws_scan_options#lambda AgentlessScanningAwsScanOptions#lambda}
 
 ---
 
@@ -933,7 +933,7 @@ SensitiveData interface{}
 
 Indicates if scanning for sensitive data is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/agentless_scanning_aws_scan_options#sensitive_data AgentlessScanningAwsScanOptions#sensitive_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/agentless_scanning_aws_scan_options#sensitive_data AgentlessScanningAwsScanOptions#sensitive_data}
 
 ---
 
@@ -947,7 +947,7 @@ VulnContainersOs interface{}
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/agentless_scanning_aws_scan_options#vuln_containers_os AgentlessScanningAwsScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/agentless_scanning_aws_scan_options#vuln_containers_os AgentlessScanningAwsScanOptions#vuln_containers_os}
 
 ---
 
@@ -961,7 +961,7 @@ VulnHostOs interface{}
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/agentless_scanning_aws_scan_options#vuln_host_os AgentlessScanningAwsScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/agentless_scanning_aws_scan_options#vuln_host_os AgentlessScanningAwsScanOptions#vuln_host_os}
 
 ---
 

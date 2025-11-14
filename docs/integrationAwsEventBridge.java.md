@@ -4,7 +4,7 @@
 
 ### IntegrationAwsEventBridge <a name="IntegrationAwsEventBridge" id="@cdktf/provider-datadog.integrationAwsEventBridge.IntegrationAwsEventBridge"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge datadog_integration_aws_event_bridge}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsEventBridge.IntegrationAwsEventBridge.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Your AWS Account ID without dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge#account_id IntegrationAwsEventBridge#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge#account_id IntegrationAwsEventBridge#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The given part of the event source name, which is then combined with an assigned suffix to form the full name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge#event_generator_name IntegrationAwsEventBridge#event_generator_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge#event_generator_name IntegrationAwsEventBridge#event_generator_name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The event source's [AWS region](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge#region IntegrationAwsEventBridge#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge#region IntegrationAwsEventBridge#region}
 
 ---
 
@@ -142,7 +142,7 @@ True if Datadog should create the event bus in addition to the event source.
 
 Requires the `events:CreateEventBus` permission. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge#create_event_bus IntegrationAwsEventBridge#create_event_bus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge#create_event_bus IntegrationAwsEventBridge#create_event_bus}
 
 ---
 
@@ -576,7 +576,7 @@ The construct id used in the generated config for the IntegrationAwsEventBridge 
 
 The id of the existing IntegrationAwsEventBridge that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -990,7 +990,7 @@ public java.lang.String getAccountId();
 
 Your AWS Account ID without dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge#account_id IntegrationAwsEventBridge#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge#account_id IntegrationAwsEventBridge#account_id}
 
 ---
 
@@ -1004,7 +1004,7 @@ public java.lang.String getEventGeneratorName();
 
 The given part of the event source name, which is then combined with an assigned suffix to form the full name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge#event_generator_name IntegrationAwsEventBridge#event_generator_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge#event_generator_name IntegrationAwsEventBridge#event_generator_name}
 
 ---
 
@@ -1018,7 +1018,7 @@ public java.lang.String getRegion();
 
 The event source's [AWS region](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge#region IntegrationAwsEventBridge#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge#region IntegrationAwsEventBridge#region}
 
 ---
 
@@ -1034,7 +1034,7 @@ True if Datadog should create the event bus in addition to the event source.
 
 Requires the `events:CreateEventBus` permission. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_aws_event_bridge#create_event_bus IntegrationAwsEventBridge#create_event_bus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_aws_event_bridge#create_event_bus IntegrationAwsEventBridge#create_event_bus}
 
 ---
 
