@@ -4,7 +4,7 @@
 
 ### DataDatadogGcpUcConfig <a name="DataDatadogGcpUcConfig" id="@cdktf/provider-datadog.dataDatadogGcpUcConfig.DataDatadogGcpUcConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogGcpUcConfig.DataDatadogGcpUcConfig.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatadogGcpUcConfig to 
 
 The id of the existing DataDatadogGcpUcConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ public double CloudAccountId { get; set; }
 
 The Datadog cloud account ID for the GCP Usage Cost configuration you want to retrieve information about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/data-sources/gcp_uc_config#cloud_account_id DataDatadogGcpUcConfig#cloud_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/gcp_uc_config#cloud_account_id DataDatadogGcpUcConfig#cloud_account_id}
 
 ---
 

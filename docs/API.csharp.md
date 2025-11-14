@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [actionConnection](./actionConnection.csharp.md)
 - [agentlessScanningAwsScanOptions](./agentlessScanningAwsScanOptions.csharp.md)
+- [agentlessScanningGcpScanOptions](./agentlessScanningGcpScanOptions.csharp.md)
 - [apiKey](./apiKey.csharp.md)
 - [apmRetentionFilter](./apmRetentionFilter.csharp.md)
 - [apmRetentionFilterOrder](./apmRetentionFilterOrder.csharp.md)

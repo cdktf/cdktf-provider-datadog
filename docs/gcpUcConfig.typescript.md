@@ -4,7 +4,7 @@
 
 ### GcpUcConfig <a name="GcpUcConfig" id="@cdktf/provider-datadog.gcpUcConfig.GcpUcConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.gcpUcConfig.GcpUcConfig.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the GcpUcConfig to import.
 
 The id of the existing GcpUcConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -999,7 +999,7 @@ public readonly billingAccountId: string;
 
 The Google Cloud account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/gcp_uc_config#billing_account_id GcpUcConfig#billing_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/gcp_uc_config#billing_account_id GcpUcConfig#billing_account_id}
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly bucketName: string;
 
 The Google Cloud bucket name used to store the Usage Cost export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/gcp_uc_config#bucket_name GcpUcConfig#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/gcp_uc_config#bucket_name GcpUcConfig#bucket_name}
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly exportDatasetName: string;
 
 The export dataset name used for the Google Cloud Usage Cost report.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/gcp_uc_config#export_dataset_name GcpUcConfig#export_dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/gcp_uc_config#export_dataset_name GcpUcConfig#export_dataset_name}
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly exportProjectName: string;
 
 The name of the Google Cloud Usage Cost report.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/gcp_uc_config#export_project_name GcpUcConfig#export_project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/gcp_uc_config#export_project_name GcpUcConfig#export_project_name}
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly serviceAccount: string;
 
 The unique Google Cloud service account email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/gcp_uc_config#service_account GcpUcConfig#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/gcp_uc_config#service_account GcpUcConfig#service_account}
 
 ---
 
@@ -1069,7 +1069,7 @@ public readonly exportPrefix: string;
 
 The export prefix used for the Google Cloud Usage Cost report.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/gcp_uc_config#export_prefix GcpUcConfig#export_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/gcp_uc_config#export_prefix GcpUcConfig#export_prefix}
 
 ---
 

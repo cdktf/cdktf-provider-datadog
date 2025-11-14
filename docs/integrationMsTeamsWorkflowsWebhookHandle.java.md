@@ -4,7 +4,7 @@
 
 ### IntegrationMsTeamsWorkflowsWebhookHandle <a name="IntegrationMsTeamsWorkflowsWebhookHandle" id="@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Your Microsoft Workflows webhook handle name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your Microsoft Workflows webhook URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
 
 ---
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the IntegrationMsTeamsWorkflow
 
 The id of the existing IntegrationMsTeamsWorkflowsWebhookHandle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_ms_teams_workflows_webhook_handle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_ms_teams_workflows_webhook_handle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -909,7 +909,7 @@ public java.lang.String getName();
 
 Your Microsoft Workflows webhook handle name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
 
 ---
 
@@ -923,7 +923,7 @@ public java.lang.String getUrl();
 
 Your Microsoft Workflows webhook URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.79.0/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
 
 ---
 
