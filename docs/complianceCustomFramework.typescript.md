@@ -4,7 +4,7 @@
 
 ### ComplianceCustomFramework <a name="ComplianceCustomFramework" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFramework.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ComplianceCustomFramework 
 
 The id of the existing ComplianceCustomFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,7 +919,7 @@ public readonly handle: string;
 
 The framework handle. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
 
 ---
 
@@ -933,7 +933,7 @@ public readonly name: string;
 
 The framework name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -947,7 +947,7 @@ public readonly version: string;
 
 The framework version. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
 
 ---
 
@@ -961,7 +961,7 @@ public readonly iconUrl: string;
 
 The URL of the icon representing the framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
 
 ---
 
@@ -975,7 +975,7 @@ public readonly requirements: IResolvable | ComplianceCustomFrameworkRequirement
 
 requirements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly name: string;
 
 The name of the requirement. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly controls: IResolvable | ComplianceCustomFrameworkRequirementsCon
 
 controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly name: string;
 
 The name of the control. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -1069,7 +1069,7 @@ public readonly rulesId: string[];
 
 The set of rules IDs for the control.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
 
 ---
 

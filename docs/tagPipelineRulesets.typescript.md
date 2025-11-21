@@ -4,7 +4,7 @@
 
 ### TagPipelineRulesets <a name="TagPipelineRulesets" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.resetOverrideUiDefinedResources">resetOverrideUiDefinedResources</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetOverrideUiDefinedResources` <a name="resetOverrideUiDefinedResources" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.resetOverrideUiDefinedResources"></a>
+
+```typescript
+public resetOverrideUiDefinedResources(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +474,7 @@ The construct id used in the generated config for the TagPipelineRulesets to imp
 
 The id of the existing TagPipelineRulesets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_rulesets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/tag_pipeline_rulesets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -498,7 +505,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.overrideUiDefinedResourcesInput">overrideUiDefinedResourcesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.rulesetIdsInput">rulesetIdsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.overrideUiDefinedResources">overrideUiDefinedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.rulesetIds">rulesetIds</a></code> | <code>string[]</code> | *No description.* |
 
 ---
@@ -655,6 +664,16 @@ public readonly id: string;
 
 ---
 
+##### `overrideUiDefinedResourcesInput`<sup>Optional</sup> <a name="overrideUiDefinedResourcesInput" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.overrideUiDefinedResourcesInput"></a>
+
+```typescript
+public readonly overrideUiDefinedResourcesInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `rulesetIdsInput`<sup>Optional</sup> <a name="rulesetIdsInput" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.rulesetIdsInput"></a>
 
 ```typescript
@@ -662,6 +681,16 @@ public readonly rulesetIdsInput: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `overrideUiDefinedResources`<sup>Required</sup> <a name="overrideUiDefinedResources" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.property.overrideUiDefinedResources"></a>
+
+```typescript
+public readonly overrideUiDefinedResources: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -717,6 +746,7 @@ const tagPipelineRulesetsConfig: tagPipelineRulesets.TagPipelineRulesetsConfig =
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesetsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesetsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesetsConfig.property.rulesetIds">rulesetIds</a></code> | <code>string[]</code> | The list of Tag Pipeline Ruleset IDs, in order. Rulesets are executed in the order specified in this list. |
+| <code><a href="#@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesetsConfig.property.overrideUiDefinedResources">overrideUiDefinedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to override UI-defined rulesets. |
 
 ---
 
@@ -800,7 +830,23 @@ public readonly rulesetIds: string[];
 
 The list of Tag Pipeline Ruleset IDs, in order. Rulesets are executed in the order specified in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/tag_pipeline_rulesets#ruleset_ids TagPipelineRulesets#ruleset_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/tag_pipeline_rulesets#ruleset_ids TagPipelineRulesets#ruleset_ids}
+
+---
+
+##### `overrideUiDefinedResources`<sup>Optional</sup> <a name="overrideUiDefinedResources" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesetsConfig.property.overrideUiDefinedResources"></a>
+
+```typescript
+public readonly overrideUiDefinedResources: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether to override UI-defined rulesets.
+
+When set to true, any rulesets created via the UI that are not defined in Terraform will be deleted and Terraform will be used as the source of truth for rules and their ordering. When set to false, any rulesets created via the UI that are at the end of order will be kept but will be warned, otherwise an error will be thrown in terraform plan phase. Default is false
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/tag_pipeline_rulesets#override_ui_defined_resources TagPipelineRulesets#override_ui_defined_resources}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDatadogIncidentNotificationTemplate <a name="DataDatadogIncidentNotificationTemplate" id="@cdktf/provider-datadog.dataDatadogIncidentNotificationTemplate.DataDatadogIncidentNotificationTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/incident_notification_template datadog_incident_notification_template}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/incident_notification_template datadog_incident_notification_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIncidentNotificationTemplate.DataDatadogIncidentNotificationTemplate.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataDatadogIncidentNotific
 
 The id of the existing DataDatadogIncidentNotificationTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/incident_notification_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/incident_notification_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -768,7 +768,7 @@ public readonly id: string;
 
 The ID of the incident notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/incident_notification_template#id DataDatadogIncidentNotificationTemplate#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/incident_notification_template#id DataDatadogIncidentNotificationTemplate#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -785,7 +785,7 @@ public readonly name: string;
 
 The name of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/incident_notification_template#name DataDatadogIncidentNotificationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/incident_notification_template#name DataDatadogIncidentNotificationTemplate#name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDatadogSecurityMonitoringSuppressions <a name="DataDatadogSecurityMonitoringSuppressions" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressions.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatadogSecurityMonitor
 
 The id of the existing DataDatadogSecurityMonitoringSuppressions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/security_monitoring_suppressions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/security_monitoring_suppressions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1064,6 +1064,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.ruleQuery">ruleQuery</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.startDate">startDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.suppressionQuery">suppressionQuery</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressions">DataDatadogSecurityMonitoringSuppressionsSuppressions</a></code> | *No description.* |
 
 ---
@@ -1179,6 +1180,16 @@ public readonly suppressionQuery: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringSuppressions.DataDatadogSecurityMonitoringSuppressionsSuppressionsOutputReference.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* string[]
 
 ---
 

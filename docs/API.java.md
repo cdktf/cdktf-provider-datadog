@@ -66,6 +66,7 @@ The following submodules are available:
 - [dataDatadogMetricActiveTagsAndAggregations](./dataDatadogMetricActiveTagsAndAggregations.java.md)
 - [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.java.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.java.md)
+- [dataDatadogMetrics](./dataDatadogMetrics.java.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.java.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.java.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.java.md)

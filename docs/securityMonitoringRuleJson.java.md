@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringRuleJson <a name="SecurityMonitoringRuleJson" id="@cdktf/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The JSON definition of the Security Monitoring Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
 
 ---
 
@@ -531,7 +531,7 @@ The construct id used in the generated config for the SecurityMonitoringRuleJson
 
 The id of the existing SecurityMonitoringRuleJson that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_rule_json#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/security_monitoring_rule_json#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -873,7 +873,7 @@ public java.lang.String getJson();
 
 The JSON definition of the Security Monitoring Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
 
 ---
 

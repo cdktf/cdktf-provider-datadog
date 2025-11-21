@@ -66,6 +66,7 @@ The following submodules are available:
 - [dataDatadogMetricActiveTagsAndAggregations](./dataDatadogMetricActiveTagsAndAggregations.typescript.md)
 - [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.typescript.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.typescript.md)
+- [dataDatadogMetrics](./dataDatadogMetrics.typescript.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.typescript.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.typescript.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.typescript.md)

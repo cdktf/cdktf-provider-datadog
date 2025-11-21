@@ -66,6 +66,7 @@ The following submodules are available:
 - [dataDatadogMetricActiveTagsAndAggregations](./dataDatadogMetricActiveTagsAndAggregations.python.md)
 - [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.python.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.python.md)
+- [dataDatadogMetrics](./dataDatadogMetrics.python.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.python.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.python.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.python.md)

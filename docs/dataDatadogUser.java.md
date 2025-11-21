@@ -4,7 +4,7 @@
 
 ### DataDatadogUser <a name="DataDatadogUser" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer"></a>
 
@@ -21,6 +21,7 @@ DataDatadogUser.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .filter(java.lang.String)
 //  .exactMatch(java.lang.Boolean|IResolvable)
+//  .excludeServiceAccounts(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
     .build();
 ```
@@ -38,7 +39,8 @@ DataDatadogUser.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.filter">filter</a></code> | <code>java.lang.String</code> | Filter all users by the given string. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.exactMatch">exactMatch</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#id DataDatadogUser#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.excludeServiceAccounts">excludeServiceAccounts</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When true, service accounts are excluded from the result. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#id DataDatadogUser#id}. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#filter DataDatadogUser#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#filter DataDatadogUser#filter}
 
 ---
 
@@ -118,7 +120,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+
+---
+
+##### `excludeServiceAccounts`<sup>Optional</sup> <a name="excludeServiceAccounts" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.excludeServiceAccounts"></a>
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
+
+When true, service accounts are excluded from the result. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exclude_service_accounts DataDatadogUser#exclude_service_accounts}
 
 ---
 
@@ -126,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#id DataDatadogUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#id DataDatadogUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,6 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetExactMatch">resetExactMatch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetExcludeServiceAccounts">resetExcludeServiceAccounts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetId">resetId</a></code> | *No description.* |
 
 ---
@@ -357,6 +370,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 public void resetExactMatch()
 ```
 
+##### `resetExcludeServiceAccounts` <a name="resetExcludeServiceAccounts" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetExcludeServiceAccounts"></a>
+
+```java
+public void resetExcludeServiceAccounts()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetId"></a>
 
 ```java
@@ -466,7 +485,7 @@ The construct id used in the generated config for the DataDatadogUser to import.
 
 The id of the existing DataDatadogUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,9 +526,11 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.verified">verified</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.exactMatchInput">exactMatchInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.excludeServiceAccountsInput">excludeServiceAccountsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.filterInput">filterInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.exactMatch">exactMatch</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.excludeServiceAccounts">excludeServiceAccounts</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.filter">filter</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -767,6 +788,16 @@ public java.lang.Boolean|IResolvable getExactMatchInput();
 
 ---
 
+##### `excludeServiceAccountsInput`<sup>Optional</sup> <a name="excludeServiceAccountsInput" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.excludeServiceAccountsInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getExcludeServiceAccountsInput();
+```
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.filterInput"></a>
 
 ```java
@@ -791,6 +822,16 @@ public java.lang.String getIdInput();
 
 ```java
 public java.lang.Boolean|IResolvable getExactMatch();
+```
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `excludeServiceAccounts`<sup>Required</sup> <a name="excludeServiceAccounts" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.excludeServiceAccounts"></a>
+
+```java
+public java.lang.Boolean|IResolvable getExcludeServiceAccounts();
 ```
 
 - *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
@@ -854,6 +895,7 @@ DataDatadogUserConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .filter(java.lang.String)
 //  .exactMatch(java.lang.Boolean|IResolvable)
+//  .excludeServiceAccounts(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
     .build();
 ```
@@ -871,7 +913,8 @@ DataDatadogUserConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.filter">filter</a></code> | <code>java.lang.String</code> | Filter all users by the given string. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.exactMatch">exactMatch</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#id DataDatadogUser#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.excludeServiceAccounts">excludeServiceAccounts</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When true, service accounts are excluded from the result. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#id DataDatadogUser#id}. |
 
 ---
 
@@ -955,7 +998,7 @@ public java.lang.String getFilter();
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#filter DataDatadogUser#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#filter DataDatadogUser#filter}
 
 ---
 
@@ -969,7 +1012,21 @@ public java.lang.Boolean|IResolvable getExactMatch();
 
 When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+
+---
+
+##### `excludeServiceAccounts`<sup>Optional</sup> <a name="excludeServiceAccounts" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.excludeServiceAccounts"></a>
+
+```java
+public java.lang.Boolean|IResolvable getExcludeServiceAccounts();
+```
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
+
+When true, service accounts are excluded from the result. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exclude_service_accounts DataDatadogUser#exclude_service_accounts}
 
 ---
 
@@ -981,7 +1038,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#id DataDatadogUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#id DataDatadogUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

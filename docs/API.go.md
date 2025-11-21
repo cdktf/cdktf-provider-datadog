@@ -66,6 +66,7 @@ The following submodules are available:
 - [dataDatadogMetricActiveTagsAndAggregations](./dataDatadogMetricActiveTagsAndAggregations.go.md)
 - [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.go.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.go.md)
+- [dataDatadogMetrics](./dataDatadogMetrics.go.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.go.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.go.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.go.md)
