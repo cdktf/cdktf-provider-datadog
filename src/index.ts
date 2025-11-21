@@ -156,6 +156,7 @@ export * as dataDatadogLogsPipelinesOrder from './data-datadog-logs-pipelines-or
 export * as dataDatadogMetricActiveTagsAndAggregations from './data-datadog-metric-active-tags-and-aggregations';
 export * as dataDatadogMetricMetadata from './data-datadog-metric-metadata';
 export * as dataDatadogMetricTags from './data-datadog-metric-tags';
+export * as dataDatadogMetrics from './data-datadog-metrics';
 export * as dataDatadogMonitor from './data-datadog-monitor';
 export * as dataDatadogMonitorConfigPolicies from './data-datadog-monitor-config-policies';
 export * as dataDatadogMonitors from './data-datadog-monitors';

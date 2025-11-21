@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user
+// https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,23 @@ export interface DataDatadogUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
   */
   readonly exactMatch?: boolean | cdktf.IResolvable;
   /**
+  * When true, service accounts are excluded from the result. Defaults to `false`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exclude_service_accounts DataDatadogUser#exclude_service_accounts}
+  */
+  readonly excludeServiceAccounts?: boolean | cdktf.IResolvable;
+  /**
   * Filter all users by the given string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#filter DataDatadogUser#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#filter DataDatadogUser#filter}
   */
   readonly filter: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#id DataDatadogUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#id DataDatadogUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +40,7 @@ export interface DataDatadogUserConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user datadog_user}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user datadog_user}
 */
 export class DataDatadogUser extends cdktf.TerraformDataSource {
 
@@ -50,7 +56,7 @@ export class DataDatadogUser extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogUser to import
-  * @param importFromId The id of the existing DataDatadogUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +68,7 @@ export class DataDatadogUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user datadog_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user datadog_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +79,7 @@ export class DataDatadogUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_user',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.80.0',
+        providerVersion: '3.81.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -85,6 +91,7 @@ export class DataDatadogUser extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._exactMatch = config.exactMatch;
+    this._excludeServiceAccounts = config.excludeServiceAccounts;
     this._filter = config.filter;
     this._id = config.id;
   }
@@ -122,6 +129,22 @@ export class DataDatadogUser extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get exactMatchInput() {
     return this._exactMatch;
+  }
+
+  // exclude_service_accounts - computed: false, optional: true, required: false
+  private _excludeServiceAccounts?: boolean | cdktf.IResolvable; 
+  public get excludeServiceAccounts() {
+    return this.getBooleanAttribute('exclude_service_accounts');
+  }
+  public set excludeServiceAccounts(value: boolean | cdktf.IResolvable) {
+    this._excludeServiceAccounts = value;
+  }
+  public resetExcludeServiceAccounts() {
+    this._excludeServiceAccounts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeServiceAccountsInput() {
+    return this._excludeServiceAccounts;
   }
 
   // filter - computed: false, optional: false, required: true
@@ -205,6 +228,7 @@ export class DataDatadogUser extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       exact_match: cdktf.booleanToTerraform(this._exactMatch),
+      exclude_service_accounts: cdktf.booleanToTerraform(this._excludeServiceAccounts),
       filter: cdktf.stringToTerraform(this._filter),
       id: cdktf.stringToTerraform(this._id),
     };
@@ -214,6 +238,12 @@ export class DataDatadogUser extends cdktf.TerraformDataSource {
     const attrs = {
       exact_match: {
         value: cdktf.booleanToHclTerraform(this._exactMatch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      exclude_service_accounts: {
+        value: cdktf.booleanToHclTerraform(this._excludeServiceAccounts),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

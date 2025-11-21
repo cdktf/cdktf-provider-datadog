@@ -156,6 +156,7 @@ Object.defineProperty(exports, 'dataDatadogLogsPipelinesOrder', { get: function 
 Object.defineProperty(exports, 'dataDatadogMetricActiveTagsAndAggregations', { get: function () { return require('./data-datadog-metric-active-tags-and-aggregations'); } });
 Object.defineProperty(exports, 'dataDatadogMetricMetadata', { get: function () { return require('./data-datadog-metric-metadata'); } });
 Object.defineProperty(exports, 'dataDatadogMetricTags', { get: function () { return require('./data-datadog-metric-tags'); } });
+Object.defineProperty(exports, 'dataDatadogMetrics', { get: function () { return require('./data-datadog-metrics'); } });
 Object.defineProperty(exports, 'dataDatadogMonitor', { get: function () { return require('./data-datadog-monitor'); } });
 Object.defineProperty(exports, 'dataDatadogMonitorConfigPolicies', { get: function () { return require('./data-datadog-monitor-config-policies'); } });
 Object.defineProperty(exports, 'dataDatadogMonitors', { get: function () { return require('./data-datadog-monitors'); } });
