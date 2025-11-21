@@ -66,6 +66,7 @@ The following submodules are available:
 - [dataDatadogMetricActiveTagsAndAggregations](./dataDatadogMetricActiveTagsAndAggregations.csharp.md)
 - [dataDatadogMetricMetadata](./dataDatadogMetricMetadata.csharp.md)
 - [dataDatadogMetricTags](./dataDatadogMetricTags.csharp.md)
+- [dataDatadogMetrics](./dataDatadogMetrics.csharp.md)
 - [dataDatadogMonitor](./dataDatadogMonitor.csharp.md)
 - [dataDatadogMonitorConfigPolicies](./dataDatadogMonitorConfigPolicies.csharp.md)
 - [dataDatadogMonitors](./dataDatadogMonitors.csharp.md)

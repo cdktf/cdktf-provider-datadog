@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/webhook_custom_variable
+// https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/webhook_custom_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface WebhookCustomVariableConfig extends cdktf.TerraformMetaArgument
   /**
   * Whether the custom variable is secret or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
   */
   readonly isSecret: boolean | cdktf.IResolvable;
   /**
   * The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
   */
   readonly name: string;
   /**
   * The value of the custom variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}
 */
 export class WebhookCustomVariable extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WebhookCustomVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebhookCustomVariable to import
-  * @param importFromId The id of the existing WebhookCustomVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WebhookCustomVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebhookCustomVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_webhook_custom_variable',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.80.0',
+        providerVersion: '3.81.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

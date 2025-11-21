@@ -4,7 +4,7 @@
 
 ### CsmThreatsPolicy <a name="CsmThreatsPolicy" id="@cdktf/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/csm_threats_policy datadog_csm_threats_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/csm_threats_policy datadog_csm_threats_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the CsmThreatsPolicy to import
 
 The id of the existing CsmThreatsPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/csm_threats_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/csm_threats_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -920,7 +920,7 @@ public readonly name: string;
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/csm_threats_policy#name CsmThreatsPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/csm_threats_policy#name CsmThreatsPolicy#name}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly description: string;
 
 A description for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/csm_threats_policy#description CsmThreatsPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/csm_threats_policy#description CsmThreatsPolicy#description}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly enabled: boolean | IResolvable;
 
 Indicates whether the policy is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/csm_threats_policy#enabled CsmThreatsPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/csm_threats_policy#enabled CsmThreatsPolicy#enabled}
 
 ---
 
@@ -962,7 +962,7 @@ public readonly hostTagsLists: IResolvable | string[][];
 
 Host tags that define where the policy is deployed. Inner values are ANDed, outer arrays are ORed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/csm_threats_policy#host_tags_lists CsmThreatsPolicy#host_tags_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/csm_threats_policy#host_tags_lists CsmThreatsPolicy#host_tags_lists}
 
 ---
 
@@ -976,7 +976,7 @@ public readonly tags: string[];
 
 Host tags that define where the policy is deployed. Deprecated, use host_tags_lists instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/csm_threats_policy#tags CsmThreatsPolicy#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/csm_threats_policy#tags CsmThreatsPolicy#tags}
 
 ---
 

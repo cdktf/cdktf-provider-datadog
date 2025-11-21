@@ -4,7 +4,7 @@
 
 ### IntegrationConfluentAccount <a name="IntegrationConfluentAccount" id="@cdktf/provider-datadog.integrationConfluentAccount.IntegrationConfluentAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_confluent_account datadog_integration_confluent_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_confluent_account datadog_integration_confluent_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationConfluentAccount.IntegrationConfluentAccount.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The API key associated with your Confluent account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_confluent_account#api_key IntegrationConfluentAccount#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_confluent_account#api_key IntegrationConfluentAccount#api_key}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The API secret associated with your Confluent account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_confluent_account#api_secret IntegrationConfluentAccount#api_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_confluent_account#api_secret IntegrationConfluentAccount#api_secret}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_confluent_account#tags IntegrationConfluentAccount#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_confluent_account#tags IntegrationConfluentAccount#tags}
 
 ---
 
@@ -562,7 +562,7 @@ The construct id used in the generated config for the IntegrationConfluentAccoun
 
 The id of the existing IntegrationConfluentAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_confluent_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_confluent_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,7 +952,7 @@ public java.lang.String getApiKey();
 
 The API key associated with your Confluent account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_confluent_account#api_key IntegrationConfluentAccount#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_confluent_account#api_key IntegrationConfluentAccount#api_key}
 
 ---
 
@@ -966,7 +966,7 @@ public java.lang.String getApiSecret();
 
 The API secret associated with your Confluent account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_confluent_account#api_secret IntegrationConfluentAccount#api_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_confluent_account#api_secret IntegrationConfluentAccount#api_secret}
 
 ---
 
@@ -980,7 +980,7 @@ public java.util.List<java.lang.String> getTags();
 
 A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/resources/integration_confluent_account#tags IntegrationConfluentAccount#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_confluent_account#tags IntegrationConfluentAccount#tags}
 
 ---
 

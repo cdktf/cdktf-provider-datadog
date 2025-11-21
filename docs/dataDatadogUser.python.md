@@ -4,7 +4,7 @@
 
 ### DataDatadogUser <a name="DataDatadogUser" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer"></a>
 
@@ -23,6 +23,7 @@ dataDatadogUser.DataDatadogUser(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   filter: str,
   exact_match: bool | IResolvable = None,
+  exclude_service_accounts: bool | IResolvable = None,
   id: str = None
 )
 ```
@@ -40,7 +41,8 @@ dataDatadogUser.DataDatadogUser(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.filter">filter</a></code> | <code>str</code> | Filter all users by the given string. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.exactMatch">exact_match</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#id DataDatadogUser#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.excludeServiceAccounts">exclude_service_accounts</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, service accounts are excluded from the result. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#id DataDatadogUser#id}. |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#filter DataDatadogUser#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#filter DataDatadogUser#filter}
 
 ---
 
@@ -120,7 +122,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+
+---
+
+##### `exclude_service_accounts`<sup>Optional</sup> <a name="exclude_service_accounts" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer.parameter.excludeServiceAccounts"></a>
+
+- *Type:* bool | cdktf.IResolvable
+
+When true, service accounts are excluded from the result. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exclude_service_accounts DataDatadogUser#exclude_service_accounts}
 
 ---
 
@@ -128,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#id DataDatadogUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#id DataDatadogUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,6 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetExactMatch">reset_exact_match</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetExcludeServiceAccounts">reset_exclude_service_accounts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetId">reset_id</a></code> | *No description.* |
 
 ---
@@ -384,6 +397,12 @@ def interpolation_for_attribute(
 def reset_exact_match() -> None
 ```
 
+##### `reset_exclude_service_accounts` <a name="reset_exclude_service_accounts" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetExcludeServiceAccounts"></a>
+
+```python
+def reset_exclude_service_accounts() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.resetId"></a>
 
 ```python
@@ -504,7 +523,7 @@ The construct id used in the generated config for the DataDatadogUser to import.
 
 The id of the existing DataDatadogUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -545,9 +564,11 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.80
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.title">title</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.verified">verified</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.exactMatchInput">exact_match_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.excludeServiceAccountsInput">exclude_service_accounts_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.exactMatch">exact_match</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.excludeServiceAccounts">exclude_service_accounts</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.filter">filter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -805,6 +826,16 @@ exact_match_input: bool | IResolvable
 
 ---
 
+##### `exclude_service_accounts_input`<sup>Optional</sup> <a name="exclude_service_accounts_input" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.excludeServiceAccountsInput"></a>
+
+```python
+exclude_service_accounts_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+---
+
 ##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.filterInput"></a>
 
 ```python
@@ -829,6 +860,16 @@ id_input: str
 
 ```python
 exact_match: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+---
+
+##### `exclude_service_accounts`<sup>Required</sup> <a name="exclude_service_accounts" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.excludeServiceAccounts"></a>
+
+```python
+exclude_service_accounts: bool | IResolvable
 ```
 
 - *Type:* bool | cdktf.IResolvable
@@ -892,6 +933,7 @@ dataDatadogUser.DataDatadogUserConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   filter: str,
   exact_match: bool | IResolvable = None,
+  exclude_service_accounts: bool | IResolvable = None,
   id: str = None
 )
 ```
@@ -909,7 +951,8 @@ dataDatadogUser.DataDatadogUserConfig(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.filter">filter</a></code> | <code>str</code> | Filter all users by the given string. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.exactMatch">exact_match</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#id DataDatadogUser#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.excludeServiceAccounts">exclude_service_accounts</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, service accounts are excluded from the result. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#id DataDatadogUser#id}. |
 
 ---
 
@@ -993,7 +1036,7 @@ filter: str
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#filter DataDatadogUser#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#filter DataDatadogUser#filter}
 
 ---
 
@@ -1007,7 +1050,21 @@ exact_match: bool | IResolvable
 
 When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+
+---
+
+##### `exclude_service_accounts`<sup>Optional</sup> <a name="exclude_service_accounts" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.excludeServiceAccounts"></a>
+
+```python
+exclude_service_accounts: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+When true, service accounts are excluded from the result. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#exclude_service_accounts DataDatadogUser#exclude_service_accounts}
 
 ---
 
@@ -1019,7 +1076,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.80.0/docs/data-sources/user#id DataDatadogUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/user#id DataDatadogUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
