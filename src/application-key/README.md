@@ -1,3 +1,3 @@
 # `datadog_application_key`
 
-Refer to the Terraform Registry for docs: [`datadog_application_key`](https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/application_key).
+Refer to the Terraform Registry for docs: [`datadog_application_key`](https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/application_key).

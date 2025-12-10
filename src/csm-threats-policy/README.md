@@ -1,3 +1,3 @@
 # `datadog_csm_threats_policy`
 
-Refer to the Terraform Registry for docs: [`datadog_csm_threats_policy`](https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/csm_threats_policy).
+Refer to the Terraform Registry for docs: [`datadog_csm_threats_policy`](https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_policy).
