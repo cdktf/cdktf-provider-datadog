@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/csmthreatspolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/csmthreatspolicy"
 
 csmthreatspolicy.NewCsmThreatsPolicy(scope Construct, id *string, config CsmThreatsPolicyConfig) CsmThreatsPolicy
 ```
@@ -406,7 +406,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/csmthreatspolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/csmthreatspolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ csmthreatspolicy.CsmThreatsPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/csmthreatspolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ csmthreatspolicy.CsmThreatsPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/csmthreatspolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -816,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.csmThreatsPolicy.CsmThreatsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/csmthreatspolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/csmthreatspolicy"
 
 &csmthreatspolicy.CsmThreatsPolicyConfig {
 	Connection: interface{},

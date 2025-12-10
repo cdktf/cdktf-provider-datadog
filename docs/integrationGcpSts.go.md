@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.NewIntegrationGcpSts(scope Construct, id *string, config IntegrationGcpStsConfig) IntegrationGcpSts
 ```
@@ -481,7 +481,7 @@ func ResetResourceCollectionEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.IntegrationGcpSts_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.IntegrationGcpSts_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ integrationgcpsts.IntegrationGcpSts_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.IntegrationGcpSts_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ integrationgcpsts.IntegrationGcpSts_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.IntegrationGcpSts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1056,7 +1056,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 &integrationgcpsts.IntegrationGcpStsConfig {
 	Connection: interface{},
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 &integrationgcpsts.IntegrationGcpStsMetricNamespaceConfigs {
 	Disabled: interface{},
@@ -1421,7 +1421,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 &integrationgcpsts.IntegrationGcpStsMonitoredResourceConfigs {
 	Filters: *[]*string,
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.NewIntegrationGcpStsMetricNamespaceConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationGcpStsMetricNamespaceConfigsList
 ```
@@ -1629,7 +1629,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.NewIntegrationGcpStsMetricNamespaceConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationGcpStsMetricNamespaceConfigsOutputReference
 ```
@@ -1983,7 +1983,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.NewIntegrationGcpStsMonitoredResourceConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationGcpStsMonitoredResourceConfigsList
 ```
@@ -2143,7 +2143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationgcpsts"
 
 integrationgcpsts.NewIntegrationGcpStsMonitoredResourceConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationGcpStsMonitoredResourceConfigsOutputReference
 ```

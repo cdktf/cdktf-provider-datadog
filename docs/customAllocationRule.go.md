@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRule(scope Construct, id *string, config CustomAllocationRuleConfig) CustomAllocationRule
 ```
@@ -418,7 +418,7 @@ func ResetStrategy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.CustomAllocationRule_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.CustomAllocationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ customallocationrule.CustomAllocationRule_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.CustomAllocationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ customallocationrule.CustomAllocationRule_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.CustomAllocationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -894,7 +894,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 &customallocationrule.CustomAllocationRuleConfig {
 	Connection: interface{},
@@ -908,7 +908,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationr
 	Providernames: *[]*string,
 	RuleName: *string,
 	CostsToAllocate: interface{},
-	Strategy: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.customAllocationRule.CustomAllocationRuleStrategy,
+	Strategy: github.com/cdktf/cdktf-provider-datadog-go/datadog.customAllocationRule.CustomAllocationRuleStrategy,
 }
 ```
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleCostsToAllocate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 &customallocationrule.CustomAllocationRuleCostsToAllocate {
 	Condition: *string,
@@ -1164,14 +1164,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 &customallocationrule.CustomAllocationRuleStrategy {
 	AllocatedBy: interface{},
 	AllocatedByFilters: interface{},
 	AllocatedByTagKeys: *[]*string,
 	BasedOnCosts: interface{},
-	BasedOnTimeseries: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries,
+	BasedOnTimeseries: github.com/cdktf/cdktf-provider-datadog-go/datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries,
 	EvaluateGroupedByFilters: interface{},
 	EvaluateGroupedByTagKeys: *[]*string,
 	Granularity: *string,
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 &customallocationrule.CustomAllocationRuleStrategyAllocatedBy {
 	AllocatedTags: interface{},
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByAllocatedTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 &customallocationrule.CustomAllocationRuleStrategyAllocatedByAllocatedTags {
 	Key: *string,
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 &customallocationrule.CustomAllocationRuleStrategyAllocatedByFilters {
 	Condition: *string,
@@ -1510,7 +1510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnCosts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 &customallocationrule.CustomAllocationRuleStrategyBasedOnCosts {
 	Condition: *string,
@@ -1592,7 +1592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 &customallocationrule.CustomAllocationRuleStrategyBasedOnTimeseries {
 
@@ -1605,7 +1605,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationr
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 &customallocationrule.CustomAllocationRuleStrategyEvaluateGroupedByFilters {
 	Condition: *string,
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleCostsToAllocateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleCostsToAllocateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomAllocationRuleCostsToAllocateList
 ```
@@ -1849,7 +1849,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleCostsToAllocateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleCostsToAllocateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomAllocationRuleCostsToAllocateOutputReference
 ```
@@ -2232,7 +2232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByAllocatedTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyAllocatedByAllocatedTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomAllocationRuleStrategyAllocatedByAllocatedTagsList
 ```
@@ -2392,7 +2392,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference
 ```
@@ -2717,7 +2717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyAllocatedByFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomAllocationRuleStrategyAllocatedByFiltersList
 ```
@@ -2877,7 +2877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyAllocatedByFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 ```
@@ -3260,7 +3260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyAllocatedByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomAllocationRuleStrategyAllocatedByList
 ```
@@ -3420,7 +3420,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyAllocatedByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomAllocationRuleStrategyAllocatedByOutputReference
 ```
@@ -3758,7 +3758,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnCostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyBasedOnCostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomAllocationRuleStrategyBasedOnCostsList
 ```
@@ -3918,7 +3918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnCostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyBasedOnCostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomAllocationRuleStrategyBasedOnCostsOutputReference
 ```
@@ -4301,7 +4301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyBasedOnTimeseriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference
 ```
@@ -4550,7 +4550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyEvaluateGroupedByFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomAllocationRuleStrategyEvaluateGroupedByFiltersList
 ```
@@ -4710,7 +4710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference
 ```
@@ -5093,7 +5093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/customallocationrule"
 
 customallocationrule.NewCustomAllocationRuleStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomAllocationRuleStrategyOutputReference
 ```

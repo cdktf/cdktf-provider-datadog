@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.teamHierarchyLinks.TeamHierarchyLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/teamhierarchylinks"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teamhierarchylinks"
 
 teamhierarchylinks.NewTeamHierarchyLinks(scope Construct, id *string, config TeamHierarchyLinksConfig) TeamHierarchyLinks
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.teamHierarchyLinks.TeamHierarchyLinks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/teamhierarchylinks"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teamhierarchylinks"
 
 teamhierarchylinks.TeamHierarchyLinks_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.teamHierarchyLinks.TeamHierarchyLinks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/teamhierarchylinks"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teamhierarchylinks"
 
 teamhierarchylinks.TeamHierarchyLinks_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ teamhierarchylinks.TeamHierarchyLinks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.teamHierarchyLinks.TeamHierarchyLinks.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/teamhierarchylinks"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teamhierarchylinks"
 
 teamhierarchylinks.TeamHierarchyLinks_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ teamhierarchylinks.TeamHierarchyLinks_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.teamHierarchyLinks.TeamHierarchyLinks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/teamhierarchylinks"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teamhierarchylinks"
 
 teamhierarchylinks.TeamHierarchyLinks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.teamHierarchyLinks.TeamHierarchyLinksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/teamhierarchylinks"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teamhierarchylinks"
 
 &teamhierarchylinks.TeamHierarchyLinksConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.NewDataDatadogMetricActiveTagsAndAggregations(scope Construct, id *string, config DataDatadogMetricActiveTagsAndAggregationsConfig) DataDatadogMetricActiveTagsAndAggregations
 ```
@@ -283,7 +283,7 @@ func ResetWindow()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregations_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregations_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggrega
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggrega
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregationsActiveAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmetricactivetagsandaggregations"
 
 &datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregationsActiveAggregations {
 
@@ -640,7 +640,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetric
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmetricactivetagsandaggregations"
 
 &datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregationsConfig {
 	Connection: interface{},
@@ -776,7 +776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.NewDataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList
 ```
@@ -925,7 +925,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.NewDataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference
 ```

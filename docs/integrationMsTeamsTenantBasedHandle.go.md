@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationMsTeamsTenantBasedHandle.IntegrationMsTeamsTenantBasedHandle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationmsteamstenantbasedhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamstenantbasedhandle"
 
 integrationmsteamstenantbasedhandle.NewIntegrationMsTeamsTenantBasedHandle(scope Construct, id *string, config IntegrationMsTeamsTenantBasedHandleConfig) IntegrationMsTeamsTenantBasedHandle
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationMsTeamsTenantBasedHandle.IntegrationMsTeamsTenantBasedHandle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationmsteamstenantbasedhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamstenantbasedhandle"
 
 integrationmsteamstenantbasedhandle.IntegrationMsTeamsTenantBasedHandle_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationMsTeamsTenantBasedHandle.IntegrationMsTeamsTenantBasedHandle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationmsteamstenantbasedhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamstenantbasedhandle"
 
 integrationmsteamstenantbasedhandle.IntegrationMsTeamsTenantBasedHandle_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ integrationmsteamstenantbasedhandle.IntegrationMsTeamsTenantBasedHandle_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationMsTeamsTenantBasedHandle.IntegrationMsTeamsTenantBasedHandle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationmsteamstenantbasedhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamstenantbasedhandle"
 
 integrationmsteamstenantbasedhandle.IntegrationMsTeamsTenantBasedHandle_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ integrationmsteamstenantbasedhandle.IntegrationMsTeamsTenantBasedHandle_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationMsTeamsTenantBasedHandle.IntegrationMsTeamsTenantBasedHandle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationmsteamstenantbasedhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamstenantbasedhandle"
 
 integrationmsteamstenantbasedhandle.IntegrationMsTeamsTenantBasedHandle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationMsTeamsTenantBasedHandle.IntegrationMsTeamsTenantBasedHandleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationmsteamstenantbasedhandle"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationmsteamstenantbasedhandle"
 
 &integrationmsteamstenantbasedhandle.IntegrationMsTeamsTenantBasedHandleConfig {
 	Connection: interface{},

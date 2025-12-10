@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRules(scope Construct, id *string, config OnCallTeamRoutingRulesConfig) OnCallTeamRoutingRules
 ```
@@ -398,7 +398,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.OnCallTeamRoutingRules_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.OnCallTeamRoutingRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ oncallteamroutingrules.OnCallTeamRoutingRules_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.OnCallTeamRoutingRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ oncallteamroutingrules.OnCallTeamRoutingRules_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.OnCallTeamRoutingRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -731,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesConfig {
 	Connection: interface{},
@@ -868,13 +868,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRule {
 	Action: interface{},
 	EscalationPolicy: *string,
 	Query: *string,
-	TimeRestrictions: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictions,
+	TimeRestrictions: github.com/cdktf/cdktf-provider-datadog-go/datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictions,
 	Urgency: *string,
 }
 ```
@@ -968,11 +968,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleAction {
-	SendSlackMessage: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessage,
-	SendTeamsMessage: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage,
+	SendSlackMessage: github.com/cdktf/cdktf-provider-datadog-go/datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessage,
+	SendTeamsMessage: github.com/cdktf/cdktf-provider-datadog-go/datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage,
 }
 ```
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleActionSendSlackMessage {
 	Channel: *string,
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage {
 	Channel: *string,
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleTimeRestrictions {
 	Restriction: interface{},
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction {
 	EndDay: *string,
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallTeamRoutingRulesRuleActionList
 ```
@@ -1428,7 +1428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallTeamRoutingRulesRuleActionOutputReference
 ```
@@ -1779,7 +1779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference
 ```
@@ -2086,7 +2086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference
 ```
@@ -2422,7 +2422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallTeamRoutingRulesRuleList
 ```
@@ -2582,7 +2582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallTeamRoutingRulesRuleOutputReference
 ```
@@ -3031,7 +3031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference
 ```
@@ -3351,7 +3351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList
 ```
@@ -3511,7 +3511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference
 ```

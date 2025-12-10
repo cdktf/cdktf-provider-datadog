@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/complianceresourceevaluationfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.NewComplianceResourceEvaluationFilter(scope Construct, id *string, config ComplianceResourceEvaluationFilterConfig) ComplianceResourceEvaluationFilter
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/complianceresourceevaluationfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/complianceresourceevaluationfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/complianceresourceevaluationfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/complianceresourceevaluationfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/complianceresourceevaluationfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/complianceresourceevaluationfilter"
 
 &complianceresourceevaluationfilter.ComplianceResourceEvaluationFilterConfig {
 	Connection: interface{},

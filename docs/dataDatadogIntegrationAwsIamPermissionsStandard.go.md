@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.NewDataDatadogIntegrationAwsIamPermissionsStandard(scope Construct, id *string, config DataDatadogIntegrationAwsIamPermissionsStandardConfig) DataDatadogIntegrationAwsIamPermissionsStandard
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandard_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandard_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPerm
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandard_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPerm
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -565,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogintegrationawsiampermissionsstandard"
 
 &datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandardConfig {
 	Connection: interface{},

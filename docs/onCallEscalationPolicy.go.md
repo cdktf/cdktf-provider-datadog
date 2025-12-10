@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 oncallescalationpolicy.NewOnCallEscalationPolicy(scope Construct, id *string, config OnCallEscalationPolicyConfig) OnCallEscalationPolicy
 ```
@@ -419,7 +419,7 @@ func ResetTeams()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 oncallescalationpolicy.OnCallEscalationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 oncallescalationpolicy.OnCallEscalationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ oncallescalationpolicy.OnCallEscalationPolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 oncallescalationpolicy.OnCallEscalationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ oncallescalationpolicy.OnCallEscalationPolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 oncallescalationpolicy.OnCallEscalationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -829,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 &oncallescalationpolicy.OnCallEscalationPolicyConfig {
 	Connection: interface{},
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 &oncallescalationpolicy.OnCallEscalationPolicyStep {
 	EscalateAfterSeconds: *f64,
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 &oncallescalationpolicy.OnCallEscalationPolicyStepTarget {
 	Position: *string,
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 oncallescalationpolicy.NewOnCallEscalationPolicyStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallEscalationPolicyStepList
 ```
@@ -1327,7 +1327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 oncallescalationpolicy.NewOnCallEscalationPolicyStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallEscalationPolicyStepOutputReference
 ```
@@ -1698,7 +1698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 oncallescalationpolicy.NewOnCallEscalationPolicyStepTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallEscalationPolicyStepTargetList
 ```
@@ -1858,7 +1858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/oncallescalationpolicy"
 
 oncallescalationpolicy.NewOnCallEscalationPolicyStepTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallEscalationPolicyStepTargetOutputReference
 ```

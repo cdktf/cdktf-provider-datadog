@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/incidentnotificationtemplate"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/incidentnotificationtemplate"
 
 incidentnotificationtemplate.NewIncidentNotificationTemplate(scope Construct, id *string, config IncidentNotificationTemplateConfig) IncidentNotificationTemplate
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/incidentnotificationtemplate"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/incidentnotificationtemplate"
 
 incidentnotificationtemplate.IncidentNotificationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/incidentnotificationtemplate"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/incidentnotificationtemplate"
 
 incidentnotificationtemplate.IncidentNotificationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ incidentnotificationtemplate.IncidentNotificationTemplate_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/incidentnotificationtemplate"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/incidentnotificationtemplate"
 
 incidentnotificationtemplate.IncidentNotificationTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ incidentnotificationtemplate.IncidentNotificationTemplate_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/incidentnotificationtemplate"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/incidentnotificationtemplate"
 
 incidentnotificationtemplate.IncidentNotificationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/incidentnotificationtemplate"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/incidentnotificationtemplate"
 
 &incidentnotificationtemplate.IncidentNotificationTemplateConfig {
 	Connection: interface{},
