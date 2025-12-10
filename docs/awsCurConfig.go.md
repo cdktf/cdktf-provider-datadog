@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/awscurconfig"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/awscurconfig"
 
 awscurconfig.NewAwsCurConfig(scope Construct, id *string, config AwsCurConfigConfig) AwsCurConfig
 ```
@@ -405,7 +405,7 @@ func ResetBucketRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/awscurconfig"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/awscurconfig"
 
 awscurconfig.AwsCurConfig_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/awscurconfig"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/awscurconfig"
 
 awscurconfig.AwsCurConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ awscurconfig.AwsCurConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/awscurconfig"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/awscurconfig"
 
 awscurconfig.AwsCurConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ awscurconfig.AwsCurConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/awscurconfig"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/awscurconfig"
 
 awscurconfig.AwsCurConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfigAccountFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/awscurconfig"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/awscurconfig"
 
 &awscurconfig.AwsCurConfigAccountFilters {
 	ExcludedAccounts: *[]*string,
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/awscurconfig"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/awscurconfig"
 
 &awscurconfig.AwsCurConfigConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/awscurconfig"
 	BucketName: *string,
 	ReportName: *string,
 	ReportPrefix: *string,
-	AccountFilters: github.com/cdktf/cdktf-provider-datadog-go/datadog.awsCurConfig.AwsCurConfigAccountFilters,
+	AccountFilters: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.awsCurConfig.AwsCurConfigAccountFilters,
 	BucketRegion: *string,
 }
 ```
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.awsCurConfig.AwsCurConfigAccountFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/awscurconfig"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/awscurconfig"
 
 awscurconfig.NewAwsCurConfigAccountFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AwsCurConfigAccountFiltersOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 compliancecustomframework.NewComplianceCustomFramework(scope Construct, id *string, config ComplianceCustomFrameworkConfig) ComplianceCustomFramework
 ```
@@ -405,7 +405,7 @@ func ResetRequirements()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 compliancecustomframework.ComplianceCustomFramework_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 compliancecustomframework.ComplianceCustomFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ compliancecustomframework.ComplianceCustomFramework_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFramework.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 compliancecustomframework.ComplianceCustomFramework_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ compliancecustomframework.ComplianceCustomFramework_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 compliancecustomframework.ComplianceCustomFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 &compliancecustomframework.ComplianceCustomFrameworkConfig {
 	Connection: interface{},
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 &compliancecustomframework.ComplianceCustomFrameworkRequirements {
 	Name: *string,
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsControls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 &compliancecustomframework.ComplianceCustomFrameworkRequirementsControls {
 	Name: *string,
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsControlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 compliancecustomframework.NewComplianceCustomFrameworkRequirementsControlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComplianceCustomFrameworkRequirementsControlsList
 ```
@@ -1259,7 +1259,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsControlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 compliancecustomframework.NewComplianceCustomFrameworkRequirementsControlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComplianceCustomFrameworkRequirementsControlsOutputReference
 ```
@@ -1570,7 +1570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 compliancecustomframework.NewComplianceCustomFrameworkRequirementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComplianceCustomFrameworkRequirementsList
 ```
@@ -1730,7 +1730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/compliancecustomframework"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework"
 
 compliancecustomframework.NewComplianceCustomFrameworkRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComplianceCustomFrameworkRequirementsOutputReference
 ```

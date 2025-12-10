@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/tagpipelinerulesets"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/tagpipelinerulesets"
 
 tagpipelinerulesets.NewTagPipelineRulesets(scope Construct, id *string, config TagPipelineRulesetsConfig) TagPipelineRulesets
 ```
@@ -385,7 +385,7 @@ func ResetOverrideUiDefinedResources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/tagpipelinerulesets"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/tagpipelinerulesets"
 
 tagpipelinerulesets.TagPipelineRulesets_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/tagpipelinerulesets"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/tagpipelinerulesets"
 
 tagpipelinerulesets.TagPipelineRulesets_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ tagpipelinerulesets.TagPipelineRulesets_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/tagpipelinerulesets"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/tagpipelinerulesets"
 
 tagpipelinerulesets.TagPipelineRulesets_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ tagpipelinerulesets.TagPipelineRulesets_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/tagpipelinerulesets"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/tagpipelinerulesets"
 
 tagpipelinerulesets.TagPipelineRulesets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.tagPipelineRulesets.TagPipelineRulesetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/tagpipelinerulesets"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/tagpipelinerulesets"
 
 &tagpipelinerulesets.TagPipelineRulesetsConfig {
 	Connection: interface{},

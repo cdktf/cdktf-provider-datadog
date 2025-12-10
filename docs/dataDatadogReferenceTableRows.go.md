@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRows.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencetablerows"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetablerows"
 
 datadatadogreferencetablerows.NewDataDatadogReferenceTableRows(scope Construct, id *string, config DataDatadogReferenceTableRowsConfig) DataDatadogReferenceTableRows
 ```
@@ -296,7 +296,7 @@ func ResetRows()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRows.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencetablerows"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetablerows"
 
 datadatadogreferencetablerows.DataDatadogReferenceTableRows_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRows.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencetablerows"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetablerows"
 
 datadatadogreferencetablerows.DataDatadogReferenceTableRows_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ datadatadogreferencetablerows.DataDatadogReferenceTableRows_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRows.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencetablerows"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetablerows"
 
 datadatadogreferencetablerows.DataDatadogReferenceTableRows_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datadatadogreferencetablerows.DataDatadogReferenceTableRows_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRows.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencetablerows"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetablerows"
 
 datadatadogreferencetablerows.DataDatadogReferenceTableRows_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencetablerows"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetablerows"
 
 &datadatadogreferencetablerows.DataDatadogReferenceTableRowsConfig {
 	Connection: interface{},
@@ -781,7 +781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsRows.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencetablerows"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetablerows"
 
 &datadatadogreferencetablerows.DataDatadogReferenceTableRowsRows {
 
@@ -796,7 +796,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencet
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsRowsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencetablerows"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetablerows"
 
 datadatadogreferencetablerows.NewDataDatadogReferenceTableRowsRowsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogReferenceTableRowsRowsList
 ```
@@ -956,7 +956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsRowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogreferencetablerows"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetablerows"
 
 datadatadogreferencetablerows.NewDataDatadogReferenceTableRowsRowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogReferenceTableRowsRowsOutputReference
 ```

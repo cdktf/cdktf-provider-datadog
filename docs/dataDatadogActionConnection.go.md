@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnection(scope Construct, id *string, config DataDatadogActionConnectionConfig) DataDatadogActionConnection
 ```
@@ -296,7 +296,7 @@ func ResetHttp()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.DataDatadogActionConnection_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.DataDatadogActionConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ datadatadogactionconnection.DataDatadogActionConnection_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.DataDatadogActionConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datadatadogactionconnection.DataDatadogActionConnection_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.DataDatadogActionConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 &datadatadogactionconnection.DataDatadogActionConnectionAws {
 
@@ -642,7 +642,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconn
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionAwsAssumeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 &datadatadogactionconnection.DataDatadogActionConnectionAwsAssumeRole {
 
@@ -655,7 +655,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconn
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 &datadatadogactionconnection.DataDatadogActionConnectionConfig {
 	Connection: interface{},
@@ -666,7 +666,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconn
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Http: github.com/cdktf/cdktf-provider-datadog-go/datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttp,
+	Http: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.dataDatadogActionConnection.DataDatadogActionConnectionHttp,
 }
 ```
 
@@ -792,10 +792,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 &datadatadogactionconnection.DataDatadogActionConnectionHttp {
-	TokenAuth: github.com/cdktf/cdktf-provider-datadog-go/datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuth,
+	TokenAuth: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuth,
 }
 ```
 
@@ -826,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 &datadatadogactionconnection.DataDatadogActionConnectionHttpTokenAuth {
 	Header: interface{},
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthBody.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 &datadatadogactionconnection.DataDatadogActionConnectionHttpTokenAuthBody {
 
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconn
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 &datadatadogactionconnection.DataDatadogActionConnectionHttpTokenAuthHeader {
 
@@ -918,7 +918,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconn
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 &datadatadogactionconnection.DataDatadogActionConnectionHttpTokenAuthToken {
 
@@ -931,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconn
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthUrlParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 &datadatadogactionconnection.DataDatadogActionConnectionHttpTokenAuthUrlParameter {
 
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconn
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionAwsAssumeRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionAwsAssumeRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogActionConnectionAwsAssumeRoleOutputReference
 ```
@@ -1239,7 +1239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogActionConnectionAwsOutputReference
 ```
@@ -1499,7 +1499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogActionConnectionHttpOutputReference
 ```
@@ -1801,7 +1801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionHttpTokenAuthBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogActionConnectionHttpTokenAuthBodyOutputReference
 ```
@@ -2072,7 +2072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionHttpTokenAuthHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogActionConnectionHttpTokenAuthHeaderList
 ```
@@ -2232,7 +2232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionHttpTokenAuthHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogActionConnectionHttpTokenAuthHeaderOutputReference
 ```
@@ -2521,7 +2521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionHttpTokenAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogActionConnectionHttpTokenAuthOutputReference
 ```
@@ -2907,7 +2907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthTokenList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionHttpTokenAuthTokenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogActionConnectionHttpTokenAuthTokenList
 ```
@@ -3067,7 +3067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionHttpTokenAuthTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogActionConnectionHttpTokenAuthTokenOutputReference
 ```
@@ -3367,7 +3367,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthUrlParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionHttpTokenAuthUrlParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogActionConnectionHttpTokenAuthUrlParameterList
 ```
@@ -3527,7 +3527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogactionconnection"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection"
 
 datadatadogactionconnection.NewDataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference
 ```

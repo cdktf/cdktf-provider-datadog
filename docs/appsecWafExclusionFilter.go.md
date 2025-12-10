@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.NewAppsecWafExclusionFilter(scope Construct, id *string, config AppsecWafExclusionFilterConfig) AppsecWafExclusionFilter
 ```
@@ -453,7 +453,7 @@ func ResetScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.AppsecWafExclusionFilter_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.AppsecWafExclusionFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ appsecwafexclusionfilter.AppsecWafExclusionFilter_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.AppsecWafExclusionFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ appsecwafexclusionfilter.AppsecWafExclusionFilter_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.AppsecWafExclusionFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -951,7 +951,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 &appsecwafexclusionfilter.AppsecWafExclusionFilterConfig {
 	Connection: interface{},
@@ -1201,11 +1201,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 &appsecwafexclusionfilter.AppsecWafExclusionFilterRulesTarget {
 	RuleId: *string,
-	Tags: github.com/cdktf/cdktf-provider-datadog-go/datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTags,
+	Tags: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTags,
 }
 ```
 
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 &appsecwafexclusionfilter.AppsecWafExclusionFilterRulesTargetTags {
 	Category: *string,
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 &appsecwafexclusionfilter.AppsecWafExclusionFilterScope {
 	Env: *string,
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.NewAppsecWafExclusionFilterRulesTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsecWafExclusionFilterRulesTargetList
 ```
@@ -1513,7 +1513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.NewAppsecWafExclusionFilterRulesTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsecWafExclusionFilterRulesTargetOutputReference
 ```
@@ -1851,7 +1851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.NewAppsecWafExclusionFilterRulesTargetTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsecWafExclusionFilterRulesTargetTagsOutputReference
 ```
@@ -2158,7 +2158,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.NewAppsecWafExclusionFilterScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsecWafExclusionFilterScopeList
 ```
@@ -2318,7 +2318,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/appsecwafexclusionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter"
 
 appsecwafexclusionfilter.NewAppsecWafExclusionFilterScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsecWafExclusionFilterScopeOutputReference
 ```

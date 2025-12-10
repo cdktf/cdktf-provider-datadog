@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccount(scope Construct, id *string, config IntegrationAwsAccountConfig) IntegrationAwsAccount
 ```
@@ -505,7 +505,7 @@ func ResetTracesConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.IntegrationAwsAccount_IsConstruct(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.IntegrationAwsAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ integrationawsaccount.IntegrationAwsAccount_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.IntegrationAwsAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ integrationawsaccount.IntegrationAwsAccount_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.IntegrationAwsAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1003,11 +1003,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountAuthConfig {
-	AwsAuthConfigKeys: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigKeys,
-	AwsAuthConfigRole: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigRole,
+	AwsAuthConfigKeys: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigKeys,
+	AwsAuthConfigRole: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigRole,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountAuthConfigAwsAuthConfigKeys {
 	AccessKeyId: *string,
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountAuthConfigAwsAuthConfigRole {
 	ExternalId: *string,
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAwsRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountAwsRegions {
 	IncludeAll: interface{},
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountConfig {
 	Connection: interface{},
@@ -1218,12 +1218,12 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount
 	AwsAccountId: *string,
 	AwsPartition: *string,
 	AccountTags: *[]*string,
-	AuthConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfig,
-	AwsRegions: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountAwsRegions,
-	LogsConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfig,
-	MetricsConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig,
-	ResourcesConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountResourcesConfig,
-	TracesConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfig,
+	AuthConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountAuthConfig,
+	AwsRegions: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountAwsRegions,
+	LogsConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountLogsConfig,
+	MetricsConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountMetricsConfig,
+	ResourcesConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountResourcesConfig,
+	TracesConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountTracesConfig,
 }
 ```
 
@@ -1451,10 +1451,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountLogsConfig {
-	LambdaForwarder: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarder,
+	LambdaForwarder: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarder,
 }
 ```
 
@@ -1485,11 +1485,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountLogsConfigLambdaForwarder {
 	Lambdas: *[]*string,
-	LogSourceConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig,
+	LogSourceConfig: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig,
 	Sources: *[]*string,
 }
 ```
@@ -1553,7 +1553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig {
 	TagFilters: interface{},
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters {
 	Source: *string,
@@ -1637,14 +1637,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountMetricsConfig {
 	AutomuteEnabled: interface{},
 	CollectCloudwatchAlarms: interface{},
 	CollectCustomMetrics: interface{},
 	Enabled: interface{},
-	NamespaceFilters: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFilters,
+	NamespaceFilters: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFilters,
 	TagFilters: interface{},
 }
 ```
@@ -1751,7 +1751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountMetricsConfigNamespaceFilters {
 	ExcludeOnly: *[]*string,
@@ -1803,7 +1803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountMetricsConfigTagFilters {
 	Namespace: *string,
@@ -1853,7 +1853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountResourcesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountResourcesConfig {
 	CloudSecurityPostureManagementCollection: interface{},
@@ -1907,10 +1907,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountTracesConfig {
-	XrayServices: github.com/cdktf/cdktf-provider-datadog-go/datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigXrayServices,
+	XrayServices: github.com/cdktf/cdktf-provider-datadog-go/datadog/v12.integrationAwsAccount.IntegrationAwsAccountTracesConfigXrayServices,
 }
 ```
 
@@ -1941,7 +1941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigXrayServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 &integrationawsaccount.IntegrationAwsAccountTracesConfigXrayServices {
 	IncludeAll: interface{},
@@ -1993,7 +1993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference
 ```
@@ -2300,7 +2300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference
 ```
@@ -2607,7 +2607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountAuthConfigOutputReference
 ```
@@ -2940,7 +2940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAwsRegionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountAwsRegionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountAwsRegionsOutputReference
 ```
@@ -3247,7 +3247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference
 ```
@@ -3538,7 +3538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList
 ```
@@ -3698,7 +3698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference
 ```
@@ -4009,7 +4009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountLogsConfigLambdaForwarderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference
 ```
@@ -4358,7 +4358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountLogsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountLogsConfigOutputReference
 ```
@@ -4649,7 +4649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference
 ```
@@ -4956,7 +4956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountMetricsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountMetricsConfigOutputReference
 ```
@@ -5405,7 +5405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountMetricsConfigTagFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationAwsAccountMetricsConfigTagFiltersList
 ```
@@ -5565,7 +5565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountMetricsConfigTagFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationAwsAccountMetricsConfigTagFiltersOutputReference
 ```
@@ -5883,7 +5883,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountResourcesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountResourcesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountResourcesConfigOutputReference
 ```
@@ -6190,7 +6190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountTracesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountTracesConfigOutputReference
 ```
@@ -6481,7 +6481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigXrayServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawsaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount"
 
 integrationawsaccount.NewIntegrationAwsAccountTracesConfigXrayServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountTracesConfigXrayServicesOutputReference
 ```

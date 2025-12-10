@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.costBudget.CostBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 costbudget.NewCostBudget(scope Construct, id *string, config CostBudgetConfig) CostBudget
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.costBudget.CostBudget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 costbudget.CostBudget_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.costBudget.CostBudget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 costbudget.CostBudget_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ costbudget.CostBudget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.costBudget.CostBudget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 costbudget.CostBudget_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ costbudget.CostBudget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.costBudget.CostBudget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 costbudget.CostBudget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.costBudget.CostBudgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 &costbudget.CostBudgetConfig {
 	Connection: interface{},
@@ -1038,7 +1038,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.costBudget.CostBudgetEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 &costbudget.CostBudgetEntries {
 	Amount: *f64,
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.costBudget.CostBudgetEntriesTagFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 &costbudget.CostBudgetEntriesTagFilters {
 	TagKey: *string,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.costBudget.CostBudgetEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 costbudget.NewCostBudgetEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CostBudgetEntriesList
 ```
@@ -1308,7 +1308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.costBudget.CostBudgetEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 costbudget.NewCostBudgetEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CostBudgetEntriesOutputReference
 ```
@@ -1661,7 +1661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.costBudget.CostBudgetEntriesTagFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 costbudget.NewCostBudgetEntriesTagFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CostBudgetEntriesTagFiltersList
 ```
@@ -1821,7 +1821,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.costBudget.CostBudgetEntriesTagFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/costbudget"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/costbudget"
 
 costbudget.NewCostBudgetEntriesTagFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CostBudgetEntriesTagFiltersOutputReference
 ```

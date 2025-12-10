@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/agentlessscanningawsscanoptions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.NewAgentlessScanningAwsScanOptions(scope Construct, id *string, config AgentlessScanningAwsScanOptionsConfig) AgentlessScanningAwsScanOptions
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/agentlessscanningawsscanoptions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/agentlessscanningawsscanoptions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/agentlessscanningawsscanoptions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/agentlessscanningawsscanoptions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/agentlessscanningawsscanoptions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/agentlessscanningawsscanoptions"
 
 &agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptionsConfig {
 	Connection: interface{},

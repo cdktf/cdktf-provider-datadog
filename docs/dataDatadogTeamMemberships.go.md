@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteammemberships"
 
 datadatadogteammemberships.NewDataDatadogTeamMemberships(scope Construct, id *string, config DataDatadogTeamMembershipsConfig) DataDatadogTeamMemberships
 ```
@@ -290,7 +290,7 @@ func ResetFilterKeyword()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteammemberships"
 
 datadatadogteammemberships.DataDatadogTeamMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteammemberships"
 
 datadatadogteammemberships.DataDatadogTeamMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatadogteammemberships.DataDatadogTeamMemberships_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteammemberships"
 
 datadatadogteammemberships.DataDatadogTeamMemberships_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datadatadogteammemberships.DataDatadogTeamMemberships_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteammemberships"
 
 datadatadogteammemberships.DataDatadogTeamMemberships_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteammemberships"
 
 &datadatadogteammemberships.DataDatadogTeamMembershipsConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsTeamMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteammemberships"
 
 &datadatadogteammemberships.DataDatadogTeamMembershipsTeamMemberships {
 
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammember
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsTeamMembershipsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteammemberships"
 
 datadatadogteammemberships.NewDataDatadogTeamMembershipsTeamMembershipsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogTeamMembershipsTeamMembershipsList
 ```
@@ -959,7 +959,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsTeamMembershipsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteammemberships"
 
 datadatadogteammemberships.NewDataDatadogTeamMembershipsTeamMembershipsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogTeamMembershipsTeamMembershipsOutputReference
 ```
