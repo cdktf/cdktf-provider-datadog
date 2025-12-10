@@ -84,6 +84,7 @@ Object.defineProperty(exports, 'openapiApi', { get: function () { return require
 Object.defineProperty(exports, 'orgConnection', { get: function () { return require('./org-connection'); } });
 Object.defineProperty(exports, 'organizationSettings', { get: function () { return require('./organization-settings'); } });
 Object.defineProperty(exports, 'powerpack', { get: function () { return require('./powerpack'); } });
+Object.defineProperty(exports, 'referenceTable', { get: function () { return require('./reference-table'); } });
 Object.defineProperty(exports, 'restrictionPolicy', { get: function () { return require('./restriction-policy'); } });
 Object.defineProperty(exports, 'role', { get: function () { return require('./role'); } });
 Object.defineProperty(exports, 'rumApplication', { get: function () { return require('./rum-application'); } });
@@ -113,6 +114,7 @@ Object.defineProperty(exports, 'syntheticsTest', { get: function () { return req
 Object.defineProperty(exports, 'tagPipelineRuleset', { get: function () { return require('./tag-pipeline-ruleset'); } });
 Object.defineProperty(exports, 'tagPipelineRulesets', { get: function () { return require('./tag-pipeline-rulesets'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
+Object.defineProperty(exports, 'teamHierarchyLinks', { get: function () { return require('./team-hierarchy-links'); } });
 Object.defineProperty(exports, 'teamLink', { get: function () { return require('./team-link'); } });
 Object.defineProperty(exports, 'teamMembership', { get: function () { return require('./team-membership'); } });
 Object.defineProperty(exports, 'teamPermissionSetting', { get: function () { return require('./team-permission-setting'); } });
@@ -162,6 +164,8 @@ Object.defineProperty(exports, 'dataDatadogMonitorConfigPolicies', { get: functi
 Object.defineProperty(exports, 'dataDatadogMonitors', { get: function () { return require('./data-datadog-monitors'); } });
 Object.defineProperty(exports, 'dataDatadogPermissions', { get: function () { return require('./data-datadog-permissions'); } });
 Object.defineProperty(exports, 'dataDatadogPowerpack', { get: function () { return require('./data-datadog-powerpack'); } });
+Object.defineProperty(exports, 'dataDatadogReferenceTable', { get: function () { return require('./data-datadog-reference-table'); } });
+Object.defineProperty(exports, 'dataDatadogReferenceTableRows', { get: function () { return require('./data-datadog-reference-table-rows'); } });
 Object.defineProperty(exports, 'dataDatadogRole', { get: function () { return require('./data-datadog-role'); } });
 Object.defineProperty(exports, 'dataDatadogRoleUsers', { get: function () { return require('./data-datadog-role-users'); } });
 Object.defineProperty(exports, 'dataDatadogRoles', { get: function () { return require('./data-datadog-roles'); } });
@@ -181,6 +185,7 @@ Object.defineProperty(exports, 'dataDatadogSyntheticsLocations', { get: function
 Object.defineProperty(exports, 'dataDatadogSyntheticsTest', { get: function () { return require('./data-datadog-synthetics-test'); } });
 Object.defineProperty(exports, 'dataDatadogTagPipelineRuleset', { get: function () { return require('./data-datadog-tag-pipeline-ruleset'); } });
 Object.defineProperty(exports, 'dataDatadogTeam', { get: function () { return require('./data-datadog-team'); } });
+Object.defineProperty(exports, 'dataDatadogTeamHierarchyLinks', { get: function () { return require('./data-datadog-team-hierarchy-links'); } });
 Object.defineProperty(exports, 'dataDatadogTeamMemberships', { get: function () { return require('./data-datadog-team-memberships'); } });
 Object.defineProperty(exports, 'dataDatadogTeams', { get: function () { return require('./data-datadog-teams'); } });
 Object.defineProperty(exports, 'dataDatadogUser', { get: function () { return require('./data-datadog-user'); } });

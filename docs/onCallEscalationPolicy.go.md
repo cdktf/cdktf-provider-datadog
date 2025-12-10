@@ -4,7 +4,7 @@
 
 ### OnCallEscalationPolicy <a name="OnCallEscalationPolicy" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the OnCallEscalationPolicy to 
 
 The id of the existing OnCallEscalationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ Name *string
 
 A human-readable name for the escalation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
 
 ---
 
@@ -960,7 +960,7 @@ ResolvePageOnPolicyEnd interface{}
 
 If true, pages will be automatically resolved if unacknowledged after the final step. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
 
 ---
 
@@ -976,7 +976,7 @@ If set, policy will be retried this many times after the final step.
 
 Must be in the range 0-10. Value must be between 0 and 10. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
 
 ---
 
@@ -990,7 +990,7 @@ Step interface{}
 
 step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
 
 ---
 
@@ -1004,7 +1004,7 @@ Teams *[]*string
 
 A list of team ids associated with the escalation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
 
 ---
 
@@ -1042,7 +1042,7 @@ EscalateAfterSeconds *f64
 
 Defines how many seconds to wait before escalating to the next step. Value must be between 60 and 36000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#escalate_after_seconds OnCallEscalationPolicy#escalate_after_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#escalate_after_seconds OnCallEscalationPolicy#escalate_after_seconds}
 
 ---
 
@@ -1058,7 +1058,7 @@ Specifies how this escalation step will assign targets.
 
 Can be `default` (page all targets at once) or `round-robin`. Valid values are `default`, `round-robin`. Defaults to `"default"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#assignment OnCallEscalationPolicy#assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#assignment OnCallEscalationPolicy#assignment}
 
 ---
 
@@ -1072,7 +1072,7 @@ Target interface{}
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#target OnCallEscalationPolicy#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#target OnCallEscalationPolicy#target}
 
 ---
 
@@ -1084,6 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationpolicy"
 
 &oncallescalationpolicy.OnCallEscalationPolicyStepTarget {
+	Position: *string,
 	Schedule: *string,
 	Team: *string,
 	User: *string,
@@ -1094,9 +1095,26 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallescalationp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTarget.property.position">Position</a></code> | <code>*string</code> | For schedule targets, specifies which on-call user to page. |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTarget.property.schedule">Schedule</a></code> | <code>*string</code> | Targeted schedule ID. |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTarget.property.team">Team</a></code> | <code>*string</code> | Targeted team ID. |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTarget.property.user">User</a></code> | <code>*string</code> | Targeted user ID. |
+
+---
+
+##### `Position`<sup>Optional</sup> <a name="Position" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTarget.property.position"></a>
+
+```go
+Position *string
+```
+
+- *Type:* *string
+
+For schedule targets, specifies which on-call user to page.
+
+Valid values: `current` (default), `previous`, `next`. Valid values are `current`, `previous`, `next`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#position OnCallEscalationPolicy#position}
 
 ---
 
@@ -1110,7 +1128,7 @@ Schedule *string
 
 Targeted schedule ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#schedule OnCallEscalationPolicy#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#schedule OnCallEscalationPolicy#schedule}
 
 ---
 
@@ -1124,7 +1142,7 @@ Team *string
 
 Targeted team ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#team OnCallEscalationPolicy#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#team OnCallEscalationPolicy#team}
 
 ---
 
@@ -1138,7 +1156,7 @@ User *string
 
 Targeted user ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_escalation_policy#user OnCallEscalationPolicy#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#user OnCallEscalationPolicy#user}
 
 ---
 
@@ -1903,6 +1921,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.resetPosition">ResetPosition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.resetSchedule">ResetSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.resetTeam">ResetTeam</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.resetUser">ResetUser</a></code> | *No description.* |
@@ -2059,6 +2078,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetPosition` <a name="ResetPosition" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.resetPosition"></a>
+
+```go
+func ResetPosition()
+```
+
 ##### `ResetSchedule` <a name="ResetSchedule" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.resetSchedule"></a>
 
 ```go
@@ -2084,9 +2109,11 @@ func ResetUser()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.positionInput">PositionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.scheduleInput">ScheduleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.teamInput">TeamInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.userInput">UserInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.position">Position</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.schedule">Schedule</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.team">Team</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.user">User</a></code> | <code>*string</code> | *No description.* |
@@ -2118,6 +2145,16 @@ func Fqn() *string
 
 ---
 
+##### `PositionInput`<sup>Optional</sup> <a name="PositionInput" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.positionInput"></a>
+
+```go
+func PositionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ScheduleInput`<sup>Optional</sup> <a name="ScheduleInput" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.scheduleInput"></a>
 
 ```go
@@ -2142,6 +2179,16 @@ func TeamInput() *string
 
 ```go
 func UserInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Position`<sup>Required</sup> <a name="Position" id="@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference.property.position"></a>
+
+```go
+func Position() *string
 ```
 
 - *Type:* *string

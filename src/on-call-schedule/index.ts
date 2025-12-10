@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule
+// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface OnCallScheduleConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable name for the new schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
   */
   readonly name: string;
   /**
   * A list of team ids associated with the schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
   */
   readonly teams?: string[];
   /**
   * The time zone in which the schedule is defined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
   */
   readonly timeZone: string;
   /**
   * layer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
   */
   readonly layer?: OnCallScheduleLayer[] | cdktf.IResolvable;
 }
@@ -41,13 +41,13 @@ export interface OnCallScheduleLayerInterval {
   /**
   * The number of full days in each rotation period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
   */
   readonly days?: number;
   /**
   * For intervals that are not expressible in whole days, this will be added to `days`. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
   */
   readonly seconds?: number;
 }
@@ -172,25 +172,25 @@ export interface OnCallScheduleLayerRestriction {
   /**
   * The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#end_day OnCallSchedule#end_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#end_day OnCallSchedule#end_day}
   */
   readonly endDay: string;
   /**
   * The time of day when the restriction ends (hh:mm:ss).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#end_time OnCallSchedule#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#end_time OnCallSchedule#end_time}
   */
   readonly endTime: string;
   /**
   * The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#start_day OnCallSchedule#start_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#start_day OnCallSchedule#start_day}
   */
   readonly startDay: string;
   /**
   * The time of day when the restriction begins (hh:mm:ss).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#start_time OnCallSchedule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#start_time OnCallSchedule#start_time}
   */
   readonly startTime: string;
 }
@@ -383,43 +383,49 @@ export interface OnCallScheduleLayer {
   /**
   * The date/time when this layer should become active (in ISO 8601).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#effective_date OnCallSchedule#effective_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#effective_date OnCallSchedule#effective_date}
   */
   readonly effectiveDate: string;
   /**
   * The date/time after which this layer no longer applies (in ISO 8601).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#end_date OnCallSchedule#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#end_date OnCallSchedule#end_date}
   */
   readonly endDate?: string;
   /**
   * The name of this layer. Should be unique within the schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
   */
   readonly name: string;
   /**
   * The date/time when the rotation for this layer starts (in ISO 8601).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#rotation_start OnCallSchedule#rotation_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#rotation_start OnCallSchedule#rotation_start}
   */
   readonly rotationStart: string;
   /**
+  * The time zone for this layer. String length must be at least 1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
+  */
+  readonly timeZone?: string;
+  /**
   * List of user IDs for the layer. Can either be a valid user id or null
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#users OnCallSchedule#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#users OnCallSchedule#users}
   */
   readonly users: string[];
   /**
   * interval block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#interval OnCallSchedule#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#interval OnCallSchedule#interval}
   */
   readonly interval?: OnCallScheduleLayerInterval;
   /**
   * restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#restriction OnCallSchedule#restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#restriction OnCallSchedule#restriction}
   */
   readonly restriction?: OnCallScheduleLayerRestriction[] | cdktf.IResolvable;
 }
@@ -434,6 +440,7 @@ export function onCallScheduleLayerToTerraform(struct?: OnCallScheduleLayer | cd
     end_date: cdktf.stringToTerraform(struct!.endDate),
     name: cdktf.stringToTerraform(struct!.name),
     rotation_start: cdktf.stringToTerraform(struct!.rotationStart),
+    time_zone: cdktf.stringToTerraform(struct!.timeZone),
     users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.users),
     interval: onCallScheduleLayerIntervalToTerraform(struct!.interval),
     restriction: cdktf.listMapper(onCallScheduleLayerRestrictionToTerraform, true)(struct!.restriction),
@@ -467,6 +474,12 @@ export function onCallScheduleLayerToHclTerraform(struct?: OnCallScheduleLayer |
     },
     rotation_start: {
       value: cdktf.stringToHclTerraform(struct!.rotationStart),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -531,6 +544,10 @@ export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.rotationStart = this._rotationStart;
     }
+    if (this._timeZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeZone = this._timeZone;
+    }
     if (this._users !== undefined) {
       hasAnyValues = true;
       internalValueResult.users = this._users;
@@ -554,6 +571,7 @@ export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
       this._endDate = undefined;
       this._name = undefined;
       this._rotationStart = undefined;
+      this._timeZone = undefined;
       this._users = undefined;
       this._interval.internalValue = undefined;
       this._restriction.internalValue = undefined;
@@ -569,6 +587,7 @@ export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
       this._endDate = value.endDate;
       this._name = value.name;
       this._rotationStart = value.rotationStart;
+      this._timeZone = value.timeZone;
       this._users = value.users;
       this._interval.internalValue = value.interval;
       this._restriction.internalValue = value.restriction;
@@ -633,6 +652,22 @@ export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get rotationStartInput() {
     return this._rotationStart;
+  }
+
+  // time_zone - computed: false, optional: true, required: false
+  private _timeZone?: string; 
+  public get timeZone() {
+    return this.getStringAttribute('time_zone');
+  }
+  public set timeZone(value: string) {
+    this._timeZone = value;
+  }
+  public resetTimeZone() {
+    this._timeZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeZoneInput() {
+    return this._timeZone;
   }
 
   // users - computed: false, optional: false, required: true
@@ -702,7 +737,7 @@ export class OnCallScheduleLayerList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule datadog_on_call_schedule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule datadog_on_call_schedule}
 */
 export class OnCallSchedule extends cdktf.TerraformResource {
 
@@ -718,7 +753,7 @@ export class OnCallSchedule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OnCallSchedule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnCallSchedule to import
-  * @param importFromId The id of the existing OnCallSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnCallSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnCallSchedule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -730,7 +765,7 @@ export class OnCallSchedule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/on_call_schedule datadog_on_call_schedule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule datadog_on_call_schedule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -741,7 +776,7 @@ export class OnCallSchedule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_on_call_schedule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.81.0',
+        providerVersion: '3.82.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts
+// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,87 +15,87 @@ export interface IntegrationGcpStsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Tags to be associated with GCP metrics and service checks from your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#account_tags IntegrationGcpSts#account_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#account_tags IntegrationGcpSts#account_tags}
   */
   readonly accountTags?: string[];
   /**
   * Silence monitors for expected GCE instance shutdowns.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
   */
   readonly automute?: boolean | cdktf.IResolvable;
   /**
   * Your service account email address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
   */
   readonly clientEmail: string;
   /**
   * List of filters to limit the Cloud Run revisions that are pulled into Datadog by using tags. Only Cloud Run revision resources that apply to specified filters are imported into Datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#cloud_run_revision_filters IntegrationGcpSts#cloud_run_revision_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#cloud_run_revision_filters IntegrationGcpSts#cloud_run_revision_filters}
   */
   readonly cloudRunRevisionFilters?: string[];
   /**
   * List of filters to limit the VM instances that are pulled into Datadog by using tags. Only VM instance resources that apply to specified filters are imported into Datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
   */
   readonly hostFilters?: string[];
   /**
   * Whether Datadog collects cloud security posture management resources from your GCP project. If enabled, requires `resource_collection_enabled` to also be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
   */
   readonly isCspmEnabled?: boolean | cdktf.IResolvable;
   /**
   * When enabled, Datadog includes the `X-Goog-User-Project` header to attribute Google Cloud billing and quota usage to the monitored project instead of the default service account project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#is_per_project_quota_enabled IntegrationGcpSts#is_per_project_quota_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#is_per_project_quota_enabled IntegrationGcpSts#is_per_project_quota_enabled}
   */
   readonly isPerProjectQuotaEnabled?: boolean | cdktf.IResolvable;
   /**
   * When enabled, Datadog scans for all resource change data in your Google Cloud environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#is_resource_change_collection_enabled IntegrationGcpSts#is_resource_change_collection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#is_resource_change_collection_enabled IntegrationGcpSts#is_resource_change_collection_enabled}
   */
   readonly isResourceChangeCollectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * When enabled, Datadog will attempt to collect Security Command Center Findings. Note: This requires additional permissions on the service account. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#is_security_command_center_enabled IntegrationGcpSts#is_security_command_center_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#is_security_command_center_enabled IntegrationGcpSts#is_security_command_center_enabled}
   */
   readonly isSecurityCommandCenterEnabled?: boolean | cdktf.IResolvable;
   /**
   * Configurations for GCP metric namespaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#metric_namespace_configs IntegrationGcpSts#metric_namespace_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#metric_namespace_configs IntegrationGcpSts#metric_namespace_configs}
   */
   readonly metricNamespaceConfigs?: IntegrationGcpStsMetricNamespaceConfigs[] | cdktf.IResolvable;
   /**
   * Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#monitored_resource_configs IntegrationGcpSts#monitored_resource_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#monitored_resource_configs IntegrationGcpSts#monitored_resource_configs}
   */
   readonly monitoredResourceConfigs?: IntegrationGcpStsMonitoredResourceConfigs[] | cdktf.IResolvable;
   /**
   * When enabled, Datadog scans for all resources in your GCP environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#resource_collection_enabled IntegrationGcpSts#resource_collection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#resource_collection_enabled IntegrationGcpSts#resource_collection_enabled}
   */
   readonly resourceCollectionEnabled?: boolean | cdktf.IResolvable;
 }
 export interface IntegrationGcpStsMetricNamespaceConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}
   */
   readonly filters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -272,11 +272,11 @@ export class IntegrationGcpStsMetricNamespaceConfigsList extends cdktf.ComplexLi
 }
 export interface IntegrationGcpStsMonitoredResourceConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}
   */
   readonly filters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#type IntegrationGcpSts#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#type IntegrationGcpSts#type}
   */
   readonly type?: string;
 }
@@ -421,7 +421,7 @@ export class IntegrationGcpStsMonitoredResourceConfigsList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}
 */
 export class IntegrationGcpSts extends cdktf.TerraformResource {
 
@@ -437,7 +437,7 @@ export class IntegrationGcpSts extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationGcpSts resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationGcpSts to import
-  * @param importFromId The id of the existing IntegrationGcpSts that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationGcpSts that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationGcpSts to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -449,7 +449,7 @@ export class IntegrationGcpSts extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -460,7 +460,7 @@ export class IntegrationGcpSts extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_gcp_sts',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.81.0',
+        providerVersion: '3.82.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

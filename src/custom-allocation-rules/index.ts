@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules
+// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface CustomAllocationRulesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Whether to override UI-defined rules. When set to true, any rules created via the UI that are not defined in Terraform will be deleted and Terraform will be used as the source of truth for rules and their ordering. When set to false, any rules created via the UI that are at the end of order will be kept but will be warned, otherwise an error will be thrown in terraform plan phase. Default is false
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules#override_ui_defined_resources CustomAllocationRules#override_ui_defined_resources}
+  */
+  readonly overrideUiDefinedResources?: boolean | cdktf.IResolvable;
+  /**
   * The list of Custom Allocation Rule IDs, in order. Rules are executed in the order specified in this list. Comes from the `id` field on a `datadog_custom_allocation_rule` resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
   */
   readonly ruleIds: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}
 */
 export class CustomAllocationRules extends cdktf.TerraformResource {
 
@@ -37,7 +43,7 @@ export class CustomAllocationRules extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CustomAllocationRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomAllocationRules to import
-  * @param importFromId The id of the existing CustomAllocationRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomAllocationRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomAllocationRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +55,7 @@ export class CustomAllocationRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +66,7 @@ export class CustomAllocationRules extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_custom_allocation_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.81.0',
+        providerVersion: '3.82.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -71,6 +77,7 @@ export class CustomAllocationRules extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._overrideUiDefinedResources = config.overrideUiDefinedResources;
     this._ruleIds = config.ruleIds;
   }
 
@@ -81,6 +88,22 @@ export class CustomAllocationRules extends cdktf.TerraformResource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // override_ui_defined_resources - computed: false, optional: true, required: false
+  private _overrideUiDefinedResources?: boolean | cdktf.IResolvable; 
+  public get overrideUiDefinedResources() {
+    return this.getBooleanAttribute('override_ui_defined_resources');
+  }
+  public set overrideUiDefinedResources(value: boolean | cdktf.IResolvable) {
+    this._overrideUiDefinedResources = value;
+  }
+  public resetOverrideUiDefinedResources() {
+    this._overrideUiDefinedResources = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overrideUiDefinedResourcesInput() {
+    return this._overrideUiDefinedResources;
   }
 
   // rule_ids - computed: false, optional: false, required: true
@@ -102,12 +125,19 @@ export class CustomAllocationRules extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      override_ui_defined_resources: cdktf.booleanToTerraform(this._overrideUiDefinedResources),
       rule_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ruleIds),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      override_ui_defined_resources: {
+        value: cdktf.booleanToHclTerraform(this._overrideUiDefinedResources),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       rule_ids: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ruleIds),
         isBlock: false,

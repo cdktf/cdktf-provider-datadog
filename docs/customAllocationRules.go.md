@@ -4,7 +4,7 @@
 
 ### CustomAllocationRules <a name="CustomAllocationRules" id="@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.resetOverrideUiDefinedResources">ResetOverrideUiDefinedResources</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetOverrideUiDefinedResources` <a name="ResetOverrideUiDefinedResources" id="@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.resetOverrideUiDefinedResources"></a>
+
+```go
+func ResetOverrideUiDefinedResources()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +474,7 @@ The construct id used in the generated config for the CustomAllocationRules to i
 
 The id of the existing CustomAllocationRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -498,7 +505,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.overrideUiDefinedResourcesInput">OverrideUiDefinedResourcesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.ruleIdsInput">RuleIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.overrideUiDefinedResources">OverrideUiDefinedResources</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.ruleIds">RuleIds</a></code> | <code>*[]*string</code> | *No description.* |
 
 ---
@@ -655,6 +664,16 @@ func Id() *string
 
 ---
 
+##### `OverrideUiDefinedResourcesInput`<sup>Optional</sup> <a name="OverrideUiDefinedResourcesInput" id="@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.overrideUiDefinedResourcesInput"></a>
+
+```go
+func OverrideUiDefinedResourcesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `RuleIdsInput`<sup>Optional</sup> <a name="RuleIdsInput" id="@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.ruleIdsInput"></a>
 
 ```go
@@ -662,6 +681,16 @@ func RuleIdsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `OverrideUiDefinedResources`<sup>Required</sup> <a name="OverrideUiDefinedResources" id="@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules.property.overrideUiDefinedResources"></a>
+
+```go
+func OverrideUiDefinedResources() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -711,6 +740,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationr
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	RuleIds: *[]*string,
+	OverrideUiDefinedResources: interface{},
 }
 ```
 
@@ -726,6 +756,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationr
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRulesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRulesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRulesConfig.property.ruleIds">RuleIds</a></code> | <code>*[]*string</code> | The list of Custom Allocation Rule IDs, in order. |
+| <code><a href="#@cdktf/provider-datadog.customAllocationRules.CustomAllocationRulesConfig.property.overrideUiDefinedResources">OverrideUiDefinedResources</a></code> | <code>interface{}</code> | Whether to override UI-defined rules. |
 
 ---
 
@@ -811,7 +842,23 @@ The list of Custom Allocation Rule IDs, in order.
 
 Rules are executed in the order specified in this list. Comes from the `id` field on a `datadog_custom_allocation_rule` resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
+
+---
+
+##### `OverrideUiDefinedResources`<sup>Optional</sup> <a name="OverrideUiDefinedResources" id="@cdktf/provider-datadog.customAllocationRules.CustomAllocationRulesConfig.property.overrideUiDefinedResources"></a>
+
+```go
+OverrideUiDefinedResources interface{}
+```
+
+- *Type:* interface{}
+
+Whether to override UI-defined rules.
+
+When set to true, any rules created via the UI that are not defined in Terraform will be deleted and Terraform will be used as the source of truth for rules and their ordering. When set to false, any rules created via the UI that are at the end of order will be kept but will be warned, otherwise an error will be thrown in terraform plan phase. Default is false
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules#override_ui_defined_resources CustomAllocationRules#override_ui_defined_resources}
 
 ---
 

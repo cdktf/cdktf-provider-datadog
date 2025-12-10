@@ -4,7 +4,7 @@
 
 ### DataDatadogMetrics <a name="DataDatadogMetrics" id="@cdktf/provider-datadog.dataDatadogMetrics.DataDatadogMetrics"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/metrics datadog_metrics}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/metrics datadog_metrics}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMetrics.DataDatadogMetrics.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDatadogMetrics to impo
 
 The id of the existing DataDatadogMetrics that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/metrics#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/metrics#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -687,7 +687,7 @@ public readonly query: string;
 
 The search query to use when listing metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/metrics#query DataDatadogMetrics#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/metrics#query DataDatadogMetrics#query}
 
 ---
 

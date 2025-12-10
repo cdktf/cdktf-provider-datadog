@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/cost_budget
+// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/cost_budget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogCostBudgetConfig extends cdktf.TerraformMetaArgument
   /**
   * The ID of the budget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/cost_budget#id DataDatadogCostBudget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/cost_budget#id DataDatadogCostBudget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,7 +24,7 @@ export interface DataDatadogCostBudgetConfig extends cdktf.TerraformMetaArgument
   /**
   * entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/cost_budget#entries DataDatadogCostBudget#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/cost_budget#entries DataDatadogCostBudget#entries}
   */
   readonly entries?: DataDatadogCostBudgetEntries[] | cdktf.IResolvable;
 }
@@ -123,7 +123,7 @@ export interface DataDatadogCostBudgetEntries {
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
   */
   readonly tagFilters?: DataDatadogCostBudgetEntriesTagFilters[] | cdktf.IResolvable;
 }
@@ -249,7 +249,7 @@ export class DataDatadogCostBudgetEntriesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/cost_budget datadog_cost_budget}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/cost_budget datadog_cost_budget}
 */
 export class DataDatadogCostBudget extends cdktf.TerraformDataSource {
 
@@ -265,7 +265,7 @@ export class DataDatadogCostBudget extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogCostBudget resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCostBudget to import
-  * @param importFromId The id of the existing DataDatadogCostBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/cost_budget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCostBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/cost_budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCostBudget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -277,7 +277,7 @@ export class DataDatadogCostBudget extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/cost_budget datadog_cost_budget} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/cost_budget datadog_cost_budget} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,7 +288,7 @@ export class DataDatadogCostBudget extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_cost_budget',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.81.0',
+        providerVersion: '3.82.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

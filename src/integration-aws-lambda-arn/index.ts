@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_aws_lambda_arn
+// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_lambda_arn
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface IntegrationAwsLambdaArnConfig extends cdktf.TerraformMetaArgume
   /**
   * Your AWS Account ID without dashes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_aws_lambda_arn#account_id IntegrationAwsLambdaArn#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_lambda_arn#account_id IntegrationAwsLambdaArn#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_aws_lambda_arn#id IntegrationAwsLambdaArn#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_lambda_arn#id IntegrationAwsLambdaArn#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface IntegrationAwsLambdaArnConfig extends cdktf.TerraformMetaArgume
   /**
   * The ARN of the Datadog forwarder Lambda.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_aws_lambda_arn#lambda_arn IntegrationAwsLambdaArn#lambda_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_lambda_arn#lambda_arn IntegrationAwsLambdaArn#lambda_arn}
   */
   readonly lambdaArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}
 */
 export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationAwsLambdaArn resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationAwsLambdaArn to import
-  * @param importFromId The id of the existing IntegrationAwsLambdaArn that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_aws_lambda_arn#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationAwsLambdaArn that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_lambda_arn#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationAwsLambdaArn to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_aws_lambda_arn',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.81.0',
+        providerVersion: '3.82.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
